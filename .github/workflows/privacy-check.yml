@@ -1,0 +1,31 @@
+name: Privacy check
+
+# This repository is public. Fail any change that adds absolute home paths, private IP addresses
+# or secret-looking tokens, so nothing about the machine the projects were built on leaks out.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan added lines
+        run: |
+          base=${{ github.event.pull_request.base.sha || github.event.before }}
+          if [ -z "$base" ] || ! git cat-file -e "$base" 2>/dev/null; then base=$(git rev-list --max-parents=0 HEAD | tail -1); fi
+          added=$(git log -p --format= "$base..HEAD" -- . ':!.github/workflows/privacy-check.yml' | grep '^+' | grep -v '^+++' || true)
+          hits=$(grep -nEo '/home/[a-z_][a-z0-9_-]*|/Users/[A-Za-z][A-Za-z0-9_-]*|(^|[^0-9])(192\.168|10\.[0-9]{1,3}|172\.(1[6-9]|2[0-9]|3[01]))\.[0-9]{1,3}\.[0-9]{1,3}|ghp_[A-Za-z0-9]+|gho_[A-Za-z0-9]+|github_pat_[A-Za-z0-9_]+|sk-ant-[A-Za-z0-9-]+|AKIA[0-9A-Z]{16}|BEGIN [A-Z ]*PRIVATE KEY' <<<"$added" || true)
+          if [ -n "$hits" ]; then
+            echo "Found data that must not be published (values redacted):"
+            sed -E 's/:(.{0,4}).*/: \1***/' <<<"$hits"
+            exit 1
+          fi
+          echo "No private paths, IPs or tokens found."
