@@ -1,0 +1,5 @@
+label	model	engine	peak_rss_mib
+defaults	qwen2.5-1.5b	ollama	1231
+defaults	qwen2.5-1.5b	llama.cpp	2616
+4-threads	qwen2.5-1.5b	ollama	1231
+4-threads	qwen2.5-1.5b	llama.cpp	1826
