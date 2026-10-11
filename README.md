@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Claude Code on a daily timer](2026-10-11-claude-code-daily-timer/) | [I scheduled Claude Code to run daily. Day one ran out of memory](https://aitoollabs.dev/posts/claude-code-daily-timer-day-one/) | Partly worked |
 
 ## Ground rules
 
