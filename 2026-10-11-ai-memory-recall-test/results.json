@@ -1,0 +1,194 @@
+[
+  {
+    "lang": "en",
+    "question": "Which hosting does the blog use and how is it deployed?",
+    "expected": "decisions/stack-astro-cloudflare.md",
+    "rank": null,
+    "returned": 5,
+    "ms": 27.2
+  },
+  {
+    "lang": "pt",
+    "question": "Qual hospedagem o blog usa e como é feito o deploy?",
+    "expected": "decisions/stack-astro-cloudflare.md",
+    "rank": 2,
+    "returned": 5,
+    "ms": 31.9
+  },
+  {
+    "lang": "en",
+    "question": "Why did the first daily run fail?",
+    "expected": "notes/rotina-2026-10-11-oom.md",
+    "rank": 4,
+    "returned": 5,
+    "ms": 23.5
+  },
+  {
+    "lang": "pt",
+    "question": "Por que a primeira rotina diária falhou?",
+    "expected": "notes/rotina-2026-10-11-oom.md",
+    "rank": 2,
+    "returned": 5,
+    "ms": 37.1
+  },
+  {
+    "lang": "en",
+    "question": "Who can merge pull requests and under which conditions?",
+    "expected": "decisions/merge-automatico.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 25.7
+  },
+  {
+    "lang": "pt",
+    "question": "Quem pode fazer merge dos pull requests e em quais condições?",
+    "expected": "decisions/merge-automatico.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 29.9
+  },
+  {
+    "lang": "en",
+    "question": "What is the final name of the site?",
+    "expected": "decisions/nome-do-site.md",
+    "rank": 3,
+    "returned": 5,
+    "ms": 26.4
+  },
+  {
+    "lang": "pt",
+    "question": "Qual é o nome definitivo do site?",
+    "expected": "decisions/nome-do-site.md",
+    "rank": 2,
+    "returned": 5,
+    "ms": 33.2
+  },
+  {
+    "lang": "en",
+    "question": "Which GitHub account owns the repositories?",
+    "expected": "decisions/github-contas-e-repos.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 26.0
+  },
+  {
+    "lang": "pt",
+    "question": "Qual conta do GitHub é dona dos repositórios?",
+    "expected": "decisions/github-contas-e-repos.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 28.7
+  },
+  {
+    "lang": "en",
+    "question": "How does access to the Search Console API work?",
+    "expected": "decisions/search-console-api.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 26.2
+  },
+  {
+    "lang": "pt",
+    "question": "Como funciona o acesso à API do Search Console?",
+    "expected": "decisions/search-console-api.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 33.2
+  },
+  {
+    "lang": "en",
+    "question": "Which colors and fonts does the site design use?",
+    "expected": "decisions/design-anti-slop.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 26.2
+  },
+  {
+    "lang": "pt",
+    "question": "Quais cores e fontes o design do site usa?",
+    "expected": "decisions/design-anti-slop.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 32.3
+  },
+  {
+    "lang": "en",
+    "question": "Can posts talk about ads or making money?",
+    "expected": "decisions/enquadramento-publico.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 31.7
+  },
+  {
+    "lang": "pt",
+    "question": "Os posts podem falar de anúncios ou de ganhar dinheiro?",
+    "expected": "decisions/enquadramento-publico.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 34.7
+  },
+  {
+    "lang": "en",
+    "question": "How is Bing told about new pages?",
+    "expected": "decisions/indexnow-bing.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 30.9
+  },
+  {
+    "lang": "pt",
+    "question": "Como o Bing é avisado sobre páginas novas?",
+    "expected": "decisions/indexnow-bing.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 28.4
+  },
+  {
+    "lang": "en",
+    "question": "When and where does the daily routine run?",
+    "expected": "decisions/rotina-diaria.md",
+    "rank": 2,
+    "returned": 5,
+    "ms": 31.0
+  },
+  {
+    "lang": "pt",
+    "question": "Quando e onde a rotina diária roda?",
+    "expected": "decisions/rotina-diaria.md",
+    "rank": 1,
+    "returned": 5,
+    "ms": 27.5
+  },
+  {
+    "lang": "en",
+    "question": "How is private data kept out of published content?",
+    "expected": "decisions/privacidade-seo-visual.md",
+    "rank": 4,
+    "returned": 5,
+    "ms": 26.7
+  },
+  {
+    "lang": "pt",
+    "question": "Como os dados privados ficam fora do conteúdo publicado?",
+    "expected": "decisions/privacidade-seo-visual.md",
+    "rank": 3,
+    "returned": 5,
+    "ms": 29.9
+  },
+  {
+    "lang": "en",
+    "question": "Which posts have been published so far?",
+    "expected": "notes/post-log.md",
+    "rank": null,
+    "returned": 5,
+    "ms": 29.3
+  },
+  {
+    "lang": "pt",
+    "question": "Quais posts já foram publicados?",
+    "expected": "notes/post-log.md",
+    "rank": null,
+    "returned": 5,
+    "ms": 24.8
+  }
+]
