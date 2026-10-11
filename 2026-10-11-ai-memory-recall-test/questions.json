@@ -1,0 +1,14 @@
+[
+  {"expected": "decisions/stack-astro-cloudflare.md", "en": "Which hosting does the blog use and how is it deployed?", "pt": "Qual hospedagem o blog usa e como é feito o deploy?"},
+  {"expected": "notes/rotina-2026-10-11-oom.md", "en": "Why did the first daily run fail?", "pt": "Por que a primeira rotina diária falhou?"},
+  {"expected": "decisions/merge-automatico.md", "en": "Who can merge pull requests and under which conditions?", "pt": "Quem pode fazer merge dos pull requests e em quais condições?"},
+  {"expected": "decisions/nome-do-site.md", "en": "What is the final name of the site?", "pt": "Qual é o nome definitivo do site?"},
+  {"expected": "decisions/github-contas-e-repos.md", "en": "Which GitHub account owns the repositories?", "pt": "Qual conta do GitHub é dona dos repositórios?"},
+  {"expected": "decisions/search-console-api.md", "en": "How does access to the Search Console API work?", "pt": "Como funciona o acesso à API do Search Console?"},
+  {"expected": "decisions/design-anti-slop.md", "en": "Which colors and fonts does the site design use?", "pt": "Quais cores e fontes o design do site usa?"},
+  {"expected": "decisions/enquadramento-publico.md", "en": "Can posts talk about ads or making money?", "pt": "Os posts podem falar de anúncios ou de ganhar dinheiro?"},
+  {"expected": "decisions/indexnow-bing.md", "en": "How is Bing told about new pages?", "pt": "Como o Bing é avisado sobre páginas novas?"},
+  {"expected": "decisions/rotina-diaria.md", "en": "When and where does the daily routine run?", "pt": "Quando e onde a rotina diária roda?"},
+  {"expected": "decisions/privacidade-seo-visual.md", "en": "How is private data kept out of published content?", "pt": "Como os dados privados ficam fora do conteúdo publicado?"},
+  {"expected": "notes/post-log.md", "en": "Which posts have been published so far?", "pt": "Quais posts já foram publicados?"}
+]
