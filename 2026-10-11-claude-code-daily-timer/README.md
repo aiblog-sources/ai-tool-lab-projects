@@ -1,7 +1,7 @@
 # Claude Code on a daily timer
 
 Run Claude Code headless once a day from a systemd user timer, with the guards that the first real run of this
-setup showed were missing. This is the setup behind [AI Tool Lab](https://aitoollabs.dev)'s daily routine.
+setup showed were missing. This is the setup behind [AI Tool Labs](https://aitoollabs.dev)'s daily routine.
 
 Write-up: https://aitoollabs.dev/posts/claude-code-daily-timer-day-one/
 
