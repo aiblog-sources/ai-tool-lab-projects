@@ -1,0 +1,1 @@
+Count the Markdown files (*.md) in the notes folder of the current directory. Write only the number to a file named count.txt in the current directory. Then reply with the number.
