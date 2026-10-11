@@ -1,0 +1,386 @@
+[
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:03:00+00:00",
+  "started": "2026-10-11T13:03:49.163148-03:00",
+  "finished": "2026-10-11T13:03:49.221846-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:04:00+00:00",
+  "started": "2026-10-11T13:04:49.115822-03:00",
+  "finished": "2026-10-11T13:04:49.160151-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:05:00+00:00",
+  "started": "2026-10-11T13:05:49.100751-03:00",
+  "finished": "2026-10-11T13:05:49.139476-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:06:00+00:00",
+  "started": "2026-10-11T13:06:49.102784-03:00",
+  "finished": "2026-10-11T13:06:49.142800-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:07:00+00:00",
+  "started": "2026-10-11T13:07:49.099031-03:00",
+  "finished": "2026-10-11T13:07:49.140110-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:08:00+00:00",
+  "started": "2026-10-11T13:08:49.100191-03:00",
+  "finished": "2026-10-11T13:08:49.140941-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:09:00+00:00",
+  "started": "2026-10-11T13:09:49.101820-03:00",
+  "finished": "2026-10-11T13:09:49.142368-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:10:00+00:00",
+  "started": "2026-10-11T13:10:49.098129-03:00",
+  "finished": "2026-10-11T13:10:49.137799-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:11:00+00:00",
+  "started": "2026-10-11T13:11:49.101843-03:00",
+  "finished": "2026-10-11T13:11:49.145178-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:12:00+00:00",
+  "started": "2026-10-11T13:12:49.095954-03:00",
+  "finished": "2026-10-11T13:12:49.135049-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:13:00+00:00",
+  "started": "2026-10-11T13:13:49.096567-03:00",
+  "finished": "2026-10-11T13:13:49.135178-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:14:00+00:00",
+  "started": "2026-10-11T13:14:49.113686-03:00",
+  "finished": "2026-10-11T13:14:49.152992-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:15:00+00:00",
+  "started": "2026-10-11T13:15:49.101462-03:00",
+  "finished": "2026-10-11T13:15:49.140499-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:16:00+00:00",
+  "started": "2026-10-11T13:16:49.099916-03:00",
+  "finished": "2026-10-11T13:16:49.138646-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:17:00+00:00",
+  "started": "2026-10-11T13:17:49.101226-03:00",
+  "finished": "2026-10-11T13:17:49.142097-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:18:00+00:00",
+  "started": "2026-10-11T13:18:49.106629-03:00",
+  "finished": "2026-10-11T13:18:49.146802-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:19:00+00:00",
+  "started": "2026-10-11T13:19:49.100266-03:00",
+  "finished": "2026-10-11T13:19:49.140527-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:20:00+00:00",
+  "started": "2026-10-11T13:20:49.106423-03:00",
+  "finished": "2026-10-11T13:20:49.146523-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:21:00+00:00",
+  "started": "2026-10-11T13:21:49.101313-03:00",
+  "finished": "2026-10-11T13:21:49.139200-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:22:00+00:00",
+  "started": "2026-10-11T13:22:49.097584-03:00",
+  "finished": "2026-10-11T13:22:49.138982-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:23:00+00:00",
+  "started": "2026-10-11T13:23:49.100746-03:00",
+  "finished": "2026-10-11T13:23:49.140568-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:24:00+00:00",
+  "started": "2026-10-11T13:24:49.103573-03:00",
+  "finished": "2026-10-11T13:24:49.142790-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:25:00+00:00",
+  "started": "2026-10-11T13:25:49.110377-03:00",
+  "finished": "2026-10-11T13:25:49.193591-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:26:00+00:00",
+  "started": "2026-10-11T13:26:49.105434-03:00",
+  "finished": "2026-10-11T13:26:49.150472-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:27:00+00:00",
+  "started": "2026-10-11T13:27:49.099564-03:00",
+  "finished": "2026-10-11T13:27:49.139162-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:28:00+00:00",
+  "started": "2026-10-11T13:32:27.850906-03:00",
+  "finished": "2026-10-11T13:32:27.893058-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:33:00+00:00",
+  "started": "2026-10-11T13:33:27.950089-03:00",
+  "finished": "2026-10-11T13:33:28.002803-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:34:00+00:00",
+  "started": "2026-10-11T13:34:27.801615-03:00",
+  "finished": "2026-10-11T13:34:27.846108-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:35:00+00:00",
+  "started": "2026-10-11T13:35:27.811543-03:00",
+  "finished": "2026-10-11T13:35:27.859539-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:36:00+00:00",
+  "started": "2026-10-11T13:36:27.799730-03:00",
+  "finished": "2026-10-11T13:36:27.841664-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:37:00+00:00",
+  "started": "2026-10-11T13:37:27.865580-03:00",
+  "finished": "2026-10-11T13:37:27.913859-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:38:00+00:00",
+  "started": "2026-10-11T13:38:27.808343-03:00",
+  "finished": "2026-10-11T13:38:27.853950-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "85f4fb52fa4c",
+  "scheduled": null,
+  "started": "2026-10-11T13:38:52.122854-03:00",
+  "finished": "2026-10-11T13:38:54.174572-03:00",
+  "status": "failed",
+  "error": "ValueError: Model local has a context window of 32,768 tokens, which is below the minimum 64,000 required by Hermes Agent.  Your local server is serving a 32,768-token window.  Start it with at least 64K context (llama.cpp: -c 64000; vLLM: --max-model-len; Ollama: OLLAMA_CONTEXT_LENGTH=64000 or a Modelfile num_ctx), or set model.ollama_num_ctx in config.yaml to the window it really serves (at least 64K)."
+ },
+ {
+  "job": "85f4fb52fa4c",
+  "scheduled": null,
+  "started": "2026-10-11T13:39:23.064315-03:00",
+  "finished": "2026-10-11T13:49:44.327257-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:39:00+00:00",
+  "started": "2026-10-11T13:39:27.846023-03:00",
+  "finished": "2026-10-11T13:39:27.949099-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:40:00+00:00",
+  "started": "2026-10-11T13:40:27.840222-03:00",
+  "finished": "2026-10-11T13:40:27.933157-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:41:00+00:00",
+  "started": "2026-10-11T13:41:27.852942-03:00",
+  "finished": "2026-10-11T13:41:27.953838-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:42:00+00:00",
+  "started": "2026-10-11T13:42:27.847814-03:00",
+  "finished": "2026-10-11T13:42:27.926598-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:43:00+00:00",
+  "started": "2026-10-11T13:43:27.844453-03:00",
+  "finished": "2026-10-11T13:43:27.932535-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:44:00+00:00",
+  "started": "2026-10-11T13:44:27.829768-03:00",
+  "finished": "2026-10-11T13:44:27.917760-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:45:00+00:00",
+  "started": "2026-10-11T13:45:27.840160-03:00",
+  "finished": "2026-10-11T13:45:27.933780-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:46:00+00:00",
+  "started": "2026-10-11T13:46:27.839806-03:00",
+  "finished": "2026-10-11T13:46:27.929934-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:47:00+00:00",
+  "started": "2026-10-11T13:47:27.844789-03:00",
+  "finished": "2026-10-11T13:47:27.941942-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:48:00+00:00",
+  "started": "2026-10-11T13:48:27.851952-03:00",
+  "finished": "2026-10-11T13:48:27.948287-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:49:00+00:00",
+  "started": "2026-10-11T13:49:27.889623-03:00",
+  "finished": "2026-10-11T13:49:27.986937-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:50:00+00:00",
+  "started": "2026-10-11T13:50:27.815749-03:00",
+  "finished": "2026-10-11T13:50:27.866216-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "e0949e36927b",
+  "scheduled": null,
+  "started": "2026-10-11T13:51:10.819389-03:00",
+  "finished": "2026-10-11T13:51:21.566839-03:00",
+  "status": "completed",
+  "error": null
+ },
+ {
+  "job": "ff18bc5110e9",
+  "scheduled": "2026-10-11T16:51:00+00:00",
+  "started": "2026-10-11T13:51:27.823601-03:00",
+  "finished": "2026-10-11T13:51:27.862202-03:00",
+  "status": "completed",
+  "error": null
+ }
+]
