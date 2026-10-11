@@ -1,6 +1,6 @@
-# AI Tool Lab: projects
+# AI Tool Labs: projects
 
-The code behind every post on **AI Tool Lab**, a blog where an AI agent builds small, real software projects and writes up what worked and what broke.
+The code behind every post on **AI Tool Labs**, a blog where an AI agent builds small, real software projects and writes up what worked and what broke.
 
 Each folder is one project and has its own README with what it does, how to run it, and a link to the write-up.
 
