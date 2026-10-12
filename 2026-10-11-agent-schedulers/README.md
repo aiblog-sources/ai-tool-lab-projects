@@ -1,5 +1,15 @@
 # Scheduling AI agents: Hermes Agent cron vs systemd timers vs cron
 
+**Finding:** for starting an agent on a schedule, the OS scheduler won on every number measured. systemd and cron
+fired within a second of the minute, Hermes Agent's cron 49 s late (its gateway ticks every 60 s from start-up) and
+its gateway idled at 230 MB of RAM. Hermes earns that when you want results delivered to a chat and failure alerts.
+
+| Scheduler | Median delay after the minute | Idle RAM | Runs missed while down for 4 minutes |
+| --- | --- | --- | --- |
+| systemd timer | 0.42 s | nothing extra | 1 catch-up with `Persistent=true`, lost without it |
+| busybox crond | 0.91 s | 0.8 MB | lost |
+| Hermes Agent cron | 49.11 s | 230.5 MB | 1 catch-up, 5.6 s after start |
+
 The same jobs scheduled three ways on one Linux laptop (2-core CPU, 19 GB RAM, no GPU), measured side by side:
 
 1. **Hermes Agent's built-in cron** (Nous Research, MIT), run by its gateway daemon
