@@ -1,0 +1,13 @@
+label	model	engine	peak_rss_mib	rss_anon_mib	rss_file_mib
+ollama-flags	qwen2.5-1.5b	ollama	1230	1216	14
+ollama-flags	qwen2.5-1.5b	llama.cpp	1232	1216	16
+ollama-flags-4t	qwen2.5-1.5b	ollama	1231	1217	14
+ollama-flags-4t	qwen2.5-1.5b	llama.cpp	1231	1216	16
+mmap-4096	qwen2.5-1.5b	ollama	1122	1108	14
+mmap-4096	qwen2.5-1.5b	llama.cpp	1714	764	951
+ollama-flags	llama-3.2-3b	ollama	2768	2753	14
+ollama-flags	llama-3.2-3b	llama.cpp	2770	2754	16
+ollama-flags-4t	llama-3.2-3b	ollama	2768	2753	14
+ollama-flags-4t	llama-3.2-3b	llama.cpp	2770	2754	16
+mmap-4096	llama-3.2-3b	ollama	2462	2448	14
+mmap-4096	llama-3.2-3b	llama.cpp	3751	1816	1935

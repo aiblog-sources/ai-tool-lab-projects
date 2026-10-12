@@ -1,0 +1,11 @@
+label	model	engine	peak_rss_mib
+defaults	qwen2.5-1.5b	ollama	1231
+defaults	qwen2.5-1.5b	llama.cpp	2610
+matched	qwen2.5-1.5b	ollama	1230
+matched	qwen2.5-1.5b	llama.cpp	1825
+4-threads	qwen2.5-1.5b	ollama	1231
+4-threads	qwen2.5-1.5b	llama.cpp	1826
+defaults	llama-3.2-3b	llama.cpp	killed over 6G cap
+matched	llama-3.2-3b	llama.cpp	4056
+4-threads	llama-3.2-3b	llama.cpp	4056
+server	-	ollama serve (Go)	68

@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 OLLAMA_VERSION=v0.40.3
-LLAMA_CPP_COMMIT=966baae   # build b11554, 2026-10-11
+LLAMA_CPP_COMMIT=966baae   # 2026-10-11
 mkdir -p vendor models
 
 if [ ! -x vendor/ollama/bin/ollama ]; then
