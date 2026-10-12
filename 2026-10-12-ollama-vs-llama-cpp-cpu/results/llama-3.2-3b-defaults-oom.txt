@@ -1,0 +1,2 @@
+run-<id>.scope: A process of this unit has been killed by the OOM killer.
+run-<id>.scope: Failed with result 'oom-kill'.
