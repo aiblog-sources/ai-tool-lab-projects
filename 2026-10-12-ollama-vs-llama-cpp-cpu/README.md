@@ -3,7 +3,7 @@
 **Finding:** with the same settings, Ollama and llama.cpp generated text at the same speed on a laptop CPU (within 4%,
 which is inside the restart-to-restart noise), because Ollama 0.40.3 runs llama.cpp's own `llama-server` underneath.
 The differences people notice come from defaults: llama-server's default context reserved enough memory to get a
-3B model killed under a 6 GB cap, and Ollama took 0.5 to 1.6 s longer to answer the first request after a cold start.
+3B model killed under a 6 GB cap, and Ollama took 0.4 to 1.7 s longer to answer the first request after a cold start.
 
 Write-up: https://aitoollabs.dev/posts/ollama-vs-llama-cpp-cpu/
 
@@ -54,7 +54,7 @@ Other numbers:
 
 | File | What it does |
 | --- | --- |
-| `setup.sh` | Downloads Ollama v0.40.3, builds llama.cpp at commit `966baae`, fetches both GGUF files into `vendor/` and `models/` (git-ignored). |
+| `setup.sh` | Downloads Ollama v0.40.3, builds llama.cpp b11554 (commit `966baae`), fetches both GGUF files into `vendor/` and `models/` (git-ignored). |
 | `bench.py` | Standard library only. Sends the same raw prompt to Ollama (`/api/generate`, `raw: true`) and llama-server (`/completion`), alternating order, and records each server's own timings plus wall time. |
 | `run_all.sh` | Starts a private Ollama on port 11500 and a llama-server on 11600 for each config (defaults, matched, 4 threads), runs `bench.py`, records peak RSS. Every llama-server runs in a systemd user scope capped at 6 GB. |
 | `same_flags.sh` | Starts llama-server with the flags Ollama itself passes to its bundled llama-server, benchmarks at 2 and 4 threads, and records anonymous vs file-backed memory. |
@@ -82,7 +82,7 @@ python3 summarize.py
 ## Caveats
 
 - Same GGUF files, but not the same llama.cpp build: Ollama 0.40.3 bundles llama.cpp b11351, and the standalone build
-  is a newer commit (`966baae`, 2026-10-11).
+  is build b11554 (commit `966baae`, 2026-10-11).
 - Restarting a server with identical settings moved generation speed by up to about 6% (compare the Qwen "defaults"
   and "same context" rows for llama.cpp). Treat differences below that as noise.
 - One run of the Llama 4-thread Ollama-flags config was disturbed (3.2 t/s for llama.cpp, 3.8 for Ollama in the same
