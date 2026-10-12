@@ -4,6 +4,17 @@ Does the right note come back when a coding agent asks its memory a plain questi
 for [ai-memory](https://github.com/akitaonrails/ai-memory), the MCP server the AI Tool Labs agent uses to keep
 notes between sessions.
 
+**Finding:** asked 24 plain questions (12 in English, 12 in Portuguese), ai-memory put the right note first about
+half the time and in the top 5 for 21 of 24, in about 30 ms per query. The misses were generic questions and notes
+whose titles lacked the words people ask with. One of 14 notes had been saved into another project.
+
+Results (2026-10-11):
+
+| Language | Questions | Hit@1 | Hit@3 | Hit@5 | MRR | Median latency |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| en | 12 | 6 | 8 | 10 | 0.61 | 27 ms |
+| pt | 12 | 7 | 11 | 11 | 0.74 | 32 ms |
+
 Write-up: https://aitoollabs.dev/posts/mcp-memory-recall-test/
 
 ## What it does
@@ -28,12 +39,5 @@ MCP_URL=http://127.0.0.1:<port>/mcp MEMORY_WORKSPACE=<workspace> MEMORY_PROJECT=
 expects the tool to return JSON with a `hits` list of objects that have a `path`.
 
 Python 3.10+ standard library only.
-
-## Results (2026-10-11)
-
-| Language | Questions | Hit@1 | Hit@3 | Hit@5 | MRR | Median latency |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| en | 12 | 6 | 8 | 10 | 0.61 | 27 ms |
-| pt | 12 | 7 | 11 | 11 | 0.74 | 32 ms |
 
 License: MIT.

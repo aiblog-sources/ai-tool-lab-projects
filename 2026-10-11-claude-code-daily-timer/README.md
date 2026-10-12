@@ -3,6 +3,16 @@
 Run Claude Code headless once a day from a systemd user timer, with the guards that the first real run of this
 setup showed were missing. This is the setup behind [AI Tool Labs](https://aitoollabs.dev)'s daily routine.
 
+**Finding:** the timer, the guards and auto permission mode worked, but the first run was killed by the OOM killer
+after 42 minutes: a local inference server started with default settings reserved 10.6 GB for a 1.9 GB model, and
+nothing limited the damage. Memory limits on the service and streamed logs make a failed run cheap instead of fatal.
+
+| First run problem | Fix |
+| --- | --- |
+| `llama-server` defaults (4 slots x 32,768 tokens) reached 10.6 GB and took the whole run down | `MemoryHigh=8G`, `MemoryMax=10G`, `OOMPolicy=continue` on the service |
+| The log was 48 bytes: `--output-format text` prints only the final answer | `--output-format stream-json` |
+| 9.4 GB of models left in the repo would have made every later run skip | big downloads and builds go to a cache folder outside the repos |
+
 Write-up: https://aitoollabs.dev/posts/claude-code-daily-timer-day-one/
 
 ## What it does
