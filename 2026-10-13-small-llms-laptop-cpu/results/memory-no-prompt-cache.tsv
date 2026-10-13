@@ -1,0 +1,11 @@
+model	status	load_s	rss_after_load_mib	peak_rss_mib
+Qwen 3.5 0.8B	ok	2.3	707	765
+Llama 3.2 1B	ok	2.8	985	1032
+Qwen 2.5 1.5B	ok	3.8	1125	1173
+Qwen 3.5 2B	ok	5.1	1445	1517
+Gemma 4 E2B	ok	7.4	3778	3880
+SmolLM3 3B	ok	6.6	2204	2269
+Llama 3.2 3B	ok	6.3	2465	2517
+Phi-4 mini	ok	6.8	2996	3043
+Qwen 3.5 4B	ok	9.1	3052	3168
+Gemma 4 E4B	ok	11.8	5925	6002

@@ -1,0 +1,20 @@
+{"id": "mult", "q": "What is 17 * 23? Answer with just the number.", "check": "number", "expect": "391"}
+{"id": "train", "q": "A train leaves at 14:40 and the trip takes 2 hours and 35 minutes. At what time does it arrive? Answer in HH:MM format only.", "check": "contains", "expect": "17:15"}
+{"id": "pencils", "q": "I have 3 boxes with 12 pencils each and I give away 9 pencils. How many pencils do I have left? Answer with just the number.", "check": "number", "expect": "27"}
+{"id": "percent", "q": "What is 15% of 240? Answer with just the number.", "check": "number", "expect": "36"}
+{"id": "km", "q": "How many meters are in 5 kilometers? Answer with just the number.", "check": "number", "expect": "5000"}
+{"id": "decimal", "q": "Which number is larger, 9.11 or 9.9? Answer with just the number.", "check": "number", "expect": "9.9"}
+{"id": "prime", "q": "Is 91 a prime number? Answer yes or no.", "check": "yesno", "expect": "no"}
+{"id": "weekday", "q": "Today is Monday. What day of the week will it be in 10 days? Answer with one word.", "check": "contains", "expect": "thursday"}
+{"id": "capital", "q": "What is the capital of Australia? Answer with one word.", "check": "contains", "expect": "canberra"}
+{"id": "planet", "q": "Which planet is known as the Red Planet? Answer with one word.", "check": "contains", "expect": "mars"}
+{"id": "french", "q": "Translate \"good morning\" into French. Answer with the translation only.", "check": "contains", "expect": "bonjour"}
+{"id": "reverse", "q": "Write the word \"laptop\" backwards. Answer with the reversed word only.", "check": "contains", "expect": "potpal"}
+{"id": "count_r", "q": "How many times does the letter r appear in the word \"strawberry\"? Answer with just the number.", "check": "number", "expect": "3"}
+{"id": "sort", "q": "Sort these numbers from smallest to largest: 42, 7, 19, 3, 25. Answer with the sorted list only, separated by commas.", "check": "sequence", "expect": "3,7,19,25,42"}
+{"id": "email", "q": "Extract the email address from this text: \"Contact Jane at jane.doe@example.org or call 555-0100.\" Answer with the email address only.", "check": "contains", "expect": "jane.doe@example.org"}
+{"id": "json", "q": "Return a JSON object with the keys \"name\" and \"age\" for this sentence: \"Maria is 34 years old.\" Output only the JSON, no explanation.", "check": "json", "expect": {"name": "Maria", "age": 34}}
+{"id": "sentiment", "q": "Is the sentiment of this review positive or negative? \"The battery died after two hours, very disappointing.\" Answer with one word.", "check": "contains", "expect": "negative"}
+{"id": "len", "q": "In Python, what does len(\"hello world\") return? Answer with just the number.", "check": "number", "expect": "11"}
+{"id": "sql", "q": "Which SQL keyword removes duplicate rows from the result of a SELECT? Answer with the keyword only.", "check": "contains", "expect": "distinct"}
+{"id": "bugfix", "q": "This Python function has a bug: def add(a, b): return a - b. Reply with the corrected return statement only.", "check": "regex", "expect": "return\\s+a\\s*\\+\\s*b|return\\s+b\\s*\\+\\s*a"}
