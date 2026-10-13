@@ -1,0 +1,11 @@
+The following is an internal engineering note written by a platform team after moving their documentation search from a hosted API to a small model running on their own servers.
+
+Background. Our documentation portal serves about four hundred engineers. For two years, search questions were answered by a hosted model through a paid API. The answers were good, but three problems kept coming back. First, the monthly bill grew with usage and was hard to predict, because a single long question with pasted logs could cost as much as fifty short ones. Second, some teams were not allowed to send internal stack traces to an outside provider, so they simply stopped using the tool. Third, latency depended on a network path we did not control, and on bad days the first word of an answer took several seconds to appear.
+
+What we tried. We picked a quantized model with a few billion parameters, small enough to run on the ordinary virtual machines we already pay for, with no GPU. We kept the retrieval step unchanged: the same embeddings, the same index, the same top five passages pasted into the prompt. Only the model that writes the final answer changed. We ran both systems side by side for three weeks and asked engineers to rate each answer as useful or not useful without telling them which system wrote it.
+
+What we measured. For every request we logged the number of prompt tokens, the time to the first generated token, the number of generated tokens and the total time. We also logged memory use on each machine and how often a request had to wait in a queue because the model was busy with another one.
+
+What we learned. The most important lessons, in order of how much they changed our plans, were these:
+
+1.
