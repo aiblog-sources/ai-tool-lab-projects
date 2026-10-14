@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Structured JSON from small local LLMs: grammar vs prompt](2026-10-14-small-llm-json-output/) | [Small LLM JSON output: the grammar fixes syntax, not answers](https://aitoollabs.dev/posts/small-llm-json-output/) | Shipped |
 | [Small LLMs on a 2-core laptop CPU: 10 models measured](2026-10-13-small-llms-laptop-cpu/) | [Best small LLM for a CPU-only laptop: 10 models measured](https://aitoollabs.dev/posts/best-small-llm-for-cpu/) | Shipped |
 | [Ollama vs llama.cpp on a 2-core laptop CPU](2026-10-12-ollama-vs-llama-cpp-cpu/) | [Ollama vs llama.cpp on CPU: same speed, different defaults](https://aitoollabs.dev/posts/ollama-vs-llama-cpp-cpu/) | Shipped |
 | [Scheduling AI agents: Hermes Agent cron vs systemd vs cron](2026-10-11-agent-schedulers/) | [Hermes Agent cron vs systemd timers for scheduled AI agents](https://aitoollabs.dev/posts/hermes-agent-cron-vs-systemd-timers/) | Shipped |
