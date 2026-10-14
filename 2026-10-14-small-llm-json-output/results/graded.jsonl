@@ -1,0 +1,360 @@
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "refund_requested", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t15", "strict": true, "parses": true, "valid": false, "schema_errors": ["$.order_id: matches no anyOf branch"], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "refund_requested", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "prompt", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 0.8B", "mode": "grammar-only", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t01", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t02", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t04", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t05", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t06", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t07", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t08", "strict": true, "parses": true, "valid": false, "schema_errors": ["$: extra key $schema"], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t09", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t10", "strict": true, "parses": true, "valid": false, "schema_errors": ["$: missing customer_name", "$: missing order_id", "$: missing category"], "wrong_fields": ["customer_name", "order_id", "category", "refund_requested", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["customer_name", "category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t11", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t12", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t13", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t14", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["customer_name", "category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t16", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t18", "strict": false, "parses": true, "valid": false, "schema_errors": ["$.order_id: matches no anyOf branch"], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t19", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "prompt", "id": "t20", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Llama 3.2 1B", "mode": "grammar-only", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "refund_requested", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["customer_name", "category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "prompt", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 2.5 1.5B", "mode": "grammar-only", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t01", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t02", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t03", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t04", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t05", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t06", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t07", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t08", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "category", "refund_requested", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t09", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t11", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t12", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t13", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t14", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["refund_requested"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t15", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t16", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t17", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t18", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t19", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "prompt", "id": "t20", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 2B", "mode": "grammar-only", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t01", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t02", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t03", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t04", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t05", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t06", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t07", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t08", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t09", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t10", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t11", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t12", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t13", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t14", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t15", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t16", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t17", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t18", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["order_id", "items"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t19", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "prompt", "id": "t20", "strict": false, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Gemma 4 E2B", "mode": "grammar-only", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t01", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t02", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t03", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t04", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t05", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t06", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t07", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t08", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category", "items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t09", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t10", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t11", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t12", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t13", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t14", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t15", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t16", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t17", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t18", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["items"], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t19", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "prompt", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": [], "finish_reason": "stop", "error": null}
+{"model": "Qwen 3.5 4B", "mode": "grammar-only", "id": "t20", "strict": true, "parses": true, "valid": true, "schema_errors": [], "wrong_fields": ["category"], "finish_reason": "stop", "error": null}

@@ -1,0 +1,7 @@
+model	status	background_cpu_pct	peak_rss_mib	minutes
+Qwen 3.5 0.8B	ok	68	1197	8.7
+Llama 3.2 1B	ok	28	1583	23.9
+Qwen 2.5 1.5B	ok	52	1886	10.3
+Qwen 3.5 2B	ok	55	2284	15.3
+Gemma 4 E2B	ok	53	4588	18.2
+Qwen 3.5 4B	ok	26	5028	29.8
