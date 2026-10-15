@@ -1,0 +1,17 @@
+{
+  "name": "notes-search-mcp",
+  "version": "1.0.0",
+  "description": "A stdio MCP server in under 100 lines that searches a folder of Markdown files, tested end to end with Claude Code.",
+  "type": "module",
+  "bin": { "notes-search-mcp": "server.mjs" },
+  "scripts": {
+    "start": "node server.mjs",
+    "bench:handshake": "node bench/handshake.mjs"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  }
+}

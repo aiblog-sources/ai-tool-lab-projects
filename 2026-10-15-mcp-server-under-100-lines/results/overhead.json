@@ -1,0 +1,1071 @@
+[
+  {
+    "name": "none",
+    "mcp_servers": [],
+    "n_tools": 22,
+    "input_tokens": 13486,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.019964199999999998
+  },
+  {
+    "name": "deferred",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 13508,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0162809
+  },
+  {
+    "name": "none-upfront",
+    "mcp_servers": [],
+    "n_tools": 21,
+    "input_tokens": 27979,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0207817
+  },
+  {
+    "name": "upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 28327,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0208165
+  },
+  {
+    "name": "none",
+    "mcp_servers": [],
+    "n_tools": 22,
+    "input_tokens": 13486,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0013924
+  },
+  {
+    "name": "deferred",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 13508,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0013946000000000002
+  },
+  {
+    "name": "none-upfront",
+    "mcp_servers": [],
+    "n_tools": 21,
+    "input_tokens": 27979,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0028417000000000004
+  },
+  {
+    "name": "upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 28327,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0028765
+  },
+  {
+    "name": "none",
+    "mcp_servers": [],
+    "n_tools": 22,
+    "input_tokens": 13486,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0013924
+  },
+  {
+    "name": "deferred",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 13508,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0013946000000000002
+  },
+  {
+    "name": "none-upfront",
+    "mcp_servers": [],
+    "n_tools": 21,
+    "input_tokens": 27979,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0028417000000000004
+  },
+  {
+    "name": "upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 28327,
+    "turns": 1,
+    "answer": "OK",
+    "tools": [],
+    "cost_usd": 0.0028765
+  },
+  {
+    "name": "noisy-start",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "According to your notes, Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. The figure comes from your \"Best small LLM for a CPU-only laptop\" post, and the same run used 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.027281600000000003
+  },
+  {
+    "name": "noisy-start-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 57607,
+    "turns": 2,
+    "answer": "Your notes say Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. That run used 3.9 GB of RAM and got 18 of 20 sanity questions right.",
+    "tools": [
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0250177
+  },
+  {
+    "name": "noisy-each",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "According to your notes, Gemma 4 E2B generated 7.1 tokens per second on the 2-core Intel laptop CPU.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.006442400000000001
+  },
+  {
+    "name": "noisy-each-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 57607,
+    "turns": 2,
+    "answer": "Your notes say Gemma 4 E2B reached 7.1 tokens per second on the 2-core laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0070783
+  },
+  {
+    "name": "noisy-nonl",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "Your notes say Gemma 4 E2B reached 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.006562400000000001
+  },
+  {
+    "name": "noisy-nonl-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 21,
+    "input_tokens": 142126,
+    "turns": 6,
+    "answer": "I couldn't find the answer. The working directory (`<work>/work-b`) is empty, and I can only read files inside it, so I couldn't search your home folder for the notes. If you give me the path to the file or tell me where the notes live, I'll look up the Gemma 4 E2B tokens-per-second figure.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIil \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json 2>/dev/null | head -20"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -rIil \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIil \"gemma\" <work>/work-b"
+        }
+      },
+      {
+        "result": "(Bash completed with no output)",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b; ls ~ ~/Documents ~/notes ~/Notes 2>&1 | head -50"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: ls -la <work>/work-b; ls ~ ~/Documents ~/notes ~/Notes 2>&1",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b"
+        }
+      },
+      {
+        "result": "total 8\ndrwxrwxr-x 2 user user 4096 out 15 03:38 .\ndrwxrwxr-x 7 user user 4096 out 15 03:38 ..",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls ~"
+        }
+      },
+      {
+        "result": "ls in '~' was blocked. For security, Claude Code may only list files in the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      }
+    ],
+    "cost_usd": 0.041625600000000006
+  },
+  {
+    "name": "noisy-early-stdin",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "Your notes say Gemma 4 E2B reached 7.1 tokens per second on the 2-core Intel laptop (CPU-only), using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.006592400000000001
+  },
+  {
+    "name": "noisy-early-stdin-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 21,
+    "input_tokens": 142204,
+    "turns": 6,
+    "answer": "I couldn't find your notes, so I can't tell you the Gemma 4 E2B speed. The only directory I can access here is the working directory, `<work>/work-b`, and it's empty. Access to the rest of your home folder was blocked. If you tell me where the notes are, or paste the relevant part, I'll look again.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rniE \"gemma ?4|E2B\" ~ --include=*.md --include=*.txt --include=*.org -l 2>/dev/null | head -20"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -rniE \"gemma ?4|E2B\" ~ --include=*.md --include=*.txt --include=*.org -l",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rniE \"E2B\" <work>/work-b"
+        }
+      },
+      {
+        "result": "(Bash completed with no output)",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b ~ ; ls ~/Documents ~/notes ~/Notes 2>&1 | head -50"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: ls -la <work>/work-b ~ ; ls ~/Documents ~/notes ~/Notes 2>&1",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la ~"
+        }
+      },
+      {
+        "result": "ls in '~' was blocked. For security, Claude Code may only list files in the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b"
+        }
+      },
+      {
+        "result": "total 8\ndrwxrwxr-x 2 user user 4096 out 15 03:38 .\ndrwxrwxr-x 7 user user 4096 out 15 03:38 ..",
+        "is_error": false
+      }
+    ],
+    "cost_usd": 0.023895599999999996
+  },
+  {
+    "name": "noisy-start",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "According to your notes, Gemma 4 E2B generated 7.1 tokens per second on the 2-core Intel laptop CPU. The figure comes from \"Best small LLM for a CPU-only laptop: 10 models measured\".",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0067524
+  },
+  {
+    "name": "noisy-start-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 57613,
+    "turns": 2,
+    "answer": "Your notes say Gemma 4 E2B reached 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0286135
+  },
+  {
+    "name": "noisy-each",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "According to your notes, Gemma 4 E2B generated 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.006572400000000001
+  },
+  {
+    "name": "noisy-each-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 57607,
+    "turns": 2,
+    "answer": "Your notes say Gemma 4 E2B generated 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0071083
+  },
+  {
+    "name": "noisy-nonl",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 22,
+    "input_tokens": 13722,
+    "turns": 1,
+    "answer": "I can't answer that yet because the notes server failed to connect (it timed out after 30 seconds), so I couldn't read your notes. If you retry or fix the connection, I'll look up the Gemma 4 E2B tokens-per-second figure for the 2-core laptop.",
+    "tools": [],
+    "cost_usd": 0.0170535
+  },
+  {
+    "name": "noisy-nonl-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 21,
+    "input_tokens": 141952,
+    "turns": 5,
+    "answer": "I couldn't find the answer, because I found no notes to check. The working directory (`<work>/work-b`) is empty, and a search of it for \"Gemma\" returned nothing. I'm restricted to that directory in this session, so I couldn't look anywhere else. If you tell me where your notes are, I'll look there.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIl -i \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json 2>/dev/null | head -20"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -rIl -i \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIl -i \"gemma\" <work>/work-b"
+        }
+      },
+      {
+        "result": "(Bash completed with no output)",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b <work> ~"
+        }
+      },
+      {
+        "result": "ls in '<work>' was blocked. For security, Claude Code may only list files in the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b"
+        }
+      },
+      {
+        "result": "total 8\ndrwxrwxr-x 2 user user 4096 out 15 03:38 .\ndrwxrwxr-x 7 user user 4096 out 15 03:38 ..",
+        "is_error": false
+      }
+    ],
+    "cost_usd": 0.0223031
+  },
+  {
+    "name": "noisy-early-stdin",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 22,
+    "input_tokens": 13722,
+    "turns": 1,
+    "answer": "I can't answer that because the notes server failed to connect (it timed out after 30 seconds), so I couldn't read your notes. If you retry or fix the connection, I'll look up the Gemma 4 E2B tokens-per-second figure.",
+    "tools": [],
+    "cost_usd": 0.003656
+  },
+  {
+    "name": "noisy-early-stdin-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 21,
+    "input_tokens": 141852,
+    "turns": 5,
+    "answer": "I couldn't answer this from your notes. The only place I'm allowed to look is the working directory (`<work>/work-b`), and a search there for \"gemma\" found nothing. I'm blocked from listing or searching the rest of your home directory.\n\nIf your notes are somewhere else, give me the path (or add that directory to the session), and I'll check for the tokens-per-second figure.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la; grep -ril \"gemma\" . ~/notes ~/Documents 2>/dev/null | head"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: ls -la; grep -ril \"gemma\" . ~/notes ~/Documents",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -ril \"gemma\" <work>/work-b"
+        }
+      },
+      {
+        "result": "(Bash completed with no output)",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -ril \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json 2>/dev/null | head"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -ril \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls ~"
+        }
+      },
+      {
+        "result": "ls in '~' was blocked. For security, Claude Code may only list files in the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      }
+    ],
+    "cost_usd": 0.022006900000000003
+  },
+  {
+    "name": "noisy-start",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42510,
+    "turns": 3,
+    "answer": "Your notes say Gemma 4 E2B reached 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.006562400000000001
+  },
+  {
+    "name": "noisy-start-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 57607,
+    "turns": 2,
+    "answer": "Your notes say Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right.",
+    "tools": [
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0072783
+  },
+  {
+    "name": "noisy-each",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 24,
+    "input_tokens": 42513,
+    "turns": 3,
+    "answer": "According to your notes, Gemma 4 E2B generated 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 5
+        }
+      },
+      {
+        "result": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]",
+        "is_error": null
+      },
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0269619
+  },
+  {
+    "name": "noisy-each-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "connected",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 23,
+    "input_tokens": 57613,
+    "turns": 2,
+    "answer": "According to your notes, Gemma 4 E2B generated 7.1 tokens per second on the 2-core Intel laptop CPU, using 3.9 GB of RAM.",
+    "tools": [
+      {
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      },
+      {
+        "result": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the best small LLM for a laptop with no GPU? I ran 10 of them, from 0.8B to 7.5B parameters, on a 2-core ",
+        "is_error": null
+      }
+    ],
+    "cost_usd": 0.0071189
+  },
+  {
+    "name": "noisy-nonl",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 22,
+    "input_tokens": 27752,
+    "turns": 2,
+    "answer": "I couldn't check your notes, so I don't have the tokens-per-second figure for Gemma 4 E2B on the 2-core laptop. The `notes` MCP server timed out on connect (CONNECT_TIMEOUT after 30 seconds), and its tools aren't available this session. My fallback search of local files for \"Gemma 4\" needed approval and didn't run. If you retry or fix the notes server, I can look again.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIl -i \"gemma 4\" ~ --include=*.md --include=*.txt 2>/dev/null | head"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -rIl -i \"gemma 4\" ~ --include=*.md --include=*.txt",
+        "is_error": true
+      }
+    ],
+    "cost_usd": 0.007594
+  },
+  {
+    "name": "noisy-nonl-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 21,
+    "input_tokens": 200269,
+    "turns": 7,
+    "answer": "I couldn't find your notes, so I can't tell you the tokens-per-second figure for Gemma 4 E2B on the 2-core laptop. The only folder I can search is `<work>/work-b`, and it's empty. Searches anywhere else, including your home directory, were blocked. If you tell me where the notes are or add that folder to the session, I'll look again.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "cd ~ && grep -rIil \"gemma\" --include=*.md --include=*.txt --include=*.org --include=*.json . 2>/dev/null | head -20"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: cd ~ && grep -rIil \"gemma\" --include=*.md --include=*.txt --include=*.org --include=*.json .",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIil \"gemma\" ~ --include=*.md --include=*.txt --include=*.org 2>/dev/null | head -20"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -rIil \"gemma\" ~ --include=*.md --include=*.txt --include=*.org",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIil gemma <work>/work-b"
+        }
+      },
+      {
+        "result": "(Bash completed with no output)",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la ~ <work>/work-b"
+        }
+      },
+      {
+        "result": "ls in '~' was blocked. For security, Claude Code may only list files in the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b"
+        }
+      },
+      {
+        "result": "total 8\ndrwxrwxr-x 2 user user 4096 out 15 03:38 .\ndrwxrwxr-x 7 user user 4096 out 15 03:38 ..",
+        "is_error": false
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -rIil gemma <work>"
+        }
+      },
+      {
+        "result": "grep in '<work>' was blocked. For security, Claude Code may only search for patterns in files from the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      }
+    ],
+    "cost_usd": 0.0335118
+  },
+  {
+    "name": "noisy-early-stdin",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 22,
+    "input_tokens": 13722,
+    "turns": 1,
+    "answer": "I couldn't check your notes because the `notes` MCP server failed to connect (CONNECT_TIMEOUT after 30 seconds), so I don't have the Gemma 4 E2B tokens-per-second figure. Once you've fixed or retried the server, I can look it up.",
+    "tools": [],
+    "cost_usd": 0.003526
+  },
+  {
+    "name": "noisy-early-stdin-upfront",
+    "mcp_servers": [
+      {
+        "name": "notes",
+        "status": "failed",
+        "source": "dynamic"
+      }
+    ],
+    "n_tools": 21,
+    "input_tokens": 113299,
+    "turns": 4,
+    "answer": "I couldn't find the answer, because I couldn't find your notes. The working directory (`<work>/work-b`) is empty. My search tools are restricted to that directory, so I couldn't look anywhere else.\n\nIf you tell me where the notes are, or paste the relevant part, I'll look up the Gemma 4 E2B tokens-per-second figure for the 2-core laptop.",
+    "tools": [
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -ril \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json 2>/dev/null | grep -v node_modules | head -20"
+        }
+      },
+      {
+        "result": "This Bash command contains multiple operations. The following part requires approval: grep -ril \"gemma\" ~ --include=*.md --include=*.txt --include=*.org --include=*.json",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "grep -ril \"gemma\" ~/.cache/ai-tool-lab"
+        }
+      },
+      {
+        "result": "grep in '~/.cache/ai-tool-lab' was blocked. For security, Claude Code may only search for patterns in files from the allowed working directories for this session: '<work>/work-b'.",
+        "is_error": true
+      },
+      {
+        "name": "Bash",
+        "input": {
+          "command": "ls -la <work>/work-b"
+        }
+      },
+      {
+        "result": "total 8\ndrwxrwxr-x 2 user user 4096 out 15 03:38 .\ndrwxrwxr-x 7 user user 4096 out 15 03:38 ..",
+        "is_error": false
+      }
+    ],
+    "cost_usd": 0.0179134
+  }
+]
