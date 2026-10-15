@@ -1,0 +1,23 @@
+{
+  "runs": 20,
+  "median_ms": {
+    "initialize": 383.4,
+    "list": 13.8,
+    "search": 8.8
+  },
+  "max_ms": {
+    "initialize": 440.9,
+    "list": 18.1,
+    "search": 9.6
+  },
+  "tools": [
+    "search_notes",
+    "read_note"
+  ],
+  "tools_list_bytes": 960,
+  "top": [
+    "ollama-vs-llama-cpp-cpu.md",
+    "best-small-llm-for-cpu.md",
+    "claude-code-daily-timer-day-one.md"
+  ]
+}

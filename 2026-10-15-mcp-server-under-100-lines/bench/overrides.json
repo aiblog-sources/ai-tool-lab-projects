@@ -1,0 +1,6 @@
+[
+  {"file": "rep1.jsonl", "qid": 5, "phrasing": "bare", "condition": "good", "correct": false,
+   "reason": "Says it cannot answer, then guesses that all 120 should pass. A guess, not a finding."},
+  {"file": "rep2.jsonl", "qid": 5, "phrasing": "bare", "condition": "vague", "correct": false,
+   "reason": "Says it cannot give a count, then explains that every reply should pass. A guess, not a finding."}
+]

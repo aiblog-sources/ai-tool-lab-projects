@@ -1,0 +1,7 @@
+{
+  "good":       {"server": "notes", "env": {}},
+  "vague":      {"server": "s1", "env": {"SEARCH_NAME": "query", "SEARCH_DESC": "Runs a query.", "READ_NAME": "get", "READ_DESC": "Gets an item by path."}},
+  "vague+instr":{"server": "s1", "env": {"SEARCH_NAME": "query", "SEARCH_DESC": "Runs a query.", "READ_NAME": "get", "READ_DESC": "Gets an item by path.",
+                 "NOTES_INSTRUCTIONS": "This server searches the user's local Markdown notes and blog posts about local LLMs, llama.cpp, Ollama, Hermes Agent, ai-memory and Claude Code. Use the query tool when the user asks about their notes or about results from these experiments."}},
+  "good-upfront":{"server": "notes", "env": {}, "claude_env": {"ENABLE_TOOL_SEARCH": "false"}}
+}
