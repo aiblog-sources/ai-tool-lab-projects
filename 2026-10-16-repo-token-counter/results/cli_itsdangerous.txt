@@ -1,0 +1,34 @@
+50 text files (0 binary or skipped), 282,542 characters
+
+type          files       chars     o200k  chars/tok
+lockfile          1     162,288    74,518       2.18
+python           15      59,558    13,620       4.37
+svg               3      21,009    12,136       1.73
+markdown         16      26,480     6,523       4.06
+data              9      11,122     3,512       3.17
+other             6       2,085       669       3.12
+
+Tokens: o200k_base (GPT-5 family) 110,978,
+        Claude 4.7 and later (estimate) 155,311, Claude 4.6 and earlier (estimate) 132,298, chars/4 rule 70,635
+
+Largest files (o200k tokens):
+     74,518   67.1%  uv.lock  (lockfile)
+      6,984    6.3%  docs/_static/itsdangerous-name.svg
+      3,661    3.3%  src/itsdangerous/serializer.py
+      3,406    3.1%  docs/_static/itsdangerous-logo.svg
+      2,171    2.0%  src/itsdangerous/signer.py
+  One file is over a quarter of the total; if a model does not need it, try --exclude 'uv.lock' or --no-lockfiles.
+
+Cost to send the whole repo once as input (prices checked 2026-10-16):
+  Claude Opus 5.5              $0.62  at $4.0/MTok
+  Claude Sonnet 5.5            $0.31  at $2.0/MTok
+  Claude Haiku 5.5             $0.08  at $0.5/MTok (over 100k: long-context price)
+  Claude Sonnet 4.6            $0.40  at $3.0/MTok
+  GPT-5.4                      $0.28  at $2.5/MTok
+  GPT-5.4 mini                 $0.08  at $0.75/MTok
+  Gemini 3.1 Pro Preview       $0.22  at $2.0/MTok
+  Gemini 3.8 Flash             $0.08  at $0.75/MTok
+
+Claude counts are estimates (see claude_ratios.json); the other prices use o200k_base,
+which is exact for the GPT-5 family and an approximation for newer GPT and Gemini models.
+1.37 s wall, 103960 KB max RSS
