@@ -1,0 +1,33 @@
+228 text files (9 binary or skipped), 3,218,113 characters
+
+type          files       chars     o200k  chars/tok
+rust            110   1,901,836   466,247       4.08
+csv              12     716,626   279,277       2.57
+markdown         24     307,394    80,389       3.82
+other            61     232,958    67,483       3.45
+data             19      41,153    11,414       3.61
+lockfile          2      18,146     6,740       2.69
+
+Tokens: o200k_base (GPT-5 family) 911,550,
+        Claude 4.7 and later (estimate) 1,410,572, Claude 4.6 and earlier (estimate) 1,123,330, chars/4 rule 804,528
+
+Largest files (o200k tokens):
+     82,817    9.1%  benchsuite/runs/2016-09-20-ubuntu1604-ec2/raw.csv
+     63,937    7.0%  crates/core/flags/defs.rs
+     42,375    4.6%  benchsuite/runs/2018-01-08-archlinux-cheetah/raw.csv
+     35,207    3.9%  benchsuite/runs/2020-10-14-archlinux-frink/raw.csv
+     30,590    3.4%  crates/printer/src/standard.rs
+
+Cost to send the whole repo once as input (prices checked 2026-10-16):
+  Claude Opus 5.5              $5.64  at $4.0/MTok  does not fit in 1000k context
+  Claude Sonnet 5.5            $2.82  at $2.0/MTok  does not fit in 1000k context
+  Claude Haiku 5.5             $0.71  at $0.5/MTok (over 100k: long-context price)  does not fit in 1000k context
+  Claude Sonnet 4.6            $3.37  at $3.0/MTok  does not fit in 1000k context
+  GPT-5.4                      $4.56  at $5.0/MTok (over 272k: long-context price)
+  GPT-5.4 mini                 $0.68  at $0.75/MTok
+  Gemini 3.1 Pro Preview       $3.65  at $4.0/MTok (over 200k: long-context price)
+  Gemini 3.8 Flash             $0.68  at $0.75/MTok
+
+Claude counts are estimates (see claude_ratios.json); the other prices use o200k_base,
+which is exact for the GPT-5 family and an approximation for newer GPT and Gemini models.
+3.44 s wall, 104844 KB max RSS

@@ -1,0 +1,30 @@
+[
+  {
+    "repo": "itsdangerous",
+    "model": "claude-sonnet-5-5",
+    "files": 50,
+    "chars": 282591,
+    "claude_tokens": 144753
+  },
+  {
+    "repo": "itsdangerous",
+    "model": "claude-sonnet-4-6",
+    "files": 50,
+    "chars": 282591,
+    "claude_tokens": 124272
+  },
+  {
+    "repo": "hexyl",
+    "model": "claude-sonnet-5-5",
+    "files": 21,
+    "chars": 193203,
+    "claude_tokens": 86540
+  },
+  {
+    "repo": "hexyl",
+    "model": "claude-sonnet-4-6",
+    "files": 21,
+    "chars": 193203,
+    "claude_tokens": 71089
+  }
+]

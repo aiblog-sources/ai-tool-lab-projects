@@ -1,0 +1,32 @@
+{
+  "measured": "2026-10-16 with claude -p (Claude Code 2.1.301), see results/claude_counts*.csv",
+  "note": "Claude tokens per o200k_base token, by file type. 'claude' = Claude Opus 4.7 and later (measured on Sonnet 5.5; Haiku 5.5, Opus 5.5 and Opus 4.7 gave the same counts or close), 'claude_legacy' = Sonnet 4.6 and earlier. 'other' is the ratio over all sampled files.",
+  "ratio_to_o200k": {
+    "claude": {
+      "go": 1.672,
+      "javascript": 1.465,
+      "python": 1.545,
+      "rust": 1.611,
+      "typescript": 1.536,
+      "csv": 1.532,
+      "data": 1.424,
+      "lockfile": 1.425,
+      "markdown": 1.379,
+      "svg": 1.083,
+      "other": 1.406
+    },
+    "claude_legacy": {
+      "go": 1.23,
+      "javascript": 1.281,
+      "python": 1.212,
+      "rust": 1.266,
+      "typescript": 1.233,
+      "csv": 1.238,
+      "data": 1.146,
+      "lockfile": 1.229,
+      "markdown": 1.099,
+      "svg": 1.009,
+      "other": 1.15
+    }
+  }
+}

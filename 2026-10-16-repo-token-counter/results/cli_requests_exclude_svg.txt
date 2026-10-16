@@ -1,0 +1,31 @@
+121 text files (8 binary or skipped), 663,771 characters
+
+type          files       chars     o200k  chars/tok
+python           37     407,002    94,790       4.29
+markdown         31     185,505    45,213       4.10
+other            40      54,956    22,988       2.39
+data             13      16,308     4,838       3.37
+
+Tokens: o200k_base (GPT-5 family) 167,829,
+        Claude 4.7 and later (estimate) 248,010, Claude 4.6 and earlier (estimate) 196,555, chars/4 rule 165,942
+
+Largest files (o200k tokens):
+     25,325   15.1%  tests/test_requests.py
+     16,465    9.8%  HISTORY.md
+      9,827    5.9%  docs/user/advanced.rst
+      9,117    5.4%  src/requests/models.py
+      8,663    5.2%  src/requests/utils.py
+
+Cost to send the whole repo once as input (prices checked 2026-10-16):
+  Claude Opus 5.5              $0.99  at $4.0/MTok
+  Claude Sonnet 5.5            $0.50  at $2.0/MTok
+  Claude Haiku 5.5             $0.12  at $0.5/MTok (over 100k: long-context price)
+  Claude Sonnet 4.6            $0.59  at $3.0/MTok
+  GPT-5.4                      $0.42  at $2.5/MTok
+  GPT-5.4 mini                 $0.13  at $0.75/MTok
+  Gemini 3.1 Pro Preview       $0.34  at $2.0/MTok
+  Gemini 3.8 Flash             $0.13  at $0.75/MTok
+
+Claude counts are estimates (see claude_ratios.json); the other prices use o200k_base,
+which is exact for the GPT-5 family and an approximation for newer GPT and Gemini models.
+1.68 s wall, 104700 KB max RSS
