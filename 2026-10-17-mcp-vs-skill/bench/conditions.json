@@ -1,0 +1,8 @@
+{
+  "mcp":          {"mcp": true,  "skill": false, "env": {}},
+  "skill":        {"mcp": false, "skill": true,  "env": {}},
+  "both":         {"mcp": true,  "skill": true,  "env": {}},
+  "both+instr":   {"mcp": true,  "skill": true,  "env": {"NOTES_INSTRUCTIONS": "Searches the user's local Markdown notes and blog posts. Use search_notes when the user asks about their notes or about results from their experiments."}},
+  "both-upfront": {"mcp": true,  "skill": true,  "env": {}, "claude_env": {"ENABLE_TOOL_SEARCH": "false"}},
+  "both-vague":   {"mcp": true,  "skill": true,  "server": "s1", "env": {"SEARCH_NAME": "query", "SEARCH_DESC": "Runs a query.", "READ_NAME": "get", "READ_DESC": "Gets an item by path."}}
+}
