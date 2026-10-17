@@ -1,0 +1,15 @@
+{
+  "name": "mcp-vs-skill",
+  "version": "1.0.0",
+  "description": "The same notes search as an MCP server and as a Claude Code Skill, and a benchmark of which one Claude uses.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  }
+}

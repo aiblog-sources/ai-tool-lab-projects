@@ -1,0 +1,128 @@
+[
+  {
+    "name": "none",
+    "input_tokens": 13631,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "mcp",
+    "input_tokens": 13653,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "skill",
+    "input_tokens": 13675,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both",
+    "input_tokens": 13697,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none-upfront",
+    "input_tokens": 28210,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "mcp-upfront",
+    "input_tokens": 28558,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both-upfront",
+    "input_tokens": 28602,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none",
+    "input_tokens": 13631,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "mcp",
+    "input_tokens": 13653,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "skill",
+    "input_tokens": 13675,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both",
+    "input_tokens": 13697,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none-upfront",
+    "input_tokens": 28210,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "mcp-upfront",
+    "input_tokens": 28558,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both-upfront",
+    "input_tokens": 28602,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none",
+    "input_tokens": 13631,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "mcp",
+    "input_tokens": 13653,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "skill",
+    "input_tokens": 13675,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both",
+    "input_tokens": 13697,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none-upfront",
+    "input_tokens": 28210,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "mcp-upfront",
+    "input_tokens": 28558,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both-upfront",
+    "input_tokens": 28602,
+    "turns": 1,
+    "answer": "OK"
+  }
+]
