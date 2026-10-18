@@ -1,0 +1,2 @@
+model	status	background_cpu_pct	peak_rss_mib	minutes
+Qwen 3.5 0.8B	ok	57	1413	41.5
