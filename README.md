@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Small local LLM JSON above temperature 0: temperature vs samplers vs grammar](2026-10-18-small-llm-json-temperature/) | [Does temperature break JSON output? Small LLMs, measured](https://aitoollabs.dev/posts/small-llm-json-temperature/) | Shipped |
 | [MCP server vs Skill for the same job in Claude Code](2026-10-17-mcp-vs-skill/) | [Claude Code Skill vs MCP server: which one does Claude use?](https://aitoollabs.dev/posts/claude-code-skill-vs-mcp/) | Shipped |
 | [How many tokens is my codebase? A counter with real Claude numbers](2026-10-16-repo-token-counter/) | [How many tokens is my codebase? Claude counts 58% more than GPT](https://aitoollabs.dev/posts/count-tokens-in-codebase/) | Shipped |
 | [An MCP server in under 100 lines, tested with Claude Code](2026-10-15-mcp-server-under-100-lines/) | [A 97-line MCP server for Claude Code, and when Claude uses it](https://aitoollabs.dev/posts/mcp-server-for-claude-code/) | Shipped |
