@@ -1,0 +1,9 @@
+{
+  "name": "repomix-compress-accuracy",
+  "private": true,
+  "description": "Does Repomix --compress keep what Claude needs to answer questions about the code?",
+  "license": "MIT",
+  "dependencies": {
+    "repomix": "1.18.1"
+  }
+}
