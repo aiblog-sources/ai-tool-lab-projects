@@ -1,0 +1,291 @@
+{
+ "repos": {
+  "ky": {
+   "name": "ky (sindresorhus/ky, TypeScript HTTP client)",
+   "commit": "3541888"
+  },
+  "requests": {
+   "name": "requests (psf/requests, Python HTTP library)",
+   "commit": "611c616"
+  },
+  "cobra": {
+   "name": "cobra (spf13/cobra, Go CLI library)",
+   "commit": "adbc881"
+  }
+ },
+ "questions": [
+  {
+   "id": "ky-retry-limit",
+   "repo": "ky",
+   "q": "What is the default value of the retry `limit` option? Answer with the number.",
+   "pattern": "\\b2\\b",
+   "evidence": [
+    "limit: 2",
+    "@default 2"
+   ]
+  },
+  {
+   "id": "ky-retry-status",
+   "repo": "ky",
+   "q": "Which HTTP status codes are retried by default? List them.",
+   "pattern": "(?s)(?=.*408)(?=.*413)(?=.*429)(?=.*500)(?=.*502)(?=.*503)(?=.*504)",
+   "evidence": [
+    "[408, 413, 429, 500, 502, 503, 504]"
+   ]
+  },
+  {
+   "id": "ky-limit-error",
+   "repo": "ky",
+   "q": "What exact error message does ky throw when `retry.limit` is not valid?",
+   "pattern": "finite, non-negative integer",
+   "evidence": [
+    "'`retry.limit` must be a finite, non-negative integer'"
+   ]
+  },
+  {
+   "id": "ky-max-timeout",
+   "repo": "ky",
+   "q": "What is the largest `timeout` value ky accepts, in milliseconds? Answer with the number.",
+   "pattern": "2[,_ ]?147[,_ ]?483[,_ ]?647",
+   "evidence": [
+    "2_147_483_647"
+   ]
+  },
+  {
+   "id": "ky-symfony-header",
+   "repo": "ky",
+   "q": "Which response header does ky read for the retry delay of Symfony-based services?",
+   "pattern": "(?i)X-RateLimit-Retry-After",
+   "evidence": [
+    "'X-RateLimit-Retry-After'"
+   ]
+  },
+  {
+   "id": "ky-epoch-threshold",
+   "repo": "ky",
+   "q": "At what value does ky start reading a `RateLimit-Reset` header as an epoch timestamp instead of a delay in seconds? Answer with the number.",
+   "pattern": "1[,_ ]?000[,_ ]?000[,_ ]?000\\b|\\b1e9\\b|10\\^9",
+   "evidence": [
+    "1_000_000_000"
+   ]
+  },
+  {
+   "id": "ky-text-accept",
+   "repo": "ky",
+   "q": "What `Accept` header value does ky send when you call the `.text()` shortcut?",
+   "pattern": "text/\\*",
+   "evidence": [
+    "text: 'text/*'"
+   ]
+  },
+  {
+   "id": "ky-boundary-size",
+   "repo": "ky",
+   "q": "How many bytes does ky assume a multipart form boundary takes when it estimates upload size? Answer with the number.",
+   "pattern": "\\b40\\b",
+   "evidence": [
+    "usualFormBoundarySize = 40"
+   ]
+  },
+  {
+   "id": "ky-stream-error",
+   "repo": "ky",
+   "q": "What exact error message does ky throw when `onDownloadProgress` is set but `ReadableStream` is not available?",
+   "pattern": "Streams are not supported in your environment",
+   "evidence": [
+    "Streams are not supported in your environment"
+   ]
+  },
+  {
+   "id": "ky-prefixurl",
+   "repo": "ky",
+   "q": "In ky v2, what has the `prefixUrl` option been renamed to? Answer with the new option name.",
+   "pattern": "(?i)(^\\W*|renamed (to )?|is now |to )`?prefix`?(?![\\w-]*Url)",
+   "evidence": [
+    "renamed `prefix` in v2"
+   ]
+  },
+  {
+   "id": "rq-poolsize",
+   "repo": "requests",
+   "q": "What is the default connection pool size (DEFAULT_POOLSIZE) of HTTPAdapter? Answer with the number.",
+   "pattern": "\\b10\\b",
+   "evidence": [
+    "DEFAULT_POOLSIZE = 10"
+   ]
+  },
+  {
+   "id": "rq-redirect-limit",
+   "repo": "requests",
+   "q": "What is the default maximum number of redirects a Session follows? Answer with the number.",
+   "pattern": "\\b30\\b",
+   "evidence": [
+    "DEFAULT_REDIRECT_LIMIT: int = 30"
+   ]
+  },
+  {
+   "id": "rq-iter-chunk",
+   "repo": "requests",
+   "q": "What is the default `chunk_size` of Response.iter_lines? Answer with the number.",
+   "pattern": "\\b512\\b",
+   "evidence": [
+    "ITER_CHUNK_SIZE: int = 512"
+   ]
+  },
+  {
+   "id": "rq-content-chunk",
+   "repo": "requests",
+   "q": "When Response.content is first read, what chunk size in bytes is passed to iter_content? Answer with the number.",
+   "pattern": "10[,_ ]?240|10 ?\\* ?1024",
+   "evidence": [
+    "CONTENT_CHUNK_SIZE: int = 10 * 1024"
+   ]
+  },
+  {
+   "id": "rq-digest-401",
+   "repo": "requests",
+   "q": "In HTTPDigestAuth.handle_401, the digest retry only happens while num_401_calls is below what number? Answer with the number.",
+   "pattern": "\\b2\\b",
+   "evidence": [
+    "num_401_calls < 2"
+   ]
+  },
+  {
+   "id": "rq-too-many",
+   "repo": "requests",
+   "q": "What is the exact message of the TooManyRedirects exception raised by resolve_redirects? Give the format string.",
+   "pattern": "Exceeded .{0,30}redirects",
+   "evidence": [
+    "Exceeded {self.max_redirects} redirects."
+   ]
+  },
+  {
+   "id": "rq-http-https",
+   "repo": "requests",
+   "q": "When a redirect goes from http://example.com/ to https://example.com/ (default ports, same host), does should_strip_auth return True or False?",
+   "pattern": "\\bFalse\\b",
+   "evidence": [
+    "and new_parsed.port in (443, None)"
+   ]
+  },
+  {
+   "id": "rq-netrc",
+   "repo": "requests",
+   "q": "Which file names does requests look for in the home directory when reading netrc credentials? List them.",
+   "pattern": "(?s)(?=.*\\.netrc)(?=.*_netrc)",
+   "evidence": [
+    "(\".netrc\", \"_netrc\")"
+   ]
+  },
+  {
+   "id": "rq-ua-name",
+   "repo": "requests",
+   "q": "What is the default `name` argument of utils.default_user_agent?",
+   "pattern": "python-requests",
+   "evidence": [
+    "name: str = \"python-requests\""
+   ]
+  },
+  {
+   "id": "rq-allow-redirects",
+   "repo": "requests",
+   "q": "What is the default value of `allow_redirects` in Session.request? Answer True or False.",
+   "pattern": "\\bTrue\\b",
+   "evidence": [
+    "allow_redirects: bool = True",
+    "Set to True by default"
+   ]
+  },
+  {
+   "id": "cb-complete-cmd",
+   "repo": "cobra",
+   "q": "What is the name of the hidden command cobra uses to request shell completions (with descriptions)?",
+   "pattern": "__complete\\b",
+   "evidence": [
+    "ShellCompRequestCmd = \"__complete\""
+   ]
+  },
+  {
+   "id": "cb-suggest-dist",
+   "repo": "cobra",
+   "q": "If SuggestionsMinimumDistance is not set (zero or negative), what value does cobra use? Answer with the number.",
+   "pattern": "\\b2\\b",
+   "evidence": [
+    "c.SuggestionsMinimumDistance = 2"
+   ]
+  },
+  {
+   "id": "cb-usage-pad",
+   "repo": "cobra",
+   "q": "What is the value of the minUsagePadding constant? Answer with the number.",
+   "pattern": "\\b25\\b",
+   "evidence": [
+    "minUsagePadding = 25"
+   ]
+  },
+  {
+   "id": "cb-help-short",
+   "repo": "cobra",
+   "q": "What is the Short description of cobra's default help command?",
+   "pattern": "(?i)Help about any command",
+   "evidence": [
+    "Short: \"Help about any command\""
+   ]
+  },
+  {
+   "id": "cb-unknown-cmd",
+   "repo": "cobra",
+   "q": "What format string does cobra use for the error when a command is not found (in legacyArgs)?",
+   "pattern": "unknown command %q for %q",
+   "evidence": [
+    "\"unknown command %q for %q"
+   ]
+  },
+  {
+   "id": "cb-mousetrap",
+   "repo": "cobra",
+   "q": "What is the default value of MousetrapDisplayDuration?",
+   "pattern": "5 ?\\* ?time\\.Second|\\b5 ?(s\\b|seconds)",
+   "evidence": [
+    "MousetrapDisplayDuration = 5 * time.Second"
+   ]
+  },
+  {
+   "id": "cb-group-annotation",
+   "repo": "cobra",
+   "q": "What annotation key does MarkFlagsRequiredTogether set on the flags?",
+   "pattern": "cobra_annotation_required_if_others_set",
+   "evidence": [
+    "\"cobra_annotation_required_if_others_set\""
+   ]
+  },
+  {
+   "id": "cb-env-prefix",
+   "repo": "cobra",
+   "q": "What is the global environment variable prefix cobra uses for its completion configuration variables (for example the active help one)?",
+   "pattern": "\\bCOBRA\\b",
+   "evidence": [
+    "configEnvVarGlobalPrefix       = \"COBRA\""
+   ]
+  },
+  {
+   "id": "cb-desc-env",
+   "repo": "cobra",
+   "q": "What suffix does cobra use for the environment variable that turns completion descriptions on or off?",
+   "pattern": "COMPLETION_DESCRIPTIONS",
+   "evidence": [
+    "\"COMPLETION_DESCRIPTIONS\""
+   ]
+  },
+  {
+   "id": "cb-version-short",
+   "repo": "cobra",
+   "q": "What shorthand letter does cobra give the automatic --version flag when it is free?",
+   "pattern": "(?i)(^|[^\\w-])-?v\\b|\"v\"",
+   "evidence": [
+    "BoolP(\"version\", \"v\", false",
+    "A shorthand \"v\" flag will also be added"
+   ]
+  }
+ ]
+}
