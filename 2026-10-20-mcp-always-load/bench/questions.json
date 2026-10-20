@@ -1,0 +1,14 @@
+[
+  {"id": 1, "q": "What generation speed in tokens per second did Gemma 4 E2B reach on the 2-core laptop?", "expect": ["7\\.1"]},
+  {"id": 2, "q": "Which small model was the best trade-off in the CPU-only laptop test of 10 models?", "expect": ["gemma 4 e2b"]},
+  {"id": 3, "q": "How much memory did llama-server use when the first daily Claude Code run was OOM-killed?", "expect": ["10\\.6"]},
+  {"id": 4, "q": "What context size does Ollama pick by default when there is no GPU?", "expect": ["4,?096"]},
+  {"id": 5, "q": "With llama-server's json_schema grammar, how many of the 120 JSON replies from small models passed the schema?", "expect": ["(all|every|each)\\s+(of\\s+the\\s+)?120|120\\s+(of|out of)\\s+(the\\s+)?120|120/120|100\\s*%"]},
+  {"id": 6, "q": "In the small-model JSON test, how many of the 120 tickets had every checked field right with the grammar, and how many without it?", "expect": ["87", "88"]},
+  {"id": 7, "q": "What minimum context size does Hermes Agent require for local models?", "expect": ["64"]},
+  {"id": 8, "q": "How many seconds late did Hermes Agent's cron fire compared with systemd and cron?", "expect": ["49"]},
+  {"id": 9, "q": "How much RAM did the Hermes Agent gateway use while idle?", "expect": ["230"]},
+  {"id": 10, "q": "How many questions were in the ai-memory recall test, and in how many of the English ones did the right note come first?", "expect": ["24", "\\b6\\b"]},
+  {"id": 11, "q": "How much RAM did llama-server's prompt cache add in the small LLM CPU test, and which flag turns it off?", "expect": ["2\\.4", "cache-ram"]},
+  {"id": 12, "q": "How much longer did Ollama take to the first token after a cold start than llama.cpp on the 2-core laptop?", "expect": ["0\\.4", "1\\.7"]}
+]
