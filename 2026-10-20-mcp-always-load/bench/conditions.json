@@ -1,0 +1,9 @@
+{
+  "good":         {"server": "notes", "env": {}},
+  "good+tool":    {"server": "notes", "env": {"ALWAYS_LOAD": "search"}},
+  "good+server":  {"server": "notes", "env": {}, "config": {"alwaysLoad": true}},
+  "good+off":     {"server": "notes", "env": {}, "claude_env": {"ENABLE_TOOL_SEARCH": "false"}},
+  "vague":        {"server": "s1", "env": {"SEARCH_NAME": "query", "SEARCH_DESC": "Runs a query.", "READ_NAME": "get", "READ_DESC": "Gets an item by path."}},
+  "vague+tool":   {"server": "s1", "env": {"SEARCH_NAME": "query", "SEARCH_DESC": "Runs a query.", "READ_NAME": "get", "READ_DESC": "Gets an item by path.", "ALWAYS_LOAD": "search"}},
+  "vague+off":    {"server": "s1", "env": {"SEARCH_NAME": "query", "SEARCH_DESC": "Runs a query.", "READ_NAME": "get", "READ_DESC": "Gets an item by path."}, "claude_env": {"ENABLE_TOOL_SEARCH": "false"}}
+}

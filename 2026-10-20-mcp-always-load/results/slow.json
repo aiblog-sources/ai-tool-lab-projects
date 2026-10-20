@@ -1,0 +1,1778 @@
+[
+  {
+    "delay_ms": 0,
+    "stream_input": false,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "89b28035-248d-4b6d-8ef8-350bd8c8e86b",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01En9txk3J3qELgePjdHwdvQ",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01BCdKZcEtT6t8v12RkMnM6a",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01En9txk3J3qELgePjdHwdvQ",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01BCdKZcEtT6t8v12RkMnM6a",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated about **7.1 tokens per second** on the 2-core Intel laptop CPU. That run used 3.9 GB of RAM and got 18 of 20 sanity questions right. The figure comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 3,
+    "cost_usd": 0.0232195,
+    "duration_ms": 3894,
+    "duration_api_ms": 3753,
+    "wall_s": 5.65,
+    "first_input_tokens": 9762,
+    "input_tokens": 31269,
+    "output_tokens": 328,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": false,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "70a75fd4-17ce-4a0a-8f85-0172c615a556",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01FwJZNr7ZXWKjQTvkv3jaNq",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01FwJZNr7ZXWKjQTvkv3jaNq",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B reached **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (from the note \"Best small LLM for a CPU-only laptop\").",
+    "turns": 2,
+    "cost_usd": 0.0183543,
+    "duration_ms": 4868,
+    "duration_api_ms": 4731,
+    "wall_s": 7.14,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 167,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": false,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "03681cfd-36ae-4f8b-9f05-36a9a51658b1",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01DZqbYhYFmBbtJ7TXymLRK6",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01DZqbYhYFmBbtJ7TXymLRK6",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right, according to the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.018354000000000002,
+    "duration_ms": 6770,
+    "duration_api_ms": 6594,
+    "wall_s": 8.58,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 169,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": true,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "6c6f7e8f-0822-42ff-9b69-a43b2e78b42e",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01TB4oaByUV7hpZ7Q5pFt4wD",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01CDvj8fSA9VfksZJhsan2bn",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01TB4oaByUV7hpZ7Q5pFt4wD",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01CDvj8fSA9VfksZJhsan2bn",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated about **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from your note \"Best small LLM for a CPU-only laptop: 10 models measured\".",
+    "turns": 3,
+    "cost_usd": 0.012204699999999999,
+    "duration_ms": 12208,
+    "duration_api_ms": 12064,
+    "wall_s": 13.66,
+    "first_input_tokens": 9762,
+    "input_tokens": 31295,
+    "output_tokens": 344,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": true,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "3941d61e-7141-475f-8bec-4d65973c81dc",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_018udQMSm5FDtM9jGVw3chjM",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_018udQMSm5FDtM9jGVw3chjM",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right, according to the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0037805,
+    "duration_ms": 3060,
+    "duration_api_ms": 2916,
+    "wall_s": 4.86,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 169,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": true,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "1f27255f-b93d-4c4f-8805-b78245978a9a",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01P53HTfY248X4VQXY3ok4uH",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01P53HTfY248X4VQXY3ok4uH",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038231000000000003,
+    "duration_ms": 7145,
+    "duration_api_ms": 6997,
+    "wall_s": 8.86,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 171,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": false,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "7834c7d8-9d62-4586-a137-ec3b4f9e8bf9",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_014CpjmqpmLX49ypQJ1uCzj5",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01AWvhTbyhFYLqw6creWK6T4",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_014CpjmqpmLX49ypQJ1uCzj5",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01AWvhTbyhFYLqw6creWK6T4",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 3,
+    "cost_usd": 0.0122052,
+    "duration_ms": 7962,
+    "duration_api_ms": 7802,
+    "wall_s": 19.28,
+    "first_input_tokens": 9762,
+    "input_tokens": 31305,
+    "output_tokens": 342,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": false,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "36c9861a-0524-4912-8cb6-669d98b6b8ed",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01WCbtnsDJaEtQqKfex7iyns",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01WCbtnsDJaEtQqKfex7iyns",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from your note \"Best small LLM for a CPU-only laptop: 10 models measured\" (`best-small-llm-for-cpu.md`).",
+    "turns": 2,
+    "cost_usd": 0.004040500000000001,
+    "duration_ms": 3511,
+    "duration_api_ms": 3361,
+    "wall_s": 15.25,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 195,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": false,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "6ee951dd-3281-40c6-960a-7f141f636676",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01JanyxZ1WPXYqqaMLEPY5a6",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01JanyxZ1WPXYqqaMLEPY5a6",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038231000000000003,
+    "duration_ms": 3737,
+    "duration_api_ms": 3594,
+    "wall_s": 15.11,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 171,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": true,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "333694d9-9c6d-48a8-be45-a9eba5dbf88d",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01P9U7p4VXxqEmgkZvpWbtwP",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01KqabwpTXbqkL97pZP7Ngnz",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01P9U7p4VXxqEmgkZvpWbtwP",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01KqabwpTXbqkL97pZP7Ngnz",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It also used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from your note \"Best small LLM for a CPU-only laptop: 10 models measured\" (`best-small-llm-for-cpu.md`).",
+    "turns": 3,
+    "cost_usd": 0.012370599999999999,
+    "duration_ms": 5294,
+    "duration_api_ms": 5157,
+    "wall_s": 16.49,
+    "first_input_tokens": 9762,
+    "input_tokens": 31293,
+    "output_tokens": 361,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": true,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "5c7bb474-4c4f-4cca-bd2b-77e98693fb5a",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01QxSSksxG9p3K1JFuCZGnXL",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01QxSSksxG9p3K1JFuCZGnXL",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (source: `best-small-llm-for-cpu.md`).",
+    "turns": 2,
+    "cost_usd": 0.0037405,
+    "duration_ms": 7099,
+    "duration_api_ms": 6982,
+    "wall_s": 18.35,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 165,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": true,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "665f90e1-19ab-4b8f-a85f-d7b750e705c3",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01XxZ6z8kLHpkKxwTboU74y2",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01XxZ6z8kLHpkKxwTboU74y2",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. That's from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038131000000000003,
+    "duration_ms": 4219,
+    "duration_api_ms": 4070,
+    "wall_s": 15.55,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 170,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": false,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "4260b3d6-84f3-41ea-aee1-934f99c7269b",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01X6dXbFvjhjaY8P6JzkkGdv",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01Kp8yBbAvqCLZmV92UNLeKw",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01X6dXbFvjhjaY8P6JzkkGdv",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01Kp8yBbAvqCLZmV92UNLeKw",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It also used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from your note \"Best small LLM for a CPU-only laptop: 10 models measured\" (`best-small-llm-for-cpu.md`). I read only the search snippet and didn't open the full note.",
+    "turns": 3,
+    "cost_usd": 0.012597,
+    "duration_ms": 10403,
+    "duration_api_ms": 10237,
+    "wall_s": 36.75,
+    "first_input_tokens": 9762,
+    "input_tokens": 31301,
+    "output_tokens": 382,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": false,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "485a243e-7576-4011-8a4e-9ecde5078135",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01V58yDCpp3LQzYxnx2Zz2yY",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01V58yDCpp3LQzYxnx2Zz2yY",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note (`best-small-llm-for-cpu.md`).",
+    "turns": 2,
+    "cost_usd": 0.0039705,
+    "duration_ms": 3475,
+    "duration_api_ms": 3335,
+    "wall_s": 30.13,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 188,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": false,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "7f1af123-a6be-409f-8519-c868b8893812",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01ESs6WYo2GuVLLEAMkyLVNi",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01ESs6WYo2GuVLLEAMkyLVNi",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (source: the \"Best small LLM for a CPU-only laptop\" note).",
+    "turns": 2,
+    "cost_usd": 0.0038031000000000002,
+    "duration_ms": 5528,
+    "duration_api_ms": 5397,
+    "wall_s": 31.91,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 169,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": true,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "ddb9fae5-c46b-49d9-845d-7559cec47ff5",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01TF5oBhvowWVRedy8nQsTEn",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes",
+          "max_results": 1
+        }
+      },
+      {
+        "id": "toolu_01FWv7nVFePx6cWfQRJKuq4e",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01TF5oBhvowWVRedy8nQsTEn",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}]"
+      },
+      {
+        "result_for": "toolu_01FWv7nVFePx6cWfQRJKuq4e",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from your notes post \"Best small LLM for a CPU-only laptop: 10 models measured.\"",
+    "turns": 3,
+    "cost_usd": 0.011635800000000002,
+    "duration_ms": 8971,
+    "duration_api_ms": 8838,
+    "wall_s": 35.4,
+    "first_input_tokens": 9762,
+    "input_tokens": 31037,
+    "output_tokens": 340,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": true,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "beede59f-2d65-44b1-b79f-62077c682eb8",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01MUSxnTPHJN741WAU5dhdHp",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01MUSxnTPHJN741WAU5dhdHp",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. Those figures come from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038205,
+    "duration_ms": 7249,
+    "duration_api_ms": 7112,
+    "wall_s": 33.7,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 173,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": true,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "ff91f514-ebc7-47a7-ae8a-42b1963c533e",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_019YkHaPUkB3T4Kqju4nygCD",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_019YkHaPUkB3T4Kqju4nygCD",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right, according to the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038031000000000002,
+    "duration_ms": 4460,
+    "duration_api_ms": 4339,
+    "wall_s": 30.91,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 169,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": false,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "b85ca2ac-ac84-41b5-a132-e0776d82f62c",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01ANfcZGzmVfkoeKv4zYeiYH",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01YKvLVFt6e7ycPjrbTvg9eP",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01ANfcZGzmVfkoeKv4zYeiYH",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01YKvLVFt6e7ycPjrbTvg9eP",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 3,
+    "cost_usd": 0.012036,
+    "duration_ms": 4084,
+    "duration_api_ms": 3949,
+    "wall_s": 5.89,
+    "first_input_tokens": 9762,
+    "input_tokens": 31281,
+    "output_tokens": 330,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": false,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "954cbca0-649f-4753-8174-910e4368f669",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_014hgR7eohvPXCreMCRKqk5Y",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_014hgR7eohvPXCreMCRKqk5Y",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. The figure comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038205,
+    "duration_ms": 3230,
+    "duration_api_ms": 3083,
+    "wall_s": 5.14,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 173,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": false,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "f199d9ca-983f-4215-8e2e-7127cebfe003",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01P3x4wARuEXWEYYwcGMfuM7",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01P3x4wARuEXWEYYwcGMfuM7",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B reached **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (source: `best-small-llm-for-cpu.md`).",
+    "turns": 2,
+    "cost_usd": 0.0037631,
+    "duration_ms": 4659,
+    "duration_api_ms": 4493,
+    "wall_s": 6.63,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 165,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": true,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "78c36628-44f6-4459-acfc-a41443842d06",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01GPZVNNEgzLZUQMXpGsVuMQ",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01NxaA3juZ8GNFMdnKeuXa3w",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01GPZVNNEgzLZUQMXpGsVuMQ",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01NxaA3juZ8GNFMdnKeuXa3w",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from your note \"Best small LLM for a CPU-only laptop: 10 models measured\".",
+    "turns": 3,
+    "cost_usd": 0.012251100000000001,
+    "duration_ms": 10981,
+    "duration_api_ms": 10839,
+    "wall_s": 12.41,
+    "first_input_tokens": 9762,
+    "input_tokens": 31303,
+    "output_tokens": 347,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": true,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "0c9e33b9-331d-402c-8156-62078d9a923b",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01HgLV8rd896mvfmJzoHfuLi",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01HgLV8rd896mvfmJzoHfuLi",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038005,
+    "duration_ms": 3096,
+    "duration_api_ms": 2946,
+    "wall_s": 4.78,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 171,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 0,
+    "stream_input": true,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "8086d9da-79ab-429d-85e8-def706a8c1ef",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_017Wzf14BUqmS57jCDvZ8B3p",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_017Wzf14BUqmS57jCDvZ8B3p",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (source: the \"Best small LLM for a CPU-only laptop\" note).",
+    "turns": 2,
+    "cost_usd": 0.0038031000000000002,
+    "duration_ms": 3774,
+    "duration_api_ms": 3645,
+    "wall_s": 5.91,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 169,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": false,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "127d3736-e7e3-4320-8d2d-fcb73f302b95",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_019MYGHsUzogoiDN7SfknkUc",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01Qw6392Y6f7WunxzccnESKj",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_019MYGHsUzogoiDN7SfknkUc",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01Qw6392Y6f7WunxzccnESKj",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. The figure comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 3,
+    "cost_usd": 0.012098300000000001,
+    "duration_ms": 6011,
+    "duration_api_ms": 5876,
+    "wall_s": 17.29,
+    "first_input_tokens": 9762,
+    "input_tokens": 31287,
+    "output_tokens": 335,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": false,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "101383a7-b470-4ee5-9967-c4f9c3b9087e",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01SkirjY2uWZNz1SAr8s9272",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01SkirjY2uWZNz1SAr8s9272",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038005,
+    "duration_ms": 2659,
+    "duration_api_ms": 2541,
+    "wall_s": 14.31,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 171,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": false,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "8b98eda3-f3ea-4eb2-a45f-f28a062a2dcd",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_011PAFifGMDL5NsunyTgQrvQ",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_011PAFifGMDL5NsunyTgQrvQ",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right, according to the \"Best small LLM for a CPU-only laptop\" post in your notes.",
+    "turns": 2,
+    "cost_usd": 0.0038431000000000003,
+    "duration_ms": 2998,
+    "duration_api_ms": 2844,
+    "wall_s": 14.4,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 173,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": true,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "7b3df0c0-23b1-4677-92c8-df79dfdac5b4",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_0166Cbj86panQzgEEuYZ7hwE",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01Tds46TVwFHvGmkzjTdCQzy",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_0166Cbj86panQzgEEuYZ7hwE",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01Tds46TVwFHvGmkzjTdCQzy",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU, using 3.9 GB of RAM. It got 18 of 20 sanity questions right. The figure comes from your note \"Best small LLM for a CPU-only laptop: 10 models measured\", and I only read the search snippet, not the full note.",
+    "turns": 3,
+    "cost_usd": 0.0122519,
+    "duration_ms": 4966,
+    "duration_api_ms": 4816,
+    "wall_s": 16.61,
+    "first_input_tokens": 9762,
+    "input_tokens": 31279,
+    "output_tokens": 352,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": true,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "df01166b-8f53-45ce-8f29-796ed2e0e0a8",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_015HZnS7edYmb5wSmEdc9Neh",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_015HZnS7edYmb5wSmEdc9Neh",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B reached **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (from the note \"Best small LLM for a CPU-only laptop: 10 models measured\").",
+    "turns": 2,
+    "cost_usd": 0.0038305,
+    "duration_ms": 3059,
+    "duration_api_ms": 2929,
+    "wall_s": 14.64,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 174,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 10000,
+    "stream_input": true,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "d8662187-dc5a-4150-871c-a7709a56d586",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01WvDBMgTmoVHZj3iJLUGWhK",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01WvDBMgTmoVHZj3iJLUGWhK",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens/s** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. That's from the \"Best small LLM for a CPU-only laptop\" note, which I only read as a search snippet, not in full.",
+    "turns": 2,
+    "cost_usd": 0.003963100000000001,
+    "duration_ms": 4845,
+    "duration_api_ms": 4713,
+    "wall_s": 16.35,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 185,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": false,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "26b4d773-37e5-4118-ae2b-30fc8398117d",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_013pcpNuLraUKPRHyBaGi13r",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_012Ef8z2Rqo9RR62hrFjQKxh",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_013pcpNuLraUKPRHyBaGi13r",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_012Ef8z2Rqo9RR62hrFjQKxh",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. That's from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 3,
+    "cost_usd": 0.0121952,
+    "duration_ms": 5550,
+    "duration_api_ms": 5430,
+    "wall_s": 31.99,
+    "first_input_tokens": 9762,
+    "input_tokens": 31305,
+    "output_tokens": 341,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": false,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "2103b1d4-7d46-4cd9-aee4-4b80bfc244cf",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01Dq7xgkcd1SaVDVxCgBUkJH",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01Dq7xgkcd1SaVDVxCgBUkJH",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. The figure comes from the \"Best small LLM for a CPU-only laptop\" note.",
+    "turns": 2,
+    "cost_usd": 0.0038205,
+    "duration_ms": 7858,
+    "duration_api_ms": 7737,
+    "wall_s": 34.32,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 173,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": false,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "d4da6c9d-f270-40e3-a7ce-9225ce6090b9",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01DfwwJ3tCLq9Db4eLsZgu4x",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01DfwwJ3tCLq9Db4eLsZgu4x",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (from the \"Best small LLM for a CPU-only laptop\" note).",
+    "turns": 2,
+    "cost_usd": 0.0037931,
+    "duration_ms": 3809,
+    "duration_api_ms": 3684,
+    "wall_s": 30.35,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 168,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": true,
+    "condition": "good",
+    "model": "claude-sonnet-5-5",
+    "session_id": "a8946cd8-bdae-42a6-a9e1-4b669e86b877",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_0127M68FGwEoFWwoHbTaAzPE",
+        "name": "ToolSearch",
+        "input": {
+          "query": "select:mcp__notes__search_notes,mcp__notes__read_note",
+          "max_results": 2
+        }
+      },
+      {
+        "id": "toolu_01Y5mBuLiygadHh5eKkfFnwj",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_0127M68FGwEoFWwoHbTaAzPE",
+        "is_error": false,
+        "text": "[{'type': 'tool_reference', 'tool_name': 'mcp__notes__search_notes'}, {'type': 'tool_reference', 'tool_name': 'mcp__notes__read_note'}]"
+      },
+      {
+        "result_for": "toolu_01Y5mBuLiygadHh5eKkfFnwj",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": true,
+    "searched_first": true,
+    "builtin": [],
+    "answer": "Gemma 4 E2B generated **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right. This comes from the \"Best small LLM for a CPU-only laptop\" post in your notes.",
+    "turns": 3,
+    "cost_usd": 0.012217,
+    "duration_ms": 8605,
+    "duration_api_ms": 8477,
+    "wall_s": 34.87,
+    "first_input_tokens": 9762,
+    "input_tokens": 31301,
+    "output_tokens": 344,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": true,
+    "condition": "good+tool",
+    "model": "claude-sonnet-5-5",
+    "session_id": "f083b906-ec5d-47bc-b889-a3a67b80846f",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01CiFVNrbh4dzyRocrKyk841",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01CiFVNrbh4dzyRocrKyk841",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B reached **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (source: `best-small-llm-for-cpu.md`).",
+    "turns": 2,
+    "cost_usd": 0.0037405,
+    "duration_ms": 3708,
+    "duration_api_ms": 3587,
+    "wall_s": 30.17,
+    "first_input_tokens": 9977,
+    "input_tokens": 20829,
+    "output_tokens": 165,
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "delay_ms": 25000,
+    "stream_input": true,
+    "condition": "good+server",
+    "model": "claude-sonnet-5-5",
+    "session_id": "3c2b4d4d-7cbe-4d4a-aa09-d5b34f84ccb9",
+    "mcp_status": [
+      "connected"
+    ],
+    "init_tools": [
+      "mcp__notes__read_note",
+      "mcp__notes__search_notes"
+    ],
+    "tools": [
+      {
+        "id": "toolu_01SrJLcqpCuZdE9r48eEHzhy",
+        "name": "mcp__notes__search_notes",
+        "input": {
+          "query": "Gemma 4 E2B tokens per second 2-core laptop"
+        }
+      }
+    ],
+    "results": [
+      {
+        "result_for": "toolu_01SrJLcqpCuZdE9r48eEHzhy",
+        "is_error": false,
+        "text": "[{'type': 'text', 'text': '[\\n  {\\n    \"path\": \"best-small-llm-for-cpu.md\",\\n    \"title\": \"Best small LLM for a CPU-only laptop: 10 models measured\",\\n    \"score\": 6.85,\\n    \"snippet\": \"What is the b"
+      }
+    ],
+    "used_mcp": true,
+    "used_toolsearch": false,
+    "searched_first": false,
+    "builtin": [],
+    "answer": "Gemma 4 E2B reached **7.1 tokens per second** on the 2-core Intel laptop CPU. It used 3.9 GB of RAM and got 18 of 20 sanity questions right (from the \"Best small LLM for a CPU-only laptop\" note).",
+    "turns": 2,
+    "cost_usd": 0.0037931,
+    "duration_ms": 3322,
+    "duration_api_ms": 3210,
+    "wall_s": 29.97,
+    "first_input_tokens": 10090,
+    "input_tokens": 21055,
+    "output_tokens": 168,
+    "exit": 0,
+    "stderr": ""
+  }
+]
