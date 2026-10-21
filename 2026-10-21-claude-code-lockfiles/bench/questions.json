@@ -1,0 +1,21 @@
+[
+  {"id": "express-version", "kind": "lockfile",
+   "prompt": "Which exact version of express is installed in this project?",
+   "expect": "4.22.3"},
+  {"id": "debug-versions", "kind": "lockfile",
+   "prompt": "How many different versions of the debug package end up in this project's dependency tree, and which packages pull in the older one?",
+   "expect": "4.4.3 and 2.6.9 (body-parser, express, finalhandler, send)"},
+  {"id": "cookie-cve", "kind": "lockfile",
+   "prompt": "Is this project affected by CVE-2024-47764 in the cookie package (fixed in cookie 0.7.0)? Check the version we actually ship.",
+   "expect": "cookie 0.7.2, not affected"},
+  {"id": "vite-version", "kind": "lockfile",
+   "prompt": "Which version of vite does vitest bring into this project?",
+   "expect": "5.4.21"},
+  {"id": "jwt-expired", "kind": "code",
+   "prompt": "Where is the JWT verified, and what does the API return when the token has expired?",
+   "expect": "src/lib/auth.js, 401 with error token_expired"},
+  {"id": "health-route", "kind": "code",
+   "prompt": "Add a GET /health route that returns {\"status\": \"ok\"} without requiring auth.",
+   "expect": "src/server.js has a /health route before auth",
+   "check_files": ["src/server.js"]}
+]
