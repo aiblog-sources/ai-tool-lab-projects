@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Does .claudeignore keep Claude Code out of lockfiles?](2026-10-21-claude-code-lockfiles/) | [Does .claudeignore work? Claude Code and lockfiles, 120 runs](https://aitoollabs.dev/posts/claude-code-claudeignore-lockfiles/) | Shipped |
 | [MCP alwaysLoad vs tool search off in Claude Code](2026-10-20-mcp-always-load/) | [Disable Claude Code tool search? Try MCP alwaysLoad instead](https://aitoollabs.dev/posts/claude-code-mcp-alwaysload/) | Shipped |
 | [Does Repomix --compress hurt Claude's answers?](2026-10-19-repomix-compress/) | [Does Repomix compress mode hurt Claude's answers? 240 runs](https://aitoollabs.dev/posts/repomix-compress-accuracy/) | Shipped |
 | [Small local LLM JSON above temperature 0: temperature vs samplers vs grammar](2026-10-18-small-llm-json-temperature/) | [Does temperature break JSON output? Small LLMs, measured](https://aitoollabs.dev/posts/small-llm-json-temperature/) | Shipped |

@@ -1,0 +1,11 @@
+file,bytes,lines,chars_div_4,o200k,claude,baseline_before,baseline_after
+fixture__package.json,495,25,123,196,265,551,551
+npm__package-lock.json,131086,3776,32771,52351,73135,551,551
+yarn__yarn.lock,90044,1902,22511,44269,61605,551,551
+pnpm__pnpm-lock.yaml,75120,2412,18780,36467,50297,551,551
+BurntSushi_ripgrep__Cargo.lock,13550,592,3387,5024,7157,551,551
+cli_cli__go.sum,59455,630,14863,31961,45612,551,551
+pallets_flask__uv.lock,279196,1644,69799,130291,160388,551,551
+python-poetry_poetry__poetry.lock,258819,2666,64704,122957,155499,551,551
+rails_rails__Gemfile.lock,43769,1043,10942,21775,27022,551,551
+composer_composer__composer.lock,93089,2610,23271,22398,31275,551,551
