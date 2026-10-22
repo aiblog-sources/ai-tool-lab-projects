@@ -1,0 +1,5 @@
+model	server	status	background_cpu_pct	peak_rss_mib	minutes
+Qwen 3.5 0.8B	llama-server	ok	40	1098	18.1
+Qwen 3.5 0.8B	ollama	ok	61	856	22.2
+Qwen 3.5 2B	llama-server	ok	39	2174	18.8
+Qwen 3.5 2B	ollama	ok	35	1598	43.5
