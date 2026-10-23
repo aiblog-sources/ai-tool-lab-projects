@@ -1,0 +1,110 @@
+# ministral-3:3b ships {"temperature": 0.15}
+
+## ministral-3:3b | api-t0 | api | sent {"temperature": 0}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+## ministral-3:3b | api-default | api | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.150
+
+## ministral-3:3b | v1-default | v1 | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## ministral-3:3b | v1-fix | v1 | sent {"temperature": 0.15}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.150
+
+# llama-guard3:1b ships {"temperature": 0.0}
+
+## llama-guard3:1b | api-t0 | api | sent {"temperature": 0}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+## llama-guard3:1b | api-default | api | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+## llama-guard3:1b | v1-default | v1 | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## llama-guard3:1b | v1-fix | v1 | sent {"temperature": 0.0}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 40, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+# qwen3.5:2b ships {"presence_penalty": 1.5, "temperature": 1.0, "top_k": 20.0, "top_p": 0.95}
+
+## qwen3.5:2b | api-t0 | api | sent {"temperature": 0}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 1.500
+top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+## qwen3.5:2b | api-default | api | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 1.500
+top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## qwen3.5:2b | v1-default | v1 | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 1.500
+top_k = 20, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## qwen3.5:2b | v1-fix | v1 | sent {"temperature": 1.0, "top_p": 0.95}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 1.500
+top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+# gemma4:e2b ships {"temperature": 1.0, "top_k": 64.0, "top_p": 0.95, "draft_num_predict": 3.0}
+
+## gemma4:e2b | api-t0 | api | sent {"temperature": 0}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+## gemma4:e2b | api-default | api | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## gemma4:e2b | v1-default | v1 | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 64, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## gemma4:e2b | v1-fix | v1 | sent {"temperature": 1.0, "top_p": 0.95}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+# qwen3:1.7b ships {"repeat_penalty": 1.0, "temperature": 0.6, "top_k": 20.0, "top_p": 0.95}
+
+## qwen3:1.7b | api-t0 | api | sent {"temperature": 0}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
+## qwen3:1.7b | api-default | api | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+
+## qwen3:1.7b | v1-default | v1 | sent nothing
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 20, top_p = 1.000, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+
+## qwen3:1.7b | v1-fix | v1 | sent {"temperature": 0.6, "top_p": 0.95}
+slot launch_slot_: id  0 | task -1 | sampler params:
+repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+
