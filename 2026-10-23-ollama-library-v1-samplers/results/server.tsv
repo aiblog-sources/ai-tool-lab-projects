@@ -1,0 +1,5 @@
+model	background_cpu_pct	peak_rss_mib	minutes
+ministral-3:3b	27	4014	27.4
+llama-guard3:1b	23		11.9
+qwen3.5:2b	6	2917	40.0
+gemma4:e2b	27	5941	23.4

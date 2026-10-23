@@ -1,0 +1,260 @@
+{"rank": 1, "name": "llama3.1", "capabilities": ["tools"], "sizes": ["8b", "70b", "405b"], "pulls": "120.5M", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 4920}
+{"rank": 2, "name": "deepseek-r1", "capabilities": ["tools", "thinking"], "sizes": ["1.5b", "7b", "8b", "14b", "32b", "70b", "671b"], "pulls": "94M", "tag": "latest", "params": {"stop": ["<\uff5cbegin\u2581of\u2581sentence\uff5c>", "<\uff5cend\u2581of\u2581sentence\uff5c>", "<\uff5cUser\uff5c>", "<\uff5cAssistant\uff5c>"], "temperature": 0.6, "top_p": 0.95}, "size_mb": 5225}
+{"rank": 3, "name": "nomic-embed-text", "capabilities": ["embedding"], "sizes": [], "pulls": "92.5M", "tag": "latest", "params": {"num_ctx": 8192}, "size_mb": 274}
+{"rank": 4, "name": "llama3.2", "capabilities": ["tools"], "sizes": ["1b", "3b"], "pulls": "86M", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 2019}
+{"rank": 5, "name": "qwen2.5", "capabilities": ["tools"], "sizes": ["0.5b", "1.5b", "3b", "7b", "14b", "32b", "72b"], "pulls": "43.3M", "tag": "latest", "params": {}, "size_mb": 4683}
+{"rank": 6, "name": "gemma3", "capabilities": ["vision"], "sizes": ["270m", "1b", "4b", "12b", "27b"], "pulls": "41.3M", "tag": "latest", "params": {"stop": ["<end_of_turn>"], "temperature": 1, "top_k": 64, "top_p": 0.95}, "size_mb": 3350}
+{"rank": 7, "name": "qwen3", "capabilities": ["tools", "thinking"], "sizes": ["0.6b", "1.7b", "4b", "8b", "14b", "30b", "32b", "235b"], "pulls": "41.2M", "tag": "latest", "params": {"repeat_penalty": 1, "stop": ["<|im_start|>", "<|im_end|>"], "temperature": 0.6, "top_k": 20, "top_p": 0.95}, "size_mb": 5225}
+{"rank": 8, "name": "gemma2", "capabilities": [], "sizes": ["2b", "9b", "27b"], "pulls": "35.4M", "tag": "latest", "params": {"stop": ["<start_of_turn>", "<end_of_turn>"]}, "size_mb": 5443}
+{"rank": 9, "name": "mistral", "capabilities": ["tools"], "sizes": ["7b"], "pulls": "34M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]"]}, "size_mb": 4372}
+{"rank": 10, "name": "gemma4", "capabilities": ["vision", "tools", "thinking", "audio", "cloud"], "sizes": ["e2b", "e4b", "12b", "26b", "31b"], "pulls": "27.6M", "tag": "latest", "params": {"draft_num_predict": 3, "temperature": 1, "top_k": 64, "top_p": 0.95}, "size_mb": 6583}
+{"rank": 11, "name": "llama3", "capabilities": [], "sizes": ["8b", "70b"], "pulls": "25.8M", "tag": "latest", "params": {"num_keep": 24, "stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 4661}
+{"rank": 12, "name": "qwen3.5", "capabilities": ["vision", "tools", "thinking"], "sizes": ["0.8b", "2b", "4b", "9b", "27b", "35b", "122b"], "pulls": "23.1M", "tag": "latest", "params": {"presence_penalty": 1.5, "temperature": 1, "top_k": 20, "top_p": 0.95}, "size_mb": 6550}
+{"rank": 13, "name": "qwen2.5-coder", "capabilities": ["tools"], "sizes": ["0.5b", "1.5b", "3b", "7b", "14b", "32b"], "pulls": "22.8M", "tag": "latest", "params": {}, "size_mb": 4683}
+{"rank": 14, "name": "phi3", "capabilities": [], "sizes": ["3.8b", "14b"], "pulls": "18.3M", "tag": "latest", "params": {"stop": ["<|end|>", "<|user|>", "<|assistant|>"]}, "size_mb": 2176}
+{"rank": 15, "name": "mxbai-embed-large", "capabilities": ["embedding"], "sizes": ["335m"], "pulls": "16.1M", "tag": "latest", "params": {"num_ctx": 512}, "size_mb": 669}
+{"rank": 16, "name": "llava", "capabilities": ["vision"], "sizes": ["7b", "13b", "34b"], "pulls": "15.2M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]"]}, "size_mb": 4733}
+{"rank": 17, "name": "gpt-oss", "capabilities": ["tools", "thinking", "cloud"], "sizes": ["20b", "120b"], "pulls": "14.1M", "tag": "latest", "params": {"temperature": 1}, "size_mb": 13793}
+{"rank": 18, "name": "qwen3-coder", "capabilities": ["tools"], "sizes": ["30b", "480b"], "pulls": "10.2M", "tag": "latest", "params": {"repeat_penalty": 1.05, "stop": ["<|im_start|>", "<|im_end|>", "<|endoftext|>"], "temperature": 0.7, "top_k": 20, "top_p": 0.8}, "size_mb": 18556}
+{"rank": 19, "name": "glm-ocr", "capabilities": ["vision", "tools"], "sizes": [], "pulls": "8.5M", "tag": "latest", "params": {"temperature": 0}, "size_mb": 2655}
+{"rank": 20, "name": "gemma", "capabilities": [], "sizes": ["2b", "7b"], "pulls": "8.4M", "tag": "latest", "params": {"penalize_newline": false, "repeat_penalty": 1, "stop": ["<start_of_turn>", "<end_of_turn>"]}, "size_mb": 5011}
+{"rank": 21, "name": "qwen", "capabilities": [], "sizes": ["0.5b", "1.8b", "4b", "7b", "14b", "32b", "72b", "110b"], "pulls": "8.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 2330}
+{"rank": 22, "name": "bge-m3", "capabilities": ["embedding"], "sizes": ["567m"], "pulls": "7.9M", "tag": "latest", "params": {}, "size_mb": 1157}
+{"rank": 23, "name": "phi4", "capabilities": [], "sizes": ["14b"], "pulls": "7.8M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>", "<|im_sep|>"]}, "size_mb": 9053}
+{"rank": 24, "name": "llama2", "capabilities": [], "sizes": ["7b", "13b", "70b"], "pulls": "7.6M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]", "<<SYS>>", "<</SYS>>"]}, "size_mb": 3826}
+{"rank": 25, "name": "codellama", "capabilities": [], "sizes": ["7b", "13b", "34b", "70b"], "pulls": "7.3M", "tag": "latest", "params": {"rope_frequency_base": 1000000, "stop": ["[INST]", "[/INST]", "<<SYS>>", "<</SYS>>"]}, "size_mb": 3825}
+{"rank": 26, "name": "qwen3.6", "capabilities": ["vision", "tools", "thinking"], "sizes": ["27b", "35b"], "pulls": "7.3M", "tag": "latest", "params": {"draft_num_predict": 2, "min_p": 0, "presence_penalty": 1.5, "repeat_penalty": 1, "temperature": 1, "top_k": 20, "top_p": 0.95}, "size_mb": 22621}
+{"rank": 27, "name": "qwen3-vl", "capabilities": ["vision", "tools", "thinking"], "sizes": ["2b", "4b", "8b", "30b", "32b", "235b"], "pulls": "6.8M", "tag": "latest", "params": {"temperature": 1, "top_k": 20, "top_p": 0.95}, "size_mb": 6190}
+{"rank": 28, "name": "tinyllama", "capabilities": [], "sizes": ["1.1b"], "pulls": "6.3M", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|assistant|>", "</s>"]}, "size_mb": 637}
+{"rank": 29, "name": "qwen2", "capabilities": ["tools"], "sizes": ["0.5b", "1.5b", "7b", "72b"], "pulls": "6.3M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4431}
+{"rank": 30, "name": "mistral-nemo", "capabilities": ["tools"], "sizes": ["12b"], "pulls": "5.7M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]"]}, "size_mb": 7071}
+{"rank": 31, "name": "minicpm-v", "capabilities": ["vision"], "sizes": ["8b"], "pulls": "5.6M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 5473}
+{"rank": 32, "name": "qwen2.5vl", "capabilities": ["vision"], "sizes": ["3b", "7b", "32b", "72b"], "pulls": "5.5M", "tag": "latest", "params": {"temperature": 0.0001}, "size_mb": 5969}
+{"rank": 33, "name": "llama3.2-vision", "capabilities": ["vision"], "sizes": ["11b", "90b"], "pulls": "5.5M", "tag": "latest", "params": {"temperature": 0.6, "top_p": 0.9}, "size_mb": 7816}
+{"rank": 34, "name": "deepseek-coder", "capabilities": [], "sizes": ["1.3b", "6.7b", "33b"], "pulls": "4.7M", "tag": "latest", "params": {}, "size_mb": 776}
+{"rank": 35, "name": "qwen3.8", "capabilities": ["vision", "tools", "thinking"], "sizes": ["27b"], "pulls": "4.7M", "tag": "latest", "params": {"draft_num_predict": 4, "min_p": 0, "presence_penalty": 0, "repeat_penalty": 1, "temperature": 1, "top_k": 20, "top_p": 0.95}, "size_mb": 17741}
+{"rank": 36, "name": "qwen3-embedding", "capabilities": ["embedding"], "sizes": ["0.6b", "4b", "8b"], "pulls": "4.4M", "tag": "latest", "params": {}, "size_mb": 4676}
+{"rank": 37, "name": "llama3.3", "capabilities": ["tools"], "sizes": ["70b"], "pulls": "4.3M", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 42520}
+{"rank": 38, "name": "dolphin3", "capabilities": [], "sizes": ["8b"], "pulls": "4.2M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4920}
+{"rank": 39, "name": "smollm2", "capabilities": ["tools"], "sizes": ["135m", "360m", "1.7b"], "pulls": "4.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 1820}
+{"rank": 40, "name": "deepseek-v3", "capabilities": [], "sizes": ["671b"], "pulls": "3.8M", "tag": "latest", "params": {"stop": ["<\uff5cbegin\u2581of\u2581sentence\uff5c>", "<\uff5cend\u2581of\u2581sentence\uff5c>", "<\uff5cUser\uff5c>", "<\uff5cAssistant\uff5c>"]}, "size_mb": 404430}
+{"rank": 41, "name": "all-minilm", "capabilities": ["embedding"], "sizes": ["22m", "33m"], "pulls": "3.8M", "tag": "latest", "params": {"num_ctx": 256}, "size_mb": 45}
+{"rank": 42, "name": "olmo2", "capabilities": [], "sizes": ["7b", "13b"], "pulls": "3.8M", "tag": "latest", "params": {}, "size_mb": 4472}
+{"rank": 43, "name": "codegemma", "capabilities": [], "sizes": ["2b", "7b"], "pulls": "3.3M", "tag": "latest", "params": {"penalize_newline": false, "repeat_penalty": 1, "stop": ["<start_of_turn>", "<end_of_turn>"]}, "size_mb": 5011}
+{"rank": 44, "name": "deepseek-coder-v2", "capabilities": [], "sizes": ["16b", "236b"], "pulls": "3.3M", "tag": "latest", "params": {"stop": ["User:", "Assistant:"]}, "size_mb": 8905}
+{"rank": 45, "name": "snowflake-arctic-embed", "capabilities": ["embedding"], "sizes": ["22m", "33m", "110m", "137m", "335m"], "pulls": "3.2M", "tag": "latest", "params": {}, "size_mb": 669}
+{"rank": 46, "name": "mistral-small", "capabilities": ["tools"], "sizes": ["22b", "24b"], "pulls": "3.2M", "tag": "latest", "params": {"temperature": 0.15}, "size_mb": 14333}
+{"rank": 47, "name": "orca-mini", "capabilities": [], "sizes": ["3b", "7b", "13b", "70b"], "pulls": "3.1M", "tag": "latest", "params": {"stop": ["### System:", "### User:", "### Response:"]}, "size_mb": 1979}
+{"rank": 48, "name": "granite3.1-moe", "capabilities": ["tools"], "sizes": ["1b", "3b"], "pulls": "3.1M", "tag": "latest", "params": {}, "size_mb": 2035}
+{"rank": 49, "name": "starcoder2", "capabilities": [], "sizes": ["3b", "7b", "15b"], "pulls": "3M", "tag": "latest", "params": {"stop": ["<file_sep>", "<|end_of_text|>"]}, "size_mb": 1709}
+{"rank": 50, "name": "nemotron-3-super", "capabilities": ["tools", "thinking", "cloud"], "sizes": ["120b"], "pulls": "3M", "tag": "latest", "params": {"temperature": 1, "top_p": 0.95}, "size_mb": 86827}
+{"rank": 51, "name": "mixtral", "capabilities": ["tools"], "sizes": ["8x7b", "8x22b"], "pulls": "2.9M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]"]}, "size_mb": 26443}
+{"rank": 52, "name": "llama2-uncensored", "capabilities": [], "sizes": ["7b", "70b"], "pulls": "2.7M", "tag": "latest", "params": {"stop": ["### HUMAN:", "### RESPONSE:"]}, "size_mb": 3825}
+{"rank": 53, "name": "translategemma", "capabilities": ["vision"], "sizes": ["4b", "12b", "27b"], "pulls": "2.7M", "tag": "latest", "params": {"stop": ["<end_of_turn>"], "top_k": 64, "top_p": 0.95}, "size_mb": 3298}
+{"rank": 54, "name": "falcon3", "capabilities": [], "sizes": ["1b", "3b", "7b", "10b"], "pulls": "2.6M", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|end|>", "<|assistant|>"]}, "size_mb": 4569}
+{"rank": 55, "name": "embeddinggemma", "capabilities": ["embedding"], "sizes": ["300m"], "pulls": "2.6M", "tag": "latest", "params": {"num_batch": 2048, "num_ctx": 2048}, "size_mb": 621}
+{"rank": 56, "name": "mistral-small3.2", "capabilities": ["vision", "tools"], "sizes": ["24b"], "pulls": "2.5M", "tag": "latest", "params": {"temperature": 0.15}, "size_mb": 15177}
+{"rank": 57, "name": "minimax-m2.7", "capabilities": ["tools", "thinking", "cloud"], "sizes": [], "pulls": "2.4M", "tag": null}
+{"rank": 58, "name": "gemma3n", "capabilities": ["vision"], "sizes": ["e2b", "e4b"], "pulls": "2.3M", "tag": "latest", "params": {}, "size_mb": 9768}
+{"rank": 59, "name": "llava-llama3", "capabilities": ["vision"], "sizes": ["8b"], "pulls": "2.3M", "tag": "latest", "params": {"num_ctx": 4096, "num_keep": 4, "stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 5545}
+{"rank": 60, "name": "qwq", "capabilities": ["tools"], "sizes": ["32b"], "pulls": "2.3M", "tag": "latest", "params": {"repeat_penalty": 1, "stop": ["<|im_start|>", "<|im_end|>"], "temperature": 0.6, "top_k": 40, "top_p": 0.95}, "size_mb": 19851}
+{"rank": 61, "name": "smollm", "capabilities": [], "sizes": ["135m", "360m", "1.7b"], "pulls": "2.3M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"], "temperature": 0.2, "top_p": 0.9}, "size_mb": 990}
+{"rank": 62, "name": "dolphin-llama3", "capabilities": [], "sizes": ["8b", "70b"], "pulls": "2.2M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4661}
+{"rank": 63, "name": "sqlcoder", "capabilities": [], "sizes": ["7b", "15b"], "pulls": "2.2M", "tag": "latest", "params": {"stop": ["<|endoftext|>"]}, "size_mb": 4108}
+{"rank": 64, "name": "cogito", "capabilities": ["tools"], "sizes": ["3b", "8b", "14b", "32b", "70b"], "pulls": "2.1M", "tag": "latest", "params": {}, "size_mb": 4920}
+{"rank": 65, "name": "devstral-small-2", "capabilities": ["vision", "tools"], "sizes": ["24b"], "pulls": "2.1M", "tag": "latest", "params": {"temperature": 0.15}, "size_mb": 15177}
+{"rank": 66, "name": "glm-4.7-flash", "capabilities": ["tools", "thinking"], "sizes": [], "pulls": "2.1M", "tag": "latest", "params": {"min_p": 0.01, "repeat_penalty": 1, "temperature": 1, "top_p": 0.95}, "size_mb": 19019}
+{"rank": 67, "name": "qwen3-coder-next", "capabilities": ["tools"], "sizes": [], "pulls": "2.1M", "tag": "latest", "params": {"temperature": 1, "top_k": 40, "top_p": 0.95}, "size_mb": 51741}
+{"rank": 68, "name": "moondream", "capabilities": ["vision"], "sizes": ["1.8b"], "pulls": "2.1M", "tag": "latest", "params": {"stop": ["<|endoftext|>", "Question:"], "temperature": 0}, "size_mb": 1738}
+{"rank": 69, "name": "dolphin-mixtral", "capabilities": [], "sizes": ["8x7b", "8x22b"], "pulls": "2M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 26443}
+{"rank": 70, "name": "llama4", "capabilities": ["vision", "tools"], "sizes": ["16x17b", "128x17b"], "pulls": "1.9M", "tag": "latest", "params": {"stop": ["<|eom|>"]}, "size_mb": 67436}
+{"rank": 71, "name": "dolphin-mistral", "capabilities": [], "sizes": ["7b"], "pulls": "1.8M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4108}
+{"rank": 72, "name": "hermes3", "capabilities": ["tools"], "sizes": ["3b", "8b", "70b", "405b"], "pulls": "1.8M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4661}
+{"rank": 73, "name": "phi4-reasoning", "capabilities": [], "sizes": ["14b"], "pulls": "1.7M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>", "<|im_sep|>"]}, "size_mb": 11117}
+{"rank": 74, "name": "starcoder", "capabilities": [], "sizes": ["1b", "3b", "7b", "15b"], "pulls": "1.7M", "tag": "latest", "params": {"stop": ["<|endoftext|>"]}, "size_mb": 1831}
+{"rank": 75, "name": "granite-code", "capabilities": [], "sizes": ["3b", "8b", "20b", "34b"], "pulls": "1.7M", "tag": "latest", "params": {"stop": ["System:", "Question:", "Answer:"]}, "size_mb": 1997}
+{"rank": 76, "name": "dolphin-phi", "capabilities": [], "sizes": ["2.7b"], "pulls": "1.6M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 1602}
+{"rank": 77, "name": "wizardcoder", "capabilities": [], "sizes": ["33b"], "pulls": "1.6M", "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 3825}
+{"rank": 78, "name": "command-r", "capabilities": ["tools"], "sizes": ["35b"], "pulls": "1.6M", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>"]}, "size_mb": 18719}
+{"rank": 79, "name": "phi", "capabilities": [], "sizes": ["2.7b"], "pulls": "1.6M", "tag": "latest", "params": {"stop": ["User:", "Assistant:", "System:"]}, "size_mb": 1602}
+{"rank": 80, "name": "granite4", "capabilities": ["tools"], "sizes": ["350m", "1b", "3b"], "pulls": "1.6M", "tag": "latest", "params": {}, "size_mb": 2099}
+{"rank": 81, "name": "phi4-mini", "capabilities": ["tools"], "sizes": ["3.8b"], "pulls": "1.6M", "tag": "latest", "params": {}, "size_mb": 2491}
+{"rank": 82, "name": "yi", "capabilities": [], "sizes": ["6b", "9b", "34b"], "pulls": "1.5M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 3479}
+{"rank": 83, "name": "ministral-3", "capabilities": ["vision", "tools"], "sizes": ["3b", "8b", "14b"], "pulls": "1.5M", "tag": "latest", "params": {"temperature": 0.15}, "size_mb": 6022}
+{"rank": 84, "name": "openhermes", "capabilities": [], "sizes": [], "pulls": "1.5M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4108}
+{"rank": 85, "name": "magistral", "capabilities": ["tools", "thinking"], "sizes": ["24b"], "pulls": "1.5M", "tag": "latest", "params": {"temperature": 0.7, "top_p": 0.95}, "size_mb": 14333}
+{"rank": 86, "name": "openchat", "capabilities": [], "sizes": ["7b"], "pulls": "1.4M", "tag": "latest", "params": {"stop": ["<|endoftext|>", "<|end_of_turn|>"]}, "size_mb": 4109}
+{"rank": 87, "name": "codestral", "capabilities": [], "sizes": ["22b"], "pulls": "1.4M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]", "[PREFIX]", "[MIDDLE]", "[SUFFIX]"]}, "size_mb": 12569}
+{"rank": 88, "name": "mistral-large", "capabilities": ["tools"], "sizes": ["123b"], "pulls": "1.3M", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]", "</s>"]}, "size_mb": 73219}
+{"rank": 89, "name": "wizard-vicuna-uncensored", "capabilities": [], "sizes": ["7b", "13b", "30b"], "pulls": "1.3M", "tag": "latest", "params": {"stop": ["USER:", "ASSISTANT:"]}, "size_mb": 3825}
+{"rank": 90, "name": "zephyr", "capabilities": [], "sizes": ["7b", "141b"], "pulls": "1.3M", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|assistant|>", "</s>"]}, "size_mb": 4109}
+{"rank": 91, "name": "vicuna", "capabilities": [], "sizes": ["7b", "13b", "33b"], "pulls": "1.3M", "tag": "latest", "params": {"stop": ["USER:", "ASSISTANT:"]}, "size_mb": 3825}
+{"rank": 92, "name": "lfm2.5-thinking", "capabilities": ["tools", "thinking"], "sizes": ["1.2b"], "pulls": "1.3M", "tag": "latest", "params": {"temperature": 0.05, "top_k": 50}, "size_mb": 731}
+{"rank": 93, "name": "deepscaler", "capabilities": [], "sizes": ["1.5b"], "pulls": "1.3M", "tag": "latest", "params": {"stop": ["<\uff5cbegin\u2581of\u2581sentence\uff5c>", "<\uff5cend\u2581of\u2581sentence\uff5c>", "<\uff5cUser\uff5c>", "<\uff5cAssistant\uff5c>"], "temperature": 0.6, "top_p": 0.95}, "size_mb": 3560}
+{"rank": 94, "name": "deepseek-llm", "capabilities": [], "sizes": ["7b", "67b"], "pulls": "1.3M", "tag": "latest", "params": {"num_ctx": 4096}, "size_mb": 4000}
+{"rank": 95, "name": "glm4", "capabilities": [], "sizes": ["9b"], "pulls": "1.3M", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|assistant|>"]}, "size_mb": 5455}
+{"rank": 96, "name": "nous-hermes", "capabilities": [], "sizes": ["7b", "13b"], "pulls": "1.2M", "tag": "latest", "params": {"stop": ["### Instruction:", "### Input:", "### Response:"]}, "size_mb": 3825}
+{"rank": 97, "name": "deepseek-v2", "capabilities": [], "sizes": ["16b", "236b"], "pulls": "1.2M", "tag": "latest", "params": {"stop": ["User:", "Assistant:"]}, "size_mb": 8905}
+{"rank": 98, "name": "wizardlm2", "capabilities": [], "sizes": ["7b", "8x22b"], "pulls": "1.2M", "tag": "latest", "params": {"stop": ["USER:", "ASSISTANT:"]}, "size_mb": 4108}
+{"rank": 99, "name": "falcon", "capabilities": [], "sizes": ["7b", "40b", "180b"], "pulls": "1.2M", "tag": "latest", "params": {"stop": ["User:", "Assistant:"]}, "size_mb": 4210}
+{"rank": 100, "name": "neural-chat", "capabilities": [], "sizes": ["7b"], "pulls": "1.2M", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["</s>", "<|im_start|>", "<|im_end|>"]}, "size_mb": 4109}
+{"rank": 101, "name": "openthinker", "capabilities": [], "sizes": ["7b", "32b"], "pulls": "1.2M", "tag": "latest", "params": {}, "size_mb": 4683}
+{"rank": 102, "name": "qwen2-math", "capabilities": [], "sizes": ["1.5b", "7b", "72b"], "pulls": "1.2M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4431}
+{"rank": 103, "name": "llama2-chinese", "capabilities": [], "sizes": ["7b", "13b"], "pulls": "1.2M", "tag": "latest", "params": {"stop": ["Name:", "Assistant:"]}, "size_mb": 3825}
+{"rank": 104, "name": "codeqwen", "capabilities": [], "sizes": ["7b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4179}
+{"rank": 105, "name": "lfm2", "capabilities": ["tools"], "sizes": ["24b"], "pulls": "1.1M", "tag": "latest", "params": {"temperature": 0.3}, "size_mb": 14415}
+{"rank": 106, "name": "stablelm2", "capabilities": [], "sizes": ["1.6b", "12b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 982}
+{"rank": 107, "name": "granite3.3", "capabilities": ["tools"], "sizes": ["2b", "8b"], "pulls": "1.1M", "tag": "latest", "params": {}, "size_mb": 4942}
+{"rank": 108, "name": "yi-coder", "capabilities": [], "sizes": ["1.5b", "9b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|endoftext|>", "<|im_end|>", "<fim_prefix>", "<fim_suffix>", "<fim_middle>"]}, "size_mb": 5037}
+{"rank": 109, "name": "nous-hermes2", "capabilities": [], "sizes": ["10.7b", "34b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 6072}
+{"rank": 110, "name": "aya", "capabilities": [], "sizes": ["8b", "35b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>"]}, "size_mb": 4797}
+{"rank": 111, "name": "nomic-embed-text-v2-moe", "capabilities": ["embedding"], "sizes": [], "pulls": "1.1M", "tag": "latest", "params": {}, "size_mb": 957}
+{"rank": 112, "name": "stable-code", "capabilities": [], "sizes": ["3b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 1608}
+{"rank": 113, "name": "wizard-math", "capabilities": [], "sizes": ["7b", "13b", "70b"], "pulls": "1.1M", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["</s>", "### Instruction:", "### Response:"]}, "size_mb": 4108}
+{"rank": 114, "name": "mistral-openorca", "capabilities": [], "sizes": ["7b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4108}
+{"rank": 115, "name": "llama-guard3", "capabilities": [], "sizes": ["1b", "8b"], "pulls": "1.1M", "tag": "latest", "params": {"temperature": 0}, "size_mb": 4920}
+{"rank": 116, "name": "internlm2", "capabilities": [], "sizes": ["1m", "1.8b", "7b", "20b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4453}
+{"rank": 117, "name": "devstral", "capabilities": ["tools"], "sizes": ["24b"], "pulls": "1.1M", "tag": "latest", "params": {}, "size_mb": 14333}
+{"rank": 118, "name": "granite3.1-dense", "capabilities": ["tools"], "sizes": ["2b", "8b"], "pulls": "1.1M", "tag": "latest", "params": {}, "size_mb": 4991}
+{"rank": 119, "name": "llama3-chatqa", "capabilities": [], "sizes": ["8b", "70b"], "pulls": "1.1M", "tag": "latest", "params": {}, "size_mb": 4661}
+{"rank": 120, "name": "aya-expanse", "capabilities": ["tools"], "sizes": ["8b", "32b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>"]}, "size_mb": 5056}
+{"rank": 121, "name": "phi3.5", "capabilities": [], "sizes": ["3.8b"], "pulls": "1.1M", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|end|>", "<|assistant|>"]}, "size_mb": 2176}
+{"rank": 122, "name": "xwinlm", "capabilities": [], "sizes": ["7b", "13b"], "pulls": "1.1M", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["User:", "Assistant:"]}, "size_mb": 3825}
+{"rank": 123, "name": "granite3-dense", "capabilities": ["tools"], "sizes": ["2b", "8b"], "pulls": "1.1M", "tag": "latest", "params": {}, "size_mb": 1601}
+{"rank": 124, "name": "dolphincoder", "capabilities": [], "sizes": ["7b", "15b"], "pulls": "1M", "tag": "latest", "params": {}, "size_mb": 4228}
+{"rank": 125, "name": "samantha-mistral", "capabilities": [], "sizes": ["7b"], "pulls": "1M", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 4108}
+{"rank": 126, "name": "llama3-groq-tool-use", "capabilities": ["tools"], "sizes": ["8b", "70b"], "pulls": "1M", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 4661}
+{"rank": 127, "name": "llama3-gradient", "capabilities": [], "sizes": ["8b", "70b"], "pulls": "1M", "tag": "latest", "params": {"num_keep": 24, "stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 4661}
+{"rank": 128, "name": "yarn-llama2", "capabilities": [], "sizes": ["7b", "13b"], "pulls": "1M", "tag": "latest", "params": {"num_ctx": 65536}, "size_mb": 3825}
+{"rank": 129, "name": "granite3.2-vision", "capabilities": ["vision", "tools"], "sizes": ["2b"], "pulls": "1M", "tag": "latest", "params": {"num_ctx": 16384, "temperature": 0}, "size_mb": 2437}
+{"rank": 130, "name": "starling-lm", "capabilities": [], "sizes": ["7b"], "pulls": "1M", "tag": "latest", "params": {"stop": ["<|endoftext|>", "<|end_of_turn|>", "Human:", "Assistant:"]}, "size_mb": 4108}
+{"rank": 131, "name": "phind-codellama", "capabilities": [], "sizes": ["34b"], "pulls": "1M", "tag": "latest", "params": {"stop": ["### System Prompt:", "### User Message:", "### Assistant:"]}, "size_mb": 19052}
+{"rank": 132, "name": "solar", "capabilities": [], "sizes": ["10.7b"], "pulls": "995.2K", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["</s>", "### System:", "### User:", "### Assistant:"]}, "size_mb": 6072}
+{"rank": 133, "name": "granite3-moe", "capabilities": ["tools"], "sizes": ["1b", "3b"], "pulls": "985.6K", "tag": "latest", "params": {"num_gpu": 23}, "size_mb": 821}
+{"rank": 134, "name": "stable-beluga", "capabilities": [], "sizes": ["7b", "13b", "70b"], "pulls": "983.6K", "tag": "latest", "params": {"stop": ["### System:", "### User:", "### Assistant:"]}, "size_mb": 3825}
+{"rank": 135, "name": "shieldgemma", "capabilities": [], "sizes": ["2b", "9b", "27b"], "pulls": "974.8K", "tag": "latest", "params": {"temperature": 0}, "size_mb": 5761}
+{"rank": 136, "name": "orca2", "capabilities": [], "sizes": ["7b", "13b"], "pulls": "968.2K", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["<|im_start", "<|im_end", "|im_start", "|im_end"]}, "size_mb": 3825}
+{"rank": 137, "name": "deepcoder", "capabilities": [], "sizes": ["1.5b", "14b"], "pulls": "967.3K", "tag": "latest", "params": {"temperature": 0.6, "top_p": 0.95}, "size_mb": 8988}
+{"rank": 138, "name": "wizardlm", "capabilities": [], "sizes": [], "pulls": "963K", "tag": null}
+{"rank": 139, "name": "reader-lm", "capabilities": [], "sizes": ["0.5b", "1.5b"], "pulls": "958.9K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 934}
+{"rank": 140, "name": "paraphrase-multilingual", "capabilities": ["embedding"], "sizes": ["278m"], "pulls": "952.8K", "tag": "latest", "params": {"num_ctx": 128}, "size_mb": 562}
+{"rank": 141, "name": "llama-pro", "capabilities": [], "sizes": [], "pulls": "941K", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|assistant|>"]}, "size_mb": 4736}
+{"rank": 142, "name": "nemotron-3-nano", "capabilities": ["tools", "thinking", "cloud"], "sizes": ["4b", "30b"], "pulls": "936.7K", "tag": "latest", "params": {"temperature": 1, "top_p": 1}, "size_mb": 24271}
+{"rank": 143, "name": "yarn-mistral", "capabilities": [], "sizes": ["7b"], "pulls": "931K", "tag": "latest", "params": {"num_ctx": 65536}, "size_mb": 4108}
+{"rank": 144, "name": "nexusraven", "capabilities": [], "sizes": ["13b"], "pulls": "924.4K", "tag": "latest", "params": {}, "size_mb": 7366}
+{"rank": 145, "name": "meditron", "capabilities": [], "sizes": ["7b", "70b"], "pulls": "918.5K", "tag": "latest", "params": {"num_ctx": 2048, "stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 3825}
+{"rank": 146, "name": "bakllava", "capabilities": ["vision"], "sizes": ["7b"], "pulls": "907.7K", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["</s>", "USER:"]}, "size_mb": 4733}
+{"rank": 147, "name": "command-r-plus", "capabilities": ["tools"], "sizes": ["104b"], "pulls": "825.7K", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>"]}, "size_mb": 59221}
+{"rank": 148, "name": "mistral-small3.1", "capabilities": ["vision", "tools"], "sizes": ["24b"], "pulls": "803.6K", "tag": "latest", "params": {"num_ctx": 4096}, "size_mb": 15486}
+{"rank": 149, "name": "exaone-deep", "capabilities": [], "sizes": ["2.4b", "7.8b", "32b"], "pulls": "783.8K", "tag": "latest", "params": {"repeat_penalty": 1, "stop": ["[|endofturn|]"], "temperature": 0.6, "top_p": 0.95}, "size_mb": 4770}
+{"rank": 150, "name": "llava-phi3", "capabilities": ["vision"], "sizes": ["3.8b"], "pulls": "763.7K", "tag": "latest", "params": {"num_ctx": 4096, "num_keep": 4, "stop": ["<|user|>", "<|assistant|>", "<|system|>", "<|end|>", "<|endoftext|>"]}, "size_mb": 2926}
+{"rank": 151, "name": "tinydolphin", "capabilities": [], "sizes": ["1.1b"], "pulls": "745.7K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 636}
+{"rank": 152, "name": "medllama2", "capabilities": [], "sizes": ["7b"], "pulls": "745.3K", "tag": "latest", "params": {"stop": ["User:", "Assistant:"]}, "size_mb": 3825}
+{"rank": 153, "name": "deepseek-v3.1", "capabilities": ["tools", "thinking"], "sizes": ["671b"], "pulls": "740.3K", "tag": "latest", "params": {"temperature": 0.6, "top_p": 0.95}, "size_mb": 404494}
+{"rank": 154, "name": "nemotron-mini", "capabilities": ["tools"], "sizes": ["4b"], "pulls": "732.7K", "tag": "latest", "params": {}, "size_mb": 2697}
+{"rank": 155, "name": "codegeex4", "capabilities": [], "sizes": ["9b"], "pulls": "708.7K", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|assistant|>"]}, "size_mb": 5455}
+{"rank": 156, "name": "nemotron3", "capabilities": ["vision", "tools", "thinking", "audio"], "sizes": ["33b"], "pulls": "689.3K", "tag": "latest", "params": {}, "size_mb": 27638}
+{"rank": 157, "name": "opencoder", "capabilities": [], "sizes": ["1.5b", "8b"], "pulls": "672.7K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>", "<|fim_prefix|>", "<|fim_middle|>", "<|fim_suffix|>", "<|fim_end|>"]}, "size_mb": 4736}
+{"rank": 158, "name": "wizardlm-uncensored", "capabilities": [], "sizes": ["13b"], "pulls": "664.3K", "tag": "latest", "params": {"stop": ["USER:", "ASSISTANT:"]}, "size_mb": 7365}
+{"rank": 159, "name": "ornith", "capabilities": ["tools", "thinking"], "sizes": ["9b", "35b"], "pulls": "660.5K", "tag": "latest", "params": {"stop": ["<|im_end|>"], "temperature": 0.6, "top_k": 20, "top_p": 0.95}, "size_mb": 5629}
+{"rank": 160, "name": "nemotron", "capabilities": ["tools"], "sizes": ["70b"], "pulls": "642.5K", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 42520}
+{"rank": 161, "name": "reflection", "capabilities": [], "sizes": ["70b"], "pulls": "632.6K", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"], "temperature": 0.7, "top_p": 0.95}, "size_mb": 39969}
+{"rank": 162, "name": "codeup", "capabilities": [], "sizes": ["13b"], "pulls": "613.2K", "tag": "latest", "params": {"stop": ["### Instruction:", "### Response:"]}, "size_mb": 7365}
+{"rank": 163, "name": "nous-hermes2-mixtral", "capabilities": [], "sizes": ["8x7b"], "pulls": "607.7K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 26443}
+{"rank": 164, "name": "athene-v2", "capabilities": ["tools"], "sizes": ["72b"], "pulls": "607.4K", "tag": "latest", "params": {}, "size_mb": 47415}
+{"rank": 165, "name": "qwen3-next", "capabilities": ["tools", "thinking"], "sizes": ["80b"], "pulls": "604.6K", "tag": "latest", "params": {"repeat_penalty": 1, "stop": ["<|im_start|>", "<|im_end|>"], "temperature": 0.6, "top_k": 20, "top_p": 0.95}, "size_mb": 50351}
+{"rank": 166, "name": "megadolphin", "capabilities": [], "sizes": ["120b"], "pulls": "586.1K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 67755}
+{"rank": 167, "name": "everythinglm", "capabilities": [], "sizes": ["13b"], "pulls": "585.2K", "tag": "latest", "params": {"stop": ["User:", "Assistant:"]}, "size_mb": 7366}
+{"rank": 168, "name": "exaone3.5", "capabilities": [], "sizes": ["2.4b", "7.8b", "32b"], "pulls": "584.8K", "tag": "latest", "params": {"repeat_penalty": 1, "stop": ["[|endofturn|]"], "temperature": 1}, "size_mb": 4770}
+{"rank": 169, "name": "solar-pro", "capabilities": [], "sizes": ["22b"], "pulls": "576.4K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 13310}
+{"rank": 170, "name": "nuextract", "capabilities": [], "sizes": ["3.8b"], "pulls": "573.7K", "tag": "latest", "params": {"stop": ["<|end|>", "<|user|>", "<|assistant|>"]}, "size_mb": 2176}
+{"rank": 171, "name": "magicoder", "capabilities": [], "sizes": ["7b"], "pulls": "573.1K", "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 3825}
+{"rank": 172, "name": "granite4.1", "capabilities": ["tools"], "sizes": ["3b", "8b", "30b"], "pulls": "568.3K", "tag": null}
+{"rank": 173, "name": "mathstral", "capabilities": [], "sizes": ["7b"], "pulls": "567.4K", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]"]}, "size_mb": 4113}
+{"rank": 174, "name": "deepseek-ocr", "capabilities": ["vision"], "sizes": ["3b"], "pulls": "562.1K", "tag": "latest", "params": {"temperature": 0}, "size_mb": 6687}
+{"rank": 175, "name": "notus", "capabilities": [], "sizes": ["7b"], "pulls": "557K", "tag": "latest", "params": {"stop": ["<|system|>", "<|user|>", "<|assistant|>", "</s>"]}, "size_mb": 4109}
+{"rank": 176, "name": "falcon2", "capabilities": [], "sizes": ["11b"], "pulls": "556.9K", "tag": "latest", "params": {"stop": ["System:", "User:", "Assistant:", "<|endoftext|>"], "temperature": 0}, "size_mb": 6382}
+{"rank": 177, "name": "notux", "capabilities": [], "sizes": ["8x7b"], "pulls": "555.5K", "tag": "latest", "params": {"stop": ["[INST]", "[/INST]"]}, "size_mb": 26442}
+{"rank": 178, "name": "stablelm-zephyr", "capabilities": [], "sizes": ["3b"], "pulls": "549.3K", "tag": "latest", "params": {"stop": ["<|endoftext|>"]}, "size_mb": 1608}
+{"rank": 179, "name": "bespoke-minicheck", "capabilities": [], "sizes": ["7b"], "pulls": "547.2K", "tag": "latest", "params": {"stop": ["<|eot_id|>"], "temperature": 0}, "size_mb": 4712}
+{"rank": 180, "name": "duckdb-nsql", "capabilities": [], "sizes": ["7b"], "pulls": "544.2K", "tag": "latest", "params": {}, "size_mb": 3825}
+{"rank": 181, "name": "firefunction-v2", "capabilities": ["tools"], "sizes": ["70b"], "pulls": "541K", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"]}, "size_mb": 39969}
+{"rank": 182, "name": "mistrallite", "capabilities": [], "sizes": ["7b"], "pulls": "540.1K", "tag": "latest", "params": {"num_ctx": 32768, "stop": ["<|prompter|>", "<|assistant|>", "</s>"]}, "size_mb": 4108}
+{"rank": 183, "name": "wizard-vicuna", "capabilities": [], "sizes": ["13b"], "pulls": "533.8K", "tag": "latest", "params": {"stop": ["USER:", "ASSISTANT:"]}, "size_mb": 7365}
+{"rank": 184, "name": "minimax-m3", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "526.7K", "tag": null}
+{"rank": 185, "name": "open-orca-platypus2", "capabilities": [], "sizes": ["13b"], "pulls": "525.9K", "tag": "latest", "params": {"stop": ["### Instruction:", "### Response:"]}, "size_mb": 7365}
+{"rank": 186, "name": "rnj-1", "capabilities": ["tools"], "sizes": ["8b"], "pulls": "518.5K", "tag": "latest", "params": {"stop": ["<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"], "temperature": 0.2}, "size_mb": 5114}
+{"rank": 187, "name": "codebooga", "capabilities": [], "sizes": ["34b"], "pulls": "517.9K", "tag": "latest", "params": {"num_gqa": 8, "rope_frequency_base": 1000000}, "size_mb": 19052}
+{"rank": 188, "name": "kimi-k2.6", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "495.9K", "tag": null}
+{"rank": 189, "name": "goliath", "capabilities": [], "sizes": [], "pulls": "495.3K", "tag": "latest", "params": {"num_ctx": 4096, "stop": ["USER:", "ASSISTANT:"]}, "size_mb": 66309}
+{"rank": 190, "name": "snowflake-arctic-embed2", "capabilities": ["embedding"], "sizes": ["568m"], "pulls": "475K", "tag": "latest", "params": {}, "size_mb": 1160}
+{"rank": 191, "name": "olmo-3", "capabilities": ["tools", "thinking"], "sizes": ["7b", "32b"], "pulls": "474.5K", "tag": "latest", "params": {"temperature": 0.6, "top_p": 0.95}, "size_mb": 4472}
+{"rank": 192, "name": "granite3.2", "capabilities": ["tools"], "sizes": ["2b", "8b"], "pulls": "468.5K", "tag": "latest", "params": {}, "size_mb": 4942}
+{"rank": 193, "name": "deepseek-v4-pro", "capabilities": ["tools", "thinking", "cloud"], "sizes": [], "pulls": "467.3K", "tag": null}
+{"rank": 194, "name": "medgemma", "capabilities": ["vision"], "sizes": ["4b", "27b"], "pulls": "460K", "tag": "latest", "params": {"stop": ["<end_of_turn>"]}, "size_mb": 3338}
+{"rank": 195, "name": "mistral-medium-3.5", "capabilities": ["vision", "tools", "thinking"], "sizes": ["128b"], "pulls": "433.2K", "tag": "latest", "params": {}, "size_mb": 80241}
+{"rank": 196, "name": "r1-1776", "capabilities": [], "sizes": ["70b", "671b"], "pulls": "432.4K", "tag": "latest", "params": {"stop": ["<\uff5cbegin\u2581of\u2581sentence\uff5c>", "<\uff5cend\u2581of\u2581sentence\uff5c>", "<\uff5cUser\uff5c>", "<\uff5cAssistant\uff5c>"]}, "size_mb": 42520}
+{"rank": 197, "name": "sailor2", "capabilities": [], "sizes": ["1b", "8b", "20b"], "pulls": "428.4K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 5242}
+{"rank": 198, "name": "ornith-1.5", "capabilities": ["vision", "tools", "thinking"], "sizes": ["9b", "35b", "122b", "397b"], "pulls": "416K", "tag": null}
+{"rank": 199, "name": "tulu3", "capabilities": [], "sizes": ["8b", "70b"], "pulls": "414.6K", "tag": "latest", "params": {}, "size_mb": 4920}
+{"rank": 200, "name": "granite-embedding", "capabilities": ["embedding"], "sizes": ["30m", "278m"], "pulls": "398.8K", "tag": "latest", "params": {}, "size_mb": 62}
+{"rank": 201, "name": "glm-5.2", "capabilities": ["tools", "thinking", "cloud"], "sizes": [], "pulls": "377.6K", "tag": null}
+{"rank": 202, "name": "dbrx", "capabilities": [], "sizes": ["132b"], "pulls": "376.8K", "tag": "latest", "params": {"stop": ["<|im_start|>", "<|im_end|>"]}, "size_mb": 74192}
+{"rank": 203, "name": "devstral-2", "capabilities": ["tools"], "sizes": ["123b"], "pulls": "367.7K", "tag": "latest", "params": {"temperature": 0.15}, "size_mb": 74897}
+{"rank": 204, "name": "granite3-guardian", "capabilities": [], "sizes": ["2b", "8b"], "pulls": "349.2K", "tag": "latest", "params": {"temperature": 0}, "size_mb": 2694}
+{"rank": 205, "name": "command-r7b", "capabilities": ["tools"], "sizes": ["7b"], "pulls": "341K", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>", "<|END_RESPONSE|>"]}, "size_mb": 5057}
+{"rank": 206, "name": "phi4-mini-reasoning", "capabilities": [], "sizes": ["3.8b"], "pulls": "322.3K", "tag": "latest", "params": {}, "size_mb": 3152}
+{"rank": 207, "name": "muse-glimmer", "capabilities": ["vision", "tools", "thinking"], "sizes": ["30b"], "pulls": "321.8K", "tag": "latest", "params": {"temperature": 1, "top_k": 64, "top_p": 0.95}, "size_mb": 18157}
+{"rank": 208, "name": "olmo-3.1", "capabilities": ["tools", "thinking"], "sizes": ["32b"], "pulls": "311.5K", "tag": "latest", "params": {"temperature": 0.6, "top_p": 0.95}, "size_mb": 19482}
+{"rank": 209, "name": "alfred", "capabilities": [], "sizes": ["40b"], "pulls": "308.8K", "tag": "latest", "params": {"stop": ["<end_message>", "</end_message>", "<start_user>", "</start_user>", "<start_system>", "</start_system>", "</start_assistant>"]}, "size_mb": 23808}
+{"rank": 210, "name": "deepseek-v2.5", "capabilities": [], "sizes": ["236b"], "pulls": "300K", "tag": "latest", "params": {"stop": ["<\uff5cbegin\u2581of\u2581sentence\uff5c>", "<\uff5cend\u2581of\u2581sentence\uff5c>", "<\uff5cUser\uff5c>", "<\uff5cAssistant\uff5c>", "<\uff5cfim\u2581begin\uff5c>", "<\uff5cfim\u2581hole\uff5c>", "<\uff5cfim\u2581end\uff5c>"]}, "size_mb": 132912}
+{"rank": 211, "name": "bge-large", "capabilities": ["embedding"], "sizes": ["335m"], "pulls": "295.2K", "tag": "latest", "params": {}, "size_mb": 670}
+{"rank": 212, "name": "smallthinker", "capabilities": [], "sizes": ["3b"], "pulls": "267.3K", "tag": "latest", "params": {}, "size_mb": 3616}
+{"rank": 213, "name": "lfm2.5", "capabilities": ["tools", "thinking"], "sizes": ["8b", "24b"], "pulls": "263.4K", "tag": "latest", "params": {"repeat_penalty": 1.05, "temperature": 0.2, "top_k": 80}, "size_mb": 5156}
+{"rank": 214, "name": "nemotron-3.5-lightning", "capabilities": ["tools", "thinking"], "sizes": ["30b"], "pulls": "256.4K", "tag": "latest", "params": {"draft_num_predict": 2, "temperature": 1, "top_p": 0.95}, "size_mb": 25430}
+{"rank": 215, "name": "kimi-k2.7-code", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "253.5K", "tag": null}
+{"rank": 216, "name": "command-a", "capabilities": ["tools"], "sizes": ["111b"], "pulls": "237.7K", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>", "<|END_RESPONSE|>"]}, "size_mb": 67135}
+{"rank": 217, "name": "cogito-2.1", "capabilities": [], "sizes": ["671b"], "pulls": "230.4K", "tag": "latest", "params": {"stop": ["<\uff5cbegin\u2581of\u2581sentence\uff5c>", "<\uff5cend\u2581of\u2581sentence\uff5c>", "<\uff5cUser\uff5c>", "<\uff5cAssistant\uff5c>"]}, "size_mb": 1342259}
+{"rank": 218, "name": "marco-o1", "capabilities": [], "sizes": ["7b"], "pulls": "219.9K", "tag": "latest", "params": {}, "size_mb": 4683}
+{"rank": 219, "name": "qwen3.8-flash-next", "capabilities": ["vision", "tools", "thinking"], "sizes": [], "pulls": "216.5K", "tag": null}
+{"rank": 220, "name": "medgemma1.5", "capabilities": ["vision"], "sizes": ["4b"], "pulls": "215.1K", "tag": "latest", "params": {"stop": ["<end_of_turn>"]}, "size_mb": 3338}
+{"rank": 221, "name": "command-r7b-arabic", "capabilities": ["tools"], "sizes": ["7b"], "pulls": "211.2K", "tag": "latest", "params": {"stop": ["<|START_OF_TURN_TOKEN|>", "<|END_OF_TURN_TOKEN|>", "<|END_RESPONSE|>"]}, "size_mb": 5057}
+{"rank": 222, "name": "functiongemma", "capabilities": ["tools"], "sizes": ["270m"], "pulls": "204.1K", "tag": "latest", "params": {"top_k": 64, "top_p": 0.95}, "size_mb": 300}
+{"rank": 223, "name": "glm-5.3-flash", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "193.1K", "tag": null}
+{"rank": 224, "name": "laguna-s-2.1", "capabilities": ["tools", "thinking"], "sizes": [], "pulls": "179.7K", "tag": "latest", "params": {}, "size_mb": 96031}
+{"rank": 225, "name": "granite4.2", "capabilities": [], "sizes": ["3b", "8b", "30b"], "pulls": "173.7K", "tag": "latest", "params": {"temperature": 1, "top_p": 0.95}, "size_mb": 5347}
+{"rank": 226, "name": "gpt-oss-safeguard", "capabilities": ["tools", "thinking"], "sizes": ["20b", "120b"], "pulls": "168.9K", "tag": "latest", "params": {"temperature": 1, "top_p": 1}, "size_mb": 13793}
+{"rank": 227, "name": "deepseek-v4.1-flash", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "166.3K", "tag": null}
+{"rank": 228, "name": "nemotron-cascade-2", "capabilities": ["tools", "thinking"], "sizes": ["30b"], "pulls": "157.3K", "tag": "latest", "params": {"temperature": 1, "top_p": 0.95}, "size_mb": 24272}
+{"rank": 229, "name": "mistral-large-3", "capabilities": ["vision", "tools", "cloud"], "sizes": [], "pulls": "142.9K", "tag": null}
+{"rank": 230, "name": "laguna-xs-2.1", "capabilities": ["tools", "thinking"], "sizes": [], "pulls": "140.5K", "tag": "latest", "params": {}, "size_mb": 20274}
+{"rank": 231, "name": "nemotron-3-ultra", "capabilities": ["tools", "thinking", "cloud"], "sizes": [], "pulls": "135K", "tag": null}
+{"rank": 232, "name": "glm-5.3", "capabilities": ["tools", "thinking", "cloud"], "sizes": [], "pulls": "128.2K", "tag": null}
+{"rank": 233, "name": "tev1", "capabilities": ["tools", "decision", "thinking"], "sizes": ["0.8b", "4b"], "pulls": "111.6K", "tag": "latest", "params": {"num_ctx": 8192}, "size_mb": 4610}
+{"rank": 234, "name": "kimi-k3", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "108.2K", "tag": null}
+{"rank": 235, "name": "north-mini-code-1.0", "capabilities": ["tools", "thinking"], "sizes": [], "pulls": "78.7K", "tag": "latest", "params": {"temperature": 1, "top_p": 0.95}, "size_mb": 18593}
+{"rank": 236, "name": "embeddinggemma-2", "capabilities": ["vision", "embedding", "audio"], "sizes": ["270m", "440m", "570m", "740m"], "pulls": "78.5K", "tag": "latest", "params": {}, "size_mb": 1284}
+{"rank": 237, "name": "minicpm-v4.6", "capabilities": ["vision"], "sizes": ["1b"], "pulls": "76.1K", "tag": "latest", "params": {}, "size_mb": 1637}
+{"rank": 238, "name": "minicpm-v4.5", "capabilities": ["vision"], "sizes": ["8b"], "pulls": "60.5K", "tag": "latest", "params": {}, "size_mb": 6121}
+{"rank": 239, "name": "nimble", "capabilities": ["tools", "decision", "thinking"], "sizes": ["9b"], "pulls": "55.9K", "tag": "latest", "params": {"num_ctx": 8194}, "size_mb": 9527}
+{"rank": 240, "name": "bonsai-2", "capabilities": ["vision", "tools", "thinking"], "sizes": ["2b", "4b", "9b", "27b"], "pulls": "45K", "tag": "latest", "params": {"presence_penalty": 1, "temperature": 1, "top_k": 20, "top_p": 0.95}, "size_mb": 3180}
+{"rank": 241, "name": "granite4.1-guardian", "capabilities": ["tools", "thinking"], "sizes": ["8b"], "pulls": "41.1K", "tag": null}
+{"rank": 242, "name": "minimax-m3.1-flash", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "39.4K", "tag": null}
+{"rank": 243, "name": "laguna-xs.2", "capabilities": ["tools", "thinking"], "sizes": [], "pulls": "38.6K", "tag": "latest", "params": {}, "size_mb": 23098}
+{"rank": 244, "name": "clef-flash", "capabilities": ["vision", "decision"], "sizes": ["9b"], "pulls": "35.9K", "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 10578}
+{"rank": 245, "name": "clef", "capabilities": ["vision", "decision", "cloud"], "sizes": ["27b"], "pulls": "35.4K", "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 20163}
+{"rank": 246, "name": "beam", "capabilities": ["tools", "thinking", "cloud"], "sizes": [], "pulls": "34.9K", "tag": null}
+{"rank": 247, "name": "d1", "capabilities": ["vision"], "sizes": ["3b"], "pulls": "18.7K", "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 3730}
+{"rank": 248, "name": "nimble-v3", "capabilities": ["tools", "decision", "thinking"], "sizes": ["9b"], "pulls": "16.1K", "tag": "latest", "params": {"num_ctx": 32768}, "size_mb": 9527}
+{"rank": 249, "name": "laya", "capabilities": ["embedding", "decision"], "sizes": [], "pulls": "13.9K", "tag": "latest", "params": {"num_ctx": 512}, "size_mb": 844}
+{"rank": 250, "name": "nemotron-3.5-super", "capabilities": ["vision", "tools", "thinking"], "sizes": ["120b"], "pulls": "13K", "tag": "latest", "params": {"draft_num_predict": 3, "temperature": 1, "top_p": 0.95}, "size_mb": 90153}
+{"rank": 251, "name": "mistral-large-4", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": "11.9K", "tag": null}
+{"rank": 252, "name": "kev", "capabilities": ["decision"], "sizes": [], "pulls": "10.2K", "tag": "latest", "params": {"num_ctx": 73728}, "size_mb": 5630}
+{"rank": 253, "name": "flint", "capabilities": ["tools", "thinking"], "sizes": ["40b"], "pulls": null, "tag": "latest", "params": {"temperature": 1, "top_k": 20, "top_p": 0.95}, "size_mb": 22863}
+{"rank": 254, "name": "muse-spark-open", "capabilities": ["vision", "tools", "thinking", "cloud"], "sizes": [], "pulls": null, "tag": null}
+{"rank": 255, "name": "nemotron-3.5-bolt", "capabilities": ["vision", "tools", "thinking"], "sizes": [], "pulls": null, "tag": "latest", "params": {"draft_num_predict": 7, "temperature": 1, "top_p": 0.95}, "size_mb": 24750}
+{"rank": 256, "name": "pplx-decider", "capabilities": ["vision", "decision"], "sizes": ["27b"], "pulls": null, "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 17475}
+{"rank": 257, "name": "d1-omni", "capabilities": ["vision"], "sizes": ["600m"], "pulls": null, "tag": "latest", "params": {"num_ctx": 16384}, "size_mb": 849}
+{"rank": 258, "name": "strands-decider", "capabilities": ["decision"], "sizes": ["2b"], "pulls": null, "tag": "latest", "params": {"num_ctx": 4096}, "size_mb": 1975}
+{"rank": 259, "name": "d3", "capabilities": ["vision", "decision"], "sizes": ["2b", "4b", "9b", "27b"], "pulls": "885", "tag": "latest", "params": {"num_batch": 4096, "num_ctx": 4096}, "size_mb": 5833}
+{"rank": 260, "name": "phonon", "capabilities": [], "sizes": [], "pulls": "262", "tag": "latest", "params": {}, "size_mb": 103}
