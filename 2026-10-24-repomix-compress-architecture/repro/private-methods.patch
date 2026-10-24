@@ -1,0 +1,22 @@
+--- lib/core/treeSitter/queries/queryTypescript.js
++++ lib/core/treeSitter/queries/queryTypescript.js
+@@ -38,7 +38,7 @@
+   name: (identifier) @name.definition.function) @definition.function
+ 
+ (method_definition
+-  name: (property_identifier) @name.definition.method) @definition.method
++  name: [(property_identifier) (private_property_identifier)] @name.definition.method) @definition.method
+ 
+ (class_declaration
+   name: (type_identifier) @name.definition.class) @definition.class
+--- lib/core/treeSitter/queries/queryJavascript.js
++++ lib/core/treeSitter/queries/queryJavascript.js
+@@ -5,7 +5,7 @@
+   (comment)* @doc
+   .
+   (method_definition
+-    name: (property_identifier) @name.definition.method) @definition.method
++    name: [(property_identifier) (private_property_identifier)] @name.definition.method) @definition.method
+   (#not-eq? @name.definition.method "constructor")
+   (#strip! @doc "^[\\s\\*/]+|^[\\s\\*/]$")
+   (#select-adjacent! @doc @definition.method)

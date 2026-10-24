@@ -1,0 +1,9 @@
+{
+  "name": "repomix-compress-architecture",
+  "private": true,
+  "description": "Does Repomix --compress keep enough for Claude to explain how code fits together?",
+  "license": "MIT",
+  "dependencies": {
+    "repomix": "1.18.1"
+  }
+}
