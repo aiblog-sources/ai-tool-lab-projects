@@ -1,0 +1,101 @@
+label|points|wrong_claims|note
+ky-retry-flow/2c7e|11111|0|
+ky-retry-flow/ad53|11111|0|
+ky-retry-flow/b1a1|01101|3|old _retry(function_) wrapper; beforeError hooks before each retry; retryCount incremented in calculateRetryDelay
+ky-retry-flow/cc01|11111|0|
+ky-retry-flow/51d0|11111|0|
+ky-retry-flow/5935|01111|4|old _retry wrapper; beforeRequest inside _fetch on every attempt; beforeError hooks before each retry; retryCount incremented in calculateRetryDelay
+ky-retry-flow/f216|01111|1|says the request is cloned after the fetch (it is cloned before)
+ky-retry-flow/de98|01111|0|
+ky-timeout/273f|11110|0|
+ky-timeout/1626|11100|1|says a TimeoutError is retried depending on retry.limit (not retried unless retryOnTimeout)
+ky-timeout/d6bd|11111|0|
+ky-timeout/1efd|11111|0|
+ky-timeout/4809|10111|0|
+ky-timeout/9efc|10111|0|
+ky-timeout/530e|11111|0|
+ky-timeout/4412|10111|0|
+ky-hooks-order/a25d|00110|2|beforeRequest runs inside fetch on every attempt; beforeError runs on each HTTPError before the retry decision
+ky-hooks-order/ea53|11101|0|
+ky-hooks-order/1cd8|11101|0|
+ky-hooks-order/12bd|11111|0|
+ky-hooks-order/ce65|11111|0|
+ky-hooks-order/6399|11101|0|
+ky-hooks-order/2968|00101|2|beforeRequest runs inside fetch on every attempt; beforeRetry hooks run before the wait
+ky-hooks-order/ff27|11101|0|
+ky-json-shortcut/5f25|11101|0|
+ky-json-shortcut/b4ad|11110|0|
+ky-json-shortcut/7d3a|10110|0|
+ky-json-shortcut/069f|11110|0|
+ky-json-shortcut/1d28|11101|0|
+ky-json-shortcut/0173|11111|0|
+ky-json-shortcut/d1d5|11110|0|
+ky-json-shortcut/2760|11110|0|
+ky-force-retry/589c|11111|0|
+ky-force-retry/873f|11110|0|
+ky-force-retry/d0e1|11110|0|
+ky-force-retry/375e|11111|0|
+ky-force-retry/77fc|11111|0|
+ky-force-retry/990c|10111|0|
+ky-force-retry/5efe|11111|0|
+ky-force-retry/7a33|11111|0|
+requests-get-flow/d350|11111|0|
+requests-get-flow/85ea|11111|0|
+requests-get-flow/901a|11111|0|
+requests-get-flow/4012|11111|0|
+requests-get-flow/6e4f|11111|0|
+requests-get-flow/46de|11111|0|
+requests-redirects/5aa5|11111|0|
+requests-redirects/f151|11111|0|
+requests-redirects/78bc|11111|0|
+requests-redirects/cd10|11111|1|says redirects strip fragments (requests carries the previous fragment over)
+requests-redirects/a54e|11111|0|
+requests-redirects/e656|10101|0|
+requests-adapters/b8ee|11111|0|
+requests-adapters/be07|00101|0|
+requests-adapters/8f51|11111|0|
+requests-adapters/ad25|01101|0|
+requests-adapters/90a2|11111|0|
+requests-adapters/32e3|11111|0|
+requests-env-settings/60d2|11110|0|
+requests-env-settings/fc60|11110|2|names get_environment_proxies (the function is get_environ_proxies); says session settings beat environment variables
+requests-env-settings/cb61|10010|0|
+requests-env-settings/01d4|11111|2|names get_environment_proxies as current; says session proxies beat environment proxies (env values are merged into the request-level dict first)
+requests-env-settings/0154|10010|0|
+requests-env-settings/e4e5|11111|0|
+requests-hooks-cookies/d255|11011|0|
+requests-hooks-cookies/3688|11111|0|
+requests-hooks-cookies/b4a0|11011|0|
+requests-hooks-cookies/855d|11111|0|
+requests-hooks-cookies/09eb|11111|0|
+requests-hooks-cookies/3319|11111|0|
+diff-tour-flow/1103|11001|0|
+diff-tour-flow/1b58|11111|0|
+diff-tour-flow/152a|00000|0|NOT SURE
+diff-tour-flow/d7cc|00000|0|NOT SURE
+diff-tour-flow/fe0e|11111|0|
+diff-tour-flow/ce33|11111|0|
+diff-tour-invalid/b12e|00000|0|NOT SURE
+diff-tour-invalid/dd2a|01111|0|
+diff-tour-invalid/7cf7|01111|0|
+diff-tour-invalid/b244|01111|0|
+diff-tour-invalid/b4a9|00000|0|NOT SURE
+diff-tour-invalid/7fce|11111|0|
+diff-tour-sandbox/4c07|11110|0|
+diff-tour-sandbox/8dc1|11110|0|
+diff-tour-sandbox/f0b6|11110|0|
+diff-tour-sandbox/0609|00000|0|NOT SURE
+diff-tour-sandbox/c298|00000|0|NOT SURE
+diff-tour-sandbox/931f|11110|0|
+diff-tour-cache/0359|00111|0|
+diff-tour-cache/526c|00111|0|
+diff-tour-cache/3e33|00000|0|NOT SURE
+diff-tour-cache/3017|00000|0|NOT SURE
+diff-tour-cache/1134|11111|0|
+diff-tour-cache/a473|11111|0|
+diff-tour-ask/056d|00000|0|NOT SURE
+diff-tour-ask/7866|11011|0|
+diff-tour-ask/dc9d|00000|0|NOT SURE
+diff-tour-ask/92d3|10001|0|
+diff-tour-ask/9c00|11011|0|
+diff-tour-ask/753d|10000|0|
