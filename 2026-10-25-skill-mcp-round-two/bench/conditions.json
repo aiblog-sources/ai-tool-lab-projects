@@ -1,0 +1,11 @@
+{
+  "sonnet-both":         {"model": "sonnet", "mcp": "real", "skill": "script"},
+  "sonnet-bridge":       {"model": "sonnet", "mcp": "real", "skill": "bridge"},
+  "sonnet-vague":        {"model": "sonnet", "mcp": "vague", "skill": null},
+  "sonnet-bridge-vague": {"model": "sonnet", "mcp": "vague", "skill": "bridge-vague"},
+  "sonnet-plugin":       {"model": "sonnet", "mcp": "real", "skill": null, "plugin": true},
+  "haiku-both":          {"model": "haiku", "mcp": "real", "skill": "script"},
+  "opus-both":           {"model": "opus", "mcp": "real", "skill": "script"},
+  "haiku-bridge":        {"model": "haiku", "mcp": "real", "skill": "bridge"},
+  "opus-bridge":         {"model": "opus", "mcp": "real", "skill": "bridge"}
+}

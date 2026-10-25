@@ -1,0 +1,15 @@
+{
+  "name": "skill-mcp-round-two",
+  "version": "1.0.0",
+  "description": "Round two of Skill vs MCP server in Claude Code: a Skill that points at the MCP tool, a plugin-packaged Skill, and Haiku and Opus.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  }
+}

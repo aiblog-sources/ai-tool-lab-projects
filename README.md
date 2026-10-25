@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Can a Claude Code Skill call an MCP tool? Skill vs MCP, round two](2026-10-25-skill-mcp-round-two/) | [Can a Claude Code Skill call an MCP tool? 432 runs](https://aitoollabs.dev/posts/claude-code-skill-call-mcp-tool/) | Shipped |
 | [Repomix --compress on architecture questions](2026-10-24-repomix-compress-architecture/) | [Repomix --compress on architecture questions: 75% vs 93%](https://aitoollabs.dev/posts/repomix-compress-architecture-questions/) | Shipped |
 | [Ollama library models through the OpenAI API: shipped samplers vs /v1](2026-10-23-ollama-library-v1-samplers/) | [Ollama's OpenAI API ignores the model's own temperature](https://aitoollabs.dev/posts/ollama-openai-api-ignores-model-temperature/) | Shipped |
 | [Ollama vs llama-server sampler defaults on a JSON task](2026-10-22-ollama-llama-server-samplers/) | [Ollama's OpenAI API default temperature is 1.0, not 0.8](https://aitoollabs.dev/posts/ollama-openai-api-default-temperature/) | Shipped |
