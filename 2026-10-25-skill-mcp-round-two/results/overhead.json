@@ -1,0 +1,74 @@
+[
+  {
+    "name": "none",
+    "input_tokens": 16367,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "project-skill",
+    "input_tokens": 16410,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "bridge-skill",
+    "input_tokens": 16412,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-skill",
+    "input_tokens": 16414,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none",
+    "input_tokens": 16367,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "project-skill",
+    "input_tokens": 16410,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "bridge-skill",
+    "input_tokens": 16412,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-skill",
+    "input_tokens": 16414,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none",
+    "input_tokens": 16367,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "project-skill",
+    "input_tokens": 16410,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "bridge-skill",
+    "input_tokens": 16412,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-skill",
+    "input_tokens": 16414,
+    "turns": 1,
+    "answer": "OK"
+  }
+]
