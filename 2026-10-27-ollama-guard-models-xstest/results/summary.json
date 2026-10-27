@@ -1,0 +1,50 @@
+{
+ "llama-guard3:1b": {
+  "n": 450,
+  "fp": 17,
+  "safe": 250,
+  "tp": 150,
+  "unsafe": 200,
+  "other": 0,
+  "accuracy": 0.8511,
+  "auc": 0.9225,
+  "median_total_s": 3.0655,
+  "missing_p": 0
+ },
+ "shieldgemma:2b": {
+  "n": 450,
+  "fp": 29,
+  "safe": 250,
+  "tp": 126,
+  "unsafe": 200,
+  "other": 0,
+  "accuracy": 0.7711,
+  "auc": 0.8296,
+  "median_total_s": 23.5885,
+  "missing_p": 0
+ },
+ "granite3-guardian:2b": {
+  "n": 450,
+  "fp": 99,
+  "safe": 250,
+  "tp": 199,
+  "unsafe": 200,
+  "other": 0,
+  "accuracy": 0.7778,
+  "auc": 0.9195,
+  "median_total_s": 10.194,
+  "missing_p": 0
+ },
+ "shieldgemma-userprompt:2b": {
+  "n": 450,
+  "fp": 27,
+  "safe": 250,
+  "tp": 127,
+  "unsafe": 200,
+  "other": 0,
+  "accuracy": 0.7778,
+  "auc": 0.8373,
+  "median_total_s": 23.563,
+  "missing_p": 0
+ }
+}
