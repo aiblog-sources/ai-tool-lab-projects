@@ -1,0 +1,5 @@
+model	background_cpu_pct	peak_rss_mib	minutes
+llama-guard3:1b	5	2975	11.9
+granite3-guardian:2b	5	4909	38.5
+shieldgemma:2b	3	2213	88.9
+shieldgemma-userprompt:2b	3	2223	100.9

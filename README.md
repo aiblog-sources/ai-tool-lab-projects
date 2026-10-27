@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Llama Guard vs ShieldGemma vs Granite Guardian on Ollama, measured with XSTest](2026-10-27-ollama-guard-models-xstest/) | [Llama Guard vs ShieldGemma vs Granite Guardian on Ollama](https://aitoollabs.dev/posts/llama-guard-vs-shieldgemma-granite-guardian/) | Shipped |
 | [Do Claude Code deny rules keep .env private?](2026-10-26-claude-code-deny-rules/) | [Claude Code deny rules and .env: 13 Bash routes still read it](https://aitoollabs.dev/posts/claude-code-deny-rules-env-file/) | Shipped |
 | [Can a Claude Code Skill call an MCP tool? Skill vs MCP, round two](2026-10-25-skill-mcp-round-two/) | [Can a Claude Code Skill call an MCP tool? 432 runs](https://aitoollabs.dev/posts/claude-code-skill-call-mcp-tool/) | Shipped |
 | [Repomix --compress on architecture questions](2026-10-24-repomix-compress-architecture/) | [Repomix --compress on architecture questions: 75% vs 93%](https://aitoollabs.dev/posts/repomix-compress-architecture-questions/) | Shipped |
