@@ -1,0 +1,50 @@
+frames 1500 (summary from frame 60), wall 0.96 s (1555 frames/s), symbols 230
+mean CPU load 34.8% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 72
+frames with DMA during active display: 240; max DMA 9920 bytes in frame 1385
+
+whole run, cycles by function:
+   65.2%  VDP_waitVBlank
+    9.7%  flushQueue
+    5.9%  __udivsi3
+    4.4%  move_sprites
+    3.8%  burn.constprop.0
+    2.4%  __divsi3
+    1.8%  physics_with_divisions
+    1.7%  physics_with_reciprocals
+    1.1%  redraw_plane_per_tile
+    0.9%  read6Btn
+    0.8%  JOY_update
+    0.8%  DMA_queueDmaFast
+
+busiest frames:
+  frame 715: 128020 busy cycles (100% of a frame), idle entered at line -1
+       127700  redraw_plane_per_tile
+          126  no_bmp_task
+          124  no_user_task
+           32  no_xgm_task
+  frame 737: 128012 busy cycles (100% of a frame), idle entered at line -1
+       127694  redraw_plane_per_tile
+          126  no_bmp_task
+          122  no_user_task
+           32  no_xgm_task
+  frame 759: 128012 busy cycles (100% of a frame), idle entered at line -1
+       127694  redraw_plane_per_tile
+          126  no_bmp_task
+          122  no_user_task
+           32  no_xgm_task
+  frame 693: 128008 busy cycles (100% of a frame), idle entered at line -1
+       127692  redraw_plane_per_tile
+          126  no_bmp_task
+          122  no_user_task
+           30  no_xgm_task
+  frame 781: 127994 busy cycles (100% of a frame), idle entered at line -1
+       127678  redraw_plane_per_tile
+          126  no_bmp_task
+          122  no_user_task
+           30  no_xgm_task
+  frame 803: 127994 busy cycles (100% of a frame), idle entered at line -1
+       127678  redraw_plane_per_tile
+          126  no_bmp_task
+          122  no_user_task
+           30  no_xgm_task

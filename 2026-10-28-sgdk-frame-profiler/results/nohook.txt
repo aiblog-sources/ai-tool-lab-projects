@@ -1,0 +1,1 @@
+frames 1500 (summary from frame 0), wall 0.79 s (1910 frames/s), symbols 230, hook off

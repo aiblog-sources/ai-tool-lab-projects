@@ -1,0 +1,50 @@
+frames 1200 (summary from frame 60), wall 0.89 s (1355 frames/s), symbols 296
+mean CPU load 12.5% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 296 bytes in frame 64
+
+whole run, cycles by function:
+   87.5%  VDP_waitVBlank
+    3.2%  main.isra.0
+    1.4%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    1.1%  SPR_update
+    1.0%  DMA_queueDmaFast
+    1.0%  read6Btn
+    0.9%  lz4w_unpack_a
+    0.9%  JOY_update
+    0.7%  updateCamera
+    0.5%  MAP_scrollToEx
+    0.3%  flushQueue
+    0.3%  SYS_getAndSetInterruptMaskLevel
+
+busiest frames:
+  frame 1099: 24894 busy cycles (19% of a frame), idle entered at line 13
+         6700  prepareMapDataRowEx_MTI8_BI8
+         3879  main.isra.0
+         2922  DMA_queueDmaFast
+         2055  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 214: 24860 busy cycles (19% of a frame), idle entered at line 13
+         6285  prepareMapDataRowEx_MTI8_BI8
+         4257  main.isra.0
+         2879  DMA_queueDmaFast
+         2023  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 139: 24836 busy cycles (19% of a frame), idle entered at line 13
+         6309  prepareMapDataRowEx_MTI8_BI8
+         4226  main.isra.0
+         2877  DMA_queueDmaFast
+         2002  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 249: 24811 busy cycles (19% of a frame), idle entered at line 13
+         6255  prepareMapDataRowEx_MTI8_BI8
+         4214  main.isra.0
+         2889  DMA_queueDmaFast
+         2001  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 619: 24806 busy cycles (19% of a frame), idle entered at line 13
+         6595  prepareMapDataRowEx_MTI8_BI8
+         3835  main.isra.0
+         2818  DMA_queueDmaFast
+         2032  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 489: 24744 busy cycles (19% of a frame), idle entered at line 12
+         6492  prepareMapDataRowEx_MTI8_BI8
+         3833  main.isra.0
+         2915  DMA_queueDmaFast
+         2009  SYS_doVBlankProcessEx.constprop.0.isra.0

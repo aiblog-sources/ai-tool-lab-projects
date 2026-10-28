@@ -1,0 +1,111 @@
+boot frames skipped: 32; analysed video frames: 1468; 68k cycles per frame: 128005
+
+phase                 frames  busy% mean  busy% max  dropped(prof) dropped(ROM)  SGDK load mean
+A light                  240        12.9       36.2             1            0             7.3
+B divisions              300        57.6       99.9            60           60            76.6
+B2 reciprocals           120        33.7       34.0             0            0            35.0
+C per-tile redraw        132        23.7      100.0            12           11            19.3
+C2 one fill call         120        15.1       55.9             0            0             8.4
+D DMA ramp               480        41.9       86.9             0            0            39.4
+E idle                    76        13.8       85.4             0            0            11.8
+
+phase B, by divisions per sprite (24 sprites):
+div/sprite  frames  busy% mean  missed  SGDK load mean
+         1      30        28.7       0            23.0
+         2      30        41.0       0            37.1
+         3      30        53.4       0            50.0
+         4      30        65.8       0            62.2
+         5      30        78.1       0            75.1
+         6      30        90.4       0            88.0
+         7      60        51.6      30           103.3
+         8      60        57.7      30           111.8
+
+phases C and C2, frames over 20% busy:
+  C per-tile redraw  video frame 692: busy 99.9%  dropped 0  game frame 600
+  C per-tile redraw  video frame 693: busy 100.0%  dropped 1  game frame 600
+  C per-tile redraw  video frame 694: busy 75.3%  dropped 1  game frame 601
+  C per-tile redraw  video frame 714: busy 99.9%  dropped 0  game frame 620
+  C per-tile redraw  video frame 715: busy 100.0%  dropped 1  game frame 620
+  C per-tile redraw  video frame 716: busy 75.3%  dropped 1  game frame 621
+  C per-tile redraw  video frame 736: busy 99.9%  dropped 0  game frame 640
+  C per-tile redraw  video frame 737: busy 100.0%  dropped 1  game frame 640
+  C per-tile redraw  video frame 738: busy 75.3%  dropped 1  game frame 641
+  C per-tile redraw  video frame 758: busy 99.9%  dropped 0  game frame 660
+  C per-tile redraw  video frame 759: busy 100.0%  dropped 1  game frame 660
+  C per-tile redraw  video frame 760: busy 75.3%  dropped 1  game frame 661
+  C per-tile redraw  video frame 780: busy 99.9%  dropped 0  game frame 680
+  C per-tile redraw  video frame 781: busy 100.0%  dropped 1  game frame 680
+  C per-tile redraw  video frame 782: busy 75.3%  dropped 1  game frame 681
+  C per-tile redraw  video frame 802: busy 99.9%  dropped 0  game frame 700
+  C per-tile redraw  video frame 803: busy 100.0%  dropped 1  game frame 700
+  C per-tile redraw  video frame 804: busy 75.3%  dropped 1  game frame 701
+  C2 one fill call   video frame 824: busy 55.8%  dropped 0  game frame 721
+  C2 one fill call   video frame 844: busy 55.7%  dropped 0  game frame 741
+  C2 one fill call   video frame 864: busy 55.8%  dropped 0  game frame 761
+  C2 one fill call   video frame 884: busy 55.8%  dropped 0  game frame 781
+  C2 one fill call   video frame 904: busy 55.9%  dropped 0  game frame 801
+  C2 one fill call   video frame 924: busy 55.8%  dropped 0  game frame 821
+
+phase D, DMA by queued size (bytes per frame):
+queued  frames  DMA in VBlank (mean)  DMA in active display (mean)  frames spilling  last DMA line (max)
+  4096      40                  4288                             0                0                  227
+  4608      40                  4800                             0                0                  227
+  5120      40                  5312                             0                0                  227
+  5632      40                  5824                             0                0                  227
+  6144      40                  6336                             0                0                  227
+  6656      40                  6848                             0                0                  227
+  7168      40                  7142                           218               40                   12
+  7680      40                  7138                           734               40                   40
+  8192      40                  7139                          1245               40                   69
+  8704      40                  7143                          1753               40                   98
+  9216      40                  7142                          2266               40                  126
+  9728      39                  7135                          2785               39                  154
+
+calibration: burn(500) total 6995952 cycles over 1368 game loops = 5114.0 per call (dbra loop alone: 10*500+14 = 5014)
+
+phase B and B2, cost of one game loop (busy cycles / one frame) vs SGDK's own load figure:
+phase           div/sprite  loops  loop cost %  video frames per loop  SGDK load
+B divisions              1     30         28.7                   1.00       23.0
+B divisions              2     30         41.0                   1.00       37.1
+B divisions              3     30         53.4                   1.00       50.0
+B divisions              4     30         65.8                   1.00       62.2
+B divisions              5     30         78.1                   1.00       75.1
+B divisions              6     30         90.4                   1.00       88.0
+B divisions              7     30        103.1                   2.00      103.3
+B divisions              8     30        115.4                   2.00      111.8
+B2 reciprocals           8    120         33.7                   1.00       35.0
+
+phase B slope: each extra division per sprite adds 15865 cycles per loop = 661 per division (24 sprites)
+phase A loop: 16390 cycles; phase B2 loop: 43151 cycles; reciprocal step = (43151 - 16390) / 192 = 139 cycles
+
+phase B: 25920 divisions, __divsi3 + __udivsi3 + loop = 18397980 cycles = 710 per division
+phase B2: 23040 reciprocal steps, physics_with_reciprocals = 3196116 cycles = 139 per step
+redraw_plane_per_tile: 2009547 cycles over 6 calls = 334924 per call
+one VDP_fillTileMapRect redraw: 6 frames at 71436 busy cycles vs 16630 on the others = 54806 cycles
+
+full profile (top 40, % of all cycles):
+   65.18%    120145815  VDP_waitVBlank
+    9.70%     17874693  flushQueue
+    5.85%     10785044  __udivsi3
+    4.36%      8041890  move_sprites
+    3.80%      6995952  burn.constprop.0
+    2.37%      4377068  __divsi3
+    1.76%      3235868  physics_with_divisions
+    1.73%      3196116  physics_with_reciprocals
+    1.09%      2009547  redraw_plane_per_tile
+    0.94%      1731888  read6Btn
+    0.82%      1510272  JOY_update
+    0.80%      1467342  DMA_queueDmaFast
+    0.60%      1107749  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.32%       596126  main.isra.0
+    0.18%       328576  VDP_fillTileMapRect.constprop.0
+    0.10%       179596  no_bmp_task
+    0.10%       177866  no_user_task
+    0.09%       158688  SYS_getAndSetInterruptMaskLevel
+    0.08%       154590  queue_dma
+    0.07%       131328  SYS_setInterruptMaskLevel
+    0.02%        43704  no_xgm_task
+    0.02%        33524  _VINT
+    0.01%        23040  _vint_dummy_callback
+    0.01%        21888  _vblank_dummy_callback
+    0.00%           60  redraw_plane_fill
