@@ -1,0 +1,8 @@
+[01m[Ksrc/main.c:179:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:398:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:395:5:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:404:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:401:5:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:427:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:427:47:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

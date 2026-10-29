@@ -1,0 +1,507 @@
+{
+ "task": "breakout",
+ "model": "claude-sonnet-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 10,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 158,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 159,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 160,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 162,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 163,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 164,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 183,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawBricks"
+   },
+   {
+    "line": 196,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 230,
+    "rule": "div",
+    "level": "guarded",
+    "function": "hitBrickAt"
+   },
+   {
+    "line": 295,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateBall"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.81,
+   "dropped": 0,
+   "peak_load": 18.1,
+   "p95_load": 6.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.19
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.56
+    ],
+    [
+     "ballHitsBrick",
+     0.31
+    ],
+    [
+     "hitBrickAt.part.0",
+     0.24
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 1,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 9,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 158,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 159,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 160,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 162,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 163,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 164,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 183,
+    "rule": "tile-loop",
+    "level": "heavy",
+    "function": "drawBricks",
+    "est_cycles": 77760
+   },
+   {
+    "line": 196,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage",
+    "est_cycles": 3673
+   },
+   {
+    "line": 230,
+    "rule": "div",
+    "level": "guarded",
+    "function": "hitBrickAt",
+    "est_cycles": 453
+   },
+   {
+    "line": 295,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateBall",
+    "est_cycles": 623
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 7,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 157,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHudLabels"
+   },
+   {
+    "line": 158,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHudLabels"
+   },
+   {
+    "line": 166,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 167,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 169,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 170,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 203,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.79,
+   "dropped": 0,
+   "peak_load": 14.7,
+   "p95_load": 6.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.21
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.56
+    ],
+    [
+     "ballHitsBrick",
+     0.31
+    ],
+    [
+     "hitBrickAt.part.0",
+     0.24
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 8,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 174,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 175,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 176,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 178,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 179,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 180,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 211,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 316,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateBall"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.96,
+   "dropped": 0,
+   "peak_load": 17.2,
+   "p95_load": 5.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.04
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.46
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.25
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.15
+    ],
+    [
+     "ballHitsBrick",
+     0.11
+    ]
+   ]
+  }
+ },
+ "calls": 6,
+ "cost_usd": 0.6852,
+ "claude_wall_s": 317.5,
+ "output_tokens": 53782,
+ "lint2": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 7,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 161,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHudLabels"
+   },
+   {
+    "line": 162,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHudLabels"
+   },
+   {
+    "line": 174,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 175,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 180,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 181,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 217,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.84,
+   "dropped": 0,
+   "peak_load": 12.6,
+   "p95_load": 6.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.16
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.56
+    ],
+    [
+     "ballHitsBrick",
+     0.31
+    ],
+    [
+     "hitBrickAt.part.0",
+     0.29
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,492 @@
+[
+ {
+  "case": "base_s32_1",
+  "label": "loop baseline, one s32 read",
+  "cycles": 43.1,
+  "sd": 0.42,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "base_s32_2",
+  "label": "loop baseline, s32 a + b",
+  "cycles": 71.3,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "base_u32_2",
+  "label": "loop baseline, u32 a + b",
+  "cycles": 71.3,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "base_s16_2",
+  "label": "loop baseline, s16 a + b",
+  "cycles": 71.5,
+  "sd": 0.59,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "base_u16_2",
+  "label": "loop baseline, u16 a + b",
+  "cycles": 96.7,
+  "sd": 0.51,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "base_f_2",
+  "label": "loop baseline, (s32) float",
+  "cycles": 1046.4,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__fixsfsi"
+ },
+ {
+  "case": "div_s32_var",
+  "label": "s32 / s32 variable",
+  "cycles": 617.3,
+  "sd": 0.07,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__divsi3"
+ },
+ {
+  "case": "div_u32_var",
+  "label": "u32 / u32 variable",
+  "cycles": 452.9,
+  "sd": 0.05,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__udivsi3"
+ },
+ {
+  "case": "div_s16_var",
+  "label": "s16 / s16 variable",
+  "cycles": 613.0,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__divsi3"
+ },
+ {
+  "case": "div_u16_var",
+  "label": "u16 / u16 variable",
+  "cycles": 117.5,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divu"
+ },
+ {
+  "case": "mod_s32_var",
+  "label": "s32 % s32 variable",
+  "cycles": 1041.3,
+  "sd": 0.61,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__modsi3"
+ },
+ {
+  "case": "mod_u16_var",
+  "label": "u16 % u16 variable",
+  "cycles": 125.6,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divu"
+ },
+ {
+  "case": "div_s32_c10",
+  "label": "s32 / 10",
+  "cycles": 623.2,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__divsi3"
+ },
+ {
+  "case": "div_u16_c10",
+  "label": "u16 / 10",
+  "cycles": 77.3,
+  "sd": 0.58,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "mulu"
+ },
+ {
+  "case": "div_s32_c8",
+  "label": "s32 / 8",
+  "cycles": 22.8,
+  "sd": 0.64,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "div_u16_c8",
+  "label": "u16 / 8",
+  "cycles": 24.3,
+  "sd": 0.02,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "sgdk_divu",
+  "label": "SGDK divu(u32, u16)",
+  "cycles": 133.0,
+  "sd": 0.51,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divu"
+ },
+ {
+  "case": "sgdk_divs",
+  "label": "SGDK divs(s32, s16)",
+  "cycles": 138.7,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divs"
+ },
+ {
+  "case": "mul_s32_var",
+  "label": "s32 * s32 variable",
+  "cycles": 267.9,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__mulsi3"
+ },
+ {
+  "case": "mul_s16_var",
+  "label": "s16 * s16 variable",
+  "cycles": 35.0,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "muls"
+ },
+ {
+  "case": "mul_u16_var",
+  "label": "u16 * u16 variable",
+  "cycles": 3.7,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "mulu"
+ },
+ {
+  "case": "mul_s32_c10",
+  "label": "s32 * 10",
+  "cycles": 37.0,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "sgdk_muls",
+  "label": "SGDK muls(s16, s16)",
+  "cycles": 35.0,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "muls"
+ },
+ {
+  "case": "float_mul",
+  "label": "float * float (soft float)",
+  "cycles": 2285.0,
+  "sd": 0.54,
+  "frames": 55,
+  "dropped": 55,
+  "dma_bytes": 4,
+  "emitted": "__fixsfsi,__mulsf3"
+ },
+ {
+  "case": "float_div",
+  "label": "float / float (soft float)",
+  "cycles": 1220.5,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__divsf3,__fixsfsi"
+ },
+ {
+  "case": "float_add",
+  "label": "float + float (soft float)",
+  "cycles": 1146.9,
+  "sd": 0.01,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__addsf3,__fixsfsi"
+ },
+ {
+  "case": "f16_mul",
+  "label": "SGDK F16_mul (fix16)",
+  "cycles": 59.4,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "muls"
+ },
+ {
+  "case": "f16_div",
+  "label": "SGDK F16_div (fix16)",
+  "cycles": 155.2,
+  "sd": 0.58,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divs"
+ },
+ {
+  "case": "f32_mul",
+  "label": "SGDK F32_mul (fix32)",
+  "cycles": 304.5,
+  "sd": 0.58,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__mulsi3"
+ },
+ {
+  "case": "tile_xy_40",
+  "label": "40 x VDP_setTileMapXY (one row)",
+  "cycles": 12965.5,
+  "sd": 22.91,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "tile_fill_40",
+  "label": "VDP_fillTileMapRect, 40x1",
+  "cycles": 732.0,
+  "sd": 0.5,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "tile_datarect_40_cpu",
+  "label": "VDP_setTileMapDataRect 40x1, CPU",
+  "cycles": 1470.3,
+  "sd": 19.03,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "tile_datarect_40_dma",
+  "label": "VDP_setTileMapDataRect 40x1, DMA_QUEUE",
+  "cycles": 1553.1,
+  "sd": 21.2,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 88,
+  "emitted": ""
+ },
+ {
+  "case": "text_20",
+  "label": "VDP_drawText, 19 characters",
+  "cycles": 3672.8,
+  "sd": 20.83,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "sprintf_score",
+  "label": "sprintf(\"SCORE %ld\")",
+  "cycles": 12582.4,
+  "sd": 23.35,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "inttostr_score",
+  "label": "intToStr(score, buf, 7)",
+  "cycles": 2880.9,
+  "sd": 25.51,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__udivsi3,__umodsi3"
+ },
+ {
+  "case": "sprintf_and_text",
+  "label": "sprintf + VDP_drawText",
+  "cycles": 15575.5,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "spr_add_release",
+  "label": "SPR_addSprite + SPR_releaseSprite",
+  "cycles": 1865.0,
+  "sd": 26.91,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "load_tiles_64_dma",
+  "label": "VDP_loadTileData 64 tiles (2 KB), DMA_QUEUE",
+  "cycles": 6045.6,
+  "sd": 28.79,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 2056,
+  "emitted": ""
+ },
+ {
+  "case": "load_tiles_64_cpu",
+  "label": "VDP_loadTileData 64 tiles (2 KB), CPU",
+  "cycles": 17603.5,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": ""
+ },
+ {
+  "case": "draw_image_none",
+  "label": "VDP_drawImageEx 128x64, uncompressed",
+  "cycles": 22629.5,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 4072,
+  "emitted": ""
+ },
+ {
+  "case": "draw_image_fast",
+  "label": "VDP_drawImageEx 128x64, LZ4W (FAST)",
+  "cycles": 138263.0,
+  "sd": 71.65,
+  "frames": 55,
+  "dropped": 55,
+  "dma_bytes": 2036,
+  "emitted": ""
+ },
+ {
+  "case": "draw_image_aplib",
+  "label": "VDP_drawImageEx 128x64, APLIB",
+  "cycles": 549823.0,
+  "sd": 6579.14,
+  "frames": 55,
+  "dropped": 220,
+  "dma_bytes": 814,
+  "emitted": ""
+ },
+ {
+  "case": "div_u16expr_c30",
+  "label": "(u16 - 240) / 30",
+  "cycles": 640.0,
+  "sd": 0.58,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__divsi3"
+ },
+ {
+  "case": "mod_u16_c20",
+  "label": "u16 % 20",
+  "cycles": 168.2,
+  "sd": 0.66,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divu"
+ },
+ {
+  "case": "mul_s16_s32",
+  "label": "s16 * s32 variable",
+  "cycles": 267.9,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__mulsi3"
+ },
+ {
+  "case": "mod_u16_fix16c",
+  "label": "u16 % FIX16(2.7)",
+  "cycles": 1061.9,
+  "sd": 0.71,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__modsi3"
+ },
+ {
+  "case": "muls_known_positive",
+  "label": "muls(s16, 256 + u16 % 768)",
+  "cycles": 270.3,
+  "sd": 0.0,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "__mulsi3,divu"
+ },
+ {
+  "case": "muls_mod_only",
+  "label": "s16 + (256 + u16 % 768), the same without muls",
+  "cycles": 196.4,
+  "sd": 0.6,
+  "frames": 55,
+  "dropped": 0,
+  "dma_bytes": 8,
+  "emitted": "divu"
+ }
+]

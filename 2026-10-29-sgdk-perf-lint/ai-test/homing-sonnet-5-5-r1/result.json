@@ -1,0 +1,480 @@
+{
+ "task": "homing",
+ "model": "claude-sonnet-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 10,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 196,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeGem"
+   },
+   {
+    "line": 197,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeGem"
+   },
+   {
+    "line": 204,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 205,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 207,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 208,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 298,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies"
+   },
+   {
+    "line": 299,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies"
+   },
+   {
+    "line": 415,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 416,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 8.18,
+   "dropped": 0,
+   "peak_load": 31.1,
+   "p95_load": 26.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     91.82
+    ],
+    [
+     "main.isra.0",
+     2.75
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "__udivsi3",
+     0.6
+    ],
+    [
+     "__mulsi3",
+     0.41
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 8,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 204,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 205,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 207,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 208,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 298,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies",
+    "est_cycles": 4936
+   },
+   {
+    "line": 299,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies",
+    "est_cycles": 4936
+   },
+   {
+    "line": 415,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main",
+    "est_cycles": 3673
+   },
+   {
+    "line": 416,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main",
+    "est_cycles": 3673
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 6,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 212,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 213,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 219,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 220,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 436,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 437,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 7.42,
+   "dropped": 0,
+   "peak_load": 24.7,
+   "p95_load": 20.0,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     92.58
+    ],
+    [
+     "main.isra.0",
+     2.87
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "__mulsi3",
+     0.37
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 8,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 206,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeGem"
+   },
+   {
+    "line": 207,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeGem"
+   },
+   {
+    "line": 214,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 215,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 217,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 218,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 451,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 452,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 6.73,
+   "dropped": 0,
+   "peak_load": 21.3,
+   "p95_load": 16.7,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     93.27
+    ],
+    [
+     "main.isra.0",
+     2.5
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.29
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.4506,
+ "claude_wall_s": 226.8,
+ "output_tokens": 36858,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 6,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 208,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 209,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 215,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 216,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 427,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 428,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 7.45,
+   "dropped": 0,
+   "peak_load": 24.7,
+   "p95_load": 20.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     92.55
+    ],
+    [
+     "main.isra.0",
+     2.89
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "__mulsi3",
+     0.37
+    ]
+   ]
+  }
+ }
+}

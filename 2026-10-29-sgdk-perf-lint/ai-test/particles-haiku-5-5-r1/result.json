@@ -1,0 +1,299 @@
+{
+ "task": "particles",
+ "model": "claude-haiku-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 2,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "mul32"
+  ],
+  "findings": [
+   {
+    "line": 58,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 62,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 63,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   }
+  ],
+  "profile": {
+   "mean_load": 13.41,
+   "dropped": 0,
+   "peak_load": 74.3,
+   "p95_load": 18.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.59
+    ],
+    [
+     "main.isra.0",
+     6.99
+    ],
+    [
+     "read6Btn",
+     1.98
+    ],
+    [
+     "JOY_update",
+     1.65
+    ],
+    [
+     "flushQueue",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.18
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 2,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 62,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion",
+    "est_cycles": 12864
+   },
+   {
+    "line": 63,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion",
+    "est_cycles": 12864
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 58,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   }
+  ],
+  "profile": {
+   "mean_load": 13.4,
+   "dropped": 0,
+   "peak_load": 71.8,
+   "p95_load": 18.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.6
+    ],
+    [
+     "main.isra.0",
+     6.99
+    ],
+    [
+     "read6Btn",
+     1.98
+    ],
+    [
+     "JOY_update",
+     1.65
+    ],
+    [
+     "flushQueue",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.18
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 71,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   }
+  ],
+  "profile": {
+   "mean_load": 10.11,
+   "dropped": 0,
+   "peak_load": 42.6,
+   "p95_load": 16.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     89.89
+    ],
+    [
+     "main.isra.0",
+     4.79
+    ],
+    [
+     "read6Btn",
+     1.98
+    ],
+    [
+     "JOY_update",
+     1.65
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.64
+    ],
+    [
+     "flushQueue",
+     0.28
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.19
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.18
+    ]
+   ]
+  }
+ },
+ "calls": 6,
+ "cost_usd": 0.0246,
+ "claude_wall_s": 189.0,
+ "output_tokens": 43276,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 2,
+   "init": 0
+  },
+  "lint_rules": [
+   "mul32"
+  ],
+  "findings": [
+   {
+    "line": 64,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 65,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   }
+  ],
+  "profile": {
+   "mean_load": 13.42,
+   "dropped": 0,
+   "peak_load": 74.4,
+   "p95_load": 18.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.58
+    ],
+    [
+     "main.isra.0",
+     6.99
+    ],
+    [
+     "read6Btn",
+     1.98
+    ],
+    [
+     "JOY_update",
+     1.65
+    ],
+    [
+     "flushQueue",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.18
+    ]
+   ]
+  }
+ }
+}

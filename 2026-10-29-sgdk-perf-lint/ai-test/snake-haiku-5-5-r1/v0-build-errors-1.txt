@@ -1,0 +1,12 @@
+[01m[Ksrc/main.c:263:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:265:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:268:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:269:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:270:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:285:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:285:47:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+[01m[Ksrc/main.c:286:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:286:30:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:287:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:288:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

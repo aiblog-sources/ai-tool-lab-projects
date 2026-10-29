@@ -1,0 +1,4 @@
+src/main.c:206: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 7 functions, 5 on the frame path; game loops: main.c:238 in main()
+findings: 1 guarded

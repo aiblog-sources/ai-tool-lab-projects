@@ -1,0 +1,653 @@
+{
+ "task": "snake",
+ "model": "claude-sonnet-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 17,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 92,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "putCell"
+   },
+   {
+    "line": 104,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 105,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 106,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 108,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 109,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 110,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 112,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 113,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 114,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 121,
+    "rule": "div",
+    "level": "guarded",
+    "function": "pushHead"
+   },
+   {
+    "line": 134,
+    "rule": "div",
+    "level": "guarded",
+    "function": "popTail"
+   },
+   {
+    "line": 144,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeFood"
+   },
+   {
+    "line": 145,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeFood"
+   },
+   {
+    "line": 153,
+    "rule": "div",
+    "level": "guarded",
+    "function": "currentDelay"
+   },
+   {
+    "line": 161,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   },
+   {
+    "line": 162,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.36,
+   "dropped": 0,
+   "peak_load": 30.6,
+   "p95_load": 3.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.64
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.16
+    ],
+    [
+     "VDP_drawTextEx.constprop.0",
+     0.1
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 17,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 92,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "putCell",
+    "est_cycles": 972
+   },
+   {
+    "line": 104,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": null
+   },
+   {
+    "line": 105,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 106,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": null
+   },
+   {
+    "line": 108,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": null
+   },
+   {
+    "line": 109,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 110,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": null
+   },
+   {
+    "line": 112,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": null
+   },
+   {
+    "line": 113,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 2881
+   },
+   {
+    "line": 114,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": null
+   },
+   {
+    "line": 121,
+    "rule": "div",
+    "level": "guarded",
+    "function": "pushHead",
+    "est_cycles": 1359
+   },
+   {
+    "line": 134,
+    "rule": "div",
+    "level": "guarded",
+    "function": "popTail",
+    "est_cycles": 453
+   },
+   {
+    "line": 144,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 145,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 153,
+    "rule": "div",
+    "level": "guarded",
+    "function": "currentDelay",
+    "est_cycles": 453
+   },
+   {
+    "line": 161,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText",
+    "est_cycles": null
+   },
+   {
+    "line": 162,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText",
+    "est_cycles": null
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 8,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 121,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 122,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 128,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 129,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 135,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 136,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 198,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   },
+   {
+    "line": 199,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.07,
+   "dropped": 0,
+   "peak_load": 18.7,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.93
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.16
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 15,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 102,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "putCell"
+   },
+   {
+    "line": 114,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 115,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 116,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 118,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 119,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 120,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 122,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 123,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 124,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 159,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeFood"
+   },
+   {
+    "line": 160,
+    "rule": "div",
+    "level": "guarded",
+    "function": "placeFood"
+   },
+   {
+    "line": 168,
+    "rule": "div",
+    "level": "guarded",
+    "function": "currentDelay"
+   },
+   {
+    "line": 176,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   },
+   {
+    "line": 177,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.06,
+   "dropped": 0,
+   "peak_load": 29.5,
+   "p95_load": 3.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.94
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.14
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "calls": 5,
+ "cost_usd": 0.4294,
+ "claude_wall_s": 210.4,
+ "output_tokens": 33661,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 8,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 124,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 125,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 131,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 132,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 138,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 139,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 191,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   },
+   {
+    "line": 192,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showCenterText"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.05,
+   "dropped": 0,
+   "peak_load": 18.7,
+   "p95_load": 3.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.95
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.14
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ }
+}

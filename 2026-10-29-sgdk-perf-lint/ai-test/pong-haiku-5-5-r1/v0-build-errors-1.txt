@@ -1,0 +1,15 @@
+[01m[Ksrc/main.c:192:5:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:200:5:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:208:5:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:232:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:233:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:234:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setColor(..) instead.
+[01m[Ksrc/main.c:237:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:237:32:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:244:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_BG_B instead.
+[01m[Ksrc/main.c:244:36:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+[01m[Ksrc/main.c:245:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_BG_B instead.
+[01m[Ksrc/main.c:245:36:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+[01m[Ksrc/main.c:249:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_BG_B instead.
+[01m[Ksrc/main.c:249:36:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

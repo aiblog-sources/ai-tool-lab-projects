@@ -1,0 +1,482 @@
+{
+ "task": "snake",
+ "model": "claude-haiku-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 2,
+   "frame": 4,
+   "guarded": 2,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 67,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawNum"
+   },
+   {
+    "line": 73,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawHUD"
+   },
+   {
+    "line": 75,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawHUD"
+   },
+   {
+    "line": 114,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood"
+   },
+   {
+    "line": 115,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood"
+   },
+   {
+    "line": 301,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 303,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 305,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.1,
+   "dropped": 0,
+   "peak_load": 22.5,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.9
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 2,
+   "frame": 4,
+   "guarded": 2,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 67,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawNum",
+    "est_cycles": 3673
+   },
+   {
+    "line": 73,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawHUD",
+    "est_cycles": 3673
+   },
+   {
+    "line": 75,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawHUD",
+    "est_cycles": 3673
+   },
+   {
+    "line": 114,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 115,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood",
+    "est_cycles": 1041
+   },
+   {
+    "line": 301,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main",
+    "est_cycles": 3673
+   },
+   {
+    "line": 303,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main",
+    "est_cycles": 3673
+   },
+   {
+    "line": 305,
+    "rule": "text",
+    "level": "frame",
+    "function": "main",
+    "est_cycles": 3673
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 2,
+   "frame": 3,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 68,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawNum"
+   },
+   {
+    "line": 121,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood"
+   },
+   {
+    "line": 122,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood"
+   },
+   {
+    "line": 144,
+    "rule": "text",
+    "level": "frame",
+    "function": "newGame"
+   },
+   {
+    "line": 145,
+    "rule": "text",
+    "level": "frame",
+    "function": "newGame"
+   },
+   {
+    "line": 314,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 316,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 318,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.1,
+   "dropped": 0,
+   "peak_load": 20.9,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.9
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 2,
+   "frame": 4,
+   "guarded": 2,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 74,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawNum"
+   },
+   {
+    "line": 80,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawHUD"
+   },
+   {
+    "line": 81,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawHUD"
+   },
+   {
+    "line": 127,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood"
+   },
+   {
+    "line": 128,
+    "rule": "div",
+    "level": "hot",
+    "function": "spawnFood"
+   },
+   {
+    "line": 322,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 324,
+    "rule": "text",
+    "level": "guarded",
+    "function": "main"
+   },
+   {
+    "line": 326,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.07,
+   "dropped": 0,
+   "peak_load": 25.5,
+   "p95_load": 3.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.93
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.15
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "calls": 5,
+ "cost_usd": 0.0469,
+ "claude_wall_s": 358.8,
+ "output_tokens": 85765,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 5,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 82,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawNum"
+   },
+   {
+    "line": 136,
+    "rule": "div",
+    "level": "hot",
+    "function": "randomMod"
+   },
+   {
+    "line": 171,
+    "rule": "text",
+    "level": "frame",
+    "function": "newGame"
+   },
+   {
+    "line": 172,
+    "rule": "text",
+    "level": "frame",
+    "function": "newGame"
+   },
+   {
+    "line": 339,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   },
+   {
+    "line": 340,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.1,
+   "dropped": 0,
+   "peak_load": 20.3,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.9
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ }
+}

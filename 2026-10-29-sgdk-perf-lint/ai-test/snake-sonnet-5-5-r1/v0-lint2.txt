@@ -1,0 +1,20 @@
+src/main.c:92: guarded in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 3 passes x 324 = 972 cycles (1% of a frame)
+src/main.c:104: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:105: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:106: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:108: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:109: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:110: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:112: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:113: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:114: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:121: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16. Here: 3 passes x 453 = 1,359 cycles (1% of a frame)
+src/main.c:134: guarded [div] '%' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16
+src/main.c:144: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:145: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:153: guarded [div] '/' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16
+src/main.c:161: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:162: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+
+1 files, 13 functions, 12 on the frame path; game loops: main.c:301 in main()
+findings: 17 guarded

@@ -1,0 +1,392 @@
+{
+ "task": "hud",
+ "model": "claude-haiku-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 3,
+   "frame": 2,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 57,
+    "rule": "div",
+    "level": "hot",
+    "function": "drawNumber"
+   },
+   {
+    "line": 58,
+    "rule": "div",
+    "level": "hot",
+    "function": "drawNumber"
+   },
+   {
+    "line": 62,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawNumber"
+   },
+   {
+    "line": 79,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawTimer"
+   },
+   {
+    "line": 96,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "drawHealth"
+   }
+  ],
+  "profile": {
+   "mean_load": 19.01,
+   "dropped": 0,
+   "peak_load": 19.1,
+   "p95_load": 19.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     80.99
+    ],
+    [
+     "main.isra.0",
+     6.1
+    ],
+    [
+     "__udivsi3",
+     4.52
+    ],
+    [
+     "VDP_setTileMapDataRowEx.constprop.0",
+     1.45
+    ],
+    [
+     "VDP_setTileMapDataEx.constprop.0",
+     1.41
+    ],
+    [
+     "__mulsi3",
+     1.38
+    ],
+    [
+     "__umodsi3",
+     1.25
+    ],
+    [
+     "read6Btn",
+     0.99
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 3,
+   "frame": 2,
+   "guarded": 0,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 57,
+    "rule": "div",
+    "level": "hot",
+    "function": "drawNumber",
+    "est_cycles": 1041
+   },
+   {
+    "line": 58,
+    "rule": "div",
+    "level": "hot",
+    "function": "drawNumber",
+    "est_cycles": 623
+   },
+   {
+    "line": 62,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawNumber",
+    "est_cycles": null
+   },
+   {
+    "line": 79,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawTimer",
+    "est_cycles": null
+   },
+   {
+    "line": 96,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "drawHealth",
+    "est_cycles": 3240
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 60,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 75,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 92,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTimer"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.6,
+   "dropped": 0,
+   "peak_load": 7.8,
+   "p95_load": 5.5,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.4
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.48
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "VDP_setTileMapDataEx.constprop.0",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 6,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 68,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 69,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 73,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 90,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTimer"
+   },
+   {
+    "line": 131,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 154,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawHealth"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.39,
+   "dropped": 0,
+   "peak_load": 9.7,
+   "p95_load": 5.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.61
+    ],
+    [
+     "main.isra.0",
+     1.33
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "VDP_setTileMapDataRowEx.constprop.0",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 7,
+ "cost_usd": 0.0336,
+ "claude_wall_s": 235.7,
+ "output_tokens": 57686,
+ "lint2": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 68,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 88,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawNumber"
+   },
+   {
+    "line": 105,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTimer"
+   },
+   {
+    "line": 123,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawHealth"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.72,
+   "dropped": 0,
+   "peak_load": 8.3,
+   "p95_load": 5.8,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.28
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "main.isra.0",
+     0.65
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "VDP_setTileMapDataEx.constprop.0",
+     0.1
+    ]
+   ]
+  }
+ }
+}

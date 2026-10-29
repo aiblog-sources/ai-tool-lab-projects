@@ -1,0 +1,543 @@
+{
+ "task": "hud",
+ "model": "claude-opus-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 10,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 94,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawBarTile"
+   },
+   {
+    "line": 128,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 129,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 145,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTime"
+   },
+   {
+    "line": 151,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives"
+   },
+   {
+    "line": 152,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives"
+   },
+   {
+    "line": 166,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 167,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 173,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 174,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.62,
+   "dropped": 0,
+   "peak_load": 8.1,
+   "p95_load": 5.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.38
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.29
+    ],
+    [
+     "VDP_drawText",
+     0.18
+    ],
+    [
+     "uint16ToStr",
+     0.11
+    ],
+    [
+     "VDP_setTileMapDataEx.constprop.0",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 10,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 94,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawBarTile",
+    "est_cycles": 5184
+   },
+   {
+    "line": 128,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 2881
+   },
+   {
+    "line": 129,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 145,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTime",
+    "est_cycles": 3673
+   },
+   {
+    "line": 151,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives",
+    "est_cycles": 2881
+   },
+   {
+    "line": 152,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives",
+    "est_cycles": 3673
+   },
+   {
+    "line": 166,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage",
+    "est_cycles": null
+   },
+   {
+    "line": 167,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage",
+    "est_cycles": null
+   },
+   {
+    "line": 173,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage",
+    "est_cycles": 3673
+   },
+   {
+    "line": 174,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage",
+    "est_cycles": 3673
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 9,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 138,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 139,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 156,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTime"
+   },
+   {
+    "line": 163,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives"
+   },
+   {
+    "line": 164,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives"
+   },
+   {
+    "line": 179,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 180,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 187,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 188,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.62,
+   "dropped": 0,
+   "peak_load": 8.1,
+   "p95_load": 5.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.38
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.29
+    ],
+    [
+     "VDP_drawText",
+     0.18
+    ],
+    [
+     "uint16ToStr",
+     0.11
+    ],
+    [
+     "VDP_setTileMapDataEx.constprop.0",
+     0.1
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 10,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 115,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawDigit"
+   },
+   {
+    "line": 130,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawFullBar"
+   },
+   {
+    "line": 184,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 185,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 191,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 192,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 258,
+    "rule": "div",
+    "level": "guarded",
+    "function": "resetGame"
+   },
+   {
+    "line": 259,
+    "rule": "div",
+    "level": "guarded",
+    "function": "resetGame"
+   },
+   {
+    "line": 260,
+    "rule": "div",
+    "level": "guarded",
+    "function": "resetGame"
+   },
+   {
+    "line": 261,
+    "rule": "div",
+    "level": "guarded",
+    "function": "resetGame"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.29,
+   "dropped": 0,
+   "peak_load": 4.5,
+   "p95_load": 3.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.71
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.38
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.6607,
+ "claude_wall_s": 227.4,
+ "output_tokens": 27002,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 9,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 137,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 138,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 154,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTime"
+   },
+   {
+    "line": 160,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives"
+   },
+   {
+    "line": 161,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawLives"
+   },
+   {
+    "line": 175,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 176,
+    "rule": "text",
+    "level": "guarded",
+    "function": "clearMessage"
+   },
+   {
+    "line": 182,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 183,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.62,
+   "dropped": 0,
+   "peak_load": 8.1,
+   "p95_load": 5.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.38
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.29
+    ],
+    [
+     "VDP_drawText",
+     0.18
+    ],
+    [
+     "uint16ToStr",
+     0.11
+    ],
+    [
+     "VDP_setTileMapDataEx.constprop.0",
+     0.1
+    ]
+   ]
+  }
+ }
+}

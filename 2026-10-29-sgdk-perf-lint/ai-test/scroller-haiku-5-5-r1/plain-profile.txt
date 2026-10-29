@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.09 s (1159 frames/s), symbols 224
+mean CPU load 75.1% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 880
+frames with DMA during active display: 0; max DMA 8 bytes in frame 496
+
+whole run, cycles by function:
+   73.8%  fillAhead
+   25.1%  VDP_waitVBlank
+    0.3%  read6Btn
+    0.2%  JOY_update
+    0.2%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.2%  DMA_doDmaFast
+    0.1%  main.isra.0
+    0.0%  no_bmp_task
+    0.0%  no_user_task
+    0.0%  SYS_getAndSetInterruptMaskLevel
+    0.0%  SYS_setInterruptMaskLevel
+    0.0%  no_xgm_task
+
+busiest frames:
+  frame 302: 1506964 busy cycles (1177% of a frame), idle entered at line -1
+      1506383  fillAhead
+          147  SYS_setInterruptMaskLevel
+          126  no_bmp_task
+          124  no_user_task
+  frame 154: 1506922 busy cycles (1177% of a frame), idle entered at line -1
+      1506336  fillAhead
+          152  SYS_setInterruptMaskLevel
+          126  no_bmp_task
+          124  no_user_task
+  frame 393: 1506882 busy cycles (1177% of a frame), idle entered at line -1
+      1506300  fillAhead
+          148  SYS_setInterruptMaskLevel
+          124  no_user_task
+          124  no_bmp_task
+  frame 63: 1506872 busy cycles (1177% of a frame), idle entered at line -1
+      1506284  fillAhead
+          154  SYS_setInterruptMaskLevel
+          126  no_bmp_task
+          124  no_user_task
+  frame 484: 1506822 busy cycles (1177% of a frame), idle entered at line -1
+      1506243  fillAhead
+          147  SYS_setInterruptMaskLevel
+          126  no_bmp_task
+          124  no_user_task
+  frame 245: 1506086 busy cycles (1177% of a frame), idle entered at line -1
+      1505618  fillAhead
+          150  SYS_setInterruptMaskLevel
+          124  no_bmp_task
+          122  no_user_task

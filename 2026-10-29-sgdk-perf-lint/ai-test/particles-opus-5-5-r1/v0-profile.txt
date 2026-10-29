@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.66 s (758 frames/s), symbols 220
+mean CPU load 12.8% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 384 bytes in frame 121
+
+whole run, cycles by function:
+   87.2%  VDP_waitVBlank
+    4.7%  drawParticles
+    4.2%  main.isra.0
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.6%  DMA_queueDmaFast
+    0.3%  flushQueue
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+    0.1%  SYS_getAndSetInterruptMaskLevel
+    0.1%  __mulsi3
+
+busiest frames:
+  frame 600: 98739 busy cycles (77% of a frame), idle entered at line 164
+        57120  main.isra.0
+        22552  __mulsi3
+        14424  drawParticles
+         1266  read6Btn
+  frame 120: 98715 busy cycles (77% of a frame), idle entered at line 164
+        57114  main.isra.0
+        22480  __mulsi3
+        14424  drawParticles
+         1266  read6Btn
+  frame 260: 98693 busy cycles (77% of a frame), idle entered at line 164
+        57142  main.isra.0
+        22478  __mulsi3
+        14424  drawParticles
+         1268  read6Btn
+  frame 200: 98661 busy cycles (77% of a frame), idle entered at line 224
+        57108  main.isra.0
+        22486  __mulsi3
+        14424  drawParticles
+         1266  read6Btn
+  frame 500: 98627 busy cycles (77% of a frame), idle entered at line 164
+        57110  main.isra.0
+        22450  __mulsi3
+        14424  drawParticles
+         1266  read6Btn
+  frame 1050: 98573 busy cycles (77% of a frame), idle entered at line 225
+        57116  main.isra.0
+        22390  __mulsi3
+        14424  drawParticles
+         1266  read6Btn

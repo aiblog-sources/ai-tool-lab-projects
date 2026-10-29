@@ -1,0 +1,10 @@
+src/main.c:183: heavy in 4 loops [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 360 passes x 324 = 116,640 cycles (91% of a frame)
+src/main.c:195: heavy in 4 loops [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 360 passes x 324 = 116,640 cycles (91% of a frame)
+src/main.c:153: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:163: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:164: guarded in 1 loop [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:168: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:169: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 14 functions, 13 on the frame path; game loops: main.c:436 in main()
+findings: 2 heavy, 5 guarded

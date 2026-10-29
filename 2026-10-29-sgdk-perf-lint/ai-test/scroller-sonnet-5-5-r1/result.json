@@ -1,0 +1,271 @@
+{
+ "task": "scroller",
+ "model": "claude-sonnet-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 130,
+    "rule": "div",
+    "level": "guarded",
+    "function": "nextHeight"
+   },
+   {
+    "line": 178,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "genColumn"
+   }
+  ],
+  "profile": {
+   "mean_load": 5.98,
+   "dropped": 0,
+   "peak_load": 11.8,
+   "p95_load": 11.5,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.02
+    ],
+    [
+     "genColumn",
+     1.82
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.52
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 1,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 178,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "genColumn",
+    "est_cycles": 9072
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 180,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "genColumn"
+   }
+  ],
+  "profile": {
+   "mean_load": 5.16,
+   "dropped": 0,
+   "peak_load": 8.5,
+   "p95_load": 8.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.84
+    ],
+    [
+     "genColumn",
+     1.0
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.52
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 96,
+    "rule": "div",
+    "level": "guarded",
+    "function": "nextHeight"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.07,
+   "dropped": 0,
+   "peak_load": 5.9,
+   "p95_load": 5.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.93
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.47
+    ],
+    [
+     "genColumn",
+     0.34
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.3
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 5,
+ "cost_usd": 0.4346,
+ "claude_wall_s": 236.4,
+ "output_tokens": 35807,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 5.15,
+   "dropped": 0,
+   "peak_load": 8.5,
+   "p95_load": 8.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.85
+    ],
+    [
+     "genColumn",
+     1.0
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.52
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  }
+ }
+}

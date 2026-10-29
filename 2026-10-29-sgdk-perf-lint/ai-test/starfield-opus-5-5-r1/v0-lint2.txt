@@ -1,0 +1,4 @@
+src/main.c:152: guarded in 1 loop [mul32] 16 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); muls()/mulu() on 16-bit values is 35, F16_mul 59. Here: 64 passes x 268 = 17,152 cycles (13% of a frame)
+
+1 files, 6 functions, 3 on the frame path; game loops: main.c:270 in main()
+findings: 1 guarded

@@ -1,0 +1,6 @@
+src/main.c:92: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:99: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:109: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+
+1 files, 11 functions, 9 on the frame path; game loops: main.c:305 in main()
+findings: 3 guarded

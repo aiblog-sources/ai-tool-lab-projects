@@ -1,0 +1,407 @@
+{
+ "task": "platformer",
+ "model": "claude-opus-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 6,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 199,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawLevel"
+   },
+   {
+    "line": 218,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 219,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 220,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 221,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 336,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "collectCoins"
+   }
+  ],
+  "profile": {
+   "mean_load": 6.42,
+   "dropped": 6,
+   "peak_load": 100.0,
+   "p95_load": 6.0,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     93.58
+    ],
+    [
+     "main.isra.0",
+     1.79
+    ],
+    [
+     "read6Btn",
+     0.98
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "drawLevel",
+     0.5
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 1,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 5,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 199,
+    "rule": "tile-loop",
+    "level": "heavy",
+    "function": "drawLevel",
+    "est_cycles": 362880
+   },
+   {
+    "line": 218,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 12582
+   },
+   {
+    "line": 219,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 220,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 12582
+   },
+   {
+    "line": 221,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 336,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "collectCoins",
+    "est_cycles": 324
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 6,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 233,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 234,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 235,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 241,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 242,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 243,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   }
+  ],
+  "profile": {
+   "mean_load": 6.27,
+   "dropped": 2,
+   "peak_load": 99.9,
+   "p95_load": 6.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     93.73
+    ],
+    [
+     "main.isra.0",
+     2.0
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 252,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 269,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 388,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "collectCoins"
+   }
+  ],
+  "profile": {
+   "mean_load": 5.17,
+   "dropped": 0,
+   "peak_load": 74.3,
+   "p95_load": 6.0,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.83
+    ],
+    [
+     "main.isra.0",
+     1.55
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.3
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.934,
+ "claude_wall_s": 315.2,
+ "output_tokens": 38265,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 5,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 238,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 239,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 247,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 248,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 367,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "collectCoins"
+   }
+  ],
+  "profile": {
+   "mean_load": 6.06,
+   "dropped": 2,
+   "peak_load": 99.9,
+   "p95_load": 5.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     93.94
+    ],
+    [
+     "main.isra.0",
+     1.79
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  }
+ }
+}

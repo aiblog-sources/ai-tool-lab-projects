@@ -1,0 +1,4 @@
+src/main.c:66: guarded in 1 loop [div] '%' by a FIX16()/FIX32() constant: the macro casts to a signed type, so this is a signed 32-bit %: 1,062 cycles for u16 % FIX16(2.7) (__modsi3) vs 168 for u16 % 172. Here: 48 passes x 1,062 = 50,976 cycles (40% of a frame)
+
+1 files, 4 functions, 3 on the frame path; game loops: main.c:144 in main()
+findings: 1 guarded

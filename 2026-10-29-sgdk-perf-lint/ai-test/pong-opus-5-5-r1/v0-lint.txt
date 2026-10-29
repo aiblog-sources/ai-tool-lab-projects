@@ -1,0 +1,9 @@
+src/main.c:125: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+src/main.c:126: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:128: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+src/main.c:129: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:179: guarded [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+src/main.c:183: guarded [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+
+1 files, 10 functions, 8 on the frame path; game loops: main.c:336 in main()
+findings: 6 guarded

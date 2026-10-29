@@ -1,0 +1,9 @@
+[01m[Ksrc/main.c:182:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:183:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_BG_A instead.
+[01m[Ksrc/main.c:183:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+[01m[Ksrc/main.c:215:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:215:44:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+[01m[Ksrc/main.c:216:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:278:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:277:9:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

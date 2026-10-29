@@ -1,0 +1,3 @@
+<artificial>:(.text+0x23b6): undefined reference to `VDP_getBPlaneAddress'
+collect2: error: ld returned 1 exit status
+make: *** [/sgdk/makefile.gen:178: out/rom.out] Error 1

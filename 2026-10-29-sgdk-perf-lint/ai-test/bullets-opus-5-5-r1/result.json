@@ -1,0 +1,325 @@
+{
+ "task": "bullets",
+ "model": "claude-opus-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 94,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   },
+   {
+    "line": 95,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   },
+   {
+    "line": 129,
+    "rule": "div",
+    "level": "guarded",
+    "function": "fireBullet"
+   },
+   {
+    "line": 130,
+    "rule": "div",
+    "level": "guarded",
+    "function": "fireBullet"
+   }
+  ],
+  "profile": {
+   "mean_load": 12.3,
+   "dropped": 0,
+   "peak_load": 16.3,
+   "p95_load": 14.0,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     87.7
+    ],
+    [
+     "main.isra.0",
+     7.97
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.3
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 94,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits",
+    "est_cycles": 2881
+   },
+   {
+    "line": 95,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits",
+    "est_cycles": 3673
+   },
+   {
+    "line": 129,
+    "rule": "div",
+    "level": "guarded",
+    "function": "fireBullet",
+    "est_cycles": 617
+   },
+   {
+    "line": 130,
+    "rule": "div",
+    "level": "guarded",
+    "function": "fireBullet",
+    "est_cycles": 617
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 134,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   }
+  ],
+  "profile": {
+   "mean_load": 12.13,
+   "dropped": 0,
+   "peak_load": 15.5,
+   "p95_load": 13.7,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     87.87
+    ],
+    [
+     "main.isra.0",
+     7.91
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.3
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 2,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 102,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   },
+   {
+    "line": 103,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   }
+  ],
+  "profile": {
+   "mean_load": 9.01,
+   "dropped": 0,
+   "peak_load": 12.1,
+   "p95_load": 10.3,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     90.99
+    ],
+    [
+     "main.isra.0",
+     4.76
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.31
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.6813,
+ "claude_wall_s": 243.4,
+ "output_tokens": 29624,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 2,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 95,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   },
+   {
+    "line": 96,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHits"
+   }
+  ],
+  "profile": {
+   "mean_load": 12.22,
+   "dropped": 0,
+   "peak_load": 15.9,
+   "p95_load": 13.8,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     87.78
+    ],
+    [
+     "main.isra.0",
+     7.98
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.39
+    ],
+    [
+     "flushQueue",
+     0.3
+    ]
+   ]
+  }
+ }
+}

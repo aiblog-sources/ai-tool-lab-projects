@@ -1,0 +1,621 @@
+{
+ "task": "snake",
+ "model": "claude-sonnet-5-5",
+ "rep": 2,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 11,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 124,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "putTile"
+   },
+   {
+    "line": 136,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 137,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 138,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 140,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 141,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 142,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 147,
+    "rule": "div",
+    "level": "frame",
+    "function": "moveDelay"
+   },
+   {
+    "line": 161,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood"
+   },
+   {
+    "line": 162,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood"
+   },
+   {
+    "line": 324,
+    "rule": "text",
+    "level": "guarded",
+    "function": "playGame"
+   },
+   {
+    "line": 377,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   },
+   {
+    "line": 378,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.38,
+   "dropped": 0,
+   "peak_load": 56.4,
+   "p95_load": 3.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.62
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.2
+    ],
+    [
+     "__udivsi3",
+     0.12
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 1,
+   "frame": 11,
+   "guarded": 1,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 124,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "putTile",
+    "est_cycles": 12960
+   },
+   {
+    "line": 136,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 137,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore",
+    "est_cycles": 2881
+   },
+   {
+    "line": 138,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 140,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 141,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore",
+    "est_cycles": 2881
+   },
+   {
+    "line": 142,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore",
+    "est_cycles": 3673
+   },
+   {
+    "line": 147,
+    "rule": "div",
+    "level": "frame",
+    "function": "moveDelay",
+    "est_cycles": 623
+   },
+   {
+    "line": 161,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood",
+    "est_cycles": 1041
+   },
+   {
+    "line": 162,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood",
+    "est_cycles": 1041
+   },
+   {
+    "line": 324,
+    "rule": "text",
+    "level": "guarded",
+    "function": "playGame",
+    "est_cycles": 3673
+   },
+   {
+    "line": 377,
+    "rule": "text",
+    "level": "frame",
+    "function": "main",
+    "est_cycles": 3673
+   },
+   {
+    "line": 378,
+    "rule": "text",
+    "level": "frame",
+    "function": "main",
+    "est_cycles": 3673
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 6,
+   "guarded": 5,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 129,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "putTile"
+   },
+   {
+    "line": 140,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScoreLabels"
+   },
+   {
+    "line": 141,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScoreLabels"
+   },
+   {
+    "line": 154,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 155,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 159,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 160,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 184,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood"
+   },
+   {
+    "line": 185,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood"
+   },
+   {
+    "line": 351,
+    "rule": "text",
+    "level": "guarded",
+    "function": "playGame"
+   },
+   {
+    "line": 404,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   },
+   {
+    "line": 405,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.14,
+   "dropped": 0,
+   "peak_load": 37.8,
+   "p95_load": 3.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.86
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.14
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 11,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 146,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 147,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 148,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 150,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 151,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 152,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScore"
+   },
+   {
+    "line": 157,
+    "rule": "div",
+    "level": "frame",
+    "function": "moveDelay"
+   },
+   {
+    "line": 169,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood"
+   },
+   {
+    "line": 170,
+    "rule": "div",
+    "level": "frame",
+    "function": "placeFood"
+   },
+   {
+    "line": 339,
+    "rule": "text",
+    "level": "guarded",
+    "function": "playGame"
+   },
+   {
+    "line": 394,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   },
+   {
+    "line": 395,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.15,
+   "dropped": 0,
+   "peak_load": 43.6,
+   "p95_load": 3.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.85
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.14
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.3493,
+ "claude_wall_s": 165.4,
+ "output_tokens": 27454,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 4,
+   "guarded": 5,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 129,
+    "rule": "tile-loop",
+    "level": "hot",
+    "function": "putTile"
+   },
+   {
+    "line": 140,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScoreLabels"
+   },
+   {
+    "line": 141,
+    "rule": "text",
+    "level": "frame",
+    "function": "drawScoreLabels"
+   },
+   {
+    "line": 151,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 152,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 158,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 159,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 350,
+    "rule": "text",
+    "level": "guarded",
+    "function": "playGame"
+   },
+   {
+    "line": 405,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   },
+   {
+    "line": 406,
+    "rule": "text",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.13,
+   "dropped": 0,
+   "peak_load": 35.2,
+   "p95_load": 3.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.87
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.13
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ }
+}

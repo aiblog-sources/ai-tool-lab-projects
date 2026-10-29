@@ -1,0 +1,537 @@
+{
+ "task": "snake",
+ "model": "claude-opus-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 13,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 179,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawCentered"
+   },
+   {
+    "line": 186,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 187,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 192,
+    "rule": "div",
+    "level": "guarded",
+    "function": "currentDelay"
+   },
+   {
+    "line": 199,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "setCell"
+   },
+   {
+    "line": 210,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 211,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 223,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 227,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 228,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 229,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 333,
+    "rule": "div",
+    "level": "guarded",
+    "function": "stepSnake"
+   },
+   {
+    "line": 341,
+    "rule": "div",
+    "level": "guarded",
+    "function": "stepSnake"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.4,
+   "dropped": 0,
+   "peak_load": 28.7,
+   "p95_load": 3.7,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.6
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.22
+    ],
+    [
+     "__udivsi3",
+     0.14
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 1,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 12,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 179,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawCentered",
+    "est_cycles": 3673
+   },
+   {
+    "line": 186,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 12582
+   },
+   {
+    "line": 187,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 192,
+    "rule": "div",
+    "level": "guarded",
+    "function": "currentDelay",
+    "est_cycles": 453
+   },
+   {
+    "line": 199,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "setCell",
+    "est_cycles": 20736
+   },
+   {
+    "line": 210,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood",
+    "est_cycles": 28992
+   },
+   {
+    "line": 211,
+    "rule": "div",
+    "level": "heavy",
+    "function": "spawnFood",
+    "est_cycles": 66624
+   },
+   {
+    "line": 223,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 227,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 228,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 229,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood",
+    "est_cycles": 453
+   },
+   {
+    "line": 333,
+    "rule": "div",
+    "level": "guarded",
+    "function": "stepSnake",
+    "est_cycles": 453
+   },
+   {
+    "line": 341,
+    "rule": "div",
+    "level": "guarded",
+    "function": "stepSnake",
+    "est_cycles": 453
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 8,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 193,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawCentered"
+   },
+   {
+    "line": 235,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 244,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 247,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 252,
+    "rule": "text",
+    "level": "guarded",
+    "function": "updateHud"
+   },
+   {
+    "line": 281,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 282,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 295,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.14,
+   "dropped": 0,
+   "peak_load": 23.5,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.86
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 9,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 187,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawCentered"
+   },
+   {
+    "line": 230,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 235,
+    "rule": "div",
+    "level": "guarded",
+    "function": "currentDelay"
+   },
+   {
+    "line": 242,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "setCell"
+   },
+   {
+    "line": 253,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 254,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 267,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 269,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   },
+   {
+    "line": 270,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnFood"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.15,
+   "dropped": 0,
+   "peak_load": 24.4,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.85
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.9901,
+ "claude_wall_s": 373.9,
+ "output_tokens": 40246,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 188,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawCentered"
+   },
+   {
+    "line": 216,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 228,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "setCell"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.15,
+   "dropped": 0,
+   "peak_load": 23.0,
+   "p95_load": 3.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.85
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.85
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "main.isra.0",
+     0.19
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.09
+    ]
+   ]
+  }
+ }
+}

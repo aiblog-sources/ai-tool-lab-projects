@@ -1,0 +1,4 @@
+src/main.c:184: guarded in 2 loops [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 32 passes x 324 = 10,368 cycles (8% of a frame)
+
+1 files, 2 functions, 1 on the frame path; game loops: main.c:235 in main()
+findings: 1 guarded

@@ -1,0 +1,5 @@
+src/main.c:135: guarded in 1 loop [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16. Here: 40 passes x 453 = 18,120 cycles (14% of a frame)
+src/main.c:157: guarded in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 5 passes x 324 = 1,620 cycles (1% of a frame)
+
+1 files, 5 functions, 4 on the frame path; game loops: main.c:195 in main()
+findings: 2 guarded

@@ -1,0 +1,197 @@
+{
+ "task": "scroller",
+ "model": "claude-opus-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 122,
+    "rule": "div",
+    "level": "guarded",
+    "function": "nextHillHeight"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.93,
+   "dropped": 0,
+   "peak_load": 8.9,
+   "p95_load": 8.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.07
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "generateColumns",
+     0.78
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.51
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "findings2": []
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 4.93,
+   "dropped": 0,
+   "peak_load": 8.9,
+   "p95_load": 8.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.07
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "generateColumns",
+     0.78
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "main.isra.0",
+     0.51
+    ],
+    [
+     "flushQueue",
+     0.15
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 157,
+    "rule": "div",
+    "level": "guarded",
+    "function": "nextHillHeight"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.49,
+   "dropped": 0,
+   "peak_load": 6.5,
+   "p95_load": 6.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.51
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "main.isra.0",
+     0.74
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.3
+    ],
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     0.19
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.19
+    ]
+   ]
+  }
+ },
+ "calls": 3,
+ "cost_usd": 0.5413,
+ "claude_wall_s": 198.0,
+ "output_tokens": 23060,
+ "lint2": {
+  "skipped": "no findings"
+ }
+}

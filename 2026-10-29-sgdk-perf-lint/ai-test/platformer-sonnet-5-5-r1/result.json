@@ -1,0 +1,364 @@
+{
+ "task": "platformer",
+ "model": "claude-sonnet-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 159,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawCoin"
+   },
+   {
+    "line": 165,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 166,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 167,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   }
+  ],
+  "profile": {
+   "mean_load": 5.35,
+   "dropped": 0,
+   "peak_load": 9.5,
+   "p95_load": 5.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.65
+    ],
+    [
+     "main.isra.0",
+     1.0
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "rowSolid",
+     0.51
+    ],
+    [
+     "columnSolid",
+     0.2
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 159,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawCoin",
+    "est_cycles": 2592
+   },
+   {
+    "line": 165,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 23048
+   },
+   {
+    "line": 166,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 29384
+   },
+   {
+    "line": 167,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore",
+    "est_cycles": 29384
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 160,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawCoin"
+   },
+   {
+    "line": 166,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 167,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 168,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   }
+  ],
+  "profile": {
+   "mean_load": 5.37,
+   "dropped": 0,
+   "peak_load": 9.5,
+   "p95_load": 5.7,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.63
+    ],
+    [
+     "main.isra.0",
+     1.03
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "rowSolid",
+     0.51
+    ],
+    [
+     "columnSolid",
+     0.2
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 169,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawCoin"
+   },
+   {
+    "line": 175,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 176,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 177,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.35,
+   "dropped": 0,
+   "peak_load": 9.2,
+   "p95_load": 5.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.65
+    ],
+    [
+     "main.isra.0",
+     1.12
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.83
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.27
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.4032,
+ "claude_wall_s": 215.8,
+ "output_tokens": 33310,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 159,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawCoin"
+   },
+   {
+    "line": 172,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 173,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   }
+  ],
+  "profile": {
+   "mean_load": 5.35,
+   "dropped": 0,
+   "peak_load": 8.0,
+   "p95_load": 5.6,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     94.65
+    ],
+    [
+     "main.isra.0",
+     1.0
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "rowSolid",
+     0.51
+    ],
+    [
+     "columnSolid",
+     0.2
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,892 @@
+sgdklint on SGDK v2.10 samples (MIT), 2026-10-29
+
+## advanced/sprites-sharing-tiles
+
+1 files, 4 functions, 0 on the frame path; game loops: main.c:112 in main()
+findings: none
+
+## advanced/tile-animation
+advanced/tile-animation/src/main.c:117: guarded [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+
+1 files, 4 functions, 3 on the frame path; game loops: main.c:143 in main()
+findings: 1 guarded
+
+## basics/hello-world
+
+1 files, 1 functions, 0 on the frame path; game loops: main.c:8 in main()
+findings: none
+
+## basics/image
+
+1 files, 1 functions, 0 on the frame path; game loops: main.c:42 in main()
+findings: none
+
+## benchmark
+benchmark/src/bg_test.c:28: heavy in 1 loop [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 1,000 passes x 1,041 = 1,041,000 cycles (813% of a frame)
+benchmark/src/bg_test.c:29: heavy in 1 loop [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 1,000 passes x 1,041 = 1,041,000 cycles (813% of a frame)
+benchmark/src/bg_test.c:148: heavy in 1 loop [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 1,000 passes x 1,041 = 1,041,000 cycles (813% of a frame)
+benchmark/src/bg_test.c:149: heavy in 1 loop [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 1,000 passes x 1,041 = 1,041,000 cycles (813% of a frame)
+benchmark/src/bg_test.c:333: heavy in 1 loop [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 1,000 passes x 1,041 = 1,041,000 cycles (813% of a frame)
+benchmark/src/bg_test.c:334: heavy in 1 loop [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 1,000 passes x 1,041 = 1,041,000 cycles (813% of a frame)
+benchmark/src/main.c:227: heavy in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes. Here: 16 passes x 12,582 = 201,312 cycles (157% of a frame)
+benchmark/src/bg_test.c:50: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:52: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:54: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:56: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:58: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:60: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:62: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:64: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:66: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:68: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:92: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:94: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:96: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:98: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:100: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:102: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:104: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:106: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:108: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:110: hot in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:113: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:115: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:117: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:119: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:121: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:123: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:125: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:127: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:129: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:131: hot in 2 loops [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:165: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:167: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:169: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:171: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:173: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:175: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:177: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:179: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:181: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:183: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:207: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:209: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:211: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:213: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:215: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:217: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:219: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:221: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:223: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:225: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:251: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:253: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:255: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:257: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:259: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:261: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:263: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:265: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:267: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:269: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:298: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:300: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:302: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:304: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:306: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:308: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:310: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:312: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:314: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:316: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:350: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:352: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:354: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:356: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:358: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:360: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:362: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:364: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:366: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:368: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:393: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:395: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:397: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:399: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:401: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:403: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:405: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:407: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:409: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:411: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:438: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:440: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:442: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:444: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:446: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:448: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:450: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:452: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:454: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:456: hot in 2 loops [redraw] VDP_drawImageEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:486: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:488: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:490: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:492: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:494: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:496: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:498: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:500: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:502: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:504: hot in 2 loops [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bmp_test.c:408: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 5 passes x 1,041 = 5,205 cycles (4% of a frame)
+benchmark/src/bmp_test.c:409: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 5 passes x 1,041 = 5,205 cycles (4% of a frame)
+benchmark/src/bmp_test.c:449: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 8 passes x 1,041 = 8,328 cycles (7% of a frame)
+benchmark/src/bmp_test.c:450: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 8 passes x 1,041 = 8,328 cycles (7% of a frame)
+benchmark/src/bmp_test.c:492: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 10 passes x 1,041 = 10,410 cycles (8% of a frame)
+benchmark/src/bmp_test.c:493: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 10 passes x 1,041 = 10,410 cycles (8% of a frame)
+benchmark/src/bmp_test.c:534: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 10 passes x 1,041 = 10,410 cycles (8% of a frame)
+benchmark/src/bmp_test.c:535: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 10 passes x 1,041 = 10,410 cycles (8% of a frame)
+benchmark/src/bmp_test.c:575: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 25 passes x 1,041 = 26,025 cycles (20% of a frame)
+benchmark/src/bmp_test.c:576: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 25 passes x 1,041 = 26,025 cycles (20% of a frame)
+benchmark/src/bmp_test.c:618: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 30 passes x 1,041 = 31,230 cycles (24% of a frame)
+benchmark/src/bmp_test.c:619: hot in 2 loops [div] '%' on u16 / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126. Here: 30 passes x 1,041 = 31,230 cycles (24% of a frame)
+benchmark/src/main.c:228: hot in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 16 passes x 3,673 = 58,768 cycles (46% of a frame)
+benchmark/src/spr_test.c:89: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:128: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:167: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:183: hot in 1 loop [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/spr_test.c:220: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:261: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:277: hot in 1 loop [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/spr_test.c:314: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:355: hot in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:371: hot in 1 loop [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/spr_test.c:430: hot in 1 loop [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:33: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:39: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:79: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:82: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:142: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:155: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:194: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:197: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:236: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:239: frame [redraw] unpackImage on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:241: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:281: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:284: frame [redraw] unpackImage on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:286: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:287: frame [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:328: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:340: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:380: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:383: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:423: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:426: frame [redraw] unpackImage on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:428: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:469: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:472: frame [redraw] unpackImage on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:474: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bg_test.c:475: frame [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/bg_test.c:516: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bg_test.c:533: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:539: frame [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+benchmark/src/bg_test.c:541: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:542: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:543: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:544: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:545: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bg_test.c:548: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:85: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:86: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:97: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:101: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:102: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:150: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:154: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:155: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:203: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:207: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:208: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:229: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:230: frame [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+benchmark/src/bmp_test.c:233: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:234: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:255: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:256: frame [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+benchmark/src/bmp_test.c:260: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:261: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:309: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:314: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:315: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:353: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:358: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:359: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:387: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:391: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:392: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:428: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:432: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:433: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:469: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:473: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:474: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:513: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:517: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:518: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:554: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:558: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:559: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:595: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:599: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:600: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:639: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:643: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:644: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:682: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:686: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/bmp_test.c:823: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:828: frame [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+benchmark/src/bmp_test.c:830: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:831: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:832: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:833: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:834: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:837: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:849: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:850: frame [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+benchmark/src/bmp_test.c:854: frame [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+benchmark/src/bmp_test.c:856: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:857: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:858: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:859: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:860: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:863: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/bmp_test.c:875: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:876: frame [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+benchmark/src/bmp_test.c:880: frame [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+benchmark/src/bmp_test.c:882: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:883: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:884: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:885: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:886: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/bmp_test.c:889: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/level.c:41: frame [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/level.c:44: frame [redraw] VDP_loadTileSet on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/level.c:48: frame [redraw] MAP_create on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/level.c:49: frame [redraw] MAP_create on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+benchmark/src/main.c:128: frame [blocking] JOY_waitPress inside the game loop stops the game for the whole wait
+benchmark/src/main.c:130: frame [blocking] PAL_fadeOut(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/main.c:193: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:196: frame [blocking] PAL_fadeIn(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/main.c:198: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/main.c:200: frame [blocking] PAL_fadeOut(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/main.c:219: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:220: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:221: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:232: frame [blocking] PAL_fadeIn(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/main.c:234: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/main.c:236: frame [blocking] PAL_fadeOut(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/main.c:255: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:256: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:260: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:261: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:263: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:264: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:266: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:267: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:269: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:270: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:272: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:273: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:275: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:276: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:278: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:279: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:281: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:282: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:284: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:285: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:287: frame [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:288: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:290: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/main.c:293: frame [blocking] PAL_fadeIn(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/map_test.c:23: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:28: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:33: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:38: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:43: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:48: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:54: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:59: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:64: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:69: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:74: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:79: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/map_test.c:90: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/map_test.c:91: frame [blocking] PAL_fadeOutAll(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/map_test.c:116: frame [blocking] PAL_fadeInAll(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/map_test.c:148: frame [blocking] PAL_fadeOutAll(..., FALSE) blocks until the fade ends; pass TRUE (async) inside the game loop
+benchmark/src/math_test.c:59: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:62: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:116: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:170: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:226: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:281: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:336: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:393: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/math_test.c:438: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:441: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:475: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:509: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:543: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:596: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:608: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:616: frame [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+benchmark/src/math_test.c:620: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:634: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/math_test.c:652: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:657: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:659: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:660: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:661: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:662: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:663: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:666: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/math_test.c:678: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:679: frame [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+benchmark/src/math_test.c:683: frame [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+benchmark/src/math_test.c:685: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:686: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:687: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:688: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:689: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/math_test.c:692: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:34: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:37: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:47: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:57: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:67: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:78: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:87: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:96: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:105: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/mem_test.c:128: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:131: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:142: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:152: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:162: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:173: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:182: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:191: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:201: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:211: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/mem_test.c:240: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:248: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:269: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:285: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:297: frame [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+benchmark/src/mem_test.c:301: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:313: frame [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+benchmark/src/mem_test.c:322: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:362: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:385: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/mem_test.c:415: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:423: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:444: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:465: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:481: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:497: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:513: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:529: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:571: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:596: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/mem_test.c:809: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:814: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:816: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:817: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:818: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:819: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:820: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:823: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:835: frame [text] fix32ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:836: frame [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+benchmark/src/mem_test.c:840: frame [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+benchmark/src/mem_test.c:842: frame [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:843: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:844: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:845: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:846: frame [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/mem_test.c:849: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:76: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:79: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:112: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:115: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:118: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:151: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:154: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:157: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:204: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:207: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:210: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:245: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:248: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:251: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:298: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:301: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:304: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:339: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:342: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:345: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:392: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:395: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:398: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:413: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:416: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:419: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:445: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:448: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:451: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:458: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:459: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:460: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:461: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:515: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:518: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:521: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:528: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:529: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:530: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:531: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:532: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:533: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:534: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:535: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:604: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:607: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:610: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:617: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:618: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:619: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:620: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:674: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:677: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:680: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:687: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:688: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:689: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:690: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:691: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:692: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:693: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:694: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:764: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:767: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:769: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:773: frame [blocking] waitMs inside the game loop stops the game for the whole wait
+benchmark/src/spr_test.c:781: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:782: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:783: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:784: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:785: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:786: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:787: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:788: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:789: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:790: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:791: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:792: frame [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:877: frame [sprite-alloc] SPR_reset on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:897: frame [sprite-alloc] SPR_initEx on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/main.c:191: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/main.c:192: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/main.c:217: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+benchmark/src/main.c:218: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+benchmark/src/mem_test.c:244: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:246: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:265: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:267: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:318: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:320: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:338: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:340: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:342: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:344: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:346: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:348: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:350: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:352: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:354: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:356: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:358: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:360: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:419: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:421: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:440: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:442: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:461: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:463: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:543: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:545: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:547: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:549: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:551: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:553: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:555: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:557: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:559: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:561: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:563: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:565: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:567: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/mem_test.c:569: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+benchmark/src/spr_test.c:955: guarded in 2 loops [sprite-alloc] SPR_releaseSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:956: guarded in 2 loops [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+benchmark/src/spr_test.c:1160: guarded in 1 loop [sprite-alloc] SPR_addSprite on the frame path: add + release costs 1,865 cycles, and an add without a release leaks a sprite slot every frame; allocate once, then SPR_setVisibility / SPR_setPosition
+
+9 files, 50 functions, 44 on the frame path; game loops: main.c:48 in main()
+findings: 7 heavy, 134 hot, 336 frame, 45 guarded
+
+## bitmap/cube 3D
+bitmap/cube 3D/src/main.c:100: frame [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/cube 3D/src/main.c:101: frame [text] fix16ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/cube 3D/src/main.c:102: frame [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/cube 3D/src/main.c:103: frame [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/cube 3D/src/main.c:104: frame [text] fix16ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/cube 3D/src/main.c:105: frame [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+
+3 files, 5 functions, 3 on the frame path; game loops: main.c:68 in main()
+findings: 6 frame
+
+## bitmap/partic
+bitmap/partic/src/main.c:79: guarded [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+bitmap/partic/src/main.c:81: guarded [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/partic/src/main.c:84: guarded [text] fix16ToStr on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/partic/src/main.c:86: guarded [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+bitmap/partic/src/main.c:98: guarded [text] BMP_drawText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+
+1 files, 6 functions, 3 on the frame path; game loops: main.c:61 in main()
+findings: 5 guarded
+
+## demo/bad-apple
+demo/bad-apple/src/main.c:293: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+demo/bad-apple/src/main.c:298: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+demo/bad-apple/src/main.c:303: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+demo/bad-apple/src/tile.c:88: guarded [redraw] VDP_loadTileData on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+
+6 files, 14 functions, 3 on the frame path; game loops: main.c:187 in main()
+findings: 4 guarded
+
+## demo/starfield-donut
+
+1 files, 4 functions, 1 on the frame path; game loops: main.c:110 in fastStarFieldFX()
+findings: none
+
+## flash-save
+
+1 files, 9 functions, 0 on the frame path; game loops: none found
+findings: none
+
+## fx/hilight-shadow
+
+1 files, 1 functions, 0 on the frame path; game loops: main.c:141 in main()
+findings: none
+
+## fx/h-int/scaling
+
+1 files, 4 functions, 2 on the frame path; game loops: main.c:126 in main()
+findings: none
+
+## fx/h-int/wobble
+fx/h-int/wobble/src/helpers.c:142: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+fx/h-int/wobble/src/helpers.c:146: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+fx/h-int/wobble/src/helpers.c:147: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+fx/h-int/wobble/src/helpers.c:131: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+fx/h-int/wobble/src/helpers.c:132: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+fx/h-int/wobble/src/helpers.c:202: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+
+3 files, 15 functions, 6 on the frame path; game loops: main.c:298 in main()
+findings: 3 frame, 3 guarded
+
+## fx/scroll/linescroll
+
+1 files, 2 functions, 0 on the frame path; game loops: main.c:46 in main()
+findings: none
+
+## fx/sprite-masking
+
+1 files, 1 functions, 0 on the frame path; game loops: main.c:82 in main()
+findings: none
+
+## game/platformer
+
+9 files, 28 functions, 14 on the frame path; game loops: main.c:27 in main()
+findings: none
+
+## game/sonic
+
+7 files, 27 functions, 14 on the frame path; game loops: main.c:78 in main()
+findings: none
+
+## joy-test
+joy-test/src/main.c:80: hot in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:95: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:115: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:118: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:121: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:124: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:127: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:130: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:133: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:136: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes. Here: 2 passes x 3,673 = 7,346 cycles (6% of a frame)
+joy-test/src/main.c:154: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:158: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:162: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:166: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:170: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:174: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:178: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+joy-test/src/main.c:182: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 4 functions, 3 on the frame path; game loops: main.c:66 in main()
+findings: 1 hot, 17 guarded
+
+## megawifi/basic
+
+1 files, 16 functions, 0 on the frame path; game loops: main.c:89 in idle_tsk(), main.c:296 in run_test()
+findings: none
+
+## megawifi/menu
+megawifi/menu/src/utils.c:135: hot in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/utils.c:136: hot in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:137: hot in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/utils.c:138: hot in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:73: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:61: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:62: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:63: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:64: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:65: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:66: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:67: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:68: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:69: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/main.c:70: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:20: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:29: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:32: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:39: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration.c:45: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:14: guarded in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:15: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:18: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:21: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:24: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:27: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:30: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:33: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:37: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:64: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:65: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:69: guarded in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:70: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_ap.c:136: guarded in 2 loops [div] '/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+megawifi/menu/src/mw-api/configuration_ap.c:137: guarded in 2 loops [div] '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16
+megawifi/menu/src/mw-api/configuration_cert.c:33: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_cert.c:34: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_cert.c:35: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_cert.c:36: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_cert.c:37: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_cert.c:38: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_cert.c:39: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:20: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:35: guarded in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:36: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:37: guarded in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:38: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:42: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:43: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:44: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:45: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:46: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:47: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:55: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:61: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:106: guarded in 3 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:107: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:118: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:119: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:120: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:121: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:122: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:123: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:124: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:125: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:126: guarded in 2 loops [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/configuration_slot.c:127: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/datetime.c:29: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/datetime.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/datetime.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:22: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:32: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:33: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:34: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:35: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:36: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:39: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:40: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:50: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:56: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:66: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:84: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/flash.c:91: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/http.c:51: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/http.c:52: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/http.c:53: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/http.c:54: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/http.c:118: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/ping.c:29: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/ping.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/ping.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/ping.c:57: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/random.c:29: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/random.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/random.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/random.c:56: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/tcp.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/tcp.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/tcp.c:32: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/tcp.c:33: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/tcp.c:91: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:32: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:33: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:98: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:106: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/udp.c:137: guarded in 1 loop [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:20: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:29: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:30: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:31: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:32: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:39: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/mw-api/upgrade.c:45: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:61: guarded in 5 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:77: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:90: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:98: guarded in 4 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:99: guarded in 4 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:112: guarded in 4 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:122: guarded in 4 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:145: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:147: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:159: guarded in 3 loops [div] '%' on 32-bit / constant: 1,041 cycles (s32 % s32); u16 % u16 is 126
+megawifi/menu/src/utils.c:160: guarded in 3 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+megawifi/menu/src/utils.c:165: guarded in 2 loops [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+14 files, 71 functions, 63 on the frame path; game loops: main.c:53 in idle_tsk(), main.c:135 in run_app()
+findings: 4 hot, 1 frame, 125 guarded
+
+## snd/sound-test
+snd/sound-test/src/main.c:703: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/sound-test/src/main.c:704: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:705: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:706: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:713: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/sound-test/src/main.c:714: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:715: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:716: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:730: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:734: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:738: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:742: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:747: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/sound-test/src/main.c:751: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:752: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/sound-test/src/main.c:753: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:754: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:755: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/sound-test/src/main.c:756: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/sound-test/src/main.c:758: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 16 functions, 1 on the frame path; game loops: main.c:150 in main()
+findings: 20 guarded
+
+## snd/xgm-player
+snd/xgm-player/src/main.c:506: guarded in 1 loop [mul32] 16 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); muls()/mulu() on 16-bit values is 35, F16_mul 59
+snd/xgm-player/src/main.c:654: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:658: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:660: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:665: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:669: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:671: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:682: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/xgm-player/src/main.c:685: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/xgm-player/src/main.c:686: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:691: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:693: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:694: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:696: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:698: guarded [redraw] VDP_setTileMapEx on the frame path: measured, a 128x64 VDP_drawImageEx costs 22,630 cycles uncompressed (18% of a frame), 138,263 with FAST/LZ4W (1.1 frames), 549,647 with APLIB (4.3 frames); VDP_loadTileData of 64 tiles 6,046 (DMA_QUEUE) or 17,604 (CPU)
+snd/xgm-player/src/main.c:711: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:716: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:717: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:719: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:736: guarded [div] '/' on 32-bit / u16: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23
+snd/xgm-player/src/main.c:834: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:835: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:836: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:837: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:838: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:851: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:853: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:857: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:858: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:865: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:867: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:871: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:872: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:882: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:884: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:888: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:889: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:896: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:898: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:902: guarded [text] VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:903: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:918: guarded [div] '%' on signed 16-bit / u16: 1,041 cycles (s32 % s32); u16 % u16 is 126
+snd/xgm-player/src/main.c:957: guarded in 1 loop [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/xgm-player/src/main.c:989: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:992: guarded in 1 loop [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:1005: guarded [text] strcpy on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:1009: guarded [div] '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23
+snd/xgm-player/src/main.c:1010: guarded [div] '/' on 32-bit / u16: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23
+snd/xgm-player/src/main.c:1012: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/xgm-player/src/main.c:1013: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:1014: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+snd/xgm-player/src/main.c:1015: guarded [text] strcat on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+snd/xgm-player/src/main.c:1019: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+snd/xgm-player/src/main.c:1485: guarded [div] '%' on signed 16-bit / u16: 1,041 cycles (s32 % s32); u16 % u16 is 126
+snd/xgm-player/src/main.c:1488: guarded [div] '/' on signed 16-bit / u16: 613 cycles: GCC calls __divsi3 for s16 / s16; SGDK divs() is 139
+
+6 files, 51 functions, 44 on the frame path; game loops: main.c:349 in main()
+findings: 55 guarded
+
+## sys/console
+
+1 files, 8 functions, 0 on the frame path; game loops: none found
+findings: none
+
+## sys/multitasking
+sys/multitasking/src/main.c:46: frame [text] intToHex on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+sys/multitasking/src/main.c:48: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+sys/multitasking/src/main.c:78: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+sys/multitasking/src/main.c:84: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 6 functions, 3 on the frame path; game loops: main.c:64 in bg_tsk(), main.c:91 in fg_tsk()
+findings: 2 frame, 2 guarded

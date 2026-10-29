@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.51 s (836 frames/s), symbols 232
+mean CPU load 3.1% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 0 bytes in frame -1
+
+whole run, cycles by function:
+   96.9%  VDP_waitVBlank
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.1%  main.isra.0
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+    0.1%  SYS_getAndSetInterruptMaskLevel
+    0.1%  SYS_setInterruptMaskLevel
+    0.0%  flushQueue
+    0.0%  no_xgm_task
+    0.0%  _VINT
+
+busiest frames:
+  frame 70: 37812 busy cycles (30% of a frame), idle entered at line 39
+        14874  main.isra.0
+         7060  VDP_drawTextEx.constprop.0
+         4020  memset_
+         3500  VDP_setTileMapDataEx.constprop.0
+  frame 310: 23056 busy cycles (18% of a frame), idle entered at line 224
+        10104  VDP_drawTextEx.constprop.0
+         5132  VDP_setTileMapDataEx.constprop.0
+         1554  uint16ToStr
+         1268  read6Btn
+  frame 274: 5692 busy cycles (4% of a frame), idle entered at line 225
+         1992  main.isra.0
+         1268  read6Btn
+         1056  JOY_update
+          792  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 154: 5668 busy cycles (4% of a frame), idle entered at line 224
+         1966  main.isra.0
+         1268  read6Btn
+         1056  JOY_update
+          794  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 238: 5668 busy cycles (4% of a frame), idle entered at line 224
+         1966  main.isra.0
+         1268  read6Btn
+         1056  JOY_update
+          794  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 106: 5666 busy cycles (4% of a frame), idle entered at line 225
+         1966  main.isra.0
+         1268  read6Btn
+         1056  JOY_update
+          792  SYS_doVBlankProcessEx.constprop.0.isra.0

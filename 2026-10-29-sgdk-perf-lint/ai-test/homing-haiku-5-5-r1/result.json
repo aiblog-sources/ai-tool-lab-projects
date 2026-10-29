@@ -1,0 +1,505 @@
+{
+ "task": "homing",
+ "model": "claude-haiku-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 1,
+   "frame": 1,
+   "guarded": 10,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "mul32",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 79,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy"
+   },
+   {
+    "line": 80,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy"
+   },
+   {
+    "line": 99,
+    "rule": "mul32",
+    "level": "hot",
+    "function": "updateEnemies"
+   },
+   {
+    "line": 107,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies"
+   },
+   {
+    "line": 108,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies"
+   },
+   {
+    "line": 151,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putNum"
+   },
+   {
+    "line": 152,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putNum"
+   },
+   {
+    "line": 163,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 165,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 168,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 170,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 236,
+    "rule": "div",
+    "level": "frame",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 28.28,
+   "dropped": 0,
+   "peak_load": 57.4,
+   "p95_load": 44.7,
+   "dma_active_frames": 1190,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     71.72
+    ],
+    [
+     "main.isra.0",
+     11.16
+    ],
+    [
+     "__udivsi3",
+     5.88
+    ],
+    [
+     "__mulsi3",
+     3.38
+    ],
+    [
+     "__divsi3",
+     2.12
+    ],
+    [
+     "DMA_doDmaFast",
+     2.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 1,
+   "frame": 1,
+   "guarded": 10,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 79,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy",
+    "est_cycles": 8328
+   },
+   {
+    "line": 80,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy",
+    "est_cycles": 8328
+   },
+   {
+    "line": 99,
+    "rule": "mul32",
+    "level": "hot",
+    "function": "updateEnemies",
+    "est_cycles": 2144
+   },
+   {
+    "line": 107,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies",
+    "est_cycles": 3624
+   },
+   {
+    "line": 108,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateEnemies",
+    "est_cycles": 3624
+   },
+   {
+    "line": 151,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putNum",
+    "est_cycles": 453
+   },
+   {
+    "line": 152,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putNum",
+    "est_cycles": 453
+   },
+   {
+    "line": 163,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 1041
+   },
+   {
+    "line": 165,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 168,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 1041
+   },
+   {
+    "line": 170,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud",
+    "est_cycles": 3673
+   },
+   {
+    "line": 236,
+    "rule": "div",
+    "level": "frame",
+    "function": "main",
+    "est_cycles": 617
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 6,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 87,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy"
+   },
+   {
+    "line": 88,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy"
+   },
+   {
+    "line": 175,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putDigits"
+   },
+   {
+    "line": 176,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putDigits"
+   },
+   {
+    "line": 191,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 196,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   }
+  ],
+  "profile": {
+   "mean_load": 17.97,
+   "dropped": 0,
+   "peak_load": 37.1,
+   "p95_load": 24.1,
+   "dma_active_frames": 1190,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     82.03
+    ],
+    [
+     "main.isra.0",
+     12.33
+    ],
+    [
+     "DMA_doDmaFast",
+     2.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.64
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "VDP_drawText",
+     0.16
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 7,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 92,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy"
+   },
+   {
+    "line": 93,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnEnemy"
+   },
+   {
+    "line": 168,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putNum"
+   },
+   {
+    "line": 181,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 183,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 186,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHud"
+   },
+   {
+    "line": 188,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHud"
+   }
+  ],
+  "profile": {
+   "mean_load": 16.53,
+   "dropped": 0,
+   "peak_load": 39.7,
+   "p95_load": 26.8,
+   "dma_active_frames": 1189,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     83.47
+    ],
+    [
+     "main.isra.0",
+     10.56
+    ],
+    [
+     "DMA_doDmaFast",
+     2.1
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "__udivsi3",
+     0.3
+    ]
+   ]
+  }
+ },
+ "calls": 5,
+ "cost_usd": 0.055,
+ "claude_wall_s": 438.1,
+ "output_tokens": 101994,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 163,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putDigits"
+   },
+   {
+    "line": 164,
+    "rule": "div",
+    "level": "guarded",
+    "function": "putDigits"
+   },
+   {
+    "line": 178,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawScore"
+   },
+   {
+    "line": 188,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawTime"
+   }
+  ],
+  "profile": {
+   "mean_load": 17.8,
+   "dropped": 0,
+   "peak_load": 36.7,
+   "p95_load": 20.4,
+   "dma_active_frames": 1190,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     82.2
+    ],
+    [
+     "main.isra.0",
+     12.29
+    ],
+    [
+     "DMA_doDmaFast",
+     2.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ }
+}

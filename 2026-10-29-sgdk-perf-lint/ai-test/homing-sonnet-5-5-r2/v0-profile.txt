@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.54 s (816 frames/s), symbols 233
+mean CPU load 7.1% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 80 bytes in frame 60
+
+whole run, cycles by function:
+   92.9%  VDP_waitVBlank
+    1.6%  drawSprites
+    1.0%  main.isra.0
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.6%  DMA_queueDmaFast
+    0.5%  __udivsi3
+    0.3%  flushQueue
+    0.2%  __divsi3
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+
+busiest frames:
+  frame 130: 33821 busy cycles (26% of a frame), idle entered at line 31
+        12052  main.isra.0
+         6544  __udivsi3
+         2696  __divsi3
+         2246  VDP_drawTextEx.constprop.0
+  frame 140: 32981 busy cycles (26% of a frame), idle entered at line 29
+        11786  main.isra.0
+         6532  __udivsi3
+         2896  VDP_drawTextEx.constprop.0
+         2696  __divsi3
+  frame 349: 32926 busy cycles (26% of a frame), idle entered at line 225
+        11718  main.isra.0
+         6530  __udivsi3
+         2902  VDP_drawTextEx.constprop.0
+         2694  __divsi3
+  frame 304: 28023 busy cycles (22% of a frame), idle entered at line 19
+        11896  main.isra.0
+         6544  __udivsi3
+         2698  __divsi3
+         2020  drawSprites
+  frame 83: 27999 busy cycles (22% of a frame), idle entered at line 19
+        11910  main.isra.0
+         6552  __udivsi3
+         2700  __divsi3
+         2020  drawSprites
+  frame 84: 27987 busy cycles (22% of a frame), idle entered at line 19
+        11844  main.isra.0
+         6546  __udivsi3
+         2706  __divsi3
+         2020  drawSprites

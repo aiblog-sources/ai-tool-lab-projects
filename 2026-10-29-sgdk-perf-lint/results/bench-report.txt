@@ -1,0 +1,50 @@
+frames 4000 (summary from frame 60), wall 4.56 s (876 frames/s), symbols 384
+mean CPU load 23.5% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 384
+frames with DMA during active display: 192; max DMA 4072 bytes in frame 2718
+
+whole run, cycles by function:
+   76.5%  VDP_waitVBlank
+    6.5%  aplib_decrunch
+    1.7%  DMA_doDmaFast
+    1.6%  __udivsi3
+    0.9%  read6Btn
+    0.9%  __extendsfdf2
+    0.9%  __fixdfsi
+    0.8%  JOY_update
+    0.7%  __mulsi3
+    0.7%  Lmulsf$2
+    0.6%  SPR_update
+    0.6%  DMA_queueDmaFast
+
+busiest frames:
+  frame 3006: 128019 busy cycles (100% of a frame), idle entered at line -1
+       127701  aplib_decrunch
+          124  no_user_task
+          124  no_bmp_task
+           30  no_xgm_task
+  frame 3056: 128019 busy cycles (100% of a frame), idle entered at line -1
+       127701  aplib_decrunch
+          124  no_user_task
+          124  no_bmp_task
+           30  no_xgm_task
+  frame 3106: 128019 busy cycles (100% of a frame), idle entered at line -1
+       127701  aplib_decrunch
+          124  no_user_task
+          124  no_bmp_task
+           30  no_xgm_task
+  frame 3156: 128019 busy cycles (100% of a frame), idle entered at line -1
+       127701  aplib_decrunch
+          124  no_user_task
+          124  no_bmp_task
+           30  no_xgm_task
+  frame 3206: 128019 busy cycles (100% of a frame), idle entered at line -1
+       127701  aplib_decrunch
+          124  no_user_task
+          124  no_bmp_task
+           30  no_xgm_task
+  frame 2913: 128016 busy cycles (100% of a frame), idle entered at line -1
+       127698  aplib_decrunch
+          124  no_user_task
+          124  no_bmp_task
+           30  no_xgm_task

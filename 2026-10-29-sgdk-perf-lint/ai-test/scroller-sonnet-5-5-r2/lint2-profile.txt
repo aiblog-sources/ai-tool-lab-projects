@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 0.80 s (1578 frames/s), symbols 228
+mean CPU load 4.5% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 8 bytes in frame 60
+
+whole run, cycles by function:
+   95.5%  VDP_waitVBlank
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.6%  DMA_queueDmaFast
+    0.5%  main.isra.0
+    0.3%  generateColumn
+    0.2%  flushQueue
+    0.1%  setTileMapDataColumn.constprop.0
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+    0.1%  SYS_getAndSetInterruptMaskLevel
+
+busiest frames:
+  frame 592: 10797 busy cycles (8% of a frame), idle entered at line 225
+         3600  generateColumn
+         1554  setTileMapDataColumn.constprop.0
+         1268  read6Btn
+         1056  JOY_update
+  frame 256: 10695 busy cycles (8% of a frame), idle entered at line 225
+         3504  generateColumn
+         1554  setTileMapDataColumn.constprop.0
+         1268  read6Btn
+         1056  JOY_update
+  frame 520: 10687 busy cycles (8% of a frame), idle entered at line 246
+         3450  generateColumn
+         1554  setTileMapDataColumn.constprop.0
+         1268  read6Btn
+         1060  JOY_update
+  frame 328: 10681 busy cycles (8% of a frame), idle entered at line 225
+         3496  generateColumn
+         1554  setTileMapDataColumn.constprop.0
+         1266  read6Btn
+         1054  JOY_update
+  frame 680: 10649 busy cycles (8% of a frame), idle entered at line 246
+         3454  generateColumn
+         1554  setTileMapDataColumn.constprop.0
+         1268  read6Btn
+         1056  JOY_update
+  frame 808: 10639 busy cycles (8% of a frame), idle entered at line 224
+         3454  generateColumn
+         1554  setTileMapDataColumn.constprop.0
+         1266  read6Btn
+         1054  JOY_update
