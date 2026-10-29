@@ -5,7 +5,7 @@ cycles while `u16 / u16` is a 117-cycle `divu`, `u16 % FIX16(2.7)` costs 1,062 c
 and SGDK 2.09's own `muls()` became a 270-cycle `__mulsi3` call when GCC knew one operand was positive. sgdklint
 flags these patterns in the code that runs every frame, with the cost of each measured on a cost-table ROM. On 40
 small games written by Claude (Sonnet 5.5, Opus 5.5, Haiku 5.5) it pointed at a cause in all 3 games that dropped
-frames (the version tuned on them; v1 ranked two low and missed one), but handing its output back to the model helped less than a plain "make it faster" (load -0.1 to -0.2
+frames (the version tuned on them; v1 ranked two low and missed one), but handing its output back to the model helped less than a plain "make it faster" (load -0.09 to -0.14
 points vs -1.4 to -1.8 on Sonnet and Opus), except on Haiku, whose slow spots were exactly what the lint flags
 (HUD 19.0% -> 3.7% load).
 
