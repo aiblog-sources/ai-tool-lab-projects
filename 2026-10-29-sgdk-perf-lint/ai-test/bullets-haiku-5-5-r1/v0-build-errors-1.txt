@@ -1,0 +1,7 @@
+[01m[Ksrc/main.c:138:26:[m[K [01;31m[Kerror: [m[K'[01m[KAPLAN[m[K' undeclared (first use in this function)
+[01m[Ksrc/main.c:155:20:[m[K [01;31m[Kerror: [m[K'[01m[KAPLAN[m[K' undeclared (first use in this function)
+[01m[Ksrc/main.c:245:9:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:250:9:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:264:17:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+[01m[Ksrc/main.c:271:17:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function '[01m[KVDP_setSprite[m[K'
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

@@ -1,0 +1,7 @@
+src/main.c:68: guarded [div] '%' on 32-bit / 32-bit: 1,041 cycles (s32 % s32); u16 % u16 is 126
+src/main.c:88: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:105: guarded [text] VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes
+src/main.c:123: guarded in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 10 passes x 324 = 3,240 cycles (3% of a frame)
+
+1 files, 4 functions, 3 on the frame path; game loops: main.c:173 in main()
+findings: 4 guarded

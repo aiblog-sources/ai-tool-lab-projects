@@ -1,0 +1,7 @@
+src/main.c:50: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:51: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:62: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:70: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+
+1 files, 3 functions, 2 on the frame path; game loops: main.c:162 in main()
+findings: 4 guarded

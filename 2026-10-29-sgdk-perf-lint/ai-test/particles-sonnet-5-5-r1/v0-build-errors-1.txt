@@ -1,0 +1,8 @@
+[01m[Ksrc/main.c:70:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_mul(..) instead.
+[01m[Ksrc/main.c:70:49:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:71:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_mul(..) instead.
+[01m[Ksrc/main.c:93:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_toInt(..) instead.
+[01m[Ksrc/main.c:93:34:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:94:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_toInt(..) instead.
+[01m[Ksrc/main.c:94:34:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

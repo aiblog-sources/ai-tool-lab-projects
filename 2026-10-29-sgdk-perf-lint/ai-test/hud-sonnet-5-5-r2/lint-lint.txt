@@ -1,0 +1,8 @@
+src/main.c:113: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:120: guarded [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+src/main.c:138: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:166: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:167: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 8 functions, 7 on the frame path; game loops: main.c:228 in main()
+findings: 5 guarded

@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.50 s (840 frames/s), symbols 222
+mean CPU load 19.0% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 0 bytes in frame -1
+
+whole run, cycles by function:
+   81.0%  VDP_waitVBlank
+    6.1%  main.isra.0
+    4.5%  __udivsi3
+    1.5%  VDP_setTileMapDataRowEx.constprop.0
+    1.4%  VDP_setTileMapDataEx.constprop.0
+    1.4%  __mulsi3
+    1.2%  __umodsi3
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+
+busiest frames:
+  frame 64: 24468 busy cycles (19% of a frame), idle entered at line 12
+         7822  main.isra.0
+         5798  __udivsi3
+         1864  VDP_setTileMapDataRowEx.constprop.0
+         1812  VDP_setTileMapDataEx.constprop.0
+  frame 66: 24464 busy cycles (19% of a frame), idle entered at line 12
+         7822  main.isra.0
+         5798  __udivsi3
+         1864  VDP_setTileMapDataRowEx.constprop.0
+         1812  VDP_setTileMapDataEx.constprop.0
+  frame 62: 24461 busy cycles (19% of a frame), idle entered at line 12
+         7822  main.isra.0
+         5798  __udivsi3
+         1864  VDP_setTileMapDataRowEx.constprop.0
+         1812  VDP_setTileMapDataEx.constprop.0
+  frame 69: 24461 busy cycles (19% of a frame), idle entered at line 12
+         7822  main.isra.0
+         5798  __udivsi3
+         1864  VDP_setTileMapDataRowEx.constprop.0
+         1812  VDP_setTileMapDataEx.constprop.0
+  frame 629: 24453 busy cycles (19% of a frame), idle entered at line 12
+         7884  main.isra.0
+         5780  __udivsi3
+         1864  VDP_setTileMapDataRowEx.constprop.0
+         1810  VDP_setTileMapDataEx.constprop.0
+  frame 122: 24444 busy cycles (19% of a frame), idle entered at line 12
+         7850  main.isra.0
+         5796  __udivsi3
+         1864  VDP_setTileMapDataRowEx.constprop.0
+         1812  VDP_setTileMapDataEx.constprop.0

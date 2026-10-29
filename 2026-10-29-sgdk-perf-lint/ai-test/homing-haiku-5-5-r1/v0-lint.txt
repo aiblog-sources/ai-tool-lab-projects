@@ -1,0 +1,15 @@
+src/main.c:99: hot in 1 loop [mul32] 32 x 32-bit multiply: 268 cycles (__mulsi3); muls()/mulu() on 16-bit values is 35, F16_mul 59
+src/main.c:236: frame [div] '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23
+src/main.c:79: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:80: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:107: guarded in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:108: guarded in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:151: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:152: guarded in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:163: guarded [div] '%' on 32-bit / constant: 1,041 cycles (s32 % s32); u16 % u16 is 126
+src/main.c:165: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:168: guarded [div] '%' on 32-bit / constant: 1,041 cycles (s32 % s32); u16 % u16 is 126
+src/main.c:170: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 8 functions, 7 on the frame path; game loops: main.c:218 in main()
+findings: 1 hot, 1 frame, 10 guarded

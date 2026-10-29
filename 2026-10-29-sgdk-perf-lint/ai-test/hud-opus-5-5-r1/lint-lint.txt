@@ -1,0 +1,12 @@
+src/main.c:138: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:139: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:156: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:163: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:164: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:179: guarded [text] VDP_clearText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:180: guarded [text] VDP_clearText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:187: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:188: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 12 functions, 10 on the frame path; game loops: main.c:234 in main()
+findings: 9 guarded

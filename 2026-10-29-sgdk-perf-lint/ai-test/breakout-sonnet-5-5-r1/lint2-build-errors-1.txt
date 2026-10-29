@@ -1,0 +1,2 @@
+[01m[Ksrc/main.c:206:9:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function '[01m[KVDP_setTileMapDataRect[m[K'
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

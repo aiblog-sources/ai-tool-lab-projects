@@ -1,0 +1,298 @@
+{
+ "task": "particles",
+ "model": "claude-sonnet-5-5",
+ "rep": 2,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 48,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 49,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 59,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 66,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   }
+  ],
+  "profile": {
+   "mean_load": 13.72,
+   "dropped": 5,
+   "peak_load": 94.5,
+   "p95_load": 33.2,
+   "dma_active_frames": 317,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.28
+    ],
+    [
+     "main.isra.0",
+     8.07
+    ],
+    [
+     "DMA_doDmaFast",
+     2.31
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 2,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 63,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion",
+    "est_cycles": 268
+   },
+   {
+    "line": 64,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "spawnExplosion",
+    "est_cycles": 268
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 13.72,
+   "dropped": 5,
+   "peak_load": 94.9,
+   "p95_load": 33.2,
+   "dma_active_frames": 317,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.28
+    ],
+    [
+     "main.isra.0",
+     8.07
+    ],
+    [
+     "DMA_doDmaFast",
+     2.31
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 4,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 50,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 51,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 62,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   },
+   {
+    "line": 70,
+    "rule": "div",
+    "level": "guarded",
+    "function": "spawnExplosion"
+   }
+  ],
+  "profile": {
+   "mean_load": 13.22,
+   "dropped": 0,
+   "peak_load": 98.0,
+   "p95_load": 28.4,
+   "dma_active_frames": 312,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.78
+    ],
+    [
+     "main.isra.0",
+     7.44
+    ],
+    [
+     "DMA_doDmaFast",
+     2.43
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 4,
+ "cost_usd": 0.1959,
+ "claude_wall_s": 109.0,
+ "output_tokens": 15589,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 13.72,
+   "dropped": 5,
+   "peak_load": 94.3,
+   "p95_load": 33.2,
+   "dma_active_frames": 317,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     86.28
+    ],
+    [
+     "main.isra.0",
+     8.07
+    ],
+    [
+     "DMA_doDmaFast",
+     2.31
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_transfer.isra.0",
+     0.37
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ }
+}

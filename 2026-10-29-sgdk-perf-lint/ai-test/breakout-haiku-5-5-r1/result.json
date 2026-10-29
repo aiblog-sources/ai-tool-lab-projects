@@ -1,0 +1,402 @@
+{
+ "task": "breakout",
+ "model": "claude-haiku-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 7,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text",
+   "tile-loop"
+  ],
+  "findings": [
+   {
+    "line": 153,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 163,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 164,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 168,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 169,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 183,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "drawBrick"
+   },
+   {
+    "line": 195,
+    "rule": "tile-loop",
+    "level": "guarded",
+    "function": "clearBrick"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.73,
+   "dropped": 0,
+   "peak_load": 17.2,
+   "p95_load": 8.2,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.27
+    ],
+    [
+     "main.isra.0",
+     1.35
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_doCPUCopyDirect",
+     0.44
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 2,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 5,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 153,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage",
+    "est_cycles": 3673
+   },
+   {
+    "line": 163,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHUD",
+    "est_cycles": 453
+   },
+   {
+    "line": 164,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHUD",
+    "est_cycles": 453
+   },
+   {
+    "line": 168,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD",
+    "est_cycles": 3673
+   },
+   {
+    "line": 169,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD",
+    "est_cycles": 3673
+   },
+   {
+    "line": 183,
+    "rule": "tile-loop",
+    "level": "heavy",
+    "function": "drawBrick",
+    "est_cycles": 116640
+   },
+   {
+    "line": 195,
+    "rule": "tile-loop",
+    "level": "heavy",
+    "function": "clearBrick",
+    "est_cycles": 116640
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 164,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 193,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 194,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.72,
+   "dropped": 0,
+   "peak_load": 17.1,
+   "p95_load": 8.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.28
+    ],
+    [
+     "main.isra.0",
+     1.33
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_doCPUCopyDirect",
+     0.44
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 5,
+   "init": 0
+  },
+  "lint_rules": [
+   "div",
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 170,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 180,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 181,
+    "rule": "div",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 183,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 189,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   }
+  ],
+  "profile": {
+   "mean_load": 3.74,
+   "dropped": 0,
+   "peak_load": 11.0,
+   "p95_load": 4.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     96.26
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "main.isra.0",
+     0.68
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_doCPUCopyDirect",
+     0.13
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 5,
+ "cost_usd": 0.0485,
+ "claude_wall_s": 331.2,
+ "output_tokens": 84812,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 3,
+   "init": 0
+  },
+  "lint_rules": [
+   "text"
+  ],
+  "findings": [
+   {
+    "line": 163,
+    "rule": "text",
+    "level": "guarded",
+    "function": "showMessage"
+   },
+   {
+    "line": 191,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   },
+   {
+    "line": 192,
+    "rule": "text",
+    "level": "guarded",
+    "function": "drawHUD"
+   }
+  ],
+  "profile": {
+   "mean_load": 4.72,
+   "dropped": 0,
+   "peak_load": 17.1,
+   "p95_load": 8.1,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     95.28
+    ],
+    [
+     "main.isra.0",
+     1.34
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_doCPUCopyDirect",
+     0.44
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ],
+    [
+     "no_user_task",
+     0.1
+    ]
+   ]
+  }
+ }
+}

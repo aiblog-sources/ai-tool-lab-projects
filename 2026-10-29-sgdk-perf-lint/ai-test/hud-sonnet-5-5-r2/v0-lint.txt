@@ -1,0 +1,10 @@
+src/main.c:100: guarded [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:101: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:107: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:121: guarded in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470)
+src/main.c:132: guarded in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470)
+src/main.c:138: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:139: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 9 functions, 8 on the frame path; game loops: main.c:200 in main()
+findings: 7 guarded

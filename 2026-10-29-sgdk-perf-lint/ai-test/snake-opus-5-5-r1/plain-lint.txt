@@ -1,0 +1,12 @@
+src/main.c:187: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:230: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:235: guarded [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:242: guarded in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470)
+src/main.c:253: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:254: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:267: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:269: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:270: guarded [div] '/' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+
+1 files, 20 functions, 15 on the frame path; game loops: main.c:512 in main()
+findings: 9 guarded

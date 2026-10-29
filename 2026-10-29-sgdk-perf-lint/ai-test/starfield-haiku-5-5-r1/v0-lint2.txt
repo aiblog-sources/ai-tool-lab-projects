@@ -1,0 +1,4 @@
+src/main.c:183: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16. Here: 64 passes x 453 = 28,992 cycles (23% of a frame)
+
+1 files, 2 functions, 1 on the frame path; game loops: main.c:158 in main()
+findings: 1 guarded

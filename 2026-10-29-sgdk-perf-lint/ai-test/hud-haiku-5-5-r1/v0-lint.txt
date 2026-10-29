@@ -1,0 +1,8 @@
+src/main.c:57: hot in 1 loop [div] '%' on 32-bit / constant: 1,041 cycles (s32 % s32); u16 % u16 is 126
+src/main.c:58: hot in 1 loop [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+src/main.c:96: hot in 1 loop [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470)
+src/main.c:62: frame [text] VDP_drawTextBG on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:79: frame [text] VDP_drawTextBG on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 4 functions, 3 on the frame path; game loops: main.c:140 in main()
+findings: 3 hot, 2 frame

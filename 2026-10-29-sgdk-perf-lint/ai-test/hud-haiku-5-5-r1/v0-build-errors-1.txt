@@ -1,0 +1,6 @@
+[01m[Ksrc/main.c:97:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:129:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use PAL_setPalette(..) instead.
+[01m[Ksrc/main.c:130:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:130:46:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K,[m[K' token
+[01m[Ksrc/main.c:138:17:[m[K [01;31m[Kerror: [m[K'[01m[KIS_PALSYSTEM[m[K' undeclared (first use in this function); did you mean '[01m[KIS_PAL_SYSTEM[m[K'?
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

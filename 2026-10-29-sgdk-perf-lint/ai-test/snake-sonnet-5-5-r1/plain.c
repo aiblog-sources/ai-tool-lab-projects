@@ -1,0 +1,356 @@
+/*
+ * SNAKE for Sega Mega Drive / Genesis, SGDK 2.09
+ * - 40x28 tile grid on plane A (full 320x224 screen)
+ * - Score/HUD text on plane B with high priority, so it shows over the snake
+ * - No resource files: tiles are const u32 arrays loaded with VDP_loadTileData
+ * - Pad 1: D-Pad = steer, START = start / restart
+ * - Speed increases with snake length
+ *
+ * Performance notes (68000):
+ * - HUD is redrawn only when its values change (on eating / game over / new game)
+ *   instead of every step; the output on screen is identical.
+ * - Step delay is cached and recomputed only when the length changes, so the
+ *   division by 3 is not done every frame.
+ * - Ring buffer wrap uses compare instead of a 32-bit modulo (software division).
+ * - Wall check uses a single unsigned compare per axis.
+ * - Hot-path variables are u16 to avoid extra extension instructions.
+ */
+
+#include <genesis.h>
+
+#define GRID_W          40
+#define GRID_H          28
+#define MAX_LEN         (GRID_W * GRID_H)
+
+#define INIT_LEN        3
+#define START_DELAY     12      /* frames per step at start */
+#define MIN_DELAY       4       /* fastest speed (frames per step) */
+#define LEN_PER_SPEEDUP 3       /* grow this much to gain one speed step */
+#define POINTS_PER_FOOD 10
+
+/* Tile indices in VRAM */
+#define TILE_BODY       (TILE_USER_INDEX + 0)
+#define TILE_HEAD       (TILE_USER_INDEX + 1)
+#define TILE_FOOD       (TILE_USER_INDEX + 2)
+
+#define ATTR_BODY       TILE_ATTR_FULL(PAL1, FALSE, FALSE, FALSE, TILE_BODY)
+#define ATTR_HEAD       TILE_ATTR_FULL(PAL1, FALSE, FALSE, FALSE, TILE_HEAD)
+#define ATTR_FOOD       TILE_ATTR_FULL(PAL1, FALSE, FALSE, FALSE, TILE_FOOD)
+
+/* Palette 1 color indices used by the tiles:
+ * 0 transparent, 1 dark green, 2 green, 3 light green,
+ * 4 red, 5 white, 6 brown */
+static const u32 tileData[3 * 8] =
+{
+    /* body */
+    0x11111111,
+    0x12222221,
+    0x12222221,
+    0x12222221,
+    0x12222221,
+    0x12222221,
+    0x12222221,
+    0x11111111,
+
+    /* head (with eyes) */
+    0x11111111,
+    0x13333331,
+    0x13533531,
+    0x13533531,
+    0x13333331,
+    0x13333331,
+    0x13333331,
+    0x11111111,
+
+    /* food (apple) */
+    0x00006000,
+    0x04466440,
+    0x44544444,
+    0x44544444,
+    0x44444444,
+    0x44444444,
+    0x04444440,
+    0x00444400
+};
+
+typedef enum { STATE_TITLE, STATE_PLAY, STATE_OVER } GameState;
+
+/* Snake storage: ring buffer of cell coordinates + occupancy grid */
+static u8 snakeX[MAX_LEN];
+static u8 snakeY[MAX_LEN];
+static u8 occupied[GRID_H][GRID_W];
+static u16 headIdx;
+static u16 tailIdx;
+static u16 snakeLen;
+
+static u16 foodX, foodY;
+static u16 dir;          /* direction applied at last step: 0 up,1 right,2 down,3 left */
+static u16 pendingDir;   /* direction requested by the player */
+static u16 score;
+static u16 hiScore;
+static u16 frameCount;
+static u16 stepDelay;    /* cached currentDelay() */
+static GameState state;
+
+static const s8 dirDX[4] = { 0, 1, 0, -1 };
+static const s8 dirDY[4] = { -1, 0, 1, 0 };
+
+/* ---------- drawing helpers ---------- */
+
+static void putCell(u16 x, u16 y, u16 attr)
+{
+    VDP_setTileMapXY(BG_A, attr, x, y);
+}
+
+static void clearCell(u16 x, u16 y)
+{
+    VDP_setTileMapXY(BG_A, 0, x, y);
+}
+
+static void drawHud(void)
+{
+    char buf[8];
+
+    VDP_drawTextBG(BG_B, "SCORE", 1, 0);
+    uintToStr(score, buf, 5);
+    VDP_drawTextBG(BG_B, buf, 7, 0);
+
+    VDP_drawTextBG(BG_B, "LEN", 15, 0);
+    uintToStr(snakeLen, buf, 4);
+    VDP_drawTextBG(BG_B, buf, 19, 0);
+
+    VDP_drawTextBG(BG_B, "HI", 30, 0);
+    uintToStr(hiScore, buf, 5);
+    VDP_drawTextBG(BG_B, buf, 33, 0);
+}
+
+/* ---------- snake logic ---------- */
+
+static void pushHead(u16 x, u16 y)
+{
+    u16 h = headIdx + 1;
+    if (h >= MAX_LEN) h = 0;
+    headIdx = h;
+    snakeX[h] = x;
+    snakeY[h] = y;
+    occupied[y][x] = 1;
+    snakeLen++;
+}
+
+static void popTail(void)
+{
+    u16 t = tailIdx;
+    u16 x = snakeX[t];
+    u16 y = snakeY[t];
+    occupied[y][x] = 0;
+    clearCell(x, y);
+    t++;
+    if (t >= MAX_LEN) t = 0;
+    tailIdx = t;
+    snakeLen--;
+}
+
+static void placeFood(void)
+{
+    if (snakeLen >= MAX_LEN) return;    /* board full, nothing to place */
+
+    do
+    {
+        foodX = random() % GRID_W;
+        foodY = random() % GRID_H;
+    } while (occupied[foodY][foodX]);
+
+    putCell(foodX, foodY, ATTR_FOOD);
+}
+
+static u16 currentDelay(void)
+{
+    u16 speedups = (snakeLen - INIT_LEN) / LEN_PER_SPEEDUP;
+    u16 maxSpeedups = START_DELAY - MIN_DELAY;
+    if (speedups > maxSpeedups) speedups = maxSpeedups;
+    return START_DELAY - speedups;
+}
+
+static void showCenterText(const char *l1, const char *l2)
+{
+    VDP_drawTextBG(BG_B, l1, 20 - (u16) (strlen(l1) / 2), 12);
+    if (l2) VDP_drawTextBG(BG_B, l2, 20 - (u16) (strlen(l2) / 2), 14);
+}
+
+static void clearCenterText(void)
+{
+    VDP_clearTextAreaBG(BG_B, 8, 10, 24, 6);
+}
+
+static void newGame(void)
+{
+    u16 i;
+
+    VDP_clearPlane(BG_A, TRUE);
+    clearCenterText();
+    memset(occupied, 0, sizeof(occupied));
+
+    headIdx = MAX_LEN - 1;  /* so the first push lands on index 0 */
+    tailIdx = 0;
+    snakeLen = 0;
+
+    /* Start in the middle, heading right */
+    for (i = 0; i < INIT_LEN; i++)
+    {
+        u16 x = (GRID_W / 2) - (INIT_LEN - 1) + i;
+        u16 y = GRID_H / 2;
+        pushHead(x, y);
+        putCell(x, y, (i == INIT_LEN - 1) ? ATTR_HEAD : ATTR_BODY);
+    }
+
+    dir = 1;
+    pendingDir = 1;
+    score = 0;
+    frameCount = 0;
+    stepDelay = currentDelay();
+
+    placeFood();
+    drawHud();
+    state = STATE_PLAY;
+}
+
+static void gameOver(void)
+{
+    if (score > hiScore) hiScore = score;
+    drawHud();
+
+    if (snakeLen >= MAX_LEN) showCenterText("YOU WIN!", "PRESS START");
+    else showCenterText("GAME OVER", "PRESS START");
+
+    state = STATE_OVER;
+}
+
+static void stepSnake(void)
+{
+    u16 oldX = snakeX[headIdx];
+    u16 oldY = snakeY[headIdx];
+    u16 nx, ny;
+    u16 d = pendingDir;
+    bool eating;
+
+    dir = d;
+    nx = oldX + dirDX[d];   /* wraps to a huge value if it goes below 0 */
+    ny = oldY + dirDY[d];
+
+    /* Wall collision (unsigned compare also catches negatives) */
+    if (nx >= GRID_W || ny >= GRID_H)
+    {
+        gameOver();
+        return;
+    }
+
+    eating = (nx == foodX && ny == foodY);
+
+    /* Self collision (the tail cell is free if we are not growing) */
+    if (occupied[ny][nx])
+    {
+        bool isTail = (nx == snakeX[tailIdx] && ny == snakeY[tailIdx]);
+        if (eating || !isTail)
+        {
+            gameOver();
+            return;
+        }
+    }
+
+    if (!eating) popTail();
+
+    /* Old head becomes body, new head is drawn */
+    putCell(oldX, oldY, ATTR_BODY);
+    pushHead(nx, ny);
+    putCell(nx, ny, ATTR_HEAD);
+
+    if (eating)
+    {
+        score += POINTS_PER_FOOD;
+        if (snakeLen >= MAX_LEN)
+        {
+            gameOver();
+            return;
+        }
+        stepDelay = currentDelay();
+        placeFood();
+        drawHud();      /* score and length only change when eating */
+    }
+}
+
+/* ---------- main ---------- */
+
+int main(bool hardReset)
+{
+    u16 joy, prevJoy = 0, pressed;
+
+    (void) hardReset;
+
+    VDP_setScreenWidth320();
+    VDP_setPlaneSize(64, 32, TRUE);
+
+    /* Palettes: PAL0 for text, PAL1 for the game tiles */
+    PAL_setColor(0, RGB24_TO_VDPCOLOR(0x000000));
+    PAL_setColor(15, RGB24_TO_VDPCOLOR(0xFFFFFF));
+    PAL_setColor(16 + 1, RGB24_TO_VDPCOLOR(0x006000));
+    PAL_setColor(16 + 2, RGB24_TO_VDPCOLOR(0x20B020));
+    PAL_setColor(16 + 3, RGB24_TO_VDPCOLOR(0x80FF60));
+    PAL_setColor(16 + 4, RGB24_TO_VDPCOLOR(0xE02020));
+    PAL_setColor(16 + 5, RGB24_TO_VDPCOLOR(0xFFFFFF));
+    PAL_setColor(16 + 6, RGB24_TO_VDPCOLOR(0x804000));
+
+    VDP_loadTileData(tileData, TILE_USER_INDEX, 3, CPU);
+
+    /* Text on plane B with high priority so it stays above the snake */
+    VDP_setTextPalette(PAL0);
+    VDP_setTextPriority(TRUE);
+
+    VDP_clearPlane(BG_A, TRUE);
+    VDP_clearPlane(BG_B, TRUE);
+
+    hiScore = 0;
+    score = 0;
+    snakeLen = INIT_LEN;
+    stepDelay = START_DELAY;
+    state = STATE_TITLE;
+    drawHud();
+    showCenterText("S N A K E", "PRESS START");
+
+    while (TRUE)
+    {
+        joy = JOY_readJoypad(JOY_1);
+        pressed = joy & ~prevJoy;
+        prevJoy = joy;
+
+        switch (state)
+        {
+            case STATE_TITLE:
+            case STATE_OVER:
+                if (pressed & BUTTON_START)
+                {
+                    setRandomSeed((u16) (getTick() ^ (getTick() >> 16) ^ GET_VCOUNTER));
+                    newGame();
+                }
+                break;
+
+            case STATE_PLAY:
+                /* Accept a direction unless it reverses the last applied one */
+                if      ((joy & BUTTON_UP)    && dir != 2) pendingDir = 0;
+                else if ((joy & BUTTON_RIGHT) && dir != 3) pendingDir = 1;
+                else if ((joy & BUTTON_DOWN)  && dir != 0) pendingDir = 2;
+                else if ((joy & BUTTON_LEFT)  && dir != 1) pendingDir = 3;
+
+                frameCount++;
+                if (frameCount >= stepDelay)
+                {
+                    frameCount = 0;
+                    stepSnake();
+                }
+                break;
+        }
+
+        SYS_doVBlankProcess();
+    }
+
+    return 0;
+}

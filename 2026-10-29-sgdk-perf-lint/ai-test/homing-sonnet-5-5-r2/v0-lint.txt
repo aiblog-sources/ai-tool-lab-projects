@@ -1,0 +1,16 @@
+src/main.c:130: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:131: guarded [div] '%' with an operand of unknown type: 453 to 1,041 cycles if the other operand is 32-bit or signed, 117 if both are u16
+src/main.c:138: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:139: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:141: guarded [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:142: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:237: guarded in 1 loop [div] '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23
+src/main.c:238: guarded in 1 loop [div] '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23
+src/main.c:319: guarded [text] VDP_clearText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:330: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:331: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:343: guarded [text] VDP_clearText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:344: guarded [text] VDP_clearText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 10 functions, 9 on the frame path; game loops: main.c:308 in main()
+findings: 13 guarded

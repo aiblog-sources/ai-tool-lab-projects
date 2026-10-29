@@ -1,0 +1,11 @@
+src/main.c:127: hot in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:128: hot in 1 loop [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:74: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:80: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:81: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:326: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:322: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:324: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 14 functions, 12 on the frame path; game loops: main.c:241 in playGame(), main.c:266 in waitStart(), main.c:316 in main()
+findings: 2 hot, 4 frame, 2 guarded

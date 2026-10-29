@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.48 s (853 frames/s), symbols 223
+mean CPU load 3.6% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 0 bytes in frame -1
+
+whole run, cycles by function:
+   96.4%  VDP_waitVBlank
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.5%  main.isra.0
+    0.1%  no_bmp_task
+    0.1%  VDP_setTileMapDataEx.constprop.0
+    0.1%  no_user_task
+    0.1%  SYS_getAndSetInterruptMaskLevel
+    0.1%  VDP_setTileMapDataRowEx.constprop.0
+    0.1%  SYS_setInterruptMaskLevel
+    0.0%  DMA_doCPUCopyDirect
+
+busiest frames:
+  frame 1109: 9992 busy cycles (8% of a frame), idle entered at line 225
+         3732  main.isra.0
+         1314  VDP_setTileMapDataEx.constprop.0
+         1268  read6Btn
+         1242  VDP_setTileMapDataRowEx.constprop.0
+  frame 269: 9990 busy cycles (8% of a frame), idle entered at line 224
+         3732  main.isra.0
+         1314  VDP_setTileMapDataEx.constprop.0
+         1264  read6Btn
+         1242  VDP_setTileMapDataRowEx.constprop.0
+  frame 629: 9990 busy cycles (8% of a frame), idle entered at line 224
+         3732  main.isra.0
+         1314  VDP_setTileMapDataEx.constprop.0
+         1264  read6Btn
+         1242  VDP_setTileMapDataRowEx.constprop.0
+  frame 989: 8594 busy cycles (7% of a frame), idle entered at line 241
+         3010  main.isra.0
+         1266  read6Btn
+         1054  JOY_update
+          792  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 929: 8538 busy cycles (7% of a frame), idle entered at line 225
+         2952  main.isra.0
+         1268  read6Btn
+         1056  JOY_update
+          792  SYS_doVBlankProcessEx.constprop.0.isra.0
+  frame 979: 7684 busy cycles (6% of a frame), idle entered at line 240
+         2230  main.isra.0
+         1266  read6Btn
+         1054  JOY_update
+          792  SYS_doVBlankProcessEx.constprop.0.isra.0

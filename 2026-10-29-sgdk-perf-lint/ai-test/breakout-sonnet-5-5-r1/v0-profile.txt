@@ -1,0 +1,50 @@
+frames 1260 (summary from frame 60), wall 1.66 s (758 frames/s), symbols 231
+mean CPU load 4.8% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 16 bytes in frame 60
+
+whole run, cycles by function:
+   95.2%  VDP_waitVBlank
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.6%  DMA_queueDmaFast
+    0.6%  main.isra.0
+    0.3%  ballHitsBrick
+    0.2%  hitBrickAt.part.0
+    0.2%  flushQueue
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+    0.1%  SYS_getAndSetInterruptMaskLevel
+
+busiest frames:
+  frame 634: 23150 busy cycles (18% of a frame), idle entered at line 225
+         6594  VDP_drawText
+         3686  VDP_setTileMapDataEx.constprop.0
+         1816  VDP_getPlaneAddress
+         1454  showMessage
+  frame 394: 22684 busy cycles (18% of a frame), idle entered at line 8
+         6236  VDP_drawText
+         3480  VDP_setTileMapDataEx.constprop.0
+         1818  VDP_getPlaneAddress
+         1452  showMessage
+  frame 204: 22626 busy cycles (18% of a frame), idle entered at line 8
+         6236  VDP_drawText
+         3480  VDP_setTileMapDataEx.constprop.0
+         1818  VDP_getPlaneAddress
+         1452  showMessage
+  frame 131: 18590 busy cycles (15% of a frame), idle entered at line 0
+         4392  VDP_drawText
+         2402  VDP_setTileMapDataEx.constprop.0
+         2128  hitBrickAt.part.0
+         1266  read6Btn
+  frame 321: 18132 busy cycles (14% of a frame), idle entered at line 261
+         4394  VDP_drawText
+         2404  VDP_setTileMapDataEx.constprop.0
+         1666  hitBrickAt.part.0
+         1266  read6Btn
+  frame 561: 18124 busy cycles (14% of a frame), idle entered at line 261
+         4394  VDP_drawText
+         2404  VDP_setTileMapDataEx.constprop.0
+         1666  hitBrickAt.part.0
+         1266  read6Btn

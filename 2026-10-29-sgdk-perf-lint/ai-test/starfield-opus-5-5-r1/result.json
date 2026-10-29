@@ -1,0 +1,184 @@
+{
+ "task": "starfield",
+ "model": "claude-opus-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 14.31,
+   "dropped": 0,
+   "peak_load": 15.0,
+   "p95_load": 14.5,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     85.69
+    ],
+    [
+     "main.isra.0",
+     9.71
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 152,
+    "rule": "mul32",
+    "level": "guarded",
+    "function": "randRange",
+    "est_cycles": 17152
+   }
+  ]
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 10.65,
+   "dropped": 0,
+   "peak_load": 11.4,
+   "p95_load": 10.9,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     89.35
+    ],
+    [
+     "main.isra.0",
+     6.05
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.62
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 3,
+ "cost_usd": 0.4402,
+ "claude_wall_s": 155.5,
+ "output_tokens": 18113,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 0,
+   "init": 0
+  },
+  "lint_rules": [],
+  "findings": [],
+  "profile": {
+   "mean_load": 14.31,
+   "dropped": 0,
+   "peak_load": 15.0,
+   "p95_load": 14.5,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     85.69
+    ],
+    [
+     "main.isra.0",
+     9.71
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ }
+}

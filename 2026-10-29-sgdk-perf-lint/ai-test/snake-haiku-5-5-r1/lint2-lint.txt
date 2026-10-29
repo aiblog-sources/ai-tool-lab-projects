@@ -1,0 +1,9 @@
+src/main.c:136: hot in 1 loop [div] '%' on 32-bit / u16: 1,041 cycles (s32 % s32); u16 % u16 is 126
+src/main.c:82: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:171: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:172: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:339: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:340: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 14 functions, 12 on the frame path; game loops: main.c:259 in playGame(), main.c:284 in waitStart(), main.c:334 in main()
+findings: 1 hot, 5 frame

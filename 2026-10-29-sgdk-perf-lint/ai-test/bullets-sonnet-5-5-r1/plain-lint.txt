@@ -1,0 +1,6 @@
+src/main.c:107: guarded [text] intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:108: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:109: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 4 functions, 3 on the frame path; game loops: main.c:190 in main()
+findings: 3 guarded

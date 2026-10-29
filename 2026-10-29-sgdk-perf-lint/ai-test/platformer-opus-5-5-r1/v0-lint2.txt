@@ -1,0 +1,9 @@
+src/main.c:199: heavy in 2 loops [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 1,120 passes x 324 = 362,880 cycles (283% of a frame)
+src/main.c:218: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+src/main.c:219: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:220: guarded [text] sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+src/main.c:221: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:336: guarded in 2 loops [tile-loop] VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470)
+
+1 files, 11 functions, 10 on the frame path; game loops: main.c:440 in main()
+findings: 1 heavy, 5 guarded

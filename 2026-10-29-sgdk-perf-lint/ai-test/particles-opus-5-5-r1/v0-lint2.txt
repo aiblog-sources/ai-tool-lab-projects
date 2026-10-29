@@ -1,0 +1,7 @@
+src/main.c:144: frame [div] '/' on signed 16-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+src/main.c:110: guarded in 1 loop [div] '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16. Here: 48 passes x 453 = 21,744 cycles (17% of a frame)
+src/main.c:114: guarded in 1 loop [mul32] 16 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); muls()/mulu() on 16-bit values is 35, F16_mul 59. Here: 48 passes x 268 = 12,864 cycles (10% of a frame)
+src/main.c:115: guarded in 1 loop [mul32] 16 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); muls()/mulu() on 16-bit values is 35, F16_mul 59. Here: 48 passes x 268 = 12,864 cycles (10% of a frame)
+
+1 files, 6 functions, 5 on the frame path; game loops: main.c:216 in main()
+findings: 1 frame, 3 guarded

@@ -1,0 +1,273 @@
+{
+ "task": "starfield",
+ "model": "claude-haiku-5-5",
+ "rep": 1,
+ "v0": {
+  "build_rounds": 1,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 183,
+    "rule": "div",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 20.03,
+   "dropped": 0,
+   "peak_load": 20.8,
+   "p95_load": 20.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     79.97
+    ],
+    [
+     "main.isra.0",
+     15.43
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  },
+  "lint2": {
+   "heavy": 0,
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "findings2": [
+   {
+    "line": 183,
+    "rule": "div",
+    "level": "guarded",
+    "function": "main",
+    "est_cycles": 28992
+   }
+  ]
+ },
+ "lint": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 188,
+    "rule": "div",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 20.03,
+   "dropped": 0,
+   "peak_load": 20.8,
+   "p95_load": 20.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     79.97
+    ],
+    [
+     "main.isra.0",
+     15.43
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "plain": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 131,
+    "rule": "div",
+    "level": "guarded",
+    "function": "updateStars"
+   }
+  ],
+  "profile": {
+   "mean_load": 11.62,
+   "dropped": 0,
+   "peak_load": 12.5,
+   "p95_load": 12.0,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     88.38
+    ],
+    [
+     "main.isra.0",
+     7.02
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ },
+ "calls": 5,
+ "cost_usd": 0.0272,
+ "claude_wall_s": 199.0,
+ "output_tokens": 47984,
+ "lint2": {
+  "build_rounds": 0,
+  "builds": true,
+  "lint": {
+   "hot": 0,
+   "frame": 0,
+   "guarded": 1,
+   "init": 0
+  },
+  "lint_rules": [
+   "div"
+  ],
+  "findings": [
+   {
+    "line": 187,
+    "rule": "div",
+    "level": "guarded",
+    "function": "main"
+   }
+  ],
+  "profile": {
+   "mean_load": 20.03,
+   "dropped": 0,
+   "peak_load": 20.8,
+   "p95_load": 20.4,
+   "dma_active_frames": 0,
+   "top": [
+    [
+     "VDP_waitVBlank",
+     79.97
+    ],
+    [
+     "main.isra.0",
+     15.43
+    ],
+    [
+     "flushQueue",
+     1.11
+    ],
+    [
+     "read6Btn",
+     0.99
+    ],
+    [
+     "JOY_update",
+     0.82
+    ],
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     0.63
+    ],
+    [
+     "DMA_queueDmaFast",
+     0.62
+    ],
+    [
+     "no_bmp_task",
+     0.1
+    ]
+   ]
+  }
+ }
+}

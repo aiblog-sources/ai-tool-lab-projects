@@ -1,0 +1,15 @@
+src/main.c:146: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:147: frame [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:148: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:150: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:151: frame [text] uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+src/main.c:152: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:157: frame [div] '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77, / 8 is 23)
+src/main.c:169: frame [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:170: frame [div] '%' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:394: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:395: frame [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+src/main.c:339: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 10 functions, 9 on the frame path; game loops: main.c:167 in placeFood(), main.c:199 in waitStart(), main.c:327 in playGame(), main.c:390 in main()
+findings: 11 frame, 1 guarded

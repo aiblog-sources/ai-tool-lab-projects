@@ -1,0 +1,8 @@
+src/main.c:127: hot in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:128: hot in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:129: hot in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:130: hot in 1 loop [div] '/' with an operand of unknown type: 453 to 1,041 cycles unless both operands are u16
+src/main.c:203: guarded [text] VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+1 files, 7 functions, 5 on the frame path; game loops: main.c:235 in main()
+findings: 4 hot, 1 guarded
