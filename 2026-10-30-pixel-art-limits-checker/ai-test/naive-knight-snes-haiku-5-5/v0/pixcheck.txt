@@ -1,0 +1,2 @@
+pixcheck snes sprites 32x32 art.png 128x32: PASS
+  source_colors=9, console_colors=9, packing=greedy, palettes_used=1, palettes_allowed=8, colors_per_palette=15, unique_tiles=27, tile_budget=512, widest_line_8px_sprites=4, line_sprite_limit=32

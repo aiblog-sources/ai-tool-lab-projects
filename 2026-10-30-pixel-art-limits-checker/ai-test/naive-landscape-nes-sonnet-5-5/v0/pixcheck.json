@@ -1,0 +1,511 @@
+{
+ "console": "nes",
+ "file": "art.png",
+ "size": [
+  256,
+  240
+ ],
+ "ok": false,
+ "errors": [
+  "28 of 240 16x16 attribute areas use more than 3 colors plus the shared backdrop (worst: x=112 y=96 with 6 plus backdrop)",
+  "the 16x16 attribute area color sets do not fit in 4 palettes of 3 colors: 62 16x16 attribute areas left without a palette (greedy packing, 4 palettes used)",
+  "18 colors (without backdrop) is more than 4 x 3 = 12 the backgrounds can hold at once",
+  "271 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)"
+ ],
+ "warnings": [],
+ "info": {
+  "source_colors": 19,
+  "console_colors": 19,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 240,
+  "area_size": 16,
+  "backdrop": "#321e5a",
+  "palettes_used": 4,
+  "palettes_allowed": 4,
+  "colors_per_palette": 3,
+  "colors_without_backdrop": 18,
+  "tiles": 960,
+  "unique_tiles": 271,
+  "tile_budget": 256,
+  "flips_counted": false,
+  "palettes": [
+   [
+    "#3c288c",
+    "#78288c",
+    "#fcec96"
+   ],
+   [
+    "#0c0820",
+    "#140c30",
+    "#be286e"
+   ],
+   [
+    "#be286e",
+    "#fcc850",
+    "#fcec96"
+   ],
+   [
+    "#6e3278",
+    "#be286e",
+    "#e4503c"
+   ]
+  ]
+ },
+ "bad_areas": [
+  {
+   "x": 16,
+   "y": 80,
+   "colors": 4
+  },
+  {
+   "x": 128,
+   "y": 80,
+   "colors": 4
+  },
+  {
+   "x": 144,
+   "y": 80,
+   "colors": 4
+  },
+  {
+   "x": 0,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 32,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 64,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 80,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 96,
+   "colors": 6
+  },
+  {
+   "x": 176,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 192,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 224,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 240,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 48,
+   "y": 112,
+   "colors": 4
+  },
+  {
+   "x": 64,
+   "y": 112,
+   "colors": 4
+  },
+  {
+   "x": 96,
+   "y": 112,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 144,
+   "colors": 4
+  },
+  {
+   "x": 128,
+   "y": 144,
+   "colors": 4
+  },
+  {
+   "x": 16,
+   "y": 176,
+   "colors": 4
+  },
+  {
+   "x": 48,
+   "y": 176,
+   "colors": 4
+  },
+  {
+   "x": 48,
+   "y": 192,
+   "colors": 6
+  },
+  {
+   "x": 96,
+   "y": 192,
+   "colors": 6
+  },
+  {
+   "x": 112,
+   "y": 192,
+   "colors": 6
+  },
+  {
+   "x": 192,
+   "y": 192,
+   "colors": 4
+  },
+  {
+   "x": 224,
+   "y": 192,
+   "colors": 4
+  },
+  {
+   "x": 64,
+   "y": 208,
+   "colors": 4
+  },
+  {
+   "x": 96,
+   "y": 208,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 208,
+   "colors": 6
+  },
+  {
+   "x": 176,
+   "y": 208,
+   "colors": 5
+  }
+ ],
+ "unplaced": [
+  {
+   "x": 0,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 16,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 32,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 48,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 64,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 80,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 96,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 112,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 128,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 144,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 160,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 176,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 192,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 208,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 224,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 240,
+   "y": 48,
+   "colors": 2
+  },
+  {
+   "x": 16,
+   "y": 96,
+   "colors": 3
+  },
+  {
+   "x": 48,
+   "y": 96,
+   "colors": 2
+  },
+  {
+   "x": 96,
+   "y": 96,
+   "colors": 3
+  },
+  {
+   "x": 128,
+   "y": 96,
+   "colors": 3
+  },
+  {
+   "x": 0,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 16,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 32,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 80,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 112,
+   "y": 112,
+   "colors": 3
+  },
+  {
+   "x": 144,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 160,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 176,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 192,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 208,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 224,
+   "y": 112,
+   "colors": 2
+  },
+  {
+   "x": 80,
+   "y": 128,
+   "colors": 2
+  },
+  {
+   "x": 96,
+   "y": 128,
+   "colors": 2
+  },
+  {
+   "x": 112,
+   "y": 128,
+   "colors": 2
+  },
+  {
+   "x": 128,
+   "y": 128,
+   "colors": 2
+  },
+  {
+   "x": 144,
+   "y": 128,
+   "colors": 2
+  },
+  {
+   "x": 80,
+   "y": 144,
+   "colors": 2
+  },
+  {
+   "x": 96,
+   "y": 144,
+   "colors": 2
+  },
+  {
+   "x": 144,
+   "y": 144,
+   "colors": 2
+  },
+  {
+   "x": 16,
+   "y": 160,
+   "colors": 3
+  },
+  {
+   "x": 32,
+   "y": 160,
+   "colors": 3
+  },
+  {
+   "x": 64,
+   "y": 160,
+   "colors": 2
+  },
+  {
+   "x": 80,
+   "y": 160,
+   "colors": 3
+  },
+  {
+   "x": 96,
+   "y": 160,
+   "colors": 3
+  },
+  {
+   "x": 144,
+   "y": 160,
+   "colors": 2
+  },
+  {
+   "x": 160,
+   "y": 160,
+   "colors": 2
+  },
+  {
+   "x": 208,
+   "y": 160,
+   "colors": 3
+  },
+  {
+   "x": 32,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 64,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 96,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 160,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 176,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 192,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 208,
+   "y": 176,
+   "colors": 3
+  },
+  {
+   "x": 64,
+   "y": 192,
+   "colors": 2
+  },
+  {
+   "x": 80,
+   "y": 192,
+   "colors": 2
+  },
+  {
+   "x": 128,
+   "y": 192,
+   "colors": 3
+  },
+  {
+   "x": 144,
+   "y": 192,
+   "colors": 1
+  },
+  {
+   "x": 160,
+   "y": 192,
+   "colors": 1
+  },
+  {
+   "x": 176,
+   "y": 192,
+   "colors": 3
+  },
+  {
+   "x": 80,
+   "y": 208,
+   "colors": 3
+  },
+  {
+   "x": 128,
+   "y": 208,
+   "colors": 2
+  }
+ ]
+}

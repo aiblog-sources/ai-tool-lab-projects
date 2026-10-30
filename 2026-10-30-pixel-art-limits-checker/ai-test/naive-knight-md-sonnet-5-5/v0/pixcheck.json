@@ -1,0 +1,46 @@
+{
+ "console": "md",
+ "file": "art.png",
+ "size": [
+  128,
+  32
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [
+  "11 of 11 colors are off the console's color grid; they will shift when converted (#ffce34->#ffdb24, #ce3434->#db2424, #900034->#920024)"
+ ],
+ "info": {
+  "source_colors": 11,
+  "console_colors": 11,
+  "off_grid_colors": 11,
+  "max_snap_error": 16.0,
+  "mode": "sprites 32x32",
+  "packing": "greedy",
+  "frames": 4,
+  "palettes_used": 1,
+  "palettes_allowed": 4,
+  "colors_per_palette": 15,
+  "widest_line_8px_sprites": 3,
+  "line_sprite_limit": 20,
+  "unique_tiles": 25,
+  "tile_budget": 1425,
+  "palettes": [
+   [
+    "#000024",
+    "#242449",
+    "#2449db",
+    "#494992",
+    "#6d2400",
+    "#920024",
+    "#b6b6db",
+    "#db2424",
+    "#dbdbff",
+    "#ffb66d",
+    "#ffdb24"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

@@ -1,0 +1,12 @@
+limits-dungeon-md-haiku-5-5 (P 16): built
+limits-dungeon-md-opus-5-5 (RGB 15): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !
+limits-dungeon-md-sonnet-5-5 (P 16): built
+limits-landscape-md-haiku-5-5 (RGB 16): Error: expected a plain tile for palette data at position [2,0] (see rescomp.txt for more info about RGB image) !
+limits-landscape-md-opus-5-5 (RGB 19): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !
+limits-landscape-md-sonnet-5-5 (RGB 31): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !
+naive-dungeon-md-haiku-5-5 (RGB 26): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !
+naive-dungeon-md-opus-5-5 (P 15): built
+naive-dungeon-md-sonnet-5-5 (RGB 29): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !
+naive-landscape-md-haiku-5-5 (RGB 32): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !
+naive-landscape-md-opus-5-5 (P 16): built
+naive-landscape-md-sonnet-5-5 (RGB 20): Error: expected a plain tile for palette data at position [0,0] (see rescomp.txt for more info about RGB image) !

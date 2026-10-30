@@ -1,0 +1,43 @@
+{
+ "console": "snes",
+ "file": "art.png",
+ "size": [
+  128,
+  32
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 10,
+  "console_colors": 10,
+  "off_grid_colors": 0,
+  "max_snap_error": 4.0,
+  "mode": "sprites 32x32",
+  "packing": "greedy",
+  "frames": 4,
+  "palettes_used": 1,
+  "palettes_allowed": 8,
+  "colors_per_palette": 15,
+  "widest_line_8px_sprites": 3,
+  "line_sprite_limit": 32,
+  "unique_tiles": 25,
+  "tile_budget": 512,
+  "palettes": [
+   [
+    "#101021",
+    "#212129",
+    "#213a94",
+    "#3a63ce",
+    "#52637b",
+    "#6b4229",
+    "#8494ad",
+    "#c5cede",
+    "#ce293a",
+    "#efc542"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

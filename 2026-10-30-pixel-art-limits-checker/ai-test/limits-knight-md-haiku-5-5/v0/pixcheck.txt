@@ -1,0 +1,2 @@
+pixcheck md sprites 32x32 art.png 128x32: PASS
+  source_colors=11, console_colors=11, packing=greedy, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=31, tile_budget=1425, widest_line_8px_sprites=4, line_sprite_limit=20

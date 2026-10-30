@@ -1,0 +1,4 @@
+pixcheck snes background art.png 256x224: FAIL
+  error: the tile color sets do not fit in 8 palettes of 15 colors: 147 tiles left without a palette (none found by greedy packing or 120 s of exact search, so this is not proven)
+  source_colors=49, console_colors=49, backdrop=#100821, packing=unknown, palettes_used=8, palettes_allowed=8, colors_per_palette=15, unique_tiles=657, tile_budget=1024
+  no palette for (x,y): (0,0); (8,0); (16,0); (24,0); (32,0); (40,0); (48,0); (56,0); ... 139 more

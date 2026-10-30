@@ -1,0 +1,53 @@
+{
+ "console": "nes",
+ "file": "art.png",
+ "size": [
+  256,
+  240
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 9,
+  "console_colors": 9,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 240,
+  "area_size": 16,
+  "backdrop": "#321e5a",
+  "palettes_used": 4,
+  "palettes_allowed": 4,
+  "colors_per_palette": 3,
+  "colors_without_backdrop": 8,
+  "tiles": 960,
+  "unique_tiles": 202,
+  "tile_budget": 256,
+  "flips_counted": false,
+  "palettes": [
+   [
+    "#3c288c",
+    "#78288c",
+    "#be286e"
+   ],
+   [
+    "#6e3278",
+    "#f88c32",
+    "#fff0aa"
+   ],
+   [
+    "#0c0820",
+    "#6e3278"
+   ],
+   [
+    "#be286e",
+    "#e4503c",
+    "#f88c32"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

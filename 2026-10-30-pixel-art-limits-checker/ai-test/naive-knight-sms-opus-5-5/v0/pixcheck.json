@@ -1,0 +1,43 @@
+{
+ "console": "sms",
+ "file": "art.png",
+ "size": [
+  64,
+  16
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 10,
+  "console_colors": 10,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "sprites 16x16",
+  "packing": "greedy",
+  "frames": 4,
+  "palettes_used": 1,
+  "palettes_allowed": 1,
+  "colors_per_palette": 15,
+  "widest_line_8px_sprites": 2,
+  "line_sprite_limit": 8,
+  "unique_tiles": 10,
+  "tile_budget": 448,
+  "palettes": [
+   [
+    "#000000",
+    "#0055aa",
+    "#550000",
+    "#555555",
+    "#aa0000",
+    "#aaaaaa",
+    "#ff0000",
+    "#ffaa00",
+    "#ffaa55",
+    "#ffffff"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

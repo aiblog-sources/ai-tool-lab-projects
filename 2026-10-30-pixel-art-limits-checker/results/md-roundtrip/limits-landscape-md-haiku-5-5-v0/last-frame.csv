@@ -1,0 +1,2 @@
+149,128005,3764,2.9,224,1,0,0,0,-1,0,1425,1
+frame,frame_cycles,busy_cycles,load_pct,idle_line,loop_start,dropped,dma_vblank_bytes,dma_active_bytes,last_dma_line,cpu_vdp_bytes,user_tiles,shown

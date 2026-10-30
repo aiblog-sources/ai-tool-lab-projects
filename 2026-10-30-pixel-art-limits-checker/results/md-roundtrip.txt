@@ -1,0 +1,12 @@
+limits-landscape-md-haiku-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+limits-landscape-md-opus-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+limits-landscape-md-sonnet-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+naive-landscape-md-haiku-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+naive-landscape-md-opus-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+naive-landscape-md-sonnet-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+limits-dungeon-md-haiku-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+limits-dungeon-md-opus-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+limits-dungeon-md-sonnet-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+naive-dungeon-md-haiku-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+naive-dungeon-md-opus-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425
+naive-dungeon-md-sonnet-5-5-v0 pixels that differ: 0 of 71680 user_tiles=1425

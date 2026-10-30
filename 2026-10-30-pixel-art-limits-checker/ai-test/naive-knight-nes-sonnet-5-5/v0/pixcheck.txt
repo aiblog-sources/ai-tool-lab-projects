@@ -1,0 +1,4 @@
+pixcheck nes sprites 16x16 art.png 64x16: FAIL
+  error: 16 of 16 8x8 sprite tiles use more than 3 colors + transparent (worst: x=0 y=8 with 5)
+  source_colors=6, console_colors=6, packing=greedy, palettes_used=0, palettes_allowed=4, colors_per_palette=3, unique_tiles=10, tile_budget=256, widest_line_8px_sprites=2, line_sprite_limit=8
+  over the color limit at (x,y): (0,0) 4 colors; (8,0) 4 colors; (0,8) 5 colors; (8,8) 4 colors; (16,0) 5 colors; (24,0) 4 colors; (16,8) 5 colors; (24,8) 4 colors; ... 8 more

@@ -1,0 +1,6 @@
+pixcheck nes background art.png 256x240: FAIL
+  error: 46 of 240 16x16 attribute areas use more than 3 colors plus the shared backdrop (worst: x=64 y=16 with 11 plus backdrop)
+  error: 13 colors (without backdrop) is more than 4 x 3 = 12 the backgrounds can hold at once
+  error: 653 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)
+  source_colors=14, console_colors=14, backdrop=#7c7c7c, packing=greedy, palettes_used=2, palettes_allowed=4, colors_per_palette=3, unique_tiles=653, tile_budget=256
+  over the color limit at (x,y): (48,0) 4 colors; (64,0) 6 colors; (80,0) 4 colors; (96,0) 4 colors; (112,0) 7 colors; (128,0) 7 colors; (144,0) 4 colors; (160,0) 4 colors; ... 38 more

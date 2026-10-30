@@ -1,0 +1,1 @@
+72 images: median 0.02 s, slowest 16.8 s (limits-landscape-snes-opus-5-5, packing=exact), second 6.2 s (naive-landscape-snes-sonnet-5-5)

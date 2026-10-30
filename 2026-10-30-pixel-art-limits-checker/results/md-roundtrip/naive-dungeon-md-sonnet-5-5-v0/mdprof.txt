@@ -1,0 +1,41 @@
+frames 150 (summary from frame 0), wall 0.11 s (1413 frames/s), symbols 226
+mean CPU load 20.2% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 10
+frames with DMA during active display: 3; max DMA 11598 bytes in frame 30
+
+whole run, cycles by function:
+   79.7%  VDP_waitVBlank
+    8.4%  _start_entry
+    4.3%  Z80_clear
+    1.7%  DMA_doDmaFast
+    1.5%  aplib_decrunch
+    0.9%  VDP_resetScreen
+    0.8%  read6Btn
+    0.7%  JOY_update
+    0.6%  YM2612_reset
+    0.5%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.3%  VDP_setTileMapDataEx.constprop.0
+    0.1%  no_bmp_task
+
+busiest frames:
+  frame 31: 312709 busy cycles (244% of a frame), idle entered at line -1
+       310150  DMA_doDmaFast
+         1201  VDP_setTileMapDataEx.constprop.0
+          704  VDP_setTileMapDataRectEx.constprop.0
+          252  main.isra.0
+  frame 25: 128015 busy cycles (100% of a frame), idle entered at line -1
+        89634  Z80_clear
+        28779  YM2612_reset
+         5876  SND_NULL_loadDriver
+         3412  Z80_upload.constprop.1
+  frame 15: 128012 busy cycles (100% of a frame), idle entered at line -1
+       128012  aplib_decrunch
+  frame 13: 128010 busy cycles (100% of a frame), idle entered at line -1
+        76376  VDP_resetScreen
+        45158  _start_entry
+         1766  VDP_init
+         1212  TSK_init
+  frame 3: 128008 busy cycles (100% of a frame), idle entered at line -1
+       128008  _start_entry
+  frame 7: 128008 busy cycles (100% of a frame), idle entered at line -1
+       128008  _start_entry

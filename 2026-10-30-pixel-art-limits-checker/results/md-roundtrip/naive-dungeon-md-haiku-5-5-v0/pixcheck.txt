@@ -1,0 +1,2 @@
+pixcheck md background ai-test/naive-dungeon-md-haiku-5-5/v0/art.png 320x224: PASS
+  source_colors=26, console_colors=26, backdrop=#242424, packing=greedy, palettes_used=2, palettes_allowed=4, colors_per_palette=15, unique_tiles=740, tile_budget=1425

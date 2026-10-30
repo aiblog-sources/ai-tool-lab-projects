@@ -1,0 +1,2 @@
+pixcheck md background ai-test/limits-dungeon-md-sonnet-5-5/v0/art.png 320x224: PASS
+  source_colors=16, console_colors=16, backdrop=#000000, packing=greedy, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=128, tile_budget=1425

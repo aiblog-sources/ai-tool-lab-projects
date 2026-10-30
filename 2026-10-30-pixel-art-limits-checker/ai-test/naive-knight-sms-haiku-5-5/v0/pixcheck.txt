@@ -1,0 +1,3 @@
+pixcheck sms sprites 16x16 art.png 64x16: PASS
+  warning: 8 of 8 colors are off the console's color grid; they will shift when converted (#d8a830->#ffaa55, #c8d0e0->#aaaaff, #c02020->#aa0000)
+  source_colors=8, console_colors=8, packing=greedy, palettes_used=1, palettes_allowed=1, colors_per_palette=15, unique_tiles=12, tile_budget=448, widest_line_8px_sprites=2, line_sprite_limit=8

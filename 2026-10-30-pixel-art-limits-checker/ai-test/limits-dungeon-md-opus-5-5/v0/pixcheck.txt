@@ -1,0 +1,2 @@
+pixcheck md background art.png 320x224: PASS
+  source_colors=15, console_colors=15, backdrop=#6d6d49, packing=greedy, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=1104, tile_budget=1425

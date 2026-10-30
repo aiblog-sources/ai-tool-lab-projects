@@ -1,0 +1,2 @@
+pixcheck nes background art.png 256x240: PASS
+  source_colors=7, console_colors=7, backdrop=#001e74, packing=greedy, palettes_used=2, palettes_allowed=4, colors_per_palette=3, unique_tiles=254, tile_budget=256

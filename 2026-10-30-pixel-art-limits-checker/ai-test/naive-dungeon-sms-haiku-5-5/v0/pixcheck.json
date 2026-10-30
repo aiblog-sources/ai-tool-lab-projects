@@ -1,0 +1,50 @@
+{
+ "console": "sms",
+ "file": "art.png",
+ "size": [
+  256,
+  192
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [
+  "185 of 187 colors are off the console's color grid; they will shift when converted (#91887f->#aaaa55, #908880->#aaaaaa, #90887f->#aaaa55)",
+  "187 source colors collapse to 11 console colors"
+ ],
+ "info": {
+  "source_colors": 187,
+  "console_colors": 11,
+  "off_grid_colors": 185,
+  "max_snap_error": 42.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 768,
+  "area_size": 8,
+  "backdrop": null,
+  "palettes_used": 1,
+  "palettes_allowed": 2,
+  "colors_per_palette": 16,
+  "colors_without_backdrop": 11,
+  "tiles": 768,
+  "unique_tiles": 55,
+  "tile_budget": 448,
+  "flips_counted": true,
+  "palettes": [
+   [
+    "#000000",
+    "#000055",
+    "#555500",
+    "#555555",
+    "#aa5500",
+    "#aa5555",
+    "#aaaa55",
+    "#aaaaaa",
+    "#ff5500",
+    "#ffaa00",
+    "#ffff55"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

@@ -1,0 +1,7 @@
+pixcheck nes background art.png 256x240: FAIL
+  error: 40 of 240 16x16 attribute areas use more than 3 colors plus the shared backdrop (worst: x=48 y=96 with 6 plus backdrop)
+  error: the 16x16 attribute area color sets do not fit in 4 palettes of 3 colors: 101 16x16 attribute areas left without a palette (greedy packing, 4 palettes used)
+  error: 20 colors (without backdrop) is more than 4 x 3 = 12 the backgrounds can hold at once
+  source_colors=21, console_colors=21, backdrop=#6e5ca0, packing=greedy, palettes_used=4, palettes_allowed=4, colors_per_palette=3, unique_tiles=255, tile_budget=256
+  over the color limit at (x,y): (96,16) 4 colors; (112,16) 4 colors; (128,16) 4 colors; (96,32) 4 colors; (112,32) 4 colors; (128,32) 4 colors; (16,48) 5 colors; (32,48) 5 colors; ... 32 more
+  no palette for (x,y): (0,0); (16,0); (32,0); (48,0); (64,0); (80,0); (96,0); (112,0); ... 93 more

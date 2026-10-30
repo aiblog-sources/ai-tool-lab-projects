@@ -1,0 +1,2896 @@
+[
+ {
+  "tag": "dungeon-md-haiku-5-5",
+  "task": "dungeon",
+  "console": "md",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    320,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 16,
+    "console_colors": 16,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 1120,
+    "area_size": 8,
+    "backdrop": "#6d6d6d",
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 15,
+    "tiles": 1120,
+    "unique_tiles": 71,
+    "tile_budget": 1425,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#242424",
+      "#49496d",
+      "#6d2400",
+      "#6d6d92",
+      "#924900",
+      "#929292",
+      "#9292b6",
+      "#b66d24",
+      "#b6b6b6",
+      "#b6b6db",
+      "#db9249",
+      "#ff4900",
+      "#ffdb24",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md background art.png 320x224: PASS\n  source_colors=16, console_colors=16, backdrop=#6d6d6d, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=71, tile_budget=1425"
+  },
+  "calls": 1,
+  "cost_usd": 0.0049,
+  "claude_wall_s": 47.6,
+  "output_tokens": 9550
+ },
+ {
+  "tag": "dungeon-md-opus-5-5",
+  "task": "dungeon",
+  "console": "md",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    320,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 15,
+    "console_colors": 15,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 1120,
+    "area_size": 8,
+    "backdrop": "#6d6d49",
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 14,
+    "tiles": 1120,
+    "unique_tiles": 1104,
+    "tile_budget": 1425,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#242449",
+      "#492400",
+      "#494949",
+      "#49496d",
+      "#6d6d92",
+      "#924924",
+      "#92926d",
+      "#9292b6",
+      "#b66d24",
+      "#b6b6b6",
+      "#db2400",
+      "#ff9200",
+      "#ffff6d"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md background art.png 320x224: PASS\n  source_colors=15, console_colors=15, backdrop=#6d6d49, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=1104, tile_budget=1425"
+  },
+  "calls": 1,
+  "cost_usd": 0.1213,
+  "claude_wall_s": 57.4,
+  "output_tokens": 5766
+ },
+ {
+  "tag": "dungeon-md-sonnet-5-5",
+  "task": "dungeon",
+  "console": "md",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    320,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 16,
+    "console_colors": 16,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 1120,
+    "area_size": 8,
+    "backdrop": "#000000",
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 15,
+    "tiles": 1120,
+    "unique_tiles": 128,
+    "tile_budget": 1425,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#242424",
+      "#242449",
+      "#492400",
+      "#494949",
+      "#49496d",
+      "#6d4924",
+      "#6d6d6d",
+      "#6d6d92",
+      "#926d24",
+      "#929292",
+      "#b69249",
+      "#b6b6b6",
+      "#db4900",
+      "#ff9200",
+      "#ffdb49"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md background art.png 320x224: PASS\n  source_colors=16, console_colors=16, backdrop=#000000, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=128, tile_budget=1425"
+  },
+  "calls": 1,
+  "cost_usd": 0.0552,
+  "claude_wall_s": 41.7,
+  "output_tokens": 5221
+ },
+ {
+  "tag": "dungeon-nes-haiku-5-5",
+  "task": "dungeon",
+  "console": "nes",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "4 of 8 colors are not close to any NES color; they will shift when converted (#ccd278->#d3e8af, #d48820->#d1a150, #989698->#ababab)",
+    "8 source colors collapse to 7 console colors"
+   ],
+   "info": {
+    "source_colors": 8,
+    "console_colors": 7,
+    "off_grid_colors": 4,
+    "max_snap_error": 59.6,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#4e4e4e",
+    "palettes_used": 3,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 6,
+    "tiles": 960,
+    "unique_tiles": 16,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#000000",
+      "#d1a150",
+      "#d3e8af"
+     ],
+     [
+      "#4f120a",
+      "#7f5002",
+      "#d1a150"
+     ],
+     [
+      "#ababab"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 4 of 8 colors are not close to any NES color; they will shift when converted (#ccd278->#d3e8af, #d48820->#d1a150, #989698->#ababab)\n  warning: 8 source colors collapse to 7 console colors\n  source_colors=8, console_colors=7, backdrop=#4e4e4e, palettes_used=3, palettes_allowed=4, colors_per_palette=3, unique_tiles=16, tile_budget=256"
+  },
+  "calls": 1,
+  "cost_usd": 0.0094,
+  "claude_wall_s": 84.2,
+  "output_tokens": 18449
+ },
+ {
+  "tag": "dungeon-nes-opus-5-5",
+  "task": "dungeon",
+  "console": "nes",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "4 of 9 colors are not close to any NES color; they will shift when converted (#ed9730->#d1a150, #a14600->#7f5002, #6a2400->#4f120a)"
+   ],
+   "info": {
+    "source_colors": 9,
+    "console_colors": 9,
+    "off_grid_colors": 4,
+    "max_snap_error": 43.7,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#000000",
+    "palettes_used": 4,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 8,
+    "tiles": 960,
+    "unique_tiles": 83,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#422000",
+      "#4e4e4e",
+      "#626262"
+     ],
+     [
+      "#4e4e4e",
+      "#626262",
+      "#ababab"
+     ],
+     [
+      "#4f120a",
+      "#626262",
+      "#7f5002"
+     ],
+     [
+      "#626262",
+      "#d1a150",
+      "#edd9b9"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 4 of 9 colors are not close to any NES color; they will shift when converted (#ed9730->#d1a150, #a14600->#7f5002, #6a2400->#4f120a)\n  source_colors=9, console_colors=9, backdrop=#000000, palettes_used=4, palettes_allowed=4, colors_per_palette=3, unique_tiles=83, tile_budget=256"
+  },
+  "calls": 1,
+  "cost_usd": 0.2259,
+  "claude_wall_s": 109.5,
+  "output_tokens": 11003
+ },
+ {
+  "tag": "dungeon-nes-sonnet-5-5",
+  "task": "dungeon",
+  "console": "nes",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "6 of 9 colors are not close to any NES color; they will shift when converted (#e45c10->#913e33, #f8b800->#b3b535, #0000bc->#1a1974)",
+    "9 source colors collapse to 8 console colors"
+   ],
+   "info": {
+    "source_colors": 9,
+    "console_colors": 8,
+    "off_grid_colors": 6,
+    "max_snap_error": 94.9,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#000000",
+    "palettes_used": 3,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 7,
+    "tiles": 960,
+    "unique_tiles": 38,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#1a1974",
+      "#626262",
+      "#b8b8b8"
+     ],
+     [
+      "#422000",
+      "#7f5002",
+      "#b3b535"
+     ],
+     [
+      "#913e33",
+      "#b3b535"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 6 of 9 colors are not close to any NES color; they will shift when converted (#e45c10->#913e33, #f8b800->#b3b535, #0000bc->#1a1974)\n  warning: 9 source colors collapse to 8 console colors\n  source_colors=9, console_colors=8, backdrop=#000000, palettes_used=3, palettes_allowed=4, colors_per_palette=3, unique_tiles=38, tile_budget=256"
+  },
+  "calls": 1,
+  "cost_usd": 0.0649,
+  "claude_wall_s": 48.5,
+  "output_tokens": 6200
+ },
+ {
+  "tag": "dungeon-sms-haiku-5-5",
+  "task": "dungeon",
+  "console": "sms",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    192
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 12,
+    "console_colors": 12,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 768,
+    "area_size": 8,
+    "backdrop": null,
+    "palettes_used": 1,
+    "palettes_allowed": 2,
+    "colors_per_palette": 16,
+    "colors_without_backdrop": 12,
+    "tiles": 768,
+    "unique_tiles": 22,
+    "tile_budget": 448,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000055",
+      "#550000",
+      "#555555",
+      "#5555aa",
+      "#aa5500",
+      "#aaaaaa",
+      "#aaaaff",
+      "#ff5500",
+      "#ffaa00",
+      "#ffaa55",
+      "#ffff00",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms background art.png 256x192: PASS\n  source_colors=12, console_colors=12, backdrop=None, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=22, tile_budget=448"
+  },
+  "calls": 1,
+  "cost_usd": 0.0085,
+  "claude_wall_s": 78.3,
+  "output_tokens": 16624
+ },
+ {
+  "tag": "dungeon-sms-opus-5-5",
+  "task": "dungeon",
+  "console": "sms",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    192
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 15,
+    "console_colors": 15,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 768,
+    "area_size": 8,
+    "backdrop": null,
+    "palettes_used": 1,
+    "palettes_allowed": 2,
+    "colors_per_palette": 16,
+    "colors_without_backdrop": 15,
+    "tiles": 768,
+    "unique_tiles": 85,
+    "tile_budget": 448,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#000055",
+      "#005500",
+      "#550000",
+      "#555555",
+      "#5555aa",
+      "#aa5500",
+      "#aaaaaa",
+      "#aaaaff",
+      "#ff0000",
+      "#ffaa00",
+      "#ffaa55",
+      "#ffff00",
+      "#ffffaa",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms background art.png 256x192: PASS\n  source_colors=15, console_colors=15, backdrop=None, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=85, tile_budget=448"
+  },
+  "calls": 1,
+  "cost_usd": 0.1446,
+  "claude_wall_s": 71.9,
+  "output_tokens": 6937
+ },
+ {
+  "tag": "dungeon-sms-sonnet-5-5",
+  "task": "dungeon",
+  "console": "sms",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    192
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 10,
+    "console_colors": 10,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 768,
+    "area_size": 8,
+    "backdrop": null,
+    "palettes_used": 1,
+    "palettes_allowed": 2,
+    "colors_per_palette": 16,
+    "colors_without_backdrop": 10,
+    "tiles": 768,
+    "unique_tiles": 52,
+    "tile_budget": 448,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#000055",
+      "#550000",
+      "#555555",
+      "#5555aa",
+      "#aa5500",
+      "#aaaaaa",
+      "#ff5500",
+      "#ffaa00",
+      "#ffff00"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms background art.png 256x192: PASS\n  source_colors=10, console_colors=10, backdrop=None, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=52, tile_budget=448"
+  },
+  "calls": 1,
+  "cost_usd": 0.0661,
+  "claude_wall_s": 53.3,
+  "output_tokens": 6310
+ },
+ {
+  "tag": "dungeon-snes-haiku-5-5",
+  "task": "dungeon",
+  "console": "snes",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 15,
+    "console_colors": 15,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#5a5a6b",
+    "palettes_used": 1,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 14,
+    "tiles": 896,
+    "unique_tiles": 22,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#191921",
+      "#212131",
+      "#31313a",
+      "#3a2108",
+      "#636b7b",
+      "#6b4219",
+      "#735221",
+      "#8c8c9c",
+      "#9c6329",
+      "#adb5c5",
+      "#b5b5c5",
+      "#ff4a10",
+      "#ff9419",
+      "#ffe652"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes background art.png 256x224: PASS\n  source_colors=15, console_colors=15, backdrop=#5a5a6b, palettes_used=1, palettes_allowed=8, colors_per_palette=15, unique_tiles=22, tile_budget=1024"
+  },
+  "calls": 1,
+  "cost_usd": 0.0071,
+  "claude_wall_s": 69.4,
+  "output_tokens": 13976
+ },
+ {
+  "tag": "dungeon-snes-opus-5-5",
+  "task": "dungeon",
+  "console": "snes",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 27,
+    "console_colors": 27,
+    "off_grid_colors": 0,
+    "max_snap_error": 4.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#736b5a",
+    "palettes_used": 3,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 26,
+    "tiles": 896,
+    "unique_tiles": 834,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#191921",
+      "#31313a",
+      "#3a2110",
+      "#4a4a52",
+      "#5a3119",
+      "#63636b",
+      "#735a42",
+      "#841908",
+      "#8c734a",
+      "#c54208",
+      "#ef8410",
+      "#f7c542",
+      "#f7f7b5"
+     ],
+     [
+      "#191921",
+      "#31313a",
+      "#3a2110",
+      "#4a4a52",
+      "#5a3119",
+      "#63636b",
+      "#735a42",
+      "#7b4a21",
+      "#7b7b84",
+      "#8c734a",
+      "#946331",
+      "#94949c",
+      "#b58442",
+      "#c59c42"
+     ],
+     [
+      "#000000",
+      "#292121",
+      "#314a29",
+      "#423a31",
+      "#4a6331",
+      "#5a5242",
+      "#848473"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes background art.png 256x224: PASS\n  source_colors=27, console_colors=27, backdrop=#736b5a, palettes_used=3, palettes_allowed=8, colors_per_palette=15, unique_tiles=834, tile_budget=1024"
+  },
+  "calls": 1,
+  "cost_usd": 0.207,
+  "claude_wall_s": 100.7,
+  "output_tokens": 10056
+ },
+ {
+  "tag": "dungeon-snes-sonnet-5-5",
+  "task": "dungeon",
+  "console": "snes",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 24,
+    "console_colors": 24,
+    "off_grid_colors": 0,
+    "max_snap_error": 4.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#101019",
+    "palettes_used": 3,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 23,
+    "tiles": 896,
+    "unique_tiles": 510,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#211008",
+      "#29293a",
+      "#42425a",
+      "#4a2910",
+      "#6b4219",
+      "#737384",
+      "#845a29",
+      "#84635a",
+      "#8c8ca5",
+      "#adadbd",
+      "#c52910",
+      "#dead31",
+      "#ef7b19",
+      "#f7ce3a",
+      "#f7efad"
+     ],
+     [
+      "#211008",
+      "#29293a",
+      "#42425a",
+      "#4a2910",
+      "#5a5a73",
+      "#6b4219",
+      "#737384",
+      "#845a29",
+      "#84635a",
+      "#8c8ca5",
+      "#9c7b63",
+      "#adadbd",
+      "#c52910",
+      "#ef7b19"
+     ],
+     [
+      "#29293a",
+      "#315231",
+      "#3a3142",
+      "#4a7342",
+      "#524a5a",
+      "#6b6373",
+      "#847b84"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes background art.png 256x224: PASS\n  source_colors=24, console_colors=24, backdrop=#101019, palettes_used=3, palettes_allowed=8, colors_per_palette=15, unique_tiles=510, tile_budget=1024"
+  },
+  "calls": 1,
+  "cost_usd": 0.0847,
+  "claude_wall_s": 62.4,
+  "output_tokens": 8172
+ },
+ {
+  "tag": "knight-md-haiku-5-5",
+  "task": "knight",
+  "console": "md",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    128,
+    32
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 11,
+    "console_colors": 11,
+    "off_grid_colors": 0,
+    "max_snap_error": 3.0,
+    "mode": "sprites 32x32",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 4,
+    "line_sprite_limit": 20,
+    "unique_tiles": 31,
+    "tile_budget": 1425,
+    "palettes": [
+     [
+      "#002492",
+      "#242424",
+      "#2449db",
+      "#492400",
+      "#6d6d92",
+      "#920000",
+      "#9292b6",
+      "#b69200",
+      "#b6b6db",
+      "#db2424",
+      "#ffdb24"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md sprites 32x32 art.png 128x32: PASS\n  source_colors=11, console_colors=11, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=31, tile_budget=1425, widest_line_8px_sprites=4, line_sprite_limit=20"
+  },
+  "calls": 1,
+  "cost_usd": 0.0053,
+  "claude_wall_s": 48.6,
+  "output_tokens": 10193
+ },
+ {
+  "tag": "knight-md-opus-5-5",
+  "task": "knight",
+  "console": "md",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    128,
+    32
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 12,
+    "console_colors": 12,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "sprites 32x32",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 4,
+    "line_sprite_limit": 20,
+    "unique_tiles": 35,
+    "tile_budget": 1425,
+    "palettes": [
+     [
+      "#000000",
+      "#242449",
+      "#244992",
+      "#496ddb",
+      "#6d4924",
+      "#6d6d92",
+      "#920024",
+      "#926d49",
+      "#b6b6db",
+      "#db2424",
+      "#dbb624",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md sprites 32x32 art.png 128x32: PASS\n  source_colors=12, console_colors=12, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=35, tile_budget=1425, widest_line_8px_sprites=4, line_sprite_limit=20"
+  },
+  "calls": 1,
+  "cost_usd": 0.1229,
+  "claude_wall_s": 58.6,
+  "output_tokens": 5837
+ },
+ {
+  "tag": "knight-md-sonnet-5-5",
+  "task": "knight",
+  "console": "md",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    128,
+    32
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 14,
+    "console_colors": 14,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "sprites 32x32",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 4,
+    "line_sprite_limit": 20,
+    "unique_tiles": 30,
+    "tile_budget": 1425,
+    "palettes": [
+     [
+      "#000000",
+      "#242449",
+      "#2449b6",
+      "#492400",
+      "#49496d",
+      "#4992db",
+      "#920000",
+      "#924924",
+      "#9292b6",
+      "#db2424",
+      "#dbdbff",
+      "#ffb692",
+      "#ffdb24",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md sprites 32x32 art.png 128x32: PASS\n  source_colors=14, console_colors=14, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=30, tile_budget=1425, widest_line_8px_sprites=4, line_sprite_limit=20"
+  },
+  "calls": 1,
+  "cost_usd": 0.0441,
+  "claude_wall_s": 33.9,
+  "output_tokens": 4095
+ },
+ {
+  "tag": "knight-nes-haiku-5-5",
+  "task": "knight",
+  "console": "nes",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    64,
+    16
+   ],
+   "errors": [],
+   "warnings": [
+    "1 of 3 colors are not close to any NES color; they will shift when converted (#b81e00->#913e33)"
+   ],
+   "info": {
+    "source_colors": 3,
+    "console_colors": 3,
+    "off_grid_colors": 1,
+    "max_snap_error": 71.7,
+    "mode": "sprites 16x16",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "widest_line_8px_sprites": 2,
+    "line_sprite_limit": 8,
+    "unique_tiles": 12,
+    "tile_budget": 256,
+    "palettes": [
+     [
+      "#000000",
+      "#913e33",
+      "#b8b8b8"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes sprites 16x16 art.png 64x16: PASS\n  warning: 1 of 3 colors are not close to any NES color; they will shift when converted (#b81e00->#913e33)\n  source_colors=3, console_colors=3, palettes_used=1, palettes_allowed=4, colors_per_palette=3, unique_tiles=12, tile_budget=256, widest_line_8px_sprites=2, line_sprite_limit=8"
+  },
+  "calls": 1,
+  "cost_usd": 0.0058,
+  "claude_wall_s": 53.3,
+  "output_tokens": 11355
+ },
+ {
+  "tag": "knight-nes-opus-5-5",
+  "task": "knight",
+  "console": "nes",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    64,
+    16
+   ],
+   "errors": [],
+   "warnings": [
+    "1 of 3 colors are not close to any NES color; they will shift when converted (#f83800->#913e33)"
+   ],
+   "info": {
+    "source_colors": 3,
+    "console_colors": 3,
+    "off_grid_colors": 1,
+    "max_snap_error": 115.1,
+    "mode": "sprites 16x16",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "widest_line_8px_sprites": 2,
+    "line_sprite_limit": 8,
+    "unique_tiles": 10,
+    "tile_budget": 256,
+    "palettes": [
+     [
+      "#000000",
+      "#913e33",
+      "#b8b8b8"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes sprites 16x16 art.png 64x16: PASS\n  warning: 1 of 3 colors are not close to any NES color; they will shift when converted (#f83800->#913e33)\n  source_colors=3, console_colors=3, palettes_used=1, palettes_allowed=4, colors_per_palette=3, unique_tiles=10, tile_budget=256, widest_line_8px_sprites=2, line_sprite_limit=8"
+  },
+  "calls": 1,
+  "cost_usd": 0.064,
+  "claude_wall_s": 31.1,
+  "output_tokens": 2901
+ },
+ {
+  "tag": "knight-nes-sonnet-5-5",
+  "task": "knight",
+  "console": "nes",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    64,
+    16
+   ],
+   "errors": [],
+   "warnings": [
+    "1 of 3 colors are not close to any NES color; they will shift when converted (#d82800->#913e33)"
+   ],
+   "info": {
+    "source_colors": 3,
+    "console_colors": 3,
+    "off_grid_colors": 1,
+    "max_snap_error": 90.1,
+    "mode": "sprites 16x16",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "widest_line_8px_sprites": 2,
+    "line_sprite_limit": 8,
+    "unique_tiles": 12,
+    "tile_budget": 256,
+    "palettes": [
+     [
+      "#000000",
+      "#913e33",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes sprites 16x16 art.png 64x16: PASS\n  warning: 1 of 3 colors are not close to any NES color; they will shift when converted (#d82800->#913e33)\n  source_colors=3, console_colors=3, palettes_used=1, palettes_allowed=4, colors_per_palette=3, unique_tiles=12, tile_budget=256, widest_line_8px_sprites=2, line_sprite_limit=8"
+  },
+  "calls": 1,
+  "cost_usd": 0.0263,
+  "claude_wall_s": 21.4,
+  "output_tokens": 2325
+ },
+ {
+  "tag": "knight-sms-haiku-5-5",
+  "task": "knight",
+  "console": "sms",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    64,
+    16
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 8,
+    "console_colors": 8,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "sprites 16x16",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 1,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 2,
+    "line_sprite_limit": 8,
+    "unique_tiles": 10,
+    "tile_budget": 448,
+    "palettes": [
+     [
+      "#000000",
+      "#555555",
+      "#aa5500",
+      "#aaaaaa",
+      "#ff0000",
+      "#ffaa55",
+      "#ffff00",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms sprites 16x16 art.png 64x16: PASS\n  source_colors=8, console_colors=8, palettes_used=1, palettes_allowed=1, colors_per_palette=15, unique_tiles=10, tile_budget=448, widest_line_8px_sprites=2, line_sprite_limit=8"
+  },
+  "calls": 1,
+  "cost_usd": 0.0035,
+  "claude_wall_s": 32.6,
+  "output_tokens": 6659
+ },
+ {
+  "tag": "knight-sms-opus-5-5",
+  "task": "knight",
+  "console": "sms",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    64,
+    16
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 10,
+    "console_colors": 10,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "sprites 16x16",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 1,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 2,
+    "line_sprite_limit": 8,
+    "unique_tiles": 9,
+    "tile_budget": 448,
+    "palettes": [
+     [
+      "#000000",
+      "#0000aa",
+      "#0055ff",
+      "#555555",
+      "#aa0000",
+      "#aa5500",
+      "#aaaaaa",
+      "#ff0000",
+      "#ffaa00",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms sprites 16x16 art.png 64x16: PASS\n  source_colors=10, console_colors=10, palettes_used=1, palettes_allowed=1, colors_per_palette=15, unique_tiles=9, tile_budget=448, widest_line_8px_sprites=2, line_sprite_limit=8"
+  },
+  "calls": 1,
+  "cost_usd": 0.0672,
+  "claude_wall_s": 30.9,
+  "output_tokens": 3058
+ },
+ {
+  "tag": "knight-sms-sonnet-5-5",
+  "task": "knight",
+  "console": "sms",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    64,
+    16
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 10,
+    "console_colors": 10,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "sprites 16x16",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 1,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 2,
+    "line_sprite_limit": 8,
+    "unique_tiles": 12,
+    "tile_budget": 448,
+    "palettes": [
+     [
+      "#000055",
+      "#0055ff",
+      "#555555",
+      "#aa0000",
+      "#aa5500",
+      "#aaaaaa",
+      "#ff0000",
+      "#ffaa00",
+      "#ffaa55",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms sprites 16x16 art.png 64x16: PASS\n  source_colors=10, console_colors=10, palettes_used=1, palettes_allowed=1, colors_per_palette=15, unique_tiles=12, tile_budget=448, widest_line_8px_sprites=2, line_sprite_limit=8"
+  },
+  "calls": 1,
+  "cost_usd": 0.0334,
+  "claude_wall_s": 25.8,
+  "output_tokens": 3031
+ },
+ {
+  "tag": "knight-snes-haiku-5-5",
+  "task": "knight",
+  "console": "snes",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    128,
+    32
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 12,
+    "console_colors": 12,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "sprites 32x32",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 4,
+    "line_sprite_limit": 32,
+    "unique_tiles": 26,
+    "tile_budget": 512,
+    "palettes": [
+     [
+      "#101921",
+      "#2152bd",
+      "#423121",
+      "#525a6b",
+      "#639cef",
+      "#844a21",
+      "#84949c",
+      "#bd2121",
+      "#c5ced6",
+      "#dead42",
+      "#e6e6ef",
+      "#efb594"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes sprites 32x32 art.png 128x32: PASS\n  source_colors=12, console_colors=12, palettes_used=1, palettes_allowed=8, colors_per_palette=15, unique_tiles=26, tile_budget=512, widest_line_8px_sprites=4, line_sprite_limit=32"
+  },
+  "calls": 1,
+  "cost_usd": 0.005,
+  "claude_wall_s": 45.5,
+  "output_tokens": 9751
+ },
+ {
+  "tag": "knight-snes-opus-5-5",
+  "task": "knight",
+  "console": "snes",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    128,
+    32
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 12,
+    "console_colors": 12,
+    "off_grid_colors": 0,
+    "max_snap_error": 4.0,
+    "mode": "sprites 32x32",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 4,
+    "line_sprite_limit": 32,
+    "unique_tiles": 39,
+    "tile_budget": 512,
+    "palettes": [
+     [
+      "#191021",
+      "#213173",
+      "#3a5aad",
+      "#4a526b",
+      "#633a21",
+      "#841921",
+      "#84849c",
+      "#946331",
+      "#bdc5d6",
+      "#c53131",
+      "#d6ad3a",
+      "#efeff7"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes sprites 32x32 art.png 128x32: PASS\n  source_colors=12, console_colors=12, palettes_used=1, palettes_allowed=8, colors_per_palette=15, unique_tiles=39, tile_budget=512, widest_line_8px_sprites=4, line_sprite_limit=32"
+  },
+  "calls": 1,
+  "cost_usd": 0.1394,
+  "claude_wall_s": 68.5,
+  "output_tokens": 6672
+ },
+ {
+  "tag": "knight-snes-sonnet-5-5",
+  "task": "knight",
+  "console": "snes",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    128,
+    32
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 14,
+    "console_colors": 14,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "sprites 32x32",
+    "frames": 4,
+    "palettes_used": 1,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "widest_line_8px_sprites": 4,
+    "line_sprite_limit": 32,
+    "unique_tiles": 27,
+    "tile_budget": 512,
+    "palettes": [
+     [
+      "#191942",
+      "#19297b",
+      "#3152c5",
+      "#523119",
+      "#525a84",
+      "#841029",
+      "#8494b5",
+      "#945a29",
+      "#b5cee6",
+      "#c58c19",
+      "#d62931",
+      "#efb58c",
+      "#f7c531",
+      "#f7ffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes sprites 32x32 art.png 128x32: PASS\n  source_colors=14, console_colors=14, palettes_used=1, palettes_allowed=8, colors_per_palette=15, unique_tiles=27, tile_budget=512, widest_line_8px_sprites=4, line_sprite_limit=32"
+  },
+  "calls": 1,
+  "cost_usd": 0.0407,
+  "claude_wall_s": 31.4,
+  "output_tokens": 3771
+ },
+ {
+  "tag": "landscape-md-haiku-5-5",
+  "task": "landscape",
+  "console": "md",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    320,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 16,
+    "console_colors": 16,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 1120,
+    "area_size": 8,
+    "backdrop": "#240024",
+    "palettes_used": 1,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 15,
+    "tiles": 1120,
+    "unique_tiles": 251,
+    "tile_budget": 1425,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000024",
+      "#240049",
+      "#49006d",
+      "#492449",
+      "#49246d",
+      "#6d4992",
+      "#920092",
+      "#b6246d",
+      "#b66db6",
+      "#db496d",
+      "#ff6d49",
+      "#ffb624",
+      "#ffb692",
+      "#ffff6d",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md background art.png 320x224: PASS\n  source_colors=16, console_colors=16, backdrop=#240024, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=251, tile_budget=1425"
+  },
+  "calls": 1,
+  "cost_usd": 0.0054,
+  "claude_wall_s": 51.4,
+  "output_tokens": 10432
+ },
+ {
+  "tag": "landscape-md-opus-5-5",
+  "task": "landscape",
+  "console": "md",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    320,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 19,
+    "console_colors": 19,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 1120,
+    "area_size": 8,
+    "backdrop": "#6d2492",
+    "palettes_used": 2,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 18,
+    "tiles": 1120,
+    "unique_tiles": 606,
+    "tile_budget": 1425,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000024",
+      "#240049",
+      "#49246d",
+      "#922492",
+      "#924992",
+      "#b62492",
+      "#b64992",
+      "#db496d",
+      "#ff6d49",
+      "#ff9224",
+      "#ff9249",
+      "#ffb624",
+      "#ffdb49",
+      "#ffff92",
+      "#ffffdb"
+     ],
+     [
+      "#240049",
+      "#49006d",
+      "#49246d",
+      "#922492",
+      "#b62492",
+      "#db496d",
+      "#db6d92",
+      "#ffb66d"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md background art.png 320x224: PASS\n  source_colors=19, console_colors=19, backdrop=#6d2492, palettes_used=2, palettes_allowed=4, colors_per_palette=15, unique_tiles=606, tile_budget=1425"
+  },
+  "calls": 1,
+  "cost_usd": 0.2103,
+  "claude_wall_s": 108.6,
+  "output_tokens": 10221
+ },
+ {
+  "tag": "landscape-md-sonnet-5-5",
+  "task": "landscape",
+  "console": "md",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    320,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 31,
+    "console_colors": 31,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 1120,
+    "area_size": 8,
+    "backdrop": "#492449",
+    "palettes_used": 4,
+    "palettes_allowed": 4,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 30,
+    "tiles": 1120,
+    "unique_tiles": 396,
+    "tile_budget": 1425,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#240049",
+      "#242424",
+      "#242449",
+      "#49246d",
+      "#49496d",
+      "#6d246d",
+      "#6d4949",
+      "#6d496d",
+      "#924949",
+      "#92496d",
+      "#926d6d",
+      "#b64949",
+      "#b6496d",
+      "#b66d49",
+      "#b66d6d"
+     ],
+     [
+      "#49246d",
+      "#6d2424",
+      "#6d2449",
+      "#6d246d",
+      "#6d496d",
+      "#922449",
+      "#92246d",
+      "#924924",
+      "#924949",
+      "#92496d",
+      "#926d6d",
+      "#b64949",
+      "#b6496d",
+      "#b66d49",
+      "#b66d6d"
+     ],
+     [
+      "#242449",
+      "#6d246d",
+      "#6d496d",
+      "#924949",
+      "#92496d",
+      "#b64949",
+      "#b6496d",
+      "#b66d6d",
+      "#db4949",
+      "#db6d24",
+      "#db6d49",
+      "#db6d6d",
+      "#ff6d49",
+      "#ff9249"
+     ],
+     [
+      "#000049",
+      "#240049",
+      "#242449",
+      "#490049",
+      "#49246d",
+      "#6d246d",
+      "#6d4949",
+      "#6d496d",
+      "#92496d",
+      "#b66d49",
+      "#db9249",
+      "#dbb6b6"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck md background art.png 320x224: PASS\n  source_colors=31, console_colors=31, backdrop=#492449, palettes_used=4, palettes_allowed=4, colors_per_palette=15, unique_tiles=396, tile_budget=1425"
+  },
+  "calls": 1,
+  "cost_usd": 0.0386,
+  "claude_wall_s": 31.7,
+  "output_tokens": 3856
+ },
+ {
+  "tag": "landscape-nes-haiku-5-5",
+  "task": "landscape",
+  "console": "nes",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": false,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [
+    "258 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)"
+   ],
+   "warnings": [
+    "7 of 8 colors are not close to any NES color; they will shift when converted (#ccd278->#d3e8af, #38b4cc->#69bfca, #ec6a64->#e48e82)"
+   ],
+   "info": {
+    "source_colors": 8,
+    "console_colors": 8,
+    "off_grid_colors": 7,
+    "max_snap_error": 59.6,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#052861",
+    "palettes_used": 3,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 7,
+    "tiles": 960,
+    "unique_tiles": 258,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#1a6d78",
+      "#69bfca",
+      "#c3e5ea"
+     ],
+     [
+      "#8430a0",
+      "#e48e82"
+     ],
+     [
+      "#d3e8af",
+      "#e1e1ae"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: FAIL\n  error: 258 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)\n  warning: 7 of 8 colors are not close to any NES color; they will shift when converted (#ccd278->#d3e8af, #38b4cc->#69bfca, #ec6a64->#e48e82)\n  source_colors=8, console_colors=8, backdrop=#052861, palettes_used=3, palettes_allowed=4, colors_per_palette=3, unique_tiles=258, tile_budget=256"
+  },
+  "plain1": {
+   "stage": "plain1",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "6 of 7 colors are not close to any NES color; they will shift when converted (#38b4cc->#69bfca, #ec6a64->#e48e82, #e4c490->#e1e1ae)"
+   ],
+   "info": {
+    "source_colors": 7,
+    "console_colors": 7,
+    "off_grid_colors": 6,
+    "max_snap_error": 50.3,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#052861",
+    "palettes_used": 2,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 6,
+    "tiles": 960,
+    "unique_tiles": 254,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#1a6d78",
+      "#69bfca",
+      "#c3e5ea"
+     ],
+     [
+      "#8430a0",
+      "#e1e1ae",
+      "#e48e82"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 6 of 7 colors are not close to any NES color; they will shift when converted (#38b4cc->#69bfca, #ec6a64->#e48e82, #e4c490->#e1e1ae)\n  source_colors=7, console_colors=7, backdrop=#052861, palettes_used=2, palettes_allowed=4, colors_per_palette=3, unique_tiles=254, tile_budget=256"
+  },
+  "check1": {
+   "stage": "check1",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "8 of 9 colors are not close to any NES color; they will shift when converted (#0000fc->#4947c3, #00e8d8->#69bfca, #d800cc->#8430a0)"
+   ],
+   "info": {
+    "source_colors": 9,
+    "console_colors": 9,
+    "off_grid_colors": 8,
+    "max_snap_error": 116.7,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#1a6d78",
+    "palettes_used": 3,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 8,
+    "tiles": 960,
+    "unique_tiles": 214,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#4947c3",
+      "#8430a0",
+      "#e48e82"
+     ],
+     [
+      "#2c5ba9",
+      "#6938c0",
+      "#9998ff"
+     ],
+     [
+      "#4947c3",
+      "#69bfca",
+      "#edd9b9"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 8 of 9 colors are not close to any NES color; they will shift when converted (#0000fc->#4947c3, #00e8d8->#69bfca, #d800cc->#8430a0)\n  source_colors=9, console_colors=9, backdrop=#1a6d78, palettes_used=3, palettes_allowed=4, colors_per_palette=3, unique_tiles=214, tile_budget=256"
+  },
+  "calls": 3,
+  "cost_usd": 0.0225,
+  "claude_wall_s": 178.7,
+  "output_tokens": 41418
+ },
+ {
+  "tag": "landscape-nes-opus-5-5",
+  "task": "landscape",
+  "console": "nes",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "8 of 9 colors are not close to any NES color; they will shift when converted (#0000bc->#1a1974, #6844fc->#6938c0, #f85898->#e682bf)"
+   ],
+   "info": {
+    "source_colors": 9,
+    "console_colors": 9,
+    "off_grid_colors": 8,
+    "max_snap_error": 80.5,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#000000",
+    "palettes_used": 4,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 8,
+    "tiles": 960,
+    "unique_tiles": 180,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#4947c3",
+      "#d1a150",
+      "#e1e1ae"
+     ],
+     [
+      "#d1a150",
+      "#e1e1ae",
+      "#e48e82"
+     ],
+     [
+      "#d77ff4",
+      "#e48e82",
+      "#e682bf"
+     ],
+     [
+      "#1a1974",
+      "#4947c3",
+      "#6938c0"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 8 of 9 colors are not close to any NES color; they will shift when converted (#0000bc->#1a1974, #6844fc->#6938c0, #f85898->#e682bf)\n  source_colors=9, console_colors=9, backdrop=#000000, palettes_used=4, palettes_allowed=4, colors_per_palette=3, unique_tiles=180, tile_budget=256"
+  },
+  "calls": 1,
+  "cost_usd": 0.2345,
+  "claude_wall_s": 119.0,
+  "output_tokens": 11442
+ },
+ {
+  "tag": "landscape-nes-sonnet-5-5",
+  "task": "landscape",
+  "console": "nes",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    240
+   ],
+   "errors": [],
+   "warnings": [
+    "9 of 11 colors are not close to any NES color; they will shift when converted (#d48820->#d1a150, #3032ec->#4947c3, #ec6a64->#e48e82)"
+   ],
+   "info": {
+    "source_colors": 11,
+    "console_colors": 11,
+    "off_grid_colors": 9,
+    "max_snap_error": 54.2,
+    "mode": "background",
+    "areas": 240,
+    "area_size": 16,
+    "backdrop": "#320e72",
+    "palettes_used": 4,
+    "palettes_allowed": 4,
+    "colors_per_palette": 3,
+    "colors_without_backdrop": 10,
+    "tiles": 960,
+    "unique_tiles": 253,
+    "tile_budget": 256,
+    "flips_counted": false,
+    "palettes": [
+     [
+      "#013f00",
+      "#277b0a",
+      "#4947c3"
+     ],
+     [
+      "#500a35",
+      "#93326d",
+      "#d1a150"
+     ],
+     [
+      "#d1a150",
+      "#e1e1ae",
+      "#e48e82"
+     ],
+     [
+      "#8430a0",
+      "#e48e82",
+      "#e682bf"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck nes background art.png 256x240: PASS\n  warning: 9 of 11 colors are not close to any NES color; they will shift when converted (#d48820->#d1a150, #3032ec->#4947c3, #ec6a64->#e48e82)\n  source_colors=11, console_colors=11, backdrop=#320e72, palettes_used=4, palettes_allowed=4, colors_per_palette=3, unique_tiles=253, tile_budget=256"
+  },
+  "calls": 1,
+  "cost_usd": 0.1863,
+  "claude_wall_s": 154.5,
+  "output_tokens": 18347
+ },
+ {
+  "tag": "landscape-sms-haiku-5-5",
+  "task": "landscape",
+  "console": "sms",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    192
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 14,
+    "console_colors": 14,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 768,
+    "area_size": 8,
+    "backdrop": null,
+    "palettes_used": 1,
+    "palettes_allowed": 2,
+    "colors_per_palette": 16,
+    "colors_without_backdrop": 14,
+    "tiles": 768,
+    "unique_tiles": 50,
+    "tile_budget": 448,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000055",
+      "#0000aa",
+      "#0055aa",
+      "#550055",
+      "#5500aa",
+      "#5555aa",
+      "#aa00aa",
+      "#aa5500",
+      "#aa55aa",
+      "#ff00aa",
+      "#ff5555",
+      "#ffaa55",
+      "#ffffaa",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms background art.png 256x192: PASS\n  source_colors=14, console_colors=14, backdrop=None, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=50, tile_budget=448"
+  },
+  "calls": 1,
+  "cost_usd": 0.005,
+  "claude_wall_s": 48.3,
+  "output_tokens": 9635
+ },
+ {
+  "tag": "landscape-sms-opus-5-5",
+  "task": "landscape",
+  "console": "sms",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    192
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 16,
+    "console_colors": 16,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 768,
+    "area_size": 8,
+    "backdrop": null,
+    "palettes_used": 1,
+    "palettes_allowed": 2,
+    "colors_per_palette": 16,
+    "colors_without_backdrop": 16,
+    "tiles": 768,
+    "unique_tiles": 340,
+    "tile_budget": 448,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#000055",
+      "#005555",
+      "#0055aa",
+      "#550055",
+      "#5500aa",
+      "#5555aa",
+      "#aa0055",
+      "#aa5555",
+      "#aa55aa",
+      "#ff0055",
+      "#ff5500",
+      "#ffaa00",
+      "#ffaa55",
+      "#ffff55",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms background art.png 256x192: PASS\n  source_colors=16, console_colors=16, backdrop=None, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=340, tile_budget=448"
+  },
+  "calls": 1,
+  "cost_usd": 0.1529,
+  "claude_wall_s": 73.6,
+  "output_tokens": 7357
+ },
+ {
+  "tag": "landscape-sms-sonnet-5-5",
+  "task": "landscape",
+  "console": "sms",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    192
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 11,
+    "console_colors": 11,
+    "off_grid_colors": 0,
+    "max_snap_error": 0.0,
+    "mode": "background",
+    "areas": 768,
+    "area_size": 8,
+    "backdrop": null,
+    "palettes_used": 1,
+    "palettes_allowed": 2,
+    "colors_per_palette": 16,
+    "colors_without_backdrop": 11,
+    "tiles": 768,
+    "unique_tiles": 224,
+    "tile_budget": 448,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#000000",
+      "#000055",
+      "#550055",
+      "#aa0055",
+      "#aa00aa",
+      "#ff5500",
+      "#ff5555",
+      "#ffaa00",
+      "#ffff55",
+      "#ffffaa",
+      "#ffffff"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck sms background art.png 256x192: PASS\n  source_colors=11, console_colors=11, backdrop=None, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=224, tile_budget=448"
+  },
+  "calls": 1,
+  "cost_usd": 0.0478,
+  "claude_wall_s": 40.5,
+  "output_tokens": 4487
+ },
+ {
+  "tag": "landscape-snes-haiku-5-5",
+  "task": "landscape",
+  "console": "snes",
+  "model": "claude-haiku-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 13,
+    "console_colors": 13,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#3194d6",
+    "palettes_used": 1,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 12,
+    "tiles": 896,
+    "unique_tiles": 345,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#101952",
+      "#105294",
+      "#212984",
+      "#312163",
+      "#4231c5",
+      "#733af7",
+      "#734ab5",
+      "#a54ae6",
+      "#d663b5",
+      "#f78484",
+      "#f79442",
+      "#ffffb5"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes background art.png 256x224: PASS\n  source_colors=13, console_colors=13, backdrop=#3194d6, palettes_used=1, palettes_allowed=8, colors_per_palette=15, unique_tiles=345, tile_budget=1024"
+  },
+  "calls": 1,
+  "cost_usd": 0.0043,
+  "claude_wall_s": 40.8,
+  "output_tokens": 8358
+ },
+ {
+  "tag": "landscape-snes-opus-5-5",
+  "task": "landscape",
+  "console": "snes",
+  "model": "claude-opus-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": false,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [
+    "the tile color sets do not fit in 8 palettes of 15 colors: 8 tiles left without a palette (greedy packing, 8 palettes used)"
+   ],
+   "warnings": [],
+   "info": {
+    "source_colors": 46,
+    "console_colors": 46,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#100821",
+    "palettes_used": 8,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 45,
+    "tiles": 896,
+    "unique_tiles": 652,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#101031",
+      "#191042",
+      "#29194a",
+      "#5a3163",
+      "#733a4a",
+      "#7b4a52",
+      "#844a3a",
+      "#8c5242",
+      "#8c6352",
+      "#8c7363",
+      "#8c8473",
+      "#a5527b",
+      "#e67b63",
+      "#f7944a",
+      "#f7ad63"
+     ],
+     [
+      "#29194a",
+      "#5a3163",
+      "#73314a",
+      "#733a4a",
+      "#7b4a52",
+      "#844a3a",
+      "#8c5242",
+      "#8c6352",
+      "#8c8473",
+      "#8c94a5",
+      "#d65a52",
+      "#ef7b42",
+      "#f7944a",
+      "#f7c563",
+      "#ffe694"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#29194a",
+      "#3a105a",
+      "#4a195a",
+      "#4a295a",
+      "#5a215a",
+      "#6b2952",
+      "#6b3152",
+      "#73314a",
+      "#733a4a",
+      "#8c5a5a",
+      "#a53a6b",
+      "#c54263",
+      "#ce635a"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#21193a",
+      "#29194a",
+      "#29195a",
+      "#3a2163",
+      "#4a295a",
+      "#5a3163",
+      "#733a4a",
+      "#7b4a52",
+      "#8c6352",
+      "#8c7363",
+      "#8c8473",
+      "#8c94a5",
+      "#f7c563"
+     ],
+     [
+      "#21193a",
+      "#29194a",
+      "#4a195a",
+      "#4a295a",
+      "#4a296b",
+      "#5a215a",
+      "#633a7b",
+      "#a5527b",
+      "#ce635a",
+      "#e67b63",
+      "#f7944a",
+      "#f7ad63",
+      "#ffc573",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#291052",
+      "#3a105a",
+      "#3a1963",
+      "#4a195a",
+      "#5a3163",
+      "#6b216b",
+      "#6b3173",
+      "#7b4a52",
+      "#84296b",
+      "#8c7363",
+      "#8c94a5",
+      "#f7c563",
+      "#ffc573",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#29194a",
+      "#4a295a",
+      "#6b2952",
+      "#6b3152",
+      "#73314a",
+      "#733a4a",
+      "#844a3a",
+      "#8c5a5a",
+      "#c54263",
+      "#ce635a",
+      "#d65a52",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#21193a",
+      "#29194a",
+      "#3a105a",
+      "#4a195a",
+      "#4a295a",
+      "#5a215a",
+      "#733a4a",
+      "#84296b",
+      "#a53a6b",
+      "#bd5263",
+      "#c54263",
+      "#ce635a",
+      "#f79c6b"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 8,
+   "report": "pixcheck snes background art.png 256x224: FAIL\n  error: the tile color sets do not fit in 8 palettes of 15 colors: 8 tiles left without a palette (greedy packing, 8 palettes used)\n  source_colors=46, console_colors=46, backdrop=#100821, palettes_used=8, palettes_allowed=8, colors_per_palette=15, unique_tiles=652, tile_budget=1024\n  no palette for (x,y): (64,72); (72,72); (80,72); (88,72); (96,72); (184,72); (80,168); (88,168)"
+  },
+  "plain1": {
+   "stage": "plain1",
+   "ran": true,
+   "ok": false,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [
+    "the tile color sets do not fit in 8 palettes of 15 colors: 147 tiles left without a palette (greedy packing, 8 palettes used)"
+   ],
+   "warnings": [],
+   "info": {
+    "source_colors": 49,
+    "console_colors": 49,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#100821",
+    "palettes_used": 8,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 48,
+    "tiles": 896,
+    "unique_tiles": 657,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#6b2952",
+      "#73314a",
+      "#844a3a",
+      "#8c5242",
+      "#8c6352",
+      "#8c7363",
+      "#8c8473",
+      "#8c94a5",
+      "#a5527b",
+      "#d65a52",
+      "#ef7b42",
+      "#f7944a",
+      "#f7c563",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#21193a",
+      "#29194a",
+      "#4a195a",
+      "#4a295a",
+      "#5a215a",
+      "#6b2952",
+      "#6b3152",
+      "#73314a",
+      "#8c5a5a",
+      "#a53a6b",
+      "#c54263",
+      "#ce635a",
+      "#d65a52"
+     ],
+     [
+      "#19084a",
+      "#211052",
+      "#291052",
+      "#3a105a",
+      "#3a1963",
+      "#4a195a",
+      "#522163",
+      "#5a215a",
+      "#6b216b",
+      "#6b3173",
+      "#84296b",
+      "#a5527b",
+      "#ffc573",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#211052",
+      "#291052",
+      "#29194a",
+      "#3a105a",
+      "#5a3163",
+      "#733a4a",
+      "#7b4a52",
+      "#844a3a",
+      "#8c5242",
+      "#8c6352",
+      "#a5527b",
+      "#f7944a",
+      "#f7ad63"
+     ],
+     [
+      "#21193a",
+      "#3a1963",
+      "#4a195a",
+      "#4a295a",
+      "#522163",
+      "#5a215a",
+      "#6b216b",
+      "#6b317b",
+      "#a5527b",
+      "#c55a8c",
+      "#f7944a",
+      "#f7ad63",
+      "#ffc573",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#19084a",
+      "#191042",
+      "#211052",
+      "#291052",
+      "#29194a",
+      "#3a105a",
+      "#3a1963",
+      "#4a295a",
+      "#5a215a",
+      "#5a3163",
+      "#6b2952",
+      "#73314a",
+      "#733a4a",
+      "#8c5a5a",
+      "#f7c563"
+     ],
+     [
+      "#101031",
+      "#191042",
+      "#29194a",
+      "#4a295a",
+      "#5a215a",
+      "#6b2952",
+      "#73314a",
+      "#733a4a",
+      "#84296b",
+      "#844a3a",
+      "#a53a6b",
+      "#bd5263",
+      "#c54263",
+      "#ce635a",
+      "#f79c6b"
+     ],
+     [
+      "#100842",
+      "#19084a",
+      "#191042",
+      "#211052",
+      "#291052",
+      "#29194a",
+      "#3a105a",
+      "#3a1963",
+      "#4a195a",
+      "#4a295a",
+      "#6b3173",
+      "#6b317b",
+      "#733a4a",
+      "#f7c563",
+      "#ffe694"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 147,
+   "report": "pixcheck snes background art.png 256x224: FAIL\n  error: the tile color sets do not fit in 8 palettes of 15 colors: 147 tiles left without a palette (greedy packing, 8 palettes used)\n  source_colors=49, console_colors=49, backdrop=#100821, palettes_used=8, palettes_allowed=8, colors_per_palette=15, unique_tiles=657, tile_budget=1024\n  no palette for (x,y): (0,0); (8,0); (16,0); (24,0); (32,0); (40,0); (48,0); (56,0); ... 139 more"
+  },
+  "check1": {
+   "stage": "check1",
+   "ran": false,
+   "error": "script failed (exit 1): ['palette packing failed']"
+  },
+  "check2": {
+   "stage": "check2",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 52,
+    "console_colors": 52,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#29194a",
+    "palettes_used": 7,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 51,
+    "tiles": 896,
+    "unique_tiles": 657,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#5a3163",
+      "#73314a",
+      "#7b4a52",
+      "#844a3a",
+      "#8c5242",
+      "#8c6352",
+      "#8c8473",
+      "#8c94a5",
+      "#a5527b",
+      "#ef7b42",
+      "#f7944a",
+      "#f7c563",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#100821",
+      "#101031",
+      "#191042",
+      "#4a295a",
+      "#5a3163",
+      "#733a4a",
+      "#7b4a52",
+      "#8c6352",
+      "#8c7363",
+      "#8c8473",
+      "#8c94a5",
+      "#d65a52",
+      "#f7c563",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#100821",
+      "#21193a",
+      "#4a295a",
+      "#4a296b",
+      "#633a7b",
+      "#a5527b",
+      "#ce635a",
+      "#d65a52",
+      "#e67b63",
+      "#ef7b42",
+      "#f7944a",
+      "#f7ad63",
+      "#ffc573",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#19084a",
+      "#211052",
+      "#291052",
+      "#3a105a",
+      "#3a1963",
+      "#4a195a",
+      "#522163",
+      "#6b216b",
+      "#6b3173",
+      "#6b6bad",
+      "#84296b",
+      "#c55a8c",
+      "#f7c563",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#191042",
+      "#3a105a",
+      "#4a195a",
+      "#5a215a",
+      "#6b2952",
+      "#73314a",
+      "#844a3a",
+      "#8c5a5a",
+      "#a53a6b",
+      "#c54263",
+      "#d65a52",
+      "#f7c563",
+      "#ffe694",
+      "#ffffd6"
+     ],
+     [
+      "#21193a",
+      "#4a295a",
+      "#522163",
+      "#6b216b",
+      "#84296b",
+      "#a53a6b",
+      "#bd5263",
+      "#c54263",
+      "#ce635a",
+      "#d65a52",
+      "#ef7b42",
+      "#f79c6b",
+      "#ffe694"
+     ],
+     [
+      "#10083a",
+      "#21104a",
+      "#291052",
+      "#3a1963",
+      "#522163",
+      "#6b216b",
+      "#6b317b",
+      "#84296b",
+      "#c55a8c",
+      "#c5b5de"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes background art.png 256x224: PASS\n  source_colors=52, console_colors=52, backdrop=#29194a, palettes_used=7, palettes_allowed=8, colors_per_palette=15, unique_tiles=657, tile_budget=1024"
+  },
+  "calls": 4,
+  "cost_usd": 0.8688,
+  "claude_wall_s": 346.0,
+  "output_tokens": 36908
+ },
+ {
+  "tag": "landscape-snes-sonnet-5-5",
+  "task": "landscape",
+  "console": "snes",
+  "model": "claude-sonnet-5-5",
+  "v0": {
+   "stage": "v0",
+   "ran": true,
+   "ok": true,
+   "size_ok": true,
+   "size": [
+    256,
+    224
+   ],
+   "errors": [],
+   "warnings": [],
+   "info": {
+    "source_colors": 104,
+    "console_colors": 104,
+    "off_grid_colors": 0,
+    "max_snap_error": 1.0,
+    "mode": "background",
+    "areas": 896,
+    "area_size": 8,
+    "backdrop": "#4a295a",
+    "palettes_used": 8,
+    "palettes_allowed": 8,
+    "colors_per_palette": 15,
+    "colors_without_backdrop": 103,
+    "tiles": 896,
+    "unique_tiles": 638,
+    "tile_budget": 1024,
+    "flips_counted": true,
+    "palettes": [
+     [
+      "#191029",
+      "#311952",
+      "#31214a",
+      "#42215a",
+      "#42295a",
+      "#4a215a",
+      "#52295a",
+      "#52315a",
+      "#5a295a",
+      "#5a315a",
+      "#63315a",
+      "#6b315a",
+      "#6b3a5a",
+      "#7b5273"
+     ],
+     [
+      "#21194a",
+      "#29194a",
+      "#291952",
+      "#292152",
+      "#312152",
+      "#4a3a73",
+      "#5a316b",
+      "#63316b",
+      "#633a6b",
+      "#6b3a6b",
+      "#733a6b",
+      "#734a73",
+      "#84636b",
+      "#ad7363"
+     ],
+     [
+      "#5a315a",
+      "#7b4273",
+      "#844273",
+      "#b5637b",
+      "#ce5a63",
+      "#ce6363",
+      "#d6635a",
+      "#d66b5a",
+      "#de6b5a",
+      "#de735a",
+      "#de7b5a",
+      "#e67352",
+      "#e67b52",
+      "#ef8452",
+      "#f7945a"
+     ],
+     [
+      "#6b3163",
+      "#7b3a63",
+      "#8c426b",
+      "#9c426b",
+      "#a5426b",
+      "#a54a6b",
+      "#ad4a63",
+      "#ad4a6b",
+      "#ad526b",
+      "#b54a63",
+      "#b55263",
+      "#bd5263",
+      "#c55263",
+      "#c55a63",
+      "#d66363"
+     ],
+     [
+      "#19104a",
+      "#21104a",
+      "#21194a",
+      "#291952",
+      "#311952",
+      "#31195a",
+      "#3a195a",
+      "#3a215a",
+      "#42215a",
+      "#422163",
+      "#4a2163",
+      "#8c4263",
+      "#8c426b"
+     ],
+     [
+      "#291942",
+      "#312142",
+      "#31214a",
+      "#3a214a",
+      "#3a2152",
+      "#633a5a",
+      "#7b4273",
+      "#844273",
+      "#844a73",
+      "#8c4a73",
+      "#944a6b",
+      "#94526b",
+      "#9c526b",
+      "#ce736b",
+      "#ffad63"
+     ],
+     [
+      "#4a2163",
+      "#4a2963",
+      "#52216b",
+      "#52296b",
+      "#5a2963",
+      "#5a296b",
+      "#63296b",
+      "#6b316b",
+      "#73316b",
+      "#7b3a6b",
+      "#843a6b",
+      "#8c3a6b",
+      "#8c426b",
+      "#943a6b",
+      "#944a6b"
+     ],
+     [
+      "#52316b",
+      "#5a3163",
+      "#73315a",
+      "#733a5a",
+      "#73426b",
+      "#734a6b",
+      "#7b4252",
+      "#844252",
+      "#844a52",
+      "#84526b",
+      "#8c4a52",
+      "#945252",
+      "#945a52",
+      "#a57363"
+     ]
+    ]
+   },
+   "bad_areas": 0,
+   "unplaced": 0,
+   "report": "pixcheck snes background art.png 256x224: PASS\n  source_colors=104, console_colors=104, backdrop=#4a295a, palettes_used=8, palettes_allowed=8, colors_per_palette=15, unique_tiles=638, tile_budget=1024"
+  },
+  "calls": 1,
+  "cost_usd": 0.0684,
+  "claude_wall_s": 57.1,
+  "output_tokens": 6550
+ }
+]

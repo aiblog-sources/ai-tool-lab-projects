@@ -1,0 +1,49 @@
+{
+ "console": "nes",
+ "file": "art.png",
+ "size": [
+  256,
+  240
+ ],
+ "ok": false,
+ "errors": [
+  "258 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)"
+ ],
+ "warnings": [],
+ "info": {
+  "source_colors": 8,
+  "console_colors": 8,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 240,
+  "area_size": 16,
+  "backdrop": "#001e74",
+  "palettes_used": 3,
+  "palettes_allowed": 4,
+  "colors_per_palette": 3,
+  "colors_without_backdrop": 7,
+  "tiles": 960,
+  "unique_tiles": 258,
+  "tile_budget": 256,
+  "flips_counted": false,
+  "palettes": [
+   [
+    "#006678",
+    "#38b4cc",
+    "#a0d6e4"
+   ],
+   [
+    "#8814b0",
+    "#ec6a64"
+   ],
+   [
+    "#ccd278",
+    "#e4c490"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

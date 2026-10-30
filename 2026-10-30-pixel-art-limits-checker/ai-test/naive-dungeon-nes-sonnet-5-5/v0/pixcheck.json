@@ -1,0 +1,279 @@
+{
+ "console": "nes",
+ "file": "art.png",
+ "size": [
+  256,
+  240
+ ],
+ "ok": false,
+ "errors": [
+  "46 of 240 16x16 attribute areas use more than 3 colors plus the shared backdrop (worst: x=64 y=16 with 11 plus backdrop)",
+  "13 colors (without backdrop) is more than 4 x 3 = 12 the backgrounds can hold at once",
+  "653 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)"
+ ],
+ "warnings": [],
+ "info": {
+  "source_colors": 14,
+  "console_colors": 14,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 240,
+  "area_size": 16,
+  "backdrop": "#7c7c7c",
+  "palettes_used": 2,
+  "palettes_allowed": 4,
+  "colors_per_palette": 3,
+  "colors_without_backdrop": 13,
+  "tiles": 960,
+  "unique_tiles": 653,
+  "tile_budget": 256,
+  "flips_counted": false,
+  "palettes": [
+   [
+    "#000000",
+    "#545454",
+    "#aaaaaa"
+   ],
+   [
+    "#2c2c30",
+    "#545454",
+    "#5c5c5c"
+   ]
+  ]
+ },
+ "bad_areas": [
+  {
+   "x": 48,
+   "y": 0,
+   "colors": 4
+  },
+  {
+   "x": 64,
+   "y": 0,
+   "colors": 6
+  },
+  {
+   "x": 80,
+   "y": 0,
+   "colors": 4
+  },
+  {
+   "x": 96,
+   "y": 0,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 0,
+   "colors": 7
+  },
+  {
+   "x": 128,
+   "y": 0,
+   "colors": 7
+  },
+  {
+   "x": 144,
+   "y": 0,
+   "colors": 4
+  },
+  {
+   "x": 160,
+   "y": 0,
+   "colors": 4
+  },
+  {
+   "x": 176,
+   "y": 0,
+   "colors": 6
+  },
+  {
+   "x": 192,
+   "y": 0,
+   "colors": 4
+  },
+  {
+   "x": 48,
+   "y": 16,
+   "colors": 4
+  },
+  {
+   "x": 64,
+   "y": 16,
+   "colors": 11
+  },
+  {
+   "x": 80,
+   "y": 16,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 16,
+   "colors": 6
+  },
+  {
+   "x": 128,
+   "y": 16,
+   "colors": 6
+  },
+  {
+   "x": 160,
+   "y": 16,
+   "colors": 4
+  },
+  {
+   "x": 176,
+   "y": 16,
+   "colors": 11
+  },
+  {
+   "x": 192,
+   "y": 16,
+   "colors": 5
+  },
+  {
+   "x": 16,
+   "y": 32,
+   "colors": 5
+  },
+  {
+   "x": 32,
+   "y": 32,
+   "colors": 4
+  },
+  {
+   "x": 48,
+   "y": 32,
+   "colors": 6
+  },
+  {
+   "x": 64,
+   "y": 32,
+   "colors": 9
+  },
+  {
+   "x": 80,
+   "y": 32,
+   "colors": 4
+  },
+  {
+   "x": 96,
+   "y": 32,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 32,
+   "colors": 6
+  },
+  {
+   "x": 128,
+   "y": 32,
+   "colors": 6
+  },
+  {
+   "x": 144,
+   "y": 32,
+   "colors": 4
+  },
+  {
+   "x": 160,
+   "y": 32,
+   "colors": 4
+  },
+  {
+   "x": 176,
+   "y": 32,
+   "colors": 9
+  },
+  {
+   "x": 192,
+   "y": 32,
+   "colors": 5
+  },
+  {
+   "x": 208,
+   "y": 32,
+   "colors": 5
+  },
+  {
+   "x": 224,
+   "y": 32,
+   "colors": 5
+  },
+  {
+   "x": 16,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 32,
+   "y": 224,
+   "colors": 5
+  },
+  {
+   "x": 48,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 64,
+   "y": 224,
+   "colors": 5
+  },
+  {
+   "x": 80,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 96,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 112,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 128,
+   "y": 224,
+   "colors": 5
+  },
+  {
+   "x": 144,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 160,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 176,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 192,
+   "y": 224,
+   "colors": 5
+  },
+  {
+   "x": 208,
+   "y": 224,
+   "colors": 4
+  },
+  {
+   "x": 224,
+   "y": 224,
+   "colors": 4
+  }
+ ],
+ "unplaced": []
+}
