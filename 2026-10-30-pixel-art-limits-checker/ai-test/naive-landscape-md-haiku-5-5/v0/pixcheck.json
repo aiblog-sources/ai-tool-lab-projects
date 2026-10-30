@@ -1,0 +1,90 @@
+{
+ "console": "md",
+ "file": "art.png",
+ "size": [
+  320,
+  224
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 32,
+  "console_colors": 32,
+  "off_grid_colors": 0,
+  "max_snap_error": 3.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 1120,
+  "area_size": 8,
+  "backdrop": "#49246d",
+  "palettes_used": 4,
+  "palettes_allowed": 4,
+  "colors_per_palette": 15,
+  "colors_without_backdrop": 31,
+  "tiles": 1120,
+  "unique_tiles": 195,
+  "tile_budget": 1425,
+  "flips_counted": true,
+  "palettes": [
+   [
+    "#92496d",
+    "#924992",
+    "#b6496d",
+    "#b64992",
+    "#b66d49",
+    "#b66d6d",
+    "#b66d92",
+    "#db6d49",
+    "#db6d6d",
+    "#db6d92",
+    "#db9249",
+    "#db926d",
+    "#db92b6",
+    "#ff9249",
+    "#ff926d"
+   ],
+   [
+    "#242449",
+    "#24246d",
+    "#244949",
+    "#49496d",
+    "#494992",
+    "#496d6d",
+    "#6d496d",
+    "#6d4992",
+    "#6d6d92",
+    "#92496d",
+    "#924992",
+    "#926d92",
+    "#b66d92",
+    "#ffdb6d"
+   ],
+   [
+    "#244949",
+    "#496d6d",
+    "#6d4992",
+    "#92496d",
+    "#924992",
+    "#926d6d",
+    "#b64992",
+    "#b66d6d",
+    "#b66d92",
+    "#db926d",
+    "#db9292",
+    "#db92b6",
+    "#ffb66d",
+    "#ffb692",
+    "#ffdb6d"
+   ],
+   [
+    "#6d246d",
+    "#6d4992",
+    "#924992",
+    "#db92b6"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

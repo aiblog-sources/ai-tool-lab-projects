@@ -1,0 +1,65 @@
+{
+ "console": "md",
+ "file": "ai-test/naive-landscape-md-sonnet-5-5/v0/art.png",
+ "size": [
+  320,
+  224
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 20,
+  "console_colors": 20,
+  "off_grid_colors": 0,
+  "max_snap_error": 1.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 1120,
+  "area_size": 8,
+  "backdrop": "#49246d",
+  "palettes_used": 2,
+  "palettes_allowed": 4,
+  "colors_per_palette": 15,
+  "colors_without_backdrop": 19,
+  "tiles": 1120,
+  "unique_tiles": 452,
+  "tile_budget": 1425,
+  "flips_counted": true,
+  "palettes": [
+   [
+    "#000024",
+    "#240049",
+    "#24246d",
+    "#49006d",
+    "#6d246d",
+    "#6d496d",
+    "#92246d",
+    "#92496d",
+    "#b6496d",
+    "#b66d6d",
+    "#db4949",
+    "#db6d49",
+    "#ff6d49",
+    "#ff9249",
+    "#ffb649"
+   ],
+   [
+    "#000024",
+    "#240024",
+    "#240049",
+    "#24246d",
+    "#490049",
+    "#6d246d",
+    "#92246d",
+    "#b6496d",
+    "#b66d6d",
+    "#db6d49",
+    "#ffdb49",
+    "#ffff6d"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

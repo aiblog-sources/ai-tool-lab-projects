@@ -1,0 +1,3 @@
+pixcheck nes background art.png 256x240: FAIL
+  error: 258 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)
+  source_colors=8, console_colors=8, backdrop=#001e74, packing=greedy, palettes_used=3, palettes_allowed=4, colors_per_palette=3, unique_tiles=258, tile_budget=256

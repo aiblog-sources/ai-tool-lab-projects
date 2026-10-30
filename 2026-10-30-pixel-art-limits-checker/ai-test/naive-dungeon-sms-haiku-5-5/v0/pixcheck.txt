@@ -1,0 +1,4 @@
+pixcheck sms background art.png 256x192: PASS
+  warning: 185 of 187 colors are off the console's color grid; they will shift when converted (#91887f->#aaaa55, #908880->#aaaaaa, #90887f->#aaaa55)
+  warning: 187 source colors collapse to 11 console colors
+  source_colors=187, console_colors=11, backdrop=None, packing=greedy, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=55, tile_budget=448

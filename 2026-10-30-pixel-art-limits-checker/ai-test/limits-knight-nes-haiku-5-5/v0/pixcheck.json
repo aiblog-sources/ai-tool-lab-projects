@@ -1,0 +1,36 @@
+{
+ "console": "nes",
+ "file": "art.png",
+ "size": [
+  64,
+  16
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 3,
+  "console_colors": 3,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "sprites 16x16",
+  "packing": "greedy",
+  "frames": 4,
+  "palettes_used": 1,
+  "palettes_allowed": 4,
+  "colors_per_palette": 3,
+  "widest_line_8px_sprites": 2,
+  "line_sprite_limit": 8,
+  "unique_tiles": 12,
+  "tile_budget": 256,
+  "palettes": [
+   [
+    "#000000",
+    "#b81e00",
+    "#bcbcbc"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

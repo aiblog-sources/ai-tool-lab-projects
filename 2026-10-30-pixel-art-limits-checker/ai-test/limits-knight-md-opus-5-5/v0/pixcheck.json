@@ -1,0 +1,45 @@
+{
+ "console": "md",
+ "file": "art.png",
+ "size": [
+  128,
+  32
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 12,
+  "console_colors": 12,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "sprites 32x32",
+  "packing": "greedy",
+  "frames": 4,
+  "palettes_used": 1,
+  "palettes_allowed": 4,
+  "colors_per_palette": 15,
+  "widest_line_8px_sprites": 4,
+  "line_sprite_limit": 20,
+  "unique_tiles": 35,
+  "tile_budget": 1425,
+  "palettes": [
+   [
+    "#000000",
+    "#242449",
+    "#244992",
+    "#496ddb",
+    "#6d4924",
+    "#6d6d92",
+    "#920024",
+    "#926d49",
+    "#b6b6db",
+    "#db2424",
+    "#dbb624",
+    "#ffffff"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

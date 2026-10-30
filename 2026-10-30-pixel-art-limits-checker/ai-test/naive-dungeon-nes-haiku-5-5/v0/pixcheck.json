@@ -1,0 +1,344 @@
+{
+ "console": "nes",
+ "file": "art.png",
+ "size": [
+  256,
+  240
+ ],
+ "ok": false,
+ "errors": [
+  "57 of 240 16x16 attribute areas use more than 3 colors plus the shared backdrop (worst: x=48 y=32 with 107 plus backdrop)",
+  "350 colors (without backdrop) is more than 4 x 3 = 12 the backgrounds can hold at once",
+  "511 unique 8x8 tiles, budget 256 (no tile flipping on NES backgrounds)"
+ ],
+ "warnings": [],
+ "info": {
+  "source_colors": 351,
+  "console_colors": 351,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 240,
+  "area_size": 16,
+  "backdrop": "#28242e",
+  "palettes_used": 4,
+  "palettes_allowed": 4,
+  "colors_per_palette": 3,
+  "colors_without_backdrop": 350,
+  "tiles": 960,
+  "unique_tiles": 511,
+  "tile_budget": 256,
+  "flips_counted": false,
+  "palettes": [
+   [
+    "#1e1a22",
+    "#585862",
+    "#807e88"
+   ],
+   [
+    "#1e1a22",
+    "#686670",
+    "#807e88"
+   ],
+   [
+    "#48404c",
+    "#5c5460",
+    "#7c7480"
+   ],
+   [
+    "#585862",
+    "#807e87",
+    "#807e88"
+   ]
+  ]
+ },
+ "bad_areas": [
+  {
+   "x": 112,
+   "y": 0,
+   "colors": 7
+  },
+  {
+   "x": 128,
+   "y": 0,
+   "colors": 6
+  },
+  {
+   "x": 16,
+   "y": 16,
+   "colors": 51
+  },
+  {
+   "x": 32,
+   "y": 16,
+   "colors": 63
+  },
+  {
+   "x": 48,
+   "y": 16,
+   "colors": 76
+  },
+  {
+   "x": 64,
+   "y": 16,
+   "colors": 37
+  },
+  {
+   "x": 80,
+   "y": 16,
+   "colors": 5
+  },
+  {
+   "x": 112,
+   "y": 16,
+   "colors": 4
+  },
+  {
+   "x": 128,
+   "y": 16,
+   "colors": 4
+  },
+  {
+   "x": 160,
+   "y": 16,
+   "colors": 4
+  },
+  {
+   "x": 176,
+   "y": 16,
+   "colors": 29
+  },
+  {
+   "x": 192,
+   "y": 16,
+   "colors": 67
+  },
+  {
+   "x": 208,
+   "y": 16,
+   "colors": 66
+  },
+  {
+   "x": 224,
+   "y": 16,
+   "colors": 60
+  },
+  {
+   "x": 16,
+   "y": 32,
+   "colors": 89
+  },
+  {
+   "x": 32,
+   "y": 32,
+   "colors": 81
+  },
+  {
+   "x": 48,
+   "y": 32,
+   "colors": 107
+  },
+  {
+   "x": 64,
+   "y": 32,
+   "colors": 77
+  },
+  {
+   "x": 80,
+   "y": 32,
+   "colors": 14
+  },
+  {
+   "x": 160,
+   "y": 32,
+   "colors": 11
+  },
+  {
+   "x": 176,
+   "y": 32,
+   "colors": 66
+  },
+  {
+   "x": 192,
+   "y": 32,
+   "colors": 73
+  },
+  {
+   "x": 208,
+   "y": 32,
+   "colors": 83
+  },
+  {
+   "x": 224,
+   "y": 32,
+   "colors": 101
+  },
+  {
+   "x": 16,
+   "y": 48,
+   "colors": 88
+  },
+  {
+   "x": 32,
+   "y": 48,
+   "colors": 62
+  },
+  {
+   "x": 48,
+   "y": 48,
+   "colors": 83
+  },
+  {
+   "x": 64,
+   "y": 48,
+   "colors": 63
+  },
+  {
+   "x": 80,
+   "y": 48,
+   "colors": 14
+  },
+  {
+   "x": 160,
+   "y": 48,
+   "colors": 13
+  },
+  {
+   "x": 176,
+   "y": 48,
+   "colors": 66
+  },
+  {
+   "x": 192,
+   "y": 48,
+   "colors": 91
+  },
+  {
+   "x": 208,
+   "y": 48,
+   "colors": 49
+  },
+  {
+   "x": 224,
+   "y": 48,
+   "colors": 84
+  },
+  {
+   "x": 16,
+   "y": 64,
+   "colors": 83
+  },
+  {
+   "x": 32,
+   "y": 64,
+   "colors": 90
+  },
+  {
+   "x": 48,
+   "y": 64,
+   "colors": 90
+  },
+  {
+   "x": 64,
+   "y": 64,
+   "colors": 48
+  },
+  {
+   "x": 80,
+   "y": 64,
+   "colors": 6
+  },
+  {
+   "x": 160,
+   "y": 64,
+   "colors": 9
+  },
+  {
+   "x": 176,
+   "y": 64,
+   "colors": 60
+  },
+  {
+   "x": 192,
+   "y": 64,
+   "colors": 99
+  },
+  {
+   "x": 208,
+   "y": 64,
+   "colors": 76
+  },
+  {
+   "x": 224,
+   "y": 64,
+   "colors": 75
+  },
+  {
+   "x": 16,
+   "y": 80,
+   "colors": 34
+  },
+  {
+   "x": 32,
+   "y": 80,
+   "colors": 40
+  },
+  {
+   "x": 48,
+   "y": 80,
+   "colors": 34
+  },
+  {
+   "x": 64,
+   "y": 80,
+   "colors": 13
+  },
+  {
+   "x": 176,
+   "y": 80,
+   "colors": 17
+  },
+  {
+   "x": 192,
+   "y": 80,
+   "colors": 40
+  },
+  {
+   "x": 208,
+   "y": 80,
+   "colors": 40
+  },
+  {
+   "x": 224,
+   "y": 80,
+   "colors": 28
+  },
+  {
+   "x": 32,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 48,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 192,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 208,
+   "y": 96,
+   "colors": 4
+  },
+  {
+   "x": 224,
+   "y": 96,
+   "colors": 4
+  }
+ ],
+ "unplaced": []
+}

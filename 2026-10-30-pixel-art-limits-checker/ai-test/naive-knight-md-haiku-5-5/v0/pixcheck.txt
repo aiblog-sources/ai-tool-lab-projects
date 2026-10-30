@@ -1,0 +1,3 @@
+pixcheck md sprites 32x32 art.png 128x32: PASS
+  warning: 11 of 11 colors are off the console's color grid; they will shift when converted (#7e121e->#6d0024, #12121c->#000024, #56341c->#492424)
+  source_colors=11, console_colors=11, packing=greedy, palettes_used=1, palettes_allowed=4, colors_per_palette=15, unique_tiles=27, tile_budget=1425, widest_line_8px_sprites=3, line_sprite_limit=20

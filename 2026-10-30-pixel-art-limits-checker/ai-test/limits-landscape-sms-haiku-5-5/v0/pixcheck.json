@@ -1,0 +1,50 @@
+{
+ "console": "sms",
+ "file": "art.png",
+ "size": [
+  256,
+  192
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 14,
+  "console_colors": 14,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 768,
+  "area_size": 8,
+  "backdrop": null,
+  "palettes_used": 1,
+  "palettes_allowed": 2,
+  "colors_per_palette": 16,
+  "colors_without_backdrop": 14,
+  "tiles": 768,
+  "unique_tiles": 50,
+  "tile_budget": 448,
+  "flips_counted": true,
+  "palettes": [
+   [
+    "#000055",
+    "#0000aa",
+    "#0055aa",
+    "#550055",
+    "#5500aa",
+    "#5555aa",
+    "#aa00aa",
+    "#aa5500",
+    "#aa55aa",
+    "#ff00aa",
+    "#ff5555",
+    "#ffaa55",
+    "#ffffaa",
+    "#ffffff"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

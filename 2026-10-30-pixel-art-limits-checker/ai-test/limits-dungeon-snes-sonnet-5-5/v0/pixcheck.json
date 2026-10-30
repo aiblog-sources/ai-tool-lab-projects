@@ -1,0 +1,76 @@
+{
+ "console": "snes",
+ "file": "art.png",
+ "size": [
+  256,
+  224
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 24,
+  "console_colors": 24,
+  "off_grid_colors": 0,
+  "max_snap_error": 4.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 896,
+  "area_size": 8,
+  "backdrop": "#101019",
+  "palettes_used": 3,
+  "palettes_allowed": 8,
+  "colors_per_palette": 15,
+  "colors_without_backdrop": 23,
+  "tiles": 896,
+  "unique_tiles": 510,
+  "tile_budget": 1024,
+  "flips_counted": true,
+  "palettes": [
+   [
+    "#211008",
+    "#29293a",
+    "#42425a",
+    "#4a2910",
+    "#6b4219",
+    "#737384",
+    "#845a29",
+    "#84635a",
+    "#8c8ca5",
+    "#adadbd",
+    "#c52910",
+    "#dead31",
+    "#ef7b19",
+    "#f7ce3a",
+    "#f7efad"
+   ],
+   [
+    "#211008",
+    "#29293a",
+    "#42425a",
+    "#4a2910",
+    "#5a5a73",
+    "#6b4219",
+    "#737384",
+    "#845a29",
+    "#84635a",
+    "#8c8ca5",
+    "#9c7b63",
+    "#adadbd",
+    "#c52910",
+    "#ef7b19"
+   ],
+   [
+    "#29293a",
+    "#315231",
+    "#3a3142",
+    "#4a7342",
+    "#524a5a",
+    "#6b6373",
+    "#847b84"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

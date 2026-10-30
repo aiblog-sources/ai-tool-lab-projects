@@ -1,0 +1,2 @@
+pixcheck nes sprites 16x16 art.png 64x16: PASS
+  source_colors=3, console_colors=3, packing=greedy, palettes_used=1, palettes_allowed=4, colors_per_palette=3, unique_tiles=10, tile_budget=256, widest_line_8px_sprites=2, line_sprite_limit=8

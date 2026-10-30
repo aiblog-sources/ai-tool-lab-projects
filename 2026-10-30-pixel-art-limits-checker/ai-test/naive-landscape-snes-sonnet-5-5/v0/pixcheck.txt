@@ -1,0 +1,7 @@
+pixcheck snes background art.png 256x224: FAIL
+  error: 2 of 896 tiles use more than 15 colors plus the shared backdrop (worst: x=16 y=160 with 18 plus backdrop)
+  error: the tile color sets do not fit in 8 palettes of 15 colors: 763 tiles left without a palette (greedy packing, 8 palettes used)
+  error: 158 colors (without backdrop) is more than 8 x 15 = 120 the backgrounds can hold at once
+  source_colors=159, console_colors=159, backdrop=#081029, packing=greedy, palettes_used=8, palettes_allowed=8, colors_per_palette=15, unique_tiles=727, tile_budget=1024
+  over the color limit at (x,y): (16,160) 18 colors; (56,168) 17 colors
+  no palette for (x,y): (0,0); (8,0); (16,0); (24,0); (32,0); (40,0); (48,0); (56,0); ... 755 more

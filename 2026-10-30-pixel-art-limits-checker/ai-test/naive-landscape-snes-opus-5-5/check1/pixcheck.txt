@@ -1,0 +1,3 @@
+pixcheck snes background art.png 256x224: PASS
+  warning: 65 source colors collapse to 64 console colors
+  source_colors=65, console_colors=64, backdrop=#8c317b, packing=greedy, palettes_used=7, palettes_allowed=8, colors_per_palette=15, unique_tiles=442, tile_budget=1024

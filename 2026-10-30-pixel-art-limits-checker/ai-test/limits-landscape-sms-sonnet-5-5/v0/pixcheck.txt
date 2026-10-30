@@ -1,0 +1,2 @@
+pixcheck sms background art.png 256x192: PASS
+  source_colors=11, console_colors=11, backdrop=None, packing=greedy, palettes_used=1, palettes_allowed=2, colors_per_palette=16, unique_tiles=224, tile_budget=448

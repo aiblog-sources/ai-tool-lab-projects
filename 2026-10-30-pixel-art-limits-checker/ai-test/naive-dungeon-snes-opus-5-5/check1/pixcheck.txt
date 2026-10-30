@@ -1,0 +1,2 @@
+pixcheck snes background art.png 256x224: PASS
+  source_colors=59, console_colors=59, backdrop=#5a525a, packing=greedy, palettes_used=8, palettes_allowed=8, colors_per_palette=15, unique_tiles=610, tile_budget=1024
