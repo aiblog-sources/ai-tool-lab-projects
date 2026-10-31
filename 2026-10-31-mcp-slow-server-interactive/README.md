@@ -1,9 +1,9 @@
 # Does a slow MCP server miss the first prompt in Claude Code?
 
-**Finding:** in an interactive Claude Code session (2.1.316), a stdio MCP server that took 5 seconds or more to
-connect was not usable on the first prompt in 43 of 45 runs (servers 3 s or slower), with `alwaysLoad` or without it. Claude searched for
+**Finding:** in an interactive Claude Code session (2.1.316), a stdio MCP server that took 3 seconds or more to
+connect was not usable on the first prompt in 43 of 45 runs, with `alwaysLoad` or without it. Claude searched for
 the tool, found unrelated tools, and answered that it had no data. Headless `claude -p` waited for the same server and
-answered right in 4 of 4 runs. A server slower than 30 s timed out in both modes unless `MCP_TIMEOUT` was raised.
+answered right in 4 of 4 runs (8 of 8 with the undelayed server). A server slower than 30 s timed out in both modes unless `MCP_TIMEOUT` was raised.
 
 Write-up: https://aitoollabs.dev/posts/claude-code-mcp-server-still-connecting/
 
