@@ -1,0 +1,20 @@
+[01m[Ksrc/main.c:158:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:158:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function '[01m[KVDP_loadTileData[m[K'
+[01m[Ksrc/main.c:163:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:164:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:165:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:176:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:178:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:180:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:192:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+[01m[Ksrc/main.c:194:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use TILE_USER_INDEX instead.
+[01m[Ksrc/main.c:110:40:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K)[m[K' token
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

@@ -1,0 +1,2 @@
+1200 frames checked. 0 (0.0%) lost sprite pixels to a per-line limit.
+Most sprites on one line: 10 (limit 20 in H40, 16 in H32). Widest line: 80 pixels of sprites (limit 320 in H40, 256 in H32). Largest sprite list: 66 entries (limit 80 in H40, 64 in H32).

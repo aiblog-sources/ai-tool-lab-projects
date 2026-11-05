@@ -1,0 +1,6 @@
+frames 3600, wall 2.65 s (1360 frames/s)
+frames with lost sprite pixels: 1320; lines over a limit: 39360; lines with on-screen loss: 35520
+most sprites lost in one frame: 4 (frame 1725)
+frames with the VDP overflow flag set: 720
+frames with sprite table writes during active display: 3
+against the picture: 33318 lines really differ; predicted and real 33318, predicted only 2202, real only 0 (first real-only frame -1)

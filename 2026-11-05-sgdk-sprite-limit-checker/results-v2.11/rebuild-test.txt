@@ -1,0 +1,30 @@
+SGDK 2.11, opt_level MAX:
+build 1 ceff24cd027b  phase 10: lost 6, 552 px; phase 11: lost 6, 552 px; phase 12: lost 6, 552 px
+build 2 4244a6b8e99b  phase 10: lost 2, 586 px; phase 11: lost 2, 586 px; phase 12: lost 2, 586 px
+build 3 22d606acd08f  phase 10: lost 2, 586 px; phase 11: lost 2, 586 px; phase 12: lost 2, 586 px
+build 4 6ff1961c086f  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 5 e3db2b2b5207  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+SGDK 2.11, opt_level SLOW:
+build 1 8073ddd577f7  phase 10: lost 2, 700 px; phase 11: lost 2, 700 px; phase 12: lost 2, 700 px
+build 2 47b7443ff5b8  phase 10: lost 7, 698 px; phase 11: lost 7, 698 px; phase 12: lost 7, 698 px
+build 3 3ea987b8d20f  phase 10: lost 7, 782 px; phase 11: lost 7, 782 px; phase 12: lost 7, 782 px
+build 4 aeaff208c676  phase 10: lost 7, 782 px; phase 11: lost 7, 782 px; phase 12: lost 7, 782 px
+build 5 6ff1961c086f  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+SGDK 2.11, opt_level MEDIUM:
+build 1 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 2 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 3 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 4 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 5 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+SGDK 2.11, opt_level FAST:
+build 1 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 2 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 3 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 4 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 5 9e6c45603412  phase 10: lost 2, 438 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+SGDK 2.09 image, opt_level MAX:
+build 1 91979f1dbc20  phase 10: lost 2, 438 px; phase 11: lost 2, 586 px; phase 12: lost 2, 700 px
+build 2 b18bde094b84  phase 10: lost 7, 698 px; phase 11: lost 8, 796 px; phase 12: lost 2, 586 px
+build 3 3626a7e2ca2a  phase 10: lost 2, 586 px; phase 11: lost 2, 438 px; phase 12: lost 2, 438 px
+build 4 710ef0bea83e  phase 10: lost 7, 698 px; phase 11: lost 2, 586 px; phase 12: lost 2, 586 px
+build 5 9158c5387e35  phase 10: lost 2, 700 px; phase 11: lost 6, 636 px; phase 12: lost 2, 438 px

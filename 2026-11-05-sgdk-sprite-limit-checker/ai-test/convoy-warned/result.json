@@ -1,0 +1,30 @@
+{
+ "id": "convoy-warned",
+ "scene": "convoy",
+ "variant": "warned",
+ "model": "claude-sonnet-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "frames": 1200,
+  "frames_lost": 0,
+  "pct_lost": 0.0,
+  "max_sprites_lost": 0,
+  "real_lines": 0,
+  "real_pixels": 0,
+  "real_only": 0,
+  "predicted_only": 0,
+  "max_chain": 1,
+  "max_count": 1,
+  "max_dots": 16,
+  "flag_frames": 0,
+  "off_frames": 0,
+  "late_frames": 0,
+  "p95_load": 3.8,
+  "peak_load": 3.8
+ },
+ "cost_usd": 0.2076,
+ "input_tokens": 2,
+ "output_tokens": 20429,
+ "wall_s": 158.8
+}

@@ -1,0 +1,30 @@
+{
+ "id": "rain-plain",
+ "scene": "rain",
+ "variant": "plain",
+ "model": "claude-sonnet-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "frames": 1200,
+  "frames_lost": 0,
+  "pct_lost": 0.0,
+  "max_sprites_lost": 0,
+  "real_lines": 0,
+  "real_pixels": 0,
+  "real_only": 0,
+  "predicted_only": 0,
+  "max_chain": 72,
+  "max_count": 15,
+  "max_dots": 120,
+  "flag_frames": 0,
+  "off_frames": 0,
+  "late_frames": 1200,
+  "p95_load": 33.6,
+  "peak_load": 35.2
+ },
+ "cost_usd": 0.09,
+ "input_tokens": 2,
+ "output_tokens": 8681,
+ "wall_s": 68.6
+}

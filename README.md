@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [mdsprites: a Mega Drive sprite limit checker for SGDK ROMs](2026-11-05-sgdk-sprite-limit-checker/) | [Sega Genesis sprite limit: why SGDK sprites disappear](https://aitoollabs.dev/posts/sgdk-sprite-limit-checker/) | Shipped |
 | [Does a slow MCP server miss the first prompt in Claude Code?](2026-10-31-mcp-slow-server-interactive/) | [Claude Code: a slow MCP server misses your first prompt](https://aitoollabs.dev/posts/claude-code-mcp-server-still-connecting/) | Shipped |
 | [pixcheck: does this pixel art fit the NES, Master System, SNES or Mega Drive?](2026-10-30-pixel-art-limits-checker/) | [A pixel art checker for NES, SNES, SMS and Mega Drive limits](https://aitoollabs.dev/posts/pixel-art-console-limits-checker/) | Shipped |
 | [sgdklint: a performance lint for SGDK code, with measured 68000 costs](2026-10-29-sgdk-perf-lint/) | [SGDK performance: a lint for slow code, tested on 40 AI games](https://aitoollabs.dev/posts/sgdk-performance-lint/) | Partial |

@@ -1,0 +1,30 @@
+{
+ "id": "convoy-plain",
+ "scene": "convoy",
+ "variant": "plain",
+ "model": "claude-sonnet-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "frames": 1200,
+  "frames_lost": 0,
+  "pct_lost": 0.0,
+  "max_sprites_lost": 0,
+  "real_lines": 0,
+  "real_pixels": 0,
+  "real_only": 0,
+  "predicted_only": 0,
+  "max_chain": 15,
+  "max_count": 10,
+  "max_dots": 304,
+  "flag_frames": 0,
+  "off_frames": 0,
+  "late_frames": 0,
+  "p95_load": 5.6,
+  "peak_load": 5.7
+ },
+ "cost_usd": 0.1168,
+ "input_tokens": 2,
+ "output_tokens": 11351,
+ "wall_s": 93.2
+}
