@@ -1,0 +1,6 @@
+Sprite frame 'spr_box8_animation0_frame0' - 1 VDP sprites and 1 tiles
+Sprite frame 'spr_box16_animation0_frame0' - 1 VDP sprites and 4 tiles
+Sprite frame 'spr_box32_animation0_frame0' - 1 VDP sprites and 16 tiles
+Sprite frame 'spr_disc_bal_animation0_frame0' - 4 VDP sprites and 36 tiles
+Sprite frame 'spr_disc_spr_animation0_frame0' - 4 VDP sprites and 36 tiles
+Sprite frame 'spr_disc_tile_animation0_frame0' - 4 VDP sprites and 36 tiles

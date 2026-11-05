@@ -1,0 +1,5 @@
+[01m[Ksrc/main.c:345:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_toRoundedInt(..) instead.
+[01m[Ksrc/main.c:345:92:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:356:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_toRoundedInt(..) instead.
+[01m[Ksrc/main.c:357:11:[m[K [01;31m[Kerror: [m[KThis method is deprecated, use F16_toRoundedInt(..) instead.
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

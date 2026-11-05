@@ -1,0 +1,8 @@
+1200 frames checked. 147 (12.2%) lost sprite pixels to a per-line limit.
+Most sprites on one line: 20 (limit 20 in H40, 16 in H32). Widest line: 320 pixels of sprites (limit 320 in H40, 256 in H32). Largest sprite list: 23 entries (limit 80 in H40, 64 in H32).
+In those frames: median 1 sprites lost, worst 1; median 16 lines affected, worst 16.
+Why: dot_limit 147
+The VDP overflow flag was set in 147 of those 147 frames (it does not see the dot limit).
+Screen lines where the losses start: 104-111: 140, 208-215: 7
+Worst frame 106:
+  table entry 20: 16x16 at x=-14 y=104, tile 16, 16 lines from line 104, dot_limit
