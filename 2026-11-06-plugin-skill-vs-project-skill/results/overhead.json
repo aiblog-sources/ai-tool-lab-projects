@@ -1,0 +1,92 @@
+[
+  {
+    "name": "none",
+    "input_tokens": 17047,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "project-skill",
+    "input_tokens": 17090,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-notes",
+    "input_tokens": 17094,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-kb",
+    "input_tokens": 17094,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both-skills",
+    "input_tokens": 17137,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none",
+    "input_tokens": 17047,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "project-skill",
+    "input_tokens": 17090,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-notes",
+    "input_tokens": 17094,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-kb",
+    "input_tokens": 17094,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both-skills",
+    "input_tokens": 17137,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "none",
+    "input_tokens": 17047,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "project-skill",
+    "input_tokens": 17090,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-notes",
+    "input_tokens": 17094,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "plugin-kb",
+    "input_tokens": 17094,
+    "turns": 1,
+    "answer": "OK"
+  },
+  {
+    "name": "both-skills",
+    "input_tokens": 17137,
+    "turns": 1,
+    "answer": "OK"
+  }
+]

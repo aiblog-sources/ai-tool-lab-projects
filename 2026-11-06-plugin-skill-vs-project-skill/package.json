@@ -1,0 +1,15 @@
+{
+  "name": "plugin-skill-vs-project-skill",
+  "version": "1.0.0",
+  "description": "Round three of Skill vs MCP in Claude Code: why a plugin Skill was picked less often than the same Skill in the project.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  }
+}

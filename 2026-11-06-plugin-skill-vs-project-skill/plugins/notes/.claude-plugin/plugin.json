@@ -1,0 +1,6 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Full-text search over a folder of Markdown notes, as a Skill.",
+  "license": "MIT"
+}
