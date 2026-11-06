@@ -1,0 +1,11 @@
+{
+  "sonnet-project": {"model": "sonnet", "mcp": "real", "skill": "script", "plugin": null},
+  "sonnet-plugin-notes": {"model": "sonnet", "mcp": "real", "skill": null, "plugin": "notes"},
+  "sonnet-plugin-kb": {"model": "sonnet", "mcp": "real", "skill": null, "plugin": "kb"},
+  "sonnet-both-skills": {"model": "sonnet", "mcp": "real", "skill": "script", "plugin": "kb"},
+  "sonnet-plugin-own-mcp": {"model": "sonnet", "mcp": null, "skill": null, "plugin": "kb-with-mcp", "strict": false},
+  "sonnet-plugin-kb-nonstrict": {"model": "sonnet", "mcp": "real", "skill": null, "plugin": "kb", "strict": false},
+  "opus-project": {"model": "opus", "mcp": "real", "skill": "script", "plugin": null},
+  "opus-plugin-notes": {"model": "opus", "mcp": "real", "skill": null, "plugin": "notes"},
+  "opus-plugin-kb": {"model": "opus", "mcp": "real", "skill": null, "plugin": "kb"}
+}
