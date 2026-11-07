@@ -1,0 +1,32 @@
+{
+ "id": "boss-warned",
+ "scene": "boss",
+ "variant": "warned",
+ "model": "claude-sonnet-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "frames": 1140,
+  "loops": 1140,
+  "fps": 60.0,
+  "dropped": 0,
+  "max_queued": 136,
+  "median_queued": 136.0,
+  "frames_over_6900": 0,
+  "spill_frames": 0,
+  "max_spill_bytes": 0,
+  "last_spill_line": -1,
+  "sat_late_frames": 0,
+  "cram_late_frames": 0,
+  "carry_frames": 0,
+  "short_bytes": 0,
+  "cpu_vdp_bytes_per_frame": 32,
+  "mean_load": 10.6,
+  "p95_load": 21.0
+ },
+ "cost_usd": 0.259,
+ "calls": 1,
+ "input_tokens": 2,
+ "output_tokens": 25546,
+ "wall_s": 194.2
+}

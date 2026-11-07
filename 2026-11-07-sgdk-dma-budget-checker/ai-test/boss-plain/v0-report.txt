@@ -1,0 +1,17 @@
+NTSC 60 Hz, 262 lines per frame, 1140 frames checked (from frame 360)
+mean CPU load 24.2%, dropped frames 158
+largest SGDK queue: 264 bytes (frame 518)
+frames with DMA during active display: 6
+frames that ended with a DMA still running (it finishes in the next frame): 3
+frames where SAT (sprite table) DMA landed during display: 0
+frames where CRAM DMA landed during display: 0
+frames where the VDP got fewer bytes than SGDK queued (counting bytes that spill into the next frame as missing): 0 (0 bytes)
+
+frames with the most DMA during display:
+  frame 388: queued 0, sent 0 in VBlank + 2904 during lines 62-223, tiles 2904
+  frame 509: queued 0, sent 0 in VBlank + 2682 during lines 223-223, tiles 2682
+  frame 448: queued 0, sent 0 in VBlank + 2558 during lines 81-223, tiles 2558
+  frame 449: queued 0, sent 0 in VBlank + 1538 during lines 223-223, tiles 1538
+  frame 508: queued 0, sent 0 in VBlank + 1414 during lines 145-223, tiles 1414
+  frame 389: queued 0, sent 0 in VBlank + 1192 during lines 223-223, tiles 1192
+note: idle function VDP_waitVSync not in symbols
