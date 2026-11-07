@@ -1,0 +1,56 @@
+
+ntsc.csv
+loops/s: game loops (frames with a DMA flush) per second; queued: SGDK queue per loop (median);
+start: line of the first DMA write; vblank/display: bytes sent per frame (median of flush frames);
+last: last display line with DMA (max); lost: (queued - sent) per loop over the phase;
+SAT ok: loops whose sprite table reached the VDP; SAT in disp: those landing after line 0 (median line)
+
+phase                                    loops/s queued start vblank display last  lost    SAT ok  SAT in disp  load
+ 1  0 KB H40 default                        60.0     64   225     64       0   -1     0   87/87      0 (  -1)  55.0
+ 2  2 KB H40 default                        60.0   2112   225   2112       0   -1     0   87/87      0 (  -1)  60.2
+ 3  4 KB H40 default                        60.0   4160   225   4160       0   -1     0   87/87      0 (  -1)  65.4
+ 4  6 KB H40 default                        60.0   6208   225   6208       0   -1     0   87/87      0 (  -1)  70.5
+ 5  7 KB H40 default                        60.0   7232   225   6927     305   17     0   88/88     88 (  13)  78.9
+ 6  8 KB H40 default                        35.6   8256   226   6912    1344   83     0   89/89     89 (  71)  61.5
+ 7 10 KB H40 default                        30.2  10304   226   6908    3396  189     0   89/89     89 ( 186)  74.2
+ 8 12 KB H40 default                        30.2  12352   226   6915    4016  223     0   89/88      0 (  -1)  82.6
+ 9 16 KB H40 default                        30.2  16448   226   6907    4016  223     0   89/88      0 (  -1)  88.0
+10  8 KB H40 ignore                         60.0   8256   225   6928     240   13  1088    0/87      0 (  -1)  78.3
+11 10 KB H40 ignore                         60.0  10304   225   6922     246   13  3136    0/88      0 (  -1)  80.0
+12 12 KB H40 ignore                         60.0  12352   225   6930     238   13  5184    0/88      0 (  -1)  81.5
+13 16 KB H40 ignore                         60.0  16448   225   6930     238   13  9280    0/88      0 (  -1)  84.8
+14 12 KB H40 default SAT first              30.2  12352   225   6876    4016  223     0   89/89      0 (  -1)  82.6
+15 12 KB H40 ignore SAT first               60.0  12352   225   6208       0   -1  6144   87/87      0 (  -1)  75.4
+16 12 KB H40 default split over 2 frames    60.0   6208   225   6208       0   -1     0   87/87      0 (  -1)  69.9
+17  4 KB H32 default                        60.0   4160   225   4160       0   -1     0   88/88      0 (  -1)  66.2
+18  6 KB H32 default                        60.0   6208   225   5675     533   33     0   88/88     88 (  29)  83.4
+19  8 KB H32 default                        30.2   8256   226   5656    2600  163     0   89/89     89 ( 159)  68.2
+20 12 KB H32 default                        30.2  12352   226   5662    3568  223     0   77/77      0 (  -1)  84.0
+
+pal.csv
+loops/s: game loops (frames with a DMA flush) per second; queued: SGDK queue per loop (median);
+start: line of the first DMA write; vblank/display: bytes sent per frame (median of flush frames);
+last: last display line with DMA (max); lost: (queued - sent) per loop over the phase;
+SAT ok: loops whose sprite table reached the VDP; SAT in disp: those landing after line 0 (median line)
+
+phase                                    loops/s queued start vblank display last  lost    SAT ok  SAT in disp  load
+ 1  0 KB H40 default                        50.0     64   225     64       0   -1     0   87/87      0 (  -1)  46.3
+ 2  2 KB H40 default                        50.0   2112   225   2112       0   -1     0   87/87      0 (  -1)  50.7
+ 3  4 KB H40 default                        50.0   4160   225   4160       0   -1     0   87/87      0 (  -1)  55.1
+ 4  6 KB H40 default                        50.0   6208   225   6208       0   -1     0   87/87      0 (  -1)  59.5
+ 5  7 KB H40 default                        50.0   7232   225   7232       0   -1     0   87/87      0 (  -1)  61.8
+ 6  8 KB H40 default                        50.0   8256   225   8256       0   -1     0   87/87      0 (  -1)  64.1
+ 7 10 KB H40 default                        50.0  10304   225  10304       0   -1     0   87/87      0 (  -1)  68.6
+ 8 12 KB H40 default                        50.0  12352   225  12352       0   -1     0   87/87      0 (  -1)  73.0
+ 9 16 KB H40 default                        50.0  16448   225  16448       0   -1     0   87/87      0 (  -1)  82.0
+10  8 KB H40 ignore                         50.0   8256   225   7168       0   -1  1088    0/87      0 (  -1)  62.4
+11 10 KB H40 ignore                         50.0  10304   225   7168       0   -1  3136    0/87      0 (  -1)  63.7
+12 12 KB H40 ignore                         50.0  12352   225   7168       0   -1  5184    0/87      0 (  -1)  65.1
+13 16 KB H40 ignore                         50.0  16448   225   7168       0   -1  9280    0/87      0 (  -1)  67.8
+14 12 KB H40 default SAT first              50.0  12352   225  12352       0   -1     0   87/87      0 (  -1)  73.0
+15 12 KB H40 ignore SAT first               50.0  12352   225   7232       0   -1  5120   87/87      0 (  -1)  65.2
+16 12 KB H40 default split over 2 frames    50.0   6208   225   6208       0   -1     0   87/87      0 (  -1)  58.6
+17  4 KB H32 default                        50.0   4160   225   4160       0   -1     0   88/88      0 (  -1)  55.5
+18  6 KB H32 default                        50.0   6208   225   6208       0   -1     0   88/88      0 (  -1)  60.7
+19  8 KB H32 default                        50.0   8256   225   8256       0   -1     0   88/88      0 (  -1)  66.1
+20 12 KB H32 default                        50.0  12352   225  12352       0   -1     0   83/83      0 (  -1)  75.6
