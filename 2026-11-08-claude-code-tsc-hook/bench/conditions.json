@@ -1,0 +1,7 @@
+{
+  "none":      {"claude_md": false, "hooks": null},
+  "claude-md": {"claude_md": true,  "hooks": null},
+  "post-exit1": {"claude_md": false, "hooks": {"PostToolUse": {"matcher": "Edit|Write|MultiEdit", "args": "post 1"}}},
+  "post-exit2": {"claude_md": false, "hooks": {"PostToolUse": {"matcher": "Edit|Write|MultiEdit", "args": "post 2"}}},
+  "stop-exit2": {"claude_md": false, "hooks": {"Stop": {"matcher": null, "args": "stop 2"}}}
+}
