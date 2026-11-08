@@ -1,0 +1,5 @@
+{
+ "id": "combo",
+ "prompt": "Six changes to this codebase, all in one go:\n1. Add a `refunded` order status. A refunded order is closed, it can only be reached from `paid` or `shipped`, and it counts as zero revenue in the reports.\n2. Store line item prices as integer cents: replace `LineItem.unitPrice` with `unitPriceCents`. Everything that shows money (formatted orders, emails, the CSV export) must still print dollars exactly as it does today.\n3. `OrderStore.findOrder` should return `undefined` for an unknown id instead of throwing. `updateStatus` should still throw for an unknown id, and the CLI should print a friendly message instead of crashing.\n4. Make every `OrderStore` method async (return Promises) so we can back it with a database later. Update the rest of the code to match.\n5. Orders need a required `currency` field: 'USD', 'EUR' or 'BRL'. Prices are in the order's currency, and formatted amounts should use its symbol ($, \u20ac, R$). The seed orders are USD.\n6. Replace `Customer.name` with `firstName` and `lastName`. Emails should greet the customer by first name; everywhere else shows the full name.",
+ "tsc_only": true
+}

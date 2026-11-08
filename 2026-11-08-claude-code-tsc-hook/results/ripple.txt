@@ -1,0 +1,6 @@
+refunded         18 errors in 16 files
+cents            24 errors in 21 files
+find-undefined   77 errors in 17 files
+async-store      94 errors in 17 files
+currency          7 errors in  5 files
+name-split       25 errors in 24 files

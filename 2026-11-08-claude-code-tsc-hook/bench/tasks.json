@@ -1,0 +1,8 @@
+[
+  {"id": "refunded", "prompt": "Add a `refunded` order status. A refunded order is closed, it can only be reached from `paid` or `shipped`, and it counts as zero revenue in the reports."},
+  {"id": "cents", "prompt": "Store line item prices as integer cents: replace `LineItem.unitPrice` with `unitPriceCents`. Everything that shows money (formatted orders, emails, the CSV export) must still print dollars exactly as it does today."},
+  {"id": "find-undefined", "prompt": "`OrderStore.findOrder` should return `undefined` for an unknown id instead of throwing. `updateStatus` should still throw for an unknown id, and the CLI should print a friendly message instead of crashing."},
+  {"id": "async-store", "prompt": "Make every `OrderStore` method async (return Promises) so we can back it with a database later. Update the rest of the code to match."},
+  {"id": "currency", "prompt": "Orders need a required `currency` field: 'USD', 'EUR' or 'BRL'. Prices are in the order's currency, and formatted amounts should use its symbol ($, €, R$). The seed orders are USD."},
+  {"id": "name-split", "prompt": "Replace `Customer.name` with `firstName` and `lastName`. Emails should greet the customer by first name; everywhere else shows the full name."}
+]

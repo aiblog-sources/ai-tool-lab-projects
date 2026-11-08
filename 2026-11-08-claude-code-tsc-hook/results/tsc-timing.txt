@@ -1,0 +1,8 @@
+Measured on an idle machine (load average 0.3) after the benchmark runs.
+tsc --noEmit on fixture/ (53 files), 20 runs each, wall seconds
+TypeScript Version 7.0.2
+0.19 0.18 0.18 0.18 0.16 0.17 0.17 0.18 0.18 0.18 0.21 0.24 0.21 0.18 0.18 0.18 0.17 0.18 0.19 0.18 
+TypeScript Version 5.9.3
+1.29 1.33 1.28 1.31 1.28 1.27 1.29 1.31 1.28 1.31 1.30 1.26 1.28 1.27 1.28 1.31 1.30 1.31 1.28 1.32 
+hook script, PostToolUse input for a .ts file (includes node JSON parse):
+220ms 221ms 223ms 217ms 213ms 226ms 232ms 224ms 220ms 278ms 300ms 223ms 227ms 227ms 241ms 235ms 226ms 222ms 226ms 218ms 
