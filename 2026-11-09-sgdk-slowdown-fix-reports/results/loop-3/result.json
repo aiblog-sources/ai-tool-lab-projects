@@ -1,0 +1,23 @@
+{
+ "id": "fighters-loop-3",
+ "model": "claude-sonnet-5-5",
+ "budget_usd": 4.0,
+ "builds": true,
+ "cost_usd": 0.8180513,
+ "turns": 77,
+ "subtype": "success",
+ "is_error": false,
+ "claude_s": 391.5,
+ "check_calls": 26,
+ "claude_code_version": null,
+ "frames": 800,
+ "loops": 800,
+ "fps": 60.0,
+ "dropped": 0,
+ "mean_load": 19.7,
+ "p95_load": 36.3,
+ "spill_frames": 0,
+ "max_queued": 3776,
+ "load_mismatch_frames": 0,
+ "max_loop_cycles": 107608
+}

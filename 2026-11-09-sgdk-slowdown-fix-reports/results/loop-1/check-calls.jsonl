@@ -1,0 +1,5 @@
+{"call": 0, "time": "03:28:00", "builds": true, "frames": 800, "loops": 480, "fps": 36.0, "dropped": 320, "mean_load": 70.5, "p95_load": 99.9, "spill_frames": 0, "max_queued": 3776, "load_mismatch_frames": 0, "max_loop_cycles": 226410}
+{"call": 1, "time": "03:28:29", "builds": true, "frames": 800, "loops": 346, "fps": 25.9, "dropped": 454, "mean_load": 64.6, "p95_load": 99.9, "spill_frames": 0, "max_queued": 3776, "load_mismatch_frames": 0, "max_loop_cycles": 261949}
+{"call": 2, "time": "03:28:53", "builds": true, "frames": 800, "loops": 480, "fps": 36.0, "dropped": 320, "mean_load": 65.4, "p95_load": 99.9, "spill_frames": 0, "max_queued": 3776, "load_mismatch_frames": 0, "max_loop_cycles": 182447}
+{"call": 3, "time": "03:29:34", "builds": true, "frames": 800, "loops": 800, "fps": 60.0, "dropped": 0, "mean_load": 19.9, "p95_load": 37.0, "spill_frames": 0, "max_queued": 3776, "load_mismatch_frames": 0, "max_loop_cycles": 115747}
+{"call": 4, "time": "03:29:42", "builds": true, "frames": 800, "loops": 800, "fps": 60.0, "dropped": 0, "mean_load": 19.9, "p95_load": 37.0, "spill_frames": 0, "max_queued": 3776, "load_mismatch_frames": 0, "max_loop_cycles": 115747}

@@ -1,0 +1,14 @@
+{
+ "builds": true,
+ "build_rounds": 0,
+ "frames": 800,
+ "loops": 427,
+ "fps": 32.0,
+ "dropped": 373,
+ "mean_load": 59.8,
+ "p95_load": 99.9,
+ "spill_frames": 0,
+ "max_queued": 3840,
+ "load_mismatch_frames": 0,
+ "max_loop_cycles": 149602
+}

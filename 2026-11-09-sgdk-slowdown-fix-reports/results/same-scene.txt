@@ -1,0 +1,5 @@
+fighters-baseline-0: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-1-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-2-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-3-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-none-2-r2-0: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
