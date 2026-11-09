@@ -1,0 +1,35 @@
+frames 1500 (summary from frame 700)
+mean CPU load 59.8% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 373
+frames with DMA during active display: 0; max DMA 3840 bytes in frame 714
+
+whole run, cycles by function:
+   54.0%  main.isra.0
+   40.2%  VDP_waitVBlank
+    2.9%  flushQueue
+    1.2%  DMA_queueDmaFast
+    0.5%  read6Btn
+    0.4%  JOY_update
+    0.3%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.1%  no_bmp_task
+    0.1%  no_user_task
+    0.0%  SYS_getAndSetInterruptMaskLevel
+    0.0%  SYS_setInterruptMaskLevel
+    0.0%  no_xgm_task
+
+busiest frames:
+  frame 865: 127901 busy cycles (100% of a frame), idle entered at line -1
+       117964  main.isra.0
+         6305  flushQueue
+         1266  read6Btn
+         1054  JOY_update
+  frame 1075: 127901 busy cycles (100% of a frame), idle entered at line -1
+       117964  main.isra.0
+         6305  flushQueue
+         1266  read6Btn
+         1054  JOY_update
+  frame 1285: 127901 busy cycles (100% of a frame), idle entered at line -1
+       117964  main.isra.0
+         6305  flushQueue
+         1266  read6Btn
+         1054  JOY_update

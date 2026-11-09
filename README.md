@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [mdperf: SGDK slowdown reports, and which one helps Claude fix a slow scene](2026-11-09-sgdk-slowdown-fix-reports/) | [SGDK slowdown: can Claude fix it from a profiler report?](https://aitoollabs.dev/posts/sgdk-slowdown-claude-fix/) | Shipped |
 | [Does a tsc hook make Claude Code leave fewer TypeScript errors?](2026-11-08-claude-code-tsc-hook/) | [Claude Code tsc hook: does type-checking on edit help?](https://aitoollabs.dev/posts/claude-code-tsc-hook/) | Shipped |
 | [mddma: a DMA budget checker for SGDK ROMs](2026-11-07-sgdk-dma-budget-checker/) | [SGDK DMA queue limit: how many bytes fit in VBlank](https://aitoollabs.dev/posts/sgdk-dma-queue-vblank-limit/) | Shipped |
 | [Claude Code plugin Skill vs project Skill](2026-11-06-plugin-skill-vs-project-skill/) | [Claude Code plugin Skill vs project Skill: 432 runs](https://aitoollabs.dev/posts/claude-code-plugin-skill-vs-project-skill/) | Shipped |

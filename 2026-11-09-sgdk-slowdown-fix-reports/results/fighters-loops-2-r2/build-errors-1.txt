@@ -1,0 +1,3 @@
+[01m[Ksrc/main.c:487:18:[m[K [01;31m[Kerror: [m[K'[01m[Kp1[m[K' undeclared (first use in this function); did you mean '[01m[Kp16[m[K'?
+[01m[Ksrc/main.c:488:18:[m[K [01;31m[Kerror: [m[K'[01m[Kp2[m[K' undeclared (first use in this function)
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1
