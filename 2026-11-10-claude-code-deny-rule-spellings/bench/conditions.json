@@ -1,0 +1,55 @@
+{
+  "none": {
+    "about": "No deny rule (control).",
+    "deny": []
+  },
+  "bare": {
+    "about": "Read(.env)",
+    "deny": [
+      "Read(.env)"
+    ]
+  },
+  "dot_slash": {
+    "about": "Read(./.env), the form in the docs' example",
+    "deny": [
+      "Read(./.env)"
+    ]
+  },
+  "slash": {
+    "about": "Read(/.env), relative to the settings file's project",
+    "deny": [
+      "Read(/.env)"
+    ]
+  },
+  "globstar": {
+    "about": "Read(**/.env)",
+    "deny": [
+      "Read(**/.env)"
+    ]
+  },
+  "bare_star": {
+    "about": "Read(.env*)",
+    "deny": [
+      "Read(.env*)"
+    ]
+  },
+  "globstar_star": {
+    "about": "Read(**/.env*)",
+    "deny": [
+      "Read(**/.env*)"
+    ]
+  },
+  "abs_globstar": {
+    "about": "Read(//**/.env), absolute path pattern",
+    "deny": [
+      "Read(//**/.env)"
+    ]
+  },
+  "local_globstar_star": {
+    "about": "Read(**/.env*) in .claude/settings.local.json instead of settings.json",
+    "deny": [
+      "Read(**/.env*)"
+    ],
+    "file": "settings.local.json"
+  }
+}
