@@ -1,0 +1,16 @@
+[
+  {"id": "read_root_env",       "cwd": ".",   "tool": "Read", "path": ".env"},
+  {"id": "read_root_env_local", "cwd": ".",   "tool": "Read", "path": ".env.local"},
+  {"id": "read_sub_env",        "cwd": ".",   "tool": "Read", "path": "api/.env"},
+  {"id": "read_sub_env_local",  "cwd": ".",   "tool": "Read", "path": "api/.env.local"},
+  {"id": "cat_root_env",        "cwd": ".",   "tool": "Bash", "cmd": "cat .env"},
+  {"id": "cat_root_env_local",  "cwd": ".",   "tool": "Bash", "cmd": "cat .env.local"},
+  {"id": "cat_sub_env",         "cwd": ".",   "tool": "Bash", "cmd": "cat api/.env"},
+  {"id": "cat_sub_env_local",   "cwd": ".",   "tool": "Bash", "cmd": "cat api/.env.local"},
+  {"id": "grep_root",           "cwd": ".",   "tool": "Grep"},
+  {"id": "fromsub_read_env",       "cwd": "api", "tool": "Read", "path": ".env"},
+  {"id": "fromsub_read_env_local", "cwd": "api", "tool": "Read", "path": ".env.local"},
+  {"id": "fromsub_cat_env",        "cwd": "api", "tool": "Bash", "cmd": "cat .env"},
+  {"id": "fromsub_cat_env_local",  "cwd": "api", "tool": "Bash", "cmd": "cat .env.local"},
+  {"id": "fromsub_grep",           "cwd": "api", "tool": "Grep"}
+]
