@@ -3,8 +3,8 @@ What the agent-loop runs did outside their work folder, read from the Claude Cod
 
 Measurement data seen outside check.sh:
 - loop-rate-2 read its own call log (the harness's record of every check.sh call, with CPU load and the slowest
-  loop in cycles for every call) after call 22 of 27, when a build had stopped booting. Calls 23 to 27 were made
-  with those numbers in view. It had already reached 60 game loops/s at calls 4, 5, 6, 15 and 17 (with parts of
+  loop in cycles for every call) after its 23rd of 27 checks, a build that did not boot (03:13:53, the 23rd check
+  ran at 03:13:38). Checks 24 to 27 were made with those numbers in view. It had already reached 60 game loops/s at calls 4, 5, 6, 15 and 17 (with parts of
   the render switched off or unfinished, see below). It also read symbol.txt files to check RAM use.
 - loop-rate-3 read tools/loop_check.py and then tried to run it with the full "loopfn" report:
   `python3 .../tools/loop_check.py <its folder> loopfn`. Claude Code refused the command (needs approval, which
