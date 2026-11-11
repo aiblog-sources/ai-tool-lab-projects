@@ -1,0 +1,13 @@
+fighters-baseline-0: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-rate-1-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-rate-2-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-rate-3-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-rate-4-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loops-1-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loops-2-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loops-3-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loops-4-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loopfn-1-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loopfn-2-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loopfn-3-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing
+fighters-loop-loopfn-4-final: left (P1): 7 distinct, 7 shared with the original, 0 only here, 0 missing; right (P2): 3 distinct, 3 shared with the original, 0 only here, 0 missing

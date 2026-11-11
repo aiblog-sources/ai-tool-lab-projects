@@ -1,0 +1,83 @@
+mdperf: frames 700 to 1499 (800 frames), NTSC 60 Hz
+game loops per second: 38.4 (288 of 800 frames dropped)
+
+== DMA (mddma) ==
+NTSC 60 Hz, 262 lines per frame, 800 frames checked (from frame 700)
+mean CPU load 68.1%, dropped frames 288
+largest SGDK queue: 3776 bytes (frame 700)
+frames with DMA during active display: 0
+frames that ended with a DMA still running (it finishes in the next frame): 0
+frames where SAT (sprite table) DMA landed during display: 0
+frames where CRAM DMA landed during display: 0
+frames where the VDP got fewer bytes than SGDK queued (counting bytes that spill into the next frame as missing): 0 (0 bytes)
+
+== CPU by function (mdprof) ==
+frames 1500 (summary from frame 700)
+mean CPU load 68.1% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 288
+frames with DMA during active display: 0; max DMA 3776 bytes in frame 700
+
+whole run, cycles by function:
+   34.6%  fillRect
+   31.9%  VDP_waitVBlank
+   16.5%  renderFighter
+    6.2%  memsetU32
+    4.7%  flushQueue
+    1.2%  DMA_queueDmaFast
+    0.9%  updateFighterSprites.constprop.1
+    0.9%  updateFighterSprites.constprop.0
+    0.9%  main.isra.0
+    0.6%  read6Btn
+    0.5%  JOY_update
+    0.4%  SYS_doVBlankProcessEx.constprop.0.isra.0
+
+busiest frames:
+  frame 896: 127901 busy cycles (100% of a frame), idle entered at line -1
+        62240  fillRect
+        31874  renderFighter
+        12328  memsetU32
+         9409  flushQueue
+  frame 939: 127901 busy cycles (100% of a frame), idle entered at line -1
+        56222  fillRect
+        43172  renderFighter
+        12328  memsetU32
+         9409  flushQueue
+  frame 952: 127901 busy cycles (100% of a frame), idle entered at line -1
+        62240  fillRect
+        31874  renderFighter
+        12328  memsetU32
+         9409  flushQueue
+
+== Game loops by function (mdperf) ==
+budget: 128,005 cycles per video frame (NTSC); a game loop that needs more misses the next VBlank and the frame is shown twice
+game loops measured: 511; cycles below are added up over every video frame a loop spans
+  223 loops took 1 video frame: busy cycles 100,179 to 126,591 (mean 109,182)
+  288 loops took 2 video frames: busy cycles 128,522 to 178,374 (mean 157,089)
+most expensive loop #1: loop starting in frame 1420, 178,374 busy cycles over 2 video frames (139% of one frame)
+       99,185  fillRect
+       45,804  renderFighter
+       12,328  memsetU32
+        9,409  flushQueue
+        2,382  DMA_queueDmaFast
+        1,776  updateFighterSprites.constprop.1
+most expensive loop #2: loop starting in frame 1320, 178,305 busy cycles over 2 video frames (139% of one frame)
+       99,184  fillRect
+       45,806  renderFighter
+       12,328  memsetU32
+        9,409  flushQueue
+        2,382  DMA_queueDmaFast
+        1,776  updateFighterSprites.constprop.1
+most expensive loop #3: loop starting in frame 1147, 177,885 busy cycles over 2 video frames (139% of one frame)
+       97,894  fillRect
+       45,422  renderFighter
+       12,328  memsetU32
+        9,409  flushQueue
+        2,382  DMA_queueDmaFast
+        1,842  main.isra.0
+cheapest loop, for comparison: loop starting in frame 1307, 100,179 busy cycles over 1 video frame (78% of one frame)
+       45,186  fillRect
+       22,072  renderFighter
+       12,328  memsetU32
+        9,409  flushQueue
+        2,382  DMA_queueDmaFast
+        1,776  updateFighterSprites.constprop.1

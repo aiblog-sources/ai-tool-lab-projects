@@ -1,0 +1,35 @@
+frames 1500 (summary from frame 700)
+mean CPU load 19.1% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 0
+frames with DMA during active display: 0; max DMA 3776 bytes in frame 700
+
+whole run, cycles by function:
+   80.9%  VDP_waitVBlank
+    7.4%  flushQueue
+    1.9%  DMA_queueDmaFast
+    1.7%  fillRect
+    1.4%  updateFighterSprites.constprop.1
+    1.4%  updateFighterSprites.constprop.0
+    1.3%  main.isra.0
+    1.0%  read6Btn
+    0.8%  JOY_update
+    0.6%  SYS_doVBlankProcessEx.constprop.0.isra.0
+    0.5%  memcpy_
+    0.2%  __udivsi3
+
+busiest frames:
+  frame 1062: 87692 busy cycles (69% of a frame), idle entered at line 141
+        53604  fillRect
+         9908  memcpy_
+         9409  flushQueue
+         3424  renderColumn
+  frame 1413: 87637 busy cycles (68% of a frame), idle entered at line 224
+        53604  fillRect
+         9908  memcpy_
+         9409  flushQueue
+         3424  renderColumn
+  frame 1314: 87621 busy cycles (68% of a frame), idle entered at line 141
+        53604  fillRect
+         9906  memcpy_
+         9409  flushQueue
+         3428  renderColumn

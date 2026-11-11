@@ -1,0 +1,8 @@
+NTSC 60 Hz, 262 lines per frame, 800 frames checked (from frame 700)
+mean CPU load 20.7%, dropped frames 18
+largest SGDK queue: 3776 bytes (frame 700)
+frames with DMA during active display: 0
+frames that ended with a DMA still running (it finishes in the next frame): 0
+frames where SAT (sprite table) DMA landed during display: 0
+frames where CRAM DMA landed during display: 0
+frames where the VDP got fewer bytes than SGDK queued (counting bytes that spill into the next frame as missing): 0 (0 bytes)
