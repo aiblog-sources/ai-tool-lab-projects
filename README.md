@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Does Claude need a profiler to fix SGDK slowdown? Frame rate only vs per-loop profile](2026-11-11-sgdk-loop-profile/) | [Does Claude need a profiler to fix SGDK slowdown?](https://aitoollabs.dev/posts/sgdk-profiler-claude-fix-loop/) | Shipped |
 | [Which Claude Code deny rule actually blocks .env files? 9 rules, 4 env files, 2 start folders](2026-11-10-claude-code-deny-rule-spellings/) | [Claude Code deny rules for .env: which pattern works?](https://aitoollabs.dev/posts/claude-code-deny-rule-env-patterns/) | Shipped |
 | [mdperf: SGDK slowdown reports, and which one helps Claude fix a slow scene](2026-11-09-sgdk-slowdown-fix-reports/) | [SGDK slowdown: can Claude fix it from a profiler report?](https://aitoollabs.dev/posts/sgdk-slowdown-claude-fix/) | Shipped |
 | [Does a tsc hook make Claude Code leave fewer TypeScript errors?](2026-11-08-claude-code-tsc-hook/) | [Claude Code tsc hook: does type-checking on edit help?](https://aitoollabs.dev/posts/claude-code-tsc-hook/) | Shipped |

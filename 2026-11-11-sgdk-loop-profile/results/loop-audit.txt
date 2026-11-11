@@ -1,0 +1,26 @@
+What the agent-loop runs did outside their work folder, read from the Claude Code session transcripts
+(the transcripts themselves are not published). Claude Code 2.1.322, tools: Read, Edit, Write, Bash(./check.sh).
+
+Measurement data seen outside check.sh:
+- loop-rate-2 read its own call log (the harness's record of every check.sh call, with CPU load and the slowest
+  loop in cycles for every call) after call 22 of 27, when a build had stopped booting. Calls 23 to 27 were made
+  with those numbers in view. It had already reached 60 game loops/s at calls 4, 5, 6, 15 and 17 (with parts of
+  the render switched off or unfinished, see below). It also read symbol.txt files to check RAM use.
+- loop-rate-3 read tools/loop_check.py and then tried to run it with the full "loopfn" report:
+  `python3 .../tools/loop_check.py <its folder> loopfn`. Claude Code refused the command (needs approval, which
+  nobody gave in -p mode), so it never saw that report.
+- No other run read measurement data. Most runs (rate 1, 3, 4; loops 1 to 4; loopfn 2, 4) read or grepped
+  tools/loop_check.py or tools/sgdk_build.py, mostly for the compiler flags. loop-rate-1 also listed its own build
+  folders and grepped symbol.txt for function names (addresses only, no cycle counts).
+
+The rate-only runs built their own profiler by switching code off:
+- loop-rate-1: backed up main.c, inserted `return;` at the top of the column render with sed, ran check.sh,
+  and copied the backup back, in one command.
+- loop-rate-2: "with rendering disabled the loop hits 60/s, so rendering is the cost. I'm checking whether the
+  memset or the rect fills dominate."
+- loop-rate-3: "With the fighters' render call disabled, the rate was already 60. I could only see check.sh's
+  rate output, so I found this by experiment rather than by profiling."
+- loop-rate-4: "I'm testing whether rendering is really the bottleneck by temporarily stubbing it out." then
+  "the rect fill is the bottleneck (stubbing it gives 60)".
+That is why the rate-only call logs show 60 early and then lower numbers again: those 60s were experiments, not
+fixes. Only the final main.c of each run is measured and pixel-checked (results/same-scene.txt).

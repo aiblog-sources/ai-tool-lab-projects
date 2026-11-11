@@ -1,0 +1,49 @@
+mdperf: frames 700 to 1499 (800 frames), NTSC 60 Hz
+game loops per second: 25.9 (454 of 800 frames dropped)
+
+== DMA (mddma) ==
+NTSC 60 Hz, 262 lines per frame, 800 frames checked (from frame 700)
+mean CPU load 64.6%, dropped frames 454
+largest SGDK queue: 3776 bytes (frame 702)
+frames with DMA during active display: 0
+frames that ended with a DMA still running (it finishes in the next frame): 0
+frames where SAT (sprite table) DMA landed during display: 0
+frames where CRAM DMA landed during display: 0
+frames where the VDP got fewer bytes than SGDK queued (counting bytes that spill into the next frame as missing): 0 (0 bytes)
+
+== CPU by function (mdprof) ==
+frames 1500 (summary from frame 700)
+mean CPU load 64.6% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 454
+frames with DMA during active display: 0; max DMA 3776 bytes in frame 702
+
+whole run, cycles by function:
+   35.4%  VDP_waitVBlank
+   34.7%  fillRect
+   18.1%  renderFighterCol
+    4.3%  memset_
+    3.2%  flushQueue
+    0.8%  DMA_queueDmaFast
+    0.6%  main.isra.0
+    0.6%  updateFighterSprites.constprop.0
+    0.6%  updateFighterSprites.constprop.1
+    0.4%  read6Btn
+    0.4%  JOY_update
+    0.3%  SYS_doVBlankProcessEx.constprop.0.isra.0
+
+busiest frames:
+  frame 1306: 128018 busy cycles (100% of a frame), idle entered at line -1
+        87002  fillRect
+        32670  renderFighterCol
+         6282  memset_
+          832  main.isra.0
+  frame 1082: 128013 busy cycles (100% of a frame), idle entered at line -1
+        84857  fillRect
+        32746  renderFighterCol
+         6280  memset_
+         1590  DMA_queueDmaFast
+  frame 1352: 128012 busy cycles (100% of a frame), idle entered at line -1
+        83958  fillRect
+        32670  renderFighterCol
+         6282  memset_
+         1776  updateFighterSprites.constprop.1

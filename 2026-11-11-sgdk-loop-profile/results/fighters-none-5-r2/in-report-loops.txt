@@ -1,0 +1,59 @@
+mdperf: frames 700 to 1499 (800 frames), NTSC 60 Hz
+game loops per second: 45.3 (196 of 800 frames dropped)
+
+== DMA (mddma) ==
+NTSC 60 Hz, 262 lines per frame, 800 frames checked (from frame 700)
+mean CPU load 64.0%, dropped frames 196
+largest SGDK queue: 3776 bytes (frame 700)
+frames with DMA during active display: 0
+frames that ended with a DMA still running (it finishes in the next frame): 0
+frames where SAT (sprite table) DMA landed during display: 0
+frames where CRAM DMA landed during display: 0
+frames where the VDP got fewer bytes than SGDK queued (counting bytes that spill into the next frame as missing): 0 (0 bytes)
+
+== CPU by function (mdprof) ==
+frames 1500 (summary from frame 700)
+mean CPU load 64.0% (busy cycles / frame cycles)
+dropped frames (no new game loop started at that VBlank; idle = VDP_waitVBlank,VDP_waitVSync): 196
+frames with DMA during active display: 0; max DMA 3776 bytes in frame 700
+
+whole run, cycles by function:
+   36.4%  fillRect
+   36.0%  VDP_waitVBlank
+   11.7%  memcpy_
+    5.5%  flushQueue
+    3.8%  renderColumn
+    1.3%  DMA_queueDmaFast
+    1.1%  main.isra.0
+    0.8%  updateFighterSprites.constprop.1
+    0.8%  updateFighterSprites.constprop.0
+    0.7%  read6Btn
+    0.6%  JOY_update
+    0.5%  SYS_doVBlankProcessEx.constprop.0.isra.0
+
+busiest frames:
+  frame 1122: 127901 busy cycles (100% of a frame), idle entered at line -1
+        84450  fillRect
+        19814  memcpy_
+         9409  flushQueue
+         6382  renderColumn
+  frame 1434: 127899 busy cycles (100% of a frame), idle entered at line -1
+        85614  fillRect
+        19814  memcpy_
+         9409  flushQueue
+         6248  renderColumn
+  frame 864: 127898 busy cycles (100% of a frame), idle entered at line -1
+        84866  fillRect
+        19814  memcpy_
+         9409  flushQueue
+         6378  renderColumn
+
+== Game loops (mdperf) ==
+budget: 128,005 cycles per video frame (NTSC); a game loop that needs more misses the next VBlank and the frame is shown twice
+game loops measured: 603
+  408 loops took 1 video frame: busy cycles 83,617 to 126,221 (mean 96,167, 99% of one frame at most)
+  195 loops took 2 video frames: busy cycles 129,026 to 135,470 (mean 134,031, 106% of one frame at most)
+most expensive loops:
+  loop starting in frame 1414: 135,470 busy cycles over 2 frames, 7,465 more than one frame
+  loop starting in frame 1066: 135,390 busy cycles over 2 frames, 7,385 more than one frame
+  loop starting in frame 1316: 135,386 busy cycles over 2 frames, 7,381 more than one frame
