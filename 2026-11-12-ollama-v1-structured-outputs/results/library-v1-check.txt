@@ -1,0 +1,6 @@
+## Ollama 0.40.16 | ministral-3:3b | /v1 | sent nothing | shipped: temperature                    0.15
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.150
+
+## Ollama 0.40.16 | llama-guard3:1b | /v1 | sent nothing | shipped: temperature                    0
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+
