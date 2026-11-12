@@ -1,0 +1,2 @@
+{"route": "upstream llama-server /v1 response_format", "declared": ["zulu", "alpha", "mike"], "order": ["zulu", "alpha", "mike"], "content": "{\n  \"zulu\": \"Zulu City\",\n  \"alpha\": \"Alphac\",\n  \"mike\": \"Mike's\"\n}"}
+{"route": "upstream llama-server /v1 response_format", "declared": ["zulu", "alpha", "mike"], "order": ["zulu", "alpha", "mike"], "content": "{\n  \"zulu\": \"Zurich\",\n  \"alpha\": \"Albuquerque\",\n  \"mike\": \"Miami\"\n}"}

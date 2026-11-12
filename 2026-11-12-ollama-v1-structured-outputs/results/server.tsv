@@ -1,0 +1,7 @@
+version	model	status	background_cpu_pct	peak_rss_mib	minutes
+0.40.13	Qwen 3.5 0.8B	ok	32	926	17.5
+0.40.16	Qwen 3.5 0.8B	ok	34	2254	25.8
+0.40.13	Qwen 3.5 2B	ok	32	1683	35.5
+0.40.16	Qwen 3.5 2B	ok	31	2159	14.0
+llama-server b11554	Qwen 3.5 0.8B	ok	-	-	11.2
+llama-server b11554	Qwen 3.5 2B	ok	-	-	19.2

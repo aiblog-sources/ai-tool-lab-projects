@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "customer_name": {
+      "type": "string",
+      "description": "Full name of the person who wrote the email"
+    },
+    "order_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^ORD-[0-9]{5}$"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Order number like ORD-12345, or null when the email has none"
+    },
+    "category": {
+      "enum": [
+        "billing",
+        "shipping",
+        "technical",
+        "account",
+        "other"
+      ],
+      "description": "billing: charges, payments, invoices, refunds of a charge. shipping: delivery, tracking, address, missing or damaged parcels. technical: a product or app that does not work. account: login, password, profile, personal data. other: anything else."
+    },
+    "priority": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "description": "Products from the order that the email mentions, with how many were ordered. Empty when there are none.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "product",
+          "quantity"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "refund_requested": {
+      "type": "boolean",
+      "description": "true only if the customer asks for money back"
+    }
+  },
+  "required": [
+    "customer_name",
+    "order_id",
+    "category",
+    "priority",
+    "items",
+    "refund_requested"
+  ],
+  "additionalProperties": false
+}
