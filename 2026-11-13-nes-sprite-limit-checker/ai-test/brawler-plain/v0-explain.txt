@@ -1,0 +1,3 @@
+1200 frames checked. 0 (0.0%) lost visible sprite pixels to the 8 sprites per line limit.
+Most sprites in range on one line: 8 (the PPU draws the first 8 in OAM order).
+Lag frames (the program had not finished its OAM table by the NMI): 0 of 1200.

@@ -1,0 +1,7 @@
+frames 1260, wall 1.08 s (1166 frames/s)
+frames with lost sprite pixels: 1250; evaluation lines over 8: 40080; drawn lines with visible loss: 40000
+lost sprite rows that were transparent anyway: 4480
+most sprites lost in one frame: 26 (frame 156)
+frames over the limit: 1260; frames the real PPU would flag (bug model): 1260; frames where they disagree: 0
+frames where the ROM read the overflow flag set: 1252
+against the picture: 40000 lines really differ; predicted and real 40000, predicted only 0, real only 0 (first real-only frame -1)

@@ -1,0 +1,21 @@
+03:20:08 formation-warned v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 100.0, 'max_sprites_lost': 26, 'longest_invisible': 1200, 'lag': 87, 'error': None}
+03:20:08 brawler-plain v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 0, 'error': None}
+03:20:16 formation-plain v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 1.7, 'max_sprites_lost': 2, 'longest_invisible': 1, 'lag': 0, 'error': None}
+03:20:43 formation-warned v1 {'builds': True, 'pct_lost': 100.0, 'max_sprites_lost': 26, 'longest_invisible': 3, 'lag': 0, 'error': None}
+03:20:47 formation-plain v1 {'builds': True, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 0, 'error': None}
+03:20:51 brawler-warned v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 100.0, 'max_sprites_lost': 8, 'longest_invisible': 21, 'lag': 0, 'error': None}
+03:21:21 convoy-plain v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 100.0, 'max_sprites_lost': 14, 'longest_invisible': 3, 'lag': 0, 'error': None}
+03:21:21   retry (Expecting value: line 1 column 1 (char 0); exit 2)
+03:21:32 convoy-warned v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 0, 'error': None}
+03:21:35 brawler-warned v1 {'builds': True, 'pct_lost': 100.0, 'max_sprites_lost': 8, 'longest_invisible': 15, 'lag': 0, 'error': None}
+03:22:21 boss-plain v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 87, 'error': None}
+03:22:21 convoy-plain v1 {'builds': True, 'pct_lost': 100.0, 'max_sprites_lost': 14, 'longest_invisible': 4, 'lag': 0, 'error': None}
+03:22:51 boss-warned v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 87, 'error': None}
+03:22:56 rain-plain v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 3.4, 'max_sprites_lost': 3, 'longest_invisible': 4, 'lag': 0, 'error': None}
+03:23:04 rain-warned v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 0, 'error': None}
+03:23:31 snake-plain v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 68.2, 'max_sprites_lost': 12, 'longest_invisible': 17, 'lag': 0, 'error': None}
+03:23:41 rain-plain v1 {'builds': True, 'pct_lost': 0.0, 'max_sprites_lost': 0, 'longest_invisible': 0, 'lag': 96, 'error': None}
+03:23:46 snake-warned v0 {'builds': True, 'build_rounds': 0, 'pct_lost': 76.2, 'max_sprites_lost': 12, 'longest_invisible': 295, 'lag': 0, 'error': None}
+03:24:03 snake-plain v1 {'builds': True, 'pct_lost': 68.2, 'max_sprites_lost': 12, 'longest_invisible': 2, 'lag': 0, 'error': None}
+03:24:23 snake-warned v1 {'builds': True, 'pct_lost': 76.2, 'max_sprites_lost': 12, 'longest_invisible': 314, 'lag': 0, 'error': None}
+03:24:23 total USD 1.11
