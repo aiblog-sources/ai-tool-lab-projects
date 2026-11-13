@@ -1,0 +1,4 @@
+1200 frames checked. 0 (0.0%) lost visible sprite pixels to the 8 sprites per line limit.
+Most sprites in range on one line: 8 (the PPU draws the first 8 in OAM order).
+The real PPU's sprite overflow flag would be wrong in 68 frames (its hardware bug), so do not use it to detect this.
+Lag frames (the program had not finished its OAM table by the NMI): 87 of 1200.

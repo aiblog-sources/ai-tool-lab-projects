@@ -1,0 +1,12 @@
+1200 frames checked. 41 (3.4%) lost visible sprite pixels to the 8 sprites per line limit.
+Most sprites in range on one line: 12 (the PPU draws the first 8 in OAM order).
+In those frames: median 1 sprites lost, worst 3; median 2 lines affected, worst 3.
+Longest run of consecutive frames one object stayed invisible: 4 (flicker (lost objects change from frame to frame)).
+Screen lines where the losses start: 200-207: 19, 208-215: 24, 216-223: 3
+Worst frame 960:
+  OAM entry 42: tile 8 at x=175 y=204, 1 lines lost from line 209
+  OAM entry 43: tile 8 at x=83 y=205, 2 lines lost from line 209
+  OAM entry 46: tile 8 at x=90 y=201, 1 lines lost from line 206
+The real PPU's sprite overflow flag would be wrong in 31 frames (its hardware bug), so do not use it to detect this.
+Also 202 lost sprite rows were transparent anyway (they still took one of the 8 slots).
+Lag frames (the program had not finished its OAM table by the NMI): 0 of 1200.

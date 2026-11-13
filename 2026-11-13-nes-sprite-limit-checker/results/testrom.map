@@ -1,0 +1,246 @@
+Modules list:
+-------------
+crt0.s.7.0.o:
+    ZEROPAGE          Offs=000000  Size=000002  Align=00001  Fill=0000
+    HEADER            Offs=000000  Size=000010  Align=00001  Fill=0000
+    OAM               Offs=000000  Size=000100  Align=00001  Fill=0000
+    STARTUP           Offs=000000  Size=0000A7  Align=00001  Fill=0000
+    VECTORS           Offs=000000  Size=000006  Align=00001  Fill=0000
+chr.s.7.1.o:
+    CHARS             Offs=000000  Size=002000  Align=00001  Fill=0000
+nes.c.7.2.o:
+    CODE              Offs=000000  Size=00011C  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000001  Align=00001  Fill=0000
+main.c.7.3.o:
+    CODE              Offs=00011C  Size=0003FE  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000020  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=000005  Align=00001  Fill=0000
+/cc65/lib/nes.lib(addeqsp.o):
+    CODE              Offs=00051A  Size=000011  Align=00001  Fill=0000
+/cc65/lib/nes.lib(addysp.o):
+    CODE              Offs=00052B  Size=00000E  Align=00001  Fill=0000
+/cc65/lib/nes.lib(aslax2.o):
+    CODE              Offs=000539  Size=00000B  Align=00001  Fill=0000
+/cc65/lib/nes.lib(condes.o):
+    CODE              Offs=000544  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=000001  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+/cc65/lib/nes.lib(copydata.o):
+    CODE              Offs=000550  Size=00002D  Align=00001  Fill=0000
+/cc65/lib/nes.lib(decsp1.o):
+    CODE              Offs=00057D  Size=000009  Align=00001  Fill=0000
+/cc65/lib/nes.lib(decsp2.o):
+    CODE              Offs=000586  Size=00000D  Align=00001  Fill=0000
+/cc65/lib/nes.lib(decsp3.o):
+    CODE              Offs=000593  Size=00000D  Align=00001  Fill=0000
+/cc65/lib/nes.lib(decsp4.o):
+    CODE              Offs=0005A0  Size=00000D  Align=00001  Fill=0000
+/cc65/lib/nes.lib(incsp1.o):
+    CODE              Offs=0005AD  Size=000007  Align=00001  Fill=0000
+/cc65/lib/nes.lib(incsp2.o):
+    CODE              Offs=0005B4  Size=000016  Align=00001  Fill=0000
+/cc65/lib/nes.lib(incsp4.o):
+    CODE              Offs=0005CA  Size=000005  Align=00001  Fill=0000
+/cc65/lib/nes.lib(incsp5.o):
+    CODE              Offs=0005CF  Size=000005  Align=00001  Fill=0000
+/cc65/lib/nes.lib(mul8.o):
+    CODE              Offs=0005D4  Size=00003A  Align=00001  Fill=0000
+/cc65/lib/nes.lib(popptr1.o):
+    CODE              Offs=00060E  Size=00000E  Align=00001  Fill=0000
+/cc65/lib/nes.lib(pusha.o):
+    CODE              Offs=00061C  Size=000016  Align=00001  Fill=0000
+/cc65/lib/nes.lib(pushax.o):
+    CODE              Offs=000632  Size=00001A  Align=00001  Fill=0000
+/cc65/lib/nes.lib(zerobss.o):
+    CODE              Offs=00064C  Size=000023  Align=00001  Fill=0000
+/cc65/lib/nes.lib(zeropage.o):
+    ZEROPAGE          Offs=000002  Size=00001A  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+CHARS                 000000  001FFF  002000  00001
+HEADER                000000  00000F  000010  00001
+ZEROPAGE              000010  00002B  00001C  00001
+OAM                   000200  0002FF  000100  00001
+DATA                  000300  000325  000026  00001
+BSS                   000326  00032A  000005  00001
+STARTUP               008000  0080A6  0000A7  00001
+ONCE                  0080A7  0080B2  00000C  00001
+CODE                  0080B3  008721  00066F  00001
+RODATA                008722  008741  000020  00001
+VECTORS               00FFFA  00FFFF  000006  00001
+
+
+Exports list by name:
+---------------------
+__BSS_RUN__               000326 RLA    __BSS_SIZE__              000005 REA    
+__CONSTRUCTOR_COUNT__     000000 REA    __CONSTRUCTOR_TABLE__     0080B3 RLA    
+__DATA_LOAD__             008742 RLA    __DATA_RUN__              000300 RLA    
+__DATA_SIZE__             000026 REA    __DESTRUCTOR_COUNT__      000000 REA    
+__DESTRUCTOR_TABLE__      008742 RLA    __STACK_SIZE__            0001F0 REA    
+__STACK_START__           000600 RLA    __STARTUP__               000001 REA    
+_main                     008291 RLA    _oam_hide_all             00818E RLA    
+_oam_ready                0080C5 RLA    _ppu_ctrl                 000010 RLZ    
+_ppu_setup                008103 RLA    _wait_frame               0080B3 RLA    
+addeq0sp                  0085CD RLA    addysp                    0085DF RLA    
+aslax2                    0085EC RLA    c_sp                      000012 RLZ    
+copydata                  008603 RLA    decsp1                    008630 RLA    
+decsp2                    008639 RLA    decsp3                    008646 RLA    
+decsp4                    008653 RLA    incsp1                    008660 RLA    
+incsp2                    00866F RLA    incsp4                    00867D RLA    
+incsp5                    008682 RLA    initlib                   0080A7 RLA    
+popptr1                   0086C1 RLA    ptr1                      00001A RLZ    
+ptr2                      00001C RLZ    ptr4                      000020 RLZ    
+pusha                     0086D3 RLA    pusha0                    0086E7 RLA    
+pushax                    0086E9 RLA    tmp1                      000022 RLZ    
+tosumula0                 008687 RLA    zerobss                   0086FF RLA    
+
+
+
+Exports list by value:
+----------------------
+__CONSTRUCTOR_COUNT__     000000 REA    __DESTRUCTOR_COUNT__      000000 REA    
+__STARTUP__               000001 REA    __BSS_SIZE__              000005 REA    
+_ppu_ctrl                 000010 RLZ    c_sp                      000012 RLZ    
+ptr1                      00001A RLZ    ptr2                      00001C RLZ    
+ptr4                      000020 RLZ    tmp1                      000022 RLZ    
+__DATA_SIZE__             000026 REA    __STACK_SIZE__            0001F0 REA    
+__DATA_RUN__              000300 RLA    __BSS_RUN__               000326 RLA    
+__STACK_START__           000600 RLA    initlib                   0080A7 RLA    
+__CONSTRUCTOR_TABLE__     0080B3 RLA    _wait_frame               0080B3 RLA    
+_oam_ready                0080C5 RLA    _ppu_setup                008103 RLA    
+_oam_hide_all             00818E RLA    _main                     008291 RLA    
+addeq0sp                  0085CD RLA    addysp                    0085DF RLA    
+aslax2                    0085EC RLA    copydata                  008603 RLA    
+decsp1                    008630 RLA    decsp2                    008639 RLA    
+decsp3                    008646 RLA    decsp4                    008653 RLA    
+incsp1                    008660 RLA    incsp2                    00866F RLA    
+incsp4                    00867D RLA    incsp5                    008682 RLA    
+tosumula0                 008687 RLA    popptr1                   0086C1 RLA    
+pusha                     0086D3 RLA    pusha0                    0086E7 RLA    
+pushax                    0086E9 RLA    zerobss                   0086FF RLA    
+__DATA_LOAD__             008742 RLA    __DESTRUCTOR_TABLE__      008742 RLA    
+
+
+
+Imports list:
+-------------
+__BSS_RUN__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+__BSS_SIZE__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+__CONSTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__CONSTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__DATA_LOAD__ ([linker generated]):
+    copydata.o                common/copydata.s:8
+__DATA_RUN__ ([linker generated]):
+    copydata.o                common/copydata.s:8
+__DATA_SIZE__ ([linker generated]):
+    copydata.o                common/copydata.s:8
+__DESTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__DESTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__STACK_SIZE__ ([linker generated]):
+    crt0.s.7.0.o              crt0.s:15
+__STACK_START__ ([linker generated]):
+    crt0.s.7.0.o              crt0.s:15
+__STARTUP__ (crt0.s.7.0.o):
+    main.c.7.3.o              main.c.7.3.s:13
+_main (main.c.7.3.o):
+    crt0.s.7.0.o              crt0.s:14
+_oam_hide_all (nes.c.7.2.o):
+    main.c.7.3.o              main.c.7.3.s:18
+_oam_ready (nes.c.7.2.o):
+    main.c.7.3.o              main.c.7.3.s:16
+_ppu_ctrl (crt0.s.7.0.o):
+    main.c.7.3.o              main.c.7.3.s:14
+    nes.c.7.2.o               nes.c.7.2.s:13
+_ppu_setup (nes.c.7.2.o):
+    main.c.7.3.o              main.c.7.3.s:17
+_wait_frame (nes.c.7.2.o):
+    main.c.7.3.o              main.c.7.3.s:15
+addeq0sp (addeqsp.o):
+    nes.c.7.2.o               nes.c.7.2.s:239
+addysp (addysp.o):
+    incsp5.o                  runtime/incsp5.s:8
+    incsp4.o                  runtime/incsp4.s:8
+aslax2 (aslax2.o):
+    main.c.7.3.o              main.c.7.3.s:577
+c_sp (zeropage.o):
+    addysp.o                  runtime/addysp.s:8
+    pushax.o                  runtime/pushax.s:8
+    pusha.o                   runtime/pusha.s:8
+    popptr1.o                 runtime/popptr1.s:9
+    incsp2.o                  runtime/incsp2.s:8
+    incsp1.o                  runtime/incsp1.s:8
+    decsp4.o                  runtime/decsp4.s:8
+    decsp3.o                  runtime/decsp3.s:8
+    decsp2.o                  runtime/decsp2.s:8
+    decsp1.o                  runtime/decsp1.s:8
+    addeqsp.o                 runtime/addeqsp.s:8
+    main.c.7.3.o              main.c.7.3.s:10
+    nes.c.7.2.o               nes.c.7.2.s:10
+    crt0.s.7.0.o              /cc65/asminc/zeropage.inc:11
+copydata (copydata.o):
+    crt0.s.7.0.o              crt0.s:14
+decsp1 (decsp1.o):
+    nes.c.7.2.o               nes.c.7.2.s:239
+decsp2 (decsp2.o):
+    nes.c.7.2.o               nes.c.7.2.s:239
+decsp3 (decsp3.o):
+    main.c.7.3.o              main.c.7.3.s:577
+decsp4 (decsp4.o):
+    main.c.7.3.o              main.c.7.3.s:577
+    main.c.7.3.o              main.c.7.3.s:577
+incsp1 (incsp1.o):
+    nes.c.7.2.o               nes.c.7.2.s:239
+    nes.c.7.2.o               nes.c.7.2.s:239
+incsp2 (incsp2.o):
+    popptr1.o                 runtime/popptr1.s:8
+    nes.c.7.2.o               nes.c.7.2.s:239
+incsp4 (incsp4.o):
+    main.c.7.3.o              main.c.7.3.s:577
+    nes.c.7.2.o               nes.c.7.2.s:239
+incsp5 (incsp5.o):
+    main.c.7.3.o              main.c.7.3.s:577
+initlib (condes.o):
+    crt0.s.7.0.o              crt0.s:14
+popptr1 (popptr1.o):
+    mul8.o                    runtime/mul8.s:9
+ptr1 (zeropage.o):
+    zerobss.o                 common/zerobss.s:9
+    popptr1.o                 runtime/popptr1.s:9
+    mul8.o                    runtime/mul8.s:10
+    copydata.o                common/copydata.s:9
+    main.c.7.3.o              main.c.7.3.s:11
+    nes.c.7.2.o               nes.c.7.2.s:11
+ptr2 (zeropage.o):
+    copydata.o                common/copydata.s:9
+ptr4 (zeropage.o):
+    mul8.o                    runtime/mul8.s:10
+pusha (pusha.o):
+    main.c.7.3.o              main.c.7.3.s:577
+    main.c.7.3.o              main.c.7.3.s:577
+    nes.c.7.2.o               nes.c.7.2.s:239
+    nes.c.7.2.o               nes.c.7.2.s:239
+    nes.c.7.2.o               nes.c.7.2.s:239
+pusha0 (pushax.o):
+    main.c.7.3.o              main.c.7.3.s:577
+    main.c.7.3.o              main.c.7.3.s:577
+pushax (pushax.o):
+    nes.c.7.2.o               nes.c.7.2.s:239
+tmp1 (zeropage.o):
+    copydata.o                common/copydata.s:9
+    aslax2.o                  runtime/aslax2.s:8
+tosumula0 (mul8.o):
+    main.c.7.3.o              main.c.7.3.s:577
+    main.c.7.3.o              main.c.7.3.s:577
+zerobss (zerobss.o):
+    crt0.s.7.0.o              crt0.s:14
+

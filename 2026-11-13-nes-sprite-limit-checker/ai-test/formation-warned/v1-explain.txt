@@ -1,0 +1,19 @@
+1200 frames checked. 1200 (100.0%) lost visible sprite pixels to the 8 sprites per line limit.
+Most sprites in range on one line: 21 (the PPU draws the first 8 in OAM order).
+In those frames: median 24 sprites lost, worst 26; median 32 lines affected, worst 32.
+Longest run of consecutive frames one object stayed invisible: 3 (flicker (lost objects change from frame to frame)).
+Screen lines where the losses start: 40-47: 14430, 48-55: 12, 64-71: 14430, 72-79: 12
+Worst frame 156:
+  OAM entry 15: tile 16 at x=128 y=40, 4 lines lost from line 53
+  OAM entry 16: tile 16 at x=140 y=40, 16 lines lost from line 41
+  OAM entry 17: tile 16 at x=148 y=40, 16 lines lost from line 41
+  OAM entry 18: tile 16 at x=160 y=40, 16 lines lost from line 41
+  OAM entry 19: tile 16 at x=168 y=40, 16 lines lost from line 41
+  OAM entry 20: tile 16 at x=180 y=40, 16 lines lost from line 41
+  OAM entry 21: tile 16 at x=188 y=40, 16 lines lost from line 41
+  OAM entry 22: tile 16 at x=200 y=40, 16 lines lost from line 41
+  OAM entry 23: tile 16 at x=208 y=40, 16 lines lost from line 41
+  OAM entry 24: tile 16 at x=220 y=40, 16 lines lost from line 41
+  OAM entry 25: tile 16 at x=228 y=40, 16 lines lost from line 41
+  OAM entry 26: tile 16 at x=40 y=40, 16 lines lost from line 41
+Lag frames (the program had not finished its OAM table by the NMI): 0 of 1200.
