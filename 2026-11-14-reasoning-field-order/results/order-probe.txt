@@ -1,0 +1,12 @@
+qwen3508b	reasoning_first	declared ['reasoning', 'answer']	/v1 response_format	reply keys not JSON: {
+  "answer": 17,
+  "reasoning": "Tom buys 4 pens at a price of 3 dollars each. 
+qwen3508b	reasoning_first	declared ['reasoning', 'answer']	/api/chat format	reply keys not JSON: {
+  "answer": 17,
+  "reasoning": "Tom buys 4 pens at a price of 3 dollars each. 
+qwen3508b	prefixed	declared ['a_reasoning', 'b_answer']	/v1 response_format	reply keys ['a_reasoning', 'b_answer']
+qwen3508b	prefixed	declared ['a_reasoning', 'b_answer']	/api/chat format	reply keys ['a_reasoning', 'b_answer']
+qwen352b	reasoning_first	declared ['reasoning', 'answer']	/v1 response_format	reply keys ['answer', 'reasoning']
+qwen352b	reasoning_first	declared ['reasoning', 'answer']	/api/chat format	reply keys ['answer', 'reasoning']
+qwen352b	prefixed	declared ['a_reasoning', 'b_answer']	/v1 response_format	reply keys ['a_reasoning', 'b_answer']
+qwen352b	prefixed	declared ['a_reasoning', 'b_answer']	/api/chat format	reply keys ['a_reasoning', 'b_answer']

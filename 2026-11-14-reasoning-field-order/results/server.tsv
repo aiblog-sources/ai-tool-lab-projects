@@ -1,0 +1,5 @@
+server	model	background_cpu_pct	minutes
+llama-server-b11554	Qwen 3.5 0.8B	30	70.9
+llama-server-b11554	Qwen 3.5 2B	32	15.7
+ollama-0.40.16	Qwen 3.5 0.8B	31	45.9
+ollama-0.40.16	Qwen 3.5 2B	41	29.9
