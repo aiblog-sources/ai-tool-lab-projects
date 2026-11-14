@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Reasoning before the answer in a JSON schema: does the order matter, and does Ollama keep it?](2026-11-14-reasoning-field-order/) | [JSON schema field order: put reasoning before the answer](https://aitoollabs.dev/posts/json-schema-reasoning-field-order/) | Shipped |
 | [nessprites: a headless NES sprites-per-scanline checker, with the overflow flag bug modeled](2026-11-13-nes-sprite-limit-checker/) | [NES 8 sprites per scanline: a checker for dropped sprites](https://aitoollabs.dev/posts/nes-8-sprites-per-scanline-checker/) | Shipped |
 | [Ollama structured outputs through the OpenAI API (`response_format`), measured](2026-11-12-ollama-v1-structured-outputs/) | [Ollama structured outputs on /v1: valid JSON, worse answers](https://aitoollabs.dev/posts/ollama-structured-outputs-openai-api/) | Shipped |
 | [Does Claude need a profiler to fix SGDK slowdown? Frame rate only vs per-loop profile](2026-11-11-sgdk-loop-profile/) | [Does Claude need a profiler to fix SGDK slowdown?](https://aitoollabs.dev/posts/sgdk-profiler-claude-fix-loop/) | Shipped |

@@ -1,0 +1,6 @@
+vendor
+models
+data
+results/logs
+*.log
+__pycache__/
