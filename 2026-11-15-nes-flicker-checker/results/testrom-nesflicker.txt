@@ -1,0 +1,6 @@
+frames 1720, wall 0.82 s (2087 frames/s)
+frames with lost sprite pixels: 300; evaluation lines over 8: 4880; drawn lines with visible loss: 4800
+lost sprite rows that were transparent anyway: 4480
+most sprites lost in one frame: 8 (frame 180)
+frames over the limit: 310; frames the real PPU would flag (bug model): 66; frames where they disagree: 244
+against the picture: 4800 lines really differ; predicted and real 4800, predicted only 0, real only 0 (first real-only frame -1)

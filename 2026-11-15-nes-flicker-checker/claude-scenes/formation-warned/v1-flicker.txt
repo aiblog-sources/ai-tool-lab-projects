@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 48 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 50688. Shown 43.0%, partly drawn 0.1%, hidden 56.8% (dropped by the PPU's 8-per-line limit 56.8%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 43.0% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 3 frames.
+Sprites by longest hidden stretch: never hidden 8, 1 frame 0, 2-3 frames 40, 4 or more 0.
+Hidden stretches by length (frames: count): 1: 24, 2: 14376, 3: 12
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $10 attr $41 from x=114 y=40, frames 60-1259: hidden 60.5% (PPU 726, program 0), longest 3 frames  SDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSD
+  tile $10 attr $42 from x=154 y=64, frames 60-1259: hidden 60.5% (PPU 726, program 0), longest 3 frames  SDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDS
+  tile $10 attr $01 from x=106 y=40, frames 60-1259: hidden 60.0% (PPU 720, program 0), longest 2 frames  SDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSD
+  tile $10 attr $01 from x=126 y=40, frames 60-1259: hidden 60.0% (PPU 720, program 0), longest 2 frames  SDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSS
+  tile $10 attr $41 from x=134 y=40, frames 60-1259: hidden 60.0% (PPU 720, program 0), longest 2 frames  SDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSS
+  tile $10 attr $01 from x=146 y=40, frames 60-1259: hidden 60.0% (PPU 720, program 0), longest 2 frames  SDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDS
+  tile $10 attr $41 from x=154 y=40, frames 60-1259: hidden 60.0% (PPU 720, program 0), longest 2 frames  SDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDS
+  tile $10 attr $01 from x=166 y=40, frames 60-1259: hidden 60.0% (PPU 720, program 0), longest 2 frames  SSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDSDDSSDDSDDS

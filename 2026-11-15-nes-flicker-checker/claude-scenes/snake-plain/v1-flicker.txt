@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 201 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 23966. Shown 61.2%, partly drawn 0.3%, hidden 38.5% (dropped by the PPU's 8-per-line limit 38.5%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 61.2% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 2 frames.
+Sprites by longest hidden stretch: never hidden 56, 1 frame 8, 2-3 frames 137, 4 or more 0.
+Hidden stretches by length (frames: count): 1: 1737, 2: 3740
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $04 attr $00 from x=0 y=38, frames 1250-1259: hidden 70.0% (PPU 7, program 0), longest 2 frames  DDSDSDDSDD
+  tile $04 attr $00 from x=0 y=38, frames 1242-1259: hidden 66.7% (PPU 12, program 0), longest 2 frames  DSDDSDDSDSDDSDDSDD
+  tile $04 attr $00 from x=172 y=118, frames 60-101: hidden 64.3% (PPU 27, program 0), longest 2 frames  DSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDD
+  tile $04 attr $00 from x=116 y=118, frames 60-129: hidden 64.3% (PPU 45, program 0), longest 2 frames  DDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDD
+  tile $04 attr $00 from x=0 y=38, frames 1246-1259: hidden 64.3% (PPU 9, program 0), longest 2 frames  SDDSDDSDSDDSDD
+  tile $04 attr $00 from x=156 y=118, frames 60-109: hidden 64.0% (PPU 32, program 0), longest 2 frames  DSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDS
+  tile $04 attr $00 from x=140 y=118, frames 60-117: hidden 63.8% (PPU 37, program 0), longest 2 frames  DSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDD
+  tile $04 attr $00 from x=212 y=118, frames 60-81: hidden 63.6% (PPU 14, program 0), longest 2 frames  SDDSDDSDSDDSDDSDSDDSDD

@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 67 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 27400. Shown 52.2%, partly drawn 0.2%, hidden 47.6% (dropped by the PPU's 8-per-line limit 47.6%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 52.2% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 14 frames.
+Sprites by longest hidden stretch: never hidden 4, 1 frame 0, 2-3 frames 20, 4 or more 43.
+Hidden stretches by length (frames: count): 1: 190, 2: 2718, 3: 128, 4: 1732, 6: 3, 7: 2, 10: 2, 11: 2, 14: 2
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $02 attr $01 from x=0 y=112, frames 498-997: hidden 50.4% (PPU 252, program 0), longest 14 frames  SSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDD
+  tile $01 attr $01 from x=0 y=112, frames 514-1013: hidden 50.0% (PPU 250, program 0), longest 14 frames  SSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDD
+  tile $02 attr $02 from x=0 y=112, frames 289-787: hidden 63.1% (PPU 315, program 0), longest 11 frames  DDDDSSDDDDSSDDDDSSDDDDSSDDDDSSDDDDSSDDSDDSSDDSSD
+  tile $01 attr $02 from x=0 y=112, frames 305-803: hidden 55.1% (PPU 275, program 0), longest 11 frames  SSDDDDSSDDSSSSDDSSSSDDSDDSSDDSSDDSDDSSSSDDSSSSDD
+  tile $02 attr $00 from x=0 y=112, frames 394-892: hidden 52.1% (PPU 260, program 0), longest 10 frames  DDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSSDDSDDSSDDSSD
+  tile $01 attr $00 from x=0 y=112, frames 410-908: hidden 52.1% (PPU 260, program 0), longest 10 frames  DDSSDDSSDDSSDDSSDDSSDDSDDSSDDSSDDSDDSSDDSSDDSSDD
+  tile $02 attr $01 from x=0 y=112, frames 341-840: hidden 62.6% (PPU 313, program 0), longest 7 frames  SSDDDDSSDDDDSSDDDDSSDDDDSSDDDDSSDDDDSSDDSSDDSDDS
+  tile $01 attr $01 from x=0 y=112, frames 357-856: hidden 52.2% (PPU 261, program 0), longest 7 frames  DDSSDDDDSSDDSSSSDDDDSSDDSSDDSDDSSDDSSDDSSDDSSSSD

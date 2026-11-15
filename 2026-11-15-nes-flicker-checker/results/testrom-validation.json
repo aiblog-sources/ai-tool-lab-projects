@@ -1,0 +1,133 @@
+{
+ "layouts": [
+  {
+   "layout": "calm",
+   "sprite_frames": 2544,
+   "truth_skipped": 0,
+   "caught": 0,
+   "missed": 0,
+   "missed_edge": 0,
+   "false": 0,
+   "ppu_dropped": 0,
+   "truth_longest": 0,
+   "tracker_longest": 0
+  },
+  {
+   "layout": "row6",
+   "sprite_frames": 3600,
+   "truth_skipped": 0,
+   "caught": 0,
+   "missed": 0,
+   "missed_edge": 0,
+   "false": 0,
+   "ppu_dropped": 1200,
+   "truth_longest": 0,
+   "tracker_longest": 0
+  },
+  {
+   "layout": "row6rot",
+   "sprite_frames": 3600,
+   "truth_skipped": 0,
+   "caught": 0,
+   "missed": 0,
+   "missed_edge": 0,
+   "false": 0,
+   "ppu_dropped": 1200,
+   "truth_longest": 0,
+   "tracker_longest": 0
+  },
+  {
+   "layout": "alt2",
+   "sprite_frames": 4800,
+   "truth_skipped": 2400,
+   "caught": 2368,
+   "missed": 32,
+   "missed_edge": 32,
+   "false": 0,
+   "ppu_dropped": 0,
+   "truth_longest": 1,
+   "tracker_longest": 1
+  },
+  {
+   "layout": "alt3",
+   "sprite_frames": 7200,
+   "truth_skipped": 4800,
+   "caught": 4704,
+   "missed": 96,
+   "missed_edge": 96,
+   "false": 0,
+   "ppu_dropped": 0,
+   "truth_longest": 2,
+   "tracker_longest": 2
+  },
+  {
+   "layout": "budget",
+   "sprite_frames": 3600,
+   "truth_skipped": 1200,
+   "caught": 1176,
+   "missed": 24,
+   "missed_edge": 24,
+   "false": 0,
+   "ppu_dropped": 0,
+   "truth_longest": 2,
+   "tracker_longest": 2
+  },
+  {
+   "layout": "random",
+   "sprite_frames": 4800,
+   "truth_skipped": 1204,
+   "caught": 1156,
+   "missed": 48,
+   "missed_edge": 48,
+   "false": 0,
+   "ppu_dropped": 0,
+   "truth_longest": 8,
+   "tracker_longest": 8
+  },
+  {
+   "layout": "spawn",
+   "sprite_frames": 5096,
+   "truth_skipped": 0,
+   "caught": 0,
+   "missed": 0,
+   "missed_edge": 0,
+   "false": 0,
+   "ppu_dropped": 0,
+   "truth_longest": 0,
+   "tracker_longest": 0
+  },
+  {
+   "layout": "blink",
+   "sprite_frames": 2400,
+   "truth_skipped": 296,
+   "caught": 282,
+   "missed": 14,
+   "missed_edge": 8,
+   "false": 6,
+   "ppu_dropped": 0,
+   "truth_longest": 4,
+   "tracker_longest": 4
+  },
+  {
+   "layout": "fast",
+   "sprite_frames": 4800,
+   "truth_skipped": 2400,
+   "caught": 2348,
+   "missed": 52,
+   "missed_edge": 32,
+   "false": 20,
+   "ppu_dropped": 0,
+   "truth_longest": 1,
+   "tracker_longest": 1
+  }
+ ],
+ "total": {
+  "sprite_frames": 42440,
+  "truth_skipped": 12300,
+  "caught": 12034,
+  "missed": 266,
+  "missed_edge": 240,
+  "false": 26,
+  "ppu_dropped": 2400
+ }
+}

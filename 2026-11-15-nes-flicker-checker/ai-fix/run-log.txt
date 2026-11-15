@@ -1,0 +1,11 @@
+03:23:29 brawler-plain 1 builds True shown 67.6 -> 67.2 best 71.1 longest 2 -> 1 USD 0.048
+03:23:38 brawler-plain 2 builds True shown 67.6 -> 67.2 best 71.1 longest 2 -> 1 USD 0.0597
+03:23:52 brawler-warned 1 builds True shown 68.2 -> 68.2 best 68.3 longest 4 -> 2 USD 0.076
+03:24:13 convoy-plain 1 builds True shown 52.4 -> 52.4 best 52.4 longest 4 -> 3 USD 0.056
+03:24:29 convoy-plain 2 builds True shown 52.4 -> 52.2 best 52.2 longest 4 -> 14 USD 0.046
+03:24:48 formation-plain 1 builds True shown 28.8 -> 42.8 best 43.0 longest 3 -> 3 USD 0.06
+03:24:59 brawler-warned 2 builds True shown 68.2 -> 69.0 best 69.1 longest 4 -> 2 USD 0.1137
+03:25:06 formation-plain 2 builds True shown 28.8 -> 43.0 best 43.0 longest 3 -> 4 USD 0.0463
+03:25:16 snake-warned 1 builds True shown 56.5 -> 56.5 best 56.4 longest 250 -> 269 USD 0.0445
+03:25:29 snake-warned 2 builds True shown 56.5 -> 56.5 best 56.4 longest 250 -> 249 USD 0.0354
+03:25:29 total USD 0.59

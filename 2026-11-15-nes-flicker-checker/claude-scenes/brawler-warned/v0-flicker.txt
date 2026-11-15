@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 132 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 28800. Shown 68.2%, partly drawn 7.6%, hidden 24.2% (dropped by the PPU's 8-per-line limit 24.2%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 68.3% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 4 frames.
+Sprites by longest hidden stretch: never hidden 12, 1 frame 44, 2-3 frames 70, 4 or more 6.
+Hidden stretches by length (frames: count): 1: 2668, 2: 2130, 3: 4, 4: 6
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $10 attr $02 from x=16 y=183, frames 164-307: hidden 41.7% (PPU 60, program 0), longest 4 frames  SDDSSSDDSSSDDSSSDDSSSDDSSSDDDSSDDSSSDDDDSSSDDSSD
+  tile $10 attr $01 from x=47 y=183, frames 60-334: hidden 40.7% (PPU 112, program 0), longest 4 frames  SDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDD
+  tile $10 attr $02 from x=8 y=183, frames 164-467: hidden 40.5% (PPU 123, program 0), longest 4 frames  SDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDDDSSSDDSSS
+  tile $10 attr $01 from x=16 y=183, frames 146-574: hidden 40.3% (PPU 173, program 0), longest 4 frames  SSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSS
+  tile $10 attr $42 from x=232 y=183, frames 596-739: hidden 36.8% (PPU 53, program 0), longest 4 frames  DSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSS
+  tile $10 attr $42 from x=240 y=183, frames 596-826: hidden 29.9% (PPU 69, program 0), longest 4 frames  DSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSS
+  tile $10 attr $02 from x=16 y=183, frames 827-1171: hidden 40.0% (PPU 138, program 0), longest 3 frames  DSSSSDSSSSDPSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDS
+  tile $10 attr $02 from x=8 y=183, frames 827-1185: hidden 39.3% (PPU 141, program 0), longest 3 frames  DSSSSDSSSSDPSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDSSSDDS
