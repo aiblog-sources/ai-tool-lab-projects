@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 90 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 100848. Shown 28.8%, partly drawn 0.0%, hidden 71.2% (dropped by the PPU's 8-per-line limit 0.0%, left out of OAM by the program 71.2%).
+Best case with 8 sprites per line: about 43.0% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 3 frames.
+Sprites by longest hidden stretch: never hidden 10, 1 frame 0, 2-3 frames 80, 4 or more 0.
+Hidden stretches by length (frames: count): 3: 23920
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $0B attr $01 from x=86 y=39, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $41 from x=94 y=39, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $81 from x=86 y=47, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $C1 from x=94 y=47, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $01 from x=86 y=63, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $41 from x=94 y=63, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $81 from x=86 y=71, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG
+  tile $0B attr $C1 from x=94 y=71, frames 60-1256: hidden 74.9% (PPU 0, program 897), longest 3 frames  SGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGGSGGG

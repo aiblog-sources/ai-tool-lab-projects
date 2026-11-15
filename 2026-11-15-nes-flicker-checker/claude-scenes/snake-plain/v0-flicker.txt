@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 201 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 23966. Shown 61.2%, partly drawn 0.3%, hidden 38.5% (dropped by the PPU's 8-per-line limit 38.5%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 61.2% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 12 frames.
+Sprites by longest hidden stretch: never hidden 59, 1 frame 2, 2-3 frames 3, 4 or more 137.
+Hidden stretches by length (frames: count): 1: 19, 2: 18, 3: 16, 4: 19, 5: 18, 6: 14, 7: 13, 8: 19, 9: 23, 10: 16, 11: 28, 12: 662
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $04 attr $00 from x=0 y=38, frames 1230-1259: hidden 73.3% (PPU 22, program 0), longest 12 frames  DDDDDDDDDDSSSSSSSDDDDDDDDDDDDS
+  tile $04 attr $00 from x=0 y=38, frames 1234-1259: hidden 73.1% (PPU 19, program 0), longest 12 frames  DDDDDDDSSSSSSSDDDDDDDDDDDD
+  tile $04 attr $00 from x=196 y=118, frames 60-89: hidden 70.0% (PPU 21, program 0), longest 12 frames  DDDDDDDDDSSSSSSSDDDDDDDDDDDDSS
+  tile $04 attr $00 from x=156 y=118, frames 60-109: hidden 68.0% (PPU 34, program 0), longest 12 frames  SSDDDDDDDDDDDDSSSSSSSDDDDDDDDDDDDSSSSSSSDDDDDDDD
+  tile $04 attr $00 from x=164 y=118, frames 60-105: hidden 67.4% (PPU 31, program 0), longest 12 frames  SDDDDDDDDDDDDSSSSSSSDDDDDDDDDDDDSSSSSSSDDDDDDD
+  tile $04 attr $00 from x=148 y=118, frames 60-113: hidden 66.7% (PPU 36, program 0), longest 12 frames  SSSDDDDDDDDDDDDSSSSSSSDDDDDDDDDDDDSSSSSSSDDDDDDD
+  tile $04 attr $00 from x=172 y=118, frames 60-101: hidden 66.7% (PPU 28, program 0), longest 12 frames  DDDDDDDDDDDDSSSSSSSDDDDDDDDDDDDSSSSSSSDDDD
+  tile $04 attr $00 from x=0 y=118, frames 70-197: hidden 65.6% (PPU 84, program 0), longest 12 frames  SDDDDDDDDDDDDSSSSSSSDDDDDDDDDDDDSSSSSSSDDDDDDDDD

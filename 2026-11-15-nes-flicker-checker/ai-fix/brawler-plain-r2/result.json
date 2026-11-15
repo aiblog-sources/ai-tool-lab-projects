@@ -1,0 +1,48 @@
+{
+ "scene": "brawler-plain",
+ "rep": 2,
+ "model": "claude-sonnet-5-5",
+ "from_stage": "v0",
+ "before": {
+  "tracks": 148,
+  "sprite_frames": 28080,
+  "best_shown_pct": 71.4,
+  "shown_pct": 67.6,
+  "partly_pct": 0.0,
+  "ppu_pct": 0.0,
+  "game_pct": 32.4,
+  "hidden_pct": 32.4,
+  "tracks_never_hidden": 4,
+  "tracks_longest_1": 0,
+  "tracks_longest_2_3": 144,
+  "tracks_longest_4plus": 0,
+  "longest_hidden": 2,
+  "hidden_runs": {
+   "2": 4552
+  }
+ },
+ "build_rounds": 0,
+ "builds": true,
+ "after": {
+  "tracks": 148,
+  "sprite_frames": 28128,
+  "best_shown_pct": 71.1,
+  "shown_pct": 67.2,
+  "partly_pct": 0.0,
+  "ppu_pct": 0.0,
+  "game_pct": 32.8,
+  "hidden_pct": 32.8,
+  "tracks_never_hidden": 4,
+  "tracks_longest_1": 144,
+  "tracks_longest_2_3": 0,
+  "tracks_longest_4plus": 0,
+  "longest_hidden": 1,
+  "hidden_runs": {
+   "1": 9236
+  }
+ },
+ "cost_usd": 0.0597,
+ "calls": 1,
+ "output_tokens": 4359,
+ "wall_s": 34.2
+}

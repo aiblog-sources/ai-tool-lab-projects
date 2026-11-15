@@ -1,0 +1,50 @@
+{
+ "scene": "formation-plain",
+ "rep": 1,
+ "model": "claude-sonnet-5-5",
+ "from_stage": "v1",
+ "before": {
+  "tracks": 90,
+  "sprite_frames": 100848,
+  "best_shown_pct": 43.0,
+  "shown_pct": 28.8,
+  "partly_pct": 0.0,
+  "ppu_pct": 0.0,
+  "game_pct": 71.2,
+  "hidden_pct": 71.2,
+  "tracks_never_hidden": 10,
+  "tracks_longest_1": 0,
+  "tracks_longest_2_3": 80,
+  "tracks_longest_4plus": 0,
+  "longest_hidden": 3,
+  "hidden_runs": {
+   "3": 23920
+  }
+ },
+ "build_rounds": 0,
+ "builds": true,
+ "after": {
+  "tracks": 90,
+  "sprite_frames": 100960,
+  "best_shown_pct": 43.0,
+  "shown_pct": 42.8,
+  "partly_pct": 0.0,
+  "ppu_pct": 0.0,
+  "game_pct": 57.2,
+  "hidden_pct": 57.2,
+  "tracks_never_hidden": 10,
+  "tracks_longest_1": 0,
+  "tracks_longest_2_3": 80,
+  "tracks_longest_4plus": 0,
+  "longest_hidden": 3,
+  "hidden_runs": {
+   "1": 18592,
+   "2": 19344,
+   "3": 144
+  }
+ },
+ "cost_usd": 0.06,
+ "calls": 1,
+ "output_tokens": 4308,
+ "wall_s": 35.2
+}

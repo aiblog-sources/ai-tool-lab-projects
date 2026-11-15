@@ -1,0 +1,17 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 20 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 24000. Shown 56.5%, partly drawn 0.7%, hidden 42.9% (dropped by the PPU's 8-per-line limit 42.9%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 56.4% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 249 frames.
+WARNING: 95.0% of the sprites in OAM had an identical sprite (same tile and attributes) within 4 px. The tracker cannot tell those apart, so per-sprite hidden stretches are unreliable here (the hidden share is still right).
+Sprites by longest hidden stretch: never hidden 1, 1 frame 0, 2-3 frames 4, 4 or more 15.
+Hidden stretches by length (frames: count): 1: 1264, 2: 2624, 4: 15, 7: 8, 10: 2, 12: 1, 16: 1, 17: 1, 20: 1, 21: 1, 32: 2, 34: 1, 38: 1, 50: 3, 59: 1, 60: 2, 62: 1, 66: 1, 71: 1, 73: 1, 81: 1, 93: 1, 198: 1, 201: 1, 207: 1, 219: 2, 222: 2, 224: 2, 227: 2, 249: 1
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $04 attr $00 from x=146 y=112, frames 60-1259: hidden 58.2% (PPU 698, program 0), longest 249 frames  DDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSD
+  tile $04 attr $00 from x=90 y=112, frames 60-1259: hidden 55.2% (PPU 662, program 0), longest 227 frames  DSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDD
+  tile $04 attr $00 from x=98 y=112, frames 60-1259: hidden 53.6% (PPU 643, program 0), longest 227 frames  DSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDS
+  tile $04 attr $00 from x=86 y=112, frames 60-1259: hidden 56.9% (PPU 683, program 0), longest 224 frames  DDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDD
+  tile $04 attr $00 from x=74 y=112, frames 60-1259: hidden 54.8% (PPU 657, program 0), longest 224 frames  DDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDD
+  tile $04 attr $00 from x=102 y=112, frames 60-1259: hidden 54.9% (PPU 659, program 0), longest 222 frames  DSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDS
+  tile $04 attr $00 from x=110 y=112, frames 60-1259: hidden 51.7% (PPU 620, program 0), longest 222 frames  DSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDS
+  tile $04 attr $00 from x=78 y=112, frames 60-1259: hidden 54.7% (PPU 656, program 0), longest 219 frames  DDSDDSDSDDSDDSDSDDSDDSDDSDSDDSDDSDSDDSDDSDDSDSDD

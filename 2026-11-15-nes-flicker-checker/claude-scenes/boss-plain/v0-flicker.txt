@@ -1,0 +1,16 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 68 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 57632. Shown 99.8%, partly drawn 0.0%, hidden 0.2% (dropped by the PPU's 8-per-line limit 0.0%, left out of OAM by the program 0.2%).
+Best case with 8 sprites per line: about 100.0% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 8 frames.
+Sprites by longest hidden stretch: never hidden 60, 1 frame 0, 2-3 frames 0, 4 or more 8.
+Hidden stretches by length (frames: count): 8: 12
+Worst sprites (pattern of the first 48 frames of their life: S shown, P partly, D dropped by PPU, G left out by the program):
+  tile $04 attr $02 from x=124 y=87, frames 265-296: hidden 25.0% (PPU 0, program 8), longest 8 frames  SSSSSSSSGGGGGGGGSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=124 y=15, frames 521-552: hidden 25.0% (PPU 0, program 8), longest 8 frames  SSSSSSSSGGGGGGGGSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=124 y=87, frames 777-808: hidden 25.0% (PPU 0, program 8), longest 8 frames  SSSSSSSSGGGGGGGGSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=124 y=15, frames 1033-1064: hidden 25.0% (PPU 0, program 8), longest 8 frames  SSSSSSSSGGGGGGGGSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=131 y=37, frames 60-280: hidden 7.2% (PPU 0, program 16), longest 8 frames  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=197 y=65, frames 60-536: hidden 3.4% (PPU 0, program 16), longest 8 frames  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=137 y=86, frames 241-792: hidden 2.9% (PPU 0, program 16), longest 8 frames  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  tile $04 attr $02 from x=111 y=16, frames 497-1048: hidden 2.9% (PPU 0, program 16), longest 8 frames  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS

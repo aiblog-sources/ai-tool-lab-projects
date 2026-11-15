@@ -1,0 +1,7 @@
+nesflicker report, frames 60-1259 (20.0 s at 60 fps)
+Sprites followed: 784 (each one hardware sprite, 8x8 or 8x16; a 16x16 object is 4 of them)
+Sprite-frames: 54597. Shown 100.0%, partly drawn 0.0%, hidden 0.0% (dropped by the PPU's 8-per-line limit 0.0%, left out of OAM by the program 0.0%).
+Best case with 8 sprites per line: about 100.0% of these sprite-frames can be fully shown (each sprite, 8 / the most sprites wanted on one of its lines: an estimate of the most any cycling scheme can show; it counts transparent rows too, so it can sit a few tenths below the real share).
+Longest stretch one sprite stayed hidden: 0 frames.
+WARNING: 8.2% of the sprites in OAM had an identical sprite (same tile and attributes) within 4 px. The tracker cannot tell those apart, so per-sprite hidden stretches are unreliable here (the hidden share is still right).
+Sprites by longest hidden stretch: never hidden 784, 1 frame 0, 2-3 frames 0, 4 or more 0.
