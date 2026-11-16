@@ -1,0 +1,121 @@
+label|points|wrong_claims|note
+ky-retry-flow/06bc|11011|0|method check not named
+ky-retry-flow/60ae|11111|0|
+ky-retry-flow/035b|11101|0|no delay source
+ky-retry-flow/ba68|11111|0|
+ky-retry-flow/7d6c|11111|0|
+ky-retry-flow/dfcd|01111|0|#run not named (calls it the constructor's promise)
+ky-retry-flow/b6b0|11111|0|
+ky-retry-flow/83bd|11111|0|
+ky-timeout/eea7|11101|0|retryOnTimeout not mentioned
+ky-timeout/68e1|11111|0|
+ky-timeout/5e32|11111|0|
+ky-timeout/74a6|11110|0|controller reset not mentioned
+ky-timeout/02f6|11111|0|
+ky-timeout/0364|11111|0|
+ky-timeout/6d14|11110|0|controller reset not mentioned
+ky-timeout/ca83|11101|0|default no-retry on timeout not stated
+ky-hooks-order/c91a|11111|0|
+ky-hooks-order/3afc|11111|0|
+ky-hooks-order/54f8|11111|0|
+ky-hooks-order/298c|11111|0|
+ky-hooks-order/6869|11111|0|
+ky-hooks-order/e692|11111|0|
+ky-hooks-order/6b4f|11111|0|
+ky-hooks-order/fe7b|11111|0|
+ky-json-shortcut/7cf6|11110|1|says the body is parsed with response.json() (it is text() + parseJson/JSON.parse)
+ky-json-shortcut/c74d|11110|0|
+ky-json-shortcut/c71b|11110|0|
+ky-json-shortcut/3e0f|11110|0|
+ky-json-shortcut/eda8|11110|0|
+ky-json-shortcut/3a91|11110|0|
+ky-json-shortcut/9b38|11110|0|
+ky-json-shortcut/c556|11110|1|says the body is parsed with response.json()
+ky-force-retry/1ea8|11111|0|
+ky-force-retry/05fa|10111|0|does not say a 2xx can be force-retried
+ky-force-retry/23bc|10110|0|no 2xx; request swap timing not given
+ky-force-retry/ce86|11111|0|
+ky-force-retry/7607|11111|0|
+ky-force-retry/0fd3|10110|0|no 2xx; request swap timing not given
+ky-force-retry/5fca|10111|0|no 2xx
+ky-force-retry/0c6f|11110|0|request swap timing not given
+requests-get-flow/cb08|11110|0|answered from memory without opening the repo (says so); no cookie extraction
+requests-get-flow/9b35|11110|0|no cookie extraction
+requests-get-flow/c072|11111|0|
+requests-get-flow/dce0|11110|0|no cookie extraction
+requests-get-flow/3fac|11111|0|
+requests-get-flow/04b5|11111|0|
+requests-get-flow/9cb3|11111|0|
+requests-get-flow/03b9|10111|0|prepare_request merging not described
+requests-redirects/0151|11111|0|
+requests-redirects/361c|11011|0|method rules not given
+requests-redirects/d62a|11011|1|says 301 turns any non-GET/HEAD method into GET (only POST)
+requests-redirects/f14b|11111|0|
+requests-redirects/7c7b|11111|0|
+requests-redirects/a318|11011|0|method rules only by example
+requests-redirects/2365|11111|0|
+requests-redirects/b26f|11011|0|method rules not given
+requests-adapters/ef3d|11111|0|
+requests-adapters/7301|11111|0|
+requests-adapters/b6a8|11111|0|
+requests-adapters/472b|11111|0|
+requests-adapters/17c1|11111|0|
+requests-adapters/679e|11111|0|
+requests-adapters/fb98|11111|0|
+requests-adapters/7c58|11111|0|
+requests-env-settings/e636|11111|0|
+requests-env-settings/36e4|11111|0|
+requests-env-settings/b955|11111|0|
+requests-env-settings/fc99|11111|0|
+requests-env-settings/b074|11111|0|
+requests-env-settings/20d5|11111|0|
+requests-env-settings/aab2|11111|0|
+requests-env-settings/03c6|11111|1|says None proxies go in through the session merge instead (env proxies are dropped then)
+requests-hooks-cookies/1d8d|11111|0|
+requests-hooks-cookies/e3e5|11011|0|merge_hooks not mentioned
+requests-hooks-cookies/c7b0|11111|0|
+requests-hooks-cookies/34fc|11011|0|merge_hooks not mentioned
+requests-hooks-cookies/1c89|11011|0|merge_hooks not mentioned
+requests-hooks-cookies/c113|11011|0|merge_hooks not mentioned
+requests-hooks-cookies/c738|11111|0|
+requests-hooks-cookies/a95e|11111|0|
+diff-tour-flow/fca8|11111|0|
+diff-tour-flow/ca02|11111|0|
+diff-tour-flow/964d|11111|0|
+diff-tour-flow/47de|11111|0|
+diff-tour-flow/b452|11111|0|
+diff-tour-flow/a307|11111|0|
+diff-tour-flow/7985|11111|0|
+diff-tour-flow/6155|11111|0|
+diff-tour-invalid/bba0|01101|0|extractJSON not described; no draft.txt
+diff-tour-invalid/0980|01111|0|extractJSON not described
+diff-tour-invalid/d93c|01111|0|extractJSON not described
+diff-tour-invalid/7786|00111|0|extractJSON not described; no-JSON rerun missing
+diff-tour-invalid/0df8|01111|0|extractJSON not described
+diff-tour-invalid/71b9|01101|0|extractJSON not described; no draft.txt
+diff-tour-invalid/0314|01101|0|extractJSON not described; no draft.txt
+diff-tour-invalid/52d3|10111|0|no-JSON rerun missing
+diff-tour-sandbox/af8b|11101|0|no --strict-mcp-config
+diff-tour-sandbox/6414|11101|0|no --strict-mcp-config
+diff-tour-sandbox/9c8b|10110|0|no path checks in extraction; workspace removal missing
+diff-tour-sandbox/3895|11100|0|only dontAsk; workspace removal missing
+diff-tour-sandbox/4494|10111|0|abs/.. path checks missing
+diff-tour-sandbox/94d3|10110|0|no path checks in extraction; workspace removal missing
+diff-tour-sandbox/54b3|11101|0|no dontAsk / strict-mcp-config
+diff-tour-sandbox/73c2|10100|0|only --tools and dontAsk; no path checks; no removal
+diff-tour-cache/8bcb|11110|0|no picker or answer write-back
+diff-tour-cache/db81|11111|0|
+diff-tour-cache/4242|11111|0|
+diff-tour-cache/cec5|11111|0|
+diff-tour-cache/9e5f|11111|0|
+diff-tour-cache/f281|10110|0|no cache location; no picker or write-back
+diff-tour-cache/d790|11110|0|no picker or write-back
+diff-tour-cache/cb72|10110|0|no cache location; no picker or write-back
+diff-tour-ask/f48d|11011|0|askPrompt contents not described
+diff-tour-ask/d064|11011|0|askPrompt contents not described
+diff-tour-ask/ca1a|11011|0|askPrompt contents not described
+diff-tour-ask/05c0|11011|0|askPrompt contents not described
+diff-tour-ask/3614|10011|0|no tour.json; askPrompt contents not described
+diff-tour-ask/6b28|11011|0|askPrompt contents not described
+diff-tour-ask/6f7e|11111|0|
+diff-tour-ask/324c|11011|0|askPrompt contents only partly described

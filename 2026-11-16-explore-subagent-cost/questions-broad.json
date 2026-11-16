@@ -1,0 +1,14 @@
+{
+ "repos": {"django": {"name": "Django (django/django, Python web framework)", "commit": "f24f38c"}},
+ "questions": [
+  {"id": "django-middleware", "repo": "django",
+   "q": "List every middleware class that ships in the django/ package (not tests), with the module it is defined in.",
+   "format": "Answer with a plain list, one class per line as `ClassName (module)`, nothing else."},
+  {"id": "django-commands", "repo": "django",
+   "q": "List every management command that ships in the django/ package (not tests), with the app or package it belongs to.",
+   "format": "Answer with a plain list, one command per line as `command (app)`, nothing else."},
+  {"id": "django-signals", "repo": "django",
+   "q": "List every Signal instance defined in the django/ package (not tests), with the module it is defined in.",
+   "format": "Answer with a plain list, one signal per line as `signal_name (module)`, nothing else."}
+ ]
+}

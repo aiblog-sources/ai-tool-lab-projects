@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Does Claude Code's Explore subagent save tokens? 156 headless runs](2026-11-16-explore-subagent-cost/) | [Claude Code Explore subagent: does it save tokens?](https://aitoollabs.dev/posts/claude-code-explore-subagent-cost/) | Shipped |
 | [nesflicker: how long each NES sprite stays hidden, and whether the PPU or the program hid it](2026-11-15-nes-flicker-checker/) | [NES sprite flicker: a checker for how long sprites stay hidden](https://aitoollabs.dev/posts/nes-sprite-flicker-checker/) | Shipped |
 | [Reasoning before the answer in a JSON schema: does the order matter, and does Ollama keep it?](2026-11-14-reasoning-field-order/) | [JSON schema field order: put reasoning before the answer](https://aitoollabs.dev/posts/json-schema-reasoning-field-order/) | Shipped |
 | [nessprites: a headless NES sprites-per-scanline checker, with the overflow flag bug modeled](2026-11-13-nes-sprite-limit-checker/) | [NES 8 sprites per scanline: a checker for dropped sprites](https://aitoollabs.dev/posts/nes-8-sprites-per-scanline-checker/) | Shipped |
