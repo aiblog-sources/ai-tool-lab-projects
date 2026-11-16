@@ -1,0 +1,602 @@
+{
+ "ky-retry-flow/06bc": {
+  "id": "ky-retry-flow",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "ky-retry-flow/60ae": {
+  "id": "ky-retry-flow",
+  "condition": "explore",
+  "rep": 2
+ },
+ "ky-retry-flow/035b": {
+  "id": "ky-retry-flow",
+  "condition": "default",
+  "rep": 2
+ },
+ "ky-retry-flow/ba68": {
+  "id": "ky-retry-flow",
+  "condition": "explore",
+  "rep": 1
+ },
+ "ky-retry-flow/7d6c": {
+  "id": "ky-retry-flow",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "ky-retry-flow/dfcd": {
+  "id": "ky-retry-flow",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "ky-retry-flow/b6b0": {
+  "id": "ky-retry-flow",
+  "condition": "default",
+  "rep": 1
+ },
+ "ky-retry-flow/83bd": {
+  "id": "ky-retry-flow",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "ky-timeout/eea7": {
+  "id": "ky-timeout",
+  "condition": "explore",
+  "rep": 1
+ },
+ "ky-timeout/68e1": {
+  "id": "ky-timeout",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "ky-timeout/5e32": {
+  "id": "ky-timeout",
+  "condition": "explore",
+  "rep": 2
+ },
+ "ky-timeout/74a6": {
+  "id": "ky-timeout",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "ky-timeout/02f6": {
+  "id": "ky-timeout",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "ky-timeout/0364": {
+  "id": "ky-timeout",
+  "condition": "default",
+  "rep": 2
+ },
+ "ky-timeout/6d14": {
+  "id": "ky-timeout",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "ky-timeout/ca83": {
+  "id": "ky-timeout",
+  "condition": "default",
+  "rep": 1
+ },
+ "ky-hooks-order/c91a": {
+  "id": "ky-hooks-order",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "ky-hooks-order/3afc": {
+  "id": "ky-hooks-order",
+  "condition": "explore",
+  "rep": 1
+ },
+ "ky-hooks-order/54f8": {
+  "id": "ky-hooks-order",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "ky-hooks-order/298c": {
+  "id": "ky-hooks-order",
+  "condition": "default",
+  "rep": 2
+ },
+ "ky-hooks-order/6869": {
+  "id": "ky-hooks-order",
+  "condition": "explore",
+  "rep": 2
+ },
+ "ky-hooks-order/e692": {
+  "id": "ky-hooks-order",
+  "condition": "default",
+  "rep": 1
+ },
+ "ky-hooks-order/6b4f": {
+  "id": "ky-hooks-order",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "ky-hooks-order/fe7b": {
+  "id": "ky-hooks-order",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "ky-json-shortcut/7cf6": {
+  "id": "ky-json-shortcut",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "ky-json-shortcut/c74d": {
+  "id": "ky-json-shortcut",
+  "condition": "explore",
+  "rep": 2
+ },
+ "ky-json-shortcut/c71b": {
+  "id": "ky-json-shortcut",
+  "condition": "default",
+  "rep": 2
+ },
+ "ky-json-shortcut/3e0f": {
+  "id": "ky-json-shortcut",
+  "condition": "explore",
+  "rep": 1
+ },
+ "ky-json-shortcut/eda8": {
+  "id": "ky-json-shortcut",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "ky-json-shortcut/3a91": {
+  "id": "ky-json-shortcut",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "ky-json-shortcut/9b38": {
+  "id": "ky-json-shortcut",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "ky-json-shortcut/c556": {
+  "id": "ky-json-shortcut",
+  "condition": "default",
+  "rep": 1
+ },
+ "ky-force-retry/1ea8": {
+  "id": "ky-force-retry",
+  "condition": "explore",
+  "rep": 1
+ },
+ "ky-force-retry/05fa": {
+  "id": "ky-force-retry",
+  "condition": "default",
+  "rep": 1
+ },
+ "ky-force-retry/23bc": {
+  "id": "ky-force-retry",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "ky-force-retry/ce86": {
+  "id": "ky-force-retry",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "ky-force-retry/7607": {
+  "id": "ky-force-retry",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "ky-force-retry/0fd3": {
+  "id": "ky-force-retry",
+  "condition": "default",
+  "rep": 2
+ },
+ "ky-force-retry/5fca": {
+  "id": "ky-force-retry",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "ky-force-retry/0c6f": {
+  "id": "ky-force-retry",
+  "condition": "explore",
+  "rep": 2
+ },
+ "requests-get-flow/cb08": {
+  "id": "requests-get-flow",
+  "condition": "default",
+  "rep": 2
+ },
+ "requests-get-flow/9b35": {
+  "id": "requests-get-flow",
+  "condition": "default",
+  "rep": 1
+ },
+ "requests-get-flow/c072": {
+  "id": "requests-get-flow",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "requests-get-flow/dce0": {
+  "id": "requests-get-flow",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "requests-get-flow/3fac": {
+  "id": "requests-get-flow",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "requests-get-flow/04b5": {
+  "id": "requests-get-flow",
+  "condition": "explore",
+  "rep": 2
+ },
+ "requests-get-flow/9cb3": {
+  "id": "requests-get-flow",
+  "condition": "explore",
+  "rep": 1
+ },
+ "requests-get-flow/03b9": {
+  "id": "requests-get-flow",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "requests-redirects/0151": {
+  "id": "requests-redirects",
+  "condition": "explore",
+  "rep": 1
+ },
+ "requests-redirects/361c": {
+  "id": "requests-redirects",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "requests-redirects/d62a": {
+  "id": "requests-redirects",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "requests-redirects/f14b": {
+  "id": "requests-redirects",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "requests-redirects/7c7b": {
+  "id": "requests-redirects",
+  "condition": "explore",
+  "rep": 2
+ },
+ "requests-redirects/a318": {
+  "id": "requests-redirects",
+  "condition": "default",
+  "rep": 2
+ },
+ "requests-redirects/2365": {
+  "id": "requests-redirects",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "requests-redirects/b26f": {
+  "id": "requests-redirects",
+  "condition": "default",
+  "rep": 1
+ },
+ "requests-adapters/ef3d": {
+  "id": "requests-adapters",
+  "condition": "default",
+  "rep": 1
+ },
+ "requests-adapters/7301": {
+  "id": "requests-adapters",
+  "condition": "default",
+  "rep": 2
+ },
+ "requests-adapters/b6a8": {
+  "id": "requests-adapters",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "requests-adapters/472b": {
+  "id": "requests-adapters",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "requests-adapters/17c1": {
+  "id": "requests-adapters",
+  "condition": "explore",
+  "rep": 2
+ },
+ "requests-adapters/679e": {
+  "id": "requests-adapters",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "requests-adapters/fb98": {
+  "id": "requests-adapters",
+  "condition": "explore",
+  "rep": 1
+ },
+ "requests-adapters/7c58": {
+  "id": "requests-adapters",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "requests-env-settings/e636": {
+  "id": "requests-env-settings",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "requests-env-settings/36e4": {
+  "id": "requests-env-settings",
+  "condition": "explore",
+  "rep": 1
+ },
+ "requests-env-settings/b955": {
+  "id": "requests-env-settings",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "requests-env-settings/fc99": {
+  "id": "requests-env-settings",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "requests-env-settings/b074": {
+  "id": "requests-env-settings",
+  "condition": "explore",
+  "rep": 2
+ },
+ "requests-env-settings/20d5": {
+  "id": "requests-env-settings",
+  "condition": "default",
+  "rep": 1
+ },
+ "requests-env-settings/aab2": {
+  "id": "requests-env-settings",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "requests-env-settings/03c6": {
+  "id": "requests-env-settings",
+  "condition": "default",
+  "rep": 2
+ },
+ "requests-hooks-cookies/1d8d": {
+  "id": "requests-hooks-cookies",
+  "condition": "explore",
+  "rep": 2
+ },
+ "requests-hooks-cookies/e3e5": {
+  "id": "requests-hooks-cookies",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "requests-hooks-cookies/c7b0": {
+  "id": "requests-hooks-cookies",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "requests-hooks-cookies/34fc": {
+  "id": "requests-hooks-cookies",
+  "condition": "default",
+  "rep": 2
+ },
+ "requests-hooks-cookies/1c89": {
+  "id": "requests-hooks-cookies",
+  "condition": "default",
+  "rep": 1
+ },
+ "requests-hooks-cookies/c113": {
+  "id": "requests-hooks-cookies",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "requests-hooks-cookies/c738": {
+  "id": "requests-hooks-cookies",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "requests-hooks-cookies/a95e": {
+  "id": "requests-hooks-cookies",
+  "condition": "explore",
+  "rep": 1
+ },
+ "diff-tour-flow/fca8": {
+  "id": "diff-tour-flow",
+  "condition": "explore",
+  "rep": 1
+ },
+ "diff-tour-flow/ca02": {
+  "id": "diff-tour-flow",
+  "condition": "default",
+  "rep": 2
+ },
+ "diff-tour-flow/964d": {
+  "id": "diff-tour-flow",
+  "condition": "default",
+  "rep": 1
+ },
+ "diff-tour-flow/47de": {
+  "id": "diff-tour-flow",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "diff-tour-flow/b452": {
+  "id": "diff-tour-flow",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "diff-tour-flow/a307": {
+  "id": "diff-tour-flow",
+  "condition": "explore",
+  "rep": 2
+ },
+ "diff-tour-flow/7985": {
+  "id": "diff-tour-flow",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "diff-tour-flow/6155": {
+  "id": "diff-tour-flow",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "diff-tour-invalid/bba0": {
+  "id": "diff-tour-invalid",
+  "condition": "explore",
+  "rep": 2
+ },
+ "diff-tour-invalid/0980": {
+  "id": "diff-tour-invalid",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "diff-tour-invalid/d93c": {
+  "id": "diff-tour-invalid",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "diff-tour-invalid/7786": {
+  "id": "diff-tour-invalid",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "diff-tour-invalid/0df8": {
+  "id": "diff-tour-invalid",
+  "condition": "default",
+  "rep": 2
+ },
+ "diff-tour-invalid/71b9": {
+  "id": "diff-tour-invalid",
+  "condition": "explore",
+  "rep": 1
+ },
+ "diff-tour-invalid/0314": {
+  "id": "diff-tour-invalid",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "diff-tour-invalid/52d3": {
+  "id": "diff-tour-invalid",
+  "condition": "default",
+  "rep": 1
+ },
+ "diff-tour-sandbox/af8b": {
+  "id": "diff-tour-sandbox",
+  "condition": "explore",
+  "rep": 2
+ },
+ "diff-tour-sandbox/6414": {
+  "id": "diff-tour-sandbox",
+  "condition": "explore",
+  "rep": 1
+ },
+ "diff-tour-sandbox/9c8b": {
+  "id": "diff-tour-sandbox",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "diff-tour-sandbox/3895": {
+  "id": "diff-tour-sandbox",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "diff-tour-sandbox/4494": {
+  "id": "diff-tour-sandbox",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "diff-tour-sandbox/94d3": {
+  "id": "diff-tour-sandbox",
+  "condition": "default",
+  "rep": 1
+ },
+ "diff-tour-sandbox/54b3": {
+  "id": "diff-tour-sandbox",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "diff-tour-sandbox/73c2": {
+  "id": "diff-tour-sandbox",
+  "condition": "default",
+  "rep": 2
+ },
+ "diff-tour-cache/8bcb": {
+  "id": "diff-tour-cache",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "diff-tour-cache/db81": {
+  "id": "diff-tour-cache",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "diff-tour-cache/4242": {
+  "id": "diff-tour-cache",
+  "condition": "default",
+  "rep": 2
+ },
+ "diff-tour-cache/cec5": {
+  "id": "diff-tour-cache",
+  "condition": "explore",
+  "rep": 1
+ },
+ "diff-tour-cache/9e5f": {
+  "id": "diff-tour-cache",
+  "condition": "default",
+  "rep": 1
+ },
+ "diff-tour-cache/f281": {
+  "id": "diff-tour-cache",
+  "condition": "explore",
+  "rep": 2
+ },
+ "diff-tour-cache/d790": {
+  "id": "diff-tour-cache",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "diff-tour-cache/cb72": {
+  "id": "diff-tour-cache",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "diff-tour-ask/f48d": {
+  "id": "diff-tour-ask",
+  "condition": "no-subagent",
+  "rep": 1
+ },
+ "diff-tour-ask/d064": {
+  "id": "diff-tour-ask",
+  "condition": "no-subagent",
+  "rep": 2
+ },
+ "diff-tour-ask/ca1a": {
+  "id": "diff-tour-ask",
+  "condition": "default",
+  "rep": 2
+ },
+ "diff-tour-ask/05c0": {
+  "id": "diff-tour-ask",
+  "condition": "explore-haiku",
+  "rep": 1
+ },
+ "diff-tour-ask/3614": {
+  "id": "diff-tour-ask",
+  "condition": "explore",
+  "rep": 2
+ },
+ "diff-tour-ask/6b28": {
+  "id": "diff-tour-ask",
+  "condition": "default",
+  "rep": 1
+ },
+ "diff-tour-ask/6f7e": {
+  "id": "diff-tour-ask",
+  "condition": "explore-haiku",
+  "rep": 2
+ },
+ "diff-tour-ask/324c": {
+  "id": "diff-tour-ask",
+  "condition": "explore",
+  "rep": 1
+ }
+}
