@@ -1,0 +1,85 @@
+{
+ "scene": "rain-plain",
+ "condition": "loop-plain",
+ "rep": 4,
+ "model": "claude-sonnet-5-5",
+ "from_stage": "v1",
+ "build_rounds": 0,
+ "builds": true,
+ "before": {
+  "loops": 590,
+  "slow_loops": 590,
+  "busy_per_loop_avg": 51751,
+  "runtime_share": 0.334
+ },
+ "rounds": [
+  {
+   "slow_loops": 73,
+   "loops": 1126,
+   "busy_per_loop_avg": 22873,
+   "busy_per_loop_max": 37848
+  },
+  {
+   "slow_loops": 0,
+   "loops": 1199,
+   "busy_per_loop_avg": 16946,
+   "busy_per_loop_max": 27789
+  }
+ ],
+ "after": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 16946,
+  "busy_per_loop_max": 27789,
+  "busy_share": 0.5691,
+  "top_self": [
+   "_main",
+   0.5872
+  ],
+  "top_inclusive": [
+   [
+    "_band_inc",
+    0.1207
+   ],
+   [
+    "_band_dec",
+    0.1204
+   ],
+   [
+    "_band_ok",
+    0.0973
+   ]
+  ],
+  "runtime_share": 0.0693,
+  "runtime_top": [
+   [
+    "pusha",
+    0.0472,
+    39998
+   ],
+   [
+    "addysp",
+    0.0155,
+    0
+   ],
+   [
+    "incsp3",
+    0.003,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0
+ },
+ "picture": {
+  "tables_a": 335,
+  "tables_b": 689,
+  "compared": 335,
+  "same": true,
+  "first_diff": null
+ },
+ "cost_usd": 0.1664,
+ "calls": 2,
+ "output_tokens": 10724,
+ "model_wall_s": 73.3,
+ "wall_s": 79.1
+}

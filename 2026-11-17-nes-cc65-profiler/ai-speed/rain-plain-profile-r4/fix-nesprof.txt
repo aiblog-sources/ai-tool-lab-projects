@@ -1,0 +1,32 @@
+frames 1260 (measured 1200 from frame 60), wall 0.78 s (1618 frames/s)
+cycles per frame 29780.5; busy 21746.5 (73.0%), idle 8034.0, NMI handler 591.7; busiest frame 396 with 29718
+game loops 1120; loops that saw 2+ NMIs (missed a frame) 80; most busy cycles in one loop 38521
+self cycles add up to 35736600 of 35736602 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_main                 11270.8      11270.8       0.00    51.8%
+_wait_frame            7998.5       7998.5       0.93     0.0% (idle)
+_band_add              4729.4       5186.3       6.26    21.7%
+_band_fits             1817.0       2047.6       3.16     8.4%
+addeqysp               1605.3       1605.3      37.33     7.4%
+nmi                     585.7        591.7       1.00     2.7%
+pusha                   444.6        444.6      18.52     2.0%
+_pad_read               427.5        484.4       0.93     2.0%
+addysp                  244.9        244.9       0.00     1.1%
+decsp2                  169.5        169.5       9.42     0.8%
+tosicmp                 106.0        106.0       1.83     0.5%
+staxysp                  93.5         93.5       0.00     0.4%
+
+inclusive        cycles/frame    busy%
+_main                 11270.8    51.8%
+_band_add              5186.3    23.8%
+_band_fits             2047.6     9.4%
+addeqysp               1605.3     7.4%
+nmi                     591.7     2.7%
+_pad_read               484.4     2.2%
+pusha                   444.6     2.0%
+addysp                  244.9     1.1%
+decsp2                  169.5     0.8%
+tosicmp                 106.0     0.5%
+stax0sp                 100.0     0.5%
+pushw0sp                 96.9     0.4%

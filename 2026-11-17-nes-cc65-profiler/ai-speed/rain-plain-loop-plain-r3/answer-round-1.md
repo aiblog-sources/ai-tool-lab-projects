@@ -1,0 +1,213 @@
+The first version still overran because the cost was the baseline work on all 40 drops, not just the band code. Each drop paid for cc65's generic C code, and the OAM copy did a 16-bit address calculation per byte. I moved the two per-drop hot loops into inline assembly:
+
+- **Drop update:** an asm scan advances every drop that is clearly safe and stops at the first drop that isn't. "Clearly safe" means the new Y is below 193, so the drop is not in or near the umbrella band and cannot respawn or stall. Drops from Y 193 up still go through the original C logic, so band counting, umbrella catches, respawns and stalls behave exactly as before, in the same order.
+- **OAM copy:** an asm loop copies drop Y and X into OAM, still starting at the rotating index, so the priority rotation is unchanged.
+
+I haven't built or run this, so I haven't measured the cycle count. The per-drop work should be much smaller on average, but the worst frame, with many drops in the band at once, is the case to check.
+
+```c
+/* main.c - Rain: 40 falling drops (8x8) and a d-pad-controlled umbrella (32x16).
+ *
+ * Sprite budget: the umbrella takes OAM slots 0-7 (the highest priority) so
+ * it never loses sprites to the 8-per-scanline limit. The 40 drops take
+ * slots 8-47. Their priority order rotates every frame.
+ *
+ * The umbrella uses 4 sprites on each of lines UMB_Y..UMB_Y+15, so at most
+ * 4 drops may overlap any one of those lines. A per-line counter (band_cnt)
+ * tracks this; a drop whose next step would put a 5th drop on a line in the
+ * band simply waits a frame, so the hardware limit is never exceeded.
+ */
+#include "nes.h"
+
+#define NUM_DROPS   40
+#define DROP_TILE   0x08   /* small dot */
+#define UMB_Y       200    /* OAM Y of the canopy's top row */
+#define UMB_H       16
+#define UMB_W       32
+#define UMB_SPEED   3
+#define DROP_BOTTOM 232
+#define BAND_MAX    4      /* drops allowed per line inside the umbrella band */
+
+/* a drop at row y touches the band iff 193 <= y <= 215 */
+#define IN_BAND(y)  ((unsigned char)((y) - 193) < 23)
+
+static const unsigned char palette[32] = {
+    /* background */
+    0x0F, 0x0F, 0x0F, 0x0F,  0x0F, 0x0F, 0x0F, 0x0F,
+    0x0F, 0x0F, 0x0F, 0x0F,  0x0F, 0x0F, 0x0F, 0x0F,
+    /* sprites: pal 0 = rain, pal 1 = umbrella */
+    0x0F, 0x21, 0x11, 0x30,
+    0x0F, 0x16, 0x06, 0x38,
+    0x0F, 0x21, 0x11, 0x30,
+    0x0F, 0x21, 0x11, 0x30
+};
+
+/* globals (not static) so inline asm can reach them as _name */
+unsigned char dx[NUM_DROPS];
+unsigned char dy[NUM_DROPS];
+unsigned char dsp[NUM_DROPS];
+unsigned char rot;
+unsigned char si;
+static unsigned char band_cnt[UMB_H];
+
+static unsigned char ux;
+
+/* add (+1) or remove (-1) a drop at row y from the band counters */
+static void band_add(unsigned char y, signed char d)
+{
+    unsigned char l, hi;
+    if (y + 8 <= UMB_Y || y >= UMB_Y + UMB_H) return;
+    l = (y > UMB_Y) ? y : UMB_Y;
+    hi = y + 7;
+    if (hi > UMB_Y + UMB_H - 1) hi = UMB_Y + UMB_H - 1;
+    for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;
+}
+
+/* can a drop at row y be added without exceeding BAND_MAX on any line? */
+static unsigned char band_fits(unsigned char y)
+{
+    unsigned char l, hi;
+    if (y + 8 <= UMB_Y || y >= UMB_Y + UMB_H) return 1;
+    l = (y > UMB_Y) ? y : UMB_Y;
+    hi = y + 7;
+    if (hi > UMB_Y + UMB_H - 1) hi = UMB_Y + UMB_H - 1;
+    for (; l <= hi; ++l) {
+        if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;
+    }
+    return 1;
+}
+
+static void respawn(unsigned char i)
+{
+    unsigned char x = rnd8();
+    if (x > 247) x -= 8;
+    dx[i] = x;
+    dy[i] = 0;
+}
+
+void main(void)
+{
+    unsigned char i, k, pad, o, y, t, m;
+    unsigned int  top;
+
+    ppu_setup(palette);
+    oam_hide_all();
+
+    ux = (256 - UMB_W) / 2;
+    rot = 0;
+
+    for (i = 0; i < UMB_H; ++i) band_cnt[i] = 0;
+
+    for (i = 0; i < NUM_DROPS; ++i) {
+        dx[i] = rnd8();
+        if (dx[i] > 247) dx[i] -= 8;
+        t = rnd8() % DROP_BOTTOM;
+        while (!band_fits(t)) t = rnd8() % DROP_BOTTOM;
+        dy[i] = t;
+        band_add(t, 1);
+        dsp[i] = 1 + (i & 3) + ((i >> 2) & 1);   /* speeds 1..5 */
+    }
+
+    /* constant OAM bytes, written once */
+    for (i = 0; i < 8; ++i) {
+        OAM_Y(i)    = (i < 4) ? UMB_Y : UMB_Y + 8;
+        OAM_TILE(i) = (i < 4) ? 0x01 : 0x02;
+        OAM_ATTR(i) = 1;
+    }
+    for (i = 8; i < 8 + NUM_DROPS; ++i) {
+        OAM_TILE(i) = DROP_TILE;
+        OAM_ATTR(i) = 0;
+    }
+
+    for (;;) {
+        /* --- umbrella input --- */
+        pad = pad_read();
+        if (pad & PAD_LEFT) {
+            ux = (ux > UMB_SPEED) ? ux - UMB_SPEED : 0;
+        }
+        if (pad & PAD_RIGHT) {
+            ux += UMB_SPEED;
+            if (ux > 256 - UMB_W) ux = 256 - UMB_W;
+        }
+        m = ux;
+
+        /* --- drops --- */
+        i = 0;
+        for (;;) {
+            /* fast path in asm: advance drops whose new y is < 193
+               (never near the band, never respawn) until one needs
+               the full logic */
+            si = i;
+            asm("ldx _si\n"
+                "@scan:\n"
+                "cpx #40\n"
+                "bcs @out\n"
+                "lda _dy,x\n"
+                "clc\n"
+                "adc _dsp,x\n"
+                "cmp #193\n"
+                "bcs @out\n"
+                "sta _dy,x\n"
+                "inx\n"
+                "jmp @scan\n"
+                "@out:\n"
+                "stx _si\n");
+            i = si;
+            if (i >= NUM_DROPS) break;
+
+            /* slow path: original logic */
+            o = dy[i];
+            y = o + dsp[i];
+            if (IN_BAND(o)) band_add(o, -1);
+            if (y >= DROP_BOTTOM) {
+                respawn(i);
+            } else if (IN_BAND(y)) {
+                top = y;
+                if (top + 8 > UMB_Y && top < UMB_Y + 16 &&
+                    (unsigned int)dx[i] + 8 > m &&
+                    (unsigned int)dx[i] < (unsigned int)m + UMB_W) {
+                    respawn(i);          /* caught by the umbrella */
+                } else if (band_fits(y)) {
+                    dy[i] = y;
+                }
+            } else {
+                dy[i] = y;
+            }
+            o = dy[i];
+            if (IN_BAND(o)) band_add(o, 1);
+            ++i;
+        }
+
+        /* --- OAM --- */
+        OAM_X(0) = m;       OAM_X(4) = m;
+        OAM_X(1) = m + 8;   OAM_X(5) = m + 8;
+        OAM_X(2) = m + 16;  OAM_X(6) = m + 16;
+        OAM_X(3) = m + 24;  OAM_X(7) = m + 24;
+
+        asm("ldx _rot\n"
+            "ldy #32\n"
+            "@cp:\n"
+            "lda _dy,x\n"
+            "sta $0200,y\n"
+            "lda _dx,x\n"
+            "sta $0203,y\n"
+            "iny\n"
+            "iny\n"
+            "iny\n"
+            "iny\n"
+            "inx\n"
+            "cpx #40\n"
+            "bne @nw\n"
+            "ldx #0\n"
+            "@nw:\n"
+            "cpy #192\n"
+            "bne @cp\n");
+
+        ++rot;
+        if (rot >= NUM_DROPS) rot = 0;
+
+        oam_ready();
+        wait_frame();
+    }
+}
+```

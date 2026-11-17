@@ -1,0 +1,1 @@
+I built your main.c and ran it in the emulator with the same scripted pad. It still misses frames: 100 of 1099 game loops took longer than one frame (busy cycles per loop: average 23,923, max 39,285; one NTSC frame is about 29,780 CPU cycles). Make it run at 60 fps without changing what the scene shows. Reply with the full main.c in one ```c code block.

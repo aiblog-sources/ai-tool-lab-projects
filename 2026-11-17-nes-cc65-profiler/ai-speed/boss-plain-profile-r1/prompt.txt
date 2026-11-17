@@ -1,0 +1,212 @@
+Here is an NES scene written in C for cc65 (compiled with cl65 -t nes -Oirs). On the NES it runs at 30 frames per second instead of 60: its game loop takes longer than one frame, so it misses every other frame. Make it run at 60 fps without changing what the scene shows: same objects, same sizes, same positions and movement in every game loop. nes.h and nes.c are a fixed library and cannot change. Reply with the full main.c in one ```c code block.
+
+Profiler report (nesprof, run in an emulator over 1,200 frames with a scripted pad; "self" is a function's own cycles, "incl" adds what it calls, names without a leading underscore are cc65 runtime helpers or the startup code, busy% is the share of the cycles not spent waiting in wait_frame; one NTSC frame is about 29,780 CPU cycles):
+
+frames 1260 (measured 1200 from frame 60)
+cycles per frame 29780.5; busy 18139.7 (60.9%), idle 11640.8, NMI handler 362.0; busiest frame 281 with 29634
+game loops 600; loops that saw 2+ NMIs (missed a frame) 600; most busy cycles in one loop 36322
+self cycles add up to 35736599 of 35736599 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_wait_frame           11621.8      11621.8       0.50     0.0% (idle)
+_draw                  5641.7      17476.3       0.50    31.1%
+_put_sprite            4608.0       8424.0      24.00    25.4%
+shlax2                 2496.0       2496.0      96.00    13.8%
+shlax3                 1188.0       1188.0      36.00     6.5%
+pusha                   912.0        912.0      38.00     5.0%
+_sin64                  680.1       1190.1       8.50     3.7%
+addysp                  637.0        637.0       0.00     3.5%
+decsp6                  432.0        432.0      24.00     2.4%
+nmi                     356.0        362.0       1.00     2.0%
+_pad_read               229.0        259.5       0.50     1.3%
+pushwysp                204.0        204.0       4.00     1.1%
+
+inclusive        cycles/frame    busy%
+_draw                 17476.3    96.3%
+_put_sprite            8424.0    46.4%
+shlax2                 2496.0    13.8%
+_sin64                 1190.1     6.6%
+shlax3                 1188.0     6.5%
+pusha                   912.0     5.0%
+addysp                  637.0     3.5%
+decsp6                  432.0     2.4%
+nmi                     362.0     2.0%
+_update                 281.9     1.6%
+_pad_read               259.5     1.4%
+pushwysp                204.0     1.1%
+
+nes.h:
+/* Tiny NES API for the test ROM and the Claude scenes (MIT).
+ *
+ * OAM shadow: 64 entries x 4 bytes at $0200 (Y, tile, attributes, X), copied
+ * to the PPU with OAM DMA in every NMI. A sprite with OAM Y = y is drawn on
+ * lines y+1 .. y+8 (y+16 in 8x16 mode). Y = $EF..$FF hides it.
+ */
+#ifndef NES_H
+#define NES_H
+
+#define OAM ((unsigned char *)0x0200)
+#define OAM_Y(i)    OAM[((i) << 2) + 0]
+#define OAM_TILE(i) OAM[((i) << 2) + 1]
+#define OAM_ATTR(i) OAM[((i) << 2) + 2]
+#define OAM_X(i)    OAM[((i) << 2) + 3]
+
+#define NMI_COUNT (*(volatile unsigned char *)0x07F1)
+#define DEBUG0    (*(volatile unsigned char *)0x07F2)   /* free for the program */
+#define TAG       (*(volatile unsigned char *)0x07F3)   /* copied to SHOWN_TAG at each OAM DMA */
+#define OAM_READY (*(volatile unsigned char *)0x07F4)
+#define SHOWN_TAG (*(volatile unsigned char *)0x07F5)
+#define LAG       (*(volatile unsigned char *)0x07F6)   /* NMIs that found no finished table */
+
+/* shadows written to PPUCTRL / PPUMASK in the NMI */
+extern unsigned char ppu_ctrl, ppu_mask;
+#pragma zpsym ("ppu_ctrl")
+#pragma zpsym ("ppu_mask")
+#define CTRL_SPR_8X16 0x20
+
+#define PAD_A      0x80
+#define PAD_B      0x40
+#define PAD_SELECT 0x20
+#define PAD_START  0x10
+#define PAD_UP     0x08
+#define PAD_DOWN   0x04
+#define PAD_LEFT   0x02
+#define PAD_RIGHT  0x01
+
+void wait_frame(void);                    /* wait for the next NMI */
+void oam_ready(void);                     /* the OAM shadow is complete: copy it in the next NMI */
+unsigned char pad_read(void);             /* controller 1 */
+void ppu_setup(const unsigned char *pal); /* rendering off, 32-byte palette, blank nametable, rendering on */
+void oam_hide_all(void);                  /* every byte of OAM to $FF */
+unsigned char rnd8(void);                 /* 8-bit xorshift */
+
+#endif
+
+
+main.c:
+/* Boss fight demo for cc65 / NES
+ * - 48x48 boss built from 36 8x8 sprites, swaying near the top
+ * - 8 fireballs orbiting it on a circle of radius 36
+ * - 16x16 player (4 sprites) moved with the d-pad along the bottom
+ *
+ * Sprite-per-scanline budget (hardware limit is 8):
+ * The boss uses 6 sprites on each of its lines. The orbit radius (36) keeps
+ * the fireballs outside the boss except around the left/right sides, where at
+ * most one fireball per side overlaps the boss rows. That gives at most
+ * 6 + 2 = 8 on any line. The player is far below the boss, so a line never
+ * mixes the two groups.
+ */
+#include "nes.h"
+
+/* quarter-wave sine table: round(36 * sin(i * 360/64)), i = 0..16 */
+static const signed char qsin[17] = {
+    0, 4, 7, 10, 14, 17, 20, 23, 25, 28, 30, 32, 33, 34, 35, 36, 36
+};
+
+static signed char sin64(unsigned char i)
+{
+    i &= 63;
+    if (i <= 16) return qsin[i];
+    if (i <= 32) return qsin[32 - i];
+    if (i <= 48) return -qsin[i - 32];
+    return -qsin[64 - i];
+}
+
+#define cos64(i) sin64((unsigned char)((i) + 16))
+
+/* 32-byte palette: 16 background, 16 sprite */
+static const unsigned char palette[32] = {
+    /* background */
+    0x0F, 0x00, 0x10, 0x30,
+    0x0F, 0x00, 0x10, 0x30,
+    0x0F, 0x00, 0x10, 0x30,
+    0x0F, 0x00, 0x10, 0x30,
+    /* sprites: 0 boss, 1 player, 2 fireballs, 3 spare */
+    0x0F, 0x16, 0x27, 0x30,
+    0x0F, 0x11, 0x2A, 0x30,
+    0x0F, 0x27, 0x37, 0x30,
+    0x0F, 0x16, 0x27, 0x30
+};
+
+#define BOSS_CY   56
+#define BOSS_HALF 24
+#define ORBIT_R   36
+#define PLAYER_Y  200
+#define PLAYER_MIN_X 8
+#define PLAYER_MAX_X 232
+
+static unsigned char frame;
+static unsigned char player_x;
+static unsigned char pad;
+
+static void put_sprite(unsigned char i, int x, int y,
+                       unsigned char tile, unsigned char attr)
+{
+    OAM_Y(i)    = (unsigned char)(y - 1);
+    OAM_TILE(i) = tile;
+    OAM_ATTR(i) = attr;
+    OAM_X(i)    = (unsigned char)x;
+}
+
+static void update(void)
+{
+    ++frame;
+    pad = pad_read();
+    if ((pad & PAD_LEFT) && player_x > PLAYER_MIN_X)  player_x -= 2;
+    if ((pad & PAD_RIGHT) && player_x < PLAYER_MAX_X) player_x += 2;
+}
+
+static void draw(void)
+{
+    unsigned char i = 0;
+    unsigned char r, c, k, ang, tile;
+    int cx, bx, by;
+
+    /* boss sway: +-72 pixels around the screen centre */
+    cx = 128 + (int)sin64((unsigned char)(frame >> 2)) * 2;
+
+    /* boss body: 6 x 6 sprites */
+    bx = cx - BOSS_HALF;
+    by = BOSS_CY - BOSS_HALF;
+    for (r = 0; r < 6; ++r) {
+        for (c = 0; c < 6; ++c) {
+            tile = 0x01;
+            if (r == 2 && (c == 1 || c == 4)) tile = 0x03;      /* eyes */
+            else if (r == 4 && (c == 2 || c == 3)) tile = 0x02; /* mouth */
+            put_sprite(i++, bx + (c << 3), by + (r << 3), tile, 0);
+        }
+    }
+
+    /* 8 fireballs orbiting the boss centre */
+    ang = frame >> 1;
+    for (k = 0; k < 8; ++k) {
+        unsigned char a = (unsigned char)(ang + (k << 3));
+        put_sprite(i++,
+                   cx + cos64(a) - 4,
+                   BOSS_CY + sin64(a) - 4,
+                   0x04, 2);
+    }
+
+    /* player: 16x16 from four mirrored ship tiles */
+    put_sprite(i++, player_x,     PLAYER_Y,     0x06, 1);
+    put_sprite(i++, player_x + 8, PLAYER_Y,     0x06, 1 | 0x40);
+    put_sprite(i++, player_x,     PLAYER_Y + 8, 0x06, 1 | 0x80);
+    put_sprite(i++, player_x + 8, PLAYER_Y + 8, 0x06, 1 | 0xC0);
+    /* remaining OAM entries stay hidden from oam_hide_all() */
+}
+
+void main(void)
+{
+    ppu_setup(palette);
+    oam_hide_all();
+
+    frame = 0;
+    player_x = 120;
+
+    for (;;) {
+        update();
+        draw();
+        oam_ready();
+        wait_frame();
+    }
+}

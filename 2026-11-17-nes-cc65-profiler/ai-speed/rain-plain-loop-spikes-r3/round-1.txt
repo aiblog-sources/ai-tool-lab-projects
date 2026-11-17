@@ -1,0 +1,66 @@
+I built your main.c and ran it in the emulator with the same scripted pad. It still misses frames: 17 of 1182 game loops took longer than one frame (busy cycles per loop: average 23,480, max 31,922; one NTSC frame is about 29,780 CPU cycles). Make it run at 60 fps without changing what the scene shows. Reply with the full main.c in one ```c code block.
+
+Profiler report (nesprof, run in an emulator over 1,200 frames with a scripted pad; "self" is a function's own cycles, "incl" adds what it calls, names without a leading underscore are cc65 runtime helpers or the startup code, busy% is the share of the cycles not spent waiting in wait_frame; one NTSC frame is about 29,780 CPU cycles):
+
+frames 1260 (measured 1200 from frame 60)
+cycles per frame 29780.5; busy 23147.8 (77.7%), idle 6632.7, NMI handler 619.5; busiest frame 276 with 29703
+game loops 1183; loops that saw 2+ NMIs (missed a frame) 17; most busy cycles in one loop 31922
+self cycles add up to 35736600 of 35736597 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_main                 12871.7      12871.7       0.00    55.6%
+_wait_frame            6595.3       6595.3       0.99     0.0% (idle)
+_band_fits             2270.1       4520.5      38.92     9.8%
+pusha                  1398.3       1398.3      58.26     6.0%
+_band_inc              1206.6       1622.8       3.26     5.2%
+_band_dec              1206.1       1622.2       3.26     5.2%
+_draw_umbrella         1072.6       1072.6       0.99     4.6%
+incsp1                  787.6        787.6       0.00     3.4%
+nmi                     613.5        619.5       1.00     2.7%
+_band_range             505.5        878.6       9.82     2.2%
+bnega                   476.9        476.9      38.92     2.1%
+_pad_read               451.5        511.6       0.99     2.0%
+
+inclusive        cycles/frame    busy%
+_main                 12871.7    55.6%
+_band_fits             4520.5    19.5%
+_band_inc              1622.8     7.0%
+_band_dec              1622.2     7.0%
+pusha                  1398.3     6.0%
+_draw_umbrella         1072.6     4.6%
+_band_range             878.6     3.8%
+incsp1                  787.6     3.4%
+nmi                     619.5     2.7%
+_pad_read               511.6     2.2%
+bnega                   476.9     2.1%
+tosicmp                 108.7     0.5%
+
+Hottest C lines (cycles per frame; a line's cycles include the cc65 runtime helpers it called, such as pushax or shlax2):
+
+| line | function | cycles/frame | busy | source |
+| --- | --- | --- | --- | --- |
+| fix.c:171 | `_main` | 1,735 | 7.5% | `DROPS_OAM[x + 3] = dx[k];` |
+| fix.c:75 | `_band_fits` | 1,582 | 6.8% | `if (!IN_BAND(y)) return 1;` |
+| fix.c:169 | `_main` | 1,420 | 6.1% | `DROPS_OAM[x + 1] = DROP_TILE;` |
+| fix.c:170 | `_main` | 1,420 | 6.1% | `DROPS_OAM[x + 2] = 0;` |
+| fix.c:168 | `_main` | 1,380 | 6.0% | `DROPS_OAM[x]     = dy[k];` |
+| fix.c:74 | `_band_fits` | 1,168 | 5.0% | `{` |
+| fix.c:63 | `_band_inc` | 1,135 | 4.9% | `for (; bl <= bh; ++bl) ++band_cnt[bl];` |
+| fix.c:69 | `_band_dec` | 1,134 | 4.9% | `for (; bl <= bh; ++bl) --band_cnt[bl];` |
+| fix.c:155 | `_main` | 1,090 | 4.7% | `} else if (band_fits(y)) {` |
+| fix.c:167 | `_main` | 727 | 3.1% | `for (i = 0; i < NUM_DROPS; ++i) {` |
+| fix.c:145 | `_main` | 725 | 3.1% | `for (i = 0; i < NUM_DROPS; ++i) {` |
+| fix.c:147 | `_main` | 710 | 3.1% | `y = oy + dsp[i];` |
+| (asm) | `nmi` | 613 | 2.6% | `` |
+| fix.c:156 | `_main` | 505 | 2.2% | `dy[i] = y;` |
+| fix.c:146 | `_main` | 473 | 2.0% | `oy = dy[i];` |
+
+The 5 slowest game loops (busy cycles from one wait_frame return to the next; a loop over about 29,000 busy cycles misses a frame), with the 3 hottest lines in each:
+
+| loop (ends at frame) | busy cycles | NMIs | hottest lines in that loop |
+| --- | --- | --- | --- |
+| 762 (833) | 31,922 | 2 | fix.c:69 `for (; bl <= bh; ++bl) --band_cnt[bl];` 3,060<br>fix.c:63 `for (; bl <= bh; ++bl) ++band_cnt[bl];` 3,015<br>fix.c:171 `DROPS_OAM[x + 3] = dx[k];` 1,760 |
+| 761 (831) | 31,781 | 2 | fix.c:69 `for (; bl <= bh; ++bl) --band_cnt[bl];` 3,162<br>fix.c:63 `for (; bl <= bh; ++bl) ++band_cnt[bl];` 3,060<br>fix.c:171 `DROPS_OAM[x + 3] = dx[k];` 1,760 |
+| 128 (190) | 31,443 | 2 | fix.c:63 `for (; bl <= bh; ++bl) ++band_cnt[bl];` 3,300<br>fix.c:69 `for (; bl <= bh; ++bl) --band_cnt[bl];` 3,231<br>fix.c:171 `DROPS_OAM[x + 3] = dx[k];` 1,760 |
+| 129 (192) | 31,371 | 2 | fix.c:69 `for (; bl <= bh; ++bl) --band_cnt[bl];` 3,300<br>fix.c:63 `for (; bl <= bh; ++bl) ++band_cnt[bl];` 2,856<br>fix.c:171 `DROPS_OAM[x + 3] = dx[k];` 1,760 |
+| 760 (829) | 31,172 | 2 | fix.c:63 `for (; bl <= bh; ++bl) ++band_cnt[bl];` 3,162<br>fix.c:69 `for (; bl <= bh; ++bl) --band_cnt[bl];` 2,820<br>fix.c:171 `DROPS_OAM[x + 3] = dx[k];` 1,760 |

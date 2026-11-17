@@ -1,0 +1,71 @@
+{
+ "scene": "rain-plain",
+ "condition": "plain",
+ "rep": 5,
+ "model": "claude-sonnet-5-5",
+ "from_stage": "v1",
+ "build_rounds": 0,
+ "builds": true,
+ "before": {
+  "loops": 590,
+  "slow_loops": 590,
+  "busy_per_loop_avg": 51751,
+  "runtime_share": 0.334
+ },
+ "after": {
+  "loops": 958,
+  "slow_loops": 241,
+  "busy_per_loop_avg": 27065,
+  "busy_per_loop_max": 43729,
+  "busy_share": 0.7262,
+  "top_self": [
+   "_main",
+   0.4845
+  ],
+  "top_inclusive": [
+   [
+    "_band_add",
+    0.2331
+   ],
+   [
+    "_band_fits",
+    0.0928
+   ],
+   [
+    "_draw_umbrella",
+    0.0567
+   ]
+  ],
+  "runtime_share": 0.1512,
+  "runtime_top": [
+   [
+    "addeqysp",
+    0.0699,
+    3836
+   ],
+   [
+    "pusha",
+    0.0314,
+    33912
+   ],
+   [
+    "addysp",
+    0.0188,
+    0
+   ]
+  ],
+  "rom_lag_frames": 241
+ },
+ "picture": {
+  "tables_a": 335,
+  "tables_b": 546,
+  "compared": 335,
+  "same": true,
+  "first_diff": null
+ },
+ "cost_usd": 0.0403,
+ "calls": 1,
+ "output_tokens": 3849,
+ "model_wall_s": 25.8,
+ "wall_s": 29.0
+}

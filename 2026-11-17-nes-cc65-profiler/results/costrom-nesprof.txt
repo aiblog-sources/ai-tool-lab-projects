@@ -1,0 +1,68 @@
+frames 450 (measured 450 from frame 0), wall 0.33 s (1380 frames/s)
+cycles per frame 29780.5; busy 20292.9 (68.1%), idle 9487.6, NMI handler 142.0; busiest frame 5 with 29783
+game loops 159; loops that saw 2+ NMIs (missed a frame) 40; most busy cycles in one loop 220746
+self cycles add up to 13401222 of 13401227 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_wait_frame            9474.1       9474.1       0.36     0.0% (idle)
+udiv16by8a             2394.5       2394.5       0.00    11.8%
+shlax2                 1922.8       1922.8      73.96     9.5%
+_fill_byte_offset       1174.6       1180.0       0.09     5.8%
+_fill_macros_inline       1162.7       1757.1       0.09     5.7%
+_fill_int_args         1105.8       3207.7       0.09     5.4%
+_put_int               1092.3       1996.8       5.69     5.4%
+_put_u8                1092.3       1996.8       5.69     5.4%
+pushax                 1007.6       1007.6      11.52     5.0%
+_fill_macros_cast        940.8        943.6       0.09     4.6%
+_fill_static_vars        855.6        855.6       0.09     4.2%
+mul8x8                  813.5        813.5       0.00     4.0%
+_fill_u8_args           662.0       2764.0       0.09     3.3%
+_shift12_u8             651.7        990.1       0.09     3.2%
+staspidx                483.8        714.2      11.52     2.4%
+incsp2                  459.7        459.7       0.00     2.3%
+_mul12_u8               455.0       2488.7       0.09     2.2%
+_div10_u8               454.9       4217.5       0.09     2.2%
+_mod8_u8                363.9        366.7       0.09     1.8%
+_and7_u8                363.9        366.7       0.09     1.8%
+_copy_u8                352.5        355.3       0.09     1.7%
+addysp                  295.9        295.9       0.00     1.5%
+pusha                   283.8        283.8      11.82     1.4%
+popptr1                 261.7        489.2      11.38     1.3%
+reset                   198.9        198.9       0.00     1.0%
+addeqysp                198.8        198.8       0.00     1.0%
+shlax3                  187.7        187.7       5.69     0.9%
+tosudivax               170.7        170.7       0.00     0.8%
+_ppu_setup              151.8        360.0       0.00     0.7%
+nmi                     136.1        142.0       0.98     0.7%
+
+inclusive        cycles/frame    busy%
+_div10_u8              4217.5    20.8%
+_fill_int_args         3207.7    15.8%
+tosudiva0              2895.1    14.3%
+_fill_u8_args          2764.0    13.6%
+_mul12_u8              2488.7    12.3%
+udiv16                 2468.4    12.2%
+udiv16by8a             2394.5    11.8%
+_put_int               1996.8     9.8%
+_put_u8                1996.8     9.8%
+shlax2                 1922.8     9.5%
+_fill_macros_inline       1757.1     8.7%
+_fill_byte_offset       1180.0     5.8%
+tosumula0              1166.2     5.7%
+pushax                 1007.6     5.0%
+_shift12_u8             990.1     4.9%
+_fill_macros_cast        943.6     4.6%
+_fill_static_vars        855.6     4.2%
+mul8x8                  813.5     4.0%
+staspidx                714.2     3.5%
+pusha0                  523.4     2.6%
+popptr1                 489.2     2.4%
+incsp2                  459.7     2.3%
+_mod8_u8                366.7     1.8%
+_and7_u8                366.7     1.8%
+_ppu_setup              360.0     1.8%
+_copy_u8                355.3     1.8%
+addysp                  295.9     1.5%
+pusha                   283.8     1.4%
+addeq0sp                208.0     1.0%
+reset                   198.9     1.0%
