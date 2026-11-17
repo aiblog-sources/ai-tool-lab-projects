@@ -1,0 +1,30 @@
+diff --git a/src/x6502.c b/src/x6502.c
+index 6250f2a..1dfc606 100644
+--- a/src/x6502.c
++++ b/src/x6502.c
+@@ -31,6 +31,9 @@ uint8_t encryptOpcodes = 0;
+ uint8_t encryptOpcodesConfig = 0;
+ 
+ uint32_t timestamp;
++/* nesprof: running CPU cycle count and a per-instruction hook */
++uint64_t nesprof_cycles;
++void (*nesprof_hook)(uint16_t pc, uint8_t op, uint8_t s);
+ uint32_t sound_timestamp;
+ void FP_FASTAPASS(1) (*MapIRQHook)(int a);
+ 
+@@ -52,6 +55,7 @@ void FP_FASTAPASS(1) (*MapIRQHook)(int a);
+ 	_tcount += __x;									\
+ 	_count -= __x * 48;								\
+ 	timestamp += __x;  \
++	nesprof_cycles += __x; \
+ 	if (!overclocked) sound_timestamp +=  __x; \
+ }
+ 
+@@ -447,6 +451,7 @@ void X6502_Run(int32_t cycles)
+ 
+ 		_PI = _P;
+ 		b1 = RdMem(_PC);
++		if (nesprof_hook) nesprof_hook(_PC, b1, X.S);
+ 
+ 		ADDCYC(CycTable[b1]);
+ 

@@ -1,0 +1,66 @@
+I built your main.c and ran it in the emulator with the same scripted pad. It still misses frames: 243 of 954 game loops took longer than one frame (busy cycles per loop: average 25,911, max 43,629; one NTSC frame is about 29,780 CPU cycles). Make it run at 60 fps without changing what the scene shows. Reply with the full main.c in one ```c code block.
+
+Profiler report (nesprof, run in an emulator over 1,200 frames with a scripted pad; "self" is a function's own cycles, "incl" adds what it calls, names without a leading underscore are cc65 runtime helpers or the startup code, busy% is the share of the cycles not spent waiting in wait_frame; one NTSC frame is about 29,780 CPU cycles):
+
+frames 1260 (measured 1200 from frame 60)
+cycles per frame 29780.5; busy 20626.5 (69.3%), idle 9154.0, NMI handler 518.8; busiest frame 1250 with 29698
+game loops 955; loops that saw 2+ NMIs (missed a frame) 244; most busy cycles in one loop 43629
+self cycles add up to 35736599 of 35736601 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_main                 10034.3      10034.3       0.00    48.6%
+_wait_frame            9123.7       9123.7       0.80     0.0% (idle)
+_band_add              3474.0       5471.0       5.43    16.8%
+addeqysp               3423.6       3423.6       0.00    16.6%
+_band_fits             1338.1       2342.1       2.76     6.5%
+nmi                     512.8        518.8       1.00     2.5%
+pusha                   384.9        384.9      16.04     1.9%
+_pad_read               364.5        413.0       0.80     1.8%
+staxysp                 260.4        260.4       0.00     1.3%
+addysp                  212.8        212.8       0.00     1.0%
+addeq0sp                159.2       3582.8      79.62     0.8%
+decsp4                  147.3        147.3       8.19     0.7%
+
+inclusive        cycles/frame    busy%
+_main                 10034.3    48.6%
+_band_add              5471.0    26.5%
+addeq0sp               3582.8    17.4%
+addeqysp               3423.6    16.6%
+_band_fits             2342.1    11.4%
+nmi                     518.8     2.5%
+_pad_read               413.0     2.0%
+pusha                   384.9     1.9%
+stax0sp                 278.4     1.3%
+staxysp                 260.4     1.3%
+addysp                  212.8     1.0%
+decsp4                  147.3     0.7%
+
+Hottest C lines (cycles per frame; a line's cycles include the cc65 runtime helpers it called, such as pushax or shlax2):
+
+| line | function | cycles/frame | busy | source |
+| --- | --- | --- | --- | --- |
+| fix.c:62 | `_band_add` | 1,783 | 8.6% | `*p += d;` |
+| fix.c:63 | `_band_add` | 1,751 | 8.5% | `++p;` |
+| fix.c:144 | `_main` | 955 | 4.6% | `y = old + dsp[i];` |
+| fix.c:178 | `_main` | 900 | 4.4% | `o += 4;` |
+| fix.c:183 | `_main` | 851 | 4.1% | `o += 4;` |
+| fix.c:79 | `_band_fits` | 845 | 4.1% | `++p;` |
+| fix.c:177 | `_main` | 818 | 4.0% | `o[3] = dx[i];` |
+| fix.c:142 | `_main` | 808 | 3.9% | `for (i = 0; i < NUM_DROPS; ++i) {` |
+| fix.c:182 | `_main` | 774 | 3.7% | `o[3] = dx[i];` |
+| fix.c:145 | `_main` | 707 | 3.4% | `if (IN_BAND(old)) band_add(old, -1);` |
+| fix.c:64 | `_band_add` | 695 | 3.4% | `} while (--n);` |
+| fix.c:176 | `_main` | 671 | 3.3% | `o[0] = dy[i];` |
+| fix.c:159 | `_main` | 668 | 3.2% | `old = dy[i];` |
+| fix.c:157 | `_main` | 658 | 3.2% | `dy[i] = y;` |
+| fix.c:181 | `_main` | 634 | 3.1% | `o[0] = dy[i];` |
+
+The 5 slowest game loops (busy cycles from one wait_frame return to the next; a loop over about 29,000 busy cycles misses a frame), with the 3 hottest lines in each:
+
+| loop (ends at frame) | busy cycles | NMIs | hottest lines in that loop |
+| --- | --- | --- | --- |
+| 716 (959) | 43,629 | 2 | fix.c:62 `*p += d;` 6,216<br>fix.c:63 `++p;` 6,105<br>fix.c:79 `++p;` 2,862 |
+| 715 (957) | 43,522 | 2 | fix.c:62 `*p += d;` 6,104<br>fix.c:63 `++p;` 5,995<br>fix.c:79 `++p;` 2,862 |
+| 136 (237) | 42,955 | 2 | fix.c:62 `*p += d;` 6,216<br>fix.c:63 `++p;` 6,105<br>fix.c:79 `++p;` 2,809 |
+| 714 (955) | 42,754 | 2 | fix.c:62 `*p += d;` 5,768<br>fix.c:63 `++p;` 5,665<br>fix.c:79 `++p;` 2,968 |
+| 137 (239) | 42,193 | 2 | fix.c:62 `*p += d;` 5,768<br>fix.c:63 `++p;` 5,665<br>fix.c:79 `++p;` 2,544 |

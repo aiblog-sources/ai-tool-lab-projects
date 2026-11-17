@@ -1,0 +1,66 @@
+I built your main.c and ran it in the emulator with the same scripted pad. It still misses frames: 26 of 1173 game loops took longer than one frame (busy cycles per loop: average 19,499, max 33,430; one NTSC frame is about 29,780 CPU cycles). Make it run at 60 fps without changing what the scene shows. Reply with the full main.c in one ```c code block.
+
+Profiler report (nesprof, run in an emulator over 1,200 frames with a scripted pad; "self" is a function's own cycles, "incl" adds what it calls, names without a leading underscore are cc65 runtime helpers or the startup code, busy% is the share of the cycles not spent waiting in wait_frame; one NTSC frame is about 29,780 CPU cycles):
+
+frames 1260 (measured 1200 from frame 60)
+cycles per frame 29780.5; busy 19076.2 (64.1%), idle 10704.3, NMI handler 615.5; busiest frame 197 with 29629
+game loops 1174; loops that saw 2+ NMIs (missed a frame) 26; most busy cycles in one loop 33430
+self cycles add up to 35736599 of 35736601 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_wait_frame           10667.2      10667.2       0.98     0.0% (idle)
+_main                  8335.4       8335.4       0.00    43.7%
+_band_add              5202.7       6102.2      12.32    27.3%
+_band_fits             2015.5       2427.9       5.65    10.6%
+pusha                   798.5        798.5      33.27     4.2%
+nmi                     609.5        615.5       1.00     3.2%
+_draw_umbrella          481.3        481.3       0.98     2.5%
+addysp                  467.3        467.3       0.00     2.4%
+_pad_read               448.1        507.8       0.98     2.3%
+decsp2                  323.5        323.5      17.97     1.7%
+tosicmp                 110.7        110.7       1.91     0.6%
+pushax                   84.0         84.0       0.00     0.4%
+
+inclusive        cycles/frame    busy%
+_main                  8335.4    43.7%
+_band_add              6102.2    32.0%
+_band_fits             2427.9    12.7%
+pusha                   798.5     4.2%
+nmi                     615.5     3.2%
+_pad_read               507.8     2.7%
+_draw_umbrella          481.3     2.5%
+addysp                  467.3     2.4%
+decsp2                  323.5     1.7%
+tosicmp                 110.7     0.6%
+_respawn                100.1     0.5%
+pusha0                   87.8     0.5%
+
+Hottest C lines (cycles per frame; a line's cycles include the cc65 runtime helpers it called, such as pushax or shlax2):
+
+| line | function | cycles/frame | busy | source |
+| --- | --- | --- | --- | --- |
+| fix.c:50 | `_band_add` | 4,079 | 21.4% | `for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;` |
+| fix.c:169 | `_main` | 1,448 | 7.6% | `o[3] = dx[i];` |
+| fix.c:168 | `_main` | 1,174 | 6.1% | `o[0] = dy[i];` |
+| fix.c:46 | `_band_add` | 741 | 3.9% | `if (y + 8 <= UMB_Y \|\| y >= UMB_Y + UMB_H) return;` |
+| fix.c:62 | `_band_fits` | 729 | 3.8% | `if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;` |
+| fix.c:140 | `_main` | 720 | 3.8% | `for (i = 0; i < NUM_DROPS; ++i) {` |
+| fix.c:61 | `_band_fits` | 715 | 3.7% | `for (; l <= hi; ++l) {` |
+| fix.c:142 | `_main` | 704 | 3.7% | `y = old + dsp[i];` |
+| fix.c:167 | `_main` | 681 | 3.6% | `for (k = 0; k < NUM_DROPS; ++k) {` |
+| (asm) | `nmi` | 610 | 3.2% | `` |
+| fix.c:170 | `_main` | 587 | 3.1% | `o += 4;` |
+| fix.c:160 | `_main` | 474 | 2.5% | `band_add(dy[i], 1);` |
+| fix.c:141 | `_main` | 470 | 2.5% | `old = dy[i];` |
+| fix.c:149 | `_main` | 450 | 2.4% | `band_add(old, -1);` |
+| fix.c:145 | `_main` | 429 | 2.2% | `dy[i] = y;` |
+
+The 5 slowest game loops (busy cycles from one wait_frame return to the next; a loop over about 29,000 busy cycles misses a frame), with the 3 hottest lines in each:
+
+| loop (ends at frame) | busy cycles | NMIs | hottest lines in that loop |
+| --- | --- | --- | --- |
+| 128 (191) | 33,430 | 2 | fix.c:50 `for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;` 11,850<br>fix.c:62 `if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;` 2,260<br>fix.c:61 `for (; l <= hi; ++l) {` 2,101 |
+| 803 (884) | 33,144 | 2 | fix.c:50 `for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;` 9,820<br>fix.c:62 `if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;` 1,944<br>fix.c:61 `for (; l <= hi; ++l) {` 1,860 |
+| 129 (193) | 32,956 | 2 | fix.c:50 `for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;` 11,158<br>fix.c:62 `if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;` 2,032<br>fix.c:61 `for (; l <= hi; ++l) {` 1,918 |
+| 802 (882) | 32,950 | 2 | fix.c:50 `for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;` 9,092<br>fix.c:62 `if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;` 2,032<br>fix.c:61 `for (; l <= hi; ++l) {` 1,858 |
+| 1136 (1221) | 32,887 | 2 | fix.c:50 `for (; l <= hi; ++l) band_cnt[l - UMB_Y] += d;` 10,828<br>fix.c:62 `if (band_cnt[l - UMB_Y] >= BAND_MAX) return 0;` 1,988<br>fix.c:61 `for (; l <= hi; ++l) {` 1,879 |

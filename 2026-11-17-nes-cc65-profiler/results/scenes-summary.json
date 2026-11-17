@@ -1,0 +1,853 @@
+{
+ "boss-plain/v0": {
+  "loops": 599,
+  "slow_loops": 599,
+  "busy_per_loop_avg": 36279,
+  "busy_per_loop_max": 36322,
+  "busy_share": 0.6091,
+  "top_self": [
+   "_draw",
+   0.311
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.9634
+   ],
+   [
+    "_put_sprite",
+    0.4644
+   ],
+   [
+    "_sin64",
+    0.0656
+   ]
+  ],
+  "runtime_share": 0.3636,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1376,
+    115200
+   ],
+   [
+    "shlax3",
+    0.0655,
+    43200
+   ],
+   [
+    "pusha",
+    0.0503,
+    45601
+   ]
+  ],
+  "rom_lag_frames": 87,
+  "same_bytes_as_plain_build": true
+ },
+ "boss-warned/v0": {
+  "loops": 599,
+  "slow_loops": 599,
+  "busy_per_loop_avg": 45659,
+  "busy_per_loop_max": 45754,
+  "busy_share": 0.7666,
+  "top_self": [
+   "_draw",
+   0.3479
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.9692
+   ],
+   [
+    "_isin",
+    0.375
+   ],
+   [
+    "_sin_q",
+    0.2774
+   ]
+  ],
+  "runtime_share": 0.5281,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1093,
+    115199
+   ],
+   [
+    "pusha",
+    0.0715,
+    81600
+   ],
+   [
+    "mul8x8",
+    0.0518,
+    0
+   ]
+  ],
+  "rom_lag_frames": 87,
+  "same_bytes_as_plain_build": true
+ },
+ "brawler-plain/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 16564,
+  "busy_per_loop_max": 17491,
+  "busy_share": 0.5562,
+  "top_self": [
+   "_oam_hide_all",
+   0.5571
+  ],
+  "top_inclusive": [
+   [
+    "_oam_hide_all",
+    0.5594
+   ],
+   [
+    "_fill_oam",
+    0.2388
+   ],
+   [
+    "_draw_char",
+    0.1963
+   ]
+  ],
+  "runtime_share": 0.1028,
+  "runtime_top": [
+   [
+    "pushax",
+    0.03,
+    13550
+   ],
+   [
+    "pusha",
+    0.0174,
+    14400
+   ],
+   [
+    "addysp",
+    0.0117,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "brawler-warned/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 17241,
+  "busy_per_loop_max": 18225,
+  "busy_share": 0.5789,
+  "top_self": [
+   "_draw_char",
+   0.3153
+  ],
+  "top_inclusive": [
+   [
+    "_fill_oam",
+    0.7819
+   ],
+   [
+    "_draw_char",
+    0.5192
+   ],
+   [
+    "_update",
+    0.1795
+   ]
+  ],
+  "runtime_share": 0.4726,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1448,
+    115200
+   ],
+   [
+    "udiv16by8a",
+    0.1191,
+    0
+   ],
+   [
+    "pusha",
+    0.0529,
+    45600
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "brawler-warned/v1": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 17248,
+  "busy_per_loop_max": 18233,
+  "busy_share": 0.5792,
+  "top_self": [
+   "_draw_char",
+   0.3152
+  ],
+  "top_inclusive": [
+   [
+    "_fill_oam",
+    0.782
+   ],
+   [
+    "_draw_char",
+    0.519
+   ],
+   [
+    "_update",
+    0.1794
+   ]
+  ],
+  "runtime_share": 0.4724,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1447,
+    115200
+   ],
+   [
+    "udiv16by8a",
+    0.1191,
+    0
+   ],
+   [
+    "pusha",
+    0.0529,
+    45600
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "convoy-plain/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 21993,
+  "busy_per_loop_max": 22104,
+  "busy_share": 0.7385,
+  "top_self": [
+   "_main",
+   0.2722
+  ],
+  "top_inclusive": [
+   [
+    "_put",
+    0.3787
+   ],
+   [
+    "_pad_read",
+    0.0236
+   ],
+   [
+    "_oam_ready",
+    0.0005
+   ]
+  ],
+  "runtime_share": 0.4745,
+  "runtime_top": [
+   [
+    "udiv16by8a",
+    0.2018,
+    0
+   ],
+   [
+    "shlax2",
+    0.1135,
+    115200
+   ],
+   [
+    "addysp",
+    0.0284,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "convoy-plain/v1": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 26229,
+  "busy_per_loop_max": 26641,
+  "busy_share": 0.8808,
+  "top_self": [
+   "_main",
+   0.3105
+  ],
+  "top_inclusive": [
+   [
+    "_put",
+    0.3175
+   ],
+   [
+    "_pad_read",
+    0.0198
+   ],
+   [
+    "_oam_ready",
+    0.0005
+   ]
+  ],
+  "runtime_share": 0.4771,
+  "runtime_top": [
+   [
+    "udiv16by8a",
+    0.1843,
+    0
+   ],
+   [
+    "shlax2",
+    0.0952,
+    115200
+   ],
+   [
+    "pushax",
+    0.0376,
+    1200
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "convoy-warned/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 14591,
+  "busy_per_loop_max": 15042,
+  "busy_share": 0.4899,
+  "top_self": [
+   "_draw",
+   0.4506
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.9089
+   ],
+   [
+    "_update",
+    0.0454
+   ],
+   [
+    "_pad_read",
+    0.0356
+   ]
+  ],
+  "runtime_share": 0.4677,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1348,
+    90750
+   ],
+   [
+    "mul8x8",
+    0.098,
+    0
+   ],
+   [
+    "pushax",
+    0.0603,
+    12000
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "formation-plain/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 19472,
+  "busy_per_loop_max": 22073,
+  "busy_share": 0.6539,
+  "top_self": [
+   "_put",
+   0.2811
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.92
+   ],
+   [
+    "_put_big",
+    0.639
+   ],
+   [
+    "_put",
+    0.4796
+   ]
+  ],
+  "runtime_share": 0.4028,
+  "runtime_top": [
+   [
+    "pushax",
+    0.0872,
+    37112
+   ],
+   [
+    "shlax2",
+    0.0854,
+    76800
+   ],
+   [
+    "pusha",
+    0.0541,
+    52721
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "formation-plain/v1": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 16180,
+  "busy_per_loop_max": 18222,
+  "busy_share": 0.5433,
+  "top_self": [
+   "_put",
+   0.2652
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.9038
+   ],
+   [
+    "_put_big",
+    0.6015
+   ],
+   [
+    "_put",
+    0.4525
+   ]
+  ],
+  "runtime_share": 0.3745,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1029,
+    76800
+   ],
+   [
+    "pushax",
+    0.0795,
+    29088
+   ],
+   [
+    "pusha",
+    0.0515,
+    41688
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "formation-warned/v0": {
+  "loops": 599,
+  "slow_loops": 599,
+  "busy_per_loop_avg": 35503,
+  "busy_per_loop_max": 36155,
+  "busy_share": 0.5961,
+  "top_self": [
+   "_oam_hide_all",
+   0.2599
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.9529
+   ],
+   [
+    "_oam_hide_all",
+    0.261
+   ],
+   [
+    "_put_ship",
+    0.2366
+   ]
+  ],
+  "runtime_share": 0.4001,
+  "runtime_top": [
+   [
+    "mul8x8",
+    0.1611,
+    0
+   ],
+   [
+    "pushax",
+    0.0744,
+    0
+   ],
+   [
+    "pusha",
+    0.0304,
+    27000
+   ]
+  ],
+  "rom_lag_frames": 87,
+  "same_bytes_as_plain_build": true
+ },
+ "formation-warned/v1": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 25021,
+  "busy_per_loop_max": 25391,
+  "busy_share": 0.8402,
+  "top_self": [
+   "_oam_hide_all",
+   0.3688
+  ],
+  "top_inclusive": [
+   [
+    "_draw",
+    0.9368
+   ],
+   [
+    "_put_ship",
+    0.3718
+   ],
+   [
+    "_oam_hide_all",
+    0.3703
+   ]
+  ],
+  "runtime_share": 0.1553,
+  "runtime_top": [
+   [
+    "pushax",
+    0.044,
+    25200
+   ],
+   [
+    "pusha",
+    0.0432,
+    54000
+   ],
+   [
+    "addysp",
+    0.0229,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "rain-plain/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 26183,
+  "busy_per_loop_max": 27692,
+  "busy_share": 0.8792,
+  "top_self": [
+   "_main",
+   0.6272
+  ],
+  "top_inclusive": [
+   [
+    "_draw_umbrella",
+    0.1108
+   ],
+   [
+    "_pad_read",
+    0.0198
+   ],
+   [
+    "_respawn",
+    0.0039
+   ]
+  ],
+  "runtime_share": 0.2536,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1907,
+    230400
+   ],
+   [
+    "staxysp",
+    0.0443,
+    0
+   ],
+   [
+    "tosicmp",
+    0.0042,
+    2295
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "rain-plain/v1": {
+  "loops": 590,
+  "slow_loops": 590,
+  "busy_per_loop_avg": 51751,
+  "busy_per_loop_max": 62677,
+  "busy_share": 0.8558,
+  "top_self": [
+   "_main",
+   0.3722
+  ],
+  "top_inclusive": [
+   [
+    "_band_add",
+    0.2737
+   ],
+   [
+    "_band_fits",
+    0.1264
+   ],
+   [
+    "_draw_umbrella",
+    0.0561
+   ]
+  ],
+  "runtime_share": 0.334,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.0965,
+    113472
+   ],
+   [
+    "pusha",
+    0.0944,
+    120288
+   ],
+   [
+    "addysp",
+    0.0605,
+    0
+   ]
+  ],
+  "rom_lag_frames": 96,
+  "same_bytes_as_plain_build": true
+ },
+ "rain-warned/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 21100,
+  "busy_per_loop_max": 21401,
+  "busy_share": 0.7085,
+  "top_self": [
+   "_fill_oam",
+   0.4943
+  ],
+  "top_inclusive": [
+   [
+    "_fill_oam",
+    0.7338
+   ],
+   [
+    "_update_drops",
+    0.2045
+   ],
+   [
+    "_update_umbrella",
+    0.0298
+   ]
+  ],
+  "runtime_share": 0.2509,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.2366,
+    230400
+   ],
+   [
+    "pusha",
+    0.0045,
+    4800
+   ],
+   [
+    "incsp2",
+    0.0034,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "snake-plain/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 10639,
+  "busy_per_loop_max": 10669,
+  "busy_share": 0.3573,
+  "top_self": [
+   "_fill_oam",
+   0.4868
+  ],
+  "top_inclusive": [
+   [
+    "_fill_oam",
+    0.8736
+   ],
+   [
+    "_update",
+    0.0638
+   ],
+   [
+    "_pad_read",
+    0.0488
+   ]
+  ],
+  "runtime_share": 0.3997,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1857,
+    91200
+   ],
+   [
+    "pushax",
+    0.0786,
+    0
+   ],
+   [
+    "tossubax",
+    0.0607,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "snake-plain/v1": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 10645,
+  "busy_per_loop_max": 10678,
+  "busy_share": 0.3574,
+  "top_self": [
+   "_fill_oam",
+   0.4871
+  ],
+  "top_inclusive": [
+   [
+    "_fill_oam",
+    0.8736
+   ],
+   [
+    "_update",
+    0.0638
+   ],
+   [
+    "_pad_read",
+    0.0488
+   ]
+  ],
+  "runtime_share": 0.3994,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1856,
+    91200
+   ],
+   [
+    "pushax",
+    0.0785,
+    0
+   ],
+   [
+    "tossubax",
+    0.0607,
+    0
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "snake-warned/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 10813,
+  "busy_per_loop_max": 10945,
+  "busy_share": 0.3631,
+  "top_self": [
+   "_main",
+   0.4527
+  ],
+  "top_inclusive": [
+   [
+    "_pad_read",
+    0.048
+   ],
+   [
+    "_oam_ready",
+    0.0011
+   ]
+  ],
+  "runtime_share": 0.4494,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.2405,
+    120000
+   ],
+   [
+    "pushax",
+    0.0814,
+    0
+   ],
+   [
+    "tossubax",
+    0.0629,
+    24000
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "snake-warned/v1": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 17084,
+  "busy_per_loop_max": 17128,
+  "busy_share": 0.5737,
+  "top_self": [
+   "_put_seg",
+   0.2568
+  ],
+  "top_inclusive": [
+   [
+    "_put_seg",
+    0.5355
+   ],
+   [
+    "_pad_read",
+    0.0304
+   ],
+   [
+    "_oam_ready",
+    0.0007
+   ]
+  ],
+  "runtime_share": 0.5697,
+  "runtime_top": [
+   [
+    "udiv16by8a",
+    0.1685,
+    0
+   ],
+   [
+    "shlax2",
+    0.1522,
+    120000
+   ],
+   [
+    "pushax",
+    0.0876,
+    8400
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ }
+}

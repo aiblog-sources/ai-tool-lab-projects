@@ -1,0 +1,92 @@
+{
+ "rain-plain/v0": {
+  "loops": 1199,
+  "slow_loops": 0,
+  "busy_per_loop_avg": 26183,
+  "busy_per_loop_max": 27692,
+  "busy_share": 0.8792,
+  "top_self": [
+   "_main",
+   0.6272
+  ],
+  "top_inclusive": [
+   [
+    "_draw_umbrella",
+    0.1108
+   ],
+   [
+    "_pad_read",
+    0.0198
+   ],
+   [
+    "_respawn",
+    0.0039
+   ]
+  ],
+  "runtime_share": 0.2536,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.1907,
+    230400
+   ],
+   [
+    "staxysp",
+    0.0443,
+    0
+   ],
+   [
+    "tosicmp",
+    0.0042,
+    2295
+   ]
+  ],
+  "rom_lag_frames": 0,
+  "same_bytes_as_plain_build": true
+ },
+ "rain-plain/v1": {
+  "loops": 590,
+  "slow_loops": 590,
+  "busy_per_loop_avg": 51751,
+  "busy_per_loop_max": 62677,
+  "busy_share": 0.8558,
+  "top_self": [
+   "_main",
+   0.3722
+  ],
+  "top_inclusive": [
+   [
+    "_band_add",
+    0.2737
+   ],
+   [
+    "_band_fits",
+    0.1264
+   ],
+   [
+    "_draw_umbrella",
+    0.0561
+   ]
+  ],
+  "runtime_share": 0.334,
+  "runtime_top": [
+   [
+    "shlax2",
+    0.0965,
+    113472
+   ],
+   [
+    "pusha",
+    0.0944,
+    120288
+   ],
+   [
+    "addysp",
+    0.0605,
+    0
+   ]
+  ],
+  "rom_lag_frames": 96,
+  "same_bytes_as_plain_build": true
+ }
+}

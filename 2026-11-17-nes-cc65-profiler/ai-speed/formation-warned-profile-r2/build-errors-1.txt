@@ -1,0 +1,5 @@
+4 errors and 1 warnings generated.
+fix.c:93: Error: Undeclared identifier 'i_dummy'
+fix.c:93: Error: ';' expected
+fix.c:93: Error: ')' expected
+fix.c:93: Error: Expression expected

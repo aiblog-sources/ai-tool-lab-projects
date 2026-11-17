@@ -1,0 +1,66 @@
+I built your main.c and ran it in the emulator with the same scripted pad. It still misses frames: 14 of 1185 game loops took longer than one frame (busy cycles per loop: average 21,096, max 32,289; one NTSC frame is about 29,780 CPU cycles). Make it run at 60 fps without changing what the scene shows. Reply with the full main.c in one ```c code block.
+
+Profiler report (nesprof, run in an emulator over 1,200 frames with a scripted pad; "self" is a function's own cycles, "incl" adds what it calls, names without a leading underscore are cc65 runtime helpers or the startup code, busy% is the share of the cycles not spent waiting in wait_frame; one NTSC frame is about 29,780 CPU cycles):
+
+frames 1260 (measured 1200 from frame 60)
+cycles per frame 29780.5; busy 20847.6 (70.0%), idle 8932.9, NMI handler 620.8; busiest frame 190 with 29629
+game loops 1186; loops that saw 2+ NMIs (missed a frame) 14; most busy cycles in one loop 32289
+self cycles add up to 35736599 of 35736600 counted
+
+self             cycles/frame   incl/frame  calls/frm    busy%
+_main                 12236.8      12236.8       0.00    58.7%
+_wait_frame            8895.4       8895.4       0.99     0.0% (idle)
+_band_add_in           2950.6       3864.0       6.51    14.2%
+_draw_umbrella         1393.5       1509.2       0.99     6.7%
+_band_fits_in          1179.0       1639.3       3.28     5.7%
+pusha                   637.3        637.3      26.55     3.1%
+nmi                     614.8        620.8       1.00     2.9%
+pushax                  557.1        557.1      10.78     2.7%
+_pad_read               452.7        512.9       0.99     2.2%
+addysp                  280.4        280.4       0.00     1.3%
+decsp1                  183.3        183.3      10.78     0.9%
+tosicmp                 108.9        108.9       1.88     0.5%
+
+inclusive        cycles/frame    busy%
+_main                 12236.8    58.7%
+_band_add_in           3864.0    18.5%
+_band_fits_in          1639.3     7.9%
+_draw_umbrella         1509.2     7.2%
+pusha                   637.3     3.1%
+nmi                     620.8     3.0%
+pushax                  557.1     2.7%
+_pad_read               512.9     2.5%
+addysp                  280.4     1.3%
+decsp1                  183.3     0.9%
+tosicmp                 108.9     0.5%
+incsp1                  101.3     0.5%
+
+Hottest C lines (cycles per frame; a line's cycles include the cc65 runtime helpers it called, such as pushax or shlax2):
+
+| line | function | cycles/frame | busy | source |
+| --- | --- | --- | --- | --- |
+| fix.c:184 | `_main` | 1,581 | 7.6% | `o[3] = dx[i];` |
+| fix.c:158 | `_main` | 1,186 | 5.7% | `y = oy + dsp[i];` |
+| fix.c:60 | `_band_add_in` | 1,086 | 5.2% | `*p += d;` |
+| fix.c:156 | `_main` | 1,004 | 4.8% | `for (i = 0; i < NUM_DROPS; ++i) {` |
+| fix.c:180 | `_main` | 965 | 4.6% | `for (k = 0; k < NUM_DROPS; ++k) {` |
+| fix.c:172 | `_main` | 830 | 4.0% | `oy = dy[i];` |
+| fix.c:181 | `_main` | 830 | 4.0% | `o[0] = dy[i];` |
+| fix.c:170 | `_main` | 818 | 3.9% | `dy[i] = y;               /* outside band: always fits */` |
+| fix.c:62 | `_band_add_in` | 760 | 3.6% | `} while (--n);` |
+| fix.c:157 | `_main` | 751 | 3.6% | `oy = dy[i];` |
+| fix.c:159 | `_main` | 718 | 3.4% | `if (oy >= BAND_LO && oy < BAND_HI) band_add_in(oy, -1);` |
+| fix.c:186 | `_main` | 672 | 3.2% | `++i;` |
+| (asm) | `nmi` | 615 | 2.9% | `` |
+| fix.c:185 | `_main` | 514 | 2.5% | `o += 4;` |
+| fix.c:160 | `_main` | 474 | 2.3% | `if (y >= DROP_BOTTOM) {` |
+
+The 5 slowest game loops (busy cycles from one wait_frame return to the next; a loop over about 29,000 busy cycles misses a frame), with the 3 hottest lines in each:
+
+| loop (ends at frame) | busy cycles | NMIs | hottest lines in that loop |
+| --- | --- | --- | --- |
+| 129 (192) | 32,289 | 2 | fix.c:60 `*p += d;` 2,950<br>fix.c:62 `} while (--n);` 2,061<br>fix.c:184 `o[3] = dx[i];` 1,600 |
+| 762 (831) | 32,233 | 2 | fix.c:60 `*p += d;` 2,918<br>fix.c:62 `} while (--n);` 2,043<br>fix.c:184 `o[3] = dx[i];` 1,600 |
+| 128 (190) | 31,769 | 2 | fix.c:60 `*p += d;` 3,142<br>fix.c:62 `} while (--n);` 2,203<br>fix.c:184 `o[3] = dx[i];` 1,600 |
+| 761 (829) | 31,586 | 2 | fix.c:60 `*p += d;` 2,998<br>fix.c:62 `} while (--n);` 2,105<br>fix.c:184 `o[3] = dx[i];` 1,600 |
+| 763 (833) | 31,263 | 2 | fix.c:60 `*p += d;` 2,750<br>fix.c:62 `} while (--n);` 1,923<br>fix.c:184 `o[3] = dx[i];` 1,600 |
