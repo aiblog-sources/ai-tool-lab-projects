@@ -1,0 +1,19 @@
+{
+  "none": {"about": "No deny rule anywhere (control).", "where": "none", "deny": []},
+  "shared_glob": {"about": "Read(**/.env*) in the root .claude/settings.json (replicates the 11-10 result)", "where": "shared", "deny": ["Read(**/.env*)"]},
+  "local_glob": {"about": "Read(**/.env*) in the root .claude/settings.local.json", "where": "local", "deny": ["Read(**/.env*)"]},
+  "local_slash": {"about": "Read(/.env) in the root .claude/settings.local.json: docs say / anchors at the primary working directory", "where": "local", "deny": ["Read(/.env)"]},
+  "sub_glob": {"about": "Read(**/.env*) only in api/.claude/settings.json (the subfolder's own shared file)", "where": "sub_shared", "deny": ["Read(**/.env*)"]},
+  "flag_shared_glob": {"about": "The root .claude/settings.json with Read(**/.env*), also passed as --settings <abs path>", "where": "shared+flag", "flag_path": "project/.claude/settings.json", "deny": ["Read(**/.env*)"]},
+  "flag_root_slash": {"about": "--settings project/deny.json with Read(/.env): docs say / anchors at the file's folder", "where": "flag", "flag_path": "project/deny.json", "deny": ["Read(/.env)"]},
+  "flag_dotclaude_slash": {"about": "--settings project/.claude/deny.json with Read(/.env): / would mean project/.claude/.env", "where": "flag", "flag_path": "project/.claude/deny.json", "deny": ["Read(/.env)"]},
+  "flag_outside_slash": {"about": "--settings rules/deny.json (outside the project) with Read(/.env)", "where": "flag", "flag_path": "rules/deny.json", "deny": ["Read(/.env)"]},
+  "flag_outside_glob": {"about": "--settings rules/deny.json (outside the project) with Read(**/.env*)", "where": "flag", "flag_path": "rules/deny.json", "deny": ["Read(**/.env*)"]},
+  "inline_slash": {"about": "--settings '<inline JSON>' with Read(/.env)", "where": "inline", "deny": ["Read(/.env)"]},
+  "inline_glob": {"about": "--settings '<inline JSON>' with Read(**/.env*)", "where": "inline", "deny": ["Read(**/.env*)"]},
+  "nogit_shared_glob": {"about": "Read(**/.env*) in .claude/settings.json, project is not a git repo", "where": "shared", "git": false, "deny": ["Read(**/.env*)"]},
+  "nogit_local_glob": {"about": "Read(**/.env*) in .claude/settings.local.json, project is not a git repo", "where": "local", "git": false, "deny": ["Read(**/.env*)"]},
+  "inline_dotslash": {"about": "--settings '<inline JSON>' with Read(./.env)", "where": "inline", "deny": ["Read(./.env)"]},
+  "inline_single_abs": {"about": "--settings '<inline JSON>' with the project's full path after one slash, Read(/<project>/.env)", "where": "inline", "deny": ["Read({project}/.env)"]},
+  "inline_double_abs": {"about": "--settings '<inline JSON>' with Read(//<project>/.env), the documented absolute form", "where": "inline", "deny": ["Read(/{project}/.env)"]}
+}
