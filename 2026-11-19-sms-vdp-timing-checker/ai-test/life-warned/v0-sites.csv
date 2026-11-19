@@ -1,0 +1,3 @@
+pc,symbol,offset,writes,active_writes,fast_lt23,fast_lt26,fast_lt29,min_gap,min_line,max_line,first_frame,last_frame,dest
+0405,_palette,407,31488,25096,0,0,0,63,0,191,60,589,vram
+040E,_palette,416,31488,25090,0,0,0,40,0,191,60,589,vram

@@ -1,0 +1,7 @@
+pc,symbol,offset,writes,active_writes,fast_lt23,fast_lt26,fast_lt29,min_gap,min_line,max_line,first_frame,last_frame,dest
+06BE,_SMS_loadTileMapAreaatAddr,19,9432,0,0,0,0,-1,-1,-1,-1,-1,
+06C3,_SMS_loadTileMapAreaatAddr,24,9432,0,0,0,0,-1,-1,-1,-1,-1,
+0908,_SMS_copySpritestoSAT,16,1572,0,0,0,0,-1,-1,-1,-1,-1,
+0912,_SMS_copySpritestoSAT,26,393,0,0,0,0,-1,-1,-1,-1,-1,
+0922,_SMS_copySpritestoSAT,42,3144,0,0,0,0,-1,-1,-1,-1,-1,
+0972,_SMS_VRAMmemcpy,14,3200,0,0,0,0,-1,-1,-1,-1,-1,

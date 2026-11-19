@@ -1,0 +1,5 @@
+pc,symbol,offset,writes,active_writes,fast_lt23,fast_lt26,fast_lt29,min_gap,min_line,max_line,first_frame,last_frame,dest
+0667,_SMS_copySpritestoSAT,16,2160,0,0,0,0,-1,-1,-1,-1,-1,
+0671,_SMS_copySpritestoSAT,26,540,0,0,0,0,-1,-1,-1,-1,-1,
+0681,_SMS_copySpritestoSAT,42,4320,0,0,0,0,-1,-1,-1,-1,-1,
+06D1,_SMS_VRAMmemcpy,14,2144,0,0,0,0,-1,-1,-1,-1,-1,

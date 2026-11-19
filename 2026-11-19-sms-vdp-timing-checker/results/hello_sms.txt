@@ -1,0 +1,11 @@
+NTSC 60 Hz, 262 lines per frame, 300 frames checked (from frame 0)
+VDP data writes: 19574, during active display: 24
+active-display writes closer than 23 / 26 / 29 cycles to the previous access: 0 / 0 / 12
+frames with a write under 26 cycles: 0
+frames with the display off the whole time (black screen): 16
+
+functions with active-display writes (too fast under 23 / 26 / 29 cycles):
+  _SMS_crt0_RST18                        24 active writes, 0 / 0 / 12 too fast, min gap 27
+
+gap histogram of active-display writes (Z80 cycles: count)
+  27: 12 >64: 12

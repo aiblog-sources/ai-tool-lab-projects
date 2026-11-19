@@ -1,0 +1,26 @@
+PAL 50 Hz, 313 lines per frame, 120 frames checked (from frame 10)
+VDP data writes: 40320, during active display: 28800
+active-display writes closer than 23 / 26 / 29 cycles to the previous access: 12960 / 16680 / 24120
+frames with a write under 26 cycles: 120 (worst: frame 10, 139 writes)
+frames that switched the display off and on during visible lines: 120 (blank lines per such frame: mean 4.0, max 4 of 192)
+
+functions with active-display writes (too fast under 23 / 26 / 29 cycles):
+  _frame_bursts                       28800 active writes, 12960 / 16680 / 24120 too fast, min gap 11
+
+instructions that wrote too fast during active display (gap < 26):
+  0214 _frame_bursts+0x14: 3720 of 3840 active writes too fast, min gap 21, VRAM, lines 40-43, frames 10-129
+  0376 _frame_bursts+0x176: 1800 of 1920 active writes too fast, min gap 21, CRAM, lines 160-161, frames 10-129
+  0223 _frame_bursts+0x23: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  0225 _frame_bursts+0x25: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  0227 _frame_bursts+0x27: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  0229 _frame_bursts+0x29: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  022B _frame_bursts+0x2B: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  022D _frame_bursts+0x2D: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  022F _frame_bursts+0x2F: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  0231 _frame_bursts+0x31: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  0233 _frame_bursts+0x33: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-60, frames 10-129
+  0235 _frame_bursts+0x35: 120 of 120 active writes too fast, min gap 16, VRAM, lines 60-61, frames 10-129
+
+gap histogram of active-display writes (Z80 cycles: count)
+  11: 3720 16: 3720 21: 5520 24: 3720 26: 3720 28: 3720 30: 3720 >64: 960
+ 
