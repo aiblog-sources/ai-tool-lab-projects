@@ -8,6 +8,18 @@ sprites on screen, and alone took one scene from 30 to 60 fps. Given only "it ru
 easy scenes in one shot (12 of 12 at 60 fps). On the hardest one, one-shot answers reached 60 fps in 0 of 6 runs
 without the profile and 4 of 18 with a profile report. With one or two rounds of feedback on its own build, all 12 did.
 
+| Scene | Prompt | Runs at 60 fps |
+| --- | --- | --- |
+| boss-plain, boss-warned, formation-warned | plain | 6/6 |
+| rain-plain | plain (one shot) | 0/6 |
+| rain-plain | profile (one shot) | 1/6 |
+| rain-plain | lines (one shot) | 1/6 |
+| rain-plain | spikes (one shot) | 2/6 |
+| rain-plain | loop-plain (feedback rounds) | 6/6 |
+| rain-plain | loop-spikes (full report each round) | 6/6 |
+
+Validation, per-scene profiles and cycle costs are in [Results](#results).
+
 Write-up: https://aitoollabs.dev/posts/cc65-nes-profiler/
 
 ## What it does
