@@ -7,6 +7,16 @@ their writes 27 to 28 cycles apart, which is safe by the 26-cycle figure from SM
 Sonnet 5.5 and Haiku 5.5, no write came under 26 cycles. 9 of them wrote during active display at SMSlib's 27-28 cycle
 pace. One switched the display off to copy its tile map and blanked the top 124 lines of the picture.
 
+| | Sonnet 5.5 | Haiku 5.5 |
+| --- | --- | --- |
+| Programs that built (first try) | 16/16 | 16/16 |
+| Writes under 23 or 26 cycles during active display | 0 | 0 |
+| Programs with active-display writes | 3 | 6 |
+| ... with writes under 29 cycles (all from SMSlib's 27-28 pace) | 2 | 6 |
+| Programs blanking visible lines with display off/on | 1 | 0 |
+
+Validation ROM and SMSlib call timings are in [Results](#results).
+
 Write-up: https://aitoollabs.dev/posts/master-system-vdp-write-timing/
 
 ## What it does
