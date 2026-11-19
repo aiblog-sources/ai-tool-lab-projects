@@ -1,0 +1,29 @@
+{
+ "id": "scroller-warned",
+ "scene": "scroller",
+ "variant": "warned",
+ "model": "claude-haiku-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "uses_unsafe": false,
+  "raw_port": false,
+  "waits_vblank": 1,
+  "frames": 540,
+  "writes": 1296,
+  "active": 203,
+  "lt23": 0,
+  "lt26": 0,
+  "lt29": 102,
+  "frames_lt26": 0,
+  "frames_blank": 0,
+  "max_blank": 0,
+  "frames_off": 0,
+  "frames_active": 27
+ },
+ "cost_usd": 0.0258,
+ "calls": 1,
+ "input_tokens": 2,
+ "output_tokens": 45584,
+ "wall_s": 226.8
+}

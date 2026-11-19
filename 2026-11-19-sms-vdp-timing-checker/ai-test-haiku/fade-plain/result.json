@@ -1,0 +1,29 @@
+{
+ "id": "fade-plain",
+ "scene": "fade",
+ "variant": "plain",
+ "model": "claude-haiku-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "uses_unsafe": false,
+  "raw_port": false,
+  "waits_vblank": 1,
+  "frames": 540,
+  "writes": 20520,
+  "active": 2880,
+  "lt23": 0,
+  "lt26": 0,
+  "lt29": 2700,
+  "frames_lt26": 0,
+  "frames_blank": 0,
+  "max_blank": 0,
+  "frames_off": 0,
+  "frames_active": 90
+ },
+ "cost_usd": 0.0173,
+ "calls": 1,
+ "input_tokens": 2,
+ "output_tokens": 28515,
+ "wall_s": 120.1
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bullets-plain",
+ "scene": "bullets",
+ "variant": "plain",
+ "model": "claude-haiku-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "uses_unsafe": false,
+  "raw_port": false,
+  "waits_vblank": 1,
+  "frames": 540,
+  "writes": 42041,
+  "active": 6787,
+  "lt23": 0,
+  "lt26": 0,
+  "lt29": 3393,
+  "frames_lt26": 0,
+  "frames_blank": 0,
+  "max_blank": 0,
+  "frames_off": 0,
+  "frames_active": 36
+ },
+ "cost_usd": 0.0156,
+ "calls": 1,
+ "input_tokens": 2,
+ "output_tokens": 25223,
+ "wall_s": 110.0
+}

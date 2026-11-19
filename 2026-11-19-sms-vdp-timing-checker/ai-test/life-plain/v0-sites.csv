@@ -1,0 +1,2 @@
+pc,symbol,offset,writes,active_writes,fast_lt23,fast_lt26,fast_lt29,min_gap,min_line,max_line,first_frame,last_frame,dest
+084B,_SMS_VRAMmemcpy,14,49152,0,0,0,0,-1,-1,-1,-1,-1,

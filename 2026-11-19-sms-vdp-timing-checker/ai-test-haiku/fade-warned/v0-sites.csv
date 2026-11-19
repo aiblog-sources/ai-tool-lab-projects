@@ -1,0 +1,6 @@
+pc,symbol,offset,writes,active_writes,fast_lt23,fast_lt26,fast_lt29,min_gap,min_line,max_line,first_frame,last_frame,dest
+06ED,_SMS_loadBGPalette,15,5760,0,0,0,0,-1,-1,-1,-1,-1,
+0701,_SMS_loadSpritePalette,15,5760,0,0,0,0,-1,-1,-1,-1,-1,
+0814,_SMS_copySpritestoSAT,16,5760,0,0,0,0,-1,-1,-1,-1,-1,
+081E,_SMS_copySpritestoSAT,26,360,0,0,0,0,-1,-1,-1,-1,-1,
+082E,_SMS_copySpritestoSAT,42,11520,0,0,0,0,-1,-1,-1,-1,-1,

@@ -1,0 +1,45 @@
+NTSC 60 Hz, 262 lines per frame, 240 frames checked (from frame 60)
+VDP data writes: 17620, during active display: 17620
+active-display writes closer than 23 / 26 / 29 cycles to the previous access: 3000 / 3000 / 14040
+frames with a write under 26 cycles: 30 (worst: frame 78, 127 writes)
+VRAM reads during active display: 640, under 26 cycles: 0
+
+functions with active-display writes (too fast under 23 / 26 / 29 cycles):
+  _SMS_crt0_RST18                      2560 active writes, 0 / 0 / 1280 too fast, min gap 27
+  _OUTI128                              640 active writes, 620 / 620 / 620 too fast, min gap 16
+  _OUTI96                               640 active writes, 640 / 640 / 640 too fast, min gap 16
+  _OUTI64                               640 active writes, 640 / 640 / 640 too fast, min gap 16
+  _OUTI32                              1120 active writes, 1100 / 1100 / 1100 too fast, min gap 16
+  _UNSAFE_SMS_copySpritestoSAT           10 active writes, 0 / 0 / 0 too fast, min gap 56
+  _SMS_load1bppTiles                   1280 active writes, 0 / 0 / 0 too fast, min gap 128
+  _SMS_loadTileMapAreaatAddr            640 active writes, 0 / 0 / 600 too fast, min gap 27
+  _SMS_VRAMmemset_f                    1280 active writes, 0 / 0 / 1270 too fast, min gap 28
+  _SMS_VRAMmemsetW                     1280 active writes, 0 / 0 / 1270 too fast, min gap 28
+  _SMS_zeroBGPalette                    160 active writes, 0 / 0 / 150 too fast, min gap 28
+  _SMS_setBGPaletteColor                160 active writes, 0 / 0 / 0 too fast, min gap 208
+  _SMS_loadBGPalette                    160 active writes, 0 / 0 / 150 too fast, min gap 28
+  _SMS_loadSpritePalette                160 active writes, 0 / 0 / 150 too fast, min gap 28
+  _SMS_copySpritestoSAT                 490 active writes, 0 / 0 / 460 too fast, min gap 28
+  _SMS_load2bppTilesatAddr             1280 active writes, 0 / 0 / 1270 too fast, min gap 27
+  _SMS_VRAMmemcpy_brief                1280 active writes, 0 / 0 / 1270 too fast, min gap 28
+  _SMS_VRAMmemcpy                      3200 active writes, 0 / 0 / 3170 too fast, min gap 28
+  _SMS_loadTileMapColumnatAddr          480 active writes, 0 / 0 / 0 too fast, min gap 30
+  _SMS_loadBGPaletteHalfBrightness      160 active writes, 0 / 0 / 0 too fast, min gap 48
+
+instructions that wrote too fast during active display (gap < 26):
+  014B _OUTI32+0x22: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-73, frames 77-295
+  014D _OUTI32+0x24: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-73, frames 77-295
+  014F _OUTI32+0x26: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  0151 _OUTI32+0x28: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  0153 _OUTI32+0x2A: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  0155 _OUTI32+0x2C: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  0157 _OUTI32+0x2E: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  0159 _OUTI32+0x30: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  015B _OUTI32+0x32: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  015D _OUTI32+0x34: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  015F _OUTI32+0x36: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+  0161 _OUTI32+0x38: 40 of 40 active writes too fast, min gap 16, VRAM, lines 66-74, frames 77-295
+
+gap histogram of active-display writes (Z80 cycles: count)
+  16: 3000 27: 2560 28: 8480 30: 240 40: 10 48: 150 56: 10 >64: 3170
+ 

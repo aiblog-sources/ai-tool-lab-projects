@@ -1,0 +1,29 @@
+{
+ "id": "life-plain",
+ "scene": "life",
+ "variant": "plain",
+ "model": "claude-haiku-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "uses_unsafe": false,
+  "raw_port": false,
+  "waits_vblank": 3,
+  "frames": 540,
+  "writes": 276480,
+  "active": 199378,
+  "lt23": 0,
+  "lt26": 0,
+  "lt29": 99658,
+  "frames_lt26": 0,
+  "frames_blank": 0,
+  "max_blank": 0,
+  "frames_off": 0,
+  "frames_active": 360
+ },
+ "cost_usd": 0.0133,
+ "calls": 1,
+ "input_tokens": 2,
+ "output_tokens": 20518,
+ "wall_s": 90.7
+}

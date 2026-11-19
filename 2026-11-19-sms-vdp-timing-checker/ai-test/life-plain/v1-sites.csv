@@ -1,0 +1,3 @@
+pc,symbol,offset,writes,active_writes,fast_lt23,fast_lt26,fast_lt29,min_gap,min_line,max_line,first_frame,last_frame,dest
+04ED,_palette,639,17664,0,0,0,0,-1,-1,-1,-1,-1,
+04F4,_palette,646,17664,0,0,0,0,-1,-1,-1,-1,-1,

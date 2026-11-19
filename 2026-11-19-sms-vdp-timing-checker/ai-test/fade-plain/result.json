@@ -1,0 +1,29 @@
+{
+ "id": "fade-plain",
+ "scene": "fade",
+ "variant": "plain",
+ "model": "claude-sonnet-5-5",
+ "v0": {
+  "build_rounds": 0,
+  "builds": true,
+  "uses_unsafe": false,
+  "raw_port": false,
+  "waits_vblank": 2,
+  "frames": 540,
+  "writes": 28620,
+  "active": 2160,
+  "lt23": 0,
+  "lt26": 0,
+  "lt29": 2025,
+  "frames_lt26": 0,
+  "frames_blank": 0,
+  "max_blank": 0,
+  "frames_off": 0,
+  "frames_active": 135
+ },
+ "cost_usd": 0.1113,
+ "calls": 1,
+ "input_tokens": 2,
+ "output_tokens": 5151,
+ "wall_s": 38.4
+}
