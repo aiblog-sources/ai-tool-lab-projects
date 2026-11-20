@@ -1,0 +1,18 @@
+[
+  {"id": "read_env", "cwd": ".", "tool": "Read", "path": ".env", "target": "env"},
+  {"id": "read_env_local", "cwd": ".", "tool": "Read", "path": ".env.local", "target": "envlocal"},
+  {"id": "read_env_production", "cwd": ".", "tool": "Read", "path": ".env.production", "target": "envprod"},
+  {"id": "read_env_example", "cwd": ".", "tool": "Read", "path": ".env.example", "target": "example"},
+  {"id": "read_api_env", "cwd": ".", "tool": "Read", "path": "api/.env", "target": "apienv"},
+  {"id": "read_api_env_example", "cwd": ".", "tool": "Read", "path": "api/.env.example", "target": "apiexample"},
+  {"id": "cat_env", "cwd": ".", "tool": "Bash", "cmd": "cat .env", "target": "env"},
+  {"id": "cat_env_production", "cwd": ".", "tool": "Bash", "cmd": "cat .env.production", "target": "envprod"},
+  {"id": "cat_env_example", "cwd": ".", "tool": "Bash", "cmd": "cat .env.example", "target": "example"},
+  {"id": "cat_api_env_example", "cwd": ".", "tool": "Bash", "cmd": "cat api/.env.example", "target": "apiexample"},
+  {"id": "grep", "cwd": ".", "tool": "Grep"},
+  {"id": "read_secret", "cwd": ".", "tool": "Read", "path": "secrets/key.txt", "target": "secret"},
+  {"id": "read_secret_public", "cwd": ".", "tool": "Read", "path": "secrets/public.txt", "target": "secretpublic"},
+  {"id": "read_secret_public_dir", "cwd": ".", "tool": "Read", "path": "secrets/public/readme.txt", "target": "secretpublicdir"},
+  {"id": "fromsub_read_env", "cwd": "api", "tool": "Read", "path": ".env", "target": "apienv"},
+  {"id": "fromsub_read_env_example", "cwd": "api", "tool": "Read", "path": ".env.example", "target": "apiexample"}
+]

@@ -1,0 +1,142 @@
+{
+ "none": {
+  "about": "No rule anywhere (control).",
+  "local": {}
+ },
+ "deny_glob": {
+  "about": "Deny Read(**/.env*) only: blocks the examples too.",
+  "local": {
+   "deny": [
+    "Read(**/.env*)"
+   ]
+  }
+ },
+ "allow_example": {
+  "about": "Deny Read(**/.env*) + allow Read(**/.env.example). Docs: an allow rule can't carve an exception out of a deny rule.",
+  "local": {
+   "deny": [
+    "Read(**/.env*)"
+   ],
+   "allow": [
+    "Read(**/.env.example)"
+   ]
+  }
+ },
+ "neg_bare": {
+  "about": "Deny Read(.env*) then Read(!.env.example), the docs' shape (bare names, any depth).",
+  "local": {
+   "deny": [
+    "Read(.env*)",
+    "Read(!.env.example)"
+   ]
+  }
+ },
+ "neg_glob": {
+  "about": "Deny Read(**/.env*) then Read(!**/.env.example).",
+  "local": {
+   "deny": [
+    "Read(**/.env*)",
+    "Read(!**/.env.example)"
+   ]
+  }
+ },
+ "neg_first": {
+  "about": "The ! rule listed first: Read(!.env.example), Read(.env*). Docs: carves nothing.",
+  "local": {
+   "deny": [
+    "Read(!.env.example)",
+    "Read(.env*)"
+   ]
+  }
+ },
+ "neg_other_file": {
+  "about": "Read(.env*) in settings.local.json, Read(!.env.example) in settings.json. Docs: carve-out reaches only its own source.",
+  "local": {
+   "deny": [
+    "Read(.env*)"
+   ]
+  },
+  "shared": {
+   "deny": [
+    "Read(!.env.example)"
+   ]
+  }
+ },
+ "neg_anchored": {
+  "about": "Read(/.env*) (anchored at the launch folder) then Read(!.env.example). Docs: ! carves only path or ./path rules.",
+  "local": {
+   "deny": [
+    "Read(/.env*)",
+    "Read(!.env.example)"
+   ]
+  }
+ },
+ "neg_ask": {
+  "about": "Ask, not deny: Read(.env*) then Read(!.env.example) in the ask list.",
+  "local": {
+   "ask": [
+    "Read(.env*)",
+    "Read(!.env.example)"
+   ]
+  }
+ },
+ "charclass": {
+  "about": "No negation: Read(.env) and Read(.env.[!e]*), a gitignore character class that skips names starting with e.",
+  "local": {
+   "deny": [
+    "Read(.env)",
+    "Read(.env.[!e]*)"
+   ]
+  }
+ },
+ "neg_dir": {
+  "about": "Read(secrets/**) then Read(!secrets/public/**). Docs: a carve-out can't reopen a file inside a blocked directory.",
+  "local": {
+   "deny": [
+    "Read(secrets/**)",
+    "Read(!secrets/public/**)"
+   ]
+  }
+ },
+ "neg_dir_files": {
+  "about": "Read(secrets/*) then Read(!secrets/public.txt): files, not the whole directory.",
+  "local": {
+   "deny": [
+    "Read(secrets/*)",
+    "Read(!secrets/public.txt)"
+   ]
+  }
+ },
+ "ask_plain": {
+  "about": "Control for neg_ask: ask Read(.env*) with no negation.",
+  "local": {
+   "ask": [
+    "Read(.env*)"
+   ]
+  }
+ },
+ "class_bang_x": {
+  "about": "Read(.env.[!x]*): gitignore reads [!x] as 'not x', so it should match .env.local, .env.production and .env.example.",
+  "local": {
+   "deny": [
+    "Read(.env.[!x]*)"
+   ]
+  }
+ },
+ "class_caret": {
+  "about": "Read(.env.[^e]*): the regex-style spelling of a negated class.",
+  "local": {
+   "deny": [
+    "Read(.env.[^e]*)"
+   ]
+  }
+ },
+ "class_plain": {
+  "about": "Read(.env.[lp]*): a plain class, should match .env.local and .env.production.",
+  "local": {
+   "deny": [
+    "Read(.env.[lp]*)"
+   ]
+  }
+ }
+}

@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [Claude Code deny rule exceptions: block .env but read .env.example? 16 conditions, 512 runs](2026-11-20-claude-code-deny-rule-exceptions/) | [Claude Code deny rule exception: allow .env.example, block .env](https://aitoollabs.dev/posts/claude-code-deny-rule-exception/) | Shipped |
 | [smsvdp: a headless checker for Master System VDP writes that come too fast during active display](2026-11-19-sms-vdp-timing-checker/) | [Master System VRAM writes too fast? A VDP timing checker](https://aitoollabs.dev/posts/master-system-vdp-write-timing/) | Shipped |
 | [Claude Code deny rules by settings file: which ones still work from a subfolder? 17 conditions, 544 runs](2026-11-18-claude-code-deny-rule-sources/) | [Claude Code deny rules ignored in a subfolder? Where to put them](https://aitoollabs.dev/posts/claude-code-deny-rule-settings-sources/) | Shipped |
 | [nesprof: a headless cc65 profiler for NES games, per function, C line and game loop](2026-11-17-nes-cc65-profiler/) | [cc65 profiler for NES: why Claude's C scenes ran at 30 fps](https://aitoollabs.dev/posts/cc65-nes-profiler/) | Shipped |
