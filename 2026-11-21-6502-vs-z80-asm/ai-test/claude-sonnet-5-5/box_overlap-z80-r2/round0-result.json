@@ -1,0 +1,18 @@
+{
+ "cpu": "z80",
+ "task": "box_overlap",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "smsrun: 16496 of 16496 vectors, 0 timeouts, 76 frames",
+ "vectors": 16496,
+ "ran": 16496,
+ "passed": 16496,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 149,
+ "cycles_median": 198.0,
+ "cycles_max": 340,
+ "us_max": 95.0,
+ "ok": true
+}

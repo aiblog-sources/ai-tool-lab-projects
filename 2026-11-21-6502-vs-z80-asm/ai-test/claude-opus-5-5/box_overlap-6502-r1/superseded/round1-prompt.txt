@@ -1,0 +1,79 @@
+Write a 6502 routine for the NES (NTSC, 2A03 CPU) in ca65 syntax.
+
+Routine label: `box_overlap`. It is called with JSR and must return with RTS.
+
+Task: Axis-aligned box overlap test for sprites. Each box is 4 bytes: x, y, width, height (unsigned). Box A is in zero page $00-$03, box B in $04-$07. They overlap when ax < bx + bw and bx < ax + aw and ay < by + bh and by < ay + ah, with the sums computed without 8-bit wraparound (x + width can exceed 255). A box with width or height 0 overlaps nothing. Output: carry flag set if they overlap, clear if not.
+
+Rules:
+- Registers A, X, Y and the flags not listed as outputs may hold anything on entry and on exit. Do not assume any flag state on entry (the carry may be set or clear). The NES CPU has no decimal mode.
+- Zero page $00-$0F is yours: the inputs live there and you may use any of it as scratch. Use the stack if you need more. Do not write any other RAM, except where the task says to write its output.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with .byte).
+- Your file is included into the harness's CODE segment: no .segment, .org, header or vectors. Prefix your labels with `box_overlap_` or use @cheap local labels.
+
+Reply with the whole routine in one ```asm code block. After the block, write one line: `Worst-case cycles: N`, counting the JSR and the RTS.
+
+Your previous answer was:
+```asm
+; box_overlap: AABB overlap test
+; Box A: $00=x $01=y $02=w $03=h
+; Box B: $04=x $05=y $06=w $07=h
+; Output: C=1 if the boxes overlap, C=0 if not.
+;
+; Per axis, with d = a - b:
+;   a >= b : overlap iff (a - b) < bsize and asize != 0
+;   a <  b : overlap iff (b - a) < asize and bsize != 0
+; (b - a) < asize is tested as asize + (a - b mod 256): this
+; gives C=1 and a nonzero result exactly when asize > b - a.
+; A size of 0 always fails the test.
+
+box_overlap:
+        ; ---- X axis ----
+        lda $00
+        sec
+        sbc $04                 ; A = ax - bx
+        bcc @xneg               ; ax < bx
+        cmp $06                 ; (ax - bx) < bw ?
+        bcs @fail
+        lda $02                 ; aw must be nonzero
+        beq @fail
+        bne @y                  ; always taken
+@xneg:
+        adc $02                 ; C clear here: aw - (bx - ax)
+        bcc @fail               ; aw < bx - ax
+        beq @fail               ; aw == bx - ax
+        lda $06                 ; bw must be nonzero
+        beq @fail
+@y:
+        ; ---- Y axis ----
+        lda $01
+        sec
+        sbc $05                 ; A = ay - by
+        bcc @yneg               ; ay < by
+        cmp $07                 ; (ay - by) < bh ?
+        bcs @fail
+        lda $03
+        cmp #1                  ; C = (ah != 0)
+        rts
+@yneg:
+        adc $03                 ; C clear here: ah - (by - ay)
+        bcc @fail
+        beq @fail
+        lda $07
+        cmp #1                  ; C = (bh != 0)
+        rts
+@fail:
+        clc
+        rts
+
+```
+
+It assembled and ran on an emulator against 16496 test vectors: 16433 right, 63 wrong.
+Kinds of failure:
+- 63 x carry # want #
+Examples:
+- inputs a=[5, 0, 0, 8], b=[0, 4, 20, 8]: carry 0 want 1
+- inputs a=[0, 4, 20, 8], b=[5, 0, 0, 8]: carry 0 want 1
+- inputs a=[5, 250, 0, 10], b=[0, 252, 20, 3]: carry 0 want 1
+- inputs a=[0, 252, 20, 3], b=[5, 250, 0, 10]: carry 0 want 1
+
+Fix the routine. Reply the same way: the whole routine in one code block, then the cycles line.

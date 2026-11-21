@@ -1,0 +1,18 @@
+{
+ "cpu": "z80",
+ "task": "memmove",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "smsrun: 33792 of 33792 vectors, 0 timeouts, 277 frames",
+ "vectors": 33792,
+ "ran": 33792,
+ "passed": 33792,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 36,
+ "cycles_median": 457.0,
+ "cycles_max": 858,
+ "us_max": 239.7,
+ "ok": true
+}

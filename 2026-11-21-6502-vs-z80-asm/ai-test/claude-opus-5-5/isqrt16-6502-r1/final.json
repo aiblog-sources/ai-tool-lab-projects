@@ -1,0 +1,25 @@
+{
+ "model": "claude-opus-5-5",
+ "cpu": "6502",
+ "task": "isqrt16",
+ "rep": 1,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "passed": 65536,
+   "vectors": 65536,
+   "ok": true,
+   "fail_kinds": {},
+   "claim": 803,
+   "cycles_max": 803,
+   "cycles_median": 783.0,
+   "cost": 0.061203999999999995,
+   "wall_s": 28.57,
+   "out_tokens": 2639
+  }
+ ],
+ "ok": true,
+ "first_try": true,
+ "fix_rounds": 0
+}

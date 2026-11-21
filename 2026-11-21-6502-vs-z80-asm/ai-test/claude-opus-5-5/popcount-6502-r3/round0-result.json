@@ -1,0 +1,18 @@
+{
+ "cpu": "6502",
+ "task": "popcount",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "nesrun: 1024 of 1024 vectors, 0 timeouts, 1 frames",
+ "vectors": 1024,
+ "ran": 1024,
+ "passed": 1024,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 18,
+ "cycles_median": 18.0,
+ "cycles_max": 19,
+ "us_max": 10.6,
+ "ok": true
+}

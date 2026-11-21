@@ -1,0 +1,41 @@
+{
+ "model": "claude-opus-5-5",
+ "cpu": "z80",
+ "task": "box_overlap",
+ "rep": 3,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "passed": 16433,
+   "vectors": 16496,
+   "ok": false,
+   "fail_kinds": {
+    "carry # want #": 63
+   },
+   "claim": 204,
+   "cycles_max": 204,
+   "cycles_median": 124,
+   "cost": 0.17734439999999999,
+   "wall_s": 92.24,
+   "out_tokens": 8705
+  },
+  {
+   "round": 1,
+   "assembled": true,
+   "passed": 16496,
+   "vectors": 16496,
+   "ok": true,
+   "fail_kinds": {},
+   "claim": 219,
+   "cycles_max": 208,
+   "cycles_median": 124.0,
+   "cost": 0.06961200000000001,
+   "wall_s": 26.23,
+   "out_tokens": 2543
+  }
+ ],
+ "ok": true,
+ "first_try": false,
+ "fix_rounds": 1
+}

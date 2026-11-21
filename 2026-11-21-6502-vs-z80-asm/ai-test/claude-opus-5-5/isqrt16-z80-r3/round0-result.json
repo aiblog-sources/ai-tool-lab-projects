@@ -1,0 +1,6 @@
+{
+ "cpu": "z80",
+ "task": "isqrt16",
+ "assembled": false,
+ "asm_log": "routine.asm(20): error: [JR] Target out of range (+163)\nroutine.asm(35): error: [JR] Target out of range (+143)\nroutine.asm(133): error: [JR] Target out of range (-164)\nroutine.asm(136): error: [JR] Target out of range (-144)"
+}

@@ -1,0 +1,13 @@
+Write a 6502 routine for the NES (NTSC, 2A03 CPU) in ca65 syntax.
+
+Routine label: `adds8`. It is called with JSR and must return with RTS.
+
+Task: Add a signed 8-bit velocity to a 16-bit position (two's complement, wrapping at 16 bits). Inputs: position in zero page $00 (low) and $01 (high), velocity in A (-128 to 127). Output: the new position in $00/$01.
+
+Rules:
+- Registers A, X, Y and the flags not listed as outputs may hold anything on entry and on exit. Do not assume any flag state on entry (the carry may be set or clear). The NES CPU has no decimal mode.
+- Zero page $00-$0F is yours: the inputs live there and you may use any of it as scratch. Use the stack if you need more. Do not write any other RAM, except where the task says to write its output.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with .byte).
+- Your file is included into the harness's CODE segment: no .segment, .org, header or vectors. Prefix your labels with `adds8_` or use @cheap local labels.
+
+Reply with the whole routine in one ```asm code block. After the block, write one line: `Worst-case cycles: N`, counting the JSR and the RTS.

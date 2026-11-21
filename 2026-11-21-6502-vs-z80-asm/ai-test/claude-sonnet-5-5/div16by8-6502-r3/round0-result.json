@@ -1,0 +1,18 @@
+{
+ "cpu": "6502",
+ "task": "div16by8",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "nesrun: 8292 of 8292 vectors, 0 timeouts, 159 frames",
+ "vectors": 8292,
+ "ran": 8292,
+ "passed": 8292,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 526,
+ "cycles_median": 566.0,
+ "cycles_max": 686,
+ "us_max": 383.3,
+ "ok": true
+}
