@@ -1,0 +1,18 @@
+{
+ "cpu": "z80",
+ "task": "mul8",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "smsrun: 65536 of 65536 vectors, 0 timeouts, 292 frames",
+ "vectors": 65536,
+ "ran": 65536,
+ "passed": 65536,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 207,
+ "cycles_median": 233.0,
+ "cycles_max": 259,
+ "us_max": 72.4,
+ "ok": true
+}

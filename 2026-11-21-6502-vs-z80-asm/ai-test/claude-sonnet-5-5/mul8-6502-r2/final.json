@@ -1,0 +1,41 @@
+{
+ "model": "claude-sonnet-5-5",
+ "cpu": "6502",
+ "task": "mul8",
+ "rep": 2,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "passed": 512,
+   "vectors": 65536,
+   "ok": false,
+   "fail_kinds": {
+    "product # want #": 65024
+   },
+   "claim": 216,
+   "cycles_max": 200,
+   "cycles_median": 184.0,
+   "cost": 0.011820800000000001,
+   "wall_s": 9.72,
+   "out_tokens": 1019
+  },
+  {
+   "round": 1,
+   "assembled": true,
+   "passed": 65536,
+   "vectors": 65536,
+   "ok": true,
+   "fail_kinds": {},
+   "claim": 210,
+   "cycles_max": 210,
+   "cycles_median": 194.0,
+   "cost": 0.017514000000000002,
+   "wall_s": 10.96,
+   "out_tokens": 1155
+  }
+ ],
+ "ok": true,
+ "first_try": false,
+ "fix_rounds": 1
+}

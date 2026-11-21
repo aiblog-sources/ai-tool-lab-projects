@@ -1,0 +1,89 @@
+Write a 6502 routine for the NES (NTSC, 2A03 CPU) in ca65 syntax.
+
+Routine label: `box_overlap`. It is called with JSR and must return with RTS.
+
+Task: Axis-aligned box overlap test for sprites. Each box is 4 bytes: x, y, width, height (unsigned). Box A is in zero page $00-$03, box B in $04-$07. They overlap when ax < bx + bw and bx < ax + aw and ay < by + bh and by < ay + ah, with the sums computed without 8-bit wraparound (x + width can exceed 255). A box with width or height 0 overlaps nothing. Output: carry flag set if they overlap, clear if not.
+
+Rules:
+- Registers A, X, Y and the flags not listed as outputs may hold anything on entry and on exit. Do not assume any flag state on entry (the carry may be set or clear). The NES CPU has no decimal mode.
+- Zero page $00-$0F is yours: the inputs live there and you may use any of it as scratch. Use the stack if you need more. Do not write any other RAM, except where the task says to write its output.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with .byte).
+- Your file is included into the harness's CODE segment: no .segment, .org, header or vectors. Prefix your labels with `box_overlap_` or use @cheap local labels.
+
+Reply with the whole routine in one ```asm code block. After the block, write one line: `Worst-case cycles: N`, counting the JSR and the RTS.
+
+Your previous answer was:
+```asm
+; box_overlap: AABB overlap test
+; In:  box A at $00-$03 (x,y,w,h), box B at $04-$07
+; Out: carry set = overlap, clear = no overlap
+; Clobbers A, flags, and zero-page scratch $08
+
+box_overlap:
+        lda $02             ; aw = 0 -> no overlap
+        beq @no
+        lda $06             ; bw = 0 -> no overlap
+        beq @no
+        lda $03             ; ah = 0 -> no overlap
+        beq @no
+        lda $07             ; bh = 0 -> no overlap
+        beq @no
+
+        ; ax < bx + bw
+        clc
+        lda $04
+        adc $06
+        bcs @c1             ; sum >= 256, so always greater than ax
+        sta $08
+        lda $00
+        cmp $08
+        bcs @no             ; ax >= sum
+@c1:
+        ; bx < ax + aw
+        clc
+        lda $00
+        adc $02
+        bcs @c2
+        sta $08
+        lda $04
+        cmp $08
+        bcs @no
+@c2:
+        ; ay < by + bh
+        clc
+        lda $05
+        adc $07
+        bcs @c3
+        sta $08
+        lda $01
+        cmp $08
+        bcs @no
+@c3:
+        ; by < ay + ah
+        clc
+        lda $01
+        adc $03
+        bcs @yes
+        sta $08
+        lda $05
+        cmp $08
+        bcs @no
+@yes:
+        sec
+        rts
+@no:
+        clc
+        rts
+
+```
+
+It assembled and ran on an emulator against 16496 test vectors: 16433 right, 63 wrong.
+Kinds of failure:
+- 63 x carry # want #
+Examples:
+- inputs a=[5, 0, 0, 8], b=[0, 4, 20, 8]: carry 0 want 1
+- inputs a=[0, 4, 20, 8], b=[5, 0, 0, 8]: carry 0 want 1
+- inputs a=[5, 250, 0, 10], b=[0, 252, 20, 3]: carry 0 want 1
+- inputs a=[0, 252, 20, 3], b=[5, 250, 0, 10]: carry 0 want 1
+
+Fix the routine. Reply the same way: the whole routine in one code block, then the cycles line.

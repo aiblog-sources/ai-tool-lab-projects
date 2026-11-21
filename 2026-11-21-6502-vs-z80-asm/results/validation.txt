@@ -1,0 +1,34 @@
+popcount on 6502: 1024/1024 vectors right
+cycles (call + return included) min 75 median 75.0 max 75 (41.9 us at worst)
+nesrun: 1024 of 1024 vectors, 0 timeouts, 3 frames
+popcount on z80: 1024/1024 vectors right
+cycles (call + return included) min 155 median 155.0 max 155 (43.3 us at worst)
+smsrun: 1024 of 1024 vectors, 0 timeouts, 5 frames
+popcount on 6502: 4/1024 vectors right
+cycles (call + return included) min 18 median 18.0 max 18 (10.1 us at worst)
+  1016 x A=# want #
+  4 x timeout (no return)
+  e.g. {'vector': {'a': 1}, 'got': 'A=0 want 1'}
+  e.g. {'vector': {'a': 1}, 'got': 'A=0 want 1'}
+  e.g. {'vector': {'a': 1}, 'got': 'A=0 want 1'}
+  e.g. {'vector': {'a': 1}, 'got': 'A=0 want 1'}
+nesrun: 1024 of 1024 vectors, 4 timeouts, 273 frames
+popcount on z80: 0/1024 vectors right
+  1020 x wrote RAM outside its area
+  4 x A=# want #
+  e.g. {'vector': {'a': 0}, 'got': 'wrote RAM outside its area ($C200)'}
+  e.g. {'vector': {'a': 0}, 'got': 'wrote RAM outside its area ($C200)'}
+  e.g. {'vector': {'a': 0}, 'got': 'wrote RAM outside its area ($C200)'}
+  e.g. {'vector': {'a': 0}, 'got': 'wrote RAM outside its area ($C200)'}
+smsrun: 1024 of 1024 vectors, 0 timeouts, 3 frames
+popcount: 1024 vectors, checker ok on both CPUs
+mul8: 65536 vectors, checker ok on both CPUs
+div16by8: 8292 vectors, checker ok on both CPUs
+utoa16: 65536 vectors, checker ok on both CPUs
+isqrt16: 65536 vectors, checker ok on both CPUs
+adds8: 16384 vectors, checker ok on both CPUs
+cmp_s16: 16505 vectors, checker ok on both CPUs
+memmove: 33792 vectors, checker ok on both CPUs
+sort_u8: 3000 vectors, checker ok on both CPUs
+box_overlap: 16496 vectors, checker ok on both CPUs
+selftest passed

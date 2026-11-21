@@ -1,0 +1,18 @@
+{
+ "cpu": "z80",
+ "task": "popcount",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "smsrun: 1024 of 1024 vectors, 0 timeouts, 4 frames",
+ "vectors": 1024,
+ "ran": 1024,
+ "passed": 1024,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 123,
+ "cycles_median": 123.0,
+ "cycles_max": 123,
+ "us_max": 34.4,
+ "ok": true
+}

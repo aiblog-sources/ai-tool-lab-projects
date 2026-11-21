@@ -1,0 +1,18 @@
+{
+ "cpu": "z80",
+ "task": "sort_u8",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "smsrun: 3000 of 3000 vectors, 0 timeouts, 284 frames",
+ "vectors": 3000,
+ "ran": 3000,
+ "passed": 3000,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 39,
+ "cycles_median": 174.0,
+ "cycles_max": 128484,
+ "us_max": 35893.9,
+ "ok": true
+}

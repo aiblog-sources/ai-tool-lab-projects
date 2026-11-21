@@ -1,0 +1,41 @@
+{
+ "model": "claude-opus-5-5",
+ "cpu": "z80",
+ "task": "sort_u8",
+ "rep": 1,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "passed": 503,
+   "vectors": 3000,
+   "ok": false,
+   "fail_kinds": {
+    "wrote RAM outside its area": 2497
+   },
+   "claim": 35199,
+   "cycles_max": 36,
+   "cycles_median": 36,
+   "cost": 0.08941599999999998,
+   "wall_s": 43.64,
+   "out_tokens": 4062
+  },
+  {
+   "round": 1,
+   "assembled": true,
+   "passed": 3000,
+   "vectors": 3000,
+   "ok": true,
+   "fail_kinds": {},
+   "claim": 1333095,
+   "cycles_max": 89836,
+   "cycles_median": 291.0,
+   "cost": 0.090668,
+   "wall_s": 40.63,
+   "out_tokens": 3783
+  }
+ ],
+ "ok": true,
+ "first_try": false,
+ "fix_rounds": 1
+}

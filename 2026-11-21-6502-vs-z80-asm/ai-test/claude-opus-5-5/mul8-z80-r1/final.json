@@ -1,0 +1,25 @@
+{
+ "model": "claude-opus-5-5",
+ "cpu": "z80",
+ "task": "mul8",
+ "rep": 1,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "passed": 65536,
+   "vectors": 65536,
+   "ok": true,
+   "fail_kinds": {},
+   "claim": 255,
+   "cycles_max": 259,
+   "cycles_median": 233.0,
+   "cost": 0.030824000000000004,
+   "wall_s": 14.07,
+   "out_tokens": 1136
+  }
+ ],
+ "ok": true,
+ "first_try": true,
+ "fix_rounds": 0
+}

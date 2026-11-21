@@ -1,0 +1,136 @@
+Write a Z80 routine for the Sega Master System (NTSC) in sjasmplus syntax.
+
+Routine label: `sort_u8`. It is called with CALL and must return with RET.
+
+Task: Sort an array of unsigned bytes in place, ascending. Inputs: pointer in HL, length in B (0 to 255). Output: the sorted array in place.
+
+Rules:
+- Registers and flags not listed as outputs may hold anything on entry and on exit, including IX, IY and the shadow registers. Do not assume any flag state on entry. Interrupts are off; leave them off.
+- RAM $C000-$C00F is yours as scratch. Use the stack if you need more. Do not write any other RAM, except where the task says to write its output.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with DB).
+- Your file is included into the harness after its code: no ORG, OUTPUT, DEVICE or header. Prefix your labels with `sort_u8_` or use local labels (.label).
+
+Reply with the whole routine in one ```asm code block. After the block, write one line: `Worst-case cycles: N`, counting the CALL and the RET.
+
+Your previous answer was:
+```asm
+; sort_u8 - counting sort of B unsigned bytes at HL, ascending, in place.
+; It builds a 256-byte histogram on the stack, in the page-aligned block just
+; below SP. Uses about 256-511 bytes of stack. No scratch RAM is used.
+
+sort_u8:
+        ld      a,b
+        or      a
+        ret     z                   ; length 0: nothing to do
+
+        ex      de,hl               ; DE = array pointer
+        ld      iyh,d               ; IY = array start (kept for output)
+        ld      iyl,e
+        ld      ix,0
+        add     ix,sp               ; IX = original SP
+
+        ld      hl,0
+        add     hl,sp
+        ld      l,0                 ; HL = page boundary at or below SP
+        ld      sp,hl               ; pushes fill page H-1 (below SP)
+        ld      hl,0
+        ld      c,8
+.clr:
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        push    hl
+        dec     c
+        jr      nz,.clr
+
+        ld      hl,0
+        add     hl,sp               ; HL = table base (page aligned, L=0)
+        ld      sp,ix               ; restore SP (stack not used below)
+
+.cnt:                               ; histogram
+        ld      a,(de)
+        ld      l,a
+        inc     (hl)
+        inc     de
+        djnz    .cnt
+
+        ld      e,iyl               ; DE = array start
+        ld      d,iyh
+        ld      l,0
+
+.s0:    ld      a,(hl)              ; scan buckets, unrolled x4
+        or      a
+        jr      nz,.e0
+        inc     l
+.s1:    ld      a,(hl)
+        or      a
+        jr      nz,.e1
+        inc     l
+.s2:    ld      a,(hl)
+        or      a
+        jr      nz,.e2
+        inc     l
+.s3:    ld      a,(hl)
+        or      a
+        jr      nz,.e3
+        inc     l
+        jr      nz,.s0
+        ret
+
+.e0:    ld      b,a
+        ld      a,l
+.w0:    ld      (de),a
+        inc     de
+        djnz    .w0
+        inc     l
+        jr      .s1
+
+.e1:    ld      b,a
+        ld      a,l
+.w1:    ld      (de),a
+        inc     de
+        djnz    .w1
+        inc     l
+        jr      .s2
+
+.e2:    ld      b,a
+        ld      a,l
+.w2:    ld      (de),a
+        inc     de
+        djnz    .w2
+        inc     l
+        jr      .s3
+
+.e3:    ld      b,a
+        ld      a,l
+.w3:    ld      (de),a
+        inc     de
+        djnz    .w3
+        inc     l
+        jr      nz,.s0
+        ret
+
+```
+
+It assembled and ran on an emulator against 3000 test vectors: 503 right, 2497 wrong.
+Kinds of failure:
+- 2497 x wrote RAM outside its area
+Examples:
+- inputs off=6, data=[200, 3]: wrote RAM outside its area ($DE00)
+- inputs off=17, data=[128, 127, 127]: wrote RAM outside its area ($DE00)
+- inputs off=47, data=[145, 205, 214]: wrote RAM outside its area ($DE00)
+- inputs off=3, data=[228, 228, 225, 211, 137, 133, 121, 117, 98, 89, 82, 73, 64, 46, 11, 6]: wrote RAM outside its area ($DE00)
+
+Fix the routine. Reply the same way: the whole routine in one code block, then the cycles line.

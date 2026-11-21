@@ -1,0 +1,77 @@
+{
+ "cpu": "6502",
+ "task": "mul8",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "nesrun: 65536 of 65536 vectors, 0 timeouts, 430 frames",
+ "vectors": 65536,
+ "ran": 65536,
+ "passed": 512,
+ "failed": 65024,
+ "fail_kinds": {
+  "product # want #": 65024
+ },
+ "first_fails": [
+  {
+   "vector": {
+    "a": 1,
+    "b": 1
+   },
+   "got": "product 0 want 1"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 2
+   },
+   "got": "product 0 want 2"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 3
+   },
+   "got": "product 0 want 3"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 4
+   },
+   "got": "product 0 want 4"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 5
+   },
+   "got": "product 0 want 5"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 6
+   },
+   "got": "product 0 want 6"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 7
+   },
+   "got": "product 0 want 7"
+  },
+  {
+   "vector": {
+    "a": 1,
+    "b": 8
+   },
+   "got": "product 0 want 8"
+  }
+ ],
+ "cycles_min": 184,
+ "cycles_median": 184.0,
+ "cycles_max": 200,
+ "us_max": 111.7,
+ "ok": false
+}

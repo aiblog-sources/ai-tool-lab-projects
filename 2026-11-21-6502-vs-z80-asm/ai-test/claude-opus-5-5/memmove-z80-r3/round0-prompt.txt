@@ -1,0 +1,13 @@
+Write a Z80 routine for the Sega Master System (NTSC) in sjasmplus syntax.
+
+Routine label: `memmove`. It is called with CALL and must return with RET.
+
+Task: Copy count bytes from src to dst, correct when the two areas overlap in either direction (like C memmove). Inputs: src in HL, dst in DE, count in BC (0 to 65535; 0 copies nothing). Output: the copied bytes at dst. Do not write outside dst..dst+count-1.
+
+Rules:
+- Registers and flags not listed as outputs may hold anything on entry and on exit, including IX, IY and the shadow registers. Do not assume any flag state on entry. Interrupts are off; leave them off.
+- RAM $C000-$C00F is yours as scratch. Use the stack if you need more. Do not write any other RAM, except where the task says to write its output.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with DB).
+- Your file is included into the harness after its code: no ORG, OUTPUT, DEVICE or header. Prefix your labels with `memmove_` or use local labels (.label).
+
+Reply with the whole routine in one ```asm code block. After the block, write one line: `Worst-case cycles: N`, counting the CALL and the RET.

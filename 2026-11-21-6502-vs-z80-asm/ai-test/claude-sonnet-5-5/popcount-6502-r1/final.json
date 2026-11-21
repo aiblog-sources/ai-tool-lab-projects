@@ -1,0 +1,25 @@
+{
+ "model": "claude-sonnet-5-5",
+ "cpu": "6502",
+ "task": "popcount",
+ "rep": 1,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "passed": 1024,
+   "vectors": 1024,
+   "ok": true,
+   "fail_kinds": {},
+   "claim": 42,
+   "cycles_max": 40,
+   "cycles_median": 40.0,
+   "cost": 0.013134,
+   "wall_s": 10.12,
+   "out_tokens": 905
+  }
+ ],
+ "ok": true,
+ "first_try": true,
+ "fix_rounds": 0
+}

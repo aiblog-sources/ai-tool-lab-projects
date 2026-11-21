@@ -1,0 +1,18 @@
+{
+ "cpu": "6502",
+ "task": "utoa16",
+ "assembled": true,
+ "asm_log": "",
+ "runner": "nesrun: 65536 of 65536 vectors, 0 timeouts, 1022 frames",
+ "vectors": 65536,
+ "ran": 65536,
+ "passed": 65536,
+ "failed": 0,
+ "fail_kinds": {},
+ "first_fails": [],
+ "cycles_min": 131,
+ "cycles_median": 462.0,
+ "cycles_max": 787,
+ "us_max": 439.7,
+ "ok": true
+}

@@ -1,0 +1,6 @@
+{
+ "cpu": "z80",
+ "task": "memmove",
+ "assembled": false,
+ "asm_log": "routine.asm(19): error: [JR] Target out of range (+157)"
+}

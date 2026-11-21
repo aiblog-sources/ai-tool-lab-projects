@@ -1,0 +1,13 @@
+Write a Z80 routine for the Sega Master System (NTSC) in sjasmplus syntax.
+
+Routine label: `box_overlap`. It is called with CALL and must return with RET.
+
+Task: Axis-aligned box overlap test for sprites. Each box is 4 bytes: x, y, width, height (unsigned). HL points to 8 bytes: box A then box B. They overlap when ax < bx + bw and bx < ax + aw and ay < by + bh and by < ay + ah, with the sums computed without 8-bit wraparound (x + width can exceed 255). A box with width or height 0 overlaps nothing. Output: carry flag set if they overlap, clear if not.
+
+Rules:
+- Registers and flags not listed as outputs may hold anything on entry and on exit, including IX, IY and the shadow registers. Do not assume any flag state on entry. Interrupts are off; leave them off.
+- RAM $C000-$C00F is yours as scratch. Use the stack if you need more. Do not write any other RAM, except where the task says to write its output.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with DB).
+- Your file is included into the harness after its code: no ORG, OUTPUT, DEVICE or header. Prefix your labels with `box_overlap_` or use local labels (.label).
+
+Reply with the whole routine in one ```asm code block. After the block, write one line: `Worst-case cycles: N`, counting the CALL and the RET.
