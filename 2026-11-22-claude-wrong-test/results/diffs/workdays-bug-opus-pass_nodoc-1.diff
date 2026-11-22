@@ -1,0 +1,17 @@
+diff --git a/textkit/workdays.py b/textkit/workdays.py
+index d0aa3be..676b49a 100644
+--- a/textkit/workdays.py
++++ b/textkit/workdays.py
+@@ -2,10 +2,11 @@ from datetime import date, timedelta
+ 
+ 
+ def business_days(start: date, end: date) -> int:
++    """Count weekdays in the half-open range [start, end)."""
+     if end < start:
+         raise ValueError("end before start")
+     days, d = 0, start
+-    while d <= end:
++    while d < end:
+         if d.weekday() < 5:
+             days += 1
+         d += timedelta(days=1)

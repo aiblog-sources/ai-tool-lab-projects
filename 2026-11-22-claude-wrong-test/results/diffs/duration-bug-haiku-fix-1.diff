@@ -1,0 +1,13 @@
+diff --git a/textkit/duration.py b/textkit/duration.py
+index 5c942d9..82796c9 100644
+--- a/textkit/duration.py
++++ b/textkit/duration.py
+@@ -15,7 +15,7 @@ def parse_duration(text: str) -> int:
+     """
+     text = text.strip()
+     if text.isdigit():
+-        return int(text) * 60
++        return int(text)
+     parts = _PART.findall(text)
+     if not parts or "".join(n + u for n, u in parts) != text:
+         raise ValueError(f"bad duration: {text!r}")

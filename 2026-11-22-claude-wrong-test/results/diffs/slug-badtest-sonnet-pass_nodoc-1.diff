@@ -1,0 +1,13 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index a18b692..a1663e7 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -1,6 +1,7 @@
+ import re
++import unicodedata
+ 
+ 
+ def slugify(text: str) -> str:
+-    text = text.encode("ascii", "ignore").decode()
++    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")

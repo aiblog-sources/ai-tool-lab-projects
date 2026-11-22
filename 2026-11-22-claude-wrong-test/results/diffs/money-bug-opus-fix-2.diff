@@ -1,0 +1,12 @@
+diff --git a/textkit/money.py b/textkit/money.py
+index b345146..8057979 100644
+--- a/textkit/money.py
++++ b/textkit/money.py
+@@ -10,4 +10,7 @@ def round_money(amount) -> Decimal:
+     >>> round_money("1.005")
+     Decimal('1.01')
+     """
++    if isinstance(amount, float):
++        # str() gives the shortest decimal text that round-trips, e.g. "2.675".
++        amount = str(amount)
+     return Decimal(amount).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)

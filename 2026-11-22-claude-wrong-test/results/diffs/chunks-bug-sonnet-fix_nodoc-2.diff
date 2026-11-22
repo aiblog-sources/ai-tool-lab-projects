@@ -1,0 +1,10 @@
+diff --git a/textkit/chunks.py b/textkit/chunks.py
+index 75f9388..f429a1c 100644
+--- a/textkit/chunks.py
++++ b/textkit/chunks.py
+@@ -2,4 +2,4 @@ def chunk(seq, size: int) -> list:
+     if size < 1:
+         raise ValueError("size must be >= 1")
+     seq = list(seq)
+-    return [seq[i:i + size] for i in range(0, len(seq) - size + 1, size)]
++    return [seq[i:i + size] for i in range(0, len(seq), size)]

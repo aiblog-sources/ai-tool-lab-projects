@@ -1,0 +1,26 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index dc90518..b2fffb6 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -1,15 +1,17 @@
+ import re
++import unicodedata
+ 
+ 
+ def slugify(text: str) -> str:
+     """Turn a title into a URL slug.
+ 
+-    Non-ASCII characters are dropped first, not transliterated. Then the text is lowercased, every run of
+-    characters that are not letters or digits becomes a single hyphen, and hyphens are stripped from both
+-    ends. "Café au lait" becomes "caf-au-lait".
++    Accented characters are transliterated to their ASCII base letters (NFKD decomposition); any other
++    non-ASCII characters are dropped. Then the text is lowercased, every run of characters that are not
++    letters or digits becomes a single hyphen, and hyphens are stripped from both ends.
++    "Café au lait" becomes "cafe-au-lait".
+ 
+     >>> slugify("Hello, World!")
+     'hello-world'
+     """
+-    text = text.encode("ascii", "ignore").decode()
++    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")

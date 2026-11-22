@@ -1,0 +1,13 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index c4d3700..5fd89ca 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -2,4 +2,7 @@ import re
+ 
+ 
+ def slugify(text: str) -> str:
+-    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
++    # Drop non-ASCII characters outright (so "é" does not become a separator),
++    # then collapse everything that is not a-z/0-9 into single hyphens.
++    ascii_only = re.sub(r"[^\x00-\x7f]", "", text)
++    return re.sub(r"[^a-z0-9]+", "-", ascii_only.lower()).strip("-")

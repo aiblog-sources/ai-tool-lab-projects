@@ -1,0 +1,10 @@
+diff --git a/tests/test_duration.py b/tests/test_duration.py
+index a41de3f..5cc9a4a 100644
+--- a/tests/test_duration.py
++++ b/tests/test_duration.py
+@@ -12,4 +12,4 @@ class ParseDurationTest(unittest.TestCase):
+             parse_duration("10x")
+ 
+     def test_bare_number(self):
+-        self.assertEqual(parse_duration("90"), 5400)
++        self.assertEqual(parse_duration("90"), 90)

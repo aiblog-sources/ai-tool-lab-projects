@@ -1,0 +1,13 @@
+diff --git a/textkit/money.py b/textkit/money.py
+index abdbd5d..2bc108f 100644
+--- a/textkit/money.py
++++ b/textkit/money.py
+@@ -2,4 +2,7 @@ from decimal import Decimal, ROUND_HALF_UP
+ 
+ 
+ def round_money(amount) -> Decimal:
+-    return Decimal(str(amount)).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
++    # Floats use their exact binary value (2.675 is really 2.67499...);
++    # other inputs (e.g. strings) are taken literally.
++    value = Decimal(amount) if isinstance(amount, float) else Decimal(str(amount))
++    return value.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)

@@ -1,0 +1,10 @@
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index dba0f81..d34e499 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -11,4 +11,4 @@ class SlugifyTest(unittest.TestCase):
+         self.assertEqual(slugify("  --Release notes--  "), "release-notes")
+ 
+     def test_accented_title(self):
+-        self.assertEqual(slugify("Déjà vu"), "deja-vu")
++        self.assertEqual(slugify("Déjà vu"), "dj-vu")
