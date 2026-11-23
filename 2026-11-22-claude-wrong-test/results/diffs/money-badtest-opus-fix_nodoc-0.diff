@@ -1,0 +1,12 @@
+diff --git a/tests/test_money.py b/tests/test_money.py
+index 6121230..6a2864e 100644
+--- a/tests/test_money.py
++++ b/tests/test_money.py
+@@ -12,4 +12,6 @@ class RoundMoneyTest(unittest.TestCase):
+         self.assertEqual(round_money("-0.125"), Decimal("-0.13"))
+ 
+     def test_float_input(self):
+-        self.assertEqual(round_money(2.675), Decimal("2.67"))
++        # Floats are converted via str(), so 2.675 rounds half-up like "2.675"
++        # rather than by its binary representation (2.67499999...).
++        self.assertEqual(round_money(2.675), Decimal("2.68"))

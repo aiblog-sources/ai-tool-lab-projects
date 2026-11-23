@@ -1,0 +1,15 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index a18b692..2aa3c6e 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -1,6 +1,9 @@
+ import re
++import unicodedata
+ 
+ 
+ def slugify(text: str) -> str:
+-    text = text.encode("ascii", "ignore").decode()
++    # NFKD splits accented letters into base letter + combining mark, so
++    # "é" becomes "e" + U+0301 and the ASCII step keeps the base letter.
++    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")

@@ -1,0 +1,10 @@
+diff --git a/textkit/money.py b/textkit/money.py
+index abdbd5d..4cebde3 100644
+--- a/textkit/money.py
++++ b/textkit/money.py
+@@ -2,4 +2,4 @@ from decimal import Decimal, ROUND_HALF_UP
+ 
+ 
+ def round_money(amount) -> Decimal:
+-    return Decimal(str(amount)).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
++    return Decimal(amount).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)

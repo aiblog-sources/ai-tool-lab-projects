@@ -1,0 +1,13 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index c4d3700..0baa7ac 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -2,4 +2,7 @@ import re
+ 
+ 
+ def slugify(text: str) -> str:
+-    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
++    # Drop non-ASCII letters/digits outright (so "Déjà" -> "dj"), while
++    # non-ASCII spaces and punctuation still act as word separators.
++    text = "".join(c for c in text.lower() if c.isascii() or not c.isalnum())
++    return re.sub(r"[^a-z0-9]+", "-", text).strip("-")

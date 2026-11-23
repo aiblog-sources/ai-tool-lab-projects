@@ -1,0 +1,10 @@
+diff --git a/tests/test_money.py b/tests/test_money.py
+index 6121230..9314a2f 100644
+--- a/tests/test_money.py
++++ b/tests/test_money.py
+@@ -12,4 +12,4 @@ class RoundMoneyTest(unittest.TestCase):
+         self.assertEqual(round_money("-0.125"), Decimal("-0.13"))
+ 
+     def test_float_input(self):
+-        self.assertEqual(round_money(2.675), Decimal("2.67"))
++        self.assertEqual(round_money(2.675), Decimal("2.68"))

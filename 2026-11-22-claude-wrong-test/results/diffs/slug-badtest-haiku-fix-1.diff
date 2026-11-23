@@ -1,0 +1,11 @@
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index dba0f81..60f8914 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -11,4 +11,5 @@ class SlugifyTest(unittest.TestCase):
+         self.assertEqual(slugify("  --Release notes--  "), "release-notes")
+ 
+     def test_accented_title(self):
+-        self.assertEqual(slugify("Déjà vu"), "deja-vu")
++        # Non-ASCII characters are dropped, not transliterated (see slugify docstring).
++        self.assertEqual(slugify("Café au lait"), "caf-au-lait")

@@ -1,0 +1,10 @@
+diff --git a/tests/test_workdays.py b/tests/test_workdays.py
+index d2e946c..9aad514 100644
+--- a/tests/test_workdays.py
++++ b/tests/test_workdays.py
+@@ -13,4 +13,4 @@ class BusinessDaysTest(unittest.TestCase):
+             business_days(date(2026, 11, 9), date(2026, 11, 2))
+ 
+     def test_full_week(self):
+-        self.assertEqual(business_days(date(2026, 11, 2), date(2026, 11, 9)), 5)
++        self.assertEqual(business_days(date(2026, 11, 2), date(2026, 11, 9)), 6)

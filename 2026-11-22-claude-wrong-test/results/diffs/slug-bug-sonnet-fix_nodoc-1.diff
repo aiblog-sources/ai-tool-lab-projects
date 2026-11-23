@@ -1,0 +1,25 @@
+diff --git a/tests/test_slug.py b/tests/test_slug.py
+index d34e499..dba0f81 100644
+--- a/tests/test_slug.py
++++ b/tests/test_slug.py
+@@ -11,4 +11,4 @@ class SlugifyTest(unittest.TestCase):
+         self.assertEqual(slugify("  --Release notes--  "), "release-notes")
+ 
+     def test_accented_title(self):
+-        self.assertEqual(slugify("Déjà vu"), "dj-vu")
++        self.assertEqual(slugify("Déjà vu"), "deja-vu")
+diff --git a/textkit/slug.py b/textkit/slug.py
+index c4d3700..c57850f 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -1,5 +1,9 @@
+ import re
++import unicodedata
+ 
+ 
+ def slugify(text: str) -> str:
+-    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
++    # Decompose accented characters and drop the combining marks (é -> e).
++    decomposed = unicodedata.normalize("NFKD", text)
++    ascii_text = "".join(c for c in decomposed if not unicodedata.combining(c))
++    return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-")

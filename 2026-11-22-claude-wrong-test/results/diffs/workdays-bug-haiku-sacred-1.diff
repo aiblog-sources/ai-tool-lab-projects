@@ -1,0 +1,13 @@
+diff --git a/textkit/workdays.py b/textkit/workdays.py
+index 707f39a..d11d30b 100644
+--- a/textkit/workdays.py
++++ b/textkit/workdays.py
+@@ -13,7 +13,7 @@ def business_days(start: date, end: date) -> int:
+     if end < start:
+         raise ValueError("end before start")
+     days, d = 0, start
+-    while d <= end:
++    while d < end:
+         if d.weekday() < 5:
+             days += 1
+         d += timedelta(days=1)

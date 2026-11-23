@@ -1,0 +1,13 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index c4d3700..918ec75 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -2,4 +2,7 @@ import re
+ 
+ 
+ def slugify(text: str) -> str:
+-    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
++    # Drop non-ASCII characters outright so accented letters don't split words
++    # ("Déjà" -> "dj"), then collapse everything else into single hyphens.
++    text = re.sub(r"[^\x00-\x7f]", "", text.lower())
++    return re.sub(r"[^a-z0-9]+", "-", text).strip("-")

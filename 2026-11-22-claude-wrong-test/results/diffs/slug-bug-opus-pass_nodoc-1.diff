@@ -1,0 +1,11 @@
+diff --git a/textkit/slug.py b/textkit/slug.py
+index c4d3700..74f143e 100644
+--- a/textkit/slug.py
++++ b/textkit/slug.py
+@@ -2,4 +2,6 @@ import re
+ 
+ 
+ def slugify(text: str) -> str:
++    # Drop non-ASCII characters outright so they don't split words.
++    text = text.encode("ascii", "ignore").decode("ascii")
+     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
