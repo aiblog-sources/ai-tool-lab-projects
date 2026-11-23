@@ -1,0 +1,26 @@
+{
+ "model": "claude-opus-5-5",
+ "variant": "plain",
+ "cpu": "z80",
+ "task": "col",
+ "rep": 2,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "ok": true,
+   "timing_ok": true,
+   "memory_ok": true,
+   "work_end_max": 3117,
+   "vbl_end": 15960,
+   "budget": null,
+   "used": null,
+   "cost": 0.0330302,
+   "wall_s": 16.34,
+   "out_tokens": 1492
+  }
+ ],
+ "ok": true,
+ "first_try": true,
+ "fix_rounds": 0
+}

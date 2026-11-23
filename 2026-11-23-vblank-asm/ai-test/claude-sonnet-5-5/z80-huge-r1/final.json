@@ -1,0 +1,54 @@
+{
+ "model": "claude-sonnet-5-5",
+ "variant": "warned",
+ "cpu": "z80",
+ "task": "huge",
+ "rep": 1,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "ok": false,
+   "timing_ok": true,
+   "memory_ok": false,
+   "work_end_max": 15732,
+   "vbl_end": 15960,
+   "budget": 15960,
+   "used": 15334,
+   "cost": 0.031717999999999996,
+   "wall_s": 25.62,
+   "out_tokens": 2695
+  },
+  {
+   "round": 1,
+   "assembled": true,
+   "ok": false,
+   "timing_ok": false,
+   "memory_ok": false,
+   "work_end_max": 16048,
+   "vbl_end": 15960,
+   "budget": 15960,
+   "used": 15650,
+   "cost": 0.068222,
+   "wall_s": 54.04,
+   "out_tokens": 6117
+  },
+  {
+   "round": 2,
+   "assembled": true,
+   "ok": false,
+   "timing_ok": true,
+   "memory_ok": false,
+   "work_end_max": 15943,
+   "vbl_end": 15960,
+   "budget": 15960,
+   "used": 15550,
+   "cost": 0.033988000000000004,
+   "wall_s": 23.85,
+   "out_tokens": 2670
+  }
+ ],
+ "ok": false,
+ "first_try": false,
+ "fix_rounds": 2
+}

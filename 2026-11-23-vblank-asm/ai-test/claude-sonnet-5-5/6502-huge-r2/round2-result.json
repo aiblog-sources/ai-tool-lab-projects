@@ -1,0 +1,60 @@
+{
+ "cpu": "6502",
+ "task": "huge",
+ "cases": [
+  {
+   "case": 8192,
+   "wrong_bytes": 0,
+   "frames": 25,
+   "entered": 25,
+   "returned": 25,
+   "reentered": 0,
+   "vbl_end": 2263,
+   "work_end_max": 2639,
+   "late_frames": 25,
+   "writes": 266,
+   "rmw_ppu": 0,
+   "timing_ok": false,
+   "memory_ok": true,
+   "ok": false
+  },
+  {
+   "case": 8448,
+   "wrong_bytes": 0,
+   "frames": 25,
+   "entered": 25,
+   "returned": 25,
+   "reentered": 0,
+   "vbl_end": 2263,
+   "work_end_max": 2639,
+   "late_frames": 25,
+   "writes": 266,
+   "rmw_ppu": 0,
+   "timing_ok": false,
+   "memory_ok": true,
+   "ok": false
+  },
+  {
+   "case": 8704,
+   "wrong_bytes": 0,
+   "frames": 25,
+   "entered": 25,
+   "returned": 25,
+   "reentered": 0,
+   "vbl_end": 2263,
+   "work_end_max": 2639,
+   "late_frames": 25,
+   "writes": 266,
+   "rmw_ppu": 0,
+   "timing_ok": false,
+   "memory_ok": true,
+   "ok": false
+  }
+ ],
+ "assembled": true,
+ "ok": false,
+ "timing_ok": false,
+ "memory_ok": true,
+ "work_end_max": 2639,
+ "vbl_end": 2263
+}

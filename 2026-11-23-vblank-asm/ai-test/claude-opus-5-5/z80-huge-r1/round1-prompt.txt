@@ -1,0 +1,44 @@
+Write a Z80 routine for the Sega Master System (NTSC) in sjasmplus syntax.
+
+Routine label: `vblank_update`. It is called with CALL and must return with RET.
+
+Context: Your routine is called once per frame from the VBlank (frame) interrupt handler of an NTSC Sega Master System game, with the display on (256x192 screen, mode 4, name table at VRAM $3800). The handler has already saved every register (main and shadow set) and read the VDP control port $BF, which acknowledged the interrupt and reset the control port's byte latch; it calls your routine with CALL and returns with EI and RETI right after. All VDP writes must be finished inside vertical blank, before the active display starts again. Do not change VDP registers.
+
+Task: $C000 and $C001 hold a VRAM address (low byte first), $0000 to $3400. Copy the 1024 bytes at $C100-$C4FF to consecutive VRAM addresses starting there.
+
+Rules:
+- You may change any register, use RAM $C010-$C01F as scratch, and use the stack. Do not write any other RAM.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with DB).
+- Your file is included into the harness after its code: no ORG, OUTPUT, DEVICE or header. Prefix your labels with `vblank_update_` or use local labels (.label).
+
+Reply with the whole routine in one ```asm code block. After the block, write two lines:
+`VBlank budget: N` (how many Z80 cycles of vertical blank you assumed an NTSC Master System has)
+`Cycles used: N` (your count from the CALL to the end of the routine's last VDP port write)
+
+Your previous answer was:
+```asm
+; vblank_update: copy 1024 bytes $C100-$C4FF to VRAM at address in ($C000).
+; Fastest possible form (fully unrolled OUTI, 16 cycles/byte), but
+; 1024 bytes cannot fit in NTSC vblank: see notes below the code.
+vblank_update:
+        ld      hl,($C000)          ; 16  VRAM destination address
+        ld      a,l                 ;  4
+        out     ($BF),a             ; 11  address low byte
+        ld      a,h                 ;  4
+        or      $40                 ;  7  VRAM write command
+        out     ($BF),a             ; 11  address high byte + command
+        ld      hl,$C100            ; 10  source
+        ld      c,$BE               ;  7  VDP data port
+        REPT 1024
+        outi                        ; 16 each
+        ENDR
+        ret
+
+```
+
+It assembled and ran on an emulator in 3 test cases, 25 frames checked in each.
+- case 0: in 25 of 25 frames the last write ended at 16871 Z80 cycles after the start of vertical blank (line 192); vertical blank ended at 15960
+- case 4096: in 25 of 25 frames the last write ended at 16871 Z80 cycles after the start of vertical blank (line 192); vertical blank ended at 15960
+- case 9216: in 25 of 25 frames the last write ended at 16871 Z80 cycles after the start of vertical blank (line 192); vertical blank ended at 15960
+
+Fix the routine. Reply the same way: the whole routine in one code block, then the two lines.

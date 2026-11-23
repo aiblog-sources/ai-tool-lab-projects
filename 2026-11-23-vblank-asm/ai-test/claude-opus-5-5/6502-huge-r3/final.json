@@ -1,0 +1,40 @@
+{
+ "model": "claude-opus-5-5",
+ "variant": "warned",
+ "cpu": "6502",
+ "task": "huge",
+ "rep": 3,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "ok": false,
+   "timing_ok": false,
+   "memory_ok": false,
+   "work_end_max": 2615,
+   "vbl_end": 2261,
+   "budget": 2273,
+   "used": 2604,
+   "cost": 0.0772354,
+   "wall_s": 39.65,
+   "out_tokens": 3701
+  },
+  {
+   "round": 1,
+   "assembled": true,
+   "ok": true,
+   "timing_ok": true,
+   "memory_ok": true,
+   "work_end_max": 1616,
+   "vbl_end": 2261,
+   "budget": 2273,
+   "used": 1605,
+   "cost": 0.106652,
+   "wall_s": 47.53,
+   "out_tokens": 4539
+  }
+ ],
+ "ok": true,
+ "first_try": false,
+ "fix_rounds": 1
+}
