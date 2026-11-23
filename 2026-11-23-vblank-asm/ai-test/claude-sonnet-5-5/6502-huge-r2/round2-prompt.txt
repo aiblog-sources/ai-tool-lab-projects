@@ -1,0 +1,63 @@
+Write a 6502 routine for the NES (NTSC) in ca65 syntax.
+
+Routine label: `vblank_update`. It is called with JSR and must return with RTS.
+
+Context: Your routine is called once per frame from the NMI handler of an NTSC NES game, with rendering on. The handler has already saved A, X and Y and does nothing else: it calls your routine with JSR and returns with RTI right after. Before the NMI, PPUCTRL ($2000) was $80 (NMI on, base nametable $2000, VRAM increment 1, sprite and background patterns at $0000) and PPUMASK ($2001) was $1E. The cartridge uses vertical mirroring. All PPU and OAM DMA work must be finished inside vertical blank. Before returning, leave PPUCTRL at $80 and the scroll at X=0, Y=0, so the next frame is drawn from nametable $2000 unscrolled.
+
+Task: First do the OAM DMA from page $02 (the sprite table at $0200-$02FF). Then copy the 256 bytes at $0300-$03FF to consecutive PPU addresses, starting at the address in zero page $00 (low byte) and $01 (high byte). The destination is always inside nametable 0 and the 256 bytes end before $2400.
+
+Rules:
+- You may change A, X and Y, use zero page $10-$1F as scratch, and use the stack. Do not write any other RAM.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with .byte).
+- Your file is included into the harness's CODE segment: no .segment, .org, header or vectors. Prefix your labels with `vblank_update_` or use @cheap local labels.
+
+Reply with the whole routine in one ```asm code block. After the block, write two lines:
+`VBlank budget: N` (how many CPU cycles of vertical blank you assumed an NTSC NES has)
+`Cycles used: N` (your count from the JSR to the end of the routine's last PPU register write or OAM DMA)
+
+Your previous answer was:
+```asm
+; vblank_update: OAM DMA, then a partial copy of $0300-$03FF to the PPU.
+; The full 256-byte copy cannot fit in NTSC vblank after the OAM DMA
+; (8 cycles/byte minimum => 2048 + ~540 > ~2273), so only the first
+; VBLANK_COPY_BYTES bytes are copied.
+
+PPUCTRL   = $2000
+PPUSCROLL = $2005
+PPUADDR   = $2006
+PPUDATA   = $2007
+OAMDMA    = $4014
+
+VBLANK_COPY_BYTES = 200
+
+vblank_update:
+        lda #$02
+        sta OAMDMA              ; OAM DMA from $0200 (513/514 cycles)
+
+        lda $01
+        sta PPUADDR
+        lda $00
+        sta PPUADDR             ; destination = ($01:$00)
+
+        ; Unrolled: LDA abs (4) + STA abs (4) = 8 cycles per byte
+        .repeat VBLANK_COPY_BYTES, i
+        lda $0300+i
+        sta PPUDATA
+        .endrepeat
+
+        ; Restore scroll X=0, Y=0 and nametable $2000
+        lda #$00
+        sta PPUSCROLL
+        sta PPUSCROLL
+        lda #$80
+        sta PPUCTRL
+        rts
+
+```
+
+It assembled and ran on an emulator in 3 test cases, 25 frames checked in each.
+- case 8192: 56 bytes of the destination wrong
+- case 8448: 56 bytes of the destination wrong
+- case 8704: 56 bytes of the destination wrong
+
+Fix the routine. Reply the same way: the whole routine in one code block, then the two lines.

@@ -1,0 +1,26 @@
+{
+ "model": "claude-sonnet-5-5",
+ "variant": "plain",
+ "cpu": "z80",
+ "task": "row",
+ "rep": 2,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "ok": true,
+   "timing_ok": true,
+   "memory_ok": true,
+   "work_end_max": 1926,
+   "vbl_end": 15960,
+   "budget": null,
+   "used": null,
+   "cost": 0.011639400000000001,
+   "wall_s": 10.29,
+   "out_tokens": 1002
+  }
+ ],
+ "ok": true,
+ "first_try": true,
+ "fix_rounds": 0
+}

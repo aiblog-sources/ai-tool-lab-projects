@@ -1,0 +1,40 @@
+{
+ "model": "claude-sonnet-5-5",
+ "variant": "warned",
+ "cpu": "z80",
+ "task": "huge",
+ "rep": 2,
+ "rounds": [
+  {
+   "round": 0,
+   "assembled": true,
+   "ok": false,
+   "timing_ok": true,
+   "memory_ok": false,
+   "work_end_max": 15847,
+   "vbl_end": 15960,
+   "budget": 15960,
+   "used": 15447,
+   "cost": 0.0303307,
+   "wall_s": 26.47,
+   "out_tokens": 2871
+  },
+  {
+   "round": 1,
+   "assembled": true,
+   "ok": true,
+   "timing_ok": true,
+   "memory_ok": true,
+   "work_end_max": 15926,
+   "vbl_end": 15960,
+   "budget": 15960,
+   "used": 15526,
+   "cost": 0.030860000000000005,
+   "wall_s": 23.39,
+   "out_tokens": 2478
+  }
+ ],
+ "ok": true,
+ "first_try": false,
+ "fix_rounds": 1
+}

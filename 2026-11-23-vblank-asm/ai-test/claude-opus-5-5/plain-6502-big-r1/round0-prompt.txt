@@ -1,0 +1,14 @@
+Write a 6502 routine for the NES (NTSC) in ca65 syntax.
+
+Routine label: `vblank_update`. It is called with JSR and must return with RTS.
+
+Context: Your routine is called once per frame from the NMI handler of an NTSC NES game, with rendering on. The handler has already saved A, X and Y and does nothing else: it calls your routine with JSR and returns with RTI right after. Before the NMI, PPUCTRL ($2000) was $80 (NMI on, base nametable $2000, VRAM increment 1, sprite and background patterns at $0000) and PPUMASK ($2001) was $1E. The cartridge uses vertical mirroring. The game shows nametable $2000 with no scrolling.
+
+Task: First do the OAM DMA from page $02 (the sprite table at $0200-$02FF). Then copy the 160 bytes at $0300-$039F to consecutive PPU addresses, starting at the address in zero page $00 (low byte) and $01 (high byte). The destination is always inside nametable 0 and the 160 bytes end before $2400.
+
+Rules:
+- You may change A, X and Y, use zero page $10-$1F as scratch, and use the stack. Do not write any other RAM.
+- The code runs from ROM, so no self-modifying code. Tables in ROM are fine (after the code, with .byte).
+- Your file is included into the harness's CODE segment: no .segment, .org, header or vectors. Prefix your labels with `vblank_update_` or use @cheap local labels.
+
+Reply with the whole routine in one ```asm code block.
