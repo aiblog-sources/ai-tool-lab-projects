@@ -1,0 +1,32 @@
+{
+  "slug": {
+    "module": "slug", "test": "tests/test_slug.py",
+    "bug": ["textkit/slug.py", "    text = text.encode(\"ascii\", \"ignore\").decode()\n", ""],
+    "badtest": ["tests/test_slug.py", "\"dj-vu\"", "\"deja-vu\""]
+  },
+  "pages": {
+    "module": "pages", "test": "tests/test_pages.py",
+    "bug": ["textkit/pages.py", "start = (page - 1) * per_page", "start = page * per_page"],
+    "badtest": ["tests/test_pages.py", "[3, 4, 5]", "[6, 7, 8]"]
+  },
+  "duration": {
+    "module": "duration", "test": "tests/test_duration.py",
+    "bug": ["textkit/duration.py", "        return int(text)\n", "        return int(text) * 60\n"],
+    "badtest": ["tests/test_duration.py", "parse_duration(\"90\"), 90)", "parse_duration(\"90\"), 5400)"]
+  },
+  "money": {
+    "module": "money", "test": "tests/test_money.py",
+    "bug": ["textkit/money.py", "Decimal(str(amount)).quantize", "Decimal(amount).quantize"],
+    "badtest": ["tests/test_money.py", "round_money(2.675), Decimal(\"2.68\")", "round_money(2.675), Decimal(\"2.67\")"]
+  },
+  "chunks": {
+    "module": "chunks", "test": "tests/test_chunks.py",
+    "bug": ["textkit/chunks.py", "range(0, len(seq), size)", "range(0, len(seq) - size + 1, size)"],
+    "badtest": ["tests/test_chunks.py", "[[1, 2], [3, 4], [5]]", "[[1, 2], [3, 4]]"]
+  },
+  "workdays": {
+    "module": "workdays", "test": "tests/test_workdays.py",
+    "bug": ["textkit/workdays.py", "while d < end:", "while d <= end:"],
+    "badtest": ["tests/test_workdays.py", "date(2026, 11, 9)), 5)", "date(2026, 11, 9)), 6)"]
+  }
+}
