@@ -1,0 +1,1051 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 4792.315833333333,
+ "unmapped_per_frame": 317.445,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 464,
+   "function": "main",
+   "per_frame": 3420.8525,
+   "self_per_frame": 28.59,
+   "pct_busy": 71.38203363405201,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3392.2625,
+     1.0,
+     3392.2625
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.445,
+   "self_per_frame": 0.0,
+   "pct_busy": 6.624041716783065,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.10333333333334,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.14333333333333,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.301666666666666,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.89666666666667,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 421,
+   "function": "updateSprites",
+   "per_frame": 231.75333333333333,
+   "self_per_frame": 59.093333333333334,
+   "pct_busy": 4.835936140129885,
+   "calls": [
+    [
+     "DMA_doCPUCopyDirect",
+     172.66,
+     0.30333333333333334,
+     569.2087912087912
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 404,
+   "function": "updateSprites",
+   "per_frame": 92.15,
+   "self_per_frame": 92.15,
+   "pct_busy": 1.9228699277089243,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 372,
+   "function": "gameFrame",
+   "per_frame": 64.39666666666666,
+   "self_per_frame": 64.39666666666666,
+   "pct_busy": 1.3437483860882151,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 367,
+   "function": "gameFrame",
+   "per_frame": 41.585,
+   "self_per_frame": 41.585,
+   "pct_busy": 0.8677433092108043,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 401,
+   "function": "updateSprites",
+   "per_frame": 40.30833333333333,
+   "self_per_frame": 40.30833333333333,
+   "pct_busy": 0.8411034400730754,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 459,
+   "function": "main",
+   "per_frame": 37.998333333333335,
+   "self_per_frame": 37.998333333333335,
+   "pct_busy": 0.7929012747664272,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 217,
+   "function": "checkBricks",
+   "per_frame": 36.36833333333333,
+   "self_per_frame": 36.36833333333333,
+   "pct_busy": 0.7588884914548099,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 400,
+   "function": "updateSprites",
+   "per_frame": 36.236666666666665,
+   "self_per_frame": 36.236666666666665,
+   "pct_busy": 0.756141037588125,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 364,
+   "function": "gameFrame",
+   "per_frame": 36.01833333333333,
+   "self_per_frame": 36.01833333333333,
+   "pct_busy": 0.7515851330750147,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 368,
+   "function": "gameFrame",
+   "per_frame": 28.128333333333334,
+   "self_per_frame": 28.128333333333334,
+   "pct_busy": 0.586946568456204,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 416,
+   "function": "updateSprites",
+   "per_frame": 27.16,
+   "self_per_frame": 27.16,
+   "pct_busy": 0.566740610272104,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 411,
+   "function": "updateSprites",
+   "per_frame": 26.933333333333334,
+   "self_per_frame": 26.933333333333334,
+   "pct_busy": 0.5620108162737605,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 454,
+   "function": "main",
+   "per_frame": 22.675,
+   "self_per_frame": 22.675,
+   "pct_busy": 0.4731532893195861,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 370,
+   "function": "gameFrame",
+   "per_frame": 22.445,
+   "self_per_frame": 22.445,
+   "pct_busy": 0.46835393952714927,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 369,
+   "function": "gameFrame",
+   "per_frame": 20.378333333333334,
+   "self_per_frame": 20.378333333333334,
+   "pct_busy": 0.4252293471893112,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 154,
+   "function": "iabs",
+   "per_frame": 20.30666666666667,
+   "self_per_frame": 20.30666666666667,
+   "pct_busy": 0.42373389761630553,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 170,
+   "function": "showMessage",
+   "per_frame": 19.703333333333333,
+   "self_per_frame": 0.3283333333333333,
+   "pct_busy": 0.4111442988854206,
+   "calls": [
+    [
+     "VDP_drawText",
+     19.375,
+     0.005,
+     3875.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 267,
+   "function": "placeBallOnPaddle",
+   "per_frame": 17.405,
+   "self_per_frame": 17.405,
+   "pct_busy": 0.36318557885809905,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 455,
+   "function": "main",
+   "per_frame": 16.001666666666665,
+   "self_per_frame": 16.001666666666665,
+   "pct_busy": 0.33390258954482516,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 453,
+   "function": "main",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.3338678116477785,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 222,
+   "function": "checkBricks",
+   "per_frame": 14.773333333333333,
+   "self_per_frame": 14.773333333333333,
+   "pct_busy": 0.30827127942144883,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "checkBricks",
+   "per_frame": 14.441666666666666,
+   "self_per_frame": 14.441666666666666,
+   "pct_busy": 0.30135047790916675,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 183,
+   "function": "drawHUD",
+   "per_frame": 13.628333333333334,
+   "self_per_frame": 0.38166666666666665,
+   "pct_busy": 0.28437886415040464,
+   "calls": [
+    [
+     "VDP_drawText",
+     13.246666666666666,
+     0.005,
+     2649.3333333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 219,
+   "function": "checkBricks",
+   "per_frame": 12.14,
+   "self_per_frame": 12.14,
+   "pct_busy": 0.2533222020877519,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 293,
+   "function": "stepBall",
+   "per_frame": 10.481666666666667,
+   "self_per_frame": 10.481666666666667,
+   "pct_busy": 0.21871819452634156,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 292,
+   "function": "stepBall",
+   "per_frame": 10.413333333333334,
+   "self_per_frame": 10.413333333333334,
+   "pct_busy": 0.21729230074742917,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 388,
+   "function": "gameFrame",
+   "per_frame": 9.573333333333334,
+   "self_per_frame": 9.573333333333334,
+   "pct_busy": 0.1997642406359208,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 311,
+   "function": "stepBall",
+   "per_frame": 8.431666666666667,
+   "self_per_frame": 8.431666666666667,
+   "pct_busy": 0.17594138115896993,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 220,
+   "function": "checkBricks",
+   "per_frame": 8.341666666666667,
+   "self_per_frame": 8.341666666666667,
+   "pct_busy": 0.17406337471845118,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 268,
+   "function": "placeBallOnPaddle",
+   "per_frame": 6.673333333333333,
+   "self_per_frame": 6.673333333333333,
+   "pct_busy": 0.13925069977476096,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "showMessage",
+   "per_frame": 6.096666666666667,
+   "self_per_frame": 6.096666666666667,
+   "pct_busy": 0.12721754739662228,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 189,
+   "function": "drawHUD",
+   "per_frame": 5.85,
+   "self_per_frame": 0.195,
+   "pct_busy": 0.12207041863371901,
+   "calls": [
+    [
+     "VDP_drawText",
+     5.655,
+     0.0025,
+     2262.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 317,
+   "function": "stepBall",
+   "per_frame": 5.661666666666667,
+   "self_per_frame": 5.661666666666667,
+   "pct_busy": 0.11814051626744829,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 296,
+   "function": "stepBall",
+   "per_frame": 5.4383333333333335,
+   "self_per_frame": 5.4383333333333335,
+   "pct_busy": 0.11348027806319805,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 409,
+   "function": "updateSprites",
+   "per_frame": 5.151666666666666,
+   "self_per_frame": 5.151666666666666,
+   "pct_busy": 0.10749847977117535,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 407,
+   "function": "updateSprites",
+   "per_frame": 4.906666666666666,
+   "self_per_frame": 4.906666666666666,
+   "pct_busy": 0.10238612890531874,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 408,
+   "function": "updateSprites",
+   "per_frame": 4.868333333333333,
+   "self_per_frame": 4.868333333333333,
+   "pct_busy": 0.10158623727324594,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 343,
+   "function": "stepBall",
+   "per_frame": 4.71,
+   "self_per_frame": 4.71,
+   "pct_busy": 0.0982823370538148,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 334,
+   "function": "stepBall",
+   "per_frame": 4.663333333333333,
+   "self_per_frame": 4.663333333333333,
+   "pct_busy": 0.09730855593650878,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 236,
+   "function": "checkBricks",
+   "per_frame": 4.5183333333333335,
+   "self_per_frame": 4.5183333333333335,
+   "pct_busy": 0.09428287889345079,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 310,
+   "function": "stepBall",
+   "per_frame": 4.343333333333334,
+   "self_per_frame": 4.343333333333334,
+   "pct_busy": 0.09063119970355321,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 375,
+   "function": "gameFrame",
+   "per_frame": 4.251666666666667,
+   "self_per_frame": 4.251666666666667,
+   "pct_busy": 0.0887184153659878,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 180,
+   "function": "drawHUD",
+   "per_frame": 3.795,
+   "self_per_frame": 3.795,
+   "pct_busy": 0.07918927157520746,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 233,
+   "function": "checkBricks",
+   "per_frame": 3.433333333333333,
+   "self_per_frame": 3.433333333333333,
+   "pct_busy": 0.0716424679160858,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 295,
+   "function": "stepBall",
+   "per_frame": 3.316666666666667,
+   "self_per_frame": 3.316666666666667,
+   "pct_busy": 0.06920801512282075,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 303,
+   "function": "stepBall",
+   "per_frame": 3.138333333333333,
+   "self_per_frame": 3.138333333333333,
+   "pct_busy": 0.06548678013882989,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 299,
+   "function": "stepBall",
+   "per_frame": 2.6533333333333333,
+   "self_per_frame": 2.6533333333333333,
+   "pct_busy": 0.0553664120982566,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 250,
+   "function": "checkBricks",
+   "per_frame": 2.5366666666666666,
+   "self_per_frame": 2.5366666666666666,
+   "pct_busy": 0.05293195930499155,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 234,
+   "function": "checkBricks",
+   "per_frame": 2.5033333333333334,
+   "self_per_frame": 2.5033333333333334,
+   "pct_busy": 0.05223640136405868,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 162,
+   "function": "showMessage",
+   "per_frame": 1.9233333333333333,
+   "self_per_frame": 1.9233333333333333,
+   "pct_busy": 0.040133693191826705,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 167,
+   "function": "showMessage",
+   "per_frame": 0.985,
+   "self_per_frame": 0.985,
+   "pct_busy": 0.020553737154566366,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 319,
+   "function": "stepBall",
+   "per_frame": 0.685,
+   "self_per_frame": 0.685,
+   "pct_busy": 0.014293715686170516,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 176,
+   "function": "drawHUD",
+   "per_frame": 0.5433333333333333,
+   "self_per_frame": 0.5433333333333333,
+   "pct_busy": 0.011337594437205811,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 181,
+   "function": "drawHUD",
+   "per_frame": 0.42833333333333334,
+   "self_per_frame": 0.42833333333333334,
+   "pct_busy": 0.008937919540987403,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 318,
+   "function": "stepBall",
+   "per_frame": 0.3883333333333333,
+   "self_per_frame": 0.3883333333333333,
+   "pct_busy": 0.008103250011867957,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 163,
+   "function": "showMessage",
+   "per_frame": 0.385,
+   "self_per_frame": 0.385,
+   "pct_busy": 0.00803369421777467,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 249,
+   "function": "checkBricks",
+   "per_frame": 0.355,
+   "self_per_frame": 0.355,
+   "pct_busy": 0.0074076920709350855,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 166,
+   "function": "showMessage",
+   "per_frame": 0.30833333333333335,
+   "self_per_frame": 0.30833333333333335,
+   "pct_busy": 0.006433910953629065,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 187,
+   "function": "drawHUD",
+   "per_frame": 0.275,
+   "self_per_frame": 0.275,
+   "pct_busy": 0.005738353012696193,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 255,
+   "function": "checkBricks",
+   "per_frame": 0.26166666666666666,
+   "self_per_frame": 0.26166666666666666,
+   "pct_busy": 0.005460129836323044,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 246,
+   "function": "checkBricks",
+   "per_frame": 0.23166666666666666,
+   "self_per_frame": 0.23166666666666666,
+   "pct_busy": 0.00483412768948346,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 175,
+   "function": "drawHUD",
+   "per_frame": 0.21166666666666667,
+   "self_per_frame": 0.21166666666666667,
+   "pct_busy": 0.004416792924923737,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 256,
+   "function": "checkBricks",
+   "per_frame": 0.2,
+   "self_per_frame": 0.2,
+   "pct_busy": 0.004173347645597231,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 164,
+   "function": "showMessage",
+   "per_frame": 0.195,
+   "self_per_frame": 0.195,
+   "pct_busy": 0.0040690139544573,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 254,
+   "function": "checkBricks",
+   "per_frame": 0.18166666666666667,
+   "self_per_frame": 0.18166666666666667,
+   "pct_busy": 0.003790790778084152,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 192,
+   "function": "drawHUD",
+   "per_frame": 0.17833333333333334,
+   "self_per_frame": 0.17833333333333334,
+   "pct_busy": 0.0037212349839908644,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 243,
+   "function": "checkBricks",
+   "per_frame": 0.12666666666666668,
+   "self_per_frame": 0.12666666666666668,
+   "pct_busy": 0.0026431201755449133,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 378,
+   "function": "gameFrame",
+   "per_frame": 0.12166666666666667,
+   "self_per_frame": 0.12166666666666667,
+   "pct_busy": 0.002538786484404982,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 252,
+   "function": "checkBricks",
+   "per_frame": 0.12166666666666667,
+   "self_per_frame": 0.12166666666666667,
+   "pct_busy": 0.002538786484404982,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 376,
+   "function": "gameFrame",
+   "per_frame": 0.10833333333333334,
+   "self_per_frame": 0.10833333333333334,
+   "pct_busy": 0.0022605633080318337,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 188,
+   "function": "drawHUD",
+   "per_frame": 0.09,
+   "self_per_frame": 0.09,
+   "pct_busy": 0.001878006440518754,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 177,
+   "function": "drawHUD",
+   "per_frame": 0.08666666666666667,
+   "self_per_frame": 0.08666666666666667,
+   "pct_busy": 0.0018084506464254668,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 186,
+   "function": "drawHUD",
+   "per_frame": 0.08,
+   "self_per_frame": 0.08,
+   "pct_busy": 0.0016693390582388926,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 169,
+   "function": "showMessage",
+   "per_frame": 0.08,
+   "self_per_frame": 0.08,
+   "pct_busy": 0.0016693390582388926,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 282,
+   "function": "loseLife",
+   "per_frame": 0.07666666666666666,
+   "self_per_frame": 0.07666666666666666,
+   "pct_busy": 0.0015997832641456054,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 241,
+   "function": "checkBricks",
+   "per_frame": 0.075,
+   "self_per_frame": 0.075,
+   "pct_busy": 0.0015650053670989616,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 245,
+   "function": "checkBricks",
+   "per_frame": 0.06666666666666667,
+   "self_per_frame": 0.06666666666666667,
+   "pct_busy": 0.0013911158818657437,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 273,
+   "function": "loseLife",
+   "per_frame": 0.06666666666666667,
+   "self_per_frame": 0.06666666666666667,
+   "pct_busy": 0.0013911158818657437,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 276,
+   "function": "loseLife",
+   "per_frame": 0.06,
+   "self_per_frame": 0.06,
+   "pct_busy": 0.0012520042936791694,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 377,
+   "function": "gameFrame",
+   "per_frame": 0.05,
+   "self_per_frame": 0.05,
+   "pct_busy": 0.0010433369113993078,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 274,
+   "function": "loseLife",
+   "per_frame": 0.05,
+   "self_per_frame": 0.05,
+   "pct_busy": 0.0010433369113993078,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 278,
+   "function": "loseLife",
+   "per_frame": 0.03833333333333333,
+   "self_per_frame": 0.03833333333333333,
+   "pct_busy": 0.0007998916320728027,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 306,
+   "function": "stepBall",
+   "per_frame": 0.03666666666666667,
+   "self_per_frame": 0.03666666666666667,
+   "pct_busy": 0.0007651137350261591,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 327,
+   "function": "stepBall",
+   "per_frame": 0.035,
+   "self_per_frame": 0.035,
+   "pct_busy": 0.0007303358379795155,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 242,
+   "function": "checkBricks",
+   "per_frame": 0.035,
+   "self_per_frame": 0.035,
+   "pct_busy": 0.0007303358379795155,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 324,
+   "function": "stepBall",
+   "per_frame": 0.03333333333333333,
+   "self_per_frame": 0.03333333333333333,
+   "pct_busy": 0.0006955579409328718,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 279,
+   "function": "loseLife",
+   "per_frame": 0.03333333333333333,
+   "self_per_frame": 0.03333333333333333,
+   "pct_busy": 0.0006955579409328718,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 300,
+   "function": "stepBall",
+   "per_frame": 0.03166666666666667,
+   "self_per_frame": 0.03166666666666667,
+   "pct_busy": 0.0006607800438862283,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 325,
+   "function": "stepBall",
+   "per_frame": 0.023333333333333334,
+   "self_per_frame": 0.023333333333333334,
+   "pct_busy": 0.0004868905586530103,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 305,
+   "function": "stepBall",
+   "per_frame": 0.023333333333333334,
+   "self_per_frame": 0.023333333333333334,
+   "pct_busy": 0.0004868905586530103,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 326,
+   "function": "stepBall",
+   "per_frame": 0.016666666666666666,
+   "self_per_frame": 0.016666666666666666,
+   "pct_busy": 0.0003477789704664359,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 322,
+   "function": "stepBall",
+   "per_frame": 0.01,
+   "self_per_frame": 0.01,
+   "pct_busy": 0.00020866738227986157,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 160,
+   "function": "showMessage",
+   "per_frame": 0.01,
+   "self_per_frame": 0.01,
+   "pct_busy": 0.00020866738227986157,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 304,
+   "function": "stepBall",
+   "per_frame": 0.008333333333333333,
+   "self_per_frame": 0.008333333333333333,
+   "pct_busy": 0.00017388948523321796,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 170,
+   "function": "showMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 19.7,
+   "measured_pct_frame": 0.02,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     19.375,
+     0.005,
+     3875.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 180,
+   "function": "drawHUD",
+   "rule": "div",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 1,
+   "est_cycles": 453,
+   "guarded": true,
+   "message": "'%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16",
+   "measured_per_frame": 3.8,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 181,
+   "function": "drawHUD",
+   "rule": "div",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 1,
+   "est_cycles": 453,
+   "guarded": true,
+   "message": "'/' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16",
+   "measured_per_frame": 0.4,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 183,
+   "function": "drawHUD",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 13.6,
+   "measured_pct_frame": 0.01,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     13.246666666666666,
+     0.005,
+     2649.3333333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 189,
+   "function": "drawHUD",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 5.8,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     5.655,
+     0.0025,
+     2262.0
+    ]
+   ]
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "breakout-haiku-5-5-r1",
+ "stage": "plain",
+ "builds": true,
+ "mean_load": 3.74,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 5750779,
+  "charged": 5750779
+ }
+}

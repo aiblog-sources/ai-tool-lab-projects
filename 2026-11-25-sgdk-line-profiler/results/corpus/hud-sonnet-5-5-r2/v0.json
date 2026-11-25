@@ -1,0 +1,536 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 4823.1225,
+ "unmapped_per_frame": 317.225,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 279,
+   "function": "main",
+   "per_frame": 3414.3175,
+   "self_per_frame": 16.033333333333335,
+   "pct_busy": 70.790602975562,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3398.284166666667,
+     1.0,
+     3398.284166666667
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 101,
+   "function": "drawNum",
+   "per_frame": 432.08666666666664,
+   "self_per_frame": 13.015,
+   "pct_busy": 8.958650058476985,
+   "calls": [
+    [
+     "VDP_drawText",
+     419.07166666666666,
+     0.19833333333333333,
+     2112.9663865546217
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.225,
+   "self_per_frame": 0.0,
+   "pct_busy": 6.577170702174784,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.65,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.09666666666666,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.128333333333334,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.35,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 100,
+   "function": "drawNum",
+   "per_frame": 166.19166666666666,
+   "self_per_frame": 29.866666666666667,
+   "pct_busy": 3.445727672615959,
+   "calls": [
+    [
+     "uint16ToStr",
+     136.325,
+     0.19833333333333333,
+     687.3529411764706
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 132,
+   "function": "drawHealthBar",
+   "per_frame": 125.24,
+   "self_per_frame": 125.24,
+   "pct_busy": 2.5966580778323585,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 253,
+   "function": "main",
+   "per_frame": 68.64666666666666,
+   "self_per_frame": 68.64666666666666,
+   "pct_busy": 1.423282669404865,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 275,
+   "function": "main",
+   "per_frame": 32.905,
+   "self_per_frame": 32.905,
+   "pct_busy": 0.6822343823943928,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 107,
+   "function": "drawTime",
+   "per_frame": 28.93,
+   "self_per_frame": 1.1533333333333333,
+   "pct_busy": 0.5998188932584648,
+   "calls": [
+    [
+     "VDP_drawText",
+     27.776666666666667,
+     0.016666666666666666,
+     1666.6
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 276,
+   "function": "main",
+   "per_frame": 27.741666666666667,
+   "self_per_frame": 27.741666666666667,
+   "pct_busy": 0.5751806359192964,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 274,
+   "function": "main",
+   "per_frame": 27.68166666666667,
+   "self_per_frame": 27.68166666666667,
+   "pct_busy": 0.5739366285361126,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 206,
+   "function": "main",
+   "per_frame": 27.385,
+   "self_per_frame": 27.385,
+   "pct_busy": 0.5677857031414815,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 277,
+   "function": "main",
+   "per_frame": 27.333333333333332,
+   "self_per_frame": 27.333333333333332,
+   "pct_busy": 0.5667144745615176,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 217,
+   "function": "main",
+   "per_frame": 20.42,
+   "self_per_frame": 20.42,
+   "pct_busy": 0.42337717941022646,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 209,
+   "function": "main",
+   "per_frame": 20.03,
+   "self_per_frame": 20.03,
+   "pct_busy": 0.41529113141953167,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 249,
+   "function": "main",
+   "per_frame": 18.316666666666666,
+   "self_per_frame": 18.316666666666666,
+   "pct_busy": 0.3797678094775048,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 129,
+   "function": "drawHealthBar",
+   "per_frame": 8.986666666666666,
+   "self_per_frame": 8.986666666666666,
+   "pct_busy": 0.18632466139242093,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 131,
+   "function": "drawHealthBar",
+   "per_frame": 8.866666666666667,
+   "self_per_frame": 8.866666666666667,
+   "pct_busy": 0.18383664662605328,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 211,
+   "function": "main",
+   "per_frame": 8.77,
+   "self_per_frame": 8.77,
+   "pct_busy": 0.18183241250870158,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 202,
+   "function": "main",
+   "per_frame": 8.0,
+   "self_per_frame": 8.0,
+   "pct_busy": 0.1658676510911759,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 212,
+   "function": "main",
+   "per_frame": 7.59,
+   "self_per_frame": 7.59,
+   "pct_busy": 0.15736693397275311,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 219,
+   "function": "main",
+   "per_frame": 4.461666666666667,
+   "self_per_frame": 4.461666666666667,
+   "pct_busy": 0.09250577124397455,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 204,
+   "function": "main",
+   "per_frame": 4.0,
+   "self_per_frame": 4.0,
+   "pct_busy": 0.08293382554558795,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 213,
+   "function": "main",
+   "per_frame": 3.4316666666666666,
+   "self_per_frame": 3.4316666666666666,
+   "pct_busy": 0.07115031116598566,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 113,
+   "function": "drawScore",
+   "per_frame": 3.3,
+   "self_per_frame": 3.3,
+   "pct_busy": 0.06842040607511006,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "main",
+   "per_frame": 2.425,
+   "self_per_frame": 2.425,
+   "pct_busy": 0.05027863173701269,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 222,
+   "function": "main",
+   "per_frame": 2.078333333333333,
+   "self_per_frame": 2.078333333333333,
+   "pct_busy": 0.04309103352306174,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 106,
+   "function": "drawTime",
+   "per_frame": 1.63,
+   "self_per_frame": 1.63,
+   "pct_busy": 0.03379553390982709,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 224,
+   "function": "main",
+   "per_frame": 0.8516666666666667,
+   "self_per_frame": 0.8516666666666667,
+   "pct_busy": 0.017657993689081435,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 108,
+   "function": "drawTime",
+   "per_frame": 0.8466666666666667,
+   "self_per_frame": 0.8466666666666667,
+   "pct_busy": 0.017554326407149448,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 221,
+   "function": "main",
+   "per_frame": 0.8333333333333334,
+   "self_per_frame": 0.8333333333333334,
+   "pct_busy": 0.01727788032199749,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 225,
+   "function": "main",
+   "per_frame": 0.8333333333333334,
+   "self_per_frame": 0.8333333333333334,
+   "pct_busy": 0.01727788032199749,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 256,
+   "function": "main",
+   "per_frame": 0.49333333333333335,
+   "self_per_frame": 0.49333333333333335,
+   "pct_busy": 0.010228505150622513,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 259,
+   "function": "main",
+   "per_frame": 0.33666666666666667,
+   "self_per_frame": 0.33666666666666667,
+   "pct_busy": 0.0069802636500869856,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 255,
+   "function": "main",
+   "per_frame": 0.3333333333333333,
+   "self_per_frame": 0.3333333333333333,
+   "pct_busy": 0.006911152128798995,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 258,
+   "function": "main",
+   "per_frame": 0.3333333333333333,
+   "self_per_frame": 0.3333333333333333,
+   "pct_busy": 0.006911152128798995,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 261,
+   "function": "main",
+   "per_frame": 0.27,
+   "self_per_frame": 0.27,
+   "pct_busy": 0.005598033224327187,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 100,
+   "function": "drawNum",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 2881,
+   "guarded": true,
+   "message": "intToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes",
+   "measured_per_frame": 166.2,
+   "measured_pct_frame": 0.13,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "uint16ToStr",
+     136.325,
+     0.19833333333333333,
+     687.3529411764706
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 101,
+   "function": "drawNum",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 432.1,
+   "measured_pct_frame": 0.34,
+   "verdict": "small",
+   "calls": [
+    [
+     "VDP_drawText",
+     419.07166666666666,
+     0.19833333333333333,
+     2112.9663865546217
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 107,
+   "function": "drawTime",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 28.9,
+   "measured_pct_frame": 0.02,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     27.776666666666667,
+     0.016666666666666666,
+     1666.6
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 121,
+   "function": "drawLives",
+   "rule": "tile-loop",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 5,
+   "est_cycles": 1620,
+   "guarded": true,
+   "message": "VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 5 passes x 324 = 1,620 cycles (1% of a frame)",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 132,
+   "function": "drawHealthBar",
+   "rule": "tile-loop",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 10,
+   "est_cycles": 3240,
+   "guarded": true,
+   "message": "VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 10 passes x 324 = 3,240 cycles (3% of a frame)",
+   "measured_per_frame": 125.2,
+   "measured_pct_frame": 0.1,
+   "verdict": "negligible",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 138,
+   "function": "showMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 139,
+   "function": "showMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "hud-sonnet-5-5-r2",
+ "stage": "v0",
+ "builds": true,
+ "mean_load": 3.77,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 5787747,
+  "charged": 5787747
+ }
+}

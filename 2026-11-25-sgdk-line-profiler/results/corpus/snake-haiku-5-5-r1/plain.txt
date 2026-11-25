@@ -1,0 +1,43 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 3,935 cycles per frame on average (3.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    2,165 /frame  55.0% of busy  src/main.c:273  SYS_doVBlankProcess();
+                     2,149 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.64 calls/frame, 3,384 cycles each
+    1,245 /frame  31.6% of busy  src/main.c:255  SYS_doVBlankProcess();
+                     1,239 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.36 calls/frame, 3,396 cycles each
+      317 /frame   8.1% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+       24 /frame   0.6% of busy  src/main.c:246  if (++moveTimer >= frameInterval)
+       22 /frame   0.6% of busy  src/main.c:55  VDP_setTileMapXY(BG_A, TILE_ATTR_FULL(PAL1, FALSE, FALSE, FA
+       17 /frame   0.4% of busy  src/main.c:138  VDP_clearPlane(BG_A, TRUE);
+       13 /frame   0.3% of busy  src/main.c:105  if (want != (dir ^ 1))
+       12 /frame   0.3% of busy  src/main.c:60  VDP_setTileMapXY(BG_A, 0, x, y);
+       11 /frame   0.3% of busy  src/main.c:140  memset(occ, 0, sizeof(occ));
+                        11 in memset.constprop.0: 0.00 calls/frame, 6,401 cycles each
+       10 /frame   0.3% of busy  src/main.c:269  if ((joy & BUTTON_START) && !(prev & BUTTON_START))
+        9 /frame   0.2% of busy  src/main.c:100  else if (joy & BUTTON_LEFT)  want = DIR_LEFT;
+        8 /frame   0.2% of busy  src/main.c:99  else if (joy & BUTTON_DOWN)  want = DIR_DOWN;
+        8 /frame   0.2% of busy  src/main.c:98  if (joy & BUTTON_UP)         want = DIR_UP;
+        6 /frame   0.2% of busy  src/main.c:74  VDP_drawText(buf, x, 0);
+                         6 in VDP_drawTextEx.constprop.0: 0.00 calls/frame, 1,824 cycles each
+                 lint [text] frame: VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+        6 /frame   0.1% of busy  src/main.c:101  else if (joy & BUTTON_RIGHT) want = DIR_RIGHT;
+
+== Lint findings, by measured cost ==
+negligible         6 /frame (0.01% of a frame)  src/main.c:74 [text] frame
+negligible         4 /frame (0.00% of a frame)  src/main.c:326 [text] frame
+negligible         4 /frame (0.00% of a frame)  src/main.c:324 [text] guarded
+negligible         4 /frame (0.00% of a frame)  src/main.c:81 [text] frame
+negligible         3 /frame (0.00% of a frame)  src/main.c:80 [text] frame
+negligible         0 /frame (0.00% of a frame)  src/main.c:127 [div] hot
+negligible         0 /frame (0.00% of a frame)  src/main.c:128 [div] hot
+negligible         0 /frame (0.00% of a frame)  src/main.c:322 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 317 cycles per frame

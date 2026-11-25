@@ -1,0 +1,290 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 18312.3825,
+ "unmapped_per_frame": 318.2816666666667,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 279,
+   "function": "main",
+   "per_frame": 4801.5925,
+   "self_per_frame": 28.001666666666665,
+   "pct_busy": 26.22046858184619,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     4773.590833333334,
+     1.0,
+     4773.590833333334
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "updateStars",
+   "per_frame": 4171.755,
+   "self_per_frame": 4171.755,
+   "pct_busy": 22.781060847762436,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 239,
+   "function": "updateStars",
+   "per_frame": 2867.8966666666665,
+   "self_per_frame": 2867.8966666666665,
+   "pct_busy": 15.660969656278569,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 227,
+   "function": "updateStars",
+   "per_frame": 2092.5133333333333,
+   "self_per_frame": 2092.5133333333333,
+   "pct_busy": 11.42676728892777,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 232,
+   "function": "updateStars",
+   "per_frame": 1689.4533333333334,
+   "self_per_frame": 1689.4533333333334,
+   "pct_busy": 9.22574292740627,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 238,
+   "function": "updateStars",
+   "per_frame": 1024.0133333333333,
+   "self_per_frame": 1024.0133333333333,
+   "pct_busy": 5.591917563612126,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 277,
+   "function": "main",
+   "per_frame": 953.175,
+   "self_per_frame": 158.155,
+   "pct_busy": 5.205084592351651,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     795.02,
+     1.0,
+     795.02
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 318.2816666666667,
+   "self_per_frame": 0.0,
+   "pct_busy": 1.738068034930281,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.39666666666666,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.82666666666667,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.455,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.60333333333333,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 153,
+   "function": "randRange",
+   "per_frame": 71.37333333333333,
+   "self_per_frame": 71.37333333333333,
+   "pct_busy": 0.38975449171255205,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 217,
+   "function": "updateShip",
+   "per_frame": 51.983333333333334,
+   "self_per_frame": 51.983333333333334,
+   "pct_busy": 0.28386985327186853,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 205,
+   "function": "updateShip",
+   "per_frame": 42.49666666666667,
+   "self_per_frame": 42.49666666666667,
+   "pct_busy": 0.23206519777897097,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 207,
+   "function": "updateShip",
+   "per_frame": 37.515,
+   "self_per_frame": 37.515,
+   "pct_busy": 0.20486138272832605,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 206,
+   "function": "updateShip",
+   "per_frame": 26.78,
+   "self_per_frame": 26.78,
+   "pct_busy": 0.146239846180583,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 216,
+   "function": "updateShip",
+   "per_frame": 25.655,
+   "self_per_frame": 25.655,
+   "pct_busy": 0.1400964620523845,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 222,
+   "function": "updateStars",
+   "per_frame": 23.301666666666666,
+   "self_per_frame": 23.301666666666666,
+   "pct_busy": 0.1272454125871752,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 208,
+   "function": "updateShip",
+   "per_frame": 21.516666666666666,
+   "self_per_frame": 21.516666666666666,
+   "pct_busy": 0.11749790977043356,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 211,
+   "function": "updateShip",
+   "per_frame": 21.333333333333332,
+   "self_per_frame": 21.333333333333332,
+   "pct_busy": 0.1164967656902827,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 210,
+   "function": "updateShip",
+   "per_frame": 20.69,
+   "self_per_frame": 20.69,
+   "pct_busy": 0.11298366009993512,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 213,
+   "function": "updateShip",
+   "per_frame": 17.28,
+   "self_per_frame": 17.28,
+   "pct_busy": 0.09436238020912899,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 212,
+   "function": "updateShip",
+   "per_frame": 17.04,
+   "self_per_frame": 17.04,
+   "pct_busy": 0.0930517915951133,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 203,
+   "function": "updateShip",
+   "per_frame": 8.016666666666667,
+   "self_per_frame": 8.016666666666667,
+   "pct_busy": 0.04377730023205154,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 234,
+   "function": "updateStars",
+   "per_frame": 4.406666666666666,
+   "self_per_frame": 4.406666666666666,
+   "pct_busy": 0.02406386316289902,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 235,
+   "function": "updateStars",
+   "per_frame": 4.3133333333333335,
+   "self_per_frame": 4.3133333333333335,
+   "pct_busy": 0.023554189813004032,
+   "calls": []
+  }
+ ],
+ "findings": [],
+ "unflagged_hot": [
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "updateStars",
+   "per_frame": 4171.755,
+   "self_per_frame": 4171.755,
+   "pct_busy": 22.781060847762436,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 239,
+   "function": "updateStars",
+   "per_frame": 2867.8966666666665,
+   "self_per_frame": 2867.8966666666665,
+   "pct_busy": 15.660969656278569,
+   "calls": []
+  }
+ ],
+ "tag": "starfield-opus-5-5-r1",
+ "stage": "lint2",
+ "builds": true,
+ "mean_load": 14.31,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 21974517,
+  "charged": 21974859
+ }
+}

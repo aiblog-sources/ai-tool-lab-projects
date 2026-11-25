@@ -1,0 +1,719 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 4172.3983333333335,
+ "unmapped_per_frame": 317.575,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 312,
+   "function": "main",
+   "per_frame": 3412.2533333333336,
+   "self_per_frame": 18.016666666666666,
+   "pct_busy": 81.78158125682312,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3394.2366666666667,
+     1.0,
+     3394.2366666666667
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.575,
+   "self_per_frame": 0.0,
+   "pct_busy": 7.611329854651941,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.745,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     122.97833333333334,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.596666666666668,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.255,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 262,
+   "function": "main",
+   "per_frame": 43.98,
+   "self_per_frame": 43.98,
+   "pct_busy": 1.054070021278729,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 123,
+   "function": "drawScore",
+   "per_frame": 41.25,
+   "self_per_frame": 41.25,
+   "pct_busy": 0.9886400267791626,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 154,
+   "function": "drawHealth",
+   "per_frame": 36.56166666666667,
+   "self_per_frame": 36.56166666666667,
+   "pct_busy": 0.8762745966648279,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 298,
+   "function": "main",
+   "per_frame": 36.093333333333334,
+   "self_per_frame": 36.093333333333334,
+   "pct_busy": 0.8650500371688705,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 125,
+   "function": "drawScore",
+   "per_frame": 34.02,
+   "self_per_frame": 34.02,
+   "pct_busy": 0.8153583929945967,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 110,
+   "function": "drawTime",
+   "per_frame": 32.195,
+   "self_per_frame": 1.0066666666666666,
+   "pct_busy": 0.7716185615067913,
+   "calls": [
+    [
+     "VDP_drawText",
+     31.188333333333333,
+     0.016666666666666666,
+     1871.3
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 299,
+   "function": "main",
+   "per_frame": 27.185,
+   "self_per_frame": 27.185,
+   "pct_busy": 0.6515437364361584,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 277,
+   "function": "main",
+   "per_frame": 22.535,
+   "self_per_frame": 22.535,
+   "pct_busy": 0.5400970425083256,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 270,
+   "function": "main",
+   "per_frame": 21.67,
+   "self_per_frame": 21.67,
+   "pct_busy": 0.5193655607346535,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 148,
+   "function": "drawHealth",
+   "per_frame": 21.041666666666668,
+   "self_per_frame": 21.041666666666668,
+   "pct_busy": 0.5043062762863405,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 153,
+   "function": "drawHealth",
+   "per_frame": 16.678333333333335,
+   "self_per_frame": 16.678333333333335,
+   "pct_busy": 0.399730131231478,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 208,
+   "function": "addScoreStep",
+   "per_frame": 11.888333333333334,
+   "self_per_frame": 11.888333333333334,
+   "pct_busy": 0.284928052970334,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 155,
+   "function": "drawHealth",
+   "per_frame": 8.651666666666667,
+   "self_per_frame": 8.651666666666667,
+   "pct_busy": 0.20735476278830842,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 259,
+   "function": "main",
+   "per_frame": 8.01,
+   "self_per_frame": 8.01,
+   "pct_busy": 0.1919759179272992,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 258,
+   "function": "main",
+   "per_frame": 8.0,
+   "self_per_frame": 8.0,
+   "pct_busy": 0.191736247617777,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 196,
+   "function": "addScoreStep",
+   "per_frame": 7.59,
+   "self_per_frame": 7.59,
+   "pct_busy": 0.1819097649273659,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 122,
+   "function": "drawScore",
+   "per_frame": 7.2683333333333335,
+   "self_per_frame": 7.2683333333333335,
+   "pct_busy": 0.1742003699710678,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 117,
+   "function": "drawScore",
+   "per_frame": 6.891666666666667,
+   "self_per_frame": 6.891666666666667,
+   "pct_busy": 0.16517278831239746,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 126,
+   "function": "drawScore",
+   "per_frame": 6.891666666666667,
+   "self_per_frame": 6.891666666666667,
+   "pct_busy": 0.16517278831239746,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 273,
+   "function": "main",
+   "per_frame": 4.32,
+   "self_per_frame": 4.32,
+   "pct_busy": 0.10353757371359958,
+   "calls": [
+    [
+     "drawScore",
+     0.0,
+     0.165,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 197,
+   "function": "addScoreStep",
+   "per_frame": 4.29,
+   "self_per_frame": 4.29,
+   "pct_busy": 0.1028185627850329,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 260,
+   "function": "main",
+   "per_frame": 4.0,
+   "self_per_frame": 4.0,
+   "pct_busy": 0.0958681238088885,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 116,
+   "function": "drawScore",
+   "per_frame": 3.96,
+   "self_per_frame": 3.96,
+   "pct_busy": 0.09490944257079961,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 147,
+   "function": "drawHealth",
+   "per_frame": 3.705,
+   "self_per_frame": 3.705,
+   "pct_busy": 0.08879784967798297,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 103,
+   "function": "drawTime",
+   "per_frame": 3.565,
+   "self_per_frame": 3.565,
+   "pct_busy": 0.08544246534467187,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 157,
+   "function": "drawHealth",
+   "per_frame": 3.415,
+   "self_per_frame": 3.415,
+   "pct_busy": 0.08184741070183855,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 106,
+   "function": "drawTime",
+   "per_frame": 3.0016666666666665,
+   "self_per_frame": 3.0016666666666665,
+   "pct_busy": 0.0719410379082534,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 140,
+   "function": "drawHealth",
+   "per_frame": 2.045,
+   "self_per_frame": 2.045,
+   "pct_busy": 0.04901257829729424,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 279,
+   "function": "main",
+   "per_frame": 1.6833333333333333,
+   "self_per_frame": 1.6833333333333333,
+   "pct_busy": 0.04034450210290724,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 100,
+   "function": "drawTime",
+   "per_frame": 1.3583333333333334,
+   "self_per_frame": 1.3583333333333334,
+   "pct_busy": 0.03255521704343505,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 144,
+   "function": "drawHealth",
+   "per_frame": 1.3466666666666667,
+   "self_per_frame": 1.3466666666666667,
+   "pct_busy": 0.032275601682325794,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 294,
+   "function": "main",
+   "per_frame": 1.3466666666666667,
+   "self_per_frame": 1.3466666666666667,
+   "pct_busy": 0.032275601682325794,
+   "calls": [
+    [
+     "drawHealth",
+     0.0,
+     0.08416666666666667,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 134,
+   "function": "drawLives",
+   "per_frame": 1.125,
+   "self_per_frame": 1.125,
+   "pct_busy": 0.026962909821249888,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 280,
+   "function": "main",
+   "per_frame": 0.9866666666666667,
+   "self_per_frame": 0.9866666666666667,
+   "pct_busy": 0.023647470539525827,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 101,
+   "function": "drawTime",
+   "per_frame": 0.975,
+   "self_per_frame": 0.975,
+   "pct_busy": 0.02336785517841657,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 302,
+   "function": "main",
+   "per_frame": 0.7416666666666667,
+   "self_per_frame": 0.7416666666666667,
+   "pct_busy": 0.01777554795623141,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 304,
+   "function": "main",
+   "per_frame": 0.3933333333333333,
+   "self_per_frame": 0.3933333333333333,
+   "pct_busy": 0.009427032174540701,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 301,
+   "function": "main",
+   "per_frame": 0.3333333333333333,
+   "self_per_frame": 0.3333333333333333,
+   "pct_busy": 0.007989010317407374,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 107,
+   "function": "drawTime",
+   "per_frame": 0.3333333333333333,
+   "self_per_frame": 0.3333333333333333,
+   "pct_busy": 0.007989010317407374,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 209,
+   "function": "addScoreStep",
+   "per_frame": 0.3333333333333333,
+   "self_per_frame": 0.3333333333333333,
+   "pct_busy": 0.007989010317407374,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 108,
+   "function": "drawTime",
+   "per_frame": 0.2916666666666667,
+   "self_per_frame": 0.2916666666666667,
+   "pct_busy": 0.006990384027731452,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 105,
+   "function": "drawTime",
+   "per_frame": 0.26666666666666666,
+   "self_per_frame": 0.26666666666666666,
+   "pct_busy": 0.006391208253925899,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 133,
+   "function": "drawLives",
+   "per_frame": 0.145,
+   "self_per_frame": 0.145,
+   "pct_busy": 0.003475219488072208,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 104,
+   "function": "drawTime",
+   "per_frame": 0.13333333333333333,
+   "self_per_frame": 0.13333333333333333,
+   "pct_busy": 0.0031956041269629496,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 282,
+   "function": "main",
+   "per_frame": 0.04,
+   "self_per_frame": 0.04,
+   "pct_busy": 0.0009586812380888849,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 290,
+   "function": "main",
+   "per_frame": 0.023333333333333334,
+   "self_per_frame": 0.023333333333333334,
+   "pct_busy": 0.0005592307222185162,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 283,
+   "function": "main",
+   "per_frame": 0.01,
+   "self_per_frame": 0.01,
+   "pct_busy": 0.00023967030952222124,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 110,
+   "function": "drawTime",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 32.2,
+   "measured_pct_frame": 0.03,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     31.188333333333333,
+     0.016666666666666666,
+     1871.3
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 134,
+   "function": "drawLives",
+   "rule": "tile-loop",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 5,
+   "est_cycles": 1620,
+   "guarded": true,
+   "message": "VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470). Here: 5 passes x 324 = 1,620 cycles (1% of a frame)",
+   "measured_per_frame": 1.1,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 162,
+   "function": "drawMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 164,
+   "function": "drawMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 166,
+   "function": "drawMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 169,
+   "function": "drawMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "drawMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 176,
+   "function": "drawAll",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 177,
+   "function": "drawAll",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 178,
+   "function": "drawAll",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 179,
+   "function": "drawAll",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 180,
+   "function": "drawAll",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 0.0,
+   "measured_pct_frame": 0.0,
+   "verdict": "not run",
+   "calls": []
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "hud-sonnet-5-5-r1",
+ "stage": "hot",
+ "builds": true,
+ "mean_load": 3.26,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 5006878,
+  "charged": 5006878
+ }
+}

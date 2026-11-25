@@ -1,0 +1,46 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,511 cycles per frame on average (3.5%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,413 /frame  75.7% of busy  src/main.c:308  SYS_doVBlankProcess();
+                     3,395 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,395 cycles each
+      317 /frame   7.0% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        30 in no_xgm_task
+      152 /frame   3.4% of busy  src/main.c:135  VDP_setTileMapDataRect(BG_A, buf, SCORE_X + 7, SCORE_Y, 6, 1
+                        83 in DMA_doCPUCopyDirect: 0.17 calls/frame, 504 cycles each
+       81 /frame   1.8% of busy  src/main.c:168  VDP_setTileMapDataRect(BG_A, buf, HEALTH_X + 7, HEALTH_Y,
+                        53 in DMA_doCPUCopyDirect: 0.08 calls/frame, 634 cycles each
+       81 /frame   1.8% of busy  src/main.c:122  u32 q = score / 1000;           /* 0..999 */
+                        69 in __udivsi3: 0.17 calls/frame, 416 cycles each
+                 lint [div] guarded: '/' on 32-bit / constant: about 623 cycles (measured: s32 / 10 is 623, (u16 - 240) / 30 is 640; u16 / 10 is 77
+       42 /frame   0.9% of busy  src/main.c:252  if (gameOver || timeUp)
+       41 /frame   0.9% of busy  src/main.c:166  buf[i] = TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, TILE_BAR_B
+       36 /frame   0.8% of busy  src/main.c:291  frameCount++;
+       33 /frame   0.7% of busy  src/main.c:128  d = hi / 100;  buf[0] = DIGIT_ATTR(d);  hi -= d * 100;
+       27 /frame   0.6% of busy  src/main.c:292  if (frameCount >= framesPerSecond)
+       27 /frame   0.6% of busy  src/main.c:131  d = lo / 100;  buf[3] = DIGIT_ATTR(d);  lo -= d * 100;
+       26 /frame   0.6% of busy  src/main.c:129  d = hi / 10;   buf[1] = DIGIT_ATTR(d);  hi -= d * 10;
+       25 /frame   0.6% of busy  src/main.c:132  d = lo / 10;   buf[4] = DIGIT_ATTR(d);  lo -= d * 10;
+       23 /frame   0.5% of busy  src/main.c:270  if ((pad & BUTTON_B) && health > 0)
+       20 /frame   0.4% of busy  src/main.c:260  if (pad & BUTTON_A)
+
+== Lint findings, by measured cost ==
+negligible        81 /frame (0.06% of a frame)  src/main.c:122 [div] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:175 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:177 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:179 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:182 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:184 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:190 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:191 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:192 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:193 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:194 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 317 cycles per frame

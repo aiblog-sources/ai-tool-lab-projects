@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 5,216 cycles per frame on average (4.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,514 /frame  67.4% of busy  src/main.c:218  SYS_doVBlankProcess();
+                     3,473 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,473 cycles each
+      459 /frame   8.8% of busy  src/main.c:215  VDP_updateSprites(1, DMA_QUEUE);
+                       379 in DMA_queueDmaFast: 0.48 calls/frame, 794 cycles each
+      318 /frame   6.1% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      188 /frame   3.6% of busy  src/main.c:203  VDP_setHorizontalScroll(BG_B, -(s16)(camX & 0x1FF));
+      158 /frame   3.0% of busy  src/main.c:147  for (r = 0; r < surfRow; r++) *data = sky;
+      139 /frame   2.7% of busy  src/main.c:149  for (r = surfRow + 1; r < MAP_ROWS; r++) *data = dirt;
+       38 /frame   0.7% of busy  src/main.c:145  *(vu32 *)VDP_CTRL_PORT = VDP_WRITE_VRAM_ADDR((u32)VDP_getPla
+       35 /frame   0.7% of busy  src/main.c:200  if (py > SCREEN_H - 16)   py = SCREEN_H - 16;
+       35 /frame   0.7% of busy  src/main.c:198  if (px > SCREEN_W - 16)   px = SCREEN_W - 16;
+       31 /frame   0.6% of busy  src/main.c:206  const u32 limit = (camX >> 3) + AHEAD_COLS;
+       29 /frame   0.6% of busy  src/main.c:207  while (genCol <= limit)
+       25 /frame   0.5% of busy  src/main.c:212  if (px != oldX || py != oldY)
+       25 /frame   0.5% of busy  src/main.c:192  if (pad & BUTTON_LEFT)  px -= PLAYER_SPEED;
+       24 /frame   0.5% of busy  src/main.c:194  if (pad & BUTTON_UP)    py -= PLAYER_SPEED;
+       23 /frame   0.4% of busy  src/main.c:214  VDP_setSpritePosition(0, px + 0x80, py + 0x80);
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

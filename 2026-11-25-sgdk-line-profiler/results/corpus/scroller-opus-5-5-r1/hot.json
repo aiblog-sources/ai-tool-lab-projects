@@ -1,0 +1,485 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 5463.956666666667,
+ "unmapped_per_frame": 317.3516666666667,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 289,
+   "function": "main",
+   "per_frame": 3495.483333333333,
+   "self_per_frame": 26.303333333333335,
+   "pct_busy": 63.97348197612597,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3469.18,
+     1.0,
+     3469.18
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 216,
+   "function": "updatePlayer",
+   "per_frame": 696.6633333333333,
+   "self_per_frame": 68.01666666666667,
+   "pct_busy": 12.750162123052464,
+   "calls": [
+    [
+     "DMA_transfer.isra.0",
+     628.6466666666666,
+     0.48583333333333334,
+     1293.9554030874785
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.3516666666667,
+   "self_per_frame": 0.0,
+   "pct_busy": 5.808092670329865,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.71166666666667,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     122.905,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.446666666666665,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.288333333333334,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 281,
+   "function": "main",
+   "per_frame": 164.36333333333334,
+   "self_per_frame": 164.36333333333334,
+   "pct_busy": 3.0081375706371514,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 186,
+   "function": "generateColumns",
+   "per_frame": 76.31166666666667,
+   "self_per_frame": 76.31166666666667,
+   "pct_busy": 1.396637479433402,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 166,
+   "function": "drawColumn",
+   "per_frame": 56.986666666666665,
+   "self_per_frame": 56.986666666666665,
+   "pct_busy": 1.0429560507739508,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 178,
+   "function": "generateColumns",
+   "per_frame": 56.0,
+   "self_per_frame": 56.0,
+   "pct_busy": 1.0248983184956932,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 179,
+   "function": "generateColumns",
+   "per_frame": 51.83833333333333,
+   "self_per_frame": 51.83833333333333,
+   "pct_busy": 0.9487325119098675,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 280,
+   "function": "main",
+   "per_frame": 49.475,
+   "self_per_frame": 49.475,
+   "pct_busy": 0.9054793626352576,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 208,
+   "function": "updatePlayer",
+   "per_frame": 41.96333333333333,
+   "self_per_frame": 41.96333333333333,
+   "pct_busy": 0.7680026744965645,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 196,
+   "function": "updatePlayer",
+   "per_frame": 40.666666666666664,
+   "self_per_frame": 40.666666666666664,
+   "pct_busy": 0.7442713979552058,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 181,
+   "function": "generateColumns",
+   "per_frame": 38.66833333333334,
+   "self_per_frame": 38.66833333333334,
+   "pct_busy": 0.7076983895065053,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 198,
+   "function": "updatePlayer",
+   "per_frame": 38.57,
+   "self_per_frame": 38.57,
+   "pct_busy": 0.7058987168639087,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 165,
+   "function": "drawColumn",
+   "per_frame": 34.36833333333333,
+   "self_per_frame": 34.36833333333333,
+   "pct_busy": 0.6290008400505861,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 214,
+   "function": "updatePlayer",
+   "per_frame": 33.218333333333334,
+   "self_per_frame": 33.218333333333334,
+   "pct_busy": 0.6079538210100495,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "drawColumn",
+   "per_frame": 30.725,
+   "self_per_frame": 30.725,
+   "pct_busy": 0.5623214434960746,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 197,
+   "function": "updatePlayer",
+   "per_frame": 26.886666666666667,
+   "self_per_frame": 26.886666666666667,
+   "pct_busy": 0.4920732045825156,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 170,
+   "function": "drawColumn",
+   "per_frame": 22.401666666666667,
+   "self_per_frame": 22.401666666666667,
+   "pct_busy": 0.40998983032442304,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 199,
+   "function": "updatePlayer",
+   "per_frame": 22.201666666666668,
+   "self_per_frame": 22.201666666666668,
+   "pct_busy": 0.4063294791869384,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 201,
+   "function": "updatePlayer",
+   "per_frame": 20.008333333333333,
+   "self_per_frame": 20.008333333333333,
+   "pct_busy": 0.3661876283791904,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 202,
+   "function": "updatePlayer",
+   "per_frame": 18.941666666666666,
+   "self_per_frame": 18.941666666666666,
+   "pct_busy": 0.3466657556459391,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 204,
+   "function": "updatePlayer",
+   "per_frame": 17.31,
+   "self_per_frame": 17.31,
+   "pct_busy": 0.3168033909492938,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 284,
+   "function": "main",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.2928280909987695,
+   "calls": [
+    [
+     "generateColumns",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 203,
+   "function": "updatePlayer",
+   "per_frame": 13.586666666666666,
+   "self_per_frame": 13.586666666666666,
+   "pct_busy": 0.24865985393978846,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 162,
+   "function": "drawColumn",
+   "per_frame": 12.916666666666666,
+   "self_per_frame": 12.916666666666666,
+   "pct_busy": 0.23639767762921496,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 210,
+   "function": "updatePlayer",
+   "per_frame": 8.255,
+   "self_per_frame": 8.255,
+   "pct_busy": 0.15108099319967763,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 194,
+   "function": "updatePlayer",
+   "per_frame": 8.0,
+   "self_per_frame": 8.0,
+   "pct_busy": 0.14641404549938475,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 211,
+   "function": "updatePlayer",
+   "per_frame": 7.845,
+   "self_per_frame": 7.845,
+   "pct_busy": 0.14357727336783419,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 126,
+   "function": "nextHillHeight",
+   "per_frame": 6.108333333333333,
+   "self_per_frame": 6.108333333333333,
+   "pct_busy": 0.1117932243240094,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 184,
+   "function": "generateColumns",
+   "per_frame": 6.07,
+   "self_per_frame": 6.07,
+   "pct_busy": 0.11109165702265818,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 131,
+   "function": "nextHillHeight",
+   "per_frame": 5.633333333333334,
+   "self_per_frame": 5.633333333333334,
+   "pct_busy": 0.10309989037248343,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 173,
+   "function": "drawColumn",
+   "per_frame": 5.093333333333334,
+   "self_per_frame": 5.093333333333334,
+   "pct_busy": 0.09321694230127496,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 156,
+   "function": "drawColumn",
+   "per_frame": 3.7066666666666666,
+   "self_per_frame": 3.7066666666666666,
+   "pct_busy": 0.06783850774804827,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 124,
+   "function": "nextHillHeight",
+   "per_frame": 3.6333333333333333,
+   "self_per_frame": 3.6333333333333333,
+   "pct_busy": 0.06649637899763725,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "drawColumn",
+   "per_frame": 3.513333333333333,
+   "self_per_frame": 3.513333333333333,
+   "pct_busy": 0.06430016831514647,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 127,
+   "function": "nextHillHeight",
+   "per_frame": 2.7716666666666665,
+   "self_per_frame": 2.7716666666666665,
+   "pct_busy": 0.050726366180307673,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 129,
+   "function": "nextHillHeight",
+   "per_frame": 2.5,
+   "self_per_frame": 2.5,
+   "pct_busy": 0.045754389218557734,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 138,
+   "function": "nextHillHeight",
+   "per_frame": 2.4316666666666666,
+   "self_per_frame": 2.4316666666666666,
+   "pct_busy": 0.04450376924658382,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 133,
+   "function": "nextHillHeight",
+   "per_frame": 2.2783333333333333,
+   "self_per_frame": 2.2783333333333333,
+   "pct_busy": 0.04169750004117895,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 168,
+   "function": "drawColumn",
+   "per_frame": 1.535,
+   "self_per_frame": 1.535,
+   "pct_busy": 0.02809319498019445,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 154,
+   "function": "drawColumn",
+   "per_frame": 0.9666666666666667,
+   "self_per_frame": 0.9666666666666667,
+   "pct_busy": 0.017691697164508993,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 152,
+   "function": "drawColumn",
+   "per_frame": 0.5,
+   "self_per_frame": 0.5,
+   "pct_busy": 0.009150877843711547,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 136,
+   "function": "nextHillHeight",
+   "per_frame": 0.1,
+   "self_per_frame": 0.1,
+   "pct_busy": 0.0018301755687423094,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 135,
+   "function": "nextHillHeight",
+   "per_frame": 0.06666666666666667,
+   "self_per_frame": 0.06666666666666667,
+   "pct_busy": 0.0012201170458282062,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 141,
+   "function": "nextHillHeight",
+   "per_frame": 0.025,
+   "self_per_frame": 0.025,
+   "pct_busy": 0.00045754389218557735,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 140,
+   "function": "nextHillHeight",
+   "per_frame": 0.016666666666666666,
+   "self_per_frame": 0.016666666666666666,
+   "pct_busy": 0.00030502926145705155,
+   "calls": []
+  }
+ ],
+ "findings": [],
+ "unflagged_hot": [],
+ "tag": "scroller-opus-5-5-r1",
+ "stage": "hot",
+ "builds": true,
+ "mean_load": 4.27,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 6556665,
+  "charged": 6556748
+ }
+}

@@ -1,0 +1,48 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,029 cycles per frame on average (3.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,436 /frame  85.3% of busy  src/main.c:571  SYS_doVBlankProcess();
+                     3,418 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,418 cycles each
+      318 /frame   7.9% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+       76 /frame   1.9% of busy  src/main.c:516  switch (gameState)
+       37 /frame   0.9% of busy  src/main.c:514  frameCounter++;
+       28 /frame   0.7% of busy  src/main.c:242  VDP_setTileMapXY(BG_A, attr, x, y);
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+       24 /frame   0.6% of busy  src/main.c:538  if (++stepTimer >= stepDelay)
+       17 /frame   0.4% of busy  src/main.c:310  VDP_clearPlane(BG_A, TRUE);
+       16 /frame   0.4% of busy  src/main.c:561  if (startPressed)
+       11 /frame   0.3% of busy  src/main.c:530  if (startPressed)
+        9 /frame   0.2% of busy  src/main.c:187  VDP_drawText(str, x, y);
+                         8 in VDP_drawText: 0.00 calls/frame, 2,531 cycles each
+                 lint [text] guarded: VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+        8 /frame   0.2% of busy  src/main.c:230  VDP_drawText(buf, 1, 0);
+                         8 in VDP_drawText: 0.00 calls/frame, 4,652 cycles each
+                 lint [text] guarded: VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+        7 /frame   0.2% of busy  src/main.c:311  memset(occ, 0, sizeof(occ));
+                         7 in memset.constprop.0: 0.00 calls/frame, 4,141 cycles each
+        4 /frame   0.1% of busy  src/main.c:391  OCC(tx, ty) = 0;
+        3 /frame   0.1% of busy  src/main.c:180  VDP_fillTileMapRect(BG_B, ATTR_GRID, 0, y, GRID_W, 1);
+                         1 in VDP_fillTileMapRect.constprop.1: 0.00 calls/frame, 709 cycles each
+                         1 in VDP_fillTileMapRect.constprop.0: 0.00 calls/frame, 706 cycles each
+        3 /frame   0.1% of busy  src/main.c:367  nx = headX + DX[dir];
+
+== Lint findings, by measured cost ==
+negligible        28 /frame (0.02% of a frame)  src/main.c:242 [tile-loop] guarded
+negligible         9 /frame (0.01% of a frame)  src/main.c:187 [text] guarded
+negligible         8 /frame (0.01% of a frame)  src/main.c:230 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:235 [div] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:253 [div] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:254 [div] heavy
+   not run         0 /frame (0.00% of a frame)  src/main.c:267 [div] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:269 [div] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:270 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

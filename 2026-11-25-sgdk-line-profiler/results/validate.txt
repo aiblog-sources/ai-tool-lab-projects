@@ -1,0 +1,37 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 540 frames counted; busy 80,563 cycles per frame on average (62.9%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+   36,900 /frame  45.8% of busy  src/main.c:33  acc += num[i & 7] / den[i & 7];      /* LINE_DIV */
+                    28,787 in __divsi3: 50.00 calls/frame, 576 cycles each
+                 lint [div] hot: '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23. Here: 100 passes
+   23,059 /frame  28.6% of busy  src/main.c:22  vacc += num[i & 7] / den[(i + 1) & 7];   /* LINE_VDIV */
+                    17,195 in __divsi3: 30.00 calls/frame, 573 cycles each
+                 lint [div] hot: '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23. Here: 30 passes 
+   10,224 /frame  12.7% of busy  src/main.c:35  acc2 += num[i & 7] * den[i & 7];     /* LINE_MUL */
+                     6,172 in __mulsi3: 25.00 calls/frame, 247 cycles each
+                 lint [mul32] hot: 32 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); a muls.w on two s16 is
+    3,664 /frame   4.5% of busy  src/main.c:15  sink += i;
+    2,252 /frame   2.8% of busy  src/main.c:14  for (i = 0; i < n; i++)     /* LINE_SPIN */
+    1,749 /frame   2.2% of busy  src/main.c:37  SYS_doVBlankProcess();
+                     1,740 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.50 calls/frame, 3,481 cycles each
+    1,131 /frame   1.4% of busy  src/main.c:32  for (i = 0; i < 100; i++)
+      593 /frame   0.7% of busy  src/main.c:21  for (i = 0; i < 30; i++)
+      555 /frame   0.7% of busy  src/main.c:34  for (i = 0; i < 50; i++)
+      301 /frame   0.4% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       123 in no_user_task
+                        32 in no_xgm_task
+       68 /frame   0.1% of busy  src/main.c:23  }
+       48 /frame   0.1% of busy  src/main.c:19  {
+
+== Lint findings, by measured cost ==
+   matters    36,900 /frame (28.83% of a frame)  src/main.c:33 [div] hot
+   matters    23,059 /frame (18.01% of a frame)  src/main.c:22 [div] hot
+   matters    10,224 /frame (7.99% of a frame)  src/main.c:35 [mul32] hot
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+    3,664 /frame  src/main.c:15 (spin), mostly own code
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 301 cycles per frame

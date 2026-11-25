@@ -1,0 +1,797 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 6360.403333333334,
+ "unmapped_per_frame": 317.87333333333333,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 295,
+   "function": "main",
+   "per_frame": 3422.2533333333336,
+   "self_per_frame": 26.0,
+   "pct_busy": 53.80560247489546,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3396.2533333333336,
+     1.0,
+     3396.2533333333336
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 227,
+   "function": "drawSprites",
+   "per_frame": 1417.1083333333333,
+   "self_per_frame": 134.0,
+   "pct_busy": 22.28016462268378,
+   "calls": [
+    [
+     "DMA_transfer.isra.0",
+     1283.1083333333333,
+     1.0,
+     1283.1083333333333
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.87333333333333,
+   "self_per_frame": 0.0,
+   "pct_busy": 4.997691446192354,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.90333333333334,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.31166666666667,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.561666666666667,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.096666666666668,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 207,
+   "function": "drawSprites",
+   "per_frame": 117.74,
+   "self_per_frame": 117.74,
+   "pct_busy": 1.8511404675070398,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 221,
+   "function": "drawSprites",
+   "per_frame": 97.475,
+   "self_per_frame": 97.475,
+   "pct_busy": 1.5325285975050849,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 214,
+   "function": "drawSprites",
+   "per_frame": 80.82333333333334,
+   "self_per_frame": 80.82333333333334,
+   "pct_busy": 1.2707265419750635,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 139,
+   "function": "updateBall",
+   "per_frame": 69.21166666666667,
+   "self_per_frame": 69.21166666666667,
+   "pct_busy": 1.0881647442693623,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 140,
+   "function": "updateBall",
+   "per_frame": 52.97666666666667,
+   "self_per_frame": 52.97666666666667,
+   "pct_busy": 0.8329136359801081,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 199,
+   "function": "drawSprites",
+   "per_frame": 50.71,
+   "self_per_frame": 50.71,
+   "pct_busy": 0.7972764829903345,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 126,
+   "function": "updateAI",
+   "per_frame": 44.925,
+   "self_per_frame": 44.925,
+   "pct_busy": 0.7063231314995223,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 129,
+   "function": "updateAI",
+   "per_frame": 43.61333333333334,
+   "self_per_frame": 43.61333333333334,
+   "pct_busy": 0.6857007495855871,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 200,
+   "function": "drawSprites",
+   "per_frame": 42.785,
+   "self_per_frame": 42.785,
+   "pct_busy": 0.6726774664709418,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 67,
+   "function": "clampPaddle",
+   "per_frame": 40.175,
+   "self_per_frame": 40.175,
+   "pct_busy": 0.6316423329547759,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 119,
+   "function": "updateLeftPaddle",
+   "per_frame": 37.605,
+   "self_per_frame": 37.605,
+   "pct_busy": 0.5912360903737237,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 68,
+   "function": "clampPaddle",
+   "per_frame": 36.65833333333333,
+   "self_per_frame": 36.65833333333333,
+   "pct_busy": 0.5763523382427005,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 160,
+   "function": "updateBall",
+   "per_frame": 33.31666666666667,
+   "self_per_frame": 33.31666666666667,
+   "pct_busy": 0.5238137413717474,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 195,
+   "function": "drawSprites",
+   "per_frame": 32.19833333333333,
+   "self_per_frame": 32.19833333333333,
+   "pct_busy": 0.5062309989775281,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 127,
+   "function": "updateAI",
+   "per_frame": 32.001666666666665,
+   "self_per_frame": 32.001666666666665,
+   "pct_busy": 0.503138951879886,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 130,
+   "function": "updateAI",
+   "per_frame": 30.293333333333333,
+   "self_per_frame": 30.293333333333333,
+   "pct_busy": 0.4762800681927404,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 233,
+   "function": "drawSprites",
+   "per_frame": 28.735,
+   "self_per_frame": 28.735,
+   "pct_busy": 0.45177952551227096,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 288,
+   "function": "main",
+   "per_frame": 28.4,
+   "self_per_frame": 28.4,
+   "pct_busy": 0.4465125639306941,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "drawSprites",
+   "per_frame": 28.0,
+   "self_per_frame": 28.0,
+   "pct_busy": 0.4402236545795576,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 230,
+   "function": "drawSprites",
+   "per_frame": 28.0,
+   "self_per_frame": 28.0,
+   "pct_busy": 0.4402236545795576,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 143,
+   "function": "updateBall",
+   "per_frame": 26.13,
+   "self_per_frame": 26.13,
+   "pct_busy": 0.41082300336299427,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 231,
+   "function": "drawSprites",
+   "per_frame": 25.265,
+   "self_per_frame": 25.265,
+   "pct_busy": 0.3972232368911615,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 152,
+   "function": "updateBall",
+   "per_frame": 24.078333333333333,
+   "self_per_frame": 24.078333333333333,
+   "pct_busy": 0.37856613914945647,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 120,
+   "function": "updateLeftPaddle",
+   "per_frame": 22.516666666666666,
+   "self_per_frame": 22.516666666666666,
+   "pct_busy": 0.35401318889106087,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 146,
+   "function": "updateBall",
+   "per_frame": 20.666666666666668,
+   "self_per_frame": 20.666666666666668,
+   "pct_busy": 0.3249269831420544,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 184,
+   "function": "updateBall",
+   "per_frame": 17.225,
+   "self_per_frame": 17.225,
+   "pct_busy": 0.2708161589333171,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 232,
+   "function": "drawSprites",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.2515563740454615,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 76,
+   "function": "drawScore",
+   "per_frame": 15.248333333333333,
+   "self_per_frame": 0.515,
+   "pct_busy": 0.2397384652231174,
+   "calls": [
+    [
+     "VDP_drawText",
+     14.733333333333333,
+     0.008333333333333333,
+     1768.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 81,
+   "function": "drawScore",
+   "per_frame": 15.248333333333333,
+   "self_per_frame": 0.5016666666666667,
+   "pct_busy": 0.2397384652231174,
+   "calls": [
+    [
+     "VDP_drawText",
+     14.746666666666666,
+     0.008333333333333333,
+     1769.6
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 78,
+   "function": "drawScore",
+   "per_frame": 14.451666666666666,
+   "self_per_frame": 0.5833333333333334,
+   "pct_busy": 0.22721305409877046,
+   "calls": [
+    [
+     "VDP_drawText",
+     13.868333333333334,
+     0.008333333333333333,
+     1664.2
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 142,
+   "function": "updateBall",
+   "per_frame": 8.071666666666667,
+   "self_per_frame": 8.071666666666667,
+   "pct_busy": 0.1269049499481427,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 282,
+   "function": "main",
+   "per_frame": 8.0,
+   "self_per_frame": 8.0,
+   "pct_busy": 0.12577818702273075,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 75,
+   "function": "drawScore",
+   "per_frame": 5.701666666666667,
+   "self_per_frame": 2.283333333333333,
+   "pct_busy": 0.08964316204265872,
+   "calls": [
+    [
+     "uint16ToStr",
+     3.4183333333333334,
+     0.008333333333333333,
+     410.2
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 80,
+   "function": "drawScore",
+   "per_frame": 5.635,
+   "self_per_frame": 2.216666666666667,
+   "pct_busy": 0.08859501048413597,
+   "calls": [
+    [
+     "uint16ToStr",
+     3.4183333333333334,
+     0.008333333333333333,
+     410.2
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 168,
+   "function": "updateBall",
+   "per_frame": 5.08,
+   "self_per_frame": 5.08,
+   "pct_busy": 0.07986914875943402,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 177,
+   "function": "updateBall",
+   "per_frame": 4.448333333333333,
+   "self_per_frame": 4.448333333333333,
+   "pct_busy": 0.0699379127424309,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "updateBall",
+   "per_frame": 4.3933333333333335,
+   "self_per_frame": 4.3933333333333335,
+   "pct_busy": 0.06907318770664964,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 162,
+   "function": "updateBall",
+   "per_frame": 2.078333333333333,
+   "self_per_frame": 2.078333333333333,
+   "pct_busy": 0.03267612483694692,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 89,
+   "function": "resetBall",
+   "per_frame": 1.8016666666666667,
+   "self_per_frame": 1.8016666666666667,
+   "pct_busy": 0.028326295869077485,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 95,
+   "function": "speedUpBall",
+   "per_frame": 1.7866666666666666,
+   "self_per_frame": 0.3516666666666667,
+   "pct_busy": 0.028090461768409864,
+   "calls": [
+    [
+     "__divsi3",
+     1.435,
+     0.0025,
+     574.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 96,
+   "function": "speedUpBall",
+   "per_frame": 1.7483333333333333,
+   "self_per_frame": 0.2866666666666667,
+   "pct_busy": 0.027487774622259282,
+   "calls": [
+    [
+     "__divsi3",
+     1.4616666666666667,
+     0.0025,
+     584.6666666666666
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 291,
+   "function": "main",
+   "per_frame": 0.465,
+   "self_per_frame": 0.465,
+   "pct_busy": 0.007310857120696224,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 87,
+   "function": "resetBall",
+   "per_frame": 0.235,
+   "self_per_frame": 0.235,
+   "pct_busy": 0.0036947342437927155,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 88,
+   "function": "resetBall",
+   "per_frame": 0.235,
+   "self_per_frame": 0.235,
+   "pct_busy": 0.0036947342437927155,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 86,
+   "function": "resetBall",
+   "per_frame": 0.23333333333333334,
+   "self_per_frame": 0.23333333333333334,
+   "pct_busy": 0.0036685304548296467,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 180,
+   "function": "updateBall",
+   "per_frame": 0.16666666666666666,
+   "self_per_frame": 0.16666666666666666,
+   "pct_busy": 0.0026203788963068903,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 111,
+   "function": "bounceFromPaddle",
+   "per_frame": 0.1,
+   "self_per_frame": 0.1,
+   "pct_busy": 0.0015722273377841343,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 99,
+   "function": "speedUpBall",
+   "per_frame": 0.09333333333333334,
+   "self_per_frame": 0.09333333333333334,
+   "pct_busy": 0.0014674121819318587,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 170,
+   "function": "updateBall",
+   "per_frame": 0.07666666666666666,
+   "self_per_frame": 0.07666666666666666,
+   "pct_busy": 0.0012053742923011695,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 169,
+   "function": "updateBall",
+   "per_frame": 0.07,
+   "self_per_frame": 0.07,
+   "pct_busy": 0.001100559136448894,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 109,
+   "function": "bounceFromPaddle",
+   "per_frame": 0.07,
+   "self_per_frame": 0.07,
+   "pct_busy": 0.001100559136448894,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 101,
+   "function": "speedUpBall",
+   "per_frame": 0.06333333333333334,
+   "self_per_frame": 0.06333333333333334,
+   "pct_busy": 0.0009957439805966183,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 100,
+   "function": "speedUpBall",
+   "per_frame": 0.06166666666666667,
+   "self_per_frame": 0.06166666666666667,
+   "pct_busy": 0.0009695401916335495,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 98,
+   "function": "speedUpBall",
+   "per_frame": 0.04666666666666667,
+   "self_per_frame": 0.04666666666666667,
+   "pct_busy": 0.0007337060909659293,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 107,
+   "function": "bounceFromPaddle",
+   "per_frame": 0.03333333333333333,
+   "self_per_frame": 0.03333333333333333,
+   "pct_busy": 0.0005240757792613781,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 75,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 2881,
+   "guarded": true,
+   "message": "uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes",
+   "measured_per_frame": 5.7,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "uint16ToStr",
+     3.4183333333333334,
+     0.008333333333333333,
+     410.2
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 76,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 15.2,
+   "measured_pct_frame": 0.01,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     14.733333333333333,
+     0.008333333333333333,
+     1768.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 78,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 14.5,
+   "measured_pct_frame": 0.01,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     13.868333333333334,
+     0.008333333333333333,
+     1664.2
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 80,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 2881,
+   "guarded": true,
+   "message": "uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes",
+   "measured_per_frame": 5.6,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "uint16ToStr",
+     3.4183333333333334,
+     0.008333333333333333,
+     410.2
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 81,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 15.2,
+   "measured_pct_frame": 0.01,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     14.746666666666666,
+     0.008333333333333333,
+     1769.6
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 95,
+   "function": "speedUpBall",
+   "rule": "div",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 453,
+   "guarded": true,
+   "message": "'/' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16",
+   "measured_per_frame": 1.8,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "__divsi3",
+     1.435,
+     0.0025,
+     574.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 96,
+   "function": "speedUpBall",
+   "rule": "div",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 453,
+   "guarded": true,
+   "message": "'/' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16",
+   "measured_per_frame": 1.7,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "__divsi3",
+     1.4616666666666667,
+     0.0025,
+     584.6666666666666
+    ]
+   ]
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "pong-haiku-5-5-r1",
+ "stage": "hot",
+ "builds": true,
+ "mean_load": 4.97,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 7631970,
+  "charged": 7632484
+ }
+}

@@ -1,0 +1,324 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 13628.406666666666,
+ "unmapped_per_frame": 318.385,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 296,
+   "function": "main",
+   "per_frame": 4792.14,
+   "self_per_frame": 26.161666666666665,
+   "pct_busy": 35.16287792997078,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     4765.9783333333335,
+     1.0,
+     4765.9783333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 255,
+   "function": "updateStars",
+   "per_frame": 1949.4933333333333,
+   "self_per_frame": 1949.4933333333333,
+   "pct_busy": 14.304631355780892,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 257,
+   "function": "updateStars",
+   "per_frame": 1575.0166666666667,
+   "self_per_frame": 1575.0166666666667,
+   "pct_busy": 11.556865781815532,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 248,
+   "function": "updateStars",
+   "per_frame": 1299.635,
+   "self_per_frame": 1299.635,
+   "pct_busy": 9.53622115767018,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 245,
+   "function": "updateStars",
+   "per_frame": 1044.0666666666666,
+   "self_per_frame": 1044.0666666666666,
+   "pct_busy": 7.660959143670989,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 294,
+   "function": "main",
+   "per_frame": 952.2816666666666,
+   "self_per_frame": 158.075,
+   "pct_busy": 6.987476158866211,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     794.2066666666667,
+     1.0,
+     794.2066666666667
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 254,
+   "function": "updateStars",
+   "per_frame": 778.08,
+   "self_per_frame": 778.08,
+   "pct_busy": 5.709251411634816,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 256,
+   "function": "updateStars",
+   "per_frame": 521.9133333333333,
+   "self_per_frame": 521.9133333333333,
+   "pct_busy": 3.8295990580459147,
+   "calls": []
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 318.385,
+   "self_per_frame": 0.0,
+   "pct_busy": 2.33618652412779,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.795,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.57833333333333,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.80666666666667,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.205,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "randRange",
+   "per_frame": 74.70666666666666,
+   "self_per_frame": 74.70666666666666,
+   "pct_busy": 0.5481687514461216,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 233,
+   "function": "updateShip",
+   "per_frame": 40.02,
+   "self_per_frame": 40.02,
+   "pct_busy": 0.29365134882483207,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 226,
+   "function": "updateShip",
+   "per_frame": 35.9,
+   "self_per_frame": 35.9,
+   "pct_busy": 0.2634203753825955,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 224,
+   "function": "updateShip",
+   "per_frame": 34.61333333333334,
+   "self_per_frame": 34.61333333333334,
+   "pct_busy": 0.25397931086099085,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 218,
+   "function": "updateShip",
+   "per_frame": 22.481666666666666,
+   "self_per_frame": 22.481666666666666,
+   "pct_busy": 0.16496181260612025,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 219,
+   "function": "updateShip",
+   "per_frame": 20.753333333333334,
+   "self_per_frame": 20.753333333333334,
+   "pct_busy": 0.15227996816453476,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 220,
+   "function": "updateShip",
+   "per_frame": 20.168333333333333,
+   "self_per_frame": 20.168333333333333,
+   "pct_busy": 0.1479874634403337,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 221,
+   "function": "updateShip",
+   "per_frame": 20.168333333333333,
+   "self_per_frame": 20.168333333333333,
+   "pct_busy": 0.1479874634403337,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 232,
+   "function": "updateShip",
+   "per_frame": 20.0,
+   "self_per_frame": 20.0,
+   "pct_busy": 0.1467522982632844,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 215,
+   "function": "updateShip",
+   "per_frame": 16.001666666666665,
+   "self_per_frame": 16.001666666666665,
+   "pct_busy": 0.11741406796881612,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 216,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.1174018386106275,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 228,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.1174018386106275,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.1174018386106275,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 238,
+   "function": "updateStars",
+   "per_frame": 14.488333333333333,
+   "self_per_frame": 14.488333333333333,
+   "pct_busy": 0.10630981073356092,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 240,
+   "function": "updateStars",
+   "per_frame": 12.246666666666666,
+   "self_per_frame": 12.246666666666666,
+   "pct_busy": 0.08986132396988447,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 214,
+   "function": "updateShip",
+   "per_frame": 8.016666666666667,
+   "self_per_frame": 8.016666666666667,
+   "pct_busy": 0.05882321288719983,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 250,
+   "function": "updateStars",
+   "per_frame": 5.428333333333334,
+   "self_per_frame": 5.428333333333334,
+   "pct_busy": 0.039831019620293104,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 251,
+   "function": "updateStars",
+   "per_frame": 4.401666666666666,
+   "self_per_frame": 4.401666666666666,
+   "pct_busy": 0.03229773497611117,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "randRange",
+   "rule": "mul32",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 1,
+   "est_cycles": 268,
+   "guarded": true,
+   "message": "16 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); a muls.w on two s16 is 35, but SGDK 2.09's muls() is plain C and still became __mulsi3 (270) when GCC knew one operand was positive: check the profile after the fix",
+   "measured_per_frame": 74.7,
+   "measured_pct_frame": 0.06,
+   "verdict": "negligible",
+   "calls": []
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "starfield-opus-5-5-r1",
+ "stage": "plain",
+ "builds": true,
+ "mean_load": 10.65,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 16353746,
+  "charged": 16354088
+ }
+}

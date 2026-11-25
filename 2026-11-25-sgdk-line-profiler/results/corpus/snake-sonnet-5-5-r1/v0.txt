@@ -1,0 +1,70 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,306 cycles per frame on average (3.4%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,413 /frame  79.3% of busy  src/main.c:334  SYS_doVBlankProcess();
+                     3,395 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,395 cycles each
+      318 /frame   7.4% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      132 /frame   3.1% of busy  src/main.c:153  u16 speedups = (snakeLen - INIT_LEN) / LEN_PER_SPEEDUP;
+                       116 in __divsi3: 0.20 calls/frame, 580 cycles each
+                 lint [div] guarded: '/' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16
+       58 /frame   1.4% of busy  src/main.c:307  switch (state)
+       35 /frame   0.8% of busy  src/main.c:104  VDP_drawTextBG(BG_B, "SCORE", 1, 0);
+                        33 in VDP_drawTextEx.constprop.0: 0.02 calls/frame, 1,868 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       35 /frame   0.8% of busy  src/main.c:106  VDP_drawTextBG(BG_B, buf, 7, 0);
+                        33 in VDP_drawTextEx.constprop.0: 0.02 calls/frame, 1,868 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       34 /frame   0.8% of busy  src/main.c:114  VDP_drawTextBG(BG_B, buf, 33, 0);
+                        33 in VDP_drawTextEx.constprop.0: 0.02 calls/frame, 1,868 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       33 /frame   0.8% of busy  src/main.c:110  VDP_drawTextBG(BG_B, buf, 19, 0);
+                        31 in VDP_drawTextEx.constprop.0: 0.02 calls/frame, 1,756 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       31 /frame   0.7% of busy  src/main.c:108  VDP_drawTextBG(BG_B, "LEN", 15, 0);
+                        29 in VDP_drawTextEx.constprop.0: 0.02 calls/frame, 1,640 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       29 /frame   0.7% of busy  src/main.c:112  VDP_drawTextBG(BG_B, "HI", 30, 0);
+                        27 in VDP_drawTextEx.constprop.0: 0.02 calls/frame, 1,554 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       20 /frame   0.5% of busy  src/main.c:121  headIdx = (headIdx + 1) % MAX_LEN;
+                        18 in __modsi3: 0.02 calls/frame, 1,004 cycles each
+                 lint [div] guarded: '%' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16. Here: 3 passes x 453 = 
+       18 /frame   0.4% of busy  src/main.c:134  tailIdx = (tailIdx + 1) % MAX_LEN;
+                        16 in __modsi3: 0.02 calls/frame, 1,004 cycles each
+                 lint [div] guarded: '%' with an operand of unknown type: 453 to 1,062 cycles unless both operands are u16
+       14 /frame   0.3% of busy  src/main.c:321  else if ((joy & BUTTON_RIGHT) && dir != 3) pendingDir = 1;
+       11 /frame   0.3% of busy  src/main.c:105  uintToStr(score, buf, 5);
+                         9 in uint16ToStr: 0.02 calls/frame, 532 cycles each
+                 lint [text] guarded: uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+       11 /frame   0.3% of busy  src/main.c:113  uintToStr(hiScore, buf, 5);
+                         9 in uint16ToStr: 0.02 calls/frame, 530 cycles each
+                 lint [text] guarded: uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes
+
+== Lint findings, by measured cost ==
+negligible       132 /frame (0.10% of a frame)  src/main.c:153 [div] guarded
+negligible        35 /frame (0.03% of a frame)  src/main.c:104 [text] guarded
+negligible        35 /frame (0.03% of a frame)  src/main.c:106 [text] guarded
+negligible        34 /frame (0.03% of a frame)  src/main.c:114 [text] guarded
+negligible        33 /frame (0.03% of a frame)  src/main.c:110 [text] guarded
+negligible        30 /frame (0.02% of a frame)  src/main.c:108 [text] guarded
+negligible        29 /frame (0.02% of a frame)  src/main.c:112 [text] guarded
+negligible        20 /frame (0.02% of a frame)  src/main.c:121 [div] guarded
+negligible        18 /frame (0.01% of a frame)  src/main.c:134 [div] guarded
+negligible        12 /frame (0.01% of a frame)  src/main.c:105 [text] guarded
+negligible        11 /frame (0.01% of a frame)  src/main.c:113 [text] guarded
+negligible        11 /frame (0.01% of a frame)  src/main.c:109 [text] guarded
+negligible        10 /frame (0.01% of a frame)  src/main.c:92 [tile-loop] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:162 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:161 [text] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:144 [div] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:145 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

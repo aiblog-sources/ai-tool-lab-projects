@@ -1,0 +1,262 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 11428.7375,
+ "unmapped_per_frame": 318.51,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 210,
+   "function": "main",
+   "per_frame": 4801.705833333333,
+   "self_per_frame": 28.543333333333333,
+   "pct_busy": 42.01431552114425,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     4773.1625,
+     1.0,
+     4773.1625
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 177,
+   "function": "updateStars",
+   "per_frame": 2072.0,
+   "self_per_frame": 2072.0,
+   "pct_busy": 18.129736552265726,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "updateStars",
+   "per_frame": 1158.615,
+   "self_per_frame": 1158.615,
+   "pct_busy": 10.137733936053742,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 169,
+   "function": "updateStars",
+   "per_frame": 1042.9733333333334,
+   "self_per_frame": 1042.9733333333334,
+   "pct_busy": 9.125884056163976,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 209,
+   "function": "main",
+   "per_frame": 951.995,
+   "self_per_frame": 158.0,
+   "pct_busy": 8.329835207082148,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     793.995,
+     1.0,
+     793.995
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 174,
+   "function": "updateStars",
+   "per_frame": 531.7216666666667,
+   "self_per_frame": 531.7216666666667,
+   "pct_busy": 4.65249697673664,
+   "calls": []
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 318.51,
+   "self_per_frame": 0.0,
+   "pct_busy": 2.7869220025396504,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.79833333333333,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.66,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.85,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.201666666666668,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 164,
+   "function": "updateStars",
+   "per_frame": 274.46,
+   "self_per_frame": 274.46,
+   "pct_busy": 2.401490103346936,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 152,
+   "function": "updateShip",
+   "per_frame": 35.94166666666667,
+   "self_per_frame": 35.94166666666667,
+   "pct_busy": 0.3144850134729813,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 150,
+   "function": "updateShip",
+   "per_frame": 34.105,
+   "self_per_frame": 34.105,
+   "pct_busy": 0.29841441366555144,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 158,
+   "function": "updateShip",
+   "per_frame": 28.0,
+   "self_per_frame": 28.0,
+   "pct_busy": 0.24499643989548278,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 144,
+   "function": "updateShip",
+   "per_frame": 22.5,
+   "self_per_frame": 22.5,
+   "pct_busy": 0.19687213920172722,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 145,
+   "function": "updateShip",
+   "per_frame": 20.753333333333334,
+   "self_per_frame": 20.753333333333334,
+   "pct_busy": 0.18158902795110426,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 146,
+   "function": "updateShip",
+   "per_frame": 20.168333333333333,
+   "self_per_frame": 20.168333333333333,
+   "pct_busy": 0.17647035233185934,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 147,
+   "function": "updateShip",
+   "per_frame": 20.168333333333333,
+   "self_per_frame": 20.168333333333333,
+   "pct_busy": 0.17647035233185934,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 157,
+   "function": "updateShip",
+   "per_frame": 20.0,
+   "self_per_frame": 20.0,
+   "pct_busy": 0.17499745706820197,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 154,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.13999796565456157,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 155,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.13999796565456157,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 141,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.13999796565456157,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 142,
+   "function": "updateShip",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.13999796565456157,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 140,
+   "function": "updateShip",
+   "per_frame": 8.0,
+   "self_per_frame": 8.0,
+   "pct_busy": 0.06999898282728079,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 172,
+   "function": "updateStars",
+   "per_frame": 3.12,
+   "self_per_frame": 3.12,
+   "pct_busy": 0.02729960330263951,
+   "calls": []
+  }
+ ],
+ "findings": [],
+ "unflagged_hot": [],
+ "tag": "starfield-sonnet-5-5-r1",
+ "stage": "plain",
+ "builds": true,
+ "mean_load": 8.93,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 13714143,
+  "charged": 13714485
+ }
+}

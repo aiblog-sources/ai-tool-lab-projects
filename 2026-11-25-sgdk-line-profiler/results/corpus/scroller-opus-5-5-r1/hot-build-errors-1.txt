@@ -1,0 +1,7 @@
+[01m[Ksrc/main.c:157:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_CTRL_PORT instead.
+[01m[Ksrc/main.c:157:46:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:158:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_DATA_PORT instead.
+[01m[Ksrc/main.c:158:46:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+[01m[Ksrc/main.c:162:11:[m[K [01;31m[Kerror: [m[KThis definition is deprecated, use VDP_WRITE_VRAM_ADDR instead.
+[01m[Ksrc/main.c:162:43:[m[K [01;31m[Kerror: [m[Kexpected expression before '[01m[K;[m[K' token
+make: *** [/sgdk/makefile.gen:213: out/src/main.o] Error 1

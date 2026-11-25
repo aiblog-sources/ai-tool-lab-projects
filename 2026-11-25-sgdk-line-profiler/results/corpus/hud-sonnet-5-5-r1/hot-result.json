@@ -1,0 +1,10 @@
+{
+ "tag": "hud-sonnet-5-5-r1",
+ "model": "claude-sonnet-5-5",
+ "builds": true,
+ "build_rounds": 0,
+ "calls": 1,
+ "cost_usd": 0.0857,
+ "claude_wall_s": 35.5,
+ "output_tokens": 6108
+}

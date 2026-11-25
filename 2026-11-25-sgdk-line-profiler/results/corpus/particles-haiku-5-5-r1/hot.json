@@ -1,0 +1,483 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 11999.44,
+ "unmapped_per_frame": 318.13166666666666,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 167,
+   "function": "main",
+   "per_frame": 3736.1583333333333,
+   "self_per_frame": 21.001666666666665,
+   "pct_busy": 31.13610579604826,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3715.1566666666668,
+     1.0,
+     3715.1566666666668
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 147,
+   "function": "main",
+   "per_frame": 2554.431666666667,
+   "self_per_frame": 18.018333333333334,
+   "pct_busy": 21.287923992008515,
+   "calls": [
+    [
+     "JOY_update",
+     2536.4133333333334,
+     1.0,
+     2536.4133333333334
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 111,
+   "function": "updateParticles",
+   "per_frame": 1438.42,
+   "self_per_frame": 1438.42,
+   "pct_busy": 11.987392744994766,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 109,
+   "function": "updateParticles",
+   "per_frame": 775.8516666666667,
+   "self_per_frame": 775.8516666666667,
+   "pct_busy": 6.465732289729076,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 108,
+   "function": "updateParticles",
+   "per_frame": 605.9283333333333,
+   "self_per_frame": 605.9283333333333,
+   "pct_busy": 5.049638427571065,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 91,
+   "function": "updateParticles",
+   "per_frame": 590.1516666666666,
+   "self_per_frame": 590.1516666666666,
+   "pct_busy": 4.918160069692141,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 99,
+   "function": "updateParticles",
+   "per_frame": 553.7,
+   "self_per_frame": 553.7,
+   "pct_busy": 4.614382004493543,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 110,
+   "function": "updateParticles",
+   "per_frame": 345.74,
+   "self_per_frame": 345.74,
+   "pct_busy": 2.8813011273859446,
+   "calls": []
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 318.13166666666666,
+   "self_per_frame": 0.0,
+   "pct_busy": 2.6512209458663625,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.15166666666667,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.68333333333334,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.448333333333334,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.848333333333333,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 93,
+   "function": "updateParticles",
+   "per_frame": 293.62833333333333,
+   "self_per_frame": 293.62833333333333,
+   "pct_busy": 2.447016971903133,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 163,
+   "function": "main",
+   "per_frame": 289.81,
+   "self_per_frame": 51.608333333333334,
+   "pct_busy": 2.4151960424819823,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     238.20166666666665,
+     0.3,
+     794.0055555555556
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 69,
+   "function": "spawnExplosion",
+   "per_frame": 89.215,
+   "self_per_frame": 27.153333333333332,
+   "pct_busy": 0.7434930296747182,
+   "calls": [
+    [
+     "__mulsi3",
+     62.06166666666667,
+     0.24,
+     258.59027777777777
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 70,
+   "function": "spawnExplosion",
+   "per_frame": 88.12666666666667,
+   "self_per_frame": 26.025,
+   "pct_busy": 0.7344231619697809,
+   "calls": [
+    [
+     "__mulsi3",
+     62.10166666666667,
+     0.24,
+     258.75694444444446
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 65,
+   "function": "spawnExplosion",
+   "per_frame": 66.28666666666666,
+   "self_per_frame": 66.28666666666666,
+   "pct_busy": 0.5524146682400735,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 50,
+   "function": "spawnExplosion",
+   "per_frame": 39.31,
+   "self_per_frame": 39.31,
+   "pct_busy": 0.32759862126899253,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 152,
+   "function": "main",
+   "per_frame": 27.43,
+   "self_per_frame": 27.43,
+   "pct_busy": 0.22859400105338248,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 82,
+   "function": "updateParticles",
+   "per_frame": 26.461666666666666,
+   "self_per_frame": 26.461666666666666,
+   "pct_busy": 0.22052418001728968,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 49,
+   "function": "spawnExplosion",
+   "per_frame": 20.538333333333334,
+   "self_per_frame": 20.538333333333334,
+   "pct_busy": 0.17116076528015753,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 104,
+   "function": "updateParticles",
+   "per_frame": 16.85,
+   "self_per_frame": 16.85,
+   "pct_busy": 0.140423219750255,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "main",
+   "per_frame": 16.816666666666666,
+   "self_per_frame": 16.816666666666666,
+   "pct_busy": 0.1401454290089093,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 149,
+   "function": "main",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.13333955584593948,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 157,
+   "function": "main",
+   "per_frame": 11.08,
+   "self_per_frame": 11.08,
+   "pct_busy": 0.09233764242331309,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 87,
+   "function": "updateParticles",
+   "per_frame": 10.801666666666666,
+   "self_per_frame": 10.801666666666666,
+   "pct_busy": 0.09001808973307643,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 56,
+   "function": "spawnExplosion",
+   "per_frame": 10.171666666666667,
+   "self_per_frame": 10.171666666666667,
+   "pct_busy": 0.08476784472164256,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 51,
+   "function": "spawnExplosion",
+   "per_frame": 9.991666666666667,
+   "self_per_frame": 9.991666666666667,
+   "pct_busy": 0.08326777471837575,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 47,
+   "function": "spawnExplosion",
+   "per_frame": 7.826666666666667,
+   "self_per_frame": 7.826666666666667,
+   "pct_busy": 0.06522526606797206,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 164,
+   "function": "main",
+   "per_frame": 6.0,
+   "self_per_frame": 6.0,
+   "pct_busy": 0.050002333442227306,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 68,
+   "function": "spawnExplosion",
+   "per_frame": 5.793333333333333,
+   "self_per_frame": 5.793333333333333,
+   "pct_busy": 0.04828003084588392,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 67,
+   "function": "spawnExplosion",
+   "per_frame": 4.801666666666667,
+   "self_per_frame": 4.801666666666667,
+   "pct_busy": 0.04001575629084913,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 52,
+   "function": "spawnExplosion",
+   "per_frame": 4.25,
+   "self_per_frame": 4.25,
+   "pct_busy": 0.035418319521577674,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 71,
+   "function": "spawnExplosion",
+   "per_frame": 3.9166666666666665,
+   "self_per_frame": 3.9166666666666665,
+   "pct_busy": 0.0326404121081206,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 101,
+   "function": "updateParticles",
+   "per_frame": 3.9,
+   "self_per_frame": 3.9,
+   "pct_busy": 0.03250151673744775,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 72,
+   "function": "spawnExplosion",
+   "per_frame": 3.84,
+   "self_per_frame": 3.84,
+   "pct_busy": 0.03200149340302547,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 89,
+   "function": "updateParticles",
+   "per_frame": 3.6,
+   "self_per_frame": 3.6,
+   "pct_busy": 0.030001400065336383,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 59,
+   "function": "spawnExplosion",
+   "per_frame": 1.2,
+   "self_per_frame": 1.2,
+   "pct_busy": 0.010000466688445462,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 58,
+   "function": "spawnExplosion",
+   "per_frame": 1.08,
+   "self_per_frame": 1.08,
+   "pct_busy": 0.009000420019600915,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 60,
+   "function": "spawnExplosion",
+   "per_frame": 1.08,
+   "self_per_frame": 1.08,
+   "pct_busy": 0.009000420019600915,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 102,
+   "function": "updateParticles",
+   "per_frame": 1.02,
+   "self_per_frame": 1.02,
+   "pct_busy": 0.008500396685178642,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 75,
+   "function": "spawnExplosion",
+   "per_frame": 0.1,
+   "self_per_frame": 0.1,
+   "pct_busy": 0.0008333722240371217,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 69,
+   "function": "spawnExplosion",
+   "rule": "mul32",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 48,
+   "est_cycles": 12864,
+   "guarded": true,
+   "message": "32 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); a muls.w on two s16 is 35, but SGDK 2.09's muls() is plain C and still became __mulsi3 (270) when GCC knew one operand was positive: check the profile after the fix. Here: 48 passes x 268 = 12,864 cycles (10% of a frame)",
+   "measured_per_frame": 89.2,
+   "measured_pct_frame": 0.07,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "__mulsi3",
+     62.06166666666667,
+     0.24,
+     258.59027777777777
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 70,
+   "function": "spawnExplosion",
+   "rule": "mul32",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 48,
+   "est_cycles": 12864,
+   "guarded": true,
+   "message": "32 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); a muls.w on two s16 is 35, but SGDK 2.09's muls() is plain C and still became __mulsi3 (270) when GCC knew one operand was positive: check the profile after the fix. Here: 48 passes x 268 = 12,864 cycles (10% of a frame)",
+   "measured_per_frame": 88.1,
+   "measured_pct_frame": 0.07,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "__mulsi3",
+     62.10166666666667,
+     0.24,
+     258.75694444444446
+    ]
+   ]
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "particles-haiku-5-5-r1",
+ "stage": "hot",
+ "builds": true,
+ "mean_load": 9.37,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 14399123,
+  "charged": 14399328
+ }
+}

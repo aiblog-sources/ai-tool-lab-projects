@@ -1,0 +1,41 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 12,147 cycles per frame on average (9.5%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    4,359 /frame  35.9% of busy  src/main.c:265  SYS_doVBlankProcess();
+                     4,329 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 4,329 cycles each
+    1,259 /frame  10.4% of busy  src/main.c:234  if ((u16)(bx + 8) > 328 || (u16)(by + 8) > 232)
+      976 /frame   8.0% of busy  src/main.c:264  VDP_updateSprites(NUM_SPRITES, DMA_QUEUE);
+                       794 in DMA_queueDmaFast: 1.00 calls/frame, 794 cycles each
+      804 /frame   6.6% of busy  src/main.c:228  b->y += b->vy;
+      709 /frame   5.8% of busy  src/main.c:227  b->x += b->vx;
+      706 /frame   5.8% of busy  src/main.c:222  for (; left; b++, sp++)
+      565 /frame   4.6% of busy  src/main.c:244  if ((u16)(bx - px + 4) < 9 && (u16)(by - py + 4) < 9)
+      540 /frame   4.4% of busy  src/main.c:224  if (!b->active) continue;
+      392 /frame   3.2% of busy  src/main.c:254  sp->x = bx + 0x80;
+      325 /frame   2.7% of busy  src/main.c:255  sp->y = by + 0x80;
+      318 /frame   2.6% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      247 /frame   2.0% of busy  src/main.c:231  s16 by = INT_PART(b->y);
+       79 /frame   0.7% of busy  src/main.c:225  left--;
+       73 /frame   0.6% of busy  src/main.c:132  bullets[i].vx = ((dx * BULLET_SPEED) / len) << 8;
+                        58 in __divsi3: 0.10 calls/frame, 580 cycles each
+                 lint [div] guarded: '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23. Here: 40 passes 
+       71 /frame   0.6% of busy  src/main.c:133  bullets[i].vy = ((dy * BULLET_SPEED) / len) << 8;
+                        57 in __divsi3: 0.10 calls/frame, 571 cycles each
+                 lint [div] guarded: '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23. Here: 40 passes 
+
+== Lint findings, by measured cost ==
+negligible        73 /frame (0.06% of a frame)  src/main.c:132 [div] guarded
+negligible        71 /frame (0.06% of a frame)  src/main.c:133 [div] guarded
+negligible        13 /frame (0.01% of a frame)  src/main.c:109 [text] guarded
+negligible        13 /frame (0.01% of a frame)  src/main.c:110 [text] guarded
+negligible         4 /frame (0.00% of a frame)  src/main.c:108 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

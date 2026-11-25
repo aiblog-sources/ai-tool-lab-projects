@@ -1,0 +1,10 @@
+{
+ "tag": "scroller-sonnet-5-5-r1",
+ "model": "claude-sonnet-5-5",
+ "builds": true,
+ "build_rounds": 1,
+ "calls": 2,
+ "cost_usd": 0.1487,
+ "claude_wall_s": 56.2,
+ "output_tokens": 10563
+}

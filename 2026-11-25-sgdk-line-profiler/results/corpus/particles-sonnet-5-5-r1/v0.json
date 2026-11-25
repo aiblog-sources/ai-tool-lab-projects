@@ -1,0 +1,389 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 16201.385,
+ "unmapped_per_frame": 317.31666666666666,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 158,
+   "function": "main",
+   "per_frame": 4465.723333333333,
+   "self_per_frame": 27.883333333333333,
+   "pct_busy": 27.563836877731955,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     4437.84,
+     0.9958333333333333,
+     4456.408368200837
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 49,
+   "function": "hideSprite",
+   "per_frame": 3868.1183333333333,
+   "self_per_frame": 3868.1183333333333,
+   "pct_busy": 23.875232477552586,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 78,
+   "function": "updateParticles",
+   "per_frame": 1898.8766666666668,
+   "self_per_frame": 1898.8766666666668,
+   "pct_busy": 11.720458878464196,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 82,
+   "function": "updateParticles",
+   "per_frame": 1088.075,
+   "self_per_frame": 1088.075,
+   "pct_busy": 6.715938174421508,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 156,
+   "function": "main",
+   "per_frame": 989.3733333333333,
+   "self_per_frame": 197.17833333333334,
+   "pct_busy": 6.106720711428889,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     792.195,
+     0.9958333333333333,
+     795.5096234309624
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 98,
+   "function": "updateParticles",
+   "per_frame": 585.7933333333333,
+   "self_per_frame": 585.7933333333333,
+   "pct_busy": 3.6156991104978577,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 106,
+   "function": "updateParticles",
+   "per_frame": 569.9233333333333,
+   "self_per_frame": 569.9233333333333,
+   "pct_busy": 3.517744522047549,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 89,
+   "function": "updateParticles",
+   "per_frame": 341.735,
+   "self_per_frame": 341.735,
+   "pct_busy": 2.1092949769417864,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 88,
+   "function": "updateParticles",
+   "per_frame": 341.0933333333333,
+   "self_per_frame": 341.0933333333333,
+   "pct_busy": 2.1053344101960008,
+   "calls": []
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.31666666666666,
+   "self_per_frame": 0.0,
+   "pct_busy": 1.9585774096885338,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.84,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     122.45333333333333,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.863333333333333,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.16,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 90,
+   "function": "updateParticles",
+   "per_frame": 292.47333333333336,
+   "self_per_frame": 292.47333333333336,
+   "pct_busy": 1.8052366099153456,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 97,
+   "function": "updateParticles",
+   "per_frame": 286.80833333333334,
+   "self_per_frame": 286.80833333333334,
+   "pct_busy": 1.7702704635025546,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 66,
+   "function": "spawnExplosion",
+   "per_frame": 231.96666666666667,
+   "self_per_frame": 32.00666666666667,
+   "pct_busy": 1.43177059656731,
+   "calls": [
+    [
+     "__modsi3",
+     199.96,
+     0.2,
+     999.8
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 93,
+   "function": "updateParticles",
+   "per_frame": 218.23,
+   "self_per_frame": 218.23,
+   "pct_busy": 1.346983606648444,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 91,
+   "function": "updateParticles",
+   "per_frame": 195.03833333333333,
+   "self_per_frame": 195.03833333333333,
+   "pct_busy": 1.203837408550771,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 94,
+   "function": "updateParticles",
+   "per_frame": 183.27,
+   "self_per_frame": 183.27,
+   "pct_busy": 1.1311995857144312,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 70,
+   "function": "spawnExplosion",
+   "per_frame": 122.32166666666667,
+   "self_per_frame": 76.33666666666667,
+   "pct_busy": 0.7550074679829327,
+   "calls": [
+    [
+     "__mulsi3",
+     45.985,
+     0.2,
+     229.925
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 71,
+   "function": "spawnExplosion",
+   "per_frame": 85.88,
+   "self_per_frame": 39.965,
+   "pct_busy": 0.5300781383813791,
+   "calls": [
+    [
+     "__mulsi3",
+     45.915,
+     0.2,
+     229.575
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 148,
+   "function": "main",
+   "per_frame": 35.415,
+   "self_per_frame": 35.415,
+   "pct_busy": 0.21859242280829694,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 146,
+   "function": "main",
+   "per_frame": 25.89,
+   "self_per_frame": 25.89,
+   "pct_busy": 0.15980115280267707,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 65,
+   "function": "spawnExplosion",
+   "per_frame": 19.328333333333333,
+   "self_per_frame": 19.328333333333333,
+   "pct_busy": 0.11930050013213891,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 153,
+   "function": "main",
+   "per_frame": 11.951666666666666,
+   "self_per_frame": 11.951666666666666,
+   "pct_busy": 0.07376941333513565,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 60,
+   "function": "spawnExplosion",
+   "per_frame": 5.916666666666667,
+   "self_per_frame": 5.916666666666667,
+   "pct_busy": 0.03651951155204735,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 63,
+   "function": "spawnExplosion",
+   "per_frame": 5.915,
+   "self_per_frame": 5.915,
+   "pct_busy": 0.03650922436569466,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 72,
+   "function": "spawnExplosion",
+   "per_frame": 4.661666666666667,
+   "self_per_frame": 4.661666666666667,
+   "pct_busy": 0.028773260228472236,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 69,
+   "function": "spawnExplosion",
+   "per_frame": 4.0,
+   "self_per_frame": 4.0,
+   "pct_busy": 0.024689247246454545,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 58,
+   "function": "spawnExplosion",
+   "per_frame": 2.7416666666666667,
+   "self_per_frame": 2.7416666666666667,
+   "pct_busy": 0.016922421550174056,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 68,
+   "function": "spawnExplosion",
+   "per_frame": 1.6,
+   "self_per_frame": 1.6,
+   "pct_busy": 0.009875698898581819,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 57,
+   "function": "spawnExplosion",
+   "per_frame": 1.3783333333333334,
+   "self_per_frame": 1.3783333333333334,
+   "pct_busy": 0.008507503113674129,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 150,
+   "function": "main",
+   "per_frame": 0.57,
+   "self_per_frame": 0.57,
+   "pct_busy": 0.003518217732619773,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 66,
+   "function": "spawnExplosion",
+   "rule": "div",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 48,
+   "est_cycles": 50976,
+   "guarded": true,
+   "message": "'%' by a FIX16()/FIX32() constant: the macro casts to a signed type, so this is a signed 32-bit %: 1,062 cycles for u16 % FIX16(2.7) (__modsi3) vs 168 for u16 % 172. Here: 48 passes x 1,062 = 50,976 cycles (40% of a frame)",
+   "measured_per_frame": 232.0,
+   "measured_pct_frame": 0.18,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "__modsi3",
+     199.96,
+     0.2,
+     999.8
+    ]
+   ]
+  }
+ ],
+ "unflagged_hot": [
+  {
+   "file": "src/main.c",
+   "line": 49,
+   "function": "hideSprite",
+   "per_frame": 3868.1183333333333,
+   "self_per_frame": 3868.1183333333333,
+   "pct_busy": 23.875232477552586,
+   "calls": []
+  }
+ ],
+ "tag": "particles-sonnet-5-5-r1",
+ "stage": "v0",
+ "builds": true,
+ "mean_load": 12.66,
+ "dropped": 5,
+ "busy_check": {
+  "frames_csv": 19440980,
+  "charged": 19441662
+ }
+}

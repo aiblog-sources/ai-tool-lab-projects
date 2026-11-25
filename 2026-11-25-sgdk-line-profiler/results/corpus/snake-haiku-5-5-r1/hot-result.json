@@ -1,0 +1,10 @@
+{
+ "tag": "snake-haiku-5-5-r1",
+ "model": "claude-haiku-5-5",
+ "builds": true,
+ "build_rounds": 0,
+ "calls": 1,
+ "cost_usd": 0.0057,
+ "claude_wall_s": 37.6,
+ "output_tokens": 9083
+}

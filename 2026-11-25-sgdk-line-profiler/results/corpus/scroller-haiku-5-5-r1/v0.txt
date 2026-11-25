@@ -1,0 +1,34 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 6,351 cycles per frame on average (5.0%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,425 /frame  53.9% of busy  src/main.c:202  SYS_doVBlankProcess();
+                     3,395 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,395 cycles each
+      933 /frame  14.7% of busy  src/main.c:138  VDP_setTileMapXY(BG_B,
+                 lint [tile-loop] hot: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+      933 /frame  14.7% of busy  src/main.c:194  VDP_updateSprites(1, DMA);
+                       772 in DMA_doDmaFast: 1.00 calls/frame, 772 cycles each
+      318 /frame   5.0% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      175 /frame   2.8% of busy  src/main.c:200  VDP_setHorizontalScroll(BG_B, -(s16)(camX & (PLANE_W_PIXELS 
+      116 /frame   1.8% of busy  src/main.c:125  for (row = 0; row < SCREEN_TILE_H; row++)
+       76 /frame   1.2% of busy  src/main.c:149  while ((genCol << 3) < camX + SCREEN_W + 8)
+       76 /frame   1.2% of busy  src/main.c:192  VDP_setSprite(0, px, py, SPRITE_SIZE(2, 2),
+       62 /frame   1.0% of busy  src/main.c:131  if (below <= 0)
+       36 /frame   0.6% of busy  src/main.c:188  if (px > 304) px = 304;   /* 320 - 16 */
+       35 /frame   0.5% of busy  src/main.c:190  if (py > 208) py = 208;   /* 224 - 16 */
+       34 /frame   0.5% of busy  src/main.c:133  else if (below >= 9)
+       21 /frame   0.3% of busy  src/main.c:182  if (joy & BUTTON_LEFT)  px -= 2;
+       21 /frame   0.3% of busy  src/main.c:183  if (joy & BUTTON_RIGHT) px += 2;
+       20 /frame   0.3% of busy  src/main.c:185  if (joy & BUTTON_DOWN)  py += 2;
+
+== Lint findings, by measured cost ==
+     small       933 /frame (0.73% of a frame)  src/main.c:138 [tile-loop] hot
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

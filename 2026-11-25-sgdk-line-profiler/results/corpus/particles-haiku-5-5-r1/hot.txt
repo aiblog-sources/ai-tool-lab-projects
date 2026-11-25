@@ -1,0 +1,39 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 11,999 cycles per frame on average (9.4%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,736 /frame  31.1% of busy  src/main.c:167  SYS_doVBlankProcess();
+                     3,715 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,715 cycles each
+    2,554 /frame  21.3% of busy  src/main.c:147  JOY_update();
+                     2,536 in JOY_update: 1.00 calls/frame, 2,536 cycles each
+    1,438 /frame  12.0% of busy  src/main.c:111  VDP_setSprite(i, (s16)(p->x >> 4), (s16)(p->y >> 4), SPRITE_
+      776 /frame   6.5% of busy  src/main.c:109  p->y  += p->vy;
+      606 /frame   5.0% of busy  src/main.c:108  p->x  += p->vx;
+      590 /frame   4.9% of busy  src/main.c:91  for (u16 i = 0; i < PARTICLE_COUNT; i++, p++)
+      554 /frame   4.6% of busy  src/main.c:99  if (--p->life == 0)
+      346 /frame   2.9% of busy  src/main.c:110  p->vy += GRAVITY;
+      318 /frame   2.7% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+      294 /frame   2.4% of busy  src/main.c:93  if (!p->alive)
+      290 /frame   2.4% of busy  src/main.c:163  VDP_updateSprites(PARTICLE_COUNT, DMA_QUEUE);
+                       238 in DMA_queueDmaFast: 0.30 calls/frame, 794 cycles each
+       89 /frame   0.7% of busy  src/main.c:69  particles[i].vx    = (dx * spd) / 64;
+                        62 in __mulsi3: 0.24 calls/frame, 259 cycles each
+                 lint [mul32] guarded: 32 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); a muls.w on two s16 is
+       88 /frame   0.7% of busy  src/main.c:70  particles[i].vy    = (dy * spd) / 64;
+                        62 in __mulsi3: 0.24 calls/frame, 259 cycles each
+                 lint [mul32] guarded: 32 x 32-bit multiply: 268 cycles (__mulsi3, s32 * s32 and s16 * s32 measured the same); a muls.w on two s16 is
+       66 /frame   0.6% of busy  src/main.c:65  s32 spd = 40 + (s32)(random() % 41);
+       39 /frame   0.3% of busy  src/main.c:50  u16 r = i % 12;             /* angle step within quadrant */
+
+== Lint findings, by measured cost ==
+negligible        89 /frame (0.07% of a frame)  src/main.c:69 [mul32] guarded
+negligible        88 /frame (0.07% of a frame)  src/main.c:70 [mul32] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

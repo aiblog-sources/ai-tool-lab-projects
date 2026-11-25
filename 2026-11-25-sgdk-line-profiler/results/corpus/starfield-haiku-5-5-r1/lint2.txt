@@ -1,0 +1,36 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 25,639 cycles per frame on average (20.0%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    7,548 /frame  29.4% of busy  src/main.c:191  VDP_setSpriteFull(
+    4,820 /frame  18.8% of busy  src/main.c:211  SYS_doVBlankProcess();
+                     4,773 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 4,773 cycles each
+    4,032 /frame  15.7% of busy  src/main.c:182  s->x -= layerSpeed[s->layer];
+    3,713 /frame  14.5% of busy  src/main.c:196  TILE_ATTR_FULL(layerPal[s->layer], 0, FALSE, FALSE, STAR_TIL
+    2,243 /frame   8.7% of busy  src/main.c:178  for (i = 0; i < NUM_STARS; i++)
+      977 /frame   3.8% of busy  src/main.c:210  VDP_updateSprites(NUM_STARS + 1, DMA_QUEUE);
+                       794 in DMA_queueDmaFast: 1.00 calls/frame, 794 cycles each
+      768 /frame   3.0% of busy  src/main.c:184  if (s->x < 0)
+      535 /frame   2.1% of busy  src/main.c:197  (i == NUM_STARS - 1) ? 0 : (i + 2));
+      318 /frame   1.2% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+      256 /frame   1.0% of busy  src/main.c:192  i + 1,
+      102 /frame   0.4% of busy  src/main.c:201  VDP_setSpriteFull(
+       71 /frame   0.3% of busy  src/main.c:175  if (shipY > SCREEN_H - SHIP_H) shipY = SCREEN_H - SHIP_H;
+       66 /frame   0.3% of busy  src/main.c:187  s->y = (s16)(rnd() % SCREEN_H_U16);
+                 lint [div] guarded: '%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both
+       42 /frame   0.2% of busy  src/main.c:173  if (shipX > SCREEN_W - SHIP_W) shipX = SCREEN_W - SHIP_W;
+       23 /frame   0.1% of busy  src/main.c:167  if (joy & BUTTON_LEFT)  shipX -= SHIP_SPEED;
+
+== Lint findings, by measured cost ==
+negligible        66 /frame (0.05% of a frame)  src/main.c:187 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+    7,548 /frame  src/main.c:191 (main), mostly own code
+    4,032 /frame  src/main.c:182 (main), mostly own code
+    3,713 /frame  src/main.c:196 (main), mostly own code
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

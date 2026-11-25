@@ -1,0 +1,36 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 5,753 cycles per frame on average (4.5%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,497 /frame  60.8% of busy  src/main.c:336  SYS_doVBlankProcess();
+                     3,468 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,468 cycles each
+      693 /frame  12.0% of busy  src/main.c:240  VDP_updateSprites(1, DMA_QUEUE);
+                       629 in DMA_transfer.isra.0: 0.49 calls/frame, 1,294 cycles each
+      318 /frame   5.5% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        30 in no_xgm_task
+      271 /frame   4.7% of busy  src/main.c:325  SYS_disableInts();
+                       116 in SYS_getAndSetInterruptMaskLevel: 1.00 calls/frame, 116 cycles each
+      220 /frame   3.8% of busy  src/main.c:328  SYS_enableInts();
+                        96 in SYS_setInterruptMaskLevel: 1.00 calls/frame, 96 cycles each
+       67 /frame   1.2% of busy  src/main.c:235  if (spriteDirty || (playerX != lastPlayerX) || (playerY != l
+       58 /frame   1.0% of busy  src/main.c:207  const u32 target = (scrollX >> 3) + COLS_AHEAD;
+       53 /frame   0.9% of busy  src/main.c:327  VDP_DATA_W = (u16)(-(s16)(scrollX & PLANE_PIX_MASK));
+       49 /frame   0.9% of busy  src/main.c:209  while (nextColumn <= target)
+       41 /frame   0.7% of busy  src/main.c:224  if (pad & BUTTON_LEFT)  playerX -= PLAYER_SPEED;
+       38 /frame   0.7% of busy  src/main.c:226  if (pad & BUTTON_UP)    playerY -= PLAYER_SPEED;
+       33 /frame   0.6% of busy  src/main.c:238  VDP_setSpriteFull(0, playerX, playerY, SPRITE_SIZE(2, 2),
+       33 /frame   0.6% of busy  src/main.c:188  SYS_disableInts();
+                        14 in SYS_getAndSetInterruptMaskLevel: 0.12 calls/frame, 116 cycles each
+       28 /frame   0.5% of busy  src/main.c:323  scrollX += SCROLL_SPEED;
+       27 /frame   0.5% of busy  src/main.c:225  if (pad & BUTTON_RIGHT) playerX += PLAYER_SPEED;
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

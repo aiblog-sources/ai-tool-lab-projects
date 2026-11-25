@@ -1,0 +1,45 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,172 cycles per frame on average (3.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,412 /frame  81.8% of busy  src/main.c:312  SYS_doVBlankProcess();
+                     3,394 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,394 cycles each
+      318 /frame   7.6% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+       44 /frame   1.1% of busy  src/main.c:262  if (gameOver || timeUp)
+       41 /frame   1.0% of busy  src/main.c:123  *plctrl = VDP_WRITE_VRAM_ADDR((u32)VDP_getPlaneAddress(BG_A,
+       37 /frame   0.9% of busy  src/main.c:154  *pwdata = base + fill;
+       36 /frame   0.9% of busy  src/main.c:298  frameCount++;
+       34 /frame   0.8% of busy  src/main.c:125  *pwdata = base + scoreDigits[i];
+       32 /frame   0.8% of busy  src/main.c:110  VDP_drawText(buf, TIME_X + 6, TIME_Y);
+                        31 in VDP_drawText: 0.02 calls/frame, 1,871 cycles each
+                 lint [text] guarded: VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+       27 /frame   0.7% of busy  src/main.c:299  if (frameCount >= framesPerSecond)
+       23 /frame   0.5% of busy  src/main.c:277  if ((pad & BUTTON_B) && health > 0)
+       22 /frame   0.5% of busy  src/main.c:270  if (pad & BUTTON_A)
+       21 /frame   0.5% of busy  src/main.c:148  *plctrl = VDP_WRITE_VRAM_ADDR((u32)VDP_getPlaneAddress(BG_A,
+       17 /frame   0.4% of busy  src/main.c:153  if (fill > 8) fill = 8;
+       12 /frame   0.3% of busy  src/main.c:208  if (++scoreDigits[i] < 10) break;
+        9 /frame   0.2% of busy  src/main.c:155  rem -= 8;
+
+== Lint findings, by measured cost ==
+negligible        32 /frame (0.03% of a frame)  src/main.c:110 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:134 [tile-loop] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:162 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:164 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:166 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:169 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:171 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:176 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:177 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:178 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:179 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:180 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

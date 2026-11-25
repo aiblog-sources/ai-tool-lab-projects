@@ -1,0 +1,47 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 9,084 cycles per frame on average (7.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,745 /frame  41.2% of busy  src/main.c:352  SYS_doVBlankProcess();
+                     3,727 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,727 cycles each
+    1,430 /frame  15.7% of busy  src/main.c:176  VDP_setSpriteFull(1 + i, (s16) (enemyX[i] >> 8), (s16) (enem
+    1,012 /frame  11.1% of busy  src/main.c:186  VDP_updateSprites(NUM_SPRITES, DMA_QUEUE);
+                       794 in DMA_queueDmaFast: 1.00 calls/frame, 794 cycles each
+      565 /frame   6.2% of busy  src/main.c:238  enemyY[i] += ((s32) dy * ENEMY_SPEED) / dist;
+                       458 in __divsi3: 0.79 calls/frame, 578 cycles each
+                 lint [div] guarded: '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23. Here: 8 passes x
+      559 /frame   6.1% of busy  src/main.c:237  enemyX[i] += ((s32) dx * ENEMY_SPEED) / dist;
+                       457 in __divsi3: 0.79 calls/frame, 577 cycles each
+                 lint [div] guarded: '/' on 32-bit / 32-bit: 617 cycles (s32 / s32); SGDK divu()/divs() is 133-139, a shift is 23. Here: 8 passes x
+      318 /frame   3.5% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      213 /frame   2.3% of busy  src/main.c:114  while (bit > n) bit >>= 2;
+      182 /frame   2.0% of busy  src/main.c:170  VDP_setSpriteFull(0, (s16) (playerX >> 8), (s16) (playerY >>
+      160 /frame   1.8% of busy  src/main.c:117  if (n >= res + bit)
+      122 /frame   1.3% of busy  src/main.c:182  VDP_setSpriteFull(NUM_SPRITES - 1, coinX, coinY,
+       90 /frame   1.0% of busy  src/main.c:230  d2 = (u32) ((s32) dx * dx + (s32) dy * dy);
+       85 /frame   0.9% of busy  src/main.c:120  res = (res >> 1) + bit;
+       84 /frame   0.9% of busy  src/main.c:115  while (bit)
+       71 /frame   0.8% of busy  src/main.c:123  bit >>= 2;
+       60 /frame   0.7% of busy  src/main.c:312  switch (state)
+
+== Lint findings, by measured cost ==
+     small       565 /frame (0.44% of a frame)  src/main.c:238 [div] guarded
+     small       559 /frame (0.44% of a frame)  src/main.c:237 [div] guarded
+negligible         6 /frame (0.00% of a frame)  src/main.c:139 [text] guarded
+negligible         5 /frame (0.00% of a frame)  src/main.c:142 [text] guarded
+negligible         5 /frame (0.00% of a frame)  src/main.c:331 [text] guarded
+negligible         4 /frame (0.00% of a frame)  src/main.c:330 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:138 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:141 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:319 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:344 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:343 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

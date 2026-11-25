@@ -1,0 +1,44 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,010 cycles per frame on average (3.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    2,124 /frame  53.0% of busy  src/main.c:220  SYS_doVBlankProcess();
+                     2,107 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.62 calls/frame, 3,390 cycles each
+    1,288 /frame  32.1% of busy  src/main.c:357  SYS_doVBlankProcess();
+                     1,282 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.38 calls/frame, 3,387 cycles each
+      318 /frame   7.9% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+       75 /frame   1.9% of busy  src/main.c:219  random();                       /* keep the RNG state moving
+       22 /frame   0.5% of busy  src/main.c:204  else if ((pad & BUTTON_RIGHT) && curDir != DIR_LEFT) nextDir
+       20 /frame   0.5% of busy  src/main.c:129  VDP_setTileMapXY(BG_A, ATTR(tileIdx), x, y);
+                 lint [tile-loop] hot: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+       17 /frame   0.4% of busy  src/main.c:228  VDP_clearPlane(BG_A, TRUE);
+       11 /frame   0.3% of busy  src/main.c:203  else if ((pad & BUTTON_LEFT) && curDir != DIR_RIGHT) nextDir
+       10 /frame   0.2% of busy  src/main.c:217  if ((pad & BUTTON_START) && !(old & BUTTON_START)) break;
+        9 /frame   0.2% of busy  src/main.c:201  if ((pad & BUTTON_UP) && curDir != DIR_DOWN)         nextDir
+        8 /frame   0.2% of busy  src/main.c:134  VDP_setTileMapXY(BG_A, 0, x, y);
+        8 /frame   0.2% of busy  src/main.c:202  else if ((pad & BUTTON_DOWN) && curDir != DIR_UP)    nextDir
+        8 /frame   0.2% of busy  src/main.c:247  VDP_fillTileMapRect(BG_A, ATTR(TILE_WALL_IDX), GRID_W - 1, 1
+        7 /frame   0.2% of busy  src/main.c:246  VDP_fillTileMapRect(BG_A, ATTR(TILE_WALL_IDX), 0, 1, 1, GRID
+        7 /frame   0.2% of busy  src/main.c:230  memset(grid, 0, sizeof(grid));
+                         7 in memset.constprop.0: 0.00 calls/frame, 4,140 cycles each
+
+== Lint findings, by measured cost ==
+negligible        20 /frame (0.02% of a frame)  src/main.c:129 [tile-loop] hot
+negligible         4 /frame (0.00% of a frame)  src/main.c:405 [text] frame
+negligible         4 /frame (0.00% of a frame)  src/main.c:406 [text] frame
+negligible         3 /frame (0.00% of a frame)  src/main.c:140 [text] frame
+negligible         3 /frame (0.00% of a frame)  src/main.c:152 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:141 [text] frame
+negligible         3 /frame (0.00% of a frame)  src/main.c:159 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:151 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:158 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:350 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

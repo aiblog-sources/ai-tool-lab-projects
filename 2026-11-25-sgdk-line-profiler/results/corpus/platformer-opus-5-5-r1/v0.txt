@@ -1,0 +1,41 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 8,220 cycles per frame on average (6.4%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,555 /frame  43.3% of busy  src/main.c:460  SYS_doVBlankProcess();
+                     3,528 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.99 calls/frame, 3,546 cycles each
+    1,422 /frame  17.3% of busy  src/main.c:403  VDP_updateSprites(1, DMA_QUEUE);
+                     1,288 in DMA_transfer.isra.0: 0.99 calls/frame, 1,295 cycles each
+      503 /frame   6.1% of busy  src/main.c:199  VDP_setTileMapXY(BG_A, attr, x, y);
+                 lint [tile-loop] heavy: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+      318 /frame   3.9% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      293 /frame   3.6% of busy  src/main.c:333  if (level[ty][tx] == 'o')
+      133 /frame   1.6% of busy  src/main.c:209  return level[ty][tx] == '#';
+      126 /frame   1.5% of busy  src/main.c:330  for (s16 tx = tx0; tx <= tx1; tx++)
+       97 /frame   1.2% of busy  src/main.c:400  VDP_setSpriteFull(0, sx, sy, SPRITE_SIZE(2, 2),
+       96 /frame   1.2% of busy  src/main.c:206  if (tx < 0 || tx >= LVL_W) return TRUE;
+       68 /frame   0.8% of busy  src/main.c:332  if (tx < 0 || tx >= LVL_W) continue;
+       67 /frame   0.8% of busy  src/main.c:239  px += vx;
+       65 /frame   0.8% of busy  src/main.c:327  for (s16 ty = ty0; ty <= ty1; ty++)
+       56 /frame   0.7% of busy  src/main.c:218  sprintf(buf, "SCORE %05u", score);
+                        55 in sprintf: 0.01 calls/frame, 4,684 cycles each
+                 lint [text] guarded: sprintf on the frame path: 12,582 cycles (10% of a frame) for "SCORE %ld"; redraw only when the value changes
+       50 /frame   0.6% of busy  src/main.c:289  for (s16 tx = tx0; tx <= tx1; tx++)
+       49 /frame   0.6% of busy  src/main.c:398  s16 sy = FROM_FP(py);
+
+== Lint findings, by measured cost ==
+     small       503 /frame (0.39% of a frame)  src/main.c:199 [tile-loop] heavy
+negligible        56 /frame (0.04% of a frame)  src/main.c:218 [text] guarded
+negligible        37 /frame (0.03% of a frame)  src/main.c:220 [text] guarded
+negligible        32 /frame (0.02% of a frame)  src/main.c:219 [text] guarded
+negligible        27 /frame (0.02% of a frame)  src/main.c:221 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:336 [tile-loop] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

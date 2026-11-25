@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 1,678 cycles per frame on average (1.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+      623 /frame  37.1% of busy  src/main.c:285  VDP_updateSprites(1, CPU);
+                       438 in DMA_doCPUCopyDirect: 1.00 calls/frame, 438 cycles each
+      318 /frame  19.0% of busy  [no game line]:0  
+                       124 in no_user_task
+                       124 in no_bmp_task
+                        30 in no_xgm_task
+      114 /frame   6.8% of busy  src/main.c:123  if (x < 0 || y < 0 ||
+      106 /frame   6.3% of busy  src/main.c:283  VDP_setSprite(0, px, py, SPRITE_SIZE(2, 2),
+       94 /frame   5.6% of busy  src/main.c:241  u16 pressed = pad & ~prevPad;
+       44 /frame   2.6% of busy  src/main.c:287  VDP_waitVSync();
+                         0 in VDP_waitVBlank
+       37 /frame   2.2% of busy  src/main.c:260  vy += GRAVITY;
+       34 /frame   2.0% of busy  src/main.c:254  if ((pressed & BUTTON_A) && onGround)
+       32 /frame   1.9% of busy  src/main.c:167  if (blocked(px, py + step))
+       26 /frame   1.5% of busy  src/main.c:271  if (ground && !onGround)
+       24 /frame   1.4% of busy  src/main.c:131  x1 = (u16)(x + PLAYER_W - 1) >> TILE_SHIFT;
+       23 /frame   1.4% of busy  src/main.c:248  if (pad & BUTTON_LEFT)
+       22 /frame   1.3% of busy  src/main.c:250  else if (pad & BUTTON_RIGHT)
+       22 /frame   1.3% of busy  src/main.c:130  x0 = (u16)x >> TILE_SHIFT;
+       20 /frame   1.2% of busy  src/main.c:247  vx = 0;
+
+== Lint findings, by measured cost ==
+   not run         0 /frame (0.00% of a frame)  src/main.c:206 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame
