@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 16,655 cycles per frame on average (13.0%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    4,477 /frame  26.9% of busy  src/main.c:163  SYS_doVBlankProcess();
+                     4,449 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 4,449 cycles each
+    3,800 /frame  22.8% of busy  src/main.c:53  VDP_setSpriteFull(i, 0, 0, SPRITE_SIZE(1, 1),
+    1,924 /frame  11.6% of busy  src/main.c:83  for (u16 i = 0; i < NUM_PARTICLES; i++)
+    1,097 /frame   6.6% of busy  src/main.c:87  if (p->life == 0)
+      994 /frame   6.0% of busy  src/main.c:161  VDP_updateSprites(NUM_PARTICLES, DMA_QUEUE);
+                       796 in DMA_queueDmaFast: 1.00 calls/frame, 796 cycles each
+      703 /frame   4.2% of busy  src/main.c:103  bool offscreen = (sx < -8) || (sx > 320) || (sy < -8) || (sy
+      683 /frame   4.1% of busy  src/main.c:111  VDP_setSpriteFull(i,
+      410 /frame   2.5% of busy  src/main.c:94  p->x += p->vx;
+      409 /frame   2.5% of busy  src/main.c:93  p->vy += GRAVITY;
+      351 /frame   2.1% of busy  src/main.c:95  p->y += p->vy;
+      333 /frame   2.0% of busy  src/main.c:102  bool blinkHidden = (p->life < (lifeFrames >> 2)) && (p->life
+      318 /frame   1.9% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      262 /frame   1.6% of busy  src/main.c:98  s16 sx = F16_toInt(p->x);
+      234 /frame   1.4% of busy  src/main.c:96  p->life--;
+      220 /frame   1.3% of busy  src/main.c:99  s16 sy = F16_toInt(p->y);
+
+== Lint findings, by measured cost ==
+negligible        40 /frame (0.03% of a frame)  src/main.c:71 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+    3,800 /frame  src/main.c:53 (hideSprite), mostly own code
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

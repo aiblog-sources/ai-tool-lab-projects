@@ -1,0 +1,42 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 5,623 cycles per frame on average (4.4%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,404 /frame  60.5% of busy  src/main.c:258  SYS_doVBlankProcess();
+                     3,386 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,386 cycles each
+      482 /frame   8.6% of busy  src/main.c:151  if (fill != barFill[i])
+      318 /frame   5.7% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+      286 /frame   5.1% of busy  src/main.c:131  VDP_drawTextBG(BG_A, buf, 8 + (SCORE_DIGITS - 1 - i), 4);
+                       195 in VDP_setTileMapDataRowEx.constprop.0: 0.18 calls/frame, 1,075 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+      187 /frame   3.3% of busy  src/main.c:148  else if (remaining >= 8) fill = 8;
+      173 /frame   3.1% of busy  src/main.c:147  if (remaining <= 0)      fill = 0;
+      172 /frame   3.1% of busy  src/main.c:123  for (i = 0; i < SCORE_DIGITS; i++)
+      159 /frame   2.8% of busy  src/main.c:125  if (scoreDigits[i] != scoreDrawn[i])
+      117 /frame   2.1% of busy  src/main.c:144  s16 remaining = (s16)health - (s16)(i * 8);
+       62 /frame   1.1% of busy  src/main.c:90  VDP_drawTextBG(BG_A, buf, 7, 2);
+                        21 in VDP_setTileMapDataRowEx.constprop.0: 0.02 calls/frame, 1,258 cycles each
+                 lint [text] guarded: VDP_drawTextBG on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only wh
+       46 /frame   0.8% of busy  src/main.c:251  if (lives != livesDrawn)
+       42 /frame   0.8% of busy  src/main.c:245  if (timeLeft != timeDrawn)
+       26 /frame   0.5% of busy  src/main.c:154  VDP_setTileMapXY(BG_A,
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+       22 /frame   0.4% of busy  src/main.c:218  if (joy & BUTTON_A)
+       22 /frame   0.4% of busy  src/main.c:238  if (frameTick >= fpsTarget)
+
+== Lint findings, by measured cost ==
+     small       286 /frame (0.22% of a frame)  src/main.c:131 [text] guarded
+negligible        62 /frame (0.05% of a frame)  src/main.c:90 [text] guarded
+negligible        26 /frame (0.02% of a frame)  src/main.c:154 [tile-loop] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:68 [div] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:73 [text] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:69 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

@@ -1,0 +1,43 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 7,983 cycles per frame on average (6.2%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,591 /frame  45.0% of busy  src/main.c:472  SYS_doVBlankProcess();
+                     3,563 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,563 cycles each
+      950 /frame  11.9% of busy  src/main.c:470  VDP_updateSprites(2, DMA_QUEUE);
+                       793 in DMA_queueDmaFast: 1.00 calls/frame, 793 cycles each
+      537 /frame   6.7% of busy  src/main.c:214  col = (u16)divu((u32)(x - BRICK_X0 * 8), BRICK_W_TILES * 8);
+      444 /frame   5.6% of busy  src/main.c:209  {
+      338 /frame   4.2% of busy  src/main.c:229  }
+      318 /frame   4.0% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+      208 /frame   2.6% of busy  src/main.c:212  if (x < BRICK_X0 * 8 || y < BRICK_Y0 * 8) return FALSE;
+      148 /frame   1.9% of busy  src/main.c:468  VDP_setSpritePosition(0, ballX >> 8, ballY >> 8);
+      147 /frame   1.8% of busy  src/main.c:236  r |= hitBrickPoint(x + BALL_SIZE - 1, y);
+                         0 in hitBrickPoint
+      121 /frame   1.5% of busy  src/main.c:235  r |= hitBrickPoint(x, y);
+                         0 in hitBrickPoint
+      106 /frame   1.3% of busy  src/main.c:332  if (hitBricks(nx >> 8, ballY >> 8)) ballVX = -ballVX;
+      105 /frame   1.3% of busy  src/main.c:237  r |= hitBrickPoint(x, y + BALL_SIZE - 1);
+                         0 in hitBrickPoint
+      104 /frame   1.3% of busy  src/main.c:217  if (col >= BRICK_COLS || row >= BRICK_ROWS) return FALSE;
+       86 /frame   1.1% of busy  src/main.c:238  r |= hitBrickPoint(x + BALL_SIZE - 1, y + BALL_SIZE - 1);
+                         0 in hitBrickPoint
+       71 /frame   0.9% of busy  src/main.c:215  row = (u16)(y - BRICK_Y0 * 8) >> 3;
+
+== Lint findings, by measured cost ==
+negligible        11 /frame (0.01% of a frame)  src/main.c:178 [text] guarded
+negligible         8 /frame (0.01% of a frame)  src/main.c:159 [text] guarded
+negligible         4 /frame (0.00% of a frame)  src/main.c:177 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:186 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:185 [text] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:176 [text] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:184 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

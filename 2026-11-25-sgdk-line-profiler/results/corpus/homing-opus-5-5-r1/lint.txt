@@ -1,0 +1,39 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 8,052 cycles per frame on average (6.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,748 /frame  46.5% of busy  src/main.c:507  SYS_doVBlankProcess();
+                     3,720 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,720 cycles each
+    1,430 /frame  17.8% of busy  src/main.c:448  VDP_updateSprites(SPR_COUNT, DMA_QUEUE);
+                     1,296 in DMA_transfer.isra.0: 1.00 calls/frame, 1,296 cycles each
+    1,428 /frame  17.7% of busy  src/main.c:442  VDP_setSpriteFull(idx, FROM_FP(enemies[i].x), FROM_FP(enemie
+      318 /frame   4.0% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        32 in no_xgm_task
+      182 /frame   2.3% of busy  src/main.c:427  VDP_setSpriteFull(SPR_PLAYER, FROM_FP(playerX), FROM_FP(play
+      122 /frame   1.5% of busy  src/main.c:432  VDP_setSpriteFull(SPR_GEM, gemX, gemY,
+       90 /frame   1.1% of busy  src/main.c:153  __asm__ ("divs.w %2, %0" : "=d"(num) : "0"(num), "dmi"(den) 
+       59 /frame   0.7% of busy  src/main.c:393  e->y += e->vy;
+       58 /frame   0.7% of busy  src/main.c:396  if ((iabs16(FROM_FP(e->x) - px) < 6) && (iabs16(FROM_FP(e->y
+       52 /frame   0.6% of busy  src/main.c:501  if (score != shownScore)     drawScore();
+       51 /frame   0.6% of busy  src/main.c:392  e->x += e->vx;
+       45 /frame   0.6% of busy  src/main.c:385  for (i = 0; i < NUM_ENEMIES; i++)
+       44 /frame   0.6% of busy  src/main.c:146  return (v < 0) ? -v : v;
+       44 /frame   0.5% of busy  src/main.c:502  if (seconds != shownSeconds) drawTime();
+       42 /frame   0.5% of busy  src/main.c:173  return (s16)((((s32)mx * 123) + ((s32)mn * 51)) >> 7);
+
+== Lint findings, by measured cost ==
+negligible         7 /frame (0.01% of a frame)  src/main.c:493 [text] guarded
+negligible         6 /frame (0.00% of a frame)  src/main.c:264 [text] guarded
+negligible         5 /frame (0.00% of a frame)  src/main.c:272 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:263 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:279 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:280 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:271 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

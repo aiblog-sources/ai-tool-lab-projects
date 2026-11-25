@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 12,421 cycles per frame on average (9.7%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    4,814 /frame  38.8% of busy  src/main.c:168  SYS_doVBlankProcess();
+                     4,770 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 4,770 cycles each
+    2,109 /frame  17.0% of busy  src/main.c:104  while (spr != end);
+    1,292 /frame  10.4% of busy  src/main.c:92  s16 x = s->x - s->speed;
+    1,050 /frame   8.5% of busy  src/main.c:95  if (x < SPR_OFF - 8)
+      954 /frame   7.7% of busy  src/main.c:167  VDP_updateSprites(NUM_SPRITES, DMA_QUEUE);
+                       794 in DMA_queueDmaFast: 1.00 calls/frame, 794 cycles each
+      524 /frame   4.2% of busy  src/main.c:99  spr->x = x;                          /* y never changes for 
+      512 /frame   4.1% of busy  src/main.c:98  s->x = x;
+      512 /frame   4.1% of busy  src/main.c:101  s++;
+      318 /frame   2.6% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+       42 /frame   0.3% of busy  src/main.c:96  x = SPR_OFF + SCREEN_W + (random() & 15);
+       41 /frame   0.3% of busy  src/main.c:111  if (joy & BUTTON_LEFT)  shipX -= SHIP_SPEED;
+       38 /frame   0.3% of busy  src/main.c:113  if (joy & BUTTON_UP)    shipY -= SHIP_SPEED;
+       31 /frame   0.3% of busy  src/main.c:122  vdpSpriteCache[SHIP_SPRITE].y = shipY + SPR_OFF;
+       27 /frame   0.2% of busy  src/main.c:112  if (joy & BUTTON_RIGHT) shipX += SHIP_SPEED;
+       26 /frame   0.2% of busy  src/main.c:121  vdpSpriteCache[SHIP_SPRITE].x = shipX + SPR_OFF;
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

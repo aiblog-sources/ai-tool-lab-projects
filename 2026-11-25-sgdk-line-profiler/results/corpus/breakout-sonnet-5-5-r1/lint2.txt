@@ -1,0 +1,42 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 6,189 cycles per frame on average (4.8%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,582 /frame  57.9% of busy  src/main.c:426  SYS_doVBlankProcess();
+                     3,564 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,564 cycles each
+      949 /frame  15.3% of busy  src/main.c:364  VDP_updateSprites(2, DMA_QUEUE);
+                       793 in DMA_queueDmaFast: 1.00 calls/frame, 793 cycles each
+      318 /frame   5.1% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+      171 /frame   2.8% of busy  src/main.c:247  if (px < 0 || py < 0) return FALSE;
+                         0 in hitBrickAt.part.0
+      108 /frame   1.8% of busy  src/main.c:243  static bool hitBrickAt(s16 px, s16 py)
+      107 /frame   1.7% of busy  src/main.c:263  }
+      106 /frame   1.7% of busy  src/main.c:362  VDP_setSpriteFull(1, ballX, ballY, SPRITE_SIZE(1, 1),
+       93 /frame   1.5% of busy  src/main.c:360  VDP_setSpriteFull(0, paddleX, PADDLE_Y, SPRITE_SIZE(4, 1),
+       77 /frame   1.2% of busy  src/main.c:249  ty = (u16)py >> 3;
+       70 /frame   1.1% of busy  src/main.c:250  if (ty < BRICK_ROW0 || ty >= BRICK_ROW0 + BRICK_ROWS) return
+       69 /frame   1.1% of busy  src/main.c:269  if (hitBrickAt(ballX,                 ballY))               
+                         0 in hitBrickAt.part.0
+       59 /frame   1.0% of busy  src/main.c:274  }
+       43 /frame   0.7% of busy  src/main.c:267  {
+       43 /frame   0.7% of busy  src/main.c:391  if (state == ST_SERVE || state == ST_PLAY)
+       31 /frame   0.5% of busy  src/main.c:423  if (hudDirty) drawHud();
+                         0 in drawHud
+
+== Lint findings, by measured cost ==
+negligible         9 /frame (0.01% of a frame)  src/main.c:217 [text] guarded
+negligible         6 /frame (0.00% of a frame)  src/main.c:175 [text] guarded
+negligible         4 /frame (0.00% of a frame)  src/main.c:181 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:174 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:180 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:161 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:162 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

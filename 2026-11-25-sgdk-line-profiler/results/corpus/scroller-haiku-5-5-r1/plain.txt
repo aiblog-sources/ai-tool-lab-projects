@@ -1,0 +1,34 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 96,168 cycles per frame on average (75.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+   94,472 /frame  98.2% of busy  src/main.c:144  FAST_VDP_CTRL = 0x8F80;                                   /*
+      918 /frame   1.0% of busy  src/main.c:235  SYS_doVBlankProcess();
+                       908 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.27 calls/frame, 3,406 cycles each
+      237 /frame   0.2% of busy  src/main.c:227  VDP_updateSprites(1, DMA);
+                       207 in DMA_doDmaFast: 0.27 calls/frame, 773 cycles each
+      106 /frame   0.1% of busy  [no game line]:0  
+                        42 in no_bmp_task
+                        41 in no_user_task
+                        10 in no_xgm_task
+       48 /frame   0.0% of busy  src/main.c:147  FAST_VDP_DATA = cells[i];
+       44 /frame   0.0% of busy  src/main.c:233  VDP_setHorizontalScroll(BG_B, -(s16)((u16)camX & (PLANE_W_PI
+       42 /frame   0.0% of busy  src/main.c:158  for (row = 0; row < SCREEN_TILE_H; row++)
+       36 /frame   0.0% of busy  src/main.c:146  for (i = 0; i < SCREEN_TILE_H; i++)
+       31 /frame   0.0% of busy  src/main.c:187  }
+       27 /frame   0.0% of busy  src/main.c:164  if (below <= 0)
+       26 /frame   0.0% of busy  src/main.c:182  while ((genCol << 3) < camX + SCREEN_W + 8)
+       26 /frame   0.0% of busy  src/main.c:181  {
+       21 /frame   0.0% of busy  src/main.c:225  VDP_setSprite(0, px, py, SPRITE_SIZE(2, 2),
+       19 /frame   0.0% of busy  src/main.c:149  SYS_enableInts();
+                        10 in SYS_setInterruptMaskLevel: 0.07 calls/frame, 148 cycles each
+       17 /frame   0.0% of busy  src/main.c:171  cells[row] = bgAttr[idx];
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+   94,472 /frame  src/main.c:144 (writeColumn), mostly own code
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 106 cycles per frame

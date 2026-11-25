@@ -1,0 +1,10 @@
+{
+ "tag": "platformer-haiku-5-5-r1",
+ "model": "claude-haiku-5-5",
+ "builds": true,
+ "build_rounds": 0,
+ "calls": 1,
+ "cost_usd": 0.0053,
+ "claude_wall_s": 31.8,
+ "output_tokens": 8220
+}

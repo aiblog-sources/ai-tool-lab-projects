@@ -1,0 +1,37 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 8,121 cycles per frame on average (6.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,474 /frame  42.8% of busy  src/main.c:408  SYS_doVBlankProcess();
+                     3,455 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,455 cycles each
+      418 /frame   5.1% of busy  src/main.c:252  VDP_updateSprites(1, DMA_QUEUE);
+                       328 in DMA_queueDmaFast: 0.41 calls/frame, 794 cycles each
+      369 /frame   4.5% of busy  src/main.c:200  if (*p++ == '#') return TRUE;
+      356 /frame   4.4% of busy  src/main.c:275  if (posX < cx + 8 && pxr > cx &&
+      322 /frame   4.0% of busy  src/main.c:268  for (u16 i = 0; i < NUM_COINS; i++, c++)
+      318 /frame   3.9% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      301 /frame   3.7% of busy  src/main.c:192  s16 rows = ty1 - ty0;
+      267 /frame   3.3% of busy  src/main.c:191  const char *row = &level[ty0][tx0];
+      235 /frame   2.9% of busy  src/main.c:272  const s16 cx = c->x << 3;
+      212 /frame   2.6% of busy  src/main.c:201  } while (c--);
+      205 /frame   2.5% of busy  src/main.c:270  if (c->taken) continue;
+      153 /frame   1.9% of busy  src/main.c:204  } while (rows--);
+      151 /frame   1.9% of busy  src/main.c:180  s16 ty1 = (py + (PLAYER_H - 1)) >> 3;
+      106 /frame   1.3% of busy  src/main.c:190  const s16 cols = tx1 - tx0;
+       98 /frame   1.2% of busy  src/main.c:183  if (tx0 < 0 || tx1 >= MAP_W) return TRUE;
+
+== Lint findings, by measured cost ==
+negligible         3 /frame (0.00% of a frame)  src/main.c:233 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:234 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:232 [text] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:279 [tile-loop] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:237 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

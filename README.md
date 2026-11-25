@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [sgdkhot: a line profiler for SGDK games (every cycle charged to a C line), run against a lint on 40 Claude-written games](2026-11-25-sgdk-line-profiler/) | [SGDK line profiler: which lint warnings really cost cycles](https://aitoollabs.dev/posts/sgdk-line-profiler/) | Shipped |
 | [Claude Code and a PreToolUse hook that blocks edits to tests/: does it route around the block? 9 guard conditions, 558 runs](2026-11-24-claude-hook-bypass/) | [Does Claude Code bypass a hook that blocks test edits? 558 runs](https://aitoollabs.dev/posts/claude-code-hook-bypass-tests/) | Shipped |
 | [Claude writing NES (NMI) and Master System (VBlank interrupt) video updates: 96 routines timed write by write against the end of VBlank](2026-11-23-vblank-asm/) | [Can Claude fit NES and Master System updates in VBlank?](https://aitoollabs.dev/posts/claude-vblank-nes-master-system/) | Shipped |
 | [Claude Code facing one failing unit test: wrong code or wrong test, 7 prompt and CLAUDE.md conditions, 756 runs](2026-11-22-claude-wrong-test/) | [Does Claude Code edit tests to make them pass? 756 runs](https://aitoollabs.dev/posts/claude-code-edits-tests-to-pass/) | Shipped |

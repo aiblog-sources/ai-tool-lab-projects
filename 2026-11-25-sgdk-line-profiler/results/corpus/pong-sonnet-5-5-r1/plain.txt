@@ -1,0 +1,38 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 5,508 cycles per frame on average (4.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,528 /frame  64.1% of busy  src/main.c:338  SYS_doVBlankProcess();
+                     3,500 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,500 cycles each
+      849 /frame  15.4% of busy  src/main.c:276  VDP_updateSprites(3, DMA_QUEUE);
+                       764 in DMA_transfer.isra.0: 0.59 calls/frame, 1,295 cycles each
+      318 /frame   5.8% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+       83 /frame   1.5% of busy  src/main.c:262  if (leftY == lastLeftY && rightY == lastRightY &&
+       46 /frame   0.8% of busy  src/main.c:171  if (rightY < PLAY_TOP) rightY = PLAY_TOP;
+       41 /frame   0.7% of busy  src/main.c:185  ballX += ballVX;
+       39 /frame   0.7% of busy  src/main.c:146  if (pad & BUTTON_UP)   leftY -= PLAYER_SPEED;
+       36 /frame   0.7% of busy  src/main.c:186  ballY += ballVY;
+       33 /frame   0.6% of busy  src/main.c:259  const s16 bpy = (s16)(ballY >> 8);
+       31 /frame   0.6% of busy  src/main.c:179  if (serveTimer > 0)
+       29 /frame   0.5% of busy  src/main.c:158  s16 center = rightY + PADDLE_H / 2;
+       27 /frame   0.5% of busy  src/main.c:161  if (ballVX > 0)
+       22 /frame   0.4% of busy  src/main.c:147  if (pad & BUTTON_DOWN) leftY += PLAYER_SPEED;
+       20 /frame   0.4% of busy  src/main.c:96  VDP_drawText(s, 29, 0);
+                        19 in VDP_drawText: 0.01 calls/frame, 1,456 cycles each
+                 lint [text] guarded: VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+       20 /frame   0.4% of busy  src/main.c:93  VDP_drawText(s, 10, 0);
+                        19 in VDP_drawText: 0.01 calls/frame, 1,457 cycles each
+                 lint [text] guarded: VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes
+
+== Lint findings, by measured cost ==
+negligible        20 /frame (0.02% of a frame)  src/main.c:93 [text] guarded
+negligible        20 /frame (0.02% of a frame)  src/main.c:96 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

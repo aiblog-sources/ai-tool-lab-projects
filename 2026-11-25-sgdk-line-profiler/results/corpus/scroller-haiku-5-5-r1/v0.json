@@ -1,0 +1,394 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 6350.795833333334,
+ "unmapped_per_frame": 318.3566666666667,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 202,
+   "function": "main",
+   "per_frame": 3424.5616666666665,
+   "self_per_frame": 29.918333333333333,
+   "pct_busy": 53.92334687713023,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3394.6433333333334,
+     1.0,
+     3394.6433333333334
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 138,
+   "function": "generateColumn",
+   "per_frame": 933.4416666666667,
+   "self_per_frame": 933.4416666666667,
+   "pct_busy": 14.698026690880605,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 194,
+   "function": "main",
+   "per_frame": 933.0625,
+   "self_per_frame": 160.84833333333333,
+   "pct_busy": 14.692056310528011,
+   "calls": [
+    [
+     "DMA_doDmaFast",
+     772.2141666666666,
+     1.0,
+     772.2141666666666
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 318.3566666666667,
+   "self_per_frame": 0.0,
+   "pct_busy": 5.012862561188197,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.42666666666666,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.20333333333333,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     31.153333333333332,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.573333333333334,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 200,
+   "function": "main",
+   "per_frame": 175.21833333333333,
+   "self_per_frame": 175.21833333333333,
+   "pct_busy": 2.7589980520813993,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 125,
+   "function": "generateColumn",
+   "per_frame": 115.52333333333333,
+   "self_per_frame": 115.52333333333333,
+   "pct_busy": 1.8190371154271348,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 149,
+   "function": "fillAhead",
+   "per_frame": 76.5,
+   "self_per_frame": 76.5,
+   "pct_busy": 1.2045734425672374,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 192,
+   "function": "main",
+   "per_frame": 76.24666666666667,
+   "self_per_frame": 76.24666666666667,
+   "pct_busy": 1.2005844411888011,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 131,
+   "function": "generateColumn",
+   "per_frame": 61.99166666666667,
+   "self_per_frame": 61.99166666666667,
+   "pct_busy": 0.9761243833614028,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 188,
+   "function": "main",
+   "per_frame": 36.026666666666664,
+   "self_per_frame": 36.026666666666664,
+   "pct_busy": 0.5672779855018171,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 190,
+   "function": "main",
+   "per_frame": 34.751666666666665,
+   "self_per_frame": 34.751666666666665,
+   "pct_busy": 0.5472017614590298,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 133,
+   "function": "generateColumn",
+   "per_frame": 33.76833333333333,
+   "self_per_frame": 33.76833333333333,
+   "pct_busy": 0.5317181376874683,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 182,
+   "function": "main",
+   "per_frame": 21.333333333333332,
+   "self_per_frame": 21.333333333333332,
+   "pct_busy": 0.3359159055525193,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 183,
+   "function": "main",
+   "per_frame": 20.753333333333334,
+   "self_per_frame": 20.753333333333334,
+   "pct_busy": 0.32678319187031024,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 185,
+   "function": "main",
+   "per_frame": 20.18166666666667,
+   "self_per_frame": 20.18166666666667,
+   "pct_busy": 0.31778169533870754,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 184,
+   "function": "main",
+   "per_frame": 20.17,
+   "self_per_frame": 20.17,
+   "pct_busy": 0.31759799132785854,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 144,
+   "function": "generateColumn",
+   "per_frame": 8.535,
+   "self_per_frame": 8.535,
+   "pct_busy": 0.13439260565112904,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 180,
+   "function": "main",
+   "per_frame": 8.0,
+   "self_per_frame": 8.0,
+   "pct_busy": 0.12596846458219474,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 120,
+   "function": "generateColumn",
+   "per_frame": 6.0,
+   "self_per_frame": 6.0,
+   "pct_busy": 0.09447634843664607,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 152,
+   "function": "fillAhead",
+   "per_frame": 3.53,
+   "self_per_frame": 3.53,
+   "pct_busy": 0.055583584996893434,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 151,
+   "function": "fillAhead",
+   "per_frame": 3.5,
+   "self_per_frame": 3.5,
+   "pct_busy": 0.0551112032547102,
+   "calls": [
+    [
+     "generateColumn",
+     0.0,
+     0.125,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 98,
+   "function": "stepSurface",
+   "per_frame": 3.455,
+   "self_per_frame": 3.455,
+   "pct_busy": 0.05440263064143536,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 104,
+   "function": "stepSurface",
+   "per_frame": 2.76,
+   "self_per_frame": 2.76,
+   "pct_busy": 0.04345912028085719,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 121,
+   "function": "generateColumn",
+   "per_frame": 2.6333333333333333,
+   "self_per_frame": 2.6333333333333333,
+   "pct_busy": 0.04146461959163911,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 116,
+   "function": "stepSurface",
+   "per_frame": 1.8483333333333334,
+   "self_per_frame": 1.8483333333333334,
+   "pct_busy": 0.029103964004511245,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 139,
+   "function": "generateColumn",
+   "per_frame": 1.5266666666666666,
+   "self_per_frame": 1.5266666666666666,
+   "pct_busy": 0.024038981991102167,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 114,
+   "function": "stepSurface",
+   "per_frame": 1.1816666666666666,
+   "self_per_frame": 1.1816666666666666,
+   "pct_busy": 0.018606591955995018,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 113,
+   "function": "stepSurface",
+   "per_frame": 1.0616666666666668,
+   "self_per_frame": 1.0616666666666668,
+   "pct_busy": 0.016717064987262095,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 100,
+   "function": "stepSurface",
+   "per_frame": 0.9883333333333333,
+   "self_per_frame": 0.9883333333333333,
+   "pct_busy": 0.015562354061925309,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 108,
+   "function": "stepSurface",
+   "per_frame": 0.94,
+   "self_per_frame": 0.94,
+   "pct_busy": 0.014801294588407883,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 85,
+   "function": "rnd",
+   "per_frame": 0.915,
+   "self_per_frame": 0.915,
+   "pct_busy": 0.014407643136588525,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 105,
+   "function": "stepSurface",
+   "per_frame": 0.9,
+   "self_per_frame": 0.9,
+   "pct_busy": 0.01417145226549691,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 109,
+   "function": "stepSurface",
+   "per_frame": 0.8933333333333333,
+   "self_per_frame": 0.8933333333333333,
+   "pct_busy": 0.014066478545011748,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 86,
+   "function": "rnd",
+   "per_frame": 0.24,
+   "self_per_frame": 0.24,
+   "pct_busy": 0.0037790539374658425,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 138,
+   "function": "generateColumn",
+   "rule": "tile-loop",
+   "level": "hot",
+   "loops": 2,
+   "trips": 1,
+   "est_cycles": 324,
+   "guarded": false,
+   "message": "VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37 (one 40-tile row: 12,966 vs 732 vs 1,470)",
+   "measured_per_frame": 933.4,
+   "measured_pct_frame": 0.73,
+   "verdict": "small",
+   "calls": []
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "scroller-haiku-5-5-r1",
+ "stage": "v0",
+ "builds": true,
+ "mean_load": 4.96,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 7620784,
+  "charged": 7620955
+ }
+}

@@ -1,0 +1,39 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 9,533 cycles per frame on average (7.4%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,748 /frame  39.3% of busy  src/main.c:439  SYS_doVBlankProcess();
+                     3,722 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,722 cycles each
+    1,430 /frame  15.0% of busy  src/main.c:261  VDP_setSpriteFull(SPR_ENEMY0 + i, (ex[i] >> 8) + 128, (ey[i]
+    1,426 /frame  15.0% of busy  src/main.c:273  VDP_updateSprites(NUM_SPRITES, DMA_QUEUE);
+                     1,292 in DMA_transfer.isra.0: 1.00 calls/frame, 1,292 cycles each
+      581 /frame   6.1% of busy  src/main.c:302  s32 dist = (s32)isqrt32((u32)(dx * dx + dy * dy));
+                       476 in __mulsi3: 1.88 calls/frame, 253 cycles each
+      318 /frame   3.3% of busy  [no game line]:0  
+                       124 in no_bmp_task
+                       124 in no_user_task
+                        30 in no_xgm_task
+      289 /frame   3.0% of busy  src/main.c:169  if (n >= res + bit)
+      207 /frame   2.2% of busy  src/main.c:310  ey[i] += divs(dy * ENEMY_SPEED, (s16)dist);
+      206 /frame   2.2% of busy  src/main.c:309  ex[i] += divs(dx * ENEMY_SPEED, (s16)dist);
+      182 /frame   1.9% of busy  src/main.c:254  VDP_setSpriteFull(SPR_PLAYER, (px >> 8) + 128, (py >> 8) + 1
+      149 /frame   1.6% of busy  src/main.c:172  res = (res >> 1) + bit;
+      148 /frame   1.6% of busy  src/main.c:165  while (bit > n) bit >>= 2;
+      127 /frame   1.3% of busy  src/main.c:178  bit >>= 2;
+      122 /frame   1.3% of busy  src/main.c:268  VDP_setSpriteFull(SPR_GEM, gemX + 128, gemY + 128,
+      117 /frame   1.2% of busy  src/main.c:167  while (bit != 0)
+       60 /frame   0.6% of busy  src/main.c:436  if (scoreDirty || timeDirty) drawHud();
+
+== Lint findings, by measured cost ==
+negligible         6 /frame (0.00% of a frame)  src/main.c:209 [text] guarded
+negligible         5 /frame (0.00% of a frame)  src/main.c:216 [text] guarded
+negligible         5 /frame (0.00% of a frame)  src/main.c:428 [text] guarded
+negligible         4 /frame (0.00% of a frame)  src/main.c:427 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:208 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:215 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

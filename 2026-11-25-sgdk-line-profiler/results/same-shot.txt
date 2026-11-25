@@ -1,0 +1,9 @@
+haiku-5-5    hot    programs 10  identical  7  median pixels differing 0.00%  over 5%: 0
+haiku-5-5    lint2  programs 10  identical  8  median pixels differing 0.00%  over 5%: 0
+haiku-5-5    plain  programs 10  identical  7  median pixels differing 0.00%  over 5%: 1
+opus-5-5     hot    programs 10  identical  8  median pixels differing 0.00%  over 5%: 1
+opus-5-5     lint2  programs  9  identical  9  median pixels differing 0.00%  over 5%: 0
+opus-5-5     plain  programs 10  identical  9  median pixels differing 0.00%  over 5%: 0
+sonnet-5-5   hot    programs 20  identical 15  median pixels differing 0.00%  over 5%: 0
+sonnet-5-5   lint2  programs 18  identical 15  median pixels differing 0.00%  over 5%: 2
+sonnet-5-5   plain  programs 20  identical 12  median pixels differing 0.00%  over 5%: 2

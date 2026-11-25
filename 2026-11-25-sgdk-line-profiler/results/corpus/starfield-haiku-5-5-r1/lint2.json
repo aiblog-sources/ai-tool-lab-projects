@@ -1,0 +1,316 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 25638.9875,
+ "unmapped_per_frame": 318.075,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 191,
+   "function": "main",
+   "per_frame": 7548.1016666666665,
+   "self_per_frame": 7548.1016666666665,
+   "pct_busy": 29.439936606961044,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 211,
+   "function": "main",
+   "per_frame": 4819.7675,
+   "self_per_frame": 47.21666666666667,
+   "pct_busy": 18.79858750272412,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     4772.550833333334,
+     1.0,
+     4772.550833333334
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 182,
+   "function": "main",
+   "per_frame": 4031.605,
+   "self_per_frame": 4031.605,
+   "pct_busy": 15.724509401941086,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 196,
+   "function": "main",
+   "per_frame": 3713.2533333333336,
+   "self_per_frame": 3713.2533333333336,
+   "pct_busy": 14.482839204681282,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 178,
+   "function": "main",
+   "per_frame": 2242.8016666666667,
+   "self_per_frame": 2242.8016666666667,
+   "pct_busy": 8.747621826589942,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 210,
+   "function": "main",
+   "per_frame": 976.5566666666666,
+   "self_per_frame": 182.26,
+   "pct_busy": 3.8088737578528273,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     794.2966666666666,
+     1.0,
+     794.2966666666666
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 184,
+   "function": "main",
+   "per_frame": 767.7933333333333,
+   "self_per_frame": 767.7933333333333,
+   "pct_busy": 2.9946320358139467,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 197,
+   "function": "main",
+   "per_frame": 535.275,
+   "self_per_frame": 535.275,
+   "pct_busy": 2.0877384491099735,
+   "calls": []
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 318.075,
+   "self_per_frame": 0.0,
+   "pct_busy": 1.2405911114859742,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.53,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.87,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.205,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.47,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 192,
+   "function": "main",
+   "per_frame": 256.00166666666667,
+   "self_per_frame": 256.00166666666667,
+   "pct_busy": 0.9984858671453647,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 201,
+   "function": "main",
+   "per_frame": 101.74,
+   "self_per_frame": 101.74,
+   "pct_busy": 0.3968175420343725,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 175,
+   "function": "main",
+   "per_frame": 71.22166666666666,
+   "self_per_frame": 71.22166666666666,
+   "pct_busy": 0.27778658056082234,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 187,
+   "function": "main",
+   "per_frame": 66.35666666666667,
+   "self_per_frame": 66.35666666666667,
+   "pct_busy": 0.25881157228485197,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 173,
+   "function": "main",
+   "per_frame": 42.05833333333333,
+   "self_per_frame": 42.05833333333333,
+   "pct_busy": 0.16404053917235747,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 167,
+   "function": "main",
+   "per_frame": 23.485,
+   "self_per_frame": 23.485,
+   "pct_busy": 0.09159878095810141,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 168,
+   "function": "main",
+   "per_frame": 22.26,
+   "self_per_frame": 22.26,
+   "pct_busy": 0.08682090117638226,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 169,
+   "function": "main",
+   "per_frame": 20.506666666666668,
+   "self_per_frame": 20.506666666666668,
+   "pct_busy": 0.07998235759764954,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 170,
+   "function": "main",
+   "per_frame": 20.505,
+   "self_per_frame": 20.505,
+   "pct_busy": 0.07997585708093972,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 165,
+   "function": "main",
+   "per_frame": 20.001666666666665,
+   "self_per_frame": 20.001666666666665,
+   "pct_busy": 0.07801270103457349,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 114,
+   "function": "rnd",
+   "per_frame": 13.445,
+   "self_per_frame": 13.445,
+   "pct_busy": 0.052439668298133846,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 115,
+   "function": "rnd",
+   "per_frame": 11.368333333333334,
+   "self_per_frame": 11.368333333333334,
+   "pct_busy": 0.04434002447769567,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 113,
+   "function": "rnd",
+   "per_frame": 10.64,
+   "self_per_frame": 10.64,
+   "pct_busy": 0.04149929867550347,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 186,
+   "function": "main",
+   "per_frame": 6.168333333333333,
+   "self_per_frame": 6.168333333333333,
+   "pct_busy": 0.02405841234305112,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 187,
+   "function": "main",
+   "rule": "div",
+   "level": "guarded",
+   "loops": 1,
+   "trips": 64,
+   "est_cycles": 28992,
+   "guarded": true,
+   "message": "'%' with an operand of unknown type: 453 to 1,062 cycles if the other operand is 32-bit or signed, 117 if both are u16. Here: 64 passes x 453 = 28,992 cycles (23% of a frame)",
+   "measured_per_frame": 66.4,
+   "measured_pct_frame": 0.05,
+   "verdict": "negligible",
+   "calls": []
+  }
+ ],
+ "unflagged_hot": [
+  {
+   "file": "src/main.c",
+   "line": 191,
+   "function": "main",
+   "per_frame": 7548.1016666666665,
+   "self_per_frame": 7548.1016666666665,
+   "pct_busy": 29.439936606961044,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 182,
+   "function": "main",
+   "per_frame": 4031.605,
+   "self_per_frame": 4031.605,
+   "pct_busy": 15.724509401941086,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 196,
+   "function": "main",
+   "per_frame": 3713.2533333333336,
+   "self_per_frame": 3713.2533333333336,
+   "pct_busy": 14.482839204681282,
+   "calls": []
+  }
+ ],
+ "tag": "starfield-haiku-5-5-r1",
+ "stage": "lint2",
+ "builds": true,
+ "mean_load": 20.03,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 30766443,
+  "charged": 30766785
+ }
+}

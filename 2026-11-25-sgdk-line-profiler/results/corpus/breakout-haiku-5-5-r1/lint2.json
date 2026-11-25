@@ -1,0 +1,1010 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 6038.009166666667,
+ "unmapped_per_frame": 317.9483333333333,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 464,
+   "function": "main",
+   "per_frame": 3424.119166666667,
+   "self_per_frame": 37.40833333333333,
+   "pct_busy": 56.709406563504444,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3386.7108333333335,
+     1.0,
+     3386.7108333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 420,
+   "function": "updateSprites",
+   "per_frame": 755.455,
+   "self_per_frame": 187.39,
+   "pct_busy": 12.511657056941091,
+   "calls": [
+    [
+     "DMA_doCPUCopyDirect",
+     568.065,
+     1.0,
+     568.065
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.9483333333333,
+   "self_per_frame": 0.0,
+   "pct_busy": 5.26578089825689,
+   "calls": [
+    [
+     "no_bmp_task",
+     124.30166666666666,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.87666666666667,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     30.071666666666665,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     23.698333333333334,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 233,
+   "function": "checkBricks",
+   "per_frame": 228.43333333333334,
+   "self_per_frame": 228.43333333333334,
+   "pct_busy": 3.783255822041785,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 142,
+   "function": "iabs",
+   "per_frame": 181.595,
+   "self_per_frame": 181.595,
+   "pct_busy": 3.0075310418955694,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 246,
+   "function": "checkBricks",
+   "per_frame": 147.125,
+   "self_per_frame": 147.125,
+   "pct_busy": 2.4366475097821287,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 241,
+   "function": "checkBricks",
+   "per_frame": 109.78,
+   "self_per_frame": 109.78,
+   "pct_busy": 1.8181489456168707,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 410,
+   "function": "updateSprites",
+   "per_frame": 89.15,
+   "self_per_frame": 89.15,
+   "pct_busy": 1.4764800373633087,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 415,
+   "function": "updateSprites",
+   "per_frame": 89.06,
+   "self_per_frame": 89.06,
+   "pct_busy": 1.4749894798382082,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 243,
+   "function": "checkBricks",
+   "per_frame": 76.36,
+   "self_per_frame": 76.36,
+   "pct_busy": 1.2646552512962674,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 379,
+   "function": "gameFrame",
+   "per_frame": 64.17,
+   "self_per_frame": 64.17,
+   "pct_busy": 1.0627675153965621,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "checkBricks",
+   "per_frame": 44.38666666666666,
+   "self_per_frame": 44.38666666666666,
+   "pct_busy": 0.7351208890457961,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 374,
+   "function": "gameFrame",
+   "per_frame": 40.935,
+   "self_per_frame": 40.935,
+   "pct_busy": 0.6779552476664839,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 408,
+   "function": "updateSprites",
+   "per_frame": 36.7,
+   "self_per_frame": 36.7,
+   "pct_busy": 0.6078162352353721,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 407,
+   "function": "updateSprites",
+   "per_frame": 36.45666666666666,
+   "self_per_frame": 36.45666666666666,
+   "pct_busy": 0.6037862093341748,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 371,
+   "function": "gameFrame",
+   "per_frame": 36.016666666666666,
+   "self_per_frame": 36.016666666666666,
+   "pct_busy": 0.596499039211462,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 375,
+   "function": "gameFrame",
+   "per_frame": 27.545,
+   "self_per_frame": 27.545,
+   "pct_busy": 0.45619341143210695,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 458,
+   "function": "main",
+   "per_frame": 26.435,
+   "self_per_frame": 26.435,
+   "pct_busy": 0.4378098686225358,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 453,
+   "function": "main",
+   "per_frame": 24.0,
+   "self_per_frame": 24.0,
+   "pct_busy": 0.39748200669343137,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 377,
+   "function": "gameFrame",
+   "per_frame": 22.723333333333333,
+   "self_per_frame": 22.723333333333333,
+   "pct_busy": 0.37633817217071136,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 376,
+   "function": "gameFrame",
+   "per_frame": 20.585,
+   "self_per_frame": 20.585,
+   "pct_busy": 0.34092362949101185,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 191,
+   "function": "drawHUD",
+   "per_frame": 20.408333333333335,
+   "self_per_frame": 0.5616666666666666,
+   "pct_busy": 0.33799772027507413,
+   "calls": [
+    [
+     "VDP_drawText",
+     19.846666666666668,
+     0.0075,
+     2646.222222222222
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 163,
+   "function": "showMessage",
+   "per_frame": 19.75,
+   "self_per_frame": 0.36833333333333335,
+   "pct_busy": 0.32709456800813624,
+   "calls": [
+    [
+     "VDP_drawText",
+     19.381666666666668,
+     0.005,
+     3876.3333333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 192,
+   "function": "drawHUD",
+   "per_frame": 17.575,
+   "self_per_frame": 0.5966666666666667,
+   "pct_busy": 0.291072761151544,
+   "calls": [
+    [
+     "VDP_drawText",
+     16.97833333333333,
+     0.0075,
+     2263.777777777778
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 274,
+   "function": "placeBallOnPaddle",
+   "per_frame": 17.496666666666666,
+   "self_per_frame": 17.496666666666666,
+   "pct_busy": 0.2897754240463641,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 411,
+   "function": "updateSprites",
+   "per_frame": 16.111666666666668,
+   "self_per_frame": 16.111666666666668,
+   "pct_busy": 0.2668373999100973,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 454,
+   "function": "main",
+   "per_frame": 16.001666666666665,
+   "self_per_frame": 16.001666666666665,
+   "pct_busy": 0.2650156073794191,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 452,
+   "function": "main",
+   "per_frame": 16.0,
+   "self_per_frame": 16.0,
+   "pct_busy": 0.2649880044622876,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 244,
+   "function": "checkBricks",
+   "per_frame": 12.081666666666667,
+   "self_per_frame": 12.081666666666667,
+   "pct_busy": 0.2000935462861586,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 300,
+   "function": "stepBall",
+   "per_frame": 11.068333333333333,
+   "self_per_frame": 11.068333333333333,
+   "pct_busy": 0.18331097267021373,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 299,
+   "function": "stepBall",
+   "per_frame": 10.49,
+   "self_per_frame": 10.49,
+   "pct_busy": 0.1737327604255873,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 242,
+   "function": "checkBricks",
+   "per_frame": 9.931666666666667,
+   "self_per_frame": 9.931666666666667,
+   "pct_busy": 0.16448578318653873,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 395,
+   "function": "gameFrame",
+   "per_frame": 8.413333333333334,
+   "self_per_frame": 8.413333333333334,
+   "pct_busy": 0.13933952567975288,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 341,
+   "function": "stepBall",
+   "per_frame": 6.946666666666666,
+   "self_per_frame": 6.946666666666666,
+   "pct_busy": 0.1150489586040432,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 275,
+   "function": "placeBallOnPaddle",
+   "per_frame": 6.673333333333333,
+   "self_per_frame": 6.673333333333333,
+   "pct_busy": 0.11052208019447911,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 324,
+   "function": "stepBall",
+   "per_frame": 5.901666666666666,
+   "self_per_frame": 5.901666666666666,
+   "pct_busy": 0.09774192956260004,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 382,
+   "function": "gameFrame",
+   "per_frame": 4.321666666666666,
+   "self_per_frame": 4.321666666666666,
+   "pct_busy": 0.07157436412194913,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 303,
+   "function": "stepBall",
+   "per_frame": 4.1883333333333335,
+   "self_per_frame": 4.1883333333333335,
+   "pct_busy": 0.06936613075143007,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 318,
+   "function": "stepBall",
+   "per_frame": 4.051666666666667,
+   "self_per_frame": 4.051666666666667,
+   "pct_busy": 0.06710269154664804,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 302,
+   "function": "stepBall",
+   "per_frame": 3.316666666666667,
+   "self_per_frame": 3.316666666666667,
+   "pct_busy": 0.0549298050916617,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 310,
+   "function": "stepBall",
+   "per_frame": 3.09,
+   "self_per_frame": 3.09,
+   "pct_busy": 0.05117580836177929,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 350,
+   "function": "stepBall",
+   "per_frame": 3.04,
+   "self_per_frame": 3.04,
+   "pct_busy": 0.05034772084783464,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 317,
+   "function": "stepBall",
+   "per_frame": 3.0016666666666665,
+   "self_per_frame": 3.0016666666666665,
+   "pct_busy": 0.04971285375381041,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 306,
+   "function": "stepBall",
+   "per_frame": 2.6533333333333333,
+   "self_per_frame": 2.6533333333333333,
+   "pct_busy": 0.04394384407332936,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 212,
+   "function": "clearBrick",
+   "per_frame": 2.5366666666666666,
+   "self_per_frame": 2.5366666666666666,
+   "pct_busy": 0.04201163987412518,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 155,
+   "function": "showMessage",
+   "per_frame": 1.76,
+   "self_per_frame": 1.76,
+   "pct_busy": 0.029148680490851633,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 169,
+   "function": "drawHUD",
+   "per_frame": 1.43,
+   "self_per_frame": 1.43,
+   "pct_busy": 0.02368330289881695,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 183,
+   "function": "drawHUD",
+   "per_frame": 1.405,
+   "self_per_frame": 1.405,
+   "pct_busy": 0.023269259141844627,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 160,
+   "function": "showMessage",
+   "per_frame": 1.025,
+   "self_per_frame": 1.025,
+   "pct_busy": 0.0169757940358653,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 180,
+   "function": "drawHUD",
+   "per_frame": 0.705,
+   "self_per_frame": 0.705,
+   "pct_busy": 0.011676033946619547,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 326,
+   "function": "stepBall",
+   "per_frame": 0.6766666666666666,
+   "self_per_frame": 0.6766666666666666,
+   "pct_busy": 0.011206784355384245,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 173,
+   "function": "drawHUD",
+   "per_frame": 0.5333333333333333,
+   "self_per_frame": 0.5333333333333333,
+   "pct_busy": 0.008832933482076253,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 325,
+   "function": "stepBall",
+   "per_frame": 0.3983333333333333,
+   "self_per_frame": 0.3983333333333333,
+   "pct_busy": 0.006597097194425701,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 156,
+   "function": "showMessage",
+   "per_frame": 0.38666666666666666,
+   "self_per_frame": 0.38666666666666666,
+   "pct_busy": 0.006403876774505283,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 177,
+   "function": "drawHUD",
+   "per_frame": 0.385,
+   "self_per_frame": 0.385,
+   "pct_busy": 0.006376273857373795,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 259,
+   "function": "checkBricks",
+   "per_frame": 0.37666666666666665,
+   "self_per_frame": 0.37666666666666665,
+   "pct_busy": 0.006238259271716354,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 187,
+   "function": "drawHUD",
+   "per_frame": 0.365,
+   "self_per_frame": 0.365,
+   "pct_busy": 0.006045038851795936,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 170,
+   "function": "drawHUD",
+   "per_frame": 0.36,
+   "self_per_frame": 0.36,
+   "pct_busy": 0.005962230100401471,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 159,
+   "function": "showMessage",
+   "per_frame": 0.35333333333333333,
+   "self_per_frame": 0.35333333333333333,
+   "pct_busy": 0.005851818431875517,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 153,
+   "function": "showMessage",
+   "per_frame": 0.3516666666666667,
+   "self_per_frame": 0.3516666666666667,
+   "pct_busy": 0.005824215514744029,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 184,
+   "function": "drawHUD",
+   "per_frame": 0.31666666666666665,
+   "self_per_frame": 0.31666666666666665,
+   "pct_busy": 0.005244554254982775,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 181,
+   "function": "drawHUD",
+   "per_frame": 0.3016666666666667,
+   "self_per_frame": 0.3016666666666667,
+   "pct_busy": 0.00499612800079938,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 262,
+   "function": "checkBricks",
+   "per_frame": 0.26,
+   "self_per_frame": 0.26,
+   "pct_busy": 0.004306055072512173,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 256,
+   "function": "checkBricks",
+   "per_frame": 0.25833333333333336,
+   "self_per_frame": 0.25833333333333336,
+   "pct_busy": 0.004278452155380685,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 150,
+   "function": "showMessage",
+   "per_frame": 0.21166666666666667,
+   "self_per_frame": 0.21166666666666667,
+   "pct_busy": 0.0035055704756990127,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 157,
+   "function": "showMessage",
+   "per_frame": 0.195,
+   "self_per_frame": 0.195,
+   "pct_busy": 0.0032295413043841297,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 261,
+   "function": "checkBricks",
+   "per_frame": 0.18333333333333332,
+   "self_per_frame": 0.18333333333333332,
+   "pct_busy": 0.003036320884463712,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 189,
+   "function": "drawHUD",
+   "per_frame": 0.15166666666666667,
+   "self_per_frame": 0.15166666666666667,
+   "pct_busy": 0.0025118654589654345,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 460,
+   "function": "main",
+   "per_frame": 0.15,
+   "self_per_frame": 0.15,
+   "pct_busy": 0.0024842625418339463,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 263,
+   "function": "checkBricks",
+   "per_frame": 0.135,
+   "self_per_frame": 0.135,
+   "pct_busy": 0.0022358362876505515,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 253,
+   "function": "checkBricks",
+   "per_frame": 0.12833333333333333,
+   "self_per_frame": 0.12833333333333333,
+   "pct_busy": 0.0021254246191245983,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 176,
+   "function": "drawHUD",
+   "per_frame": 0.12333333333333334,
+   "self_per_frame": 0.12333333333333334,
+   "pct_busy": 0.0020426158677301336,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 383,
+   "function": "gameFrame",
+   "per_frame": 0.10833333333333334,
+   "self_per_frame": 0.10833333333333334,
+   "pct_busy": 0.0017941896135467389,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 255,
+   "function": "checkBricks",
+   "per_frame": 0.08166666666666667,
+   "self_per_frame": 0.08166666666666667,
+   "pct_busy": 0.0013525429394429262,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 162,
+   "function": "showMessage",
+   "per_frame": 0.08,
+   "self_per_frame": 0.08,
+   "pct_busy": 0.001324940022311438,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 210,
+   "function": "clearBrick",
+   "per_frame": 0.08,
+   "self_per_frame": 0.08,
+   "pct_busy": 0.001324940022311438,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 251,
+   "function": "checkBricks",
+   "per_frame": 0.075,
+   "self_per_frame": 0.075,
+   "pct_busy": 0.0012421312709169732,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 280,
+   "function": "loseLife",
+   "per_frame": 0.065,
+   "self_per_frame": 0.065,
+   "pct_busy": 0.0010765137681280432,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 385,
+   "function": "gameFrame",
+   "per_frame": 0.06,
+   "self_per_frame": 0.06,
+   "pct_busy": 0.0009937050167335784,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 281,
+   "function": "loseLife",
+   "per_frame": 0.05333333333333334,
+   "self_per_frame": 0.05333333333333334,
+   "pct_busy": 0.0008832933482076252,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 384,
+   "function": "gameFrame",
+   "per_frame": 0.051666666666666666,
+   "self_per_frame": 0.051666666666666666,
+   "pct_busy": 0.000855690431076137,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 283,
+   "function": "loseLife",
+   "per_frame": 0.051666666666666666,
+   "self_per_frame": 0.051666666666666666,
+   "pct_busy": 0.000855690431076137,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 289,
+   "function": "loseLife",
+   "per_frame": 0.04666666666666667,
+   "self_per_frame": 0.04666666666666667,
+   "pct_busy": 0.0007728816796816722,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 285,
+   "function": "loseLife",
+   "per_frame": 0.03833333333333333,
+   "self_per_frame": 0.03833333333333333,
+   "pct_busy": 0.0006348670940242307,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 313,
+   "function": "stepBall",
+   "per_frame": 0.03666666666666667,
+   "self_per_frame": 0.03666666666666667,
+   "pct_busy": 0.0006072641768927424,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 334,
+   "function": "stepBall",
+   "per_frame": 0.035,
+   "self_per_frame": 0.035,
+   "pct_busy": 0.000579661259761254,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 252,
+   "function": "checkBricks",
+   "per_frame": 0.03333333333333333,
+   "self_per_frame": 0.03333333333333333,
+   "pct_busy": 0.0005520583426297658,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 148,
+   "function": "showMessage",
+   "per_frame": 0.03,
+   "self_per_frame": 0.03,
+   "pct_busy": 0.0004968525083667892,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 331,
+   "function": "stepBall",
+   "per_frame": 0.02666666666666667,
+   "self_per_frame": 0.02666666666666667,
+   "pct_busy": 0.0004416466741038126,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 332,
+   "function": "stepBall",
+   "per_frame": 0.023333333333333334,
+   "self_per_frame": 0.023333333333333334,
+   "pct_busy": 0.0003864408398408361,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 312,
+   "function": "stepBall",
+   "per_frame": 0.023333333333333334,
+   "self_per_frame": 0.023333333333333334,
+   "pct_busy": 0.0003864408398408361,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 286,
+   "function": "loseLife",
+   "per_frame": 0.02,
+   "self_per_frame": 0.02,
+   "pct_busy": 0.0003312350055778595,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 333,
+   "function": "stepBall",
+   "per_frame": 0.016666666666666666,
+   "self_per_frame": 0.016666666666666666,
+   "pct_busy": 0.0002760291713148829,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 329,
+   "function": "stepBall",
+   "per_frame": 0.01,
+   "self_per_frame": 0.01,
+   "pct_busy": 0.00016561750278892975,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 311,
+   "function": "stepBall",
+   "per_frame": 0.006666666666666667,
+   "self_per_frame": 0.006666666666666667,
+   "pct_busy": 0.00011041166852595315,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 163,
+   "function": "showMessage",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 19.8,
+   "measured_pct_frame": 0.02,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     19.381666666666668,
+     0.005,
+     3876.3333333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 191,
+   "function": "drawHUD",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 20.4,
+   "measured_pct_frame": 0.02,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     19.846666666666668,
+     0.0075,
+     2646.222222222222
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 192,
+   "function": "drawHUD",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 17.6,
+   "measured_pct_frame": 0.01,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawText",
+     16.97833333333333,
+     0.0075,
+     2263.777777777778
+    ]
+   ]
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "breakout-haiku-5-5-r1",
+ "stage": "lint2",
+ "builds": true,
+ "mean_load": 4.72,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 7245611,
+  "charged": 7245611
+ }
+}

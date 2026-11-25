@@ -1,0 +1,10 @@
+{
+ "tag": "starfield-sonnet-5-5-r2",
+ "model": "claude-sonnet-5-5",
+ "builds": true,
+ "build_rounds": 0,
+ "calls": 1,
+ "cost_usd": 0.0572,
+ "claude_wall_s": 23.5,
+ "output_tokens": 3896
+}

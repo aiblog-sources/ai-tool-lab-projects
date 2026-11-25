@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 17,557 cycles per frame on average (13.7%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,573 /frame  20.3% of busy  src/main.c:116  VDP_updateSprites(n, DMA);
+                     3,429 in DMA_transfer.isra.0: 1.00 calls/frame, 3,443 cycles each
+    3,414 /frame  19.4% of busy  src/main.c:155  SYS_doVBlankProcess();
+                     3,379 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,394 cycles each
+    1,936 /frame  11.0% of busy  src/main.c:76  for (u16 i = 0; i < MAX_PARTICLES; i++)
+    1,802 /frame  10.3% of busy  src/main.c:79  if (!p->life) continue;
+    1,195 /frame   6.8% of busy  src/main.c:97  VDP_setSpriteFull(n, sx, sy, SPRITE_SIZE(1, 1),
+      684 /frame   3.9% of busy  src/main.c:95  if (sx < -8 || sx > 320 || sy < -8 || sy > 224) continue;
+      642 /frame   3.7% of busy  src/main.c:89  if (p->life < (lifeFrames >> 2) && (p->life & 2)) continue;
+      527 /frame   3.0% of busy  src/main.c:98  TILE_ATTR_FULL(p->pal, TRUE, FALSE, FALSE, PARTICLE_TILE_IND
+      522 /frame   3.0% of busy  src/main.c:83  p->x  += p->vx;
+      518 /frame   2.9% of busy  src/main.c:84  p->y  += p->vy;
+      437 /frame   2.5% of busy  src/main.c:82  p->vy += GRAVITY;
+      427 /frame   2.4% of busy  src/main.c:92  s16 sy = (s16) (p->y >> FRAC_BITS) - 4;
+      331 /frame   1.9% of busy  src/main.c:91  s16 sx = (s16) (p->x >> FRAC_BITS) - 4;
+      318 /frame   1.8% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        30 in no_xgm_task
+      234 /frame   1.3% of busy  src/main.c:81  p->life--;
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+    3,573 /frame  src/main.c:116 (updateAndDraw), mostly DMA_transfer.isra.0
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

@@ -1,0 +1,38 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,205 cycles per frame on average (3.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,420 /frame  81.3% of busy  src/main.c:351  SYS_doVBlankProcess();
+                     3,402 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,402 cycles each
+      317 /frame   7.5% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        30 in no_xgm_task
+       70 /frame   1.7% of busy  src/main.c:122  VDP_setTileMapXY(BG_A, TILE_ATTR_FULL(PAL0, 0, 0, 0, T_DIGIT
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+       59 /frame   1.4% of busy  src/main.c:324  if (!gameOver && ++frameCount >= fps)
+       33 /frame   0.8% of busy  src/main.c:347  if (dirtyScore) { drawScore();     dirtyScore = FALSE; }
+       32 /frame   0.8% of busy  src/main.c:348  if (dirtyLives) { drawLives();     dirtyLives = FALSE; }
+       28 /frame   0.7% of busy  src/main.c:320  healthTick = 0;
+       27 /frame   0.7% of busy  src/main.c:278  if (!gameOver)
+       27 /frame   0.6% of busy  src/main.c:349  if (dirtyBar)   { drawHealthBar(); dirtyBar   = FALSE; }
+       27 /frame   0.6% of busy  src/main.c:346  if (dirtyTime)  { drawTime();      dirtyTime  = FALSE; }
+       22 /frame   0.5% of busy  src/main.c:119  if (v != shown[i])
+       22 /frame   0.5% of busy  src/main.c:281  if (pad & BUTTON_A)
+       21 /frame   0.5% of busy  src/main.c:288  if (pad & BUTTON_B)
+       15 /frame   0.4% of busy  src/main.c:154  if (fill > BAR_PIXELS_SEG) fill = BAR_PIXELS_SEG;
+       13 /frame   0.3% of busy  src/main.c:160  VDP_setTileMapXY(BG_A, TILE_ATTR_FULL(PAL1, 0, 0, 0, T_BAR0 
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+
+== Lint findings, by measured cost ==
+negligible        70 /frame (0.05% of a frame)  src/main.c:122 [tile-loop] guarded
+negligible        13 /frame (0.01% of a frame)  src/main.c:160 [tile-loop] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:143 [tile-loop] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:167 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:168 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 317 cycles per frame

@@ -1,0 +1,42 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 4,225 cycles per frame on average (3.3%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,409 /frame  80.7% of busy  src/main.c:374  SYS_doVBlankProcess();
+                     3,391 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,391 cycles each
+      317 /frame   7.5% of busy  [no game line]:0  
+                       126 in no_bmp_task
+                       123 in no_user_task
+                        30 in no_xgm_task
+      110 /frame   2.6% of busy  src/main.c:150  VDP_setTileMapXY(textPlane, textBase + (u16)(c - 32), x + i,
+                        61 in VDP_getPlaneAddress: 0.20 calls/frame, 303 cycles each
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+       65 /frame   1.5% of busy  src/main.c:348  if (state == STATE_RUNNING && ++frameCounter >= fps)
+       37 /frame   0.9% of busy  src/main.c:147  if (c != shown[i])
+       32 /frame   0.8% of busy  src/main.c:291  if (state == STATE_RUNNING)
+       31 /frame   0.7% of busy  src/main.c:370  if (scoreDirty) { drawScore(); scoreDirty = FALSE; }
+       30 /frame   0.7% of busy  src/main.c:372  if (livesDirty) { drawLives(); livesDirty = FALSE; }
+       30 /frame   0.7% of busy  src/main.c:371  if (timeDirty)  { drawTime();  timeDirty  = FALSE; }
+       28 /frame   0.7% of busy  src/main.c:294  if ((joy & BUTTON_A) && score < SCORE_MAX)
+       27 /frame   0.7% of busy  src/main.c:344  drainCounter = 0;
+       20 /frame   0.5% of busy  src/main.c:310  if (joy & BUTTON_B)
+       15 /frame   0.4% of busy  src/main.c:146  char c = str[i];
+       12 /frame   0.3% of busy  src/main.c:110  VDP_setTileMapXY(BG_A,
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+        8 /frame   0.2% of busy  src/main.c:287  u16 joy = JOY_readJoypad(JOY_1);
+
+== Lint findings, by measured cost ==
+negligible       110 /frame (0.09% of a frame)  src/main.c:150 [tile-loop] guarded
+negligible        12 /frame (0.01% of a frame)  src/main.c:110 [tile-loop] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:159 [div] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:160 [div] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:219 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:220 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:226 [text] guarded
+   not run         0 /frame (0.00% of a frame)  src/main.c:227 [text] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 317 cycles per frame

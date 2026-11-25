@@ -1,0 +1,1069 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 8289.6875,
+ "unmapped_per_frame": 317.95666666666665,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 360,
+   "function": "main",
+   "per_frame": 3723.974166666667,
+   "self_per_frame": 18.073333333333334,
+   "pct_busy": 44.92297407672686,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3705.900833333333,
+     1.0,
+     3705.900833333333
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 183,
+   "function": "drawSprites",
+   "per_frame": 1429.99,
+   "self_per_frame": 1429.99,
+   "pct_busy": 17.25022806951408,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 193,
+   "function": "drawSprites",
+   "per_frame": 1008.3066666666666,
+   "self_per_frame": 214.34,
+   "pct_busy": 12.163385732775412,
+   "calls": [
+    [
+     "DMA_queueDmaFast",
+     793.9666666666667,
+     1.0,
+     793.9666666666667
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 317.95666666666665,
+   "self_per_frame": 0.0,
+   "pct_busy": 3.835568791545721,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.86833333333334,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     122.145,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     31.811666666666667,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.131666666666668,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 114,
+   "function": "isqrt32",
+   "per_frame": 212.75833333333333,
+   "self_per_frame": 212.75833333333333,
+   "pct_busy": 2.566542265113532,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 246,
+   "function": "updateEnemies",
+   "per_frame": 191.13166666666666,
+   "self_per_frame": 191.13166666666666,
+   "pct_busy": 2.305655872632915,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 245,
+   "function": "updateEnemies",
+   "per_frame": 185.01,
+   "self_per_frame": 185.01,
+   "pct_busy": 2.231809100162099,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 177,
+   "function": "drawSprites",
+   "per_frame": 182.01,
+   "self_per_frame": 182.01,
+   "pct_busy": 2.1956195574320505,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 117,
+   "function": "isqrt32",
+   "per_frame": 160.64,
+   "self_per_frame": 160.64,
+   "pct_busy": 1.937829381385004,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 189,
+   "function": "drawSprites",
+   "per_frame": 122.0,
+   "self_per_frame": 122.0,
+   "pct_busy": 1.4717080710219776,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 237,
+   "function": "updateEnemies",
+   "per_frame": 89.61833333333334,
+   "self_per_frame": 89.61833333333334,
+   "pct_busy": 1.081082167854136,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 120,
+   "function": "isqrt32",
+   "per_frame": 84.51166666666667,
+   "self_per_frame": 84.51166666666667,
+   "pct_busy": 1.0194795240069865,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 123,
+   "function": "isqrt32",
+   "per_frame": 71.14333333333333,
+   "self_per_frame": 71.14333333333333,
+   "pct_busy": 0.8582149005415866,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 115,
+   "function": "isqrt32",
+   "per_frame": 67.465,
+   "self_per_frame": 67.465,
+   "pct_busy": 0.8138425000942436,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 320,
+   "function": "main",
+   "per_frame": 59.776666666666664,
+   "self_per_frame": 59.776666666666664,
+   "pct_busy": 0.7210967441977356,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 194,
+   "function": "drawSprites",
+   "per_frame": 47.586666666666666,
+   "self_per_frame": 47.586666666666666,
+   "pct_busy": 0.574046568904638,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 228,
+   "function": "updateEnemies",
+   "per_frame": 32.02166666666667,
+   "self_per_frame": 32.02166666666667,
+   "pct_busy": 0.3862831580402357,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 227,
+   "function": "updateEnemies",
+   "per_frame": 31.935,
+   "self_per_frame": 31.935,
+   "pct_busy": 0.3852376823613677,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 234,
+   "function": "updateEnemies",
+   "per_frame": 26.201666666666668,
+   "self_per_frame": 26.201666666666668,
+   "pct_busy": 0.31607544514394137,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 119,
+   "function": "isqrt32",
+   "per_frame": 25.121666666666666,
+   "self_per_frame": 25.121666666666666,
+   "pct_busy": 0.30304720976112387,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 174,
+   "function": "drawSprites",
+   "per_frame": 24.045,
+   "self_per_frame": 24.045,
+   "pct_busy": 0.29005918498133976,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 225,
+   "function": "updateEnemies",
+   "per_frame": 19.531666666666666,
+   "self_per_frame": 19.531666666666666,
+   "pct_busy": 0.23561402847413326,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 359,
+   "function": "main",
+   "per_frame": 18.028333333333332,
+   "self_per_frame": 18.028333333333332,
+   "pct_busy": 0.21747904650607558,
+   "calls": [
+    [
+     "drawSprites",
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 238,
+   "function": "updateEnemies",
+   "per_frame": 14.633333333333333,
+   "self_per_frame": 14.633333333333333,
+   "pct_busy": 0.17652454731657055,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 349,
+   "function": "main",
+   "per_frame": 12.485,
+   "self_per_frame": 12.485,
+   "pct_busy": 0.15060881366155238,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 112,
+   "function": "isqrt32",
+   "per_frame": 10.118333333333334,
+   "self_per_frame": 10.118333333333334,
+   "pct_busy": 0.12205928550784735,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 241,
+   "function": "updateEnemies",
+   "per_frame": 9.663333333333334,
+   "self_per_frame": 9.663333333333334,
+   "pct_busy": 0.11657053819378997,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 208,
+   "function": "updatePlayer",
+   "per_frame": 8.721666666666666,
+   "self_per_frame": 8.721666666666666,
+   "pct_busy": 0.10521104283685805,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 318,
+   "function": "main",
+   "per_frame": 8.018333333333333,
+   "self_per_frame": 8.018333333333333,
+   "pct_busy": 0.09672660559681331,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 230,
+   "function": "updateEnemies",
+   "per_frame": 7.18,
+   "self_per_frame": 7.18,
+   "pct_busy": 0.08661363893391638,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 223,
+   "function": "updateEnemies",
+   "per_frame": 6.941666666666666,
+   "self_per_frame": 6.941666666666666,
+   "pct_busy": 0.08373858081702919,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 229,
+   "function": "updateEnemies",
+   "per_frame": 6.3566666666666665,
+   "self_per_frame": 6.3566666666666665,
+   "pct_busy": 0.07668161998466971,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 222,
+   "function": "updateEnemies",
+   "per_frame": 5.355,
+   "self_per_frame": 5.355,
+   "pct_busy": 0.0645983337731368,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 148,
+   "function": "drawTime",
+   "per_frame": 5.211666666666667,
+   "self_per_frame": 0.265,
+   "pct_busy": 0.06286927784270115,
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     4.946666666666666,
+     0.0025,
+     1978.6666666666667
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 256,
+   "function": "checkCoin",
+   "per_frame": 5.128333333333333,
+   "self_per_frame": 5.128333333333333,
+   "pct_busy": 0.06186401276686646,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 339,
+   "function": "main",
+   "per_frame": 4.598333333333334,
+   "self_per_frame": 0.17,
+   "pct_busy": 0.05547052688455787,
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     4.428333333333334,
+     0.0016666666666666668,
+     2657.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 338,
+   "function": "main",
+   "per_frame": 4.3566666666666665,
+   "self_per_frame": 0.23666666666666666,
+   "pct_busy": 0.05255525816463729,
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     4.12,
+     0.0016666666666666668,
+     2472.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 209,
+   "function": "updatePlayer",
+   "per_frame": 4.165,
+   "self_per_frame": 4.165,
+   "pct_busy": 0.050243148490217514,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 212,
+   "function": "updatePlayer",
+   "per_frame": 3.7683333333333335,
+   "self_per_frame": 3.7683333333333335,
+   "pct_busy": 0.04545808672924442,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 140,
+   "function": "drawScore",
+   "per_frame": 3.723333333333333,
+   "self_per_frame": 0.23333333333333334,
+   "pct_busy": 0.044915243588293685,
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     3.49,
+     0.0016666666666666668,
+     2094.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 266,
+   "function": "updateTimer",
+   "per_frame": 3.6133333333333333,
+   "self_per_frame": 3.6133333333333333,
+   "pct_busy": 0.043588293688191906,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 111,
+   "function": "isqrt32",
+   "per_frame": 3.275,
+   "self_per_frame": 3.275,
+   "pct_busy": 0.039506917480303085,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 267,
+   "function": "updateTimer",
+   "per_frame": 2.57,
+   "self_per_frame": 2.57,
+   "pct_busy": 0.03100237493874166,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 211,
+   "function": "updatePlayer",
+   "per_frame": 2.38,
+   "self_per_frame": 2.38,
+   "pct_busy": 0.02871037056583858,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 213,
+   "function": "updatePlayer",
+   "per_frame": 2.38,
+   "self_per_frame": 2.38,
+   "pct_busy": 0.02871037056583858,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 214,
+   "function": "updatePlayer",
+   "per_frame": 2.38,
+   "self_per_frame": 2.38,
+   "pct_busy": 0.02871037056583858,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 202,
+   "function": "updatePlayer",
+   "per_frame": 2.3316666666666666,
+   "self_per_frame": 2.3316666666666666,
+   "pct_busy": 0.028127316821854462,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 147,
+   "function": "drawTime",
+   "per_frame": 2.17,
+   "self_per_frame": 0.18,
+   "pct_busy": 0.026177102574735177,
+   "calls": [
+    [
+     "uintToStr.isra.0",
+     1.99,
+     0.0025,
+     796.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 201,
+   "function": "updatePlayer",
+   "per_frame": 1.9833333333333334,
+   "self_per_frame": 1.9833333333333334,
+   "pct_busy": 0.023925308804865483,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 335,
+   "function": "main",
+   "per_frame": 1.8316666666666668,
+   "self_per_frame": 1.8316666666666668,
+   "pct_busy": 0.02209572636684636,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 203,
+   "function": "updatePlayer",
+   "per_frame": 1.785,
+   "self_per_frame": 1.785,
+   "pct_busy": 0.021532777924378934,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 204,
+   "function": "updatePlayer",
+   "per_frame": 1.785,
+   "self_per_frame": 1.785,
+   "pct_busy": 0.021532777924378934,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 221,
+   "function": "updateEnemies",
+   "per_frame": 1.785,
+   "self_per_frame": 1.785,
+   "pct_busy": 0.021532777924378934,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 139,
+   "function": "drawScore",
+   "per_frame": 1.53,
+   "self_per_frame": 0.14,
+   "pct_busy": 0.0184566667923248,
+   "calls": [
+    [
+     "uintToStr.isra.0",
+     1.39,
+     0.0016666666666666668,
+     834.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 198,
+   "function": "updatePlayer",
+   "per_frame": 0.9866666666666667,
+   "self_per_frame": 0.9866666666666667,
+   "pct_busy": 0.01190233849788266,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 352,
+   "function": "main",
+   "per_frame": 0.795,
+   "self_per_frame": 0.5416666666666666,
+   "pct_busy": 0.009590228823462887,
+   "calls": [
+    [
+     "VDP_getPlaneAddress",
+     0.25333333333333335,
+     0.0008333333333333334,
+     304.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 327,
+   "function": "main",
+   "per_frame": 0.785,
+   "self_per_frame": 0.5333333333333333,
+   "pct_busy": 0.009469597014362724,
+   "calls": [
+    [
+     "VDP_getPlaneAddress",
+     0.25166666666666665,
+     0.0008333333333333334,
+     302.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 351,
+   "function": "main",
+   "per_frame": 0.7133333333333334,
+   "self_per_frame": 0.46166666666666667,
+   "pct_busy": 0.008605069049144896,
+   "calls": [
+    [
+     "VDP_getPlaneAddress",
+     0.25166666666666665,
+     0.0008333333333333334,
+     302.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 254,
+   "function": "checkCoin",
+   "per_frame": 0.5266666666666666,
+   "self_per_frame": 0.5266666666666666,
+   "pct_busy": 0.006353275279275204,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 130,
+   "function": "spawnCoin",
+   "per_frame": 0.49333333333333335,
+   "self_per_frame": 0.49333333333333335,
+   "pct_busy": 0.00595116924894133,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 131,
+   "function": "spawnCoin",
+   "per_frame": 0.48,
+   "self_per_frame": 0.48,
+   "pct_busy": 0.00579032683680778,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 160,
+   "function": "resetGame",
+   "per_frame": 0.37833333333333335,
+   "self_per_frame": 0.37833333333333335,
+   "pct_busy": 0.004563903444289466,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "resetGame",
+   "per_frame": 0.37833333333333335,
+   "self_per_frame": 0.37833333333333335,
+   "pct_busy": 0.004563903444289466,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 323,
+   "function": "main",
+   "per_frame": 0.33,
+   "self_per_frame": 0.33,
+   "pct_busy": 0.003980849700305349,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 324,
+   "function": "main",
+   "per_frame": 0.145,
+   "self_per_frame": 0.145,
+   "pct_busy": 0.0017491612319523505,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "resetGame",
+   "per_frame": 0.14,
+   "self_per_frame": 0.14,
+   "pct_busy": 0.0016888453274022694,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 152,
+   "function": "resetGame",
+   "per_frame": 0.095,
+   "self_per_frame": 0.095,
+   "pct_busy": 0.0011460021864515399,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 155,
+   "function": "resetGame",
+   "per_frame": 0.04666666666666667,
+   "self_per_frame": 0.04666666666666667,
+   "pct_busy": 0.0005629484424674231,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 156,
+   "function": "resetGame",
+   "per_frame": 0.04666666666666667,
+   "self_per_frame": 0.04666666666666667,
+   "pct_busy": 0.0005629484424674231,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 166,
+   "function": "resetGame",
+   "per_frame": 0.04666666666666667,
+   "self_per_frame": 0.04666666666666667,
+   "pct_busy": 0.0005629484424674231,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 167,
+   "function": "resetGame",
+   "per_frame": 0.04666666666666667,
+   "self_per_frame": 0.04666666666666667,
+   "pct_busy": 0.0005629484424674231,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 326,
+   "function": "main",
+   "per_frame": 0.045,
+   "self_per_frame": 0.045,
+   "pct_busy": 0.0005428431409507295,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 329,
+   "function": "main",
+   "per_frame": 0.04,
+   "self_per_frame": 0.04,
+   "pct_busy": 0.0004825272364006484,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 270,
+   "function": "updateTimer",
+   "per_frame": 0.04,
+   "self_per_frame": 0.04,
+   "pct_busy": 0.0004825272364006484,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 337,
+   "function": "main",
+   "per_frame": 0.04,
+   "self_per_frame": 0.04,
+   "pct_busy": 0.0004825272364006484,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 168,
+   "function": "resetGame",
+   "per_frame": 0.03333333333333333,
+   "self_per_frame": 0.03333333333333333,
+   "pct_busy": 0.00040210603033387365,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 328,
+   "function": "main",
+   "per_frame": 0.03,
+   "self_per_frame": 0.03,
+   "pct_busy": 0.00036189542730048627,
+   "calls": [
+    [
+     "resetGame",
+     0.0,
+     0.0016666666666666668,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 269,
+   "function": "updateTimer",
+   "per_frame": 0.016666666666666666,
+   "self_per_frame": 0.016666666666666666,
+   "pct_busy": 0.00020105301516693683,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 235,
+   "function": "updateEnemies",
+   "per_frame": 0.013333333333333334,
+   "self_per_frame": 0.013333333333333334,
+   "pct_busy": 0.00016084241213354947,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 149,
+   "function": "drawTime",
+   "per_frame": 0.006666666666666667,
+   "self_per_frame": 0.006666666666666667,
+   "pct_busy": 8.042120606677474e-05,
+   "calls": []
+  }
+ ],
+ "findings": [
+  {
+   "file": "src/main.c",
+   "line": 139,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 2881,
+   "guarded": true,
+   "message": "uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes",
+   "measured_per_frame": 1.5,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "uintToStr.isra.0",
+     1.39,
+     0.0016666666666666668,
+     834.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 140,
+   "function": "drawScore",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 3.7,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     3.49,
+     0.0016666666666666668,
+     2094.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 147,
+   "function": "drawTime",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 2881,
+   "guarded": true,
+   "message": "uintToStr on the frame path: 2,881 cycles for a 7-digit number; redraw only when the value changes",
+   "measured_per_frame": 2.2,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "uintToStr.isra.0",
+     1.99,
+     0.0025,
+     796.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 148,
+   "function": "drawTime",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 5.2,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     4.946666666666666,
+     0.0025,
+     1978.6666666666667
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 327,
+   "function": "main",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": null,
+   "guarded": true,
+   "message": "VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes",
+   "measured_per_frame": 0.8,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_getPlaneAddress",
+     0.25166666666666665,
+     0.0008333333333333334,
+     302.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 338,
+   "function": "main",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 4.4,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     4.12,
+     0.0016666666666666668,
+     2472.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 339,
+   "function": "main",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": 3673,
+   "guarded": true,
+   "message": "VDP_drawText on the frame path: 3,673 cycles for 19 characters; redraw only when the value changes",
+   "measured_per_frame": 4.6,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_drawTextEx.constprop.0",
+     4.428333333333334,
+     0.0016666666666666668,
+     2657.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 351,
+   "function": "main",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": null,
+   "guarded": true,
+   "message": "VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes",
+   "measured_per_frame": 0.7,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_getPlaneAddress",
+     0.25166666666666665,
+     0.0008333333333333334,
+     302.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 352,
+   "function": "main",
+   "rule": "text",
+   "level": "guarded",
+   "loops": 0,
+   "trips": 1,
+   "est_cycles": null,
+   "guarded": true,
+   "message": "VDP_clearText on the frame path (not measured; VDP_drawText of 19 characters is 3,673 cycles); redraw only when the value changes",
+   "measured_per_frame": 0.8,
+   "measured_pct_frame": 0.0,
+   "verdict": "negligible",
+   "calls": [
+    [
+     "VDP_getPlaneAddress",
+     0.25333333333333335,
+     0.0008333333333333334,
+     304.0
+    ]
+   ]
+  }
+ ],
+ "unflagged_hot": [],
+ "tag": "homing-sonnet-5-5-r2",
+ "stage": "lint2",
+ "builds": true,
+ "mean_load": 6.48,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 9946942,
+  "charged": 9947625
+ }
+}

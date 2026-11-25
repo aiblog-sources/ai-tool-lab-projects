@@ -1,0 +1,500 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 96167.85416666667,
+ "unmapped_per_frame": 106.13166666666666,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 144,
+   "function": "writeColumn",
+   "per_frame": 94471.89333333333,
+   "self_per_frame": 94471.89333333333,
+   "pct_busy": 98.23645765206106,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 235,
+   "function": "main",
+   "per_frame": 917.7525,
+   "self_per_frame": 9.37,
+   "pct_busy": 0.9543235709611038,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     908.3825,
+     0.26666666666666666,
+     3406.434375
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 227,
+   "function": "main",
+   "per_frame": 236.86166666666668,
+   "self_per_frame": 30.065,
+   "pct_busy": 0.24630025149169518,
+   "calls": [
+    [
+     "DMA_doDmaFast",
+     206.79666666666665,
+     0.2675,
+     773.0716510903427
+    ]
+   ]
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 106.13166666666666,
+   "self_per_frame": 0.0,
+   "pct_busy": 0.11036085559602059,
+   "calls": [
+    [
+     "no_bmp_task",
+     41.66833333333334,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     41.211666666666666,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     10.253333333333334,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     7.665,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     5.333333333333333,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 147,
+   "function": "writeColumn",
+   "per_frame": 47.7775,
+   "self_per_frame": 47.7775,
+   "pct_busy": 0.04968136225354236,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 233,
+   "function": "main",
+   "per_frame": 43.98166666666667,
+   "self_per_frame": 43.98166666666667,
+   "pct_busy": 0.04573427061234296,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 158,
+   "function": "generateColumn",
+   "per_frame": 42.486666666666665,
+   "self_per_frame": 42.486666666666665,
+   "pct_busy": 0.04417969708779593,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 146,
+   "function": "writeColumn",
+   "per_frame": 36.165,
+   "self_per_frame": 36.165,
+   "pct_busy": 0.03760612141487854,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 187,
+   "function": "fillAhead",
+   "per_frame": 31.096666666666668,
+   "self_per_frame": 31.096666666666668,
+   "pct_busy": 0.0323358225429192,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 164,
+   "function": "generateColumn",
+   "per_frame": 27.34,
+   "self_per_frame": 27.34,
+   "pct_busy": 0.02842945830174974,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 182,
+   "function": "fillAhead",
+   "per_frame": 26.10333333333333,
+   "self_per_frame": 26.10333333333333,
+   "pct_busy": 0.02714351230931507,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 181,
+   "function": "fillAhead",
+   "per_frame": 25.68,
+   "self_per_frame": 25.68,
+   "pct_busy": 0.026703309772821263,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 225,
+   "function": "main",
+   "per_frame": 20.573333333333334,
+   "self_per_frame": 20.573333333333334,
+   "pct_busy": 0.021393150041258156,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 149,
+   "function": "writeColumn",
+   "per_frame": 18.6075,
+   "self_per_frame": 8.845,
+   "pct_busy": 0.01934898117592569,
+   "calls": [
+    [
+     "SYS_setInterruptMaskLevel",
+     9.7625,
+     0.06583333333333333,
+     148.29113924050634
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "generateColumn",
+   "per_frame": 17.476666666666667,
+   "self_per_frame": 17.476666666666667,
+   "pct_busy": 0.01817308581761447,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 143,
+   "function": "writeColumn",
+   "per_frame": 16.97833333333333,
+   "self_per_frame": 9.353333333333333,
+   "pct_busy": 0.01765489464276546,
+   "calls": [
+    [
+     "SYS_getAndSetInterruptMaskLevel",
+     7.625,
+     0.06583333333333333,
+     115.82278481012658
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 166,
+   "function": "generateColumn",
+   "per_frame": 9.498333333333333,
+   "self_per_frame": 9.498333333333333,
+   "pct_busy": 0.009876827777473285,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 223,
+   "function": "main",
+   "per_frame": 9.39,
+   "self_per_frame": 9.39,
+   "pct_busy": 0.009764177522071326,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 221,
+   "function": "main",
+   "per_frame": 9.083333333333334,
+   "self_per_frame": 9.083333333333334,
+   "pct_busy": 0.009445290645241166,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 232,
+   "function": "main",
+   "per_frame": 7.498333333333333,
+   "self_per_frame": 7.498333333333333,
+   "pct_busy": 0.007797130754667891,
+   "calls": [
+    [
+     "fillAhead",
+     0.0,
+     0.2675,
+     0.0
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 216,
+   "function": "main",
+   "per_frame": 5.671666666666667,
+   "self_per_frame": 5.671666666666667,
+   "pct_busy": 0.005897674140505631,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 215,
+   "function": "main",
+   "per_frame": 5.508333333333334,
+   "self_per_frame": 5.508333333333334,
+   "pct_busy": 0.005727832216976523,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 217,
+   "function": "main",
+   "per_frame": 5.426666666666667,
+   "self_per_frame": 5.426666666666667,
+   "pct_busy": 0.00564291125521197,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 218,
+   "function": "main",
+   "per_frame": 5.42,
+   "self_per_frame": 5.42,
+   "pct_busy": 0.005635978931802618,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 145,
+   "function": "writeColumn",
+   "per_frame": 5.135,
+   "self_per_frame": 5.135,
+   "pct_busy": 0.00533962210605285,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 185,
+   "function": "fillAhead",
+   "per_frame": 3.1983333333333333,
+   "self_per_frame": 3.1983333333333333,
+   "pct_busy": 0.003325782155636293,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 213,
+   "function": "main",
+   "per_frame": 2.4466666666666668,
+   "self_per_frame": 2.4466666666666668,
+   "pct_busy": 0.0025441626912319324,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 231,
+   "function": "main",
+   "per_frame": 2.14,
+   "self_per_frame": 2.14,
+   "pct_busy": 0.002225275814401772,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 148,
+   "function": "writeColumn",
+   "per_frame": 1.8433333333333333,
+   "self_per_frame": 1.8433333333333333,
+   "pct_busy": 0.0019167874226856383,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 115,
+   "function": "stepSurface",
+   "per_frame": 1.67,
+   "self_per_frame": 1.67,
+   "pct_busy": 0.0017365470140425043,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 121,
+   "function": "stepSurface",
+   "per_frame": 1.64,
+   "self_per_frame": 1.64,
+   "pct_busy": 0.0017053515587004233,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 133,
+   "function": "stepSurface",
+   "per_frame": 1.1666666666666667,
+   "self_per_frame": 1.1666666666666667,
+   "pct_busy": 0.00121315659663648,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 174,
+   "function": "generateColumn",
+   "per_frame": 0.8116666666666666,
+   "self_per_frame": 0.8116666666666666,
+   "pct_busy": 0.0008440103750885225,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 130,
+   "function": "stepSurface",
+   "per_frame": 0.6083333333333333,
+   "self_per_frame": 0.6083333333333333,
+   "pct_busy": 0.0006325745111033075,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 131,
+   "function": "stepSurface",
+   "per_frame": 0.5516666666666666,
+   "self_per_frame": 0.5516666666666666,
+   "pct_busy": 0.0005736497621238213,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 122,
+   "function": "stepSurface",
+   "per_frame": 0.52,
+   "self_per_frame": 0.52,
+   "pct_busy": 0.0005407212259294025,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 117,
+   "function": "stepSurface",
+   "per_frame": 0.45,
+   "self_per_frame": 0.45,
+   "pct_busy": 0.0004679318301312137,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 125,
+   "function": "stepSurface",
+   "per_frame": 0.315,
+   "self_per_frame": 0.315,
+   "pct_busy": 0.0003275522810918496,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 102,
+   "function": "rnd",
+   "per_frame": 0.30333333333333334,
+   "self_per_frame": 0.30333333333333334,
+   "pct_busy": 0.00031542071512548483,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 126,
+   "function": "stepSurface",
+   "per_frame": 0.295,
+   "self_per_frame": 0.295,
+   "pct_busy": 0.00030675531086379567,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 161,
+   "function": "generateColumn",
+   "per_frame": 0.2633333333333333,
+   "self_per_frame": 0.2633333333333333,
+   "pct_busy": 0.0002738267746693769,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 103,
+   "function": "rnd",
+   "per_frame": 0.08,
+   "self_per_frame": 0.08,
+   "pct_busy": 8.318788091221577e-05,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 193,
+   "function": "main",
+   "per_frame": 0.006666666666666667,
+   "self_per_frame": 0.006666666666666667,
+   "pct_busy": 6.932323409351315e-06,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 194,
+   "function": "main",
+   "per_frame": 0.0033333333333333335,
+   "self_per_frame": 0.0033333333333333335,
+   "pct_busy": 3.4661617046756574e-06,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 192,
+   "function": "main",
+   "per_frame": 0.0033333333333333335,
+   "self_per_frame": 0.0033333333333333335,
+   "pct_busy": 3.4661617046756574e-06,
+   "calls": []
+  }
+ ],
+ "findings": [],
+ "unflagged_hot": [
+  {
+   "file": "src/main.c",
+   "line": 144,
+   "function": "writeColumn",
+   "per_frame": 94471.89333333333,
+   "self_per_frame": 94471.89333333333,
+   "pct_busy": 98.23645765206106,
+   "calls": []
+  }
+ ],
+ "tag": "scroller-haiku-5-5-r1",
+ "stage": "plain",
+ "builds": true,
+ "mean_load": 75.13,
+ "dropped": 880,
+ "busy_check": {
+  "frames_csv": 115401346,
+  "charged": 115401425
+ }
+}

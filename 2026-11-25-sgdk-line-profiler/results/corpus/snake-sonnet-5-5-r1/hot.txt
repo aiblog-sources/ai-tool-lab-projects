@@ -1,0 +1,47 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 3,919 cycles per frame on average (3.1%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,411 /frame  87.0% of busy  src/main.c:344  SYS_doVBlankProcess();
+                     3,393 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,393 cycles each
+      318 /frame   8.1% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+       58 /frame   1.5% of busy  src/main.c:317  switch (state)
+       13 /frame   0.3% of busy  src/main.c:331  else if ((joy & BUTTON_RIGHT) && dir != 3) pendingDir = 1;
+       11 /frame   0.3% of busy  src/main.c:321  if (pressed & BUTTON_START)
+       10 /frame   0.3% of busy  src/main.c:93  VDP_setTileMapXY(BG_A, attr, x, y);
+                 lint [tile-loop] guarded: VDP_setTileMapXY in a loop: 324 cycles per tile; VDP_fillTileMapRect is 18 per tile, VDP_setTileMapDataRect 37
+        9 /frame   0.2% of busy  src/main.c:182  VDP_clearPlane(BG_A, TRUE);
+        8 /frame   0.2% of busy  src/main.c:313  joy = JOY_readJoypad(JOY_1);
+        8 /frame   0.2% of busy  src/main.c:335  frameCount++;
+        6 /frame   0.2% of busy  src/main.c:314  pressed = joy & ~prevJoy;
+        5 /frame   0.1% of busy  src/main.c:336  if (frameCount >= curDelay)
+        5 /frame   0.1% of busy  src/main.c:98  VDP_setTileMapXY(BG_A, 0, x, y);
+        5 /frame   0.1% of busy  src/main.c:315  prevJoy = joy;
+        4 /frame   0.1% of busy  src/main.c:330  if      ((joy & BUTTON_UP)    && dir != 2) pendingDir = 0;
+        3 /frame   0.1% of busy  src/main.c:184  memset(occupied, 0, sizeof(occupied));
+                         3 in memset.constprop.0: 0.00 calls/frame, 4,140 cycles each
+
+== Lint findings, by measured cost ==
+negligible        10 /frame (0.01% of a frame)  src/main.c:93 [tile-loop] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:105 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:107 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:115 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:111 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:109 [text] guarded
+negligible         3 /frame (0.00% of a frame)  src/main.c:113 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:170 [text] guarded
+negligible         2 /frame (0.00% of a frame)  src/main.c:169 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:106 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:114 [text] guarded
+negligible         1 /frame (0.00% of a frame)  src/main.c:110 [text] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:150 [div] guarded
+negligible         0 /frame (0.00% of a frame)  src/main.c:151 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

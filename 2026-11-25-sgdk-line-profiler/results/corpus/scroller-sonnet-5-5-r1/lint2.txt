@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 6,598 cycles per frame on average (5.2%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,578 /frame  54.2% of busy  src/main.c:255  SYS_doVBlankProcess();
+                     3,550 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,550 cycles each
+      961 /frame  14.6% of busy  src/main.c:253  VDP_updateSprites(1, DMA_QUEUE);
+                       794 in DMA_queueDmaFast: 1.00 calls/frame, 794 cycles each
+      569 /frame   8.6% of busy  src/main.c:172  VDP_fillTileMapRect(BG_B, TILE_ATTR_FULL(PAL0, FALSE, FALSE,
+      521 /frame   7.9% of busy  src/main.c:181  VDP_fillTileMapRect(BG_B, TILE_ATTR_FULL(PAL0, FALSE, FALSE,
+      318 /frame   4.8% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       124 in no_user_task
+                        31 in no_xgm_task
+      168 /frame   2.5% of busy  src/main.c:244  VDP_setHorizontalScroll(BG_B, -(s16)(camX & 0x1FF));
+       77 /frame   1.2% of busy  src/main.c:176  VDP_fillTileMapRect(BG_B, TILE_ATTR_FULL(PAL0, FALSE, FALSE,
+       63 /frame   1.0% of busy  src/main.c:248  while (genCol <= (camX >> 3) + AHEAD_COLS)
+       44 /frame   0.7% of busy  src/main.c:252  VDP_setSpritePosition(0, px + 0x80, py + 0x80);
+       35 /frame   0.5% of busy  src/main.c:236  if (px > SCREEN_W - 16)   px = SCREEN_W - 16;
+       34 /frame   0.5% of busy  src/main.c:238  if (py > SCREEN_H - 16)   py = SCREEN_H - 16;
+       22 /frame   0.3% of busy  src/main.c:231  if (pad & BUTTON_RIGHT) px += PLAYER_SPEED;
+       21 /frame   0.3% of busy  src/main.c:185  }
+       21 /frame   0.3% of busy  src/main.c:230  if (pad & BUTTON_LEFT)  px -= PLAYER_SPEED;
+       20 /frame   0.3% of busy  src/main.c:229  const u16 pad = JOY_readJoypad(JOY_1);
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

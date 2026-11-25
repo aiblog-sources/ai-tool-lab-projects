@@ -1,0 +1,34 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 5,802 cycles per frame on average (4.5%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,573 /frame  61.6% of busy  src/main.c:278  SYS_doVBlankProcess();
+                     3,544 in SYS_doVBlankProcessEx.constprop.0.isra.0: 1.00 calls/frame, 3,544 cycles each
+      949 /frame  16.4% of busy  src/main.c:276  VDP_updateSprites(1, DMA_QUEUE);
+                       795 in DMA_queueDmaFast: 1.00 calls/frame, 795 cycles each
+      318 /frame   5.5% of busy  [no game line]:0  
+                       125 in no_bmp_task
+                       123 in no_user_task
+                        31 in no_xgm_task
+      212 /frame   3.7% of busy  src/main.c:193  VDP_setTileMapDataRect(BG_B, columnBuf, x, 0, 1, MAP_H, 1, C
+                       192 in setTileMapDataColumn.constprop.0: 0.11 calls/frame, 1,771 cycles each
+      156 /frame   2.7% of busy  src/main.c:271  VDP_setHorizontalScroll(BG_B, -(s16) (scrollX & 0xFFFF));
+      107 /frame   1.8% of busy  src/main.c:174  for (y = 0; y < MAP_H; y++)
+       77 /frame   1.3% of busy  src/main.c:274  VDP_setSpriteFull(0, px, py, SPRITE_SIZE(2, 2),
+       52 /frame   0.9% of busy  src/main.c:182  else if ((((u16) column ^ (y * 5)) & 3) == 0)
+       46 /frame   0.8% of busy  src/main.c:178  if (y < (u16) groundTop)
+       35 /frame   0.6% of busy  src/main.c:254  if (px > 320 - PLAYER_W) px = 320 - PLAYER_W;
+       34 /frame   0.6% of busy  src/main.c:256  if (py > 224 - PLAYER_H) py = 224 - PLAYER_H;
+       28 /frame   0.5% of busy  src/main.c:187  columnBuf[y] = TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, til
+       23 /frame   0.4% of busy  src/main.c:263  if ((scrollX & 7) == 0)
+       22 /frame   0.4% of busy  src/main.c:249  if (joy & BUTTON_RIGHT) px += PLAYER_SPEED;
+       21 /frame   0.4% of busy  src/main.c:248  if (joy & BUTTON_LEFT)  px -= PLAYER_SPEED;
+
+== Lint findings, by measured cost ==
+  (no findings)
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+  (none)
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame

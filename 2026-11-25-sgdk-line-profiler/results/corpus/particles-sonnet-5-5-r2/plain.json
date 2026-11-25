@@ -1,0 +1,563 @@
+{
+ "frames": 1200,
+ "busy_per_frame": 16925.224166666667,
+ "unmapped_per_frame": 319.52,
+ "stack_overflow": 0,
+ "lines": [
+  {
+   "file": "src/main.c",
+   "line": 130,
+   "function": "updateAndDraw",
+   "per_frame": 3724.7066666666665,
+   "self_per_frame": 144.52833333333334,
+   "pct_busy": 22.006838018738208,
+   "calls": [
+    [
+     "DMA_transfer.isra.0",
+     3580.1783333333333,
+     1.0,
+     3580.1783333333333
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 174,
+   "function": "main",
+   "per_frame": 3421.3225,
+   "self_per_frame": 35.17666666666667,
+   "pct_busy": 20.214340834185897,
+   "calls": [
+    [
+     "SYS_doVBlankProcessEx.constprop.0.isra.0",
+     3386.1458333333335,
+     1.0,
+     3386.1458333333335
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 83,
+   "function": "updateAndDraw",
+   "per_frame": 2594.4783333333335,
+   "self_per_frame": 2594.4783333333335,
+   "pct_busy": 15.329063342292512,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 85,
+   "function": "updateAndDraw",
+   "per_frame": 975.5733333333334,
+   "self_per_frame": 975.5733333333334,
+   "pct_busy": 5.764020161426715,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 86,
+   "function": "updateAndDraw",
+   "per_frame": 782.6683333333333,
+   "self_per_frame": 782.6683333333333,
+   "pct_busy": 4.624271593842504,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 107,
+   "function": "updateAndDraw",
+   "per_frame": 611.2483333333333,
+   "self_per_frame": 611.2483333333333,
+   "pct_busy": 3.611463737875653,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 93,
+   "function": "updateAndDraw",
+   "per_frame": 377.7583333333333,
+   "self_per_frame": 377.7583333333333,
+   "pct_busy": 2.231925140922555,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 103,
+   "function": "updateAndDraw",
+   "per_frame": 354.865,
+   "self_per_frame": 354.865,
+   "pct_busy": 2.0966635153872164,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 104,
+   "function": "updateAndDraw",
+   "per_frame": 350.2,
+   "self_per_frame": 350.2,
+   "pct_busy": 2.069101103486123,
+   "calls": []
+  },
+  {
+   "file": "[no game line]",
+   "line": 0,
+   "function": null,
+   "per_frame": 319.52,
+   "self_per_frame": 0.0,
+   "pct_busy": 1.8878331941344548,
+   "calls": [
+    [
+     "no_bmp_task",
+     125.79,
+     0.0,
+     null
+    ],
+    [
+     "no_user_task",
+     123.83166666666666,
+     0.0,
+     null
+    ],
+    [
+     "no_xgm_task",
+     31.688333333333333,
+     0.0,
+     null
+    ],
+    [
+     "_VINT",
+     22.21,
+     0.0,
+     null
+    ],
+    [
+     "_vint_dummy_callback",
+     16.0,
+     0.0,
+     null
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 94,
+   "function": "updateAndDraw",
+   "per_frame": 317.30333333333334,
+   "self_per_frame": 317.30333333333334,
+   "pct_busy": 1.8747363710446179,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 91,
+   "function": "updateAndDraw",
+   "per_frame": 293.9266666666667,
+   "self_per_frame": 293.9266666666667,
+   "pct_busy": 1.7366190472415703,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 101,
+   "function": "updateAndDraw",
+   "per_frame": 256.92,
+   "self_per_frame": 256.92,
+   "pct_busy": 1.5179710322891342,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 96,
+   "function": "updateAndDraw",
+   "per_frame": 235.975,
+   "self_per_frame": 235.975,
+   "pct_busy": 1.3942208249432837,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 112,
+   "function": "updateAndDraw",
+   "per_frame": 220.6,
+   "self_per_frame": 220.6,
+   "pct_busy": 1.3033800783239258,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 113,
+   "function": "updateAndDraw",
+   "per_frame": 216.45333333333335,
+   "self_per_frame": 216.45333333333335,
+   "pct_busy": 1.2788801566340653,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 98,
+   "function": "updateAndDraw",
+   "per_frame": 183.84833333333333,
+   "self_per_frame": 183.84833333333333,
+   "pct_busy": 1.0862386903885912,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 95,
+   "function": "updateAndDraw",
+   "per_frame": 174.42166666666665,
+   "self_per_frame": 174.42166666666665,
+   "pct_busy": 1.0305427269328633,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 89,
+   "function": "updateAndDraw",
+   "per_frame": 173.91333333333333,
+   "self_per_frame": 173.91333333333333,
+   "pct_busy": 1.0275393201340661,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 92,
+   "function": "updateAndDraw",
+   "per_frame": 172.93333333333334,
+   "self_per_frame": 172.93333333333334,
+   "pct_busy": 1.0217491457154013,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 110,
+   "function": "updateAndDraw",
+   "per_frame": 172.27,
+   "self_per_frame": 172.27,
+   "pct_busy": 1.0178299460238562,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 67,
+   "function": "spawnExplosion",
+   "per_frame": 149.485,
+   "self_per_frame": 93.11666666666666,
+   "pct_busy": 0.8832083907899004,
+   "calls": [
+    [
+     "__mulsi3",
+     56.36833333333333,
+     0.24,
+     234.86805555555554
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 111,
+   "function": "updateAndDraw",
+   "per_frame": 129.19666666666666,
+   "self_per_frame": 129.19666666666666,
+   "pct_busy": 0.7633379941939715,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 68,
+   "function": "spawnExplosion",
+   "per_frame": 105.96333333333334,
+   "self_per_frame": 49.623333333333335,
+   "pct_busy": 0.6260675326358307,
+   "calls": [
+    [
+     "__mulsi3",
+     56.34,
+     0.24,
+     234.75
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 114,
+   "function": "updateAndDraw",
+   "per_frame": 86.12666666666667,
+   "self_per_frame": 86.12666666666667,
+   "pct_busy": 0.5088657368348987,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 88,
+   "function": "updateAndDraw",
+   "per_frame": 68.11333333333333,
+   "self_per_frame": 68.11333333333333,
+   "pct_busy": 0.40243681656801294,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 120,
+   "function": "updateAndDraw",
+   "per_frame": 64.68,
+   "self_per_frame": 64.68,
+   "pct_busy": 0.3821515116318745,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 70,
+   "function": "spawnExplosion",
+   "per_frame": 64.37166666666667,
+   "self_per_frame": 64.37166666666667,
+   "pct_busy": 0.3803297730817844,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 62,
+   "function": "spawnExplosion",
+   "per_frame": 61.63,
+   "self_per_frame": 61.63,
+   "pct_busy": 0.3641310708390913,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 109,
+   "function": "updateAndDraw",
+   "per_frame": 52.45166666666667,
+   "self_per_frame": 52.45166666666667,
+   "pct_busy": 0.30990234545884154,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 166,
+   "function": "main",
+   "per_frame": 35.82333333333333,
+   "self_per_frame": 35.82333333333333,
+   "pct_busy": 0.21165647781425248,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 61,
+   "function": "spawnExplosion",
+   "per_frame": 24.446666666666665,
+   "self_per_frame": 24.446666666666665,
+   "pct_busy": 0.14443924893363058,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 164,
+   "function": "main",
+   "per_frame": 24.0,
+   "self_per_frame": 24.0,
+   "pct_busy": 0.14180018984485138,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 127,
+   "function": "updateAndDraw",
+   "per_frame": 16.371666666666666,
+   "self_per_frame": 16.371666666666666,
+   "pct_busy": 0.09672939339208161,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 81,
+   "function": "updateAndDraw",
+   "per_frame": 16.001666666666665,
+   "self_per_frame": 16.001666666666665,
+   "pct_busy": 0.09454330713197348,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 117,
+   "function": "updateAndDraw",
+   "per_frame": 15.551666666666666,
+   "self_per_frame": 15.551666666666666,
+   "pct_busy": 0.09188455357238252,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 171,
+   "function": "main",
+   "per_frame": 14.645,
+   "self_per_frame": 14.645,
+   "pct_busy": 0.08652765751157702,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 56,
+   "function": "spawnExplosion",
+   "per_frame": 12.211666666666666,
+   "self_per_frame": 12.211666666666666,
+   "pct_busy": 0.07215069381897404,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 78,
+   "function": "updateAndDraw",
+   "per_frame": 12.001666666666667,
+   "self_per_frame": 12.001666666666667,
+   "pct_busy": 0.07090994215783158,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 79,
+   "function": "updateAndDraw",
+   "per_frame": 12.0,
+   "self_per_frame": 12.0,
+   "pct_busy": 0.07090009492242569,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 69,
+   "function": "spawnExplosion",
+   "per_frame": 8.395,
+   "self_per_frame": 8.395,
+   "pct_busy": 0.04960052473948031,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 58,
+   "function": "spawnExplosion",
+   "per_frame": 5.398333333333333,
+   "self_per_frame": 5.398333333333333,
+   "pct_busy": 0.03189519547968567,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 77,
+   "function": "updateAndDraw",
+   "per_frame": 4.001666666666667,
+   "self_per_frame": 4.001666666666667,
+   "pct_busy": 0.02364321220954779,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 66,
+   "function": "spawnExplosion",
+   "per_frame": 3.84,
+   "self_per_frame": 3.84,
+   "pct_busy": 0.02268803037517622,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 65,
+   "function": "spawnExplosion",
+   "per_frame": 2.8866666666666667,
+   "self_per_frame": 2.8866666666666667,
+   "pct_busy": 0.017055411723005738,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 51,
+   "function": "spawnExplosion",
+   "per_frame": 1.55,
+   "self_per_frame": 1.55,
+   "pct_busy": 0.009157928927479986,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 50,
+   "function": "spawnExplosion",
+   "per_frame": 1.4916666666666667,
+   "self_per_frame": 1.4916666666666667,
+   "pct_busy": 0.00881327568827375,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 71,
+   "function": "spawnExplosion",
+   "per_frame": 0.9933333333333333,
+   "self_per_frame": 0.9933333333333333,
+   "pct_busy": 0.0058689523019119045,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 168,
+   "function": "main",
+   "per_frame": 0.61,
+   "self_per_frame": 0.61,
+   "pct_busy": 0.0036040881585566397,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 53,
+   "function": "spawnExplosion",
+   "per_frame": 0.06,
+   "self_per_frame": 0.06,
+   "pct_busy": 0.00035450047461212846,
+   "calls": []
+  },
+  {
+   "file": "src/main.c",
+   "line": 52,
+   "function": "spawnExplosion",
+   "per_frame": 0.02,
+   "self_per_frame": 0.02,
+   "pct_busy": 0.00011816682487070949,
+   "calls": []
+  }
+ ],
+ "findings": [],
+ "unflagged_hot": [
+  {
+   "file": "src/main.c",
+   "line": 130,
+   "function": "updateAndDraw",
+   "per_frame": 3724.7066666666665,
+   "self_per_frame": 144.52833333333334,
+   "pct_busy": 22.006838018738208,
+   "calls": [
+    [
+     "DMA_transfer.isra.0",
+     3580.1783333333333,
+     1.0,
+     3580.1783333333333
+    ]
+   ]
+  },
+  {
+   "file": "src/main.c",
+   "line": 83,
+   "function": "updateAndDraw",
+   "per_frame": 2594.4783333333335,
+   "self_per_frame": 2594.4783333333335,
+   "pct_busy": 15.329063342292512,
+   "calls": []
+  }
+ ],
+ "tag": "particles-sonnet-5-5-r2",
+ "stage": "plain",
+ "builds": true,
+ "mean_load": 13.22,
+ "dropped": 0,
+ "busy_check": {
+  "frames_csv": 20309999,
+  "charged": 20310269
+ }
+}

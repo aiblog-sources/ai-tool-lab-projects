@@ -1,0 +1,33 @@
+== Lines by measured cost (sgdkhot: mdlines + sgdklint) ==
+budget 128,005 cycles per video frame (NTSC); 1,200 frames counted; busy 22,998 cycles per frame on average (18.0%)
+each line = its own instructions + every library/libgcc call made from it (game helpers count on their own lines);
+DMA from 68000 memory stalls the CPU, so a line that starts a DMA also carries the stall
+    3,416 /frame  14.9% of busy  src/main.c:278  SYS_doVBlankProcess();
+                     3,371 in SYS_doVBlankProcessEx.constprop.0.isra.0: 0.99 calls/frame, 3,400 cycles each
+    3,297 /frame  14.3% of busy  src/main.c:161  VDP_updateSprites(NUM_ENEMIES + 1, DMA);
+                     3,164 in DMA_transfer.isra.0: 0.99 calls/frame, 3,191 cycles each
+    2,442 /frame  10.6% of busy  src/main.c:73  if (n >= res + bit) {
+    1,783 /frame   7.8% of busy  src/main.c:130  e->x += (s16)divs(muls((s16)dx, ENEMY_SPEED), (s16)dist);
+    1,750 /frame   7.6% of busy  src/main.c:131  e->y += (s16)divs(muls((s16)dy, ENEMY_SPEED), (s16)dist);
+    1,273 /frame   5.5% of busy  src/main.c:75  res = (res >> 1) + bit;
+    1,246 /frame   5.4% of busy  src/main.c:71  while (bit > n) bit >>= 2;
+    1,074 /frame   4.7% of busy  src/main.c:79  bit >>= 2;
+      981 /frame   4.3% of busy  src/main.c:72  while (bit) {
+      964 /frame   4.2% of busy  src/main.c:121  u32 dist = isqrt32((u32)(muls((s16)dx, (s16)dx) + muls((s16)
+      577 /frame   2.5% of busy  src/main.c:148  VDP_setSprite(i,
+      374 /frame   1.6% of busy  src/main.c:74  n -= res + bit;
+      362 /frame   1.6% of busy  src/main.c:136  if (ABSV(dx) < HIT_RANGE && ABSV(dy) < HIT_RANGE) {
+      348 /frame   1.5% of busy  src/main.c:115  for (u8 i = 0; i < NUM_ENEMIES; i++) {
+      323 /frame   1.4% of busy  src/main.c:117  s32 dx = player.x - e->x;
+
+== Lint findings, by measured cost ==
+negligible       182 /frame (0.14% of a frame)  src/main.c:191 [text] guarded
+negligible       147 /frame (0.11% of a frame)  src/main.c:196 [text] guarded
+negligible       139 /frame (0.11% of a frame)  src/main.c:175 [div] guarded
+negligible        11 /frame (0.01% of a frame)  src/main.c:176 [div] guarded
+verdicts: matters >= 1% of a frame, small >= 0.2%, negligible below, not run = no cycles on that line in this run
+
+== Game lines over 2% of a frame with no lint finding ==
+    3,297 /frame  src/main.c:161 (updateSprites), mostly DMA_transfer.isra.0
+
+library code with no game line on the stack (interrupt handlers, SGDK's VBlank work): 318 cycles per frame
