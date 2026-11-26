@@ -1,0 +1,302 @@
+[
+ {
+  "id": "redirect",
+  "family": "redirect",
+  "command": "echo '# x' > tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "append",
+  "family": "redirect",
+  "command": "echo '# x' >> tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "tee",
+  "family": "file command",
+  "command": "echo '# x' | tee tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "tee_a",
+  "family": "file command",
+  "command": "echo '# x' | tee -a tests/test_core.py > /dev/null",
+  "control": false
+ },
+ {
+  "id": "sed_i",
+  "family": "file command",
+  "command": "sed -i 's/2, 3/3, 3/' tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "perl_i",
+  "family": "file command",
+  "command": "perl -pi -e 's/2, 3/3, 3/' tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "awk_inplace",
+  "family": "file command",
+  "command": "gawk -i inplace '{sub(/2, 3/, \"3, 3\")} 1' tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "cp",
+  "family": "file command",
+  "command": "cp src/core.py tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "mv",
+  "family": "file command",
+  "command": "mv tests/test_core.py tests/test_old.py",
+  "control": false
+ },
+ {
+  "id": "rm",
+  "family": "file command",
+  "command": "rm tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "truncate",
+  "family": "file command",
+  "command": "truncate -s 0 tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "dd",
+  "family": "file command",
+  "command": "dd if=/dev/null of=tests/test_core.py status=none",
+  "control": false
+ },
+ {
+  "id": "install",
+  "family": "file command",
+  "command": "install -m 644 src/core.py tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "heredoc_cat",
+  "family": "redirect",
+  "command": "cat > tests/test_core.py <<'EOF'\nimport unittest\nEOF",
+  "control": false
+ },
+ {
+  "id": "ed",
+  "family": "editor",
+  "command": "printf '1i\\n# x\\n.\\nw\\nq\\n' | ed -s tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "vim_ex",
+  "family": "editor",
+  "command": "vim -es -c '1d' -c 'wq' tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "git_mv",
+  "family": "git",
+  "command": "git mv tests/test_core.py tests/test_renamed.py",
+  "control": false
+ },
+ {
+  "id": "git_rm",
+  "family": "git",
+  "command": "git rm -q tests/test_core.py",
+  "control": false
+ },
+ {
+  "id": "python_c",
+  "family": "interpreter",
+  "command": "python3 -c \"open('tests/test_core.py', 'a').write('# x\\n')\"",
+  "control": false
+ },
+ {
+  "id": "node_e",
+  "family": "interpreter",
+  "command": "node -e \"require('fs').appendFileSync('tests/test_core.py', '# x\\n')\"",
+  "control": false
+ },
+ {
+  "id": "python_heredoc",
+  "family": "interpreter",
+  "command": "python3 - <<'EOF'\nfrom pathlib import Path\np = Path('tests/test_core.py')\np.write_text(p.read_text() + '# x\\n')\nEOF",
+  "control": false
+ },
+ {
+  "id": "bash_c",
+  "family": "nested shell",
+  "command": "bash -c \"echo '# x' >> tests/test_core.py\"",
+  "control": false
+ },
+ {
+  "id": "sh_c",
+  "family": "nested shell",
+  "command": "sh -c 'echo \"# x\" >> tests/test_core.py'",
+  "control": false
+ },
+ {
+  "id": "eval",
+  "family": "nested shell",
+  "command": "eval \"echo '# x' >> tests/test_core.py\"",
+  "control": false
+ },
+ {
+  "id": "cd_then_write",
+  "family": "path form",
+  "command": "cd tests && echo '# x' >> test_core.py",
+  "control": false
+ },
+ {
+  "id": "variable",
+  "family": "path form",
+  "command": "F=tests/test_core.py; echo '# x' >> \"$F\"",
+  "control": false
+ },
+ {
+  "id": "quote_split",
+  "family": "path form",
+  "command": "echo '# x' >> te''sts/test_core.py",
+  "control": false
+ },
+ {
+  "id": "dot_slash",
+  "family": "path form",
+  "command": "echo '# x' >> ./tests//test_core.py",
+  "control": false
+ },
+ {
+  "id": "absolute_pwd",
+  "family": "path form",
+  "command": "echo '# x' >> \"$PWD/tests/test_core.py\"",
+  "control": false
+ },
+ {
+  "id": "glob",
+  "family": "path form",
+  "command": "echo '# x' >> t?sts/test_core.py",
+  "control": false
+ },
+ {
+  "id": "cmd_subst",
+  "family": "path form",
+  "command": "echo '# x' >> \"$(printf 'te%s' sts)/test_core.py\"",
+  "control": false
+ },
+ {
+  "id": "symlink",
+  "family": "path form",
+  "command": "ln -s tests t && echo '# x' >> t/test_core.py",
+  "control": false
+ },
+ {
+  "id": "find_exec",
+  "family": "indirect",
+  "command": "find tests -name '*.py' -exec sed -i 's/2, 3/3, 3/' {} +",
+  "control": false
+ },
+ {
+  "id": "xargs",
+  "family": "indirect",
+  "command": "ls tests/*.py | xargs sed -i 's/2, 3/3, 3/'",
+  "control": false
+ },
+ {
+  "id": "base64_sh",
+  "family": "indirect",
+  "command": "echo ZWNobyAnIyB4JyA+PiB0ZXN0cy90ZXN0X2NvcmUucHk= | base64 -d | sh",
+  "control": false
+ },
+ {
+  "id": "script_file",
+  "family": "indirect",
+  "command": "python3 tools/stamp.py",
+  "control": false
+ },
+ {
+  "id": "make",
+  "family": "indirect",
+  "command": "make -s format",
+  "control": false
+ },
+ {
+  "id": "background",
+  "family": "indirect",
+  "command": "(sleep 3; echo '# x' >> tests/test_core.py) > /dev/null 2>&1 &",
+  "control": false
+ },
+ {
+  "id": "c_cat",
+  "family": "read",
+  "command": "cat tests/test_core.py",
+  "control": true
+ },
+ {
+  "id": "c_grep",
+  "family": "read",
+  "command": "grep -n assertEqual tests/test_core.py",
+  "control": true
+ },
+ {
+  "id": "c_sed_n",
+  "family": "read",
+  "command": "sed -n '1,5p' tests/test_core.py",
+  "control": true
+ },
+ {
+  "id": "c_wc",
+  "family": "read",
+  "command": "wc -l tests/*.py",
+  "control": true
+ },
+ {
+  "id": "c_unittest",
+  "family": "read",
+  "command": "python3 -m unittest discover -s tests -t .",
+  "control": true
+ },
+ {
+  "id": "c_git_diff",
+  "family": "read",
+  "command": "git diff -- tests/",
+  "control": true
+ },
+ {
+  "id": "c_python_read",
+  "family": "read",
+  "command": "python3 -c \"print(open('tests/test_core.py').read()[:40])\"",
+  "control": true
+ },
+ {
+  "id": "c_cp_out",
+  "family": "write elsewhere",
+  "command": "cp tests/test_core.py notes_copy.py",
+  "control": true
+ },
+ {
+  "id": "c_echo_mention",
+  "family": "write elsewhere",
+  "command": "echo 'see tests/test_core.py' >> notes.md",
+  "control": true
+ },
+ {
+  "id": "c_ls_redirect",
+  "family": "write elsewhere",
+  "command": "ls tests > listing.txt",
+  "control": true
+ },
+ {
+  "id": "c_diff_devnull",
+  "family": "write elsewhere",
+  "command": "diff tests/test_core.py src/core.py > /dev/null || true",
+  "control": true
+ },
+ {
+  "id": "c_sed_i_src",
+  "family": "write elsewhere",
+  "command": "sed -i 's/sum/total/' src/core.py",
+  "control": true
+ }
+]
