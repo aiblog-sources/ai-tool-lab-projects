@@ -1,0 +1,2 @@
+pixcheck md background limits-landscape-snes-sonnet-5-5-trunc.png 256x224: PASS
+  source_colors=22, console_colors=22, backdrop=#492449, packing=greedy, palettes_used=2, palettes_allowed=4, colors_per_palette=15, unique_tiles=565, tile_budget=1425

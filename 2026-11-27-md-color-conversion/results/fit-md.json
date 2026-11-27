@@ -1,0 +1,747 @@
+[
+ {
+  "image": "limits-dungeon-snes-haiku-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-dungeon-snes-haiku-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "limits-dungeon-snes-haiku-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-dungeon-snes-haiku-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "limits-dungeon-snes-haiku-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 15
+ },
+ {
+  "image": "limits-dungeon-snes-opus-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 24
+ },
+ {
+  "image": "limits-dungeon-snes-opus-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 25
+ },
+ {
+  "image": "limits-dungeon-snes-opus-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 24
+ },
+ {
+  "image": "limits-dungeon-snes-opus-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 18
+ },
+ {
+  "image": "limits-dungeon-snes-opus-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 27
+ },
+ {
+  "image": "limits-dungeon-snes-sonnet-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 23
+ },
+ {
+  "image": "limits-dungeon-snes-sonnet-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 23
+ },
+ {
+  "image": "limits-dungeon-snes-sonnet-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 23
+ },
+ {
+  "image": "limits-dungeon-snes-sonnet-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 19
+ },
+ {
+  "image": "limits-dungeon-snes-sonnet-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 24
+ },
+ {
+  "image": "limits-knight-snes-haiku-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-haiku-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-haiku-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-haiku-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 11
+ },
+ {
+  "image": "limits-knight-snes-haiku-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-opus-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-opus-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-opus-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-opus-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-opus-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-knight-snes-sonnet-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "limits-knight-snes-sonnet-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "limits-knight-snes-sonnet-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "limits-knight-snes-sonnet-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "limits-knight-snes-sonnet-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "limits-landscape-snes-haiku-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "limits-landscape-snes-haiku-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "limits-landscape-snes-haiku-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "limits-landscape-snes-haiku-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 12
+ },
+ {
+  "image": "limits-landscape-snes-haiku-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "limits-landscape-snes-opus-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 26
+ },
+ {
+  "image": "limits-landscape-snes-opus-5-5",
+  "method": "trunc",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 78 tiles left without a palette (an exact search proved no packing exists)"
+  ],
+  "palettes_used": 4,
+  "console_colors": 32
+ },
+ {
+  "image": "limits-landscape-snes-opus-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 26
+ },
+ {
+  "image": "limits-landscape-snes-opus-5-5",
+  "method": "lab",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 79 tiles left without a palette (an exact search proved no packing exists)"
+  ],
+  "palettes_used": 4,
+  "console_colors": 32
+ },
+ {
+  "image": "limits-landscape-snes-opus-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 330 tiles left without a palette (an exact search proved no packing exists)"
+  ],
+  "palettes_used": 4,
+  "console_colors": 46
+ },
+ {
+  "image": "limits-landscape-snes-sonnet-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 20
+ },
+ {
+  "image": "limits-landscape-snes-sonnet-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 22
+ },
+ {
+  "image": "limits-landscape-snes-sonnet-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 20
+ },
+ {
+  "image": "limits-landscape-snes-sonnet-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 25
+ },
+ {
+  "image": "limits-landscape-snes-sonnet-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 447 tiles left without a palette (an exact search proved no packing exists)",
+   "103 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold at once"
+  ],
+  "palettes_used": 4,
+  "console_colors": 104
+ },
+ {
+  "image": "naive-dungeon-snes-haiku-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 22
+ },
+ {
+  "image": "naive-dungeon-snes-haiku-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 24
+ },
+ {
+  "image": "naive-dungeon-snes-haiku-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 23
+ },
+ {
+  "image": "naive-dungeon-snes-haiku-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 16
+ },
+ {
+  "image": "naive-dungeon-snes-haiku-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 490 tiles left without a palette (an exact search proved no packing exists)",
+   "77 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold at once"
+  ],
+  "palettes_used": 4,
+  "console_colors": 78
+ },
+ {
+  "image": "naive-dungeon-snes-opus-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 28
+ },
+ {
+  "image": "naive-dungeon-snes-opus-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 29
+ },
+ {
+  "image": "naive-dungeon-snes-opus-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 28
+ },
+ {
+  "image": "naive-dungeon-snes-opus-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 22
+ },
+ {
+  "image": "naive-dungeon-snes-opus-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "2 of 896 tiles use more than 15 colors plus the shared backdrop (worst: x=64 y=32 with 16 plus backdrop)",
+   "the tile color sets do not fit in 4 palettes of 15 colors: 692 tiles left without a palette (greedy packing, 4 palettes used)",
+   "70 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold at once"
+  ],
+  "palettes_used": 4,
+  "console_colors": 71
+ },
+ {
+  "image": "naive-dungeon-snes-sonnet-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 21
+ },
+ {
+  "image": "naive-dungeon-snes-sonnet-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 22
+ },
+ {
+  "image": "naive-dungeon-snes-sonnet-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 22
+ },
+ {
+  "image": "naive-dungeon-snes-sonnet-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 2,
+  "console_colors": 20
+ },
+ {
+  "image": "naive-dungeon-snes-sonnet-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 536 tiles left without a palette (an exact search proved no packing exists)"
+  ],
+  "palettes_used": 4,
+  "console_colors": 60
+ },
+ {
+  "image": "naive-knight-snes-haiku-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 9
+ },
+ {
+  "image": "naive-knight-snes-haiku-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 9
+ },
+ {
+  "image": "naive-knight-snes-haiku-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 9
+ },
+ {
+  "image": "naive-knight-snes-haiku-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 9
+ },
+ {
+  "image": "naive-knight-snes-haiku-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 9
+ },
+ {
+  "image": "naive-knight-snes-opus-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-knight-snes-opus-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-knight-snes-opus-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-knight-snes-opus-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "naive-knight-snes-opus-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-knight-snes-sonnet-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 9
+ },
+ {
+  "image": "naive-knight-snes-sonnet-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 10
+ },
+ {
+  "image": "naive-knight-snes-sonnet-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 10
+ },
+ {
+  "image": "naive-knight-snes-sonnet-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 10
+ },
+ {
+  "image": "naive-knight-snes-sonnet-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 10
+ },
+ {
+  "image": "naive-landscape-snes-haiku-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "naive-landscape-snes-haiku-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 13
+ },
+ {
+  "image": "naive-landscape-snes-haiku-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-landscape-snes-haiku-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-landscape-snes-haiku-5-5",
+  "method": "distinct",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 1,
+  "console_colors": 14
+ },
+ {
+  "image": "naive-landscape-snes-opus-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 29
+ },
+ {
+  "image": "naive-landscape-snes-opus-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 31
+ },
+ {
+  "image": "naive-landscape-snes-opus-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 29
+ },
+ {
+  "image": "naive-landscape-snes-opus-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 4,
+  "console_colors": 30
+ },
+ {
+  "image": "naive-landscape-snes-opus-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "the tile color sets do not fit in 4 palettes of 15 colors: 684 tiles left without a palette (an exact search proved no packing exists)",
+   "76 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold at once"
+  ],
+  "palettes_used": 4,
+  "console_colors": 77
+ },
+ {
+  "image": "naive-landscape-snes-sonnet-5-5",
+  "method": "none",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 26
+ },
+ {
+  "image": "naive-landscape-snes-sonnet-5-5",
+  "method": "trunc",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 26
+ },
+ {
+  "image": "naive-landscape-snes-sonnet-5-5",
+  "method": "round",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 26
+ },
+ {
+  "image": "naive-landscape-snes-sonnet-5-5",
+  "method": "lab",
+  "ok": true,
+  "errors": [],
+  "palettes_used": 3,
+  "console_colors": 24
+ },
+ {
+  "image": "naive-landscape-snes-sonnet-5-5",
+  "method": "distinct",
+  "ok": false,
+  "errors": [
+   "2 of 896 tiles use more than 15 colors plus the shared backdrop (worst: x=16 y=160 with 18 plus backdrop)",
+   "the tile color sets do not fit in 4 palettes of 15 colors: 792 tiles left without a palette (greedy packing, 4 palettes used)",
+   "158 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold at once"
+  ],
+  "palettes_used": 4,
+  "console_colors": 159
+ }
+]

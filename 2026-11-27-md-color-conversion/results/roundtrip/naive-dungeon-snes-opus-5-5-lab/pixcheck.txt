@@ -1,0 +1,2 @@
+pixcheck md background naive-dungeon-snes-opus-5-5-lab.png 256x224: PASS
+  source_colors=22, console_colors=22, backdrop=#242424, packing=greedy, palettes_used=3, palettes_allowed=4, colors_per_palette=15, unique_tiles=467, tile_budget=1425
