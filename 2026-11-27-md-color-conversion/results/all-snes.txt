@@ -1,0 +1,12 @@
+trunc conv -      view linear mean  4.13 median  3.72 p95  8.46 max 20.61 dL +0.93 >5: 10091
+macro conv -      view linear mean  6.69 median  6.57 p95 11.56 max 24.00 dL +6.40 >5: 23204
+round conv -      view linear mean  4.11 median  3.54 p95  9.07 max 23.28 dL +0.29 >5: 8887
+round-table conv -      view linear mean  4.48 median  4.01 p95  9.50 max 24.01 dL +0.24 >5: 11944
+lab   conv linear view linear mean  3.58 median  3.40 p95  6.74 max 10.73 dL +0.20 >5: 6497
+lab   conv table  view linear mean  4.43 median  4.18 p95  8.47 max 14.45 dL +0.58 >5: 12578
+trunc conv -      view table  mean  4.31 median  3.89 p95  9.12 max 21.72 dL +0.83 >5: 10486
+macro conv -      view table  mean  6.80 median  6.64 p95 12.11 max 25.65 dL +6.23 >5: 23111
+round conv -      view table  mean  5.05 median  4.54 p95 10.46 max 24.03 dL +0.18 >5: 14254
+round-table conv -      view table  mean  4.13 median  3.71 p95  8.91 max 23.70 dL +0.19 >5: 8920
+lab   conv linear view table  mean  4.42 median  4.18 p95  8.27 max 15.36 dL +0.02 >5: 11845
+lab   conv table  view table  mean  3.58 median  3.46 p95  6.57 max 13.81 dL +0.36 >5: 5943

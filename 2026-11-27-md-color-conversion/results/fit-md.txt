@@ -1,0 +1,90 @@
+limits-dungeon-snes-haiku-5-5 none PASS 1 
+limits-dungeon-snes-haiku-5-5 trunc PASS 1 
+limits-dungeon-snes-haiku-5-5 round PASS 1 
+limits-dungeon-snes-haiku-5-5 lab PASS 1 
+limits-dungeon-snes-haiku-5-5 distinct PASS 1 
+limits-dungeon-snes-opus-5-5 none PASS 2 
+limits-dungeon-snes-opus-5-5 trunc PASS 3 
+limits-dungeon-snes-opus-5-5 round PASS 2 
+limits-dungeon-snes-opus-5-5 lab PASS 2 
+limits-dungeon-snes-opus-5-5 distinct PASS 3 
+limits-dungeon-snes-sonnet-5-5 none PASS 3 
+limits-dungeon-snes-sonnet-5-5 trunc PASS 3 
+limits-dungeon-snes-sonnet-5-5 round PASS 3 
+limits-dungeon-snes-sonnet-5-5 lab PASS 2 
+limits-dungeon-snes-sonnet-5-5 distinct PASS 3 
+limits-knight-snes-haiku-5-5 none PASS 1 
+limits-knight-snes-haiku-5-5 trunc PASS 1 
+limits-knight-snes-haiku-5-5 round PASS 1 
+limits-knight-snes-haiku-5-5 lab PASS 1 
+limits-knight-snes-haiku-5-5 distinct PASS 1 
+limits-knight-snes-opus-5-5 none PASS 1 
+limits-knight-snes-opus-5-5 trunc PASS 1 
+limits-knight-snes-opus-5-5 round PASS 1 
+limits-knight-snes-opus-5-5 lab PASS 1 
+limits-knight-snes-opus-5-5 distinct PASS 1 
+limits-knight-snes-sonnet-5-5 none PASS 1 
+limits-knight-snes-sonnet-5-5 trunc PASS 1 
+limits-knight-snes-sonnet-5-5 round PASS 1 
+limits-knight-snes-sonnet-5-5 lab PASS 1 
+limits-knight-snes-sonnet-5-5 distinct PASS 1 
+limits-landscape-snes-haiku-5-5 none PASS 1 
+limits-landscape-snes-haiku-5-5 trunc PASS 1 
+limits-landscape-snes-haiku-5-5 round PASS 1 
+limits-landscape-snes-haiku-5-5 lab PASS 1 
+limits-landscape-snes-haiku-5-5 distinct PASS 1 
+limits-landscape-snes-opus-5-5 none PASS 4 
+limits-landscape-snes-opus-5-5 trunc FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 78 tiles left without
+limits-landscape-snes-opus-5-5 round PASS 4 
+limits-landscape-snes-opus-5-5 lab FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 79 tiles left without
+limits-landscape-snes-opus-5-5 distinct FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 330 tiles left withou
+limits-landscape-snes-sonnet-5-5 none PASS 2 
+limits-landscape-snes-sonnet-5-5 trunc PASS 2 
+limits-landscape-snes-sonnet-5-5 round PASS 2 
+limits-landscape-snes-sonnet-5-5 lab PASS 2 
+limits-landscape-snes-sonnet-5-5 distinct FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 447 tiles left withou; 103 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold 
+naive-dungeon-snes-haiku-5-5 none PASS 2 
+naive-dungeon-snes-haiku-5-5 trunc PASS 2 
+naive-dungeon-snes-haiku-5-5 round PASS 2 
+naive-dungeon-snes-haiku-5-5 lab PASS 1 
+naive-dungeon-snes-haiku-5-5 distinct FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 490 tiles left withou; 77 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold a
+naive-dungeon-snes-opus-5-5 none PASS 4 
+naive-dungeon-snes-opus-5-5 trunc PASS 4 
+naive-dungeon-snes-opus-5-5 round PASS 4 
+naive-dungeon-snes-opus-5-5 lab PASS 3 
+naive-dungeon-snes-opus-5-5 distinct FAIL 4 2 of 896 tiles use more than 15 colors plus the shared backdrop (worst: x=64 y=3; the tile color sets do not fit in 4 palettes of 15 colors: 692 tiles left withou; 70 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold a
+naive-dungeon-snes-sonnet-5-5 none PASS 2 
+naive-dungeon-snes-sonnet-5-5 trunc PASS 2 
+naive-dungeon-snes-sonnet-5-5 round PASS 2 
+naive-dungeon-snes-sonnet-5-5 lab PASS 2 
+naive-dungeon-snes-sonnet-5-5 distinct FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 536 tiles left withou
+naive-knight-snes-haiku-5-5 none PASS 1 
+naive-knight-snes-haiku-5-5 trunc PASS 1 
+naive-knight-snes-haiku-5-5 round PASS 1 
+naive-knight-snes-haiku-5-5 lab PASS 1 
+naive-knight-snes-haiku-5-5 distinct PASS 1 
+naive-knight-snes-opus-5-5 none PASS 1 
+naive-knight-snes-opus-5-5 trunc PASS 1 
+naive-knight-snes-opus-5-5 round PASS 1 
+naive-knight-snes-opus-5-5 lab PASS 1 
+naive-knight-snes-opus-5-5 distinct PASS 1 
+naive-knight-snes-sonnet-5-5 none PASS 1 
+naive-knight-snes-sonnet-5-5 trunc PASS 1 
+naive-knight-snes-sonnet-5-5 round PASS 1 
+naive-knight-snes-sonnet-5-5 lab PASS 1 
+naive-knight-snes-sonnet-5-5 distinct PASS 1 
+naive-landscape-snes-haiku-5-5 none PASS 1 
+naive-landscape-snes-haiku-5-5 trunc PASS 1 
+naive-landscape-snes-haiku-5-5 round PASS 1 
+naive-landscape-snes-haiku-5-5 lab PASS 1 
+naive-landscape-snes-haiku-5-5 distinct PASS 1 
+naive-landscape-snes-opus-5-5 none PASS 3 
+naive-landscape-snes-opus-5-5 trunc PASS 4 
+naive-landscape-snes-opus-5-5 round PASS 3 
+naive-landscape-snes-opus-5-5 lab PASS 4 
+naive-landscape-snes-opus-5-5 distinct FAIL 4 the tile color sets do not fit in 4 palettes of 15 colors: 684 tiles left withou; 76 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold a
+naive-landscape-snes-sonnet-5-5 none PASS 3 
+naive-landscape-snes-sonnet-5-5 trunc PASS 3 
+naive-landscape-snes-sonnet-5-5 round PASS 3 
+naive-landscape-snes-sonnet-5-5 lab PASS 3 
+naive-landscape-snes-sonnet-5-5 distinct FAIL 4 2 of 896 tiles use more than 15 colors plus the shared backdrop (worst: x=16 y=1; the tile color sets do not fit in 4 palettes of 15 colors: 792 tiles left withou; 158 colors (without backdrop) is more than 4 x 15 = 60 the backgrounds can hold 

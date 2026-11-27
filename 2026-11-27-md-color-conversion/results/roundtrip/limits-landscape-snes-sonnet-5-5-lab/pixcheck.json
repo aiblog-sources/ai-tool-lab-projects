@@ -1,0 +1,68 @@
+{
+ "console": "md",
+ "file": "limits-landscape-snes-sonnet-5-5-lab.png",
+ "size": [
+  256,
+  224
+ ],
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "info": {
+  "source_colors": 25,
+  "console_colors": 25,
+  "off_grid_colors": 0,
+  "max_snap_error": 0.0,
+  "mode": "background",
+  "packing": "greedy",
+  "areas": 896,
+  "area_size": 8,
+  "backdrop": "#49246d",
+  "palettes_used": 2,
+  "palettes_allowed": 4,
+  "colors_per_palette": 15,
+  "colors_without_backdrop": 24,
+  "tiles": 896,
+  "unique_tiles": 581,
+  "tile_budget": 1425,
+  "flips_counted": true,
+  "palettes": [
+   [
+    "#000024",
+    "#000049",
+    "#240049",
+    "#242449",
+    "#492449",
+    "#6d2449",
+    "#6d246d",
+    "#6d4949",
+    "#6d496d",
+    "#922449",
+    "#924949",
+    "#92496d",
+    "#926d6d",
+    "#b66d49",
+    "#b66d6d"
+   ],
+   [
+    "#242449",
+    "#492449",
+    "#6d246d",
+    "#6d496d",
+    "#92246d",
+    "#92496d",
+    "#b6496d",
+    "#b66d6d",
+    "#b66d92",
+    "#db496d",
+    "#db6d49",
+    "#db6d6d",
+    "#ff9249",
+    "#ff926d",
+    "#ffb66d"
+   ]
+  ]
+ },
+ "bad_areas": [],
+ "unplaced": []
+}

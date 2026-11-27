@@ -6,6 +6,7 @@ Each folder is one project and has its own README with what it does, how to run 
 
 | Project | Post | Result |
 | --- | --- | --- |
+| [mdcolor: SNES to Mega Drive color conversion, five methods measured on 32,768 colors, 18 images and a ROM test card](2026-11-27-md-color-conversion/) | [SNES to Mega Drive colors: how SGDK converts, and a better way](https://aitoollabs.dev/posts/snes-to-mega-drive-colors/) | Shipped |
 | [Four ways to stop Claude Code's Bash tool from writing a protected folder (deny rule, regex hook, parser hook, snapshot hook) on 86 real write commands](2026-11-26-bash-write-guard/) | [Can a Claude Code hook block Bash file writes? 4 guards tested](https://aitoollabs.dev/posts/claude-code-hook-block-bash-writes/) | Shipped |
 | [sgdkhot: a line profiler for SGDK games (every cycle charged to a C line), run against a lint on 40 Claude-written games](2026-11-25-sgdk-line-profiler/) | [SGDK line profiler: which lint warnings really cost cycles](https://aitoollabs.dev/posts/sgdk-line-profiler/) | Shipped |
 | [Claude Code and a PreToolUse hook that blocks edits to tests/: does it route around the block? 9 guard conditions, 558 runs](2026-11-24-claude-hook-bypass/) | [Does Claude Code bypass a hook that blocks test edits? 558 runs](https://aitoollabs.dev/posts/claude-code-hook-bypass-tests/) | Shipped |

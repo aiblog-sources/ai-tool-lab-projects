@@ -1,0 +1,134 @@
+[
+ {
+  "method": "trunc",
+  "convert_for": "-",
+  "viewed_on": "linear",
+  "mean_de": 4.13,
+  "median_de": 3.72,
+  "p95_de": 8.46,
+  "max_de": 20.61,
+  "mean_dL": 0.93,
+  "over_5": 10091
+ },
+ {
+  "method": "macro",
+  "convert_for": "-",
+  "viewed_on": "linear",
+  "mean_de": 6.69,
+  "median_de": 6.57,
+  "p95_de": 11.56,
+  "max_de": 24.0,
+  "mean_dL": 6.4,
+  "over_5": 23204
+ },
+ {
+  "method": "round",
+  "convert_for": "-",
+  "viewed_on": "linear",
+  "mean_de": 4.11,
+  "median_de": 3.54,
+  "p95_de": 9.07,
+  "max_de": 23.28,
+  "mean_dL": 0.29,
+  "over_5": 8887
+ },
+ {
+  "method": "round-table",
+  "convert_for": "-",
+  "viewed_on": "linear",
+  "mean_de": 4.48,
+  "median_de": 4.01,
+  "p95_de": 9.5,
+  "max_de": 24.01,
+  "mean_dL": 0.24,
+  "over_5": 11944
+ },
+ {
+  "method": "lab",
+  "convert_for": "linear",
+  "viewed_on": "linear",
+  "mean_de": 3.58,
+  "median_de": 3.4,
+  "p95_de": 6.74,
+  "max_de": 10.73,
+  "mean_dL": 0.2,
+  "over_5": 6497
+ },
+ {
+  "method": "lab",
+  "convert_for": "table",
+  "viewed_on": "linear",
+  "mean_de": 4.43,
+  "median_de": 4.18,
+  "p95_de": 8.47,
+  "max_de": 14.45,
+  "mean_dL": 0.58,
+  "over_5": 12578
+ },
+ {
+  "method": "trunc",
+  "convert_for": "-",
+  "viewed_on": "table",
+  "mean_de": 4.31,
+  "median_de": 3.89,
+  "p95_de": 9.12,
+  "max_de": 21.72,
+  "mean_dL": 0.83,
+  "over_5": 10486
+ },
+ {
+  "method": "macro",
+  "convert_for": "-",
+  "viewed_on": "table",
+  "mean_de": 6.8,
+  "median_de": 6.64,
+  "p95_de": 12.11,
+  "max_de": 25.65,
+  "mean_dL": 6.23,
+  "over_5": 23111
+ },
+ {
+  "method": "round",
+  "convert_for": "-",
+  "viewed_on": "table",
+  "mean_de": 5.05,
+  "median_de": 4.54,
+  "p95_de": 10.46,
+  "max_de": 24.03,
+  "mean_dL": 0.18,
+  "over_5": 14254
+ },
+ {
+  "method": "round-table",
+  "convert_for": "-",
+  "viewed_on": "table",
+  "mean_de": 4.13,
+  "median_de": 3.71,
+  "p95_de": 8.91,
+  "max_de": 23.7,
+  "mean_dL": 0.19,
+  "over_5": 8920
+ },
+ {
+  "method": "lab",
+  "convert_for": "linear",
+  "viewed_on": "table",
+  "mean_de": 4.42,
+  "median_de": 4.18,
+  "p95_de": 8.27,
+  "max_de": 15.36,
+  "mean_dL": 0.02,
+  "over_5": 11845
+ },
+ {
+  "method": "lab",
+  "convert_for": "table",
+  "viewed_on": "table",
+  "mean_de": 3.58,
+  "median_de": 3.46,
+  "p95_de": 6.57,
+  "max_de": 13.81,
+  "mean_dL": 0.36,
+  "over_5": 5943
+ }
+]
